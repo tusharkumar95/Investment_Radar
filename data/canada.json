@@ -1,0 +1,66 @@
+{
+  "market": "Canada",
+  "currency": "CAD",
+
+  "stocks": [
+    {
+      "ticker": "SHOP.TO",
+      "name": "Shopify",
+      "type": "stock",
+
+      "quality": {
+        "revenueGrowth": 0,
+        "epsGrowth": 0,
+        "roe": 0,
+        "roic": 0,
+        "freeCashFlow": 0,
+        "balanceSheet": 0
+      },
+
+      "valuation": {
+        "pe": 0,
+        "peg": 0,
+        "evEbitda": 0,
+        "priceToFcf": 0,
+        "historicalValuation": 0
+      },
+
+      "growth": 0,
+      "momentum": 0,
+      "volatility": 0,
+
+      "ownership": {
+        "promoterHolding": null,
+        "promoterChange": null,
+        "promoterPledge": null,
+        "institutionalChange": null,
+        "majorInvestorActivity": null
+      },
+
+      "dividend": {
+        "yield": 0,
+        "growth": 0,
+        "payout": 0
+      },
+
+      "psychology": {
+        "marginOfSafety": 0,
+        "sentiment": 0,
+        "cycle": 0,
+        "qualityAtPrice": 0
+      },
+
+      "valuationRange": {
+        "fairLow": 0,
+        "fairHigh": 0,
+        "buyLow": 0,
+        "buyHigh": 0,
+        "strongBuyBelow": 0
+      }
+    }
+  ],
+
+  "etfs": [],
+
+  "mutualFunds": []
+}
