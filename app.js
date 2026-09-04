@@ -129,11 +129,15 @@ function scoreInvestment(investment) {
 
     }
 
-    return {
-        ...investment,
-        score: score,
-        verdict: getVerdict(score)
-    };
+    const dataQuality =
+    getDataQualityReport(investment);
+
+return {
+    ...investment,
+    score: score,
+    verdict: getVerdict(score),
+    dataQuality: dataQuality
+};
 }
 
 
