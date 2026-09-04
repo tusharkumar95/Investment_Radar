@@ -238,7 +238,13 @@ window.renderRadar = function() {
 
         container.innerHTML += `
 
-            <div class="investment">
+    <div
+        class="investment"
+        onclick='openInvestment(${JSON.stringify(item).replace(/'/g, "&apos;")})'
+        style="cursor:pointer;"
+    >
+
+        
 
                 <div class="investment-info">
 
