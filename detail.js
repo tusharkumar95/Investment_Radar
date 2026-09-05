@@ -1,84 +1,212 @@
 /*
  * INVESTMENT RADAR
- * INVESTMENT DETAIL VIEW
+ * Investment Detail View
  */
+
 
 let selectedInvestment = null;
 
-window.openInvestmentByTicker = function(ticker) {
-
-    const investments = marketData[currentMarket]?.stocks || [];
-
-    const investment = investments.find(
-        item => item.ticker === ticker
-    );
-
-    if (!investment) {
-        console.error("Investment not found:", ticker);
-        return;
-    }
-
-    const scoredInvestment = scoreInvestment(investment);
-
-    openInvestment(scoredInvestment);
-};
 
 /* =========================================
    OPEN INVESTMENT
 ========================================= */
 
-window.openInvestment = function(investment) {
+window.openInvestmentByTicker =
+function(ticker) {
 
-    selectedInvestment = investment;
 
-    const radar = document.getElementById("radarView");
-    const detail = document.getElementById("detailView");
+    console.log(
+        "Opening investment:",
+        ticker
+    );
 
-    if (!radar || !detail) {
-        console.error("Detail view containers not found.");
+
+    const investments =
+        marketData[currentMarket]?.stocks || [];
+
+
+    const investment =
+        investments.find(
+            item =>
+                item.ticker === ticker
+        );
+
+
+    if (!investment) {
+
+        console.error(
+            "Investment not found:",
+            ticker
+        );
+
         return;
+
     }
 
-    radar.style.display = "none";
-    detail.style.display = "block";
 
-    renderInvestmentDetail(investment);
+    selectedInvestment =
+        scoreInvestment(
+            investment
+        );
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+
+    openInvestment(
+        selectedInvestment
+    );
+
 };
 
 
 /* =========================================
-   BACK TO RADAR
+   OPEN DETAIL VIEW
 ========================================= */
 
-window.closeInvestment = function() {
+window.openInvestment =
+function(investment) {
 
-    const radar = document.getElementById("radarView");
-    const detail = document.getElementById("detailView");
+
+    selectedInvestment =
+        investment;
+
+
+    const radar =
+        document.getElementById(
+            "radarView"
+        );
+
+
+    const detail =
+        document.getElementById(
+            "detailView"
+        );
+
 
     if (!radar || !detail) {
+
+        console.error(
+            "Radar/detail containers not found."
+        );
+
         return;
+
     }
 
-    detail.style.display = "none";
-    radar.style.display = "block";
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    radar.style.display =
+        "none";
+
+
+    detail.style.display =
+        "block";
+
+
+    renderInvestmentDetail(
+        investment
+    );
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
 };
+
+
+/* =========================================
+   CLOSE DETAIL
+========================================= */
+
+window.closeInvestment =
+function() {
+
+
+    const radar =
+        document.getElementById(
+            "radarView"
+        );
+
+
+    const detail =
+        document.getElementById(
+            "detailView"
+        );
+
+
+    if (!radar || !detail) {
+
+        return;
+
+    }
+
+
+    detail.style.display =
+        "none";
+
+
+    radar.style.display =
+        "block";
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+};
+
+
+/* =========================================
+   SAFE VALUE
+========================================= */
+
+function getDetailValue(
+    object,
+    path
+) {
+
+
+    const parts =
+        path.split(".");
+
+
+    let value =
+        object;
+
+
+    for (
+        const part of parts
+    ) {
+
+        if (
+            value === null ||
+            value === undefined
+        ) {
+
+            return null;
+
+        }
+
+
+        value =
+            value[part];
+
+    }
+
+
+    return value;
+
+}
 
 
 /* =========================================
    FORMAT NUMBER
 ========================================= */
 
-function formatNumber(value, decimals = 2) {
+function formatDetailNumber(
+    value
+) {
+
 
     if (
         value === null ||
@@ -86,23 +214,31 @@ function formatNumber(value, decimals = 2) {
         value === "" ||
         isNaN(Number(value))
     ) {
+
         return "—";
+
     }
 
-    return Number(value).toLocaleString(
-        undefined,
-        {
-            maximumFractionDigits: decimals
-        }
-    );
+
+    return Number(value)
+        .toLocaleString(
+            undefined,
+            {
+                maximumFractionDigits: 2
+            }
+        );
+
 }
 
 
 /* =========================================
-   FORMAT PERCENTAGE
+   FORMAT PERCENT
 ========================================= */
 
-function formatPercent(value) {
+function formatDetailPercent(
+    value
+) {
+
 
     if (
         value === null ||
@@ -110,36 +246,14 @@ function formatPercent(value) {
         value === "" ||
         isNaN(Number(value))
     ) {
+
         return "—";
+
     }
 
-    return `${formatNumber(value)}%`;
-}
 
+    return `${formatDetailNumber(value)}%`;
 
-/* =========================================
-   DATA VALUE
-========================================= */
-
-function getValue(object, path) {
-
-    const parts = path.split(".");
-
-    let value = object;
-
-    for (const part of parts) {
-
-        if (
-            value === null ||
-            value === undefined
-        ) {
-            return null;
-        }
-
-        value = value[part];
-    }
-
-    return value;
 }
 
 
@@ -147,9 +261,14 @@ function getValue(object, path) {
    METRIC
 ========================================= */
 
-function metric(label, value) {
+function detailMetric(
+    label,
+    value
+) {
+
 
     return `
+
         <div class="metric">
 
             <span class="metric-label">
@@ -161,41 +280,64 @@ function metric(label, value) {
             </strong>
 
         </div>
+
     `;
+
 }
 
 
 /* =========================================
-   DETAIL PAGE
+   RENDER DETAIL
 ========================================= */
 
-function renderInvestmentDetail(investment) {
+function renderInvestmentDetail(
+    investment
+) {
+
 
     const container =
-        document.getElementById("detailView");
+        document.getElementById(
+            "detailView"
+        );
+
 
     const quality =
         investment.dataQuality || {};
 
+
     const confidence =
         quality.confidence || {
+
             score: 0,
-            label: "Unknown",
-            className: "yellow"
+
+            label: "Unknown"
+
         };
+
+
+    const currentPrice =
+        getDetailValue(
+            investment,
+            "price.current"
+        );
 
 
     container.innerHTML = `
 
         <div class="detail-container">
 
+
+            <!-- BACK -->
+
             <button
                 class="back-button"
-                onclick="closeInvestment()"
+                id="backToRadar"
             >
                 ← Back to Radar
             </button>
 
+
+            <!-- HEADER -->
 
             <div class="detail-header">
 
@@ -231,6 +373,25 @@ function renderInvestmentDetail(investment) {
             </div>
 
 
+            <!-- CURRENT PRICE -->
+
+            <section class="detail-section">
+
+                <div class="section-title">
+                    Current Price
+                </div>
+
+                <div class="current-price">
+
+                    ${formatDetailNumber(
+                        currentPrice
+                    )}
+
+                </div>
+
+            </section>
+
+
             <!-- DATA CONFIDENCE -->
 
             <section class="detail-section">
@@ -238,6 +399,7 @@ function renderInvestmentDetail(investment) {
                 <div class="section-title">
                     Data Confidence
                 </div>
+
 
                 <div class="confidence-box">
 
@@ -251,26 +413,37 @@ function renderInvestmentDetail(investment) {
 
                 </div>
 
+
                 ${
                     quality.missing &&
-                    quality.missing.length
+                    quality.missing.length > 0
+
                     ? `
+
                         <p class="missing-data">
+
                             Missing:
                             ${quality.missing.join(", ")}
+
                         </p>
+
                     `
+
                     : `
+
                         <p class="complete-data">
+
                             Core investment data available.
+
                         </p>
+
                     `
                 }
 
             </section>
 
 
-            <!-- PRICE -->
+            <!-- PRICE & MARKET -->
 
             <section class="detail-section">
 
@@ -278,41 +451,46 @@ function renderInvestmentDetail(investment) {
                     Price & Market
                 </div>
 
+
                 <div class="metric-grid">
 
-                    ${metric(
+                    ${detailMetric(
                         "Current Price",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "price.current"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Market Cap",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "price.marketCap"
                             )
+                        )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "52W High",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "price.high52w"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "52W Low",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "price.low52w"
                             )
@@ -332,72 +510,79 @@ function renderInvestmentDetail(investment) {
                     Financial Performance
                 </div>
 
+
                 <div class="metric-grid">
 
-                    ${metric(
+                    ${detailMetric(
                         "Revenue",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "financials.revenue"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Revenue Growth",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "quality.revenueGrowth"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "EPS",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "financials.eps"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "EPS Growth",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "quality.epsGrowth"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Free Cash Flow",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "quality.freeCashFlow"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "ROE",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "quality.roe"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "ROIC",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "quality.roic"
                             )
@@ -417,42 +602,46 @@ function renderInvestmentDetail(investment) {
                     Valuation
                 </div>
 
+
                 <div class="metric-grid">
 
-                    ${metric(
+                    ${detailMetric(
                         "P/E",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "valuation.pe"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "PEG",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "valuation.peg"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "EV / EBITDA",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "valuation.evEbitda"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Price / FCF",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "valuation.priceToFcf"
                             )
@@ -472,42 +661,46 @@ function renderInvestmentDetail(investment) {
                     Ownership
                 </div>
 
+
                 <div class="metric-grid">
 
-                    ${metric(
+                    ${detailMetric(
                         "Promoter Holding",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "ownership.promoterHolding"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Promoter Change",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "ownership.promoterChange"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Promoter Pledge",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "ownership.promoterPledge"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Institutional Change",
-                        formatPercent(
-                            getValue(
+                        formatDetailPercent(
+                            getDetailValue(
                                 investment,
                                 "ownership.institutionalChange"
                             )
@@ -527,42 +720,46 @@ function renderInvestmentDetail(investment) {
                     Investment Psychology
                 </div>
 
+
                 <div class="metric-grid">
 
-                    ${metric(
+                    ${detailMetric(
                         "Margin of Safety",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "psychology.marginOfSafety"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Market Sentiment",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "psychology.sentiment"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Business Cycle",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "psychology.cycle"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Quality at Price",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "psychology.qualityAtPrice"
                             )
@@ -574,7 +771,7 @@ function renderInvestmentDetail(investment) {
             </section>
 
 
-            <!-- BUY ZONE -->
+            <!-- PRICE STRATEGY -->
 
             <section class="detail-section">
 
@@ -582,32 +779,35 @@ function renderInvestmentDetail(investment) {
                     Price Strategy
                 </div>
 
-                <div class="price-strategy">
 
-                    ${metric(
+                <div class="metric-grid">
+
+                    ${detailMetric(
                         "Fair Value",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "priceStrategy.fairValue"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Buy Zone",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "priceStrategy.buyZone"
                             )
                         )
                     )}
 
-                    ${metric(
+
+                    ${detailMetric(
                         "Strong Opportunity",
-                        formatNumber(
-                            getValue(
+                        formatDetailNumber(
+                            getDetailValue(
                                 investment,
                                 "priceStrategy.strongBuy"
                             )
@@ -627,15 +827,33 @@ function renderInvestmentDetail(investment) {
                     Investment View
                 </div>
 
+
                 <p class="investment-thesis">
+
                     ${
                         investment.thesis ||
                         "Investment thesis will appear here once sufficient data is available."
                     }
+
                 </p>
 
             </section>
 
+
         </div>
+
     `;
+
+
+    /* BACK BUTTON */
+
+    document
+        .getElementById(
+            "backToRadar"
+        )
+        .addEventListener(
+            "click",
+            closeInvestment
+        );
+
 }
