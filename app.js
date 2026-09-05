@@ -3,18 +3,24 @@
  * Main application controller
  */
 
+
 let currentMarket = "Canada";
+
 let currentView = "Long Term";
 
+
 let marketData = {
+
     Canada: null,
+
     India: null
+
 };
 
 
-/* ================================
+/* =========================================
    LOAD DATA
-================================ */
+========================================= */
 
 async function loadMarketData() {
 
@@ -26,251 +32,467 @@ async function loadMarketData() {
         const indiaResponse =
             await fetch("data/india.json");
 
+
+        if (!canadaResponse.ok) {
+
+            throw new Error(
+                "Canada data could not be loaded."
+            );
+
+        }
+
+
+        if (!indiaResponse.ok) {
+
+            throw new Error(
+                "India data could not be loaded."
+            );
+
+        }
+
+
         marketData.Canada =
             await canadaResponse.json();
 
         marketData.India =
             await indiaResponse.json();
 
+
         renderRadar();
 
-    } catch (error) {
-
-        console.error("Unable to load investment data:", error);
-
-        document.getElementById("investments").innerHTML = `
-            <div class="investment">
-                <div class="investment-info">
-                    <h3>Data loading error</h3>
-                    <p>Please refresh the page and try again.</p>
-                </div>
-            </div>
-        `;
     }
+
+    catch (error) {
+
+        console.error(
+            "Unable to load investment data:",
+            error
+        );
+
+
+        const container =
+            document.getElementById(
+                "investments"
+            );
+
+
+        if (container) {
+
+            container.innerHTML = `
+
+                <div class="investment">
+
+                    <div class="investment-info">
+
+                        <h3>
+                            Data loading error
+                        </h3>
+
+                        <p>
+                            ${error.message}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }
+
+    }
+
 }
 
 
-/* ================================
+/* =========================================
    MARKET SELECTION
-================================ */
+========================================= */
 
-window.selectMarket = function(newMarket, button) {
+window.selectMarket = function(
+    newMarket,
+    button
+) {
 
     currentMarket = newMarket;
 
+
     document
         .querySelectorAll(".market-btn")
-        .forEach(btn => btn.classList.remove("active"));
+        .forEach(btn => {
+
+            btn.classList.remove(
+                "active"
+            );
+
+        });
+
 
     button.classList.add("active");
 
+
     renderRadar();
+
 };
 
 
-/* ================================
+/* =========================================
    VIEW SELECTION
-================================ */
+========================================= */
 
-window.selectView = function(newView, button) {
+window.selectView = function(
+    newView,
+    button
+) {
 
     currentView = newView;
 
+
     document
         .querySelectorAll(".view-btn")
-        .forEach(btn => btn.classList.remove("active"));
+        .forEach(btn => {
+
+            btn.classList.remove(
+                "active"
+            );
+
+        });
+
 
     button.classList.add("active");
 
+
     renderRadar();
+
 };
 
 
-/* ================================
+/* =========================================
    GET INVESTMENTS
-================================ */
+========================================= */
 
 function getInvestments() {
 
-    const data = marketData[currentMarket];
+    const data =
+        marketData[currentMarket];
+
 
     if (!data) {
+
         return [];
+
     }
 
-    /*
-     * For now we use stocks.
-     *
-     * Later this will combine:
-     * stocks + ETFs + mutual funds
-     * and apply the appropriate
-     * scoring model to each.
-     */
 
     return data.stocks || [];
+
 }
 
 
-/* ================================
+/* =========================================
    SCORE INVESTMENT
-================================ */
+========================================= */
 
-function scoreInvestment(investment) {
+function scoreInvestment(
+    investment
+) {
 
     let score;
 
-    if (currentView === "Long Term") {
 
-        score = longTermScore(investment);
+    if (
+        currentView === "Long Term"
+    ) {
 
-    } else {
-
-        score = shortTermScore(investment);
+        score =
+            longTermScore(
+                investment
+            );
 
     }
 
-    const dataQuality =
-    getDataQualityReport(investment);
+    else {
 
-return {
-    ...investment,
-    score: score,
-    verdict: getVerdict(score),
-    dataQuality: dataQuality
-};
+        score =
+            shortTermScore(
+                investment
+            );
+
+    }
+
+
+    const dataQuality =
+        getDataQualityReport(
+            investment
+        );
+
+
+    return {
+
+        ...investment,
+
+        score: score,
+
+        verdict:
+            getVerdict(score),
+
+        dataQuality:
+            dataQuality
+
+    };
+
 }
 
 
-/* ================================
+/* =========================================
    RENDER RADAR
-================================ */
+========================================= */
 
 window.renderRadar = function() {
 
-    const data = marketData[currentMarket];
+    const data =
+        marketData[currentMarket];
+
 
     if (!data) {
+
         return;
+
     }
 
+
     const investments =
+
         getInvestments()
-            .map(scoreInvestment)
-            .sort((a, b) => b.score - a.score);
+
+            .map(
+                scoreInvestment
+            )
+
+            .sort(
+                (a, b) =>
+                    b.score - a.score
+            );
 
 
     /* PAGE TITLE */
 
-    document.getElementById("pageTitle").textContent =
-        `${currentMarket} ${currentView} Radar`;
+    document
+        .getElementById(
+            "pageTitle"
+        )
+        .textContent =
+            `${currentMarket} ${currentView} Radar`;
 
 
-    /* DESCRIPTION */
+    /* PAGE DESCRIPTION */
 
-    if (currentView === "Long Term") {
+    document
+        .getElementById(
+            "pageDescription"
+        )
+        .textContent =
 
-        document.getElementById("pageDescription").textContent =
-            "Finding high-quality investments with attractive fundamentals, valuation and margin of safety.";
+        currentView === "Long Term"
 
-    } else {
+            ? "Finding high-quality investments with attractive fundamentals, valuation and margin of safety."
 
-        document.getElementById("pageDescription").textContent =
-            "Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";
-    }
+            : "Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";
 
 
     /* STOCK COUNT */
 
-    document.getElementById("stockCount").textContent =
-        investments.length;
+    document
+        .getElementById(
+            "stockCount"
+        )
+        .textContent =
+            investments.length;
 
 
-    /* CANDIDATES */
+    /* STRONG CANDIDATES */
 
-    document.getElementById("candidateCount").textContent =
-        investments.filter(item => item.score >= 80).length;
+    document
+        .getElementById(
+            "candidateCount"
+        )
+        .textContent =
+
+            investments.filter(
+                item =>
+                    item.score >= 80
+            ).length;
 
 
-    /* INVESTMENT LIST */
+    /* WATCHLIST */
+
+    document
+        .getElementById(
+            "watchlistCount"
+        )
+        .textContent =
+
+            investments.filter(
+                item =>
+                    item.score >= 60 &&
+                    item.score < 80
+            ).length;
+
+
+    /* INVESTMENT CONTAINER */
 
     const container =
-        document.getElementById("investments");
+        document.getElementById(
+            "investments"
+        );
+
 
     container.innerHTML = "";
 
 
-    if (investments.length === 0) {
+    /* NO DATA */
+
+    if (
+        investments.length === 0
+    ) {
 
         container.innerHTML = `
+
             <div class="investment">
 
                 <div class="investment-info">
 
-                    <h3>No investments loaded yet</h3>
+                    <h3>
+                        No investments loaded yet
+                    </h3>
 
                     <p>
-                        Our investment database is being built.
-                        Real Canadian and Indian securities will
-                        be added next.
+                        Our investment database
+                        is being built.
                     </p>
 
                 </div>
 
             </div>
+
         `;
 
         return;
+
     }
 
 
-    investments.forEach(item => {
+    /* CREATE CARDS */
 
-        let badgeClass = "yellow";
-
-        if (item.score >= 85) {
-            badgeClass = "green";
-        }
-
-        if (item.score < 60) {
-            badgeClass = "red";
-        }
+    investments.forEach(
+        item => {
 
 
-        container.innerHTML += `
+            let badgeClass =
+                "yellow";
 
-    <div
-        class="investment"
-        onclick="openInvestmentByTicker('${item.ticker}')"
-        style="cursor:pointer;"
-    >
 
-        
+            if (
+                item.score >= 85
+            ) {
+
+                badgeClass =
+                    "green";
+
+            }
+
+
+            if (
+                item.score < 60
+            ) {
+
+                badgeClass =
+                    "red";
+
+            }
+
+
+            const card =
+                document.createElement(
+                    "div"
+                );
+
+
+            card.className =
+                "investment";
+
+
+            card.style.cursor =
+                "pointer";
+
+
+            /*
+             * Store ticker safely.
+             */
+
+            card.dataset.ticker =
+                item.ticker;
+
+
+            card.innerHTML = `
 
                 <div class="investment-info">
 
-                    <h3>${item.name}</h3>
+                    <h3>
+                        ${item.name || "Unknown"}
+                    </h3>
 
-                    <p>${item.ticker}</p>
+                    <p>
+                        ${item.ticker || ""}
+                    </p>
 
-                    <span class="badge ${badgeClass}">
-                        ${item.verdict}
+                    <span
+                        class="badge ${badgeClass}"
+                    >
+                        ${item.verdict || "WATCH"}
                     </span>
 
                 </div>
 
+
                 <div class="score">
+
                     ${item.score}
+
                 </div>
 
-            </div>
+            `;
 
-        `;
-    });
+
+            /*
+             * Proper event listener.
+             * No inline onclick.
+             */
+
+            card.addEventListener(
+                "click",
+                function() {
+
+                    openInvestmentByTicker(
+                        item.ticker
+                    );
+
+                }
+            );
+
+
+            container.appendChild(
+                card
+            );
+
+        }
+    );
+
 };
 
 
-/* ================================
+/* =========================================
    START APPLICATION
-================================ */
+========================================= */
 
 loadMarketData();
