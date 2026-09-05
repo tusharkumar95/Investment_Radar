@@ -1,64 +1,57 @@
 {
   "market": "Canada",
   "currency": "CAD",
-
   "stocks": [
     {
       "ticker": "SHOP.TO",
       "name": "Shopify",
       "type": "stock",
 
-      "quality": {
-        "revenueGrowth": 0,
-        "epsGrowth": 0,
+      "price": 0,
+
+      "fundamentals": {
+        "revenueGrowth5Y": 0,
+        "revenueGrowth3Y": 0,
+        "epsGrowth5Y": 0,
+        "profitMargin": 0,
         "roe": 0,
         "roic": 0,
+        "debtToEquity": 0,
         "freeCashFlow": 0,
-        "balanceSheet": 0
+        "fcfGrowth5Y": 0
       },
 
       "valuation": {
         "pe": 0,
+        "forwardPE": 0,
         "peg": 0,
-        "evEbitda": 0,
-        "priceToFcf": 0,
-        "historicalValuation": 0
+        "priceToSales": 0,
+        "priceToBook": 0
       },
-
-      "growth": 0,
-      "momentum": 0,
-      "volatility": 0,
 
       "ownership": {
-        "promoterHolding": null,
-        "promoterChange": null,
-        "promoterPledge": null,
-        "institutionalChange": null,
-        "majorInvestorActivity": null
+        "insiderHolding": 0,
+        "institutionalHolding": 0,
+        "recentBigInvestors": []
       },
 
-      "dividend": {
-        "yield": 0,
-        "growth": 0,
-        "payout": 0
+      "technical": {
+        "52WeekHigh": 0,
+        "52WeekLow": 0,
+        "sma50": 0,
+        "sma200": 0,
+        "momentum3M": 0,
+        "momentum6M": 0
       },
 
-      "psychology": {
-        "marginOfSafety": 0,
-        "sentiment": 0,
-        "cycle": 0,
-        "qualityAtPrice": 0
-      },
-
-      "valuationRange": {
-        "fairLow": 0,
-        "fairHigh": 0,
-        "buyLow": 0,
-        "buyHigh": 0,
-        "strongBuyBelow": 0
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
       }
     }
-  ],
+  ]
 
   "etfs": [],
 
