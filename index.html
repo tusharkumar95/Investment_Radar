@@ -1,454 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investment Radar</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
+    <meta charset="UTF-8">
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f5f7fa;
-    color: #17202a;
-}
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-header {
-    background: #101820;
-    color: white;
-    padding: 24px 20px 20px;
-}
+    <title>Investment Radar</title>
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
+    <link rel="stylesheet" href="style.css">
 
-header p {
-    margin: 6px 0 0;
-    color: #aeb8c2;
-    font-size: 14px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-.market-tabs,
-.view-tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 18px;
-}
-
-button {
-    border: none;
-    border-radius: 12px;
-    padding: 12px 18px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.market-btn {
-    background: #e4e8ed;
-    color: #263238;
-    flex: 1;
-}
-
-.market-btn.active {
-    background: #17202a;
-    color: white;
-}
-
-.view-btn {
-    background: white;
-    border: 1px solid #d9dee4;
-    flex: 1;
-}
-
-.view-btn.active {
-    border-color: #17202a;
-    background: #17202a;
-    color: white;
-}
-
-.hero {
-    background: white;
-    border-radius: 18px;
-    padding: 22px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.hero h2 {
-    margin: 0 0 8px;
-}
-
-.hero p {
-    color: #66717c;
-    margin: 0;
-    line-height: 1.5;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-bottom: 22px;
-}
-
-.card {
-    background: white;
-    border-radius: 16px;
-    padding: 18px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-}
-
-.card-label {
-    font-size: 12px;
-    color: #77818b;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-}
-
-.card-value {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 8px;
-}
-
-.section-title {
-    margin: 28px 0 12px;
-}
-
-.investment {
-    background: white;
-    border-radius: 16px;
-    padding: 18px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.investment-info h3 {
-    margin: 0 0 5px;
-}
-
-.investment-info p {
-    margin: 0;
-    color: #6c757d;
-    font-size: 14px;
-}
-
-.score {
-    min-width: 72px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.badge {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 5px 9px;
-    border-radius: 8px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.green {
-    background: #e5f6eb;
-    color: #16733a;
-}
-
-.yellow {
-    background: #fff4d6;
-    color: #856404;
-}
-
-.red {
-    background: #fde7e7;
-    color: #a12626;
-}
-
-@media (max-width: 700px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .investment {
-        align-items: flex-start;
-    }
-}
-</style>
 </head>
+
 
 <body>
 
-<header>
-    <h1>Investment Radar</h1>
-    <p>Your personal stock, ETF & fund research system</p>
-</header>
+    <main class="app">
 
-<div class="container">
+        <!-- ================================
+             MARKET SELECTOR
+        ================================= -->
 
-    <div class="market-tabs">
-        <button class="market-btn active" onclick="selectMarket('Canada', this)">
-            🇨🇦 Canada
-        </button>
+        <div class="market-selector">
 
-        <button class="market-btn" onclick="selectMarket('India', this)">
-            🇮🇳 India
-        </button>
-    </div>
+            <button
+                class="market-btn active"
+                data-market="Canada"
+                onclick="selectMarket('Canada', this)"
+            >
+                🇨🇦 Canada
+            </button>
 
-    <div class="view-tabs">
-        <button class="view-btn active" onclick="selectView('Long Term', this)">
-            🏗️ Long Term
-        </button>
+            <button
+                class="market-btn"
+                data-market="India"
+                onclick="selectMarket('India', this)"
+            >
+                🇮🇳 India
+            </button>
 
-        <button class="view-btn" onclick="selectView('Short Term', this)">
-            ⚡ Short Term
-        </button>
-    </div>
-
-    <div class="hero">
-        <h2 id="pageTitle">Canadian Long-Term Radar</h2>
-        <p id="pageDescription">
-            Finding high-quality investments with attractive long-term
-            fundamentals, valuation and margin of safety.
-        </p>
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="card-label">Stocks scanned</div>
-            <div class="card-value" id="stockCount">120</div>
         </div>
 
-        <div class="card">
-            <div class="card-label">Strong candidates</div>
-            <div class="card-value" id="candidateCount">8</div>
+
+        <!-- ================================
+             VIEW SELECTOR
+        ================================= -->
+
+        <div class="view-selector">
+
+            <button
+                class="view-btn active"
+                data-view="Long Term"
+                onclick="selectView('Long Term', this)"
+            >
+                🏗️ Long Term
+            </button>
+
+            <button
+                class="view-btn"
+                data-view="Short Term"
+                onclick="selectView('Short Term', this)"
+            >
+                ⚡ Short Term
+            </button>
+
         </div>
 
-        <div class="card">
-            <div class="card-label">Watchlist</div>
-            <div class="card-value">0</div>
-        </div>
 
-    </div>
+        <!-- ================================
+             RADAR VIEW
+        ================================= -->
 
-    <h2 class="section-title">⭐ Top opportunities</h2>
+        <div id="radarView">
 
-    <div id="radarView">
 
-    <div id="investments">
-    </div>
+            <!-- HEADER -->
 
-</div>
+            <section class="hero">
 
-<div
-    id="detailView"
-    style="display:none;"
->
-</div>
+                <h1 id="pageTitle">
+                    Canada Long Term Radar
+                </h1>
 
-</div>
+                <p id="pageDescription">
+                    Finding high-quality investments with
+                    attractive fundamentals, valuation and
+                    margin of safety.
+                </p>
 
-<script>
+            </section>
 
-let market = "Canada";
-let view = "Long Term";
 
-const sampleData = {
+            <!-- STATISTICS -->
 
-    Canada: {
-        "Long Term": [
-            {
-                name: "Sample Canadian Company",
-                ticker: "SAMPLE.TO",
-                score: 91,
-                verdict: "Strong Candidate"
-            },
-            {
-                name: "Sample Canadian ETF",
-                ticker: "ETF.TO",
-                score: 87,
-                verdict: "Candidate"
-            },
-            {
-                name: "Sample Canadian Growth",
-                ticker: "GROW.TO",
-                score: 82,
-                verdict: "Watch"
-            }
-        ],
+            <section class="stats-grid">
 
-        "Short Term": [
-            {
-                name: "Sample Canadian Momentum",
-                ticker: "MOM.TO",
-                score: 89,
-                verdict: "Strong Candidate"
-            },
-            {
-                name: "Sample Canadian Value",
-                ticker: "VALUE.TO",
-                score: 81,
-                verdict: "Candidate"
-            }
-        ]
-    },
+                <div class="stat-card">
 
-    India: {
-        "Long Term": [
-            {
-                name: "Sample Indian Company",
-                ticker: "SAMPLE.NS",
-                score: 93,
-                verdict: "Strong Candidate"
-            },
-            {
-                name: "Sample Indian ETF",
-                ticker: "ETF.NS",
-                score: 88,
-                verdict: "Candidate"
-            },
-            {
-                name: "Sample Indian Growth",
-                ticker: "GROW.NS",
-                score: 84,
-                verdict: "Watch"
-            }
-        ],
-
-        "Short Term": [
-            {
-                name: "Sample Indian Momentum",
-                ticker: "MOM.NS",
-                score: 90,
-                verdict: "Strong Candidate"
-            },
-            {
-                name: "Sample Indian Value",
-                ticker: "VALUE.NS",
-                score: 83,
-                verdict: "Candidate"
-            }
-        ]
-    }
-};
-
-function selectMarket(newMarket, button) {
-
-    market = newMarket;
-
-    document.querySelectorAll(".market-btn")
-        .forEach(btn => btn.classList.remove("active"));
-
-    button.classList.add("active");
-
-    render();
-}
-
-function selectView(newView, button) {
-
-    view = newView;
-
-    document.querySelectorAll(".view-btn")
-        .forEach(btn => btn.classList.remove("active"));
-
-    button.classList.add("active");
-
-    render();
-}
-
-function render() {
-
-    document.getElementById("pageTitle").textContent =
-        `${market} ${view} Radar`;
-
-    if (view === "Long Term") {
-
-        document.getElementById("pageDescription").textContent =
-            "Finding high-quality investments with attractive fundamentals, valuation and margin of safety.";
-
-    } else {
-
-        document.getElementById("pageDescription").textContent =
-            "Finding investments with strong momentum, trend, valuation and near-term opportunity.";
-    }
-
-    const investments = sampleData[market][view];
-
-    document.getElementById("stockCount").textContent =
-        market === "Canada" ? "120" : "125";
-
-    document.getElementById("candidateCount").textContent =
-        investments.filter(x => x.score >= 85).length;
-
-    const container = document.getElementById("investments");
-
-    container.innerHTML = "";
-
-    investments.forEach(item => {
-
-        let badgeClass = "yellow";
-
-        if (item.score >= 85) {
-            badgeClass = "green";
-        }
-
-        if (item.score < 70) {
-            badgeClass = "red";
-        }
-
-        container.innerHTML += `
-            <div class="investment">
-
-                <div class="investment-info">
-
-                    <h3>${item.name}</h3>
-
-                    <p>${item.ticker}</p>
-
-                    <span class="badge ${badgeClass}">
-                        ${item.verdict}
+                    <span>
+                        STOCKS SCANNED
                     </span>
 
+                    <strong id="stockCount">
+                        0
+                    </strong>
+
                 </div>
 
-                <div class="score">
-                    ${item.score}
+
+                <div class="stat-card">
+
+                    <span>
+                        STRONG CANDIDATES
+                    </span>
+
+                    <strong id="candidateCount">
+                        0
+                    </strong>
+
                 </div>
 
-            </div>
-        `;
-    });
-}
 
-render();
+                <div class="stat-card">
 
-</script>
+                    <span>
+                        WATCHLIST
+                    </span>
 
-<script src="engine/scoring.js"></script>
-<script src="engine/dataQuality.js"></script>
-<script src="detail.js"></script>
-<script src="app.js"></script>
+                    <strong id="watchlistCount">
+                        0
+                    </strong>
 
-<scri
+                </div>
 
-    
+            </section>
+
+
+            <!-- INVESTMENTS -->
+
+            <section class="opportunities">
+
+                <h2>
+                    ⭐ Top opportunities
+                </h2>
+
+                <div id="investments">
+
+                    <div class="investment">
+
+                        <div class="investment-info">
+
+                            <h3>
+                                Loading...
+                            </h3>
+
+                            <p>
+                                Loading investment data
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================================
+             DETAIL VIEW
+        ================================= -->
+
+        <div
+            id="detailView"
+            style="display:none;"
+        ></div>
+
+    </main>
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script src="engine/scoring.js"></script>
+
+    <script src="engine/dataQuality.js"></script>
+
+    <script src="detail.js"></script>
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
