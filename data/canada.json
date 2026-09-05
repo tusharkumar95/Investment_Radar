@@ -6,52 +6,54 @@
       "ticker": "SHOP.TO",
       "name": "Shopify",
       "type": "stock",
-
-      "price": 0,
+      "price": 100,
 
       "fundamentals": {
-        "revenueGrowth5Y": 0,
-        "revenueGrowth3Y": 0,
-        "epsGrowth5Y": 0,
-        "profitMargin": 0,
-        "roe": 0,
-        "roic": 0,
-        "debtToEquity": 0,
-        "freeCashFlow": 0,
-        "fcfGrowth5Y": 0
+        "revenueGrowth5Y": 25,
+        "revenueGrowth3Y": 30,
+        "epsGrowth5Y": 18,
+        "profitMargin": 15,
+        "roe": 18,
+        "roic": 14,
+        "debtToEquity": 0.2,
+        "freeCashFlow": 1000,
+        "fcfGrowth5Y": 20
       },
 
       "valuation": {
-        "pe": 0,
-        "forwardPE": 0,
-        "peg": 0,
-        "priceToSales": 0,
-        "priceToBook": 0
+        "pe": 35,
+        "forwardPE": 28,
+        "peg": 1.7,
+        "priceToSales": 8,
+        "priceToBook": 7
       },
 
       "ownership": {
-        "insiderHolding": 0,
-        "institutionalHolding": 0,
-        "recentBigInvestors": []
+        "insiderHolding": 10,
+        "institutionalHolding": 55,
+        "recentBigInvestors": [
+          "Sample institutional investor"
+        ]
       },
 
       "technical": {
-        "52WeekHigh": 0,
-        "52WeekLow": 0,
-        "sma50": 0,
-        "sma200": 0,
-        "momentum3M": 0,
-        "momentum6M": 0
+        "52WeekHigh": 120,
+        "52WeekLow": 65,
+        "sma50": 95,
+        "sma200": 85,
+        "momentum3M": 8,
+        "momentum6M": 18
       },
 
       "analysis": {
-        "fairValue": 0,
-        "buyPrice": 0,
-        "strongBuyPrice": 0,
-        "marginOfSafety": 0
+        "fairValue": 110,
+        "buyPrice": 90,
+        "strongBuyPrice": 80,
+        "marginOfSafety": 18
       }
     }
   ]
+
 
   "etfs": [],
 
