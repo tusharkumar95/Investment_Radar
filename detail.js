@@ -5,6 +5,23 @@
 
 let selectedInvestment = null;
 
+window.openInvestmentByTicker = function(ticker) {
+
+    const investments = marketData[currentMarket]?.stocks || [];
+
+    const investment = investments.find(
+        item => item.ticker === ticker
+    );
+
+    if (!investment) {
+        console.error("Investment not found:", ticker);
+        return;
+    }
+
+    const scoredInvestment = scoreInvestment(investment);
+
+    openInvestment(scoredInvestment);
+};
 
 /* =========================================
    OPEN INVESTMENT
