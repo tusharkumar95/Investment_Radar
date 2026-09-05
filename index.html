@@ -10,9 +10,776 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="theme-color"
+        content="#f4f6f8"
+    >
+
     <title>Investment Radar</title>
 
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           GLOBAL
+        ========================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: #f4f6f8;
+            color: #17202a;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            -webkit-font-smoothing: antialiased;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 24px;
+        }
+
+
+        /* =========================================
+           MARKET BUTTONS
+        ========================================= */
+
+        .market-selector {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 14px;
+
+            margin-bottom: 14px;
+        }
+
+        .market-btn {
+            appearance: none;
+
+            border: 1px solid #d8dde3;
+
+            background: #ffffff;
+
+            color: #68737e;
+
+            border-radius: 18px;
+
+            padding: 18px 20px;
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease,
+                transform 0.15s ease;
+        }
+
+        .market-btn.active {
+            background: #18212b;
+
+            color: #ffffff;
+
+            border-color: #18212b;
+        }
+
+        .market-btn:active {
+            transform: scale(0.98);
+        }
+
+
+        /* =========================================
+           VIEW BUTTONS
+        ========================================= */
+
+        .view-selector {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 14px;
+
+            margin-bottom: 24px;
+        }
+
+        .view-btn {
+            appearance: none;
+
+            border: 1px solid #d8dde3;
+
+            background: #ffffff;
+
+            color: #68737e;
+
+            border-radius: 18px;
+
+            padding: 18px 20px;
+
+            font-size: 19px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease,
+                transform 0.15s ease;
+        }
+
+        .view-btn.active {
+            background: #18212b;
+
+            color: #ffffff;
+
+            border-color: #18212b;
+        }
+
+        .view-btn:active {
+            transform: scale(0.98);
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            background: #ffffff;
+
+            border-radius: 28px;
+
+            padding: 38px 40px;
+
+            margin-bottom: 22px;
+
+            box-shadow:
+                0 8px 25px rgba(20, 30, 40, 0.06);
+        }
+
+        .hero h1 {
+            margin: 0 0 18px;
+
+            font-size: clamp(34px, 5vw, 56px);
+
+            line-height: 1.05;
+
+            letter-spacing: -1.8px;
+
+            font-weight: 800;
+        }
+
+        .hero p {
+            margin: 0;
+
+            max-width: 780px;
+
+            color: #687482;
+
+            font-size: 21px;
+
+            line-height: 1.55;
+        }
+
+
+        /* =========================================
+           STAT CARDS
+        ========================================= */
+
+        .stats-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-bottom: 38px;
+        }
+
+        .stat-card {
+            background: #ffffff;
+
+            border-radius: 24px;
+
+            padding: 28px;
+
+            box-shadow:
+                0 8px 25px rgba(20, 30, 40, 0.05);
+        }
+
+        .stat-card span {
+            display: block;
+
+            color: #7b8590;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.4px;
+        }
+
+        .stat-card strong {
+            display: block;
+
+            margin-top: 12px;
+
+            font-size: 42px;
+
+            line-height: 1;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================
+           OPPORTUNITIES
+        ========================================= */
+
+        .opportunities h2 {
+            margin: 0 0 18px;
+
+            font-size: 32px;
+
+            line-height: 1.2;
+
+            letter-spacing: -0.6px;
+        }
+
+
+        /* =========================================
+           INVESTMENT CARDS
+        ========================================= */
+
+        .investment {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            background: #ffffff;
+
+            border-radius: 24px;
+
+            padding: 25px 28px;
+
+            margin-bottom: 15px;
+
+            box-shadow:
+                0 8px 25px rgba(20, 30, 40, 0.06);
+
+            cursor: pointer;
+
+            transition:
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+        }
+
+        .investment:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 30px rgba(20, 30, 40, 0.10);
+        }
+
+        .investment:active {
+            transform: scale(0.99);
+        }
+
+        .investment-info {
+            min-width: 0;
+        }
+
+        .investment-info h3 {
+            margin: 0 0 5px;
+
+            font-size: 25px;
+
+            line-height: 1.2;
+
+            font-weight: 800;
+        }
+
+        .investment-info p {
+            margin: 0 0 12px;
+
+            color: #707b86;
+
+            font-size: 16px;
+
+            font-weight: 600;
+        }
+
+        .score {
+            flex-shrink: 0;
+
+            font-size: 42px;
+
+            line-height: 1;
+
+            font-weight: 900;
+        }
+
+
+        /* =========================================
+           VERDICT BADGES
+        ========================================= */
+
+        .badge {
+            display: inline-block;
+
+            padding: 7px 13px;
+
+            border-radius: 12px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+        }
+
+        .badge.green {
+            background: #dff5e6;
+
+            color: #26733d;
+        }
+
+        .badge.yellow {
+            background: #fff1c7;
+
+            color: #886300;
+        }
+
+        .badge.red {
+            background: #f9dddd;
+
+            color: #a13e3e;
+        }
+
+
+        /* =========================================
+           DETAIL VIEW
+        ========================================= */
+
+        #detailView {
+            width: 100%;
+        }
+
+        .detail-container {
+            width: 100%;
+        }
+
+
+        /* =========================================
+           BACK BUTTON
+        ========================================= */
+
+        .back-button {
+            appearance: none;
+
+            border: none;
+
+            background: #ffffff;
+
+            color: #263442;
+
+            border-radius: 14px;
+
+            padding: 12px 17px;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            margin-bottom: 18px;
+
+            box-shadow:
+                0 5px 15px rgba(20, 30, 40, 0.05);
+        }
+
+        .back-button:active {
+            transform: scale(0.98);
+        }
+
+
+        /* =========================================
+           DETAIL HEADER
+        ========================================= */
+
+        .detail-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+            background: #ffffff;
+
+            border-radius: 28px;
+
+            padding: 32px;
+
+            margin-bottom: 18px;
+
+            box-shadow:
+                0 8px 25px rgba(20, 30, 40, 0.06);
+        }
+
+        .detail-market {
+            color: #75808b;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 8px;
+        }
+
+        .detail-header h1 {
+            margin: 0 0 7px;
+
+            font-size: 40px;
+
+            line-height: 1.05;
+
+            font-weight: 800;
+        }
+
+        .detail-header p {
+            margin: 0;
+
+            color: #727d88;
+
+            font-size: 17px;
+
+            font-weight: 600;
+        }
+
+        .detail-score {
+            text-align: center;
+
+            flex-shrink: 0;
+        }
+
+        .big-score {
+            font-size: 60px;
+
+            line-height: 1;
+
+            font-weight: 900;
+        }
+
+        .detail-score > div:last-child {
+            margin-top: 8px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            color: #a13e3e;
+        }
+
+
+        /* =========================================
+           DETAIL SECTIONS
+        ========================================= */
+
+        .detail-section {
+            background: #ffffff;
+
+            border-radius: 24px;
+
+            padding: 26px;
+
+            margin-bottom: 16px;
+
+            box-shadow:
+                0 8px 25px rgba(20, 30, 40, 0.05);
+        }
+
+        .section-title {
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================
+           METRICS
+        ========================================= */
+
+        .metric-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 12px;
+        }
+
+        .metric {
+            background: #f6f7f9;
+
+            border-radius: 15px;
+
+            padding: 16px;
+        }
+
+        .metric-label {
+            display: block;
+
+            color: #7a8590;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            margin-bottom: 6px;
+        }
+
+        .metric-value {
+            display: block;
+
+            font-size: 18px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================
+           CURRENT PRICE
+        ========================================= */
+
+        .current-price {
+            font-size: 42px;
+
+            line-height: 1;
+
+            font-weight: 900;
+        }
+
+
+        /* =========================================
+           DATA CONFIDENCE
+        ========================================= */
+
+        .confidence-box {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            background: #f5f7f9;
+
+            border-radius: 16px;
+
+            padding: 18px;
+        }
+
+        .confidence-box strong {
+            font-size: 30px;
+        }
+
+        .confidence-box span {
+            color: #68737e;
+
+            font-weight: 700;
+        }
+
+        .missing-data {
+            color: #a13e3e;
+
+            margin-bottom: 0;
+        }
+
+        .complete-data {
+            color: #26733d;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =========================================
+           THESIS
+        ========================================= */
+
+        .investment-thesis {
+            color: #56616c;
+
+            font-size: 17px;
+
+            line-height: 1.6;
+
+            margin: 0;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 700px) {
+
+            .app {
+                padding: 14px;
+            }
+
+            .market-selector,
+            .view-selector {
+                gap: 8px;
+            }
+
+            .market-btn,
+            .view-btn {
+                padding: 13px 10px;
+
+                font-size: 15px;
+
+                border-radius: 14px;
+            }
+
+            .hero {
+                padding: 26px 22px;
+
+                border-radius: 22px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 20px;
+            }
+
+            .stat-card strong {
+                font-size: 34px;
+            }
+
+            .opportunities h2 {
+                font-size: 27px;
+            }
+
+            .investment {
+                padding: 21px;
+
+                border-radius: 20px;
+            }
+
+            .investment-info h3 {
+                font-size: 22px;
+            }
+
+            .score {
+                font-size: 34px;
+            }
+
+            .detail-header {
+                padding: 24px;
+
+                border-radius: 22px;
+            }
+
+            .detail-header h1 {
+                font-size: 31px;
+            }
+
+            .big-score {
+                font-size: 45px;
+            }
+
+            .detail-section {
+                padding: 21px;
+
+                border-radius: 20px;
+            }
+
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* =========================================
+           SMALL PHONES
+        ========================================= */
+
+        @media (max-width: 400px) {
+
+            .market-btn,
+            .view-btn {
+                font-size: 14px;
+
+                padding: 12px 7px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .investment {
+                padding: 18px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -21,9 +788,10 @@
 
     <main class="app">
 
-        <!-- ================================
+
+        <!-- =====================================
              MARKET SELECTOR
-        ================================= -->
+        ====================================== -->
 
         <div class="market-selector">
 
@@ -34,6 +802,7 @@
             >
                 🇨🇦 Canada
             </button>
+
 
             <button
                 class="market-btn"
@@ -46,9 +815,9 @@
         </div>
 
 
-        <!-- ================================
+        <!-- =====================================
              VIEW SELECTOR
-        ================================= -->
+        ====================================== -->
 
         <div class="view-selector">
 
@@ -59,6 +828,7 @@
             >
                 🏗️ Long Term
             </button>
+
 
             <button
                 class="view-btn"
@@ -71,20 +841,21 @@
         </div>
 
 
-        <!-- ================================
+        <!-- =====================================
              RADAR VIEW
-        ================================= -->
+        ====================================== -->
 
         <div id="radarView">
 
 
-            <!-- HEADER -->
+            <!-- HERO -->
 
             <section class="hero">
 
                 <h1 id="pageTitle">
                     Canada Long Term Radar
                 </h1>
+
 
                 <p id="pageDescription">
                     Finding high-quality investments with
@@ -98,6 +869,7 @@
             <!-- STATISTICS -->
 
             <section class="stats-grid">
+
 
                 <div class="stat-card">
 
@@ -137,16 +909,18 @@
 
                 </div>
 
+
             </section>
 
 
-            <!-- INVESTMENTS -->
+            <!-- TOP OPPORTUNITIES -->
 
             <section class="opportunities">
 
                 <h2>
                     ⭐ Top opportunities
                 </h2>
+
 
                 <div id="investments">
 
@@ -170,24 +944,26 @@
 
             </section>
 
+
         </div>
 
 
-        <!-- ================================
+        <!-- =====================================
              DETAIL VIEW
-        ================================= -->
+        ====================================== -->
 
         <div
             id="detailView"
             style="display:none;"
         ></div>
 
+
     </main>
 
 
-    <!-- ================================
+    <!-- =====================================
          JAVASCRIPT
-    ================================= -->
+    ====================================== -->
 
     <script src="engine/scoring.js"></script>
 
@@ -196,6 +972,7 @@
     <script src="detail.js"></script>
 
     <script src="app.js"></script>
+
 
 </body>
 
