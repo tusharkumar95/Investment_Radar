@@ -240,7 +240,7 @@ window.renderRadar = function() {
 
     <div
         class="investment"
-        onclick='openInvestment(${JSON.stringify(item).replace(/'/g, "&apos;")})'
+        onclick="openInvestmentByTicker('${item.ticker}')"
         style="cursor:pointer;"
     >
 
