@@ -3,857 +3,414 @@
  * Investment Detail View
  */
 
+window.openInvestmentByTicker = function(ticker) {
 
-let selectedInvestment = null;
+    const data = marketData[currentMarket];
 
-
-/* =========================================
-   OPEN INVESTMENT
-========================================= */
-
-window.openInvestmentByTicker =
-function(ticker) {
-
-
-    console.log(
-        "Opening investment:",
-        ticker
-    );
-
-
-    const investments =
-        marketData[currentMarket]?.stocks || [];
-
+    if (!data || !data.stocks) {
+        return;
+    }
 
     const investment =
-        investments.find(
-            item =>
-                item.ticker === ticker
-        );
-
+        data.stocks.find(item => item.ticker === ticker);
 
     if (!investment) {
-
-        console.error(
-            "Investment not found:",
-            ticker
-        );
-
         return;
-
     }
 
-
-    selectedInvestment =
-        scoreInvestment(
-            investment
-        );
-
-
-    openInvestment(
-        selectedInvestment
-    );
-
-};
-
-
-/* =========================================
-   OPEN DETAIL VIEW
-========================================= */
-
-window.openInvestment =
-function(investment) {
-
-
-    selectedInvestment =
-        investment;
-
+    const scored =
+        scoreInvestment(investment);
 
     const radar =
-        document.getElementById(
-            "radarView"
-        );
-
+        document.getElementById("radarView");
 
     const detail =
-        document.getElementById(
-            "detailView"
-        );
+        document.getElementById("detailView");
 
 
-    if (!radar || !detail) {
+    radar.style.display = "none";
 
-        console.error(
-            "Radar/detail containers not found."
-        );
+    detail.style.display = "block";
 
-        return;
 
-    }
+    const f = investment.fundamentals || {};
+    const v = investment.valuation || {};
+    const o = investment.ownership || {};
+    const t = investment.technical || {};
+    const a = investment.analysis || {};
 
 
-    radar.style.display =
-        "none";
+    detail.innerHTML = `
 
+        <button
+            class="back-button"
+            onclick="closeInvestmentDetail()"
+        >
+            ← Back to Radar
+        </button>
 
-    detail.style.display =
-        "block";
 
+        <section class="detail-header">
 
-    renderInvestmentDetail(
-        investment
-    );
+            <div>
 
-
-    window.scrollTo(
-        0,
-        0
-    );
-
-};
-
-
-/* =========================================
-   CLOSE DETAIL
-========================================= */
-
-window.closeInvestment =
-function() {
-
-
-    const radar =
-        document.getElementById(
-            "radarView"
-        );
-
-
-    const detail =
-        document.getElementById(
-            "detailView"
-        );
-
-
-    if (!radar || !detail) {
-
-        return;
-
-    }
-
-
-    detail.style.display =
-        "none";
-
-
-    radar.style.display =
-        "block";
-
-
-    window.scrollTo(
-        0,
-        0
-    );
-
-};
-
-
-/* =========================================
-   SAFE VALUE
-========================================= */
-
-function getDetailValue(
-    object,
-    path
-) {
-
-
-    const parts =
-        path.split(".");
-
-
-    let value =
-        object;
-
-
-    for (
-        const part of parts
-    ) {
-
-        if (
-            value === null ||
-            value === undefined
-        ) {
-
-            return null;
-
-        }
-
-
-        value =
-            value[part];
-
-    }
-
-
-    return value;
-
-}
-
-
-/* =========================================
-   FORMAT NUMBER
-========================================= */
-
-function formatDetailNumber(
-    value
-) {
-
-
-    if (
-        value === null ||
-        value === undefined ||
-        value === "" ||
-        isNaN(Number(value))
-    ) {
-
-        return "—";
-
-    }
-
-
-    return Number(value)
-        .toLocaleString(
-            undefined,
-            {
-                maximumFractionDigits: 2
-            }
-        );
-
-}
-
-
-/* =========================================
-   FORMAT PERCENT
-========================================= */
-
-function formatDetailPercent(
-    value
-) {
-
-
-    if (
-        value === null ||
-        value === undefined ||
-        value === "" ||
-        isNaN(Number(value))
-    ) {
-
-        return "—";
-
-    }
-
-
-    return `${formatDetailNumber(value)}%`;
-
-}
-
-
-/* =========================================
-   METRIC
-========================================= */
-
-function detailMetric(
-    label,
-    value
-) {
-
-
-    return `
-
-        <div class="metric">
-
-            <span class="metric-label">
-                ${label}
-            </span>
-
-            <strong class="metric-value">
-                ${value}
-            </strong>
-
-        </div>
-
-    `;
-
-}
-
-
-/* =========================================
-   RENDER DETAIL
-========================================= */
-
-function renderInvestmentDetail(
-    investment
-) {
-
-
-    const container =
-        document.getElementById(
-            "detailView"
-        );
-
-
-    const quality =
-        investment.dataQuality || {};
-
-
-    const confidence =
-        quality.confidence || {
-
-            score: 0,
-
-            label: "Unknown"
-
-        };
-
-
-    const currentPrice =
-        getDetailValue(
-            investment,
-            "price.current"
-        );
-
-
-    container.innerHTML = `
-
-        <div class="detail-container">
-
-
-            <!-- BACK -->
-
-            <button
-                class="back-button"
-                id="backToRadar"
-            >
-                ← Back to Radar
-            </button>
-
-
-            <!-- HEADER -->
-
-            <div class="detail-header">
-
-                <div>
-
-                    <div class="detail-market">
-                        ${currentMarket}
-                    </div>
-
-                    <h1>
-                        ${investment.name || "Unknown Investment"}
-                    </h1>
-
-                    <p>
-                        ${investment.ticker || ""}
-                    </p>
-
+                <div class="detail-market">
+                    ${currentMarket} · ${investment.type || "Investment"}
                 </div>
 
+                <h1>
+                    ${investment.name}
+                </h1>
 
-                <div class="detail-score">
+                <p>
+                    ${investment.ticker}
+                </p>
 
-                    <div class="big-score">
-                        ${investment.score ?? "—"}
-                    </div>
+            </div>
 
-                    <div>
-                        ${investment.verdict || "WATCH"}
-                    </div>
 
+            <div class="detail-score">
+
+                <div class="big-score">
+                    ${scored.score}
+                </div>
+
+                <div>
+                    ${scored.verdict}
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="detail-section">
+
+            <div class="section-title">
+                Price & Valuation
+            </div>
+
+            <div class="metric-grid">
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Current Price
+                    </span>
+                    <span class="metric-value">
+                        ${investment.price || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        P/E
+                    </span>
+                    <span class="metric-value">
+                        ${v.pe || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Forward P/E
+                    </span>
+                    <span class="metric-value">
+                        ${v.forwardPE || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        PEG
+                    </span>
+                    <span class="metric-value">
+                        ${v.peg || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Price / Sales
+                    </span>
+                    <span class="metric-value">
+                        ${v.priceToSales || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Price / Book
+                    </span>
+                    <span class="metric-value">
+                        ${v.priceToBook || "—"}
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="detail-section">
+
+            <div class="section-title">
+                Business Fundamentals
+            </div>
+
+            <div class="metric-grid">
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Revenue Growth — 5Y
+                    </span>
+                    <span class="metric-value">
+                        ${f.revenueGrowth5Y || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        EPS Growth — 5Y
+                    </span>
+                    <span class="metric-value">
+                        ${f.epsGrowth5Y || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Profit Margin
+                    </span>
+                    <span class="metric-value">
+                        ${f.profitMargin || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        ROE
+                    </span>
+                    <span class="metric-value">
+                        ${f.roe || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        ROIC
+                    </span>
+                    <span class="metric-value">
+                        ${f.roic || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Debt / Equity
+                    </span>
+                    <span class="metric-value">
+                        ${f.debtToEquity || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Free Cash Flow
+                    </span>
+                    <span class="metric-value">
+                        ${f.freeCashFlow || "—"}
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        FCF Growth — 5Y
+                    </span>
+                    <span class="metric-value">
+                        ${f.fcfGrowth5Y || "—"}%
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="detail-section">
+
+            <div class="section-title">
+                Ownership & Big Investors
+            </div>
+
+            <div class="metric-grid">
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Insider / Promoter Holding
+                    </span>
+                    <span class="metric-value">
+                        ${o.insiderHolding || "—"}%
+                    </span>
+                </div>
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Institutional Holding
+                    </span>
+                    <span class="metric-value">
+                        ${o.institutionalHolding || "—"}%
+                    </span>
                 </div>
 
             </div>
 
 
-            <!-- CURRENT PRICE -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Current Price
-                </div>
-
-                <div class="current-price">
-
-                    ${formatDetailNumber(
-                        currentPrice
-                    )}
-
-                </div>
-
-            </section>
+            <br>
 
 
-            <!-- DATA CONFIDENCE -->
+            <div class="section-title">
+                Recent Major Investors
+            </div>
 
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Data Confidence
-                </div>
-
-
-                <div class="confidence-box">
-
-                    <strong>
-                        ${confidence.score}%
-                    </strong>
-
-                    <span>
-                        ${confidence.label}
-                    </span>
-
-                </div>
-
+            <p class="investment-thesis">
 
                 ${
-                    quality.missing &&
-                    quality.missing.length > 0
-
-                    ? `
-
-                        <p class="missing-data">
-
-                            Missing:
-                            ${quality.missing.join(", ")}
-
-                        </p>
-
-                    `
-
-                    : `
-
-                        <p class="complete-data">
-
-                            Core investment data available.
-
-                        </p>
-
-                    `
+                    o.recentBigInvestors &&
+                    o.recentBigInvestors.length
+                    ? o.recentBigInvestors.join(", ")
+                    : "No investor data available yet."
                 }
 
-            </section>
+            </p>
+
+        </section>
 
 
-            <!-- PRICE & MARKET -->
+        <section class="detail-section">
 
-            <section class="detail-section">
+            <div class="section-title">
+                Investment Price Map
+            </div>
 
-                <div class="section-title">
-                    Price & Market
+            <div class="metric-grid">
+
+                <div class="metric">
+                    <span class="metric-label">
+                        Fair Value
+                    </span>
+                    <span class="metric-value">
+                        ${a.fairValue || "—"}
+                    </span>
                 </div>
 
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "Current Price",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "price.current"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Market Cap",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "price.marketCap"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "52W High",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "price.high52w"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "52W Low",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "price.low52w"
-                            )
-                        )
-                    )}
-
+                <div class="metric">
+                    <span class="metric-label">
+                        Buy Price
+                    </span>
+                    <span class="metric-value">
+                        ${a.buyPrice || "—"}
+                    </span>
                 </div>
 
-            </section>
-
-
-            <!-- FINANCIALS -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Financial Performance
+                <div class="metric">
+                    <span class="metric-label">
+                        Strong Buy Price
+                    </span>
+                    <span class="metric-value">
+                        ${a.strongBuyPrice || "—"}
+                    </span>
                 </div>
 
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "Revenue",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "financials.revenue"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Revenue Growth",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "quality.revenueGrowth"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "EPS",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "financials.eps"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "EPS Growth",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "quality.epsGrowth"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Free Cash Flow",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "quality.freeCashFlow"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "ROE",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "quality.roe"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "ROIC",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "quality.roic"
-                            )
-                        )
-                    )}
-
+                <div class="metric">
+                    <span class="metric-label">
+                        Margin of Safety
+                    </span>
+                    <span class="metric-value">
+                        ${a.marginOfSafety || "—"}%
+                    </span>
                 </div>
 
-            </section>
+            </div>
+
+        </section>
 
 
-            <!-- VALUATION -->
+        <section class="detail-section">
 
-            <section class="detail-section">
+            <div class="section-title">
+                Market Behaviour
+            </div>
 
-                <div class="section-title">
-                    Valuation
+            <div class="metric-grid">
+
+                <div class="metric">
+                    <span class="metric-label">
+                        52 Week High
+                    </span>
+                    <span class="metric-value">
+                        ${t["52WeekHigh"] || "—"}
+                    </span>
                 </div>
 
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "P/E",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "valuation.pe"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "PEG",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "valuation.peg"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "EV / EBITDA",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "valuation.evEbitda"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Price / FCF",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "valuation.priceToFcf"
-                            )
-                        )
-                    )}
-
+                <div class="metric">
+                    <span class="metric-label">
+                        52 Week Low
+                    </span>
+                    <span class="metric-value">
+                        ${t["52WeekLow"] || "—"}
+                    </span>
                 </div>
 
-            </section>
-
-
-            <!-- OWNERSHIP -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Ownership
+                <div class="metric">
+                    <span class="metric-label">
+                        50 Day Average
+                    </span>
+                    <span class="metric-value">
+                        ${t.sma50 || "—"}
+                    </span>
                 </div>
 
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "Promoter Holding",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "ownership.promoterHolding"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Promoter Change",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "ownership.promoterChange"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Promoter Pledge",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "ownership.promoterPledge"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Institutional Change",
-                        formatDetailPercent(
-                            getDetailValue(
-                                investment,
-                                "ownership.institutionalChange"
-                            )
-                        )
-                    )}
-
+                <div class="metric">
+                    <span class="metric-label">
+                        200 Day Average
+                    </span>
+                    <span class="metric-value">
+                        ${t.sma200 || "—"}
+                    </span>
                 </div>
 
-            </section>
-
-
-            <!-- PSYCHOLOGY -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Investment Psychology
+                <div class="metric">
+                    <span class="metric-label">
+                        3 Month Momentum
+                    </span>
+                    <span class="metric-value">
+                        ${t.momentum3M || "—"}%
+                    </span>
                 </div>
 
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "Margin of Safety",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "psychology.marginOfSafety"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Market Sentiment",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "psychology.sentiment"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Business Cycle",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "psychology.cycle"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Quality at Price",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "psychology.qualityAtPrice"
-                            )
-                        )
-                    )}
-
+                <div class="metric">
+                    <span class="metric-label">
+                        6 Month Momentum
+                    </span>
+                    <span class="metric-value">
+                        ${t.momentum6M || "—"}%
+                    </span>
                 </div>
 
-            </section>
+            </div>
 
-
-            <!-- PRICE STRATEGY -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Price Strategy
-                </div>
-
-
-                <div class="metric-grid">
-
-                    ${detailMetric(
-                        "Fair Value",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "priceStrategy.fairValue"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Buy Zone",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "priceStrategy.buyZone"
-                            )
-                        )
-                    )}
-
-
-                    ${detailMetric(
-                        "Strong Opportunity",
-                        formatDetailNumber(
-                            getDetailValue(
-                                investment,
-                                "priceStrategy.strongBuy"
-                            )
-                        )
-                    )}
-
-                </div>
-
-            </section>
-
-
-            <!-- INVESTMENT VIEW -->
-
-            <section class="detail-section">
-
-                <div class="section-title">
-                    Investment View
-                </div>
-
-
-                <p class="investment-thesis">
-
-                    ${
-                        investment.thesis ||
-                        "Investment thesis will appear here once sufficient data is available."
-                    }
-
-                </p>
-
-            </section>
-
-
-        </div>
+        </section>
 
     `;
+};
 
 
-    /* BACK BUTTON */
+window.closeInvestmentDetail = function() {
 
-    document
-        .getElementById(
-            "backToRadar"
-        )
-        .addEventListener(
-            "click",
-            closeInvestment
-        );
+    document.getElementById("detailView").style.display =
+        "none";
 
-}
+    document.getElementById("radarView").style.display =
+        "block";
+
+};
