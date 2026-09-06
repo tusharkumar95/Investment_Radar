@@ -1,60 +1,52 @@
 {
   "market": "Canada",
   "currency": "CAD",
+  "lastUpdated": null,
   "stocks": [
     {
       "ticker": "SHOP.TO",
       "name": "Shopify",
       "type": "stock",
-      "price": 100,
-
+      "price": 200.76,
       "fundamentals": {
-        "revenueGrowth5Y": 25,
-        "revenueGrowth3Y": 30,
-        "epsGrowth5Y": 18,
-        "profitMargin": 15,
-        "roe": 18,
-        "roic": 14,
-        "debtToEquity": 0.2,
-        "freeCashFlow": 1000,
-        "fcfGrowth5Y": 20
+        "revenueGrowth5Y": 0,
+        "revenueGrowth3Y": 0,
+        "epsGrowth5Y": 0,
+        "profitMargin": 0,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0
       },
-
       "valuation": {
-        "pe": 35,
-        "forwardPE": 28,
-        "peg": 1.7,
-        "priceToSales": 8,
-        "priceToBook": 7
+        "pe": 0,
+        "forwardPE": 0,
+        "peg": 0,
+        "priceToSales": 0,
+        "priceToBook": 0
       },
-
       "ownership": {
-        "insiderHolding": 10,
-        "institutionalHolding": 55,
-        "recentBigInvestors": [
-          "Sample institutional investor"
-        ]
+        "insiderHolding": 0,
+        "institutionalHolding": 0,
+        "recentBigInvestors": []
       },
-
       "technical": {
-        "52WeekHigh": 120,
-        "52WeekLow": 65,
-        "sma50": 95,
-        "sma200": 85,
-        "momentum3M": 8,
-        "momentum6M": 18
+        "52WeekHigh": 253.1,
+        "52WeekLow": 129.01,
+        "sma50": 0,
+        "sma200": 0,
+        "momentum3M": 0,
+        "momentum6M": 0
       },
-
       "analysis": {
-        "fairValue": 110,
-        "buyPrice": 90,
-        "strongBuyPrice": 80,
-        "marginOfSafety": 18
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
       }
     }
   ],
-
   "etfs": [],
-
   "mutualFunds": []
 }
