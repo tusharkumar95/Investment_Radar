@@ -1,131 +1,1107 @@
 {
   "market": "India",
   "currency": "INR",
+  "lastUpdated": "2026-09-07T14:18:55.825123+00:00",
   "stocks": [
     {
       "ticker": "HDFCBANK.NS",
       "name": "HDFC Bank",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 710.5,
+      "fundamentals": {
+        "revenueGrowth5Y": 16.9,
+        "revenueGrowth3Y": 16.9,
+        "epsGrowth5Y": 18.1,
+        "profitMargin": 26.79,
+        "roe": 13.84,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 15.54,
+        "forwardPE": 11.35,
+        "peg": 0.89,
+        "priceToSales": 3.71,
+        "priceToBook": 1.8
+      },
+      "ownership": {
+        "insiderHolding": 0.15,
+        "institutionalHolding": 60.98,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1020.5,
+        "52WeekLow": 698.5,
+        "sma50": 754.15,
+        "sma200": 837.14,
+        "momentum3M": -4.58,
+        "momentum6M": -16.36
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "ICICIBANK.NS",
       "name": "ICICI Bank",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1427.5,
+      "fundamentals": {
+        "revenueGrowth5Y": 18.11,
+        "revenueGrowth3Y": 18.11,
+        "epsGrowth5Y": 13.8,
+        "profitMargin": 27.53,
+        "roe": 16.07,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 18.47,
+        "forwardPE": 15.19,
+        "peg": 0.53,
+        "priceToSales": 5.03,
+        "priceToBook": 2.69
+      },
+      "ownership": {
+        "insiderHolding": 3.53,
+        "institutionalHolding": 59.3,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1480.0,
+        "52WeekLow": 1187.6,
+        "sma50": 1424.71,
+        "sma200": 1355.88,
+        "momentum3M": 8.39,
+        "momentum6M": 8.81
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "RELIANCE.NS",
       "name": "Reliance Industries",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1309.5,
+      "fundamentals": {
+        "revenueGrowth5Y": 6.39,
+        "revenueGrowth3Y": 6.39,
+        "epsGrowth5Y": -22.4,
+        "profitMargin": 6.61,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 36.65,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 23.7,
+        "forwardPE": 18.34,
+        "peg": 0.82,
+        "priceToSales": 0,
+        "priceToBook": 1.96
+      },
+      "ownership": {
+        "insiderHolding": 51.8,
+        "institutionalHolding": 28.03,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1611.8,
+        "52WeekLow": 1249.8,
+        "sma50": 1303.28,
+        "sma200": 1388.14,
+        "momentum3M": 3.68,
+        "momentum6M": -7.05
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "BHARTIARTL.NS",
       "name": "Bharti Airtel",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1854.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 14.88,
+        "revenueGrowth3Y": 14.88,
+        "epsGrowth5Y": 35.1,
+        "profitMargin": 13.14,
+        "roe": 20.15,
+        "roic": 0,
+        "debtToEquity": 100.42,
+        "freeCashFlow": 630565896192.0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 38.75,
+        "forwardPE": 22.55,
+        "peg": 0,
+        "priceToSales": 5.26,
+        "priceToBook": 7.15
+      },
+      "ownership": {
+        "insiderHolding": 53.15,
+        "institutionalHolding": 36.41,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 2174.5,
+        "52WeekLow": 1740.5,
+        "sma50": 1919.47,
+        "sma200": 1932.78,
+        "momentum3M": 4.01,
+        "momentum6M": 0.19
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "LT.NS",
       "name": "Larsen & Toubro",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 3999.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 16.09,
+        "revenueGrowth3Y": 16.09,
+        "epsGrowth5Y": 14.0,
+        "profitMargin": 5.59,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 97.64,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 33.18,
+        "forwardPE": 22.23,
+        "peg": 1.06,
+        "priceToSales": 1.85,
+        "priceToBook": 5.03
+      },
+      "ownership": {
+        "insiderHolding": 18.09,
+        "institutionalHolding": 52.63,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 4440.0,
+        "52WeekLow": 3288.1,
+        "sma50": 3976.84,
+        "sma200": 3984.09,
+        "momentum3M": 3.55,
+        "momentum6M": 3.17
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "SBIN.NS",
       "name": "State Bank of India",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1005.9,
+      "fundamentals": {
+        "revenueGrowth5Y": 12.19,
+        "revenueGrowth3Y": 12.19,
+        "epsGrowth5Y": 9.9,
+        "profitMargin": 22.38,
+        "roe": 15.18,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 10.76,
+        "forwardPE": 9.59,
+        "peg": 0.53,
+        "priceToSales": 2.41,
+        "priceToBook": 1.49
+      },
+      "ownership": {
+        "insiderHolding": 57.23,
+        "institutionalHolding": 29.15,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1234.7,
+        "52WeekLow": 805.6,
+        "sma50": 1041.53,
+        "sma200": 1040.63,
+        "momentum3M": 0.52,
+        "momentum6M": -9.56
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "INFY.NS",
       "name": "Infosys",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1087.5,
+      "fundamentals": {
+        "revenueGrowth5Y": 3.44,
+        "revenueGrowth3Y": 3.44,
+        "epsGrowth5Y": 5.3,
+        "profitMargin": 16.37,
+        "roe": 32.0,
+        "roic": 0,
+        "debtToEquity": 9.54,
+        "freeCashFlow": 3165625088.0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 14.22,
+        "forwardPE": 13.59,
+        "peg": 2.02,
+        "priceToSales": 216.99,
+        "priceToBook": 4.8
+      },
+      "ownership": {
+        "insiderHolding": 16.54,
+        "institutionalHolding": 52.3,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1728.0,
+        "52WeekLow": 982.4,
+        "sma50": 1111.22,
+        "sma200": 1304.48,
+        "momentum3M": -2.43,
+        "momentum6M": -16.06
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "AXISBANK.NS",
       "name": "Axis Bank",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1266.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 12.16,
+        "revenueGrowth3Y": 12.16,
+        "epsGrowth5Y": 21.8,
+        "profitMargin": 36.03,
+        "roe": 13.35,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 14.25,
+        "forwardPE": 10.01,
+        "peg": 0.54,
+        "priceToSales": 5.11,
+        "priceToBook": 1.76
+      },
+      "ownership": {
+        "insiderHolding": 3.33,
+        "institutionalHolding": 71.18,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1418.3,
+        "52WeekLow": 1048.7,
+        "sma50": 1269.17,
+        "sma200": 1288.88,
+        "momentum3M": -3.89,
+        "momentum6M": -3.7
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "KOTAKBANK.NS",
       "name": "Kotak Mahindra Bank",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 422.1,
+      "fundamentals": {
+        "revenueGrowth5Y": 13.48,
+        "revenueGrowth3Y": 13.48,
+        "epsGrowth5Y": 22.5,
+        "profitMargin": 28.47,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 20.67,
+        "forwardPE": 16.52,
+        "peg": 0.94,
+        "priceToSales": 5.89,
+        "priceToBook": 2.32
+      },
+      "ownership": {
+        "insiderHolding": 30.53,
+        "institutionalHolding": 47.42,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 453.2,
+        "52WeekLow": 345.5,
+        "sma50": 395.14,
+        "sma200": 400.55,
+        "momentum3M": 7.31,
+        "momentum6M": 7.72
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "M&M.NS",
       "name": "Mahindra & Mahindra",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 3160.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 17.5,
+        "revenueGrowth3Y": 17.5,
+        "epsGrowth5Y": 33.4,
+        "profitMargin": 8.61,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 125.28,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 19.24,
+        "forwardPE": 20.06,
+        "peg": 1.26,
+        "priceToSales": 1.77,
+        "priceToBook": 3.79
+      },
+      "ownership": {
+        "insiderHolding": 25.21,
+        "institutionalHolding": 53.22,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 3839.9,
+        "52WeekLow": 2896.0,
+        "sma50": 3277.27,
+        "sma200": 3328.4,
+        "momentum3M": 5.3,
+        "momentum6M": -4.06
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "ITC.NS",
       "name": "ITC",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 263.5,
+      "fundamentals": {
+        "revenueGrowth5Y": 3.65,
+        "revenueGrowth3Y": 3.65,
+        "epsGrowth5Y": -16.0,
+        "profitMargin": 25.94,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 3.29,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 16.62,
+        "forwardPE": 15.65,
+        "peg": 1.78,
+        "priceToSales": 4.32,
+        "priceToBook": 4.55
+      },
+      "ownership": {
+        "insiderHolding": 29.49,
+        "institutionalHolding": 52.16,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 426.4,
+        "52WeekLow": 255.5,
+        "sma50": 278.17,
+        "sma200": 314.16,
+        "momentum3M": -6.69,
+        "momentum6M": -14.74
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "TCS.NS",
       "name": "Tata Consultancy Services",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 2270.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 5.8,
+        "revenueGrowth3Y": 5.8,
+        "epsGrowth5Y": 4.6,
+        "profitMargin": 18.05,
+        "roe": 47.74,
+        "roic": 0,
+        "debtToEquity": 10.21,
+        "freeCashFlow": 397165002752.0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 16.5,
+        "forwardPE": 13.97,
+        "peg": 3.01,
+        "priceToSales": 0,
+        "priceToBook": 7.49
+      },
+      "ownership": {
+        "insiderHolding": 71.79,
+        "institutionalHolding": 17.6,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 3350.0,
+        "52WeekLow": 1976.8,
+        "sma50": 2274.5,
+        "sma200": 2592.77,
+        "momentum3M": 6.29,
+        "momentum6M": -9.67
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "BAJFINANCE.NS",
       "name": "Bajaj Finance",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1060.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 22.58,
+        "revenueGrowth3Y": 22.58,
+        "epsGrowth5Y": 27.2,
+        "profitMargin": 43.49,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 314.83,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 32.56,
+        "forwardPE": 20.98,
+        "peg": 0,
+        "priceToSales": 14.13,
+        "priceToBook": 5.78
+      },
+      "ownership": {
+        "insiderHolding": 56.53,
+        "institutionalHolding": 27.17,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1176.4,
+        "52WeekLow": 787.9,
+        "sma50": 1065.31,
+        "sma200": 976.86,
+        "momentum3M": 21.76,
+        "momentum6M": 12.79
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "HINDUNILVR.NS",
       "name": "Hindustan Unilever",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1960.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 2.31,
+        "revenueGrowth3Y": 2.31,
+        "epsGrowth5Y": 8.4,
+        "profitMargin": 22.64,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 3.02,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 43.57,
+        "forwardPE": 36.74,
+        "peg": 3.69,
+        "priceToSales": 6.97,
+        "priceToBook": 9.45
+      },
+      "ownership": {
+        "insiderHolding": 62.27,
+        "institutionalHolding": 20.8,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 2667.2,
+        "52WeekLow": 1950.4,
+        "sma50": 2087.55,
+        "sma200": 2224.26,
+        "momentum3M": -8.4,
+        "momentum6M": -10.51
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "MARUTI.NS",
       "name": "Maruti Suzuki India",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 12760.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 15.9,
+        "revenueGrowth3Y": 15.9,
+        "epsGrowth5Y": -9.1,
+        "profitMargin": 7.27,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 0.1,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 28.0,
+        "forwardPE": 21.06,
+        "peg": 0.77,
+        "priceToSales": 2.03,
+        "priceToBook": 3.74
+      },
+      "ownership": {
+        "insiderHolding": 61.59,
+        "institutionalHolding": 26.04,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 17370.0,
+        "52WeekLow": 12201.0,
+        "sma50": 13752.78,
+        "sma200": 14269.61,
+        "momentum3M": -2.58,
+        "momentum6M": -7.98
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "SUNPHARMA.NS",
       "name": "Sun Pharmaceutical",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1895.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 10.39,
+        "revenueGrowth3Y": 10.39,
+        "epsGrowth5Y": 27.4,
+        "profitMargin": 20.19,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 5.52,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 37.66,
+        "forwardPE": 29.36,
+        "peg": 1.04,
+        "priceToSales": 7.59,
+        "priceToBook": 5.44
+      },
+      "ownership": {
+        "insiderHolding": 55.61,
+        "institutionalHolding": 31.14,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 2046.9,
+        "52WeekLow": 1548.0,
+        "sma50": 1930.19,
+        "sma200": 1804.38,
+        "momentum3M": 5.62,
+        "momentum6M": 4.53
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "NTPC.NS",
       "name": "NTPC",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 332.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 1.87,
+        "revenueGrowth3Y": 1.87,
+        "epsGrowth5Y": -1.6,
+        "profitMargin": 14.53,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 118.13,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 10.15,
+        "forwardPE": 11.79,
+        "peg": 0,
+        "priceToSales": 1.68,
+        "priceToBook": 1.59
+      },
+      "ownership": {
+        "insiderHolding": 54.0,
+        "institutionalHolding": 38.44,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 414.4,
+        "52WeekLow": 315.55,
+        "sma50": 343.11,
+        "sma200": 358.17,
+        "momentum3M": -5.64,
+        "momentum6M": -12.01
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "TITAN.NS",
       "name": "Titan Company",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 4995.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 29.24,
+        "revenueGrowth3Y": 29.24,
+        "epsGrowth5Y": 62.8,
+        "profitMargin": 6.23,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 195.0,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 77.13,
+        "forwardPE": 56.17,
+        "peg": 0,
+        "priceToSales": 4.8,
+        "priceToBook": 28.24
+      },
+      "ownership": {
+        "insiderHolding": 58.7,
+        "institutionalHolding": 21.98,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 5186.7,
+        "52WeekLow": 3303.1,
+        "sma50": 4852.1,
+        "sma200": 4326.36,
+        "momentum3M": 24.09,
+        "momentum6M": 18.36
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "ETERNAL.NS",
       "name": "Eternal",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 320.8,
+      "fundamentals": {
+        "revenueGrowth5Y": 97.7,
+        "revenueGrowth3Y": 97.7,
+        "epsGrowth5Y": 233.3,
+        "profitMargin": 0.64,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 14.83,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 712.89,
+        "forwardPE": 85.29,
+        "peg": 0,
+        "priceToSales": 4.38,
+        "priceToBook": 9.48
+      },
+      "ownership": {
+        "insiderHolding": 23.4,
+        "institutionalHolding": 51.63,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 368.45,
+        "52WeekLow": 212.6,
+        "sma50": 305.74,
+        "sma200": 273.69,
+        "momentum3M": 36.39,
+        "momentum6M": 41.56
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "TATASTEEL.NS",
       "name": "Tata Steel",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 185.61,
+      "fundamentals": {
+        "revenueGrowth5Y": -1.59,
+        "revenueGrowth3Y": -1.59,
+        "epsGrowth5Y": 11.4,
+        "profitMargin": 4.6,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 89.02,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 21.0,
+        "forwardPE": 10.37,
+        "peg": 0,
+        "priceToSales": 0.97,
+        "priceToBook": 2.27
+      },
+      "ownership": {
+        "insiderHolding": 35.4,
+        "institutionalHolding": 33.93,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 224.4,
+        "52WeekLow": 160.06,
+        "sma50": 186.82,
+        "sma200": 192.91,
+        "momentum3M": -6.24,
+        "momentum6M": -4.82
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "BEL.NS",
       "name": "Bharat Electronics",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 404.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 15.47,
+        "revenueGrowth3Y": 15.47,
+        "epsGrowth5Y": 8.3,
+        "profitMargin": 21.4,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 0.27,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 48.15,
+        "forwardPE": 35.8,
+        "peg": 0,
+        "priceToSales": 10.28,
+        "priceToBook": 12.31
+      },
+      "ownership": {
+        "insiderHolding": 53.42,
+        "institutionalHolding": 28.84,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 473.45,
+        "52WeekLow": 369.9,
+        "sma50": 406.88,
+        "sma200": 419.0,
+        "momentum3M": 0.42,
+        "momentum6M": -12.81
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "SHRIRAMFIN.NS",
       "name": "Shriram Finance",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1037.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 13.92,
+        "revenueGrowth3Y": 13.92,
+        "epsGrowth5Y": 29.5,
+        "profitMargin": 50.01,
+        "roe": 18.5,
+        "roic": 0,
+        "debtToEquity": 276.21,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 18.31,
+        "forwardPE": 11.68,
+        "peg": 0,
+        "priceToSales": 10.78,
+        "priceToBook": 2.96
+      },
+      "ownership": {
+        "insiderHolding": 22.17,
+        "institutionalHolding": 59.49,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1153.7,
+        "52WeekLow": 590.85,
+        "sma50": 1073.4,
+        "sma200": 994.55,
+        "momentum3M": 17.01,
+        "momentum6M": -2.44
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "ULTRACEMCO.NS",
       "name": "UltraTech Cement",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 11175.0,
+      "fundamentals": {
+        "revenueGrowth5Y": 11.92,
+        "revenueGrowth3Y": 11.92,
+        "epsGrowth5Y": 16.8,
+        "profitMargin": 9.29,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 29.43,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 38.57,
+        "forwardPE": 25.86,
+        "peg": 1.22,
+        "priceToSales": 3.58,
+        "priceToBook": 4.29
+      },
+      "ownership": {
+        "insiderHolding": 61.94,
+        "institutionalHolding": 22.31,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 13110.0,
+        "52WeekLow": 10325.0,
+        "sma50": 11698.46,
+        "sma200": 11762.95,
+        "momentum3M": 3.19,
+        "momentum6M": -4.11
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "HCLTECH.NS",
       "name": "HCL Technologies",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 1282.8,
+      "fundamentals": {
+        "revenueGrowth5Y": 8.65,
+        "revenueGrowth3Y": 8.65,
+        "epsGrowth5Y": 8.4,
+        "profitMargin": 12.97,
+        "roe": 24.07,
+        "roic": 0,
+        "debtToEquity": 7.06,
+        "freeCashFlow": 1812999936.0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 19.96,
+        "forwardPE": 16.01,
+        "peg": 2.39,
+        "priceToSales": 235.02,
+        "priceToBook": 4.69
+      },
+      "ownership": {
+        "insiderHolding": 62.79,
+        "institutionalHolding": 28.34,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 1780.1,
+        "52WeekLow": 1030.0,
+        "sma50": 1270.1,
+        "sma200": 1381.77,
+        "momentum3M": 15.55,
+        "momentum6M": -5.78
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     },
     {
       "ticker": "POWERGRID.NS",
       "name": "Power Grid Corporation of India",
-      "type": "stock"
+      "type": "stock",
+      "currency": "INR",
+      "price": 266.45,
+      "fundamentals": {
+        "revenueGrowth5Y": 0.57,
+        "revenueGrowth3Y": 0.57,
+        "epsGrowth5Y": -0.8,
+        "profitMargin": 33.8,
+        "roe": 0,
+        "roic": 0,
+        "debtToEquity": 150.81,
+        "freeCashFlow": 0,
+        "fcfGrowth5Y": 0.0
+      },
+      "valuation": {
+        "pe": 13.04,
+        "forwardPE": 13.73,
+        "peg": 0,
+        "priceToSales": 5.27,
+        "priceToBook": 2.47
+      },
+      "ownership": {
+        "insiderHolding": 52.91,
+        "institutionalHolding": 36.41,
+        "recentBigInvestors": []
+      },
+      "technical": {
+        "52WeekHigh": 324.95,
+        "52WeekLow": 250.0,
+        "sma50": 277.03,
+        "sma200": 284.73,
+        "momentum3M": -7.05,
+        "momentum6M": -10.78
+      },
+      "analysis": {
+        "fairValue": 0,
+        "buyPrice": 0,
+        "strongBuyPrice": 0,
+        "marginOfSafety": 0
+      }
     }
   ],
   "etfs": [],
