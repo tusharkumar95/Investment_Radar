@@ -8,17 +8,37 @@ import yfinance as yf
 DATA_DIR = Path("data")
 
 
+# ==========================================
+# HELPERS
+# ==========================================
+
 def safe_number(value, default=0):
     try:
         if value is None:
             return default
-        return round(float(value), 2)
-    except:
+
+        number = float(value)
+
+        if number != number:
+            return default
+
+        return round(number, 2)
+
+    except Exception:
         return default
 
 
+def percent(value):
+    if value is None:
+        return 0
+
+    return safe_number(float(value) * 100)
+
+
 def get_growth(financials, row_name, years=5):
+
     try:
+
         if row_name not in financials.index:
             return 0
 
@@ -30,57 +50,143 @@ def get_growth(financials, row_name, years=5):
         newest = float(row.iloc[0])
         oldest = float(row.iloc[-1])
 
-        if oldest <= 0 or newest <= 0:
+        if newest <= 0 or oldest <= 0:
             return 0
 
         periods = min(len(row) - 1, years)
 
-        growth = ((newest / float(row.iloc[-1])) ** (1 / periods) - 1) * 100
+        growth = (
+            (newest / oldest) ** (1 / periods) - 1
+        ) * 100
 
-        return round(growth, 2)
+        return safe_number(growth)
 
-    except:
+    except Exception:
         return 0
 
 
-def get_stock_data(ticker_symbol, name):
+def get_fcf_growth(financials):
+
+    try:
+
+        if "Free Cash Flow" not in financials.index:
+            return 0
+
+        row = financials.loc["Free Cash Flow"].dropna()
+
+        if len(row) < 2:
+            return 0
+
+        newest = float(row.iloc[0])
+        oldest = float(row.iloc[-1])
+
+        if newest <= 0 or oldest <= 0:
+            return 0
+
+        periods = len(row) - 1
+
+        growth = (
+            (newest / oldest) ** (1 / periods) - 1
+        ) * 100
+
+        return safe_number(growth)
+
+    except Exception:
+        return 0
+
+
+# ==========================================
+# STOCK DATA
+# ==========================================
+
+def get_stock_data(ticker_symbol, name, currency):
+
+    print(f"Updating {ticker_symbol}...")
 
     ticker = yf.Ticker(ticker_symbol)
 
     info = ticker.info
 
-    history = ticker.history(period="1y")
+    history = ticker.history(
+        period="1y",
+        auto_adjust=False
+    )
 
     if history.empty:
-        raise Exception(f"No market data returned for {ticker_symbol}")
+        raise Exception(
+            f"No market data returned for {ticker_symbol}"
+        )
 
-    current_price = float(history["Close"].iloc[-1])
+    current_price = float(
+        history["Close"].iloc[-1]
+    )
 
-    high_52 = float(history["High"].max())
-    low_52 = float(history["Low"].min())
+    high_52 = float(
+        history["High"].max()
+    )
 
-    # Moving averages
-    history["SMA50"] = history["Close"].rolling(50).mean()
-    history["SMA200"] = history["Close"].rolling(200).mean()
+    low_52 = float(
+        history["Low"].min()
+    )
+
+
+    # ==========================================
+    # MOVING AVERAGES
+    # ==========================================
+
+    history["SMA50"] = (
+        history["Close"]
+        .rolling(50)
+        .mean()
+    )
+
+    history["SMA200"] = (
+        history["Close"]
+        .rolling(200)
+        .mean()
+    )
 
     sma50 = history["SMA50"].iloc[-1]
     sma200 = history["SMA200"].iloc[-1]
 
-    # Momentum
+
+    # ==========================================
+    # MOMENTUM
+    # ==========================================
+
     momentum_3m = 0
     momentum_6m = 0
 
     if len(history) >= 63:
-        momentum_3m = (
-            (current_price / float(history["Close"].iloc[-63])) - 1
-        ) * 100
+
+        old_price = float(
+            history["Close"].iloc[-63]
+        )
+
+        if old_price > 0:
+
+            momentum_3m = (
+                current_price / old_price - 1
+            ) * 100
+
 
     if len(history) >= 126:
-        momentum_6m = (
-            (current_price / float(history["Close"].iloc[-126])) - 1
-        ) * 100
 
-    # Financial statements
+        old_price = float(
+            history["Close"].iloc[-126]
+        )
+
+        if old_price > 0:
+
+            momentum_6m = (
+                current_price / old_price - 1
+            ) * 100
+
+
+    # ==========================================
+    # FINANCIAL STATEMENTS
+    # ==========================================
+
     financials = ticker.financials
 
     revenue_growth_5y = get_growth(
@@ -89,123 +195,379 @@ def get_stock_data(ticker_symbol, name):
         5
     )
 
-    # Valuation
+    revenue_growth_3y = get_growth(
+        financials,
+        "Total Revenue",
+        3
+    )
+
+    fcf_growth_5y = get_fcf_growth(
+        financials
+    )
+
+
+    # ==========================================
+    # VALUATION
+    # ==========================================
+
     pe = info.get("trailingPE")
+
     forward_pe = info.get("forwardPE")
+
     peg = info.get("pegRatio")
 
-    price_to_sales = info.get("priceToSalesTrailing12Months")
-    price_to_book = info.get("priceToBook")
+    price_to_sales = (
+        info.get(
+            "priceToSalesTrailing12Months"
+        )
+    )
 
-    # Fundamentals
-    profit_margin = info.get("profitMargins")
-    roe = info.get("returnOnEquity")
-    debt_to_equity = info.get("debtToEquity")
+    price_to_book = info.get(
+        "priceToBook"
+    )
 
-    # Convert ratios to percentages where appropriate
-    if profit_margin is not None:
-        profit_margin = profit_margin * 100
 
-    if roe is not None:
-        roe = roe * 100
+    # ==========================================
+    # FUNDAMENTALS
+    # ==========================================
+
+    profit_margin = info.get(
+        "profitMargins"
+    )
+
+    roe = info.get(
+        "returnOnEquity"
+    )
+
+    debt_to_equity = info.get(
+        "debtToEquity"
+    )
+
+    free_cash_flow = info.get(
+        "freeCashflow"
+    )
+
+
+    # ==========================================
+    # OWNERSHIP
+    # ==========================================
+
+    insider_holding = info.get(
+        "heldPercentInsiders"
+    )
+
+    institutional_holding = info.get(
+        "heldPercentInstitutions"
+    )
+
+
+    # ==========================================
+    # RESULT
+    # ==========================================
 
     result = {
+
         "ticker": ticker_symbol,
+
         "name": name,
+
         "type": "stock",
 
-        "price": safe_number(current_price),
+        "currency": currency,
+
+        "price": safe_number(
+            current_price
+        ),
+
 
         "fundamentals": {
-            "revenueGrowth5Y": safe_number(revenue_growth_5y),
-            "revenueGrowth3Y": safe_number(
-                info.get("revenueGrowth", 0) * 100
-                if info.get("revenueGrowth") is not None
-                else 0
-            ),
-            "epsGrowth5Y": safe_number(
-                info.get("earningsGrowth", 0) * 100
-                if info.get("earningsGrowth") is not None
-                else 0
-            ),
-            "profitMargin": safe_number(profit_margin),
-            "roe": safe_number(roe),
+
+            "revenueGrowth5Y":
+                safe_number(
+                    revenue_growth_5y
+                ),
+
+            "revenueGrowth3Y":
+                safe_number(
+                    revenue_growth_3y
+                ),
+
+            "epsGrowth5Y":
+                percent(
+                    info.get(
+                        "earningsGrowth"
+                    )
+                ),
+
+            "profitMargin":
+                percent(
+                    profit_margin
+                ),
+
+            "roe":
+                percent(
+                    roe
+                ),
+
             "roic": 0,
-            "debtToEquity": safe_number(debt_to_equity),
-            "freeCashFlow": safe_number(
-                info.get("freeCashflow")
-            ),
-            "fcfGrowth5Y": 0
+
+            "debtToEquity":
+                safe_number(
+                    debt_to_equity
+                ),
+
+            "freeCashFlow":
+                safe_number(
+                    free_cash_flow
+                ),
+
+            "fcfGrowth5Y":
+                safe_number(
+                    fcf_growth_5y
+                )
         },
+
 
         "valuation": {
-            "pe": safe_number(pe),
-            "forwardPE": safe_number(forward_pe),
-            "peg": safe_number(peg),
-            "priceToSales": safe_number(price_to_sales),
-            "priceToBook": safe_number(price_to_book)
+
+            "pe":
+                safe_number(pe),
+
+            "forwardPE":
+                safe_number(forward_pe),
+
+            "peg":
+                safe_number(peg),
+
+            "priceToSales":
+                safe_number(
+                    price_to_sales
+                ),
+
+            "priceToBook":
+                safe_number(
+                    price_to_book
+                )
         },
 
+
         "ownership": {
-            "insiderHolding": safe_number(
-                (info.get("heldPercentInsiders", 0) or 0) * 100
-            ),
-            "institutionalHolding": safe_number(
-                (info.get("heldPercentInstitutions", 0) or 0) * 100
-            ),
+
+            "insiderHolding":
+                percent(
+                    insider_holding
+                ),
+
+            "institutionalHolding":
+                percent(
+                    institutional_holding
+                ),
+
             "recentBigInvestors": []
         },
 
+
         "technical": {
-            "52WeekHigh": safe_number(high_52),
-            "52WeekLow": safe_number(low_52),
-            "sma50": safe_number(sma50),
-            "sma200": safe_number(sma200),
-            "momentum3M": safe_number(momentum_3m),
-            "momentum6M": safe_number(momentum_6m)
+
+            "52WeekHigh":
+                safe_number(
+                    high_52
+                ),
+
+            "52WeekLow":
+                safe_number(
+                    low_52
+                ),
+
+            "sma50":
+                safe_number(
+                    sma50
+                ),
+
+            "sma200":
+                safe_number(
+                    sma200
+                ),
+
+            "momentum3M":
+                safe_number(
+                    momentum_3m
+                ),
+
+            "momentum6M":
+                safe_number(
+                    momentum_6m
+                )
         },
 
+
         "analysis": {
+
             "fairValue": 0,
+
             "buyPrice": 0,
+
             "strongBuyPrice": 0,
+
             "marginOfSafety": 0
         }
+
     }
 
     return result
 
 
-def main():
+# ==========================================
+# MARKET UPDATE
+# ==========================================
 
-    shopify = get_stock_data(
-        "SHOP.TO",
-        "Shopify"
+def update_market(
+    filename,
+    market,
+    currency
+):
+
+    file_path = DATA_DIR / filename
+
+    print(
+        f"\nUpdating {market}..."
     )
 
-    canada_data = {
-        "market": "Canada",
-        "currency": "CAD",
-        "lastUpdated": datetime.now(timezone.utc).isoformat(),
+    with open(
+        file_path,
+        "r",
+        encoding="utf-8"
+    ) as file:
 
-        "stocks": [
-            shopify
-        ],
+        existing_data = json.load(file)
 
-        "etfs": [],
 
-        "mutualFunds": []
-    }
+    stocks = existing_data.get(
+        "stocks",
+        []
+    )
 
-    with open(DATA_DIR / "canada.json", "w") as file:
-        json.dump(
-            canada_data,
-            file,
-            indent=2
+
+    updated_stocks = []
+
+
+    for stock in stocks:
+
+        ticker = stock.get(
+            "ticker"
         )
 
-    print("Investment Radar data updated successfully.")
+        name = stock.get(
+            "name",
+            ticker
+        )
+
+        if not ticker:
+            continue
+
+
+        try:
+
+            updated_stock = get_stock_data(
+                ticker,
+                name,
+                currency
+            )
+
+            updated_stocks.append(
+                updated_stock
+            )
+
+            print(
+                f"✓ {ticker}"
+            )
+
+        except Exception as error:
+
+            print(
+                f"✗ {ticker}: {error}"
+            )
+
+            # Preserve existing data if
+            # the live source fails.
+
+            updated_stocks.append(
+                stock
+            )
+
+
+    output = {
+
+        "market": market,
+
+        "currency": currency,
+
+        "lastUpdated":
+            datetime.now(
+                timezone.utc
+            ).isoformat(),
+
+        "stocks":
+            updated_stocks,
+
+        "etfs":
+            existing_data.get(
+                "etfs",
+                []
+            ),
+
+        "mutualFunds":
+            existing_data.get(
+                "mutualFunds",
+                []
+            )
+    }
+
+
+    with open(
+        file_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            output,
+            file,
+            indent=2,
+            ensure_ascii=False
+        )
+
+
+    print(
+        f"{market} updated: "
+        f"{len(updated_stocks)} stocks"
+    )
+
+
+# ==========================================
+# MAIN
+# ==========================================
+
+def main():
+
+    update_market(
+        "canada.json",
+        "Canada",
+        "CAD"
+    )
+
+    update_market(
+        "india.json",
+        "India",
+        "INR"
+    )
+
+    print(
+        "\nInvestment Radar data "
+        "updated successfully."
+    )
 
 
 if __name__ == "__main__":
+
     main()
