@@ -227,12 +227,21 @@ function scoreInvestment(
 const psychology =
     psychologyAnalysis(investment);
 
+    const valuation =
+    calculateValuation(investment);
+
 return {
     ...investment,
+
     score: score,
+
     verdict: getVerdict(score),
+
     dataQuality: dataQuality,
-    psychology: psychology
+
+    psychology: psychology,
+
+    calculatedValuation: valuation
 };
 
         
