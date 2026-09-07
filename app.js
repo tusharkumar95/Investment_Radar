@@ -222,24 +222,20 @@ function scoreInvestment(
 
 
     const dataQuality =
-        getDataQualityReport(
-            investment
-        );
+    getDataQualityReport(investment);
 
+const psychology =
+    psychologyAnalysis(investment);
 
-    return {
+return {
+    ...investment,
+    score: score,
+    verdict: getVerdict(score),
+    dataQuality: dataQuality,
+    psychology: psychology
+};
 
-        ...investment,
-
-        score: score,
-
-        verdict:
-            getVerdict(score),
-
-        dataQuality:
-            dataQuality
-
-    };
+        
 
 }
 
