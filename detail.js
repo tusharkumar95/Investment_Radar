@@ -3,6 +3,111 @@
  * Investment Detail View
  */
 
+function displayValue(value, suffix = "") {
+    if (value === null || value === undefined || value === "") {
+        return "—";
+    }
+
+    if (typeof value === "number" && !Number.isFinite(value)) {
+        return "—";
+    }
+
+    return `${value}${suffix}`;
+}
+
+function formatNumber(value, decimals = 2) {
+    if (value === null || value === undefined || value === "") {
+        return "—";
+    }
+
+    const n = Number(value);
+
+    if (!Number.isFinite(n)) {
+        return "—";
+    }
+
+    return n.toFixed(decimals);
+}
+
+function formatMoney(value) {
+    if (value === null || value === undefined || value === "") {
+        return "—";
+    }
+
+    const n = Number(value);
+
+    if (!Number.isFinite(n)) {
+        return "—";
+    }
+
+    return n.toFixed(2);
+}
+
+function getValuationStatusClass(status) {
+    if (!status) return "yellow";
+
+    const text = String(status).toLowerCase();
+
+    if (
+        text.includes("exceptional") ||
+        text.includes("attractive") ||
+        text.includes("undervalued")
+    ) {
+        return "green";
+    }
+
+    if (
+        text.includes("expensive") ||
+        text.includes("overvalued")
+    ) {
+        return "red";
+    }
+
+    return "yellow";
+}
+
+function buildScoreBar(label, score) {
+
+    const value = Number(score);
+
+    if (!Number.isFinite(value)) {
+        return "";
+    }
+
+    const safeScore = Math.max(0, Math.min(100, value));
+
+    return `
+        <div style="margin-bottom:14px;">
+
+            <div style="
+                display:flex;
+                justify-content:space-between;
+                margin-bottom:5px;
+            ">
+                <span>${label}</span>
+                <strong>${Math.round(safeScore)}/100</strong>
+            </div>
+
+            <div style="
+                width:100%;
+                height:8px;
+                background:#e5e7eb;
+                border-radius:10px;
+                overflow:hidden;
+            ">
+                <div style="
+                    width:${safeScore}%;
+                    height:100%;
+                    background:currentColor;
+                    border-radius:10px;
+                "></div>
+            </div>
+
+        </div>
+    `;
+}
+
+
 window.openInvestmentByTicker = function(ticker) {
 
     const data = marketData[currentMarket];
@@ -18,14 +123,26 @@ window.openInvestmentByTicker = function(ticker) {
         return;
     }
 
-    const scored =
-        scoreInvestment(investment);
+
+    /*
+     * Attach valuation and psychology analysis
+     * to a local enriched version of the investment.
+     */
 
     const valuation =
         calculateValuation(investment);
 
+    const enrichedInvestment = {
+        ...investment,
+        analysis: valuation
+    };
+
     const psychology =
-        psychologyAnalysis(investment);
+        psychologyAnalysis(enrichedInvestment);
+
+    const scored =
+        scoreInvestment(enrichedInvestment);
+
 
     const radar =
         document.getElementById("radarView");
@@ -34,8 +151,12 @@ window.openInvestmentByTicker = function(ticker) {
         document.getElementById("detailView");
 
 
-    radar.style.display = "none";
+    if (!radar || !detail) {
+        return;
+    }
 
+
+    radar.style.display = "none";
     detail.style.display = "block";
 
 
@@ -43,6 +164,79 @@ window.openInvestmentByTicker = function(ticker) {
     const v = investment.valuation || {};
     const o = investment.ownership || {};
     const t = investment.technical || {};
+
+
+    const fairLow =
+        valuation.fairValueLow ??
+        valuation.fairValueLower ??
+        null;
+
+    const fairHigh =
+        valuation.fairValueHigh ??
+        valuation.fairValueUpper ??
+        null;
+
+    const fairValue =
+        valuation.fairValue ??
+        null;
+
+    const buyPrice =
+        valuation.buyPrice ??
+        null;
+
+    const strongBuyPrice =
+        valuation.strongBuyPrice ??
+        null;
+
+    const marginOfSafety =
+        valuation.marginOfSafety ??
+        null;
+
+    const valuationStatus =
+        valuation.valuationStatus ??
+        valuation.status ??
+        "—";
+
+
+    const qualityScore =
+        psychology.qualityScore ?? 0;
+
+    const valuationScore =
+        psychology.valuationScore ?? 0;
+
+    const riskScore =
+        psychology.riskScore ?? 0;
+
+    const disciplineScore =
+        psychology.disciplineScore ?? 0;
+
+    const ownershipScore =
+        psychology.ownershipScore ?? 0;
+
+
+    /*
+     * Determine whether current price is above/below
+     * the calculated fair-value range.
+     */
+
+    let pricePosition = "—";
+
+    const currentPrice = Number(investment.price);
+
+    if (
+        Number.isFinite(currentPrice) &&
+        Number.isFinite(Number(fairLow)) &&
+        Number.isFinite(Number(fairHigh))
+    ) {
+
+        if (currentPrice < Number(fairLow)) {
+            pricePosition = "Below Fair Value";
+        } else if (currentPrice > Number(fairHigh)) {
+            pricePosition = "Above Fair Value";
+        } else {
+            pricePosition = "Within Fair Value";
+        }
+    }
 
 
     detail.innerHTML = `
@@ -55,9 +249,7 @@ window.openInvestmentByTicker = function(ticker) {
         </button>
 
 
-        <!-- ==============================
-             HEADER
-        =============================== -->
+        <!-- HEADER -->
 
         <section class="detail-header">
 
@@ -81,7 +273,7 @@ window.openInvestmentByTicker = function(ticker) {
             <div class="detail-score">
 
                 <div class="big-score">
-                    ${scored.score}
+                    ${Math.round(scored.score)}
                 </div>
 
                 <div>
@@ -93,9 +285,7 @@ window.openInvestmentByTicker = function(ticker) {
         </section>
 
 
-        <!-- ==============================
-             INVESTMENT DECISION
-        =============================== -->
+        <!-- INVESTMENT DECISION -->
 
         <section class="detail-section">
 
@@ -112,7 +302,20 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${scored.score}
+                        ${Math.round(scored.score)}/100
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Verdict
+                    </span>
+
+                    <span class="metric-value">
+                        ${scored.verdict}
                     </span>
 
                 </div>
@@ -125,7 +328,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.score}
+                        ${Math.round(psychology.score)}/100
                     </span>
 
                 </div>
@@ -134,24 +337,15 @@ window.openInvestmentByTicker = function(ticker) {
                 <div class="metric">
 
                     <span class="metric-label">
-                        Psychology Decision
+                        Data Confidence
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.decision}
-                    </span>
-
-                </div>
-
-
-                <div class="metric">
-
-                    <span class="metric-label">
-                        Business Quality
-                    </span>
-
-                    <span class="metric-value">
-                        ${psychology.qualityScore}/100
+                        ${
+                            scored.dataQuality
+                            ? Math.round(scored.dataQuality.confidence)
+                            : "—"
+                        }%
                     </span>
 
                 </div>
@@ -160,17 +354,47 @@ window.openInvestmentByTicker = function(ticker) {
 
 
             <p class="investment-thesis">
+                ${psychology.reason || "No investment thesis available yet."}
+            </p>
 
-                ${psychology.reason}
+        </section>
+
+
+        <!-- WHY THIS SCORED -->
+
+        <section class="detail-section">
+
+            <div class="section-title">
+                Why This Investment Scored This Way
+            </div>
+
+
+            ${buildScoreBar("Business Quality", qualityScore)}
+
+            ${buildScoreBar("Valuation", valuationScore)}
+
+            ${buildScoreBar(
+                "Risk Management",
+                100 - Number(riskScore || 0)
+            )}
+
+            ${buildScoreBar("Ownership", ownershipScore)}
+
+            ${buildScoreBar("Discipline", disciplineScore)}
+
+
+            <p class="investment-thesis">
+
+                The score combines business quality,
+                valuation, growth, market behaviour,
+                ownership, income and investment psychology.
 
             </p>
 
         </section>
 
 
-        <!-- ==============================
-             PRICE & VALUATION
-        =============================== -->
+        <!-- PRICE & VALUATION -->
 
         <section class="detail-section">
 
@@ -188,7 +412,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${investment.price || "—"}
+                        ${formatMoney(investment.price)}
                     </span>
 
                 </div>
@@ -197,11 +421,11 @@ window.openInvestmentByTicker = function(ticker) {
                 <div class="metric">
 
                     <span class="metric-label">
-                        Estimated Fair Value
+                        Valuation Status
                     </span>
 
                     <span class="metric-value">
-                        ${valuation.fairValue || "—"}
+                        ${valuationStatus}
                     </span>
 
                 </div>
@@ -210,11 +434,11 @@ window.openInvestmentByTicker = function(ticker) {
                 <div class="metric">
 
                     <span class="metric-label">
-                        Buy Below
+                        Price Position
                     </span>
 
                     <span class="metric-value">
-                        ${valuation.buyPrice || "—"}
+                        ${pricePosition}
                     </span>
 
                 </div>
@@ -223,11 +447,63 @@ window.openInvestmentByTicker = function(ticker) {
                 <div class="metric">
 
                     <span class="metric-label">
-                        Strong Buy Below
+                        Fair Value
                     </span>
 
                     <span class="metric-value">
-                        ${valuation.strongBuyPrice || "—"}
+                        ${formatMoney(fairValue)}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Fair Value — Low
+                    </span>
+
+                    <span class="metric-value">
+                        ${formatMoney(fairLow)}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Fair Value — High
+                    </span>
+
+                    <span class="metric-value">
+                        ${formatMoney(fairHigh)}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Attractive Entry
+                    </span>
+
+                    <span class="metric-value">
+                        ${formatMoney(buyPrice)}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Strong Opportunity
+                    </span>
+
+                    <span class="metric-value">
+                        ${formatMoney(strongBuyPrice)}
                     </span>
 
                 </div>
@@ -240,7 +516,12 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${valuation.marginOfSafety || "—"}%
+                        ${
+                            marginOfSafety === null ||
+                            marginOfSafety === undefined
+                            ? "—"
+                            : `${formatNumber(marginOfSafety)}%`
+                        }
                     </span>
 
                 </div>
@@ -253,7 +534,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${v.pe || "—"}
+                        ${displayValue(v.pe)}
                     </span>
 
                 </div>
@@ -266,7 +547,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${v.forwardPE || "—"}
+                        ${displayValue(v.forwardPE)}
                     </span>
 
                 </div>
@@ -279,7 +560,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${v.peg || "—"}
+                        ${displayValue(v.peg)}
                     </span>
 
                 </div>
@@ -292,7 +573,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${v.priceToSales || "—"}
+                        ${displayValue(v.priceToSales)}
                     </span>
 
                 </div>
@@ -305,7 +586,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${v.priceToBook || "—"}
+                        ${displayValue(v.priceToBook)}
                     </span>
 
                 </div>
@@ -315,9 +596,7 @@ window.openInvestmentByTicker = function(ticker) {
         </section>
 
 
-        <!-- ==============================
-             FUNDAMENTALS
-        =============================== -->
+        <!-- FUNDAMENTALS -->
 
         <section class="detail-section">
 
@@ -329,119 +608,92 @@ window.openInvestmentByTicker = function(ticker) {
             <div class="metric-grid">
 
                 <div class="metric">
-
                     <span class="metric-label">
                         Revenue Growth — 5Y
                     </span>
-
                     <span class="metric-value">
-                        ${f.revenueGrowth5Y || "—"}%
+                        ${displayValue(f.revenueGrowth5Y, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         Revenue Growth — 3Y
                     </span>
-
                     <span class="metric-value">
-                        ${f.revenueGrowth3Y || "—"}%
+                        ${displayValue(f.revenueGrowth3Y, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         EPS Growth — 5Y
                     </span>
-
                     <span class="metric-value">
-                        ${f.epsGrowth5Y || "—"}%
+                        ${displayValue(f.epsGrowth5Y, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         Profit Margin
                     </span>
-
                     <span class="metric-value">
-                        ${f.profitMargin || "—"}%
+                        ${displayValue(f.profitMargin, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         ROE
                     </span>
-
                     <span class="metric-value">
-                        ${f.roe || "—"}%
+                        ${displayValue(f.roe, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         ROIC
                     </span>
-
                     <span class="metric-value">
-                        ${f.roic || "—"}%
+                        ${displayValue(f.roic, "%")}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         Debt / Equity
                     </span>
-
                     <span class="metric-value">
-                        ${f.debtToEquity || "—"}
+                        ${displayValue(f.debtToEquity)}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         Free Cash Flow
                     </span>
-
                     <span class="metric-value">
-                        ${f.freeCashFlow || "—"}
+                        ${displayValue(f.freeCashFlow)}
                     </span>
-
                 </div>
 
 
                 <div class="metric">
-
                     <span class="metric-label">
                         FCF Growth — 5Y
                     </span>
-
                     <span class="metric-value">
-                        ${f.fcfGrowth5Y || "—"}%
+                        ${displayValue(f.fcfGrowth5Y, "%")}
                     </span>
-
                 </div>
 
             </div>
@@ -449,9 +701,7 @@ window.openInvestmentByTicker = function(ticker) {
         </section>
 
 
-        <!-- ==============================
-             OWNERSHIP
-        =============================== -->
+        <!-- OWNERSHIP -->
 
         <section class="detail-section">
 
@@ -469,7 +719,46 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${o.insiderHolding || "—"}%
+                        ${displayValue(o.insiderHolding, "%")}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Promoter Holding
+                    </span>
+
+                    <span class="metric-value">
+                        ${displayValue(o.promoterHolding, "%")}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Promoter Change
+                    </span>
+
+                    <span class="metric-value">
+                        ${displayValue(o.promoterChange, "%")}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Promoter Pledge
+                    </span>
+
+                    <span class="metric-value">
+                        ${displayValue(o.promoterPledge, "%")}
                     </span>
 
                 </div>
@@ -482,7 +771,20 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${o.institutionalHolding || "—"}%
+                        ${displayValue(o.institutionalHolding, "%")}
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Institutional Change
+                    </span>
+
+                    <span class="metric-value">
+                        ${displayValue(o.institutionalChange, "%")}
                     </span>
 
                 </div>
@@ -504,7 +806,7 @@ window.openInvestmentByTicker = function(ticker) {
                     o.recentBigInvestors &&
                     o.recentBigInvestors.length
                     ? o.recentBigInvestors.join(", ")
-                    : "No investor data available yet."
+                    : "No major investor activity data available yet."
                 }
 
             </p>
@@ -512,9 +814,7 @@ window.openInvestmentByTicker = function(ticker) {
         </section>
 
 
-        <!-- ==============================
-             MARKET BEHAVIOUR
-        =============================== -->
+        <!-- MARKET BEHAVIOUR -->
 
         <section class="detail-section">
 
@@ -532,7 +832,11 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t["52WeekHigh"] || "—"}
+                        ${
+                            t.high52Week ??
+                            t["52WeekHigh"] ??
+                            "—"
+                        }
                     </span>
 
                 </div>
@@ -545,7 +849,11 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t["52WeekLow"] || "—"}
+                        ${
+                            t.low52Week ??
+                            t["52WeekLow"] ??
+                            "—"
+                        }
                     </span>
 
                 </div>
@@ -558,7 +866,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t.sma50 || "—"}
+                        ${displayValue(t.sma50)}
                     </span>
 
                 </div>
@@ -571,7 +879,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t.sma200 || "—"}
+                        ${displayValue(t.sma200)}
                     </span>
 
                 </div>
@@ -584,7 +892,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t.momentum3M || "—"}%
+                        ${displayValue(t.momentum3M, "%")}
                     </span>
 
                 </div>
@@ -597,7 +905,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${t.momentum6M || "—"}%
+                        ${displayValue(t.momentum6M, "%")}
                     </span>
 
                 </div>
@@ -607,9 +915,7 @@ window.openInvestmentByTicker = function(ticker) {
         </section>
 
 
-        <!-- ==============================
-             PSYCHOLOGY BREAKDOWN
-        =============================== -->
+        <!-- PSYCHOLOGY -->
 
         <section class="detail-section">
 
@@ -627,7 +933,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.qualityScore}/100
+                        ${Math.round(qualityScore)}/100
                     </span>
 
                 </div>
@@ -640,7 +946,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.valuationScore}/100
+                        ${Math.round(valuationScore)}/100
                     </span>
 
                 </div>
@@ -653,7 +959,33 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.riskScore}/100
+                        ${Math.round(riskScore)}/100
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Ownership
+                    </span>
+
+                    <span class="metric-value">
+                        ${Math.round(ownershipScore)}/100
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <span class="metric-label">
+                        Discipline
+                    </span>
+
+                    <span class="metric-value">
+                        ${Math.round(disciplineScore)}/100
                     </span>
 
                 </div>
@@ -666,7 +998,7 @@ window.openInvestmentByTicker = function(ticker) {
                     </span>
 
                     <span class="metric-value">
-                        ${psychology.score}/100
+                        ${Math.round(psychology.score)}/100
                     </span>
 
                 </div>
@@ -676,9 +1008,75 @@ window.openInvestmentByTicker = function(ticker) {
 
             <p class="investment-thesis">
 
-                Quality + valuation + risk are evaluated
-                using principles inspired by long-term
-                value investing and behavioural finance.
+                ${psychology.reason ||
+                "Quality, valuation, risk, ownership and discipline are evaluated using the investment framework."}
+
+            </p>
+
+        </section>
+
+
+        <!-- STRENGTHS & RISKS -->
+
+        <section class="detail-section">
+
+            <div class="section-title">
+                Strengths & Risks
+            </div>
+
+
+            <p class="investment-thesis">
+
+                <strong>Strengths</strong><br>
+
+                ${
+                    psychology.qualityScore >= 70
+                    ? "Strong business-quality characteristics."
+                    : "Business quality is not yet a major strength based on available data."
+                }
+
+                <br><br>
+
+                ${
+                    valuationScore >= 70
+                    ? "Valuation currently provides a favourable setup."
+                    : "Valuation is not currently providing a strong margin of safety."
+                }
+
+                <br><br>
+
+                ${
+                    Number(f.revenueGrowth5Y) > 10
+                    ? "Healthy long-term revenue growth."
+                    : "Long-term revenue growth is currently moderate or unavailable."
+                }
+
+                <br><br>
+
+
+                <strong>Risks</strong><br>
+
+                ${
+                    riskScore >= 60
+                    ? "Risk indicators require attention."
+                    : "No major risk signal is currently dominating the psychology score."
+                }
+
+                <br><br>
+
+                ${
+                    Number(f.debtToEquity) > 1
+                    ? "Debt/equity is relatively elevated."
+                    : "Debt/equity does not currently appear elevated."
+                }
+
+                <br><br>
+
+                ${
+                    currentPrice > Number(fairHigh)
+                    ? "Current price is above the calculated fair-value range."
+                    : "Current price is not above the calculated fair-value range."
+                }
 
             </p>
 
@@ -690,10 +1088,18 @@ window.openInvestmentByTicker = function(ticker) {
 
 window.closeInvestmentDetail = function() {
 
-    document.getElementById("detailView").style.display =
-        "none";
+    const detail =
+        document.getElementById("detailView");
 
-    document.getElementById("radarView").style.display =
-        "block";
+    const radar =
+        document.getElementById("radarView");
+
+    if (detail) {
+        detail.style.display = "none";
+    }
+
+    if (radar) {
+        radar.style.display = "block";
+    }
 
 };
