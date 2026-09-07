@@ -1,10 +1,133 @@
 {
   "market": "India",
   "currency": "INR",
-
-  "stocks": [],
-
+  "stocks": [
+    {
+      "ticker": "HDFCBANK.NS",
+      "name": "HDFC Bank",
+      "type": "stock"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "name": "ICICI Bank",
+      "type": "stock"
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "name": "Reliance Industries",
+      "type": "stock"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "name": "Bharti Airtel",
+      "type": "stock"
+    },
+    {
+      "ticker": "LT.NS",
+      "name": "Larsen & Toubro",
+      "type": "stock"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "name": "State Bank of India",
+      "type": "stock"
+    },
+    {
+      "ticker": "INFY.NS",
+      "name": "Infosys",
+      "type": "stock"
+    },
+    {
+      "ticker": "AXISBANK.NS",
+      "name": "Axis Bank",
+      "type": "stock"
+    },
+    {
+      "ticker": "KOTAKBANK.NS",
+      "name": "Kotak Mahindra Bank",
+      "type": "stock"
+    },
+    {
+      "ticker": "M&M.NS",
+      "name": "Mahindra & Mahindra",
+      "type": "stock"
+    },
+    {
+      "ticker": "ITC.NS",
+      "name": "ITC",
+      "type": "stock"
+    },
+    {
+      "ticker": "TCS.NS",
+      "name": "Tata Consultancy Services",
+      "type": "stock"
+    },
+    {
+      "ticker": "BAJFINANCE.NS",
+      "name": "Bajaj Finance",
+      "type": "stock"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "name": "Hindustan Unilever",
+      "type": "stock"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "name": "Maruti Suzuki India",
+      "type": "stock"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "name": "Sun Pharmaceutical",
+      "type": "stock"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "name": "NTPC",
+      "type": "stock"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "name": "Titan Company",
+      "type": "stock"
+    },
+    {
+      "ticker": "ETERNAL.NS",
+      "name": "Eternal",
+      "type": "stock"
+    },
+    {
+      "ticker": "TATASTEEL.NS",
+      "name": "Tata Steel",
+      "type": "stock"
+    },
+    {
+      "ticker": "BEL.NS",
+      "name": "Bharat Electronics",
+      "type": "stock"
+    },
+    {
+      "ticker": "SHRIRAMFIN.NS",
+      "name": "Shriram Finance",
+      "type": "stock"
+    },
+    {
+      "ticker": "ULTRACEMCO.NS",
+      "name": "UltraTech Cement",
+      "type": "stock"
+    },
+    {
+      "ticker": "HCLTECH.NS",
+      "name": "HCL Technologies",
+      "type": "stock"
+    },
+    {
+      "ticker": "POWERGRID.NS",
+      "name": "Power Grid Corporation of India",
+      "type": "stock"
+    }
+  ],
   "etfs": [],
-
   "mutualFunds": []
 }
