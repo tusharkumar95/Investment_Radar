@@ -4,9 +4,9 @@
  *
  * Purpose:
  * - Detect missing financial data
- * - Calculate data confidence
- * - Prevent missing data from becoming a false "bad" score
- * - Tell the user which information is unavailable
+ * - Calculate data completeness and confidence
+ * - Prevent missing data from becoming a false bad score
+ * - Explain which information is unavailable
  */
 
 
@@ -15,17 +15,16 @@
 ========================================= */
 
 function isValidNumber(value) {
-    return (
-        value !== null &&
-        value !== undefined &&
-        value !== "" &&
-        !isNaN(Number(value))
-    );
+    if (value === null || value === undefined || value === "") {
+        return false;
+    }
+
+    const n = Number(value);
+    return Number.isFinite(n);
 }
 
 
 function hasValue(value) {
-
     if (value === null || value === undefined) {
         return false;
     }
@@ -65,49 +64,93 @@ function checkField(object, path) {
 
 
 /* =========================================
-   DATA COMPLETENESS
+   FIELD GROUPS
 ========================================= */
 
-function calculateDataCompleteness(investment) {
+const DATA_FIELDS = {
 
-    const fields = [
+    quality: [
+        "fundamentals.revenueGrowth5Y",
+        "fundamentals.epsGrowth5Y",
+        "fundamentals.profitMargin",
+        "fundamentals.roe",
+        "fundamentals.roic",
+        "fundamentals.freeCashFlow",
+        "fundamentals.debtToEquity"
+    ],
 
-        "quality.revenueGrowth",
-        "quality.epsGrowth",
-        "quality.roe",
-        "quality.roic",
-        "quality.freeCashFlow",
-        "quality.balanceSheet",
-
+    valuation: [
         "valuation.pe",
+        "valuation.forwardPE",
         "valuation.peg",
         "valuation.evEbitda",
         "valuation.priceToFcf",
-        "valuation.historicalValuation",
+        "valuation.priceToBook"
+    ],
 
-        "growth",
-        "momentum",
+    growth: [
+        "fundamentals.revenueGrowth3Y",
+        "fundamentals.revenueGrowth5Y",
+        "fundamentals.epsGrowth5Y",
+        "fundamentals.fcfGrowth5Y"
+    ],
 
+    market: [
+        "technical.momentum3M",
+        "technical.momentum6M",
+        "technical.sma50",
+        "technical.sma200",
+        "technical.high52Week",
+        "technical.low52Week"
+    ],
+
+    ownership: [
+        "ownership.insiderHolding",
         "ownership.promoterHolding",
         "ownership.promoterChange",
         "ownership.promoterPledge",
+        "ownership.institutionalHolding",
         "ownership.institutionalChange",
-        "ownership.majorInvestorActivity",
+        "ownership.majorInvestorActivity"
+    ],
 
+    income: [
         "dividend.yield",
         "dividend.growth",
-        "dividend.payout",
+        "dividend.payout"
+    ]
+};
 
-        "psychology.marginOfSafety",
-        "psychology.sentiment",
-        "psychology.cycle",
-        "psychology.qualityAtPrice"
-    ];
 
+/* =========================================
+   COMPLETENESS
+========================================= */
+
+function calculateCategoryScore(investment, fields) {
+
+    if (!fields || fields.length === 0) {
+        return 0;
+    }
 
     let available = 0;
 
     fields.forEach(field => {
+        if (checkField(investment, field)) {
+            available++;
+        }
+    });
+
+    return Math.round((available / fields.length) * 100);
+}
+
+
+function calculateDataCompleteness(investment) {
+
+    const allFields = Object.values(DATA_FIELDS).flat();
+
+    let available = 0;
+
+    allFields.forEach(field => {
 
         if (checkField(investment, field)) {
             available++;
@@ -115,9 +158,12 @@ function calculateDataCompleteness(investment) {
 
     });
 
+    if (allFields.length === 0) {
+        return 0;
+    }
 
     return Math.round(
-        (available / fields.length) * 100
+        (available / allFields.length) * 100
     );
 }
 
@@ -133,83 +179,39 @@ function categoryCompleteness(investment) {
         quality:
             calculateCategoryScore(
                 investment,
-                [
-                    "quality.revenueGrowth",
-                    "quality.epsGrowth",
-                    "quality.roe",
-                    "quality.roic",
-                    "quality.freeCashFlow",
-                    "quality.balanceSheet"
-                ]
+                DATA_FIELDS.quality
             ),
 
         valuation:
             calculateCategoryScore(
                 investment,
-                [
-                    "valuation.pe",
-                    "valuation.peg",
-                    "valuation.evEbitda",
-                    "valuation.priceToFcf",
-                    "valuation.historicalValuation"
-                ]
+                DATA_FIELDS.valuation
+            ),
+
+        growth:
+            calculateCategoryScore(
+                investment,
+                DATA_FIELDS.growth
+            ),
+
+        market:
+            calculateCategoryScore(
+                investment,
+                DATA_FIELDS.market
             ),
 
         ownership:
             calculateCategoryScore(
                 investment,
-                [
-                    "ownership.promoterHolding",
-                    "ownership.promoterChange",
-                    "ownership.promoterPledge",
-                    "ownership.institutionalChange",
-                    "ownership.majorInvestorActivity"
-                ]
+                DATA_FIELDS.ownership
             ),
 
-        psychology:
+        income:
             calculateCategoryScore(
                 investment,
-                [
-                    "psychology.marginOfSafety",
-                    "psychology.sentiment",
-                    "psychology.cycle",
-                    "psychology.qualityAtPrice"
-                ]
-            ),
-
-        dividend:
-            calculateCategoryScore(
-                investment,
-                [
-                    "dividend.yield",
-                    "dividend.growth",
-                    "dividend.payout"
-                ]
+                DATA_FIELDS.income
             )
     };
-}
-
-
-function calculateCategoryScore(investment, fields) {
-
-    if (!fields.length) {
-        return 0;
-    }
-
-    let available = 0;
-
-    fields.forEach(field => {
-
-        if (checkField(investment, field)) {
-            available++;
-        }
-
-    });
-
-    return Math.round(
-        (available / fields.length) * 100
-    );
 }
 
 
@@ -222,70 +224,39 @@ function calculateDataConfidence(investment) {
     const completeness =
         calculateDataCompleteness(investment);
 
+    let label;
+    let className;
 
-    /*
-     * At the moment confidence is based primarily
-     * on completeness.
-     *
-     * Later we will also incorporate:
-     *
-     * - source reliability
-     * - data age
-     * - official vs secondary source
-     * - calculation confidence
-     */
+    if (completeness >= 90) {
 
-    let confidence = completeness;
+        label = "Very High";
+        className = "green";
 
+    } else if (completeness >= 75) {
 
-    if (confidence >= 90) {
+        label = "High";
+        className = "green";
 
-        return {
-            score: confidence,
-            label: "Very High",
-            className: "green"
-        };
+    } else if (completeness >= 55) {
 
+        label = "Moderate";
+        className = "yellow";
+
+    } else if (completeness >= 35) {
+
+        label = "Low";
+        className = "yellow";
+
+    } else {
+
+        label = "Very Low";
+        className = "red";
     }
-
-
-    if (confidence >= 75) {
-
-        return {
-            score: confidence,
-            label: "High",
-            className: "green"
-        };
-
-    }
-
-
-    if (confidence >= 55) {
-
-        return {
-            score: confidence,
-            label: "Moderate",
-            className: "yellow"
-        };
-
-    }
-
-
-    if (confidence >= 35) {
-
-        return {
-            score: confidence,
-            label: "Low",
-            className: "yellow"
-        };
-
-    }
-
 
     return {
-        score: confidence,
-        label: "Very Low",
-        className: "red"
+        score: completeness,
+        label: label,
+        className: className
     };
 }
 
@@ -299,33 +270,48 @@ function getMissingFields(investment) {
     const fields = [
 
         {
-            path: "quality.revenueGrowth",
-            label: "Revenue growth"
+            path: "fundamentals.revenueGrowth5Y",
+            label: "5-year revenue growth"
         },
 
         {
-            path: "quality.epsGrowth",
-            label: "EPS growth"
+            path: "fundamentals.epsGrowth5Y",
+            label: "5-year EPS growth"
         },
 
         {
-            path: "quality.roe",
+            path: "fundamentals.profitMargin",
+            label: "Profit margin"
+        },
+
+        {
+            path: "fundamentals.roe",
             label: "ROE"
         },
 
         {
-            path: "quality.roic",
+            path: "fundamentals.roic",
             label: "ROIC"
         },
 
         {
-            path: "quality.freeCashFlow",
+            path: "fundamentals.freeCashFlow",
             label: "Free cash flow"
+        },
+
+        {
+            path: "fundamentals.debtToEquity",
+            label: "Debt/equity"
         },
 
         {
             path: "valuation.pe",
             label: "P/E"
+        },
+
+        {
+            path: "valuation.forwardPE",
+            label: "Forward P/E"
         },
 
         {
@@ -344,18 +330,33 @@ function getMissingFields(investment) {
         },
 
         {
+            path: "valuation.priceToBook",
+            label: "Price/Book"
+        },
+
+        {
+            path: "ownership.insiderHolding",
+            label: "Insider holding"
+        },
+
+        {
             path: "ownership.promoterHolding",
             label: "Promoter holding"
         },
 
         {
             path: "ownership.promoterChange",
-            label: "Promoter change"
+            label: "Promoter ownership change"
         },
 
         {
             path: "ownership.promoterPledge",
             label: "Promoter pledge"
+        },
+
+        {
+            path: "ownership.institutionalHolding",
+            label: "Institutional holding"
         },
 
         {
@@ -366,29 +367,12 @@ function getMissingFields(investment) {
         {
             path: "ownership.majorInvestorActivity",
             label: "Major investor activity"
-        },
-
-        {
-            path: "psychology.marginOfSafety",
-            label: "Margin of safety"
-        },
-
-        {
-            path: "psychology.sentiment",
-            label: "Market sentiment"
-        },
-
-        {
-            path: "psychology.cycle",
-            label: "Business cycle"
         }
     ];
 
 
     return fields
-        .filter(field =>
-            !checkField(investment, field.path)
-        )
+        .filter(field => !checkField(investment, field.path))
         .map(field => field.label);
 }
 
@@ -411,7 +395,6 @@ function getDataQualityReport(investment) {
     const missing =
         getMissingFields(investment);
 
-
     return {
 
         completeness,
@@ -422,8 +405,6 @@ function getDataQualityReport(investment) {
 
         missing,
 
-        usable:
-            completeness >= 50
-
+        usable: completeness >= 40
     };
 }
