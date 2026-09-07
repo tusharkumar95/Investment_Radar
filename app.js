@@ -442,11 +442,15 @@ window.renderRadar = function() {
                         ${item.ticker || ""}
                     </p>
 
-                    <span
-                        class="badge ${badgeClass}"
-                    >
-                        ${item.verdict || "WATCH"}
-                    </span>
+                    <span class="badge ${badgeClass}">
+    ${item.verdict}
+</span>
+
+<div style="margin-top:10px;font-size:14px;">
+    Psychology: <strong>
+        ${item.psychology?.decision || "WAIT"}
+    </strong>
+</div>
 
                 </div>
 
