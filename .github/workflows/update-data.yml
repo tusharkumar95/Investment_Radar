@@ -1,7 +1,11 @@
+# .github/workflows/update-data.yml
+
 name: Update Investment Data
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 2 * * 1-5"
 
 jobs:
   update-data:
@@ -11,7 +15,6 @@ jobs:
       contents: write
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -24,7 +27,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Update market data
+      - name: Build Canada and India universes
+        run: |
+          python scripts/build_universe.py
+
+      - name: Update Canada and India market data
         run: |
           python scripts/update_market_data.py
 
@@ -35,6 +42,6 @@ jobs:
 
           git add data/*.json
 
-          git diff --cached --quiet || git commit -m "Update market data"
+          git diff --cached --quiet || git commit -m "Update investment universe and market data"
 
           git push
