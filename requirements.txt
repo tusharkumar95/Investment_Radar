@@ -1,3 +1,9 @@
-yfinance
+# requirements.txt
+
 pandas
 numpy
+yfinance
+lxml
+html5lib
+beautifulsoup4
+requests
