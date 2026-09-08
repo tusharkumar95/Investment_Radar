@@ -1,7 +1,6 @@
 # scripts/build_universe.py
 
 import json
-import io
 import re
 import time
 from pathlib import Path
@@ -14,42 +13,46 @@ import yfinance as yf
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 
-MIN_MARKET_CAP_CAD = 1_000_000_000
-MIN_MARKET_CAP_INR = 10_000_000_000
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 InvestmentRadar/1.0"
+}
 
-MIN_AVG_VOLUME = 100_000
+MIN_MARKET_CAP_CANADA = 1_000_000_000
+MIN_MARKET_CAP_INDIA = 10_000_000_000
+MIN_AVG_VOLUME = 50_000
 MIN_HISTORY_DAYS = 250
 
 CANADA_TARGET = 150
 INDIA_TARGET = 150
 
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 Investment-Radar/1.0"
-}
-
-
-def clean_number(value):
+def safe_float(value):
     try:
         if value is None:
             return None
-        return float(value)
+        value = float(value)
+        if pd.isna(value):
+            return None
+        return value
     except Exception:
         return None
 
 
-def get_yf_info(ticker):
+def get_info(ticker):
     try:
         return yf.Ticker(ticker).info
     except Exception:
         return {}
 
 
-def passes_yahoo_filters(ticker, market):
+def test_stock(ticker, market):
     try:
-        stock = yf.Ticker(ticker)
+        yf_stock = yf.Ticker(ticker)
 
-        history = stock.history(period="2y", auto_adjust=False)
+        history = yf_stock.history(
+            period="2y",
+            auto_adjust=False
+        )
 
         if history is None or history.empty:
             return None
@@ -59,46 +62,48 @@ def passes_yahoo_filters(ticker, market):
         if len(history) < MIN_HISTORY_DAYS:
             return None
 
-        avg_volume = float(history["Volume"].tail(60).mean())
+        avg_volume = safe_float(
+            history["Volume"].tail(60).mean()
+        )
 
-        if avg_volume < MIN_AVG_VOLUME:
+        if avg_volume is None or avg_volume < MIN_AVG_VOLUME:
             return None
 
-        info = get_yf_info(ticker)
+        info = get_info(ticker)
 
-        market_cap = clean_number(info.get("marketCap"))
+        market_cap = safe_float(
+            info.get("marketCap")
+        )
 
         if market == "Canada":
-            if market_cap is not None and market_cap < MIN_MARKET_CAP_CAD:
-                return None
-        else:
-            if market_cap is not None and market_cap < MIN_MARKET_CAP_INR:
+            if market_cap is not None and market_cap < MIN_MARKET_CAP_CANADA:
                 return None
 
-        price = clean_number(history["Close"].iloc[-1])
+        else:
+            if market_cap is not None and market_cap < MIN_MARKET_CAP_INDIA:
+                return None
+
+        price = safe_float(
+            history["Close"].iloc[-1]
+        )
 
         if price is None or price <= 0:
             return None
 
-        name = (
-            info.get("longName")
-            or info.get("shortName")
-            or ticker
-        )
-
-        sector = info.get("sector") or "Unknown"
-        industry = info.get("industry") or "Unknown"
-
         return {
             "ticker": ticker,
-            "name": name,
-            "sector": sector,
-            "industry": industry,
+            "name": (
+                info.get("longName")
+                or info.get("shortName")
+                or ticker
+            ),
+            "sector": info.get("sector") or "Unknown",
+            "industry": info.get("industry") or "Unknown",
             "marketCap": market_cap,
             "avgVolume60D": round(avg_volume),
-            "exchange": info.get("exchange"),
             "currency": info.get("currency"),
-            "historyDays": len(history),
+            "exchange": info.get("exchange"),
+            "historyDays": len(history)
         }
 
     except Exception as e:
@@ -109,64 +114,94 @@ def passes_yahoo_filters(ticker, market):
 def get_canada_candidates():
     url = "https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index"
 
-    tables = pd.read_html(
-        requests.get(url, headers=HEADERS, timeout=30).text
-    )
-
-    candidates = []
-
-    for table in tables:
-        columns = [str(c).lower() for c in table.columns]
-
-        ticker_col = None
-
-        for i, column in enumerate(columns):
-            if "symbol" in column or "ticker" in column:
-                ticker_col = table.columns[i]
-                break
-
-        if ticker_col is None:
-            continue
-
-        for value in table[ticker_col].dropna():
-            ticker = str(value).strip()
-
-            ticker = re.sub(r"\[.*?\]", "", ticker)
-            ticker = ticker.replace(".", "-")
-            ticker = ticker.replace("/", "-")
-            ticker = ticker.strip()
-
-            if not ticker:
-                continue
-
-            if ticker.lower() in {"symbol", "ticker"}:
-                continue
-
-            candidates.append(ticker)
-
-    candidates = sorted(set(candidates))
-
-    return [
-        f"{ticker}.TO"
-        for ticker in candidates
-        if ticker and len(ticker) <= 8
-    ]
-
-
-def get_india_candidates():
-    url = (
-        "https://archives.nseindia.com/content/equities/"
-        "EQUITY_L.csv"
-    )
-
     response = requests.get(
         url,
         headers=HEADERS,
         timeout=30
     )
+
     response.raise_for_status()
 
-    df = pd.read_csv(io.BytesIO(response.content))
+    tables = pd.read_html(response.text)
+
+    candidates = []
+
+    for table in tables:
+        symbol_column = None
+
+        for column in table.columns:
+            text = str(column).lower()
+
+            if "symbol" in text or "ticker" in text:
+                symbol_column = column
+                break
+
+        if symbol_column is None:
+            continue
+
+        for value in table[symbol_column].dropna():
+            ticker = str(value).strip()
+
+            ticker = re.sub(
+                r"\[.*?\]",
+                "",
+                ticker
+            )
+
+            ticker = ticker.replace(".", "-")
+            ticker = ticker.strip()
+
+            if not ticker:
+                continue
+
+            if ticker.lower() in {
+                "symbol",
+                "ticker"
+            }:
+                continue
+
+            if re.match(
+                r"^[A-Z0-9-]{1,8}$",
+                ticker
+            ):
+                candidates.append(
+                    f"{ticker}.TO"
+                )
+
+    return sorted(set(candidates))
+
+
+def get_india_candidates():
+    # Current NSE security master
+    urls = [
+        "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv",
+        "https://archives.nseindia.com/content/equities/EQUITY_L.csv"
+    ]
+
+    response = None
+
+    for url in urls:
+        try:
+            response = requests.get(
+                url,
+                headers=HEADERS,
+                timeout=30
+            )
+
+            if response.ok:
+                break
+
+        except Exception:
+            continue
+
+    if response is None or not response.ok:
+        raise RuntimeError(
+            "Could not download NSE equity security list"
+        )
+
+    df = pd.read_csv(
+        response.content
+    )
 
     symbol_column = None
 
@@ -176,82 +211,119 @@ def get_india_candidates():
             break
 
     if symbol_column is None:
-        raise RuntimeError("NSE SYMBOL column not found")
+        raise RuntimeError(
+            "NSE SYMBOL column not found"
+        )
 
     candidates = []
 
     for symbol in df[symbol_column].dropna():
         symbol = str(symbol).strip().upper()
 
-        if not symbol:
+        if not re.match(
+            r"^[A-Z0-9&-]+$",
+            symbol
+        ):
             continue
 
-        if not re.match(r"^[A-Z0-9&-]+$", symbol):
-            continue
-
-        candidates.append(f"{symbol}.NS")
+        candidates.append(
+            f"{symbol}.NS"
+        )
 
     return sorted(set(candidates))
 
 
-def rank_universe(records):
-    def score(x):
-        market_cap = x.get("marketCap") or 0
-        volume = x.get("avgVolume60D") or 0
-
-        return (
-            market_cap * 0.7
-            + volume * 1000 * 0.3
-        )
-
-    return sorted(records, key=score, reverse=True)
+def rank_stocks(stocks):
+    return sorted(
+        stocks,
+        key=lambda x: (
+            x.get("marketCap") or 0,
+            x.get("avgVolume60D") or 0
+        ),
+        reverse=True
+    )
 
 
 def build_market(candidates, market, target):
-    valid = []
+    results = []
 
-    print(f"\nBuilding {market} universe")
+    print()
+    print("=" * 60)
+    print(f"BUILDING {market.upper()} UNIVERSE")
     print(f"Candidates: {len(candidates)}")
+    print("=" * 60)
 
-    for i, ticker in enumerate(candidates, start=1):
-        print(f"[{i}/{len(candidates)}] {ticker}")
+    for number, ticker in enumerate(
+        candidates,
+        start=1
+    ):
+        print(
+            f"[{number}/{len(candidates)}] {ticker}"
+        )
 
-        result = passes_yahoo_filters(ticker, market)
+        result = test_stock(
+            ticker,
+            market
+        )
 
         if result:
-            valid.append(result)
+            results.append(result)
 
         time.sleep(0.15)
 
-    valid = rank_universe(valid)
+    results = rank_stocks(results)
 
-    valid = valid[:target]
-
-    return valid
+    return results[:target]
 
 
-def save_universe(filename, market, records):
+def save_universe(filename, market, stocks):
     output = {
         "market": market,
         "lastUpdated": pd.Timestamp.utcnow().isoformat(),
-        "universeSize": len(records),
-        "stocks": records,
+        "universeSize": len(stocks),
+        "stocks": stocks
     }
 
     path = DATA_DIR / filename
 
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+    with open(
+        path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+        json.dump(
+            output,
+            file,
+            indent=2,
+            ensure_ascii=False
+        )
 
-    print(f"\nSaved {path}")
-    print(f"Universe size: {len(records)}")
+    print()
+    print(f"Saved {path}")
+    print(f"Stocks: {len(stocks)}")
 
 
 def main():
-    DATA_DIR.mkdir(exist_ok=True)
+    DATA_DIR.mkdir(
+        parents=True,
+        exist_ok=True
+    )
 
+    print("Downloading Canada universe...")
     canada_candidates = get_canada_candidates()
+
+    print(
+        f"Canada candidates found: "
+        f"{len(canada_candidates)}"
+    )
+
+    print("Downloading India universe...")
     india_candidates = get_india_candidates()
+
+    print(
+        f"India candidates found: "
+        f"{len(india_candidates)}"
+    )
 
     canada = build_market(
         canada_candidates,
@@ -264,6 +336,16 @@ def main():
         "India",
         INDIA_TARGET
     )
+
+    if len(canada) < 50:
+        raise RuntimeError(
+            f"Canada universe too small: {len(canada)}"
+        )
+
+    if len(india) < 50:
+        raise RuntimeError(
+            f"India universe too small: {len(india)}"
+        )
 
     save_universe(
         "canada_universe.json",
