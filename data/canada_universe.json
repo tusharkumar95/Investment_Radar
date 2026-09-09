@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "lastUpdated": "2026-09-09T03:49:05.805190+00:00",
+  "lastUpdated": "2026-09-09T04:13:45.138503+00:00",
   "universeSize": 127,
   "stocks": [
     {
@@ -9,7 +9,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 399006498816.0,
-      "avgVolume60D": 3200503,
+      "avgVolume60D": 3200688,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -20,7 +20,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 272287744000.0,
-      "avgVolume60D": 4865542,
+      "avgVolume60D": 4865695,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -42,7 +42,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 167850868736.0,
-      "avgVolume60D": 2172024,
+      "avgVolume60D": 2172177,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -53,7 +53,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 156010233856.0,
-      "avgVolume60D": 4117355,
+      "avgVolume60D": 4117515,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -64,7 +64,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
       "marketCap": 152208916480.0,
-      "avgVolume60D": 7834295,
+      "avgVolume60D": 7834458,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -75,7 +75,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 146313789440.0,
-      "avgVolume60D": 2518411,
+      "avgVolume60D": 2518548,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -86,7 +86,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 144655450112.0,
-      "avgVolume60D": 14566206,
+      "avgVolume60D": 14566213,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -97,7 +97,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 140906151936.0,
-      "avgVolume60D": 1180966,
+      "avgVolume60D": 1181090,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -108,7 +108,7 @@
       "sector": "Financial Services",
       "industry": "Asset Management",
       "marketCap": 120971124736.0,
-      "avgVolume60D": 2820208,
+      "avgVolume60D": 2820330,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -119,7 +119,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
       "marketCap": 110647631872.0,
-      "avgVolume60D": 5424667,
+      "avgVolume60D": 5424805,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -130,7 +130,7 @@
       "sector": "Industrials",
       "industry": "Railroads",
       "marketCap": 110517846016.0,
-      "avgVolume60D": 1273592,
+      "avgVolume60D": 1273695,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -141,7 +141,7 @@
       "sector": "Financial Services",
       "industry": "Asset Management",
       "marketCap": 107686699008.0,
-      "avgVolume60D": 1536268,
+      "avgVolume60D": 1536383,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -152,7 +152,7 @@
       "sector": "Industrials",
       "industry": "Railroads",
       "marketCap": 102415613952.0,
-      "avgVolume60D": 1449549,
+      "avgVolume60D": 1449667,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -163,7 +163,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 100135608320.0,
-      "avgVolume60D": 4385981,
+      "avgVolume60D": 4386277,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -174,7 +174,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Life",
       "marketCap": 99256295424.0,
-      "avgVolume60D": 5307040,
+      "avgVolume60D": 5307178,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -185,7 +185,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 97131192320.0,
-      "avgVolume60D": 799416,
+      "avgVolume60D": 799413,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -196,7 +196,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
       "marketCap": 91102511104.0,
-      "avgVolume60D": 3725959,
+      "avgVolume60D": 3725960,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -207,7 +207,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
       "marketCap": 87452901376.0,
-      "avgVolume60D": 718786,
+      "avgVolume60D": 721625,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -218,7 +218,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
       "marketCap": 84447977472.0,
-      "avgVolume60D": 5279812,
+      "avgVolume60D": 5279932,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -229,7 +229,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
       "marketCap": 82659303424.0,
-      "avgVolume60D": 1392315,
+      "avgVolume60D": 1392480,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -240,7 +240,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Life",
       "marketCap": 81919754240.0,
-      "avgVolume60D": 1224044,
+      "avgVolume60D": 1225493,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -251,7 +251,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Specialty Retail",
       "marketCap": 73418653696.0,
-      "avgVolume60D": 1642349,
+      "avgVolume60D": 1642498,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -262,7 +262,7 @@
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
       "marketCap": 72467759104.0,
-      "avgVolume60D": 1283772,
+      "avgVolume60D": 1284145,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -273,7 +273,7 @@
       "sector": "Energy",
       "industry": "Uranium",
       "marketCap": 61305622528.0,
-      "avgVolume60D": 988261,
+      "avgVolume60D": 988383,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -284,7 +284,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Diversified",
       "marketCap": 61082722304.0,
-      "avgVolume60D": 1826539,
+      "avgVolume60D": 1826540,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -295,7 +295,7 @@
       "sector": "Technology",
       "industry": "Software - Application",
       "marketCap": 60476178432.0,
-      "avgVolume60D": 58848,
+      "avgVolume60D": 58898,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -306,7 +306,7 @@
       "sector": "Industrials",
       "industry": "Specialty Business Services",
       "marketCap": 59022520320.0,
-      "avgVolume60D": 744160,
+      "avgVolume60D": 744275,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -317,7 +317,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Life",
       "marketCap": 58460270592.0,
-      "avgVolume60D": 2014628,
+      "avgVolume60D": 2014743,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -328,7 +328,7 @@
       "sector": "Industrials",
       "industry": "Waste Management",
       "marketCap": 56618172416.0,
-      "avgVolume60D": 375393,
+      "avgVolume60D": 375450,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -339,7 +339,7 @@
       "sector": "Basic Materials",
       "industry": "Agricultural Inputs",
       "marketCap": 53113483264.0,
-      "avgVolume60D": 1597201,
+      "avgVolume60D": 1597202,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -350,7 +350,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Restaurants",
       "marketCap": 49448501248.0,
-      "avgVolume60D": 945623,
+      "avgVolume60D": 945833,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -361,10 +361,10 @@
       "sector": "Basic Materials",
       "industry": "Copper",
       "marketCap": 48692051968.0,
-      "avgVolume60D": 1084964,
+      "avgVolume60D": 1071140,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "FFH.TO",
@@ -372,7 +372,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Property & Casualty",
       "marketCap": 46068412416.0,
-      "avgVolume60D": 62318,
+      "avgVolume60D": 62368,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -383,7 +383,7 @@
       "sector": "Financial Services",
       "industry": "Insurance - Property & Casualty",
       "marketCap": 45979533312.0,
-      "avgVolume60D": 458923,
+      "avgVolume60D": 459032,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -394,10 +394,10 @@
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
       "marketCap": 40723558400.0,
-      "avgVolume60D": 417983,
+      "avgVolume60D": 429427,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "PPL.TO",
@@ -405,7 +405,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
       "marketCap": 39441059840.0,
-      "avgVolume60D": 2244802,
+      "avgVolume60D": 2244942,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -416,7 +416,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Regulated Electric",
       "marketCap": 39180922880.0,
-      "avgVolume60D": 1398152,
+      "avgVolume60D": 1398275,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -427,7 +427,7 @@
       "sector": "Basic Materials",
       "industry": "Copper",
       "marketCap": 38306746368.0,
-      "avgVolume60D": 2719088,
+      "avgVolume60D": 2719232,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -438,7 +438,7 @@
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
       "marketCap": 37727195136.0,
-      "avgVolume60D": 277497,
+      "avgVolume60D": 277737,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -449,7 +449,7 @@
       "sector": "Basic Materials",
       "industry": "Copper",
       "marketCap": 31882586112.0,
-      "avgVolume60D": 2384657,
+      "avgVolume60D": 2384627,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -460,7 +460,7 @@
       "sector": "Communication Services",
       "industry": "Telecom Services",
       "marketCap": 30409668608.0,
-      "avgVolume60D": 4159839,
+      "avgVolume60D": 4159930,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -471,7 +471,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 29197398016.0,
-      "avgVolume60D": 945836,
+      "avgVolume60D": 945958,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -482,7 +482,7 @@
       "sector": "Communication Services",
       "industry": "Telecom Services",
       "marketCap": 27443443712.0,
-      "avgVolume60D": 2072600,
+      "avgVolume60D": 2072707,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -493,7 +493,7 @@
       "sector": "Industrials",
       "industry": "Engineering & Construction",
       "marketCap": 24651223040.0,
-      "avgVolume60D": 609779,
+      "avgVolume60D": 609778,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -504,7 +504,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Auto Parts",
       "marketCap": 24560996352.0,
-      "avgVolume60D": 1170834,
+      "avgVolume60D": 1170833,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -515,7 +515,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 24489678848.0,
-      "avgVolume60D": 2359464,
+      "avgVolume60D": 2359593,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -526,7 +526,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 22153697280.0,
-      "avgVolume60D": 5274644,
+      "avgVolume60D": 5274660,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -537,10 +537,10 @@
       "sector": "Utilities",
       "industry": "Utilities - Renewable",
       "marketCap": 21521455104.0,
-      "avgVolume60D": 337286,
+      "avgVolume60D": 331224,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "EMA.TO",
@@ -548,7 +548,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Regulated Electric",
       "marketCap": 21506643968.0,
-      "avgVolume60D": 1106302,
+      "avgVolume60D": 1106448,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -592,7 +592,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 20337149952.0,
-      "avgVolume60D": 4358365,
+      "avgVolume60D": 4358455,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -603,7 +603,7 @@
       "sector": "Technology",
       "industry": "Information Technology Services",
       "marketCap": 20173285376.0,
-      "avgVolume60D": 605128,
+      "avgVolume60D": 605183,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -614,7 +614,7 @@
       "sector": "Financial Services",
       "industry": "Asset Management",
       "marketCap": 19807942656.0,
-      "avgVolume60D": 437894,
+      "avgVolume60D": 437967,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -636,7 +636,7 @@
       "sector": "Basic Materials",
       "industry": "Other Industrial Metals & Mining",
       "marketCap": 18956498944.0,
-      "avgVolume60D": 3891034,
+      "avgVolume60D": 3891032,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -647,7 +647,7 @@
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
       "marketCap": 18854957056.0,
-      "avgVolume60D": 534932,
+      "avgVolume60D": 535048,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -658,7 +658,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
       "marketCap": 16611177472.0,
-      "avgVolume60D": 856802,
+      "avgVolume60D": 856887,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -669,7 +669,7 @@
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
       "marketCap": 15905446912.0,
-      "avgVolume60D": 802504,
+      "avgVolume60D": 802583,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -680,7 +680,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 15850959872.0,
-      "avgVolume60D": 1680786,
+      "avgVolume60D": 1680868,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -691,7 +691,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 15781633024.0,
-      "avgVolume60D": 755144,
+      "avgVolume60D": 755143,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -702,7 +702,7 @@
       "sector": "Industrials",
       "industry": "Trucking",
       "marketCap": 15201600512.0,
-      "avgVolume60D": 231393,
+      "avgVolume60D": 231392,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -713,7 +713,7 @@
       "sector": "Communication Services",
       "industry": "Telecom Services",
       "marketCap": 14262453248.0,
-      "avgVolume60D": 1010519,
+      "avgVolume60D": 1010560,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -724,7 +724,7 @@
       "sector": "Basic Materials",
       "industry": "Silver",
       "marketCap": 14106980352.0,
-      "avgVolume60D": 1593870,
+      "avgVolume60D": 1593905,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -735,7 +735,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
       "marketCap": 13935156224.0,
-      "avgVolume60D": 593575,
+      "avgVolume60D": 593653,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -746,7 +746,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 13337614336.0,
-      "avgVolume60D": 833777,
+      "avgVolume60D": 833830,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -757,7 +757,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Apparel Manufacturing",
       "marketCap": 13167139840.0,
-      "avgVolume60D": 765871,
+      "avgVolume60D": 765972,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -768,7 +768,7 @@
       "sector": "Industrials",
       "industry": "Engineering & Construction",
       "marketCap": 11301790720.0,
-      "avgVolume60D": 500509,
+      "avgVolume60D": 500595,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -779,7 +779,7 @@
       "sector": "Real Estate",
       "industry": "REIT - Retail",
       "marketCap": 11110496256.0,
-      "avgVolume60D": 886434,
+      "avgVolume60D": 886453,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -790,7 +790,7 @@
       "sector": "Industrials",
       "industry": "Aerospace & Defense",
       "marketCap": 10772289536.0,
-      "avgVolume60D": 907608,
+      "avgVolume60D": 907703,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -801,7 +801,7 @@
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
       "marketCap": 10690009088.0,
-      "avgVolume60D": 482138,
+      "avgVolume60D": 482218,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -812,7 +812,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 10393257984.0,
-      "avgVolume60D": 460315,
+      "avgVolume60D": 460360,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -823,7 +823,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Independent Power Producers",
       "marketCap": 10090818560.0,
-      "avgVolume60D": 585340,
+      "avgVolume60D": 585580,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -834,7 +834,7 @@
       "sector": "Basic Materials",
       "industry": "Gold",
       "marketCap": 9934451712.0,
-      "avgVolume60D": 4639201,
+      "avgVolume60D": 4639258,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -845,7 +845,7 @@
       "sector": "Energy",
       "industry": "Uranium",
       "marketCap": 9896670208.0,
-      "avgVolume60D": 1507141,
+      "avgVolume60D": 1507190,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -867,7 +867,7 @@
       "sector": "Technology",
       "industry": "Software - Application",
       "marketCap": 8917843968.0,
-      "avgVolume60D": 461078,
+      "avgVolume60D": 461147,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -878,7 +878,7 @@
       "sector": "Financial Services",
       "industry": "Asset Management",
       "marketCap": 8377018368.0,
-      "avgVolume60D": 115166,
+      "avgVolume60D": 115165,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -889,7 +889,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 8363299328.0,
-      "avgVolume60D": 422706,
+      "avgVolume60D": 422742,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -900,7 +900,7 @@
       "sector": "Real Estate",
       "industry": "Real Estate Services",
       "marketCap": 8356210176.0,
-      "avgVolume60D": 202815,
+      "avgVolume60D": 202850,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -911,7 +911,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Renewable",
       "marketCap": 8337223680.0,
-      "avgVolume60D": 361198,
+      "avgVolume60D": 361267,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -922,7 +922,7 @@
       "sector": "Technology",
       "industry": "Software - Application",
       "marketCap": 7808875008.0,
-      "avgVolume60D": 1335475,
+      "avgVolume60D": 1335605,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -933,7 +933,7 @@
       "sector": "Basic Materials",
       "industry": "Lumber & Wood Production",
       "marketCap": 7386399744.0,
-      "avgVolume60D": 163216,
+      "avgVolume60D": 163217,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -944,7 +944,7 @@
       "sector": "Industrials",
       "industry": "Airlines",
       "marketCap": 6827666432.0,
-      "avgVolume60D": 151311,
+      "avgVolume60D": 151310,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -955,7 +955,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 6555496960.0,
-      "avgVolume60D": 1742088,
+      "avgVolume60D": 1742125,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -966,7 +966,7 @@
       "sector": "Technology",
       "industry": "Software - Infrastructure",
       "marketCap": 6335745536.0,
-      "avgVolume60D": 4376743,
+      "avgVolume60D": 4376762,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -988,10 +988,10 @@
       "sector": "Real Estate",
       "industry": "REIT - Retail",
       "marketCap": 6063944704.0,
-      "avgVolume60D": 673100,
+      "avgVolume60D": 661875,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "AQN.TO",
@@ -999,7 +999,7 @@
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
       "marketCap": 6028331520.0,
-      "avgVolume60D": 2550412,
+      "avgVolume60D": 2550460,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1010,7 +1010,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Auto Parts",
       "marketCap": 5882455552.0,
-      "avgVolume60D": 143701,
+      "avgVolume60D": 143727,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1021,7 +1021,7 @@
       "sector": "Basic Materials",
       "industry": "Silver",
       "marketCap": 5784492032.0,
-      "avgVolume60D": 1230389,
+      "avgVolume60D": 1230437,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1043,7 +1043,7 @@
       "sector": "Basic Materials",
       "industry": "Copper",
       "marketCap": 5457113600.0,
-      "avgVolume60D": 435769,
+      "avgVolume60D": 436867,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1054,7 +1054,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
       "marketCap": 5443804160.0,
-      "avgVolume60D": 655590,
+      "avgVolume60D": 655623,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1076,10 +1076,10 @@
       "sector": "Real Estate",
       "industry": "REIT - Residential",
       "marketCap": 4954608128.0,
-      "avgVolume60D": 405570,
+      "avgVolume60D": 408474,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "FCR-UN.TO",
@@ -1087,7 +1087,7 @@
       "sector": "Real Estate",
       "industry": "REIT - Retail",
       "marketCap": 4822867968.0,
-      "avgVolume60D": 528497,
+      "avgVolume60D": 528510,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1098,7 +1098,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 4712607744.0,
-      "avgVolume60D": 4148877,
+      "avgVolume60D": 4148910,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1120,7 +1120,7 @@
       "sector": "Basic Materials",
       "industry": "Silver",
       "marketCap": 4542856192.0,
-      "avgVolume60D": 859203,
+      "avgVolume60D": 859213,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1131,7 +1131,7 @@
       "sector": "Industrials",
       "industry": "Industrial Distribution",
       "marketCap": 4199268864.0,
-      "avgVolume60D": 226866,
+      "avgVolume60D": 227208,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1153,7 +1153,7 @@
       "sector": "Industrials",
       "industry": "Engineering & Construction",
       "marketCap": 4059953408.0,
-      "avgVolume60D": 298938,
+      "avgVolume60D": 298967,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1164,7 +1164,7 @@
       "sector": "Real Estate",
       "industry": "REIT - Retail",
       "marketCap": 4051948288.0,
-      "avgVolume60D": 244442,
+      "avgVolume60D": 244465,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1175,10 +1175,10 @@
       "sector": "Real Estate",
       "industry": "REIT - Industrial",
       "marketCap": 3800595712.0,
-      "avgVolume60D": 515451,
+      "avgVolume60D": 524379,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 501
     },
     {
       "ticker": "SVM.TO",
@@ -1186,7 +1186,7 @@
       "sector": "Basic Materials",
       "industry": "Silver",
       "marketCap": 3778203648.0,
-      "avgVolume60D": 893260,
+      "avgVolume60D": 893295,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1197,7 +1197,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Auto & Truck Dealerships",
       "marketCap": 3346286848.0,
-      "avgVolume60D": 104091,
+      "avgVolume60D": 104092,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1208,7 +1208,7 @@
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
       "marketCap": 3283032064.0,
-      "avgVolume60D": 220797,
+      "avgVolume60D": 220830,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1219,7 +1219,7 @@
       "sector": "Industrials",
       "industry": "Electrical Equipment & Parts",
       "marketCap": 2945754368.0,
-      "avgVolume60D": 68188,
+      "avgVolume60D": 68203,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1230,7 +1230,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 2880783104.0,
-      "avgVolume60D": 575760,
+      "avgVolume60D": 575790,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1241,7 +1241,7 @@
       "sector": "Consumer Cyclical",
       "industry": "Auto Manufacturers",
       "marketCap": 2835955968.0,
-      "avgVolume60D": 282529,
+      "avgVolume60D": 282530,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1252,7 +1252,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 2744287744.0,
-      "avgVolume60D": 1087169,
+      "avgVolume60D": 1087165,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1263,7 +1263,7 @@
       "sector": "Real Estate",
       "industry": "REIT - Diversified",
       "marketCap": 2733567232.0,
-      "avgVolume60D": 804155,
+      "avgVolume60D": 804168,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1274,7 +1274,7 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 2733442816.0,
-      "avgVolume60D": 919566,
+      "avgVolume60D": 919567,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1285,7 +1285,7 @@
       "sector": "Industrials",
       "industry": "Specialty Industrial Machinery",
       "marketCap": 2630781952.0,
-      "avgVolume60D": 389753,
+      "avgVolume60D": 389775,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1296,7 +1296,7 @@
       "sector": "Financial Services",
       "industry": "Banks - Regional",
       "marketCap": 1820464000.0,
-      "avgVolume60D": 170532,
+      "avgVolume60D": 170540,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1307,7 +1307,7 @@
       "sector": "Technology",
       "industry": "Software - Application",
       "marketCap": 1817952256.0,
-      "avgVolume60D": 632470,
+      "avgVolume60D": 633032,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1318,7 +1318,7 @@
       "sector": "Basic Materials",
       "industry": "Other Precious Metals & Mining",
       "marketCap": 1708744064.0,
-      "avgVolume60D": 710562,
+      "avgVolume60D": 710580,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1329,7 +1329,7 @@
       "sector": "Real Estate",
       "industry": "REIT - Office",
       "marketCap": 1609189376.0,
-      "avgVolume60D": 593700,
+      "avgVolume60D": 593718,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1351,7 +1351,7 @@
       "sector": "Industrials",
       "industry": "Airlines",
       "marketCap": 1128489216.0,
-      "avgVolume60D": 127414,
+      "avgVolume60D": 127425,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1362,7 +1362,7 @@
       "sector": "Basic Materials",
       "industry": "Lumber & Wood Production",
       "marketCap": 910214656.0,
-      "avgVolume60D": 225209,
+      "avgVolume60D": 225223,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1373,7 +1373,7 @@
       "sector": "Technology",
       "industry": "Software - Application",
       "marketCap": 856350464.0,
-      "avgVolume60D": 156862,
+      "avgVolume60D": 156875,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1384,7 +1384,7 @@
       "sector": "Financial Services",
       "industry": "Credit Services",
       "marketCap": 681455296.0,
-      "avgVolume60D": 95120,
+      "avgVolume60D": 95123,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
@@ -1395,7 +1395,7 @@
       "sector": "Industrials",
       "industry": "Airports & Air Services",
       "marketCap": 629488576.0,
-      "avgVolume60D": 48366,
+      "avgVolume60D": 48370,
       "currency": "CAD",
       "exchange": "TOR",
       "historyDays": 502
