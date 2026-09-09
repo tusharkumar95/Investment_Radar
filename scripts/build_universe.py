@@ -1,5 +1,6 @@
 # scripts/build_universe.py
 
+import io
 import json
 import re
 import time
@@ -52,9 +53,7 @@ def get_info(ticker):
 
 
 def test_stock(ticker, market):
-
     try:
-
         stock = yf.Ticker(ticker)
 
         history = stock.history(
@@ -92,12 +91,9 @@ def test_stock(ticker, market):
             return None
 
         if market == "Canada":
-
             if market_cap < MIN_MARKET_CAP_CANADA:
                 return None
-
         else:
-
             if market_cap < MIN_MARKET_CAP_INDIA:
                 return None
 
@@ -121,11 +117,10 @@ def test_stock(ticker, market):
             "avgVolume60D": round(avg_volume),
             "currency": info.get("currency"),
             "exchange": info.get("exchange"),
-            "historyDays": len(history),
+            "historyDays": len(history)
         }
 
     except Exception as e:
-
         print(
             f"SKIP {ticker}: {type(e).__name__}: {e}"
         )
@@ -133,15 +128,11 @@ def test_stock(ticker, market):
         return None
 
 
-# ---------------------------------------------------------
+# =========================================================
 # CANADA
-# ---------------------------------------------------------
+# =========================================================
 
 def get_canada_candidates():
-
-    # Broad TSX candidate universe.
-    # These are used only as candidates;
-    # the actual eligibility filter happens through yfinance.
 
     tickers = """
 RY
@@ -179,7 +170,7 @@ ABX
 AEM
 WPM
 FM
-TECK.A
+TECK.B
 CCO
 LUN
 IVN
@@ -205,18 +196,23 @@ FTS
 AQN
 CU
 CPX
-H
-SAP
-WFG
-WEED
 GFL
 KEY
 PPL
-IPL
-EMA
-MRU
-EMP.A
-WN
+BCE
+T
+RCI.B
+QBR.B
+LSPD
+DOO
+BB
+NVEI
+DSG
+GSY
+ECN
+ONEX
+FSV
+FCR.UN
 REI.UN
 CAR.UN
 DIR.UN
@@ -226,218 +222,46 @@ HR.UN
 AP.UN
 CHP.UN
 NWH.UN
-KMP.UN
-BCE
-T
-RCI.B
-QBR.B
-LSPD
-DOO
-BB
-NVEI
-DSG
-SHOP
-DCBO
-DOL
-GSY
-EFN
-FSZ
-FF
-ECN
-ONEX
-FCR.UN
-FVI
-IMG
-EDR
-AYA
-AG
-ASM
-SSRM
-PAAS
-MAG
-OR
-ERO
-LAC
-DPM
-TXG
-BTO
-ELD
-EQX
-SVM
-K
-WFG
-CIX
-SLF
-GWO
-IFC
-TSU
+WN
+MRU
+EMP.A
+RUS
+RBA
 SAP
-STLC
-ATS
-WSP
 NWC
 CJT
+WSP
+ATS
+STLC
+EIF
 BYD
 BDT
 NFI
 MFI
 LNR
-CAE
 CHR
-EXE
 TRI
-CSU
 ENGH
-PKI
 PXT
 FRU
 PEY
 VET
 BTE
 TVE
-ARX
+ERF
+PSK
 DML
 NXE
-CCO
-LAC
 DND
 HPS.A
-ENGH
-MFC
-FFH
-IGM
-POW
-ONEX
-FSV
-TFII
-STN
-WCN
-GFL
-RUS
-WSP
-EIF
-EIF
-DIR.UN
-CAR.UN
-REI.UN
-AP.UN
-SRU.UN
-HR.UN
-CHP.UN
-NWH.UN
-BEP.UN
-BIP.UN
-BEPC
-CPX
-EMA
-FTS
-AQN
-CU
-BLX
-GEI
-PPL
-KEY
-ALA
-IPL
-TRP
-ENB
-CNQ
-SU
-CVE
-IMO
-TOU
-ARX
-WCP
-MEG
-VET
-BTE
-TVE
-PXT
-FRU
-ERF
-PEY
-PSK
-VET
-SIA
-WN
-L
-MRU
-EMP.A
-ATD
-QSR
-DOL
-COST
-NWC
-SAP
-WSP
-STN
-CJT
-TFII
-CP
-CNR
-BBD.B
-CAE
-ATS
-MG
-GIL
-DOO
-BYD
-NFI
-WFG
-IFP
-RY
-TD
-BMO
-BNS
-CM
-NA
-MFC
-SLF
-GWO
-IFC
-FFH
-POW
-IGM
-EQB
-LB
-CWB
-GSY
-ECN
-FSZ
-ONEX
-CIX
-T
-BCE
-RCI.B
-QBR.B
-SHOP
-CSU
-OTEX
-DSG
-LSPD
-NVEI
-DCBO
-BB
-TRI
-ENGH
 LAC
-WPM
-AEM
-ABX
-NTR
-TECK.B
-FM
-CCO
-LUN
-IVN
-ERO
-DPM
-ELD
-BTO
 PAAS
 MAG
 OR
-FVI
+ERO
+DPM
+BTO
+ELD
 IMG
 EDR
 AYA
@@ -446,62 +270,20 @@ ASM
 SSRM
 SVM
 EQX
-ERO
-DML
-NXE
-WCN
-GFL
-WSP
-TRI
-CP
-CNR
-RY
-TD
-BMO
-BNS
-CM
-NA
-ENB
-CNQ
-SU
-SHOP
+CIX
+BLX
+GEI
+ALA
+IPL
 CPG
 TOU
-CVE
-BAM
-BN
-BIP.UN
-BEPC
-BEP.UN
-TRP
-FTS
-EMA
-CU
-AQN
-PPL
-KEY
+PXT
+FRU
+VET
 WFG
-ATD
-QSR
-DOL
-L
-MRU
-EMP.A
-WN
-BCE
-T
-RCI.B
-RBA
-RUS
-STN
-TFII
-CJT
-WSP
-CSU
-OTEX
+IFP
 GIB.A
-CAE
-ATS
+RUS
 NTR
 ABX
 AEM
@@ -510,7 +292,7 @@ TECK.B
 CCO
 LUN
 FM
-SHOP
+IVN
 CSU
 BN
 BAM
@@ -532,11 +314,109 @@ GSY
 ECN
 ONEX
 FSV
-""".split()
+TFII
+STN
+WSP
+WCN
+GFL
+TRI
+CP
+CNR
+ENB
+CNQ
+SU
+CVE
+IMO
+SHOP
+ATD
+QSR
+DOL
+L
+MRU
+WN
+BCE
+T
+RCI.B
+BAM
+BN
+BIP.UN
+BEPC
+BEP.UN
+TRP
+FTS
+EMA
+CU
+AQN
+PPL
+KEY
+WFG
+SAP
+CSU
+OTEX
+CAE
+ATS
+NTR
+MG
+GIL
+DOO
+BYD
+NFI
+WSP
+STN
+CJT
+TFII
+CP
+CNR
+RY
+TD
+BMO
+BNS
+CM
+NA
+MFC
+SLF
+GWO
+IFC
+FFH
+POW
+IGM
+EQB
+SHOP
+CSU
+BN
+BAM
+ABX
+AEM
+WPM
+TECK.B
+CCO
+LUN
+FM
+IVN
+NTR
+LAC
+DML
+NXE
+ERO
+DPM
+BTO
+ELD
+PAAS
+MAG
+OR
+SSRM
+EQX
+SVM
+AG
+AYA
+EDR
+IMG
+ASM
+"""
 
     cleaned = []
 
-    for ticker in tickers:
+    for ticker in tickers.split():
 
         ticker = ticker.strip().upper()
 
@@ -556,15 +436,15 @@ FSV
     return sorted(set(cleaned))
 
 
-# ---------------------------------------------------------
+# =========================================================
 # INDIA
-# ---------------------------------------------------------
+# =========================================================
 
 def get_india_candidates():
 
     urls = [
         "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv",
-        "https://archives.nseindia.com/content/equities/EQUITY_L.csv",
+        "https://archives.nseindia.com/content/equities/EQUITY_L.csv"
     ]
 
     session = requests.Session()
@@ -575,12 +455,10 @@ def get_india_candidates():
 
     # Establish NSE session first
     try:
-
         session.get(
             "https://www.nseindia.com/",
             timeout=30
         )
-
     except Exception:
         pass
 
@@ -589,6 +467,10 @@ def get_india_candidates():
     for url in urls:
 
         try:
+
+            print(
+                f"Trying NSE security list: {url}"
+            )
 
             r = session.get(
                 url,
@@ -613,8 +495,11 @@ def get_india_candidates():
             "Could not download NSE equity security list"
         )
 
+    # IMPORTANT:
+    # pandas requires a file-like object when
+    # reading raw response bytes.
     df = pd.read_csv(
-        response.content
+        io.BytesIO(response.content)
     )
 
     symbol_column = None
@@ -663,9 +548,9 @@ def get_india_candidates():
     )
 
 
-# ---------------------------------------------------------
+# =========================================================
 # RANKING
-# ---------------------------------------------------------
+# =========================================================
 
 def rank_stocks(stocks):
 
@@ -679,9 +564,9 @@ def rank_stocks(stocks):
     )
 
 
-# ---------------------------------------------------------
-# BUILD
-# ---------------------------------------------------------
+# =========================================================
+# BUILD MARKET
+# =========================================================
 
 def build_market(
     candidates,
@@ -716,7 +601,6 @@ def build_market(
         )
 
         if result:
-
             results.append(
                 result
             )
@@ -730,9 +614,9 @@ def build_market(
     return results[:target]
 
 
-# ---------------------------------------------------------
+# =========================================================
 # SAVE
-# ---------------------------------------------------------
+# =========================================================
 
 def save_universe(
     filename,
@@ -772,9 +656,9 @@ def save_universe(
     )
 
 
-# ---------------------------------------------------------
+# =========================================================
 # MAIN
-# ---------------------------------------------------------
+# =========================================================
 
 def main():
 
@@ -849,5 +733,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
