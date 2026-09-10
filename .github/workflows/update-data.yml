@@ -1,5 +1,3 @@
-# .github/workflows/update-data.yml
-
 name: Update Investment Data
 
 on:
@@ -48,16 +46,60 @@ jobs:
 
               stocks = data.get("stocks", [])
 
-              print(
-                  file,
-                  "stocks:",
-                  len(stocks)
-              )
+              print(f"{file}: {len(stocks)} stocks")
 
               if len(stocks) < 50:
                   raise SystemExit(
                       f"{file} contains too few stocks"
                   )
+
+              price_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("price"), dict)
+                  and s["price"].get("current") is not None
+              )
+
+              fundamentals_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("fundamentals"), dict)
+              )
+
+              valuation_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("valuation"), dict)
+              )
+
+              technical_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("technical"), dict)
+              )
+
+              print(f"  Price data: {price_count}")
+              print(f"  Fundamentals: {fundamentals_count}")
+              print(f"  Valuation: {valuation_count}")
+              print(f"  Technical: {technical_count}")
+
+              if price_count == 0:
+                  raise SystemExit(
+                      f"{file} contains NO actual price data"
+                  )
+
+              if fundamentals_count == 0:
+                  raise SystemExit(
+                      f"{file} contains NO fundamentals data"
+                  )
+
+              if valuation_count == 0:
+                  raise SystemExit(
+                      f"{file} contains NO valuation data"
+                  )
+
+              if technical_count == 0:
+                  raise SystemExit(
+                      f"{file} contains NO technical data"
+                  )
+
+          print("DATA VALIDATION PASSED")
           PY
 
       - name: Commit updated data
@@ -67,6 +109,6 @@ jobs:
 
           git add data/*.json
 
-          git diff --cached --quiet || git commit -m "Update investment universe and market data"
+          git diff --cached --quiet || git commit -m "Update investment data"
 
           git push
