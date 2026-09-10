@@ -1,30 +1,64 @@
-# scripts/update_market_data.py
-
 import json
 import math
+import os
 import time
-from pathlib import Path
+from datetime import datetime, timezone
 
+import numpy as np
 import pandas as pd
 import yfinance as yf
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+# ============================================================
+# INVESTMENT RADAR - MARKET DATA UPDATER
+# ============================================================
+#
+# Purpose:
+#   1. Load the investment universe created by build_universe.py
+#   2. Download historical prices in batches
+#   3. Calculate technical/market data
+#   4. Retrieve fundamentals, valuation, ownership and dividend data
+#   5. Save everything in the JSON structure used by the website
+#
+# This file is designed for GitHub Actions + GitHub Pages.
+# ============================================================
 
 
-# =========================================================
-# HELPERS
-# =========================================================
+DATA_FILES = {
+    "Canada": "data/canada.json",
+    "India": "data/india.json",
+}
+
+HISTORY_PERIOD = "5y"
+BATCH_SIZE = 30
+
+# Small pause between batches.
+BATCH_SLEEP = 2
+
+# Number of attempts for Yahoo requests.
+MAX_RETRIES = 4
+
+
+# ============================================================
+# BASIC HELPERS
+# ============================================================
 
 def safe_float(value):
-    try:
-        if value is None:
-            return None
+    """Convert a value to a normal Python float or None."""
 
+    if value is None:
+        return None
+
+    try:
+        if pd.isna(value):
+            return None
+    except Exception:
+        pass
+
+    try:
         value = float(value)
 
-        if math.isnan(value) or math.isinf(value):
+        if not math.isfinite(value):
             return None
 
         return value
@@ -33,9 +67,23 @@ def safe_float(value):
         return None
 
 
-def first_valid(info, keys):
-    for key in keys:
-        value = safe_float(info.get(key))
+def safe_int(value):
+    value = safe_float(value)
+
+    if value is None:
+        return None
+
+    try:
+        return int(value)
+    except Exception:
+        return None
+
+
+def first_valid(*values):
+    """Return the first non-None numeric value."""
+
+    for value in values:
+        value = safe_float(value)
 
         if value is not None:
             return value
@@ -43,1131 +91,1653 @@ def first_valid(info, keys):
     return None
 
 
-def annual_values(statement, names):
+def clean_dict(value):
+    """Remove None/NaN values recursively."""
+
+    if isinstance(value, dict):
+        return {
+            key: clean_dict(val)
+            for key, val in value.items()
+            if val is not None
+        }
+
+    if isinstance(value, list):
+        return [
+            clean_dict(item)
+            for item in value
+            if item is not None
+        ]
+
+    value_float = safe_float(value)
+
+    if value_float is not None:
+        return value_float
+
+    return value
+
+
+def sleep_backoff(attempt):
+    time.sleep(2 ** attempt)
+
+
+# ============================================================
+# YAHOO DOWNLOAD
+# ============================================================
+
+def download_history_batch(tickers):
+    """
+    Download historical prices for multiple tickers at once.
+
+    This is the major change from the old updater.
+    """
+
+    if not tickers:
+        return pd.DataFrame()
+
+    ticker_string = " ".join(tickers)
+
+    for attempt in range(MAX_RETRIES):
+
+        try:
+            print(
+                f"Downloading price history for "
+                f"{len(tickers)} tickers..."
+            )
+
+            data = yf.download(
+                ticker_string,
+                period=HISTORY_PERIOD,
+                interval="1d",
+                auto_adjust=False,
+                progress=False,
+                threads=False,
+                group_by="column",
+                timeout=30,
+            )
+
+            if data is not None and not data.empty:
+                print(
+                    f"Successfully downloaded batch "
+                    f"of {len(tickers)} tickers."
+                )
+                return data
+
+            print(
+                f"Empty Yahoo response "
+                f"(attempt {attempt + 1}/{MAX_RETRIES})"
+            )
+
+        except Exception as exc:
+            print(
+                f"Yahoo batch error "
+                f"(attempt {attempt + 1}/{MAX_RETRIES}): {exc}"
+            )
+
+        sleep_backoff(attempt)
+
+    print("FAILED: price batch could not be downloaded.")
+    return pd.DataFrame()
+
+
+# ============================================================
+# HISTORY EXTRACTION
+# ============================================================
+
+def get_ticker_history(batch_data, ticker):
+    """
+    Extract one ticker's historical data from a batch download.
+    Handles both MultiIndex and single-ticker responses.
+    """
+
+    if batch_data is None or batch_data.empty:
+        return pd.DataFrame()
+
+    try:
+
+        # MultiIndex columns are normally:
+        # ('Close', 'SHOP.TO')
+        # ('Open', 'SHOP.TO')
+        #
+        # Depending on yfinance version the levels may be reversed.
+
+        if isinstance(batch_data.columns, pd.MultiIndex):
+
+            level0 = list(batch_data.columns.get_level_values(0))
+            level1 = list(batch_data.columns.get_level_values(1))
+
+            if ticker in level1:
+
+                result = batch_data.xs(
+                    ticker,
+                    axis=1,
+                    level=1,
+                    drop_level=True
+                )
+
+                return result.copy()
+
+            if ticker in level0:
+
+                result = batch_data.xs(
+                    ticker,
+                    axis=1,
+                    level=0,
+                    drop_level=True
+                )
+
+                return result.copy()
+
+        # Single ticker / normal columns
+        return batch_data.copy()
+
+    except Exception as exc:
+
+        print(
+            f"Could not extract history for {ticker}: {exc}"
+        )
+
+        return pd.DataFrame()
+
+
+# ============================================================
+# TECHNICAL CALCULATIONS
+# ============================================================
+
+def calculate_technical(history):
+
+    result = {
+        "sma50": None,
+        "sma200": None,
+        "momentum3m": None,
+        "momentum6m": None,
+        "momentum1y": None,
+        "volatility30d": None,
+        "volatility90d": None,
+        "drawdown52w": None,
+        "high52w": None,
+        "low52w": None,
+        "volume": None,
+        "averageVolume20d": None,
+        "trend": None,
+    }
+
+    if history is None or history.empty:
+        return result
+
+    try:
+
+        history = history.copy()
+
+        # Normalize column names.
+        history.columns = [
+            str(column).lower().replace(" ", "")
+            for column in history.columns
+        ]
+
+        close_column = None
+
+        for name in ["close", "adjclose"]:
+
+            if name in history.columns:
+                close_column = name
+                break
+
+        if close_column is None:
+            return result
+
+        close = pd.to_numeric(
+            history[close_column],
+            errors="coerce"
+        ).dropna()
+
+        if close.empty:
+            return result
+
+        latest = safe_float(close.iloc[-1])
+
+        if latest is None:
+            return result
+
+        # ----------------------------------------------------
+        # Moving averages
+        # ----------------------------------------------------
+
+        if len(close) >= 50:
+            result["sma50"] = safe_float(
+                close.tail(50).mean()
+            )
+
+        if len(close) >= 200:
+            result["sma200"] = safe_float(
+                close.tail(200).mean()
+            )
+
+        # ----------------------------------------------------
+        # Momentum
+        # ----------------------------------------------------
+
+        if len(close) >= 64:
+            old = safe_float(close.iloc[-64])
+
+            if old:
+                result["momentum3m"] = (
+                    latest / old - 1
+                ) * 100
+
+        if len(close) >= 127:
+            old = safe_float(close.iloc[-127])
+
+            if old:
+                result["momentum6m"] = (
+                    latest / old - 1
+                ) * 100
+
+        if len(close) >= 252:
+            old = safe_float(close.iloc[-252])
+
+            if old:
+                result["momentum1y"] = (
+                    latest / old - 1
+                ) * 100
+
+        # ----------------------------------------------------
+        # Volatility
+        # ----------------------------------------------------
+
+        returns = close.pct_change().dropna()
+
+        if len(returns) >= 30:
+
+            result["volatility30d"] = (
+                returns.tail(30).std() * np.sqrt(252) * 100
+            )
+
+        if len(returns) >= 90:
+
+            result["volatility90d"] = (
+                returns.tail(90).std() * np.sqrt(252) * 100
+            )
+
+        # ----------------------------------------------------
+        # 52-week high / low
+        # ----------------------------------------------------
+
+        last_252 = close.tail(252)
+
+        if not last_252.empty:
+
+            high_52 = safe_float(last_252.max())
+            low_52 = safe_float(last_252.min())
+
+            result["high52w"] = high_52
+            result["low52w"] = low_52
+
+            if high_52:
+
+                result["drawdown52w"] = (
+                    (latest / high_52) - 1
+                ) * 100
+
+        # ----------------------------------------------------
+        # Volume
+        # ----------------------------------------------------
+
+        if "volume" in history.columns:
+
+            volume = pd.to_numeric(
+                history["volume"],
+                errors="coerce"
+            ).dropna()
+
+            if not volume.empty:
+
+                result["volume"] = safe_float(
+                    volume.iloc[-1]
+                )
+
+                result["averageVolume20d"] = safe_float(
+                    volume.tail(20).mean()
+                )
+
+        # ----------------------------------------------------
+        # Trend
+        # ----------------------------------------------------
+
+        sma50 = result["sma50"]
+        sma200 = result["sma200"]
+
+        if sma50 and sma200:
+
+            if latest > sma50 > sma200:
+                result["trend"] = "Strong Uptrend"
+
+            elif latest > sma50:
+                result["trend"] = "Uptrend"
+
+            elif latest < sma50 < sma200:
+                result["trend"] = "Downtrend"
+
+            else:
+                result["trend"] = "Mixed"
+
+        elif sma50:
+
+            if latest > sma50:
+                result["trend"] = "Uptrend"
+            else:
+                result["trend"] = "Downtrend"
+
+    except Exception as exc:
+
+        print(
+            f"Technical calculation error: {exc}"
+        )
+
+    return clean_dict(result)
+
+
+# ============================================================
+# FINANCIAL STATEMENT HELPERS
+# ============================================================
+
+def statement_value(statement, possible_names):
+    """
+    Find a financial statement line item using several possible
+    Yahoo naming conventions.
+    """
+
+    if statement is None:
+        return None
+
+    if not isinstance(statement, pd.DataFrame):
+        return None
+
+    if statement.empty:
+        return None
+
+    for name in possible_names:
+
+        if name in statement.index:
+
+            try:
+
+                row = statement.loc[name]
+
+                if isinstance(row, pd.Series):
+
+                    for value in row.values:
+
+                        number = safe_float(value)
+
+                        if number is not None:
+                            return number
+
+            except Exception:
+                pass
+
+    # Fuzzy fallback.
+    for index in statement.index:
+
+        index_text = str(index).lower()
+
+        for name in possible_names:
+
+            search = name.lower()
+
+            if search in index_text:
+
+                try:
+
+                    row = statement.loc[index]
+
+                    if isinstance(row, pd.Series):
+
+                        for value in row.values:
+
+                            number = safe_float(value)
+
+                            if number is not None:
+                                return number
+
+                except Exception:
+                    pass
+
+    return None
+
+
+def latest_two_values(statement, possible_names):
+
     if statement is None or statement.empty:
         return []
 
-    for name in names:
+    for name in possible_names:
 
-        if name not in statement.index:
-            continue
+        if name in statement.index:
 
-        values = []
+            try:
 
-        try:
-            row = statement.loc[name]
+                row = statement.loc[name]
 
-            for value in row.tolist():
+                if isinstance(row, pd.Series):
 
-                value = safe_float(value)
+                    values = []
 
-                if value is not None:
-                    values.append(value)
+                    for value in row.values:
 
-        except Exception:
-            continue
+                        number = safe_float(value)
 
-        if values:
-            return values
+                        if number is not None:
+                            values.append(number)
+
+                    return values[:5]
+
+            except Exception:
+                pass
 
     return []
 
 
+# ============================================================
+# GROWTH
+# ============================================================
+
 def calculate_cagr(values, years):
-    if len(values) < years + 1:
+
+    if not values:
         return None
 
-    latest = values[0]
-    oldest = values[years]
+    if len(values) < 2:
+        return None
+
+    latest = safe_float(values[0])
+    oldest = safe_float(values[-1])
 
     if latest is None or oldest is None:
         return None
 
-    if latest <= 0 or oldest <= 0:
+    if oldest <= 0 or latest <= 0:
         return None
 
     try:
+
         return (
-            ((latest / oldest) ** (1 / years)) - 1
+            (latest / oldest) ** (1 / years) - 1
         ) * 100
 
     except Exception:
         return None
 
 
-def calculate_growth(statement, names, years):
-    values = annual_values(
-        statement,
-        names
-    )
-
-    return calculate_cagr(
-        values,
-        years
-    )
-
-
-def latest_statement_value(statement, names):
-    values = annual_values(
-        statement,
-        names
-    )
-
-    if values:
-        return values[0]
-
-    return None
-
-
-def calculate_roic(
-    financials,
-    balance_sheet,
-    info
+def calculate_growth_from_statement(
+    statement,
+    names,
+    years=4
 ):
-    """
-    Approximate ROIC:
 
-    NOPAT / Invested Capital
-
-    This is intentionally conservative.
-    For companies where the required inputs
-    are unavailable, return None.
-    """
-
-    operating_income = latest_statement_value(
-        financials,
-        [
-            "Operating Income",
-            "OperatingIncome"
-        ]
+    values = latest_two_values(
+        statement,
+        names
     )
 
-    if operating_income is None:
+    if len(values) < 2:
         return None
 
-    tax_expense = latest_statement_value(
-        financials,
+    actual_years = min(
+        years,
+        len(values) - 1
+    )
+
+    if actual_years <= 0:
+        return None
+
+    latest = values[0]
+    oldest = values[actual_years]
+
+    if latest <= 0 or oldest <= 0:
+        return None
+
+    try:
+
+        return (
+            (latest / oldest)
+            ** (1 / actual_years)
+            - 1
+        ) * 100
+
+    except Exception:
+        return None
+
+
+# ============================================================
+# FUNDAMENTALS
+# ============================================================
+
+def build_fundamentals(
+    info,
+    income_stmt,
+    balance_sheet,
+    cashflow
+):
+
+    revenue = statement_value(
+        income_stmt,
         [
-            "Tax Provision",
-            "TaxProvision"
+            "Total Revenue",
+            "Operating Revenue",
+            "Revenue"
         ]
     )
 
-    pretax_income = latest_statement_value(
-        financials,
+    net_income = statement_value(
+        income_stmt,
         [
-            "Pretax Income",
-            "PretaxIncome"
+            "Net Income",
+            "Net Income Common Stockholders",
+            "Net Income Including Noncontrolling Interests"
         ]
     )
 
-    if (
-        tax_expense is not None
-        and pretax_income is not None
-        and pretax_income > 0
-    ):
-        tax_rate = (
-            tax_expense /
-            pretax_income
-        )
-
-        tax_rate = max(
-            0,
-            min(
-                tax_rate,
-                0.35
-            )
-        )
-
-    else:
-        tax_rate = 0.25
-
-    nopat = (
-        operating_income *
-        (1 - tax_rate)
+    operating_income = statement_value(
+        income_stmt,
+        [
+            "Operating Income",
+            "Operating Income As Reported"
+        ]
     )
 
-    total_debt = latest_statement_value(
+    gross_profit = statement_value(
+        income_stmt,
+        [
+            "Gross Profit"
+        ]
+    )
+
+    ebitda = statement_value(
+        income_stmt,
+        [
+            "EBITDA",
+            "Normalized EBITDA"
+        ]
+    )
+
+    free_cash_flow = statement_value(
+        cashflow,
+        [
+            "Free Cash Flow"
+        ]
+    )
+
+    operating_cash_flow = statement_value(
+        cashflow,
+        [
+            "Operating Cash Flow",
+            "Total Cash From Operating Activities"
+        ]
+    )
+
+    total_debt = statement_value(
         balance_sheet,
         [
             "Total Debt",
-            "TotalDebt"
+            "Long Term Debt And Capital Lease Obligation",
+            "Long Term Debt"
         ]
     )
 
-    equity = latest_statement_value(
+    total_assets = statement_value(
+        balance_sheet,
+        [
+            "Total Assets"
+        ]
+    )
+
+    stockholders_equity = statement_value(
         balance_sheet,
         [
             "Stockholders Equity",
-            "StockholdersEquity",
-            "Total Equity Gross Minority Interest"
+            "Total Equity Gross Minority Interest",
+            "Common Stock Equity"
         ]
     )
 
-    cash = latest_statement_value(
+    cash = statement_value(
         balance_sheet,
         [
             "Cash Cash Equivalents And Short Term Investments",
             "Cash And Cash Equivalents",
-            "Cash"
+            "Cash Financial"
         ]
     )
 
-    if total_debt is None:
-        total_debt = 0
-
-    if equity is None:
-        return None
-
-    if cash is None:
-        cash = 0
-
-    invested_capital = (
-        total_debt
-        + equity
-        - cash
+    revenue_growth = first_valid(
+        info.get("revenueGrowth"),
+        calculate_growth_from_statement(
+            income_stmt,
+            [
+                "Total Revenue",
+                "Operating Revenue",
+                "Revenue"
+            ]
+        )
     )
 
-    if invested_capital <= 0:
-        return None
-
-    return (
-        nopat /
-        invested_capital
-    ) * 100
-
-
-# =========================================================
-# UPDATE ONE STOCK
-# =========================================================
-
-def update_stock(stock):
-
-    ticker = stock.get("ticker")
-
-    print(
-        f"Updating {ticker}"
+    earnings_growth = first_valid(
+        info.get("earningsGrowth"),
+        info.get("earningsQuarterlyGrowth")
     )
+
+    if earnings_growth is not None:
+        earnings_growth *= 100
+
+    profit_margin = first_valid(
+        info.get("profitMargins")
+    )
+
+    if profit_margin is not None:
+        profit_margin *= 100
+
+    roe = first_valid(
+        info.get("returnOnEquity")
+    )
+
+    if roe is not None:
+        roe *= 100
+
+    roic = None
+
+    # Conservative ROIC calculation.
+    if operating_income is not None:
+
+        tax_rate = first_valid(
+            info.get("taxRate")
+        )
+
+        if tax_rate is None:
+            tax_rate = 0.25
+
+        nopat = operating_income * (
+            1 - tax_rate
+        )
+
+        debt = total_debt or 0
+        equity = stockholders_equity or 0
+        invested_capital = debt + equity
+
+        if invested_capital > 0:
+
+            roic = (
+                nopat / invested_capital
+            ) * 100
+
+    debt_to_equity = first_valid(
+        info.get("debtToEquity")
+    )
+
+    if debt_to_equity is not None:
+        debt_to_equity /= 100
+
+    interest_expense = statement_value(
+        income_stmt,
+        [
+            "Interest Expense",
+            "Interest Expense Non Operating"
+        ]
+    )
+
+    interest_coverage = None
+
+    if (
+        operating_income is not None
+        and interest_expense is not None
+        and interest_expense != 0
+    ):
+
+        interest_coverage = (
+            operating_income
+            / abs(interest_expense)
+        )
+
+    return clean_dict({
+        "revenue": revenue,
+        "netIncome": net_income,
+        "operatingIncome": operating_income,
+        "grossProfit": gross_profit,
+        "ebitda": ebitda,
+        "freeCashFlow": free_cash_flow,
+        "operatingCashFlow": operating_cash_flow,
+        "cash": cash,
+        "totalDebt": total_debt,
+        "totalAssets": total_assets,
+        "stockholdersEquity": stockholders_equity,
+        "revenueGrowth5Y": revenue_growth,
+        "epsGrowth5Y": earnings_growth,
+        "profitMargin": profit_margin,
+        "roe": roe,
+        "roic": roic,
+        "debtToEquity": debt_to_equity,
+        "interestCoverage": interest_coverage,
+    })
+
+
+# ============================================================
+# VALUATION
+# ============================================================
+
+def build_valuation(info):
+
+    return clean_dict({
+
+        "pe": first_valid(
+            info.get("trailingPE")
+        ),
+
+        "forwardPE": first_valid(
+            info.get("forwardPE")
+        ),
+
+        "peg": first_valid(
+            info.get("pegRatio")
+        ),
+
+        "priceToSales": first_valid(
+            info.get("priceToSalesTrailing12Months")
+        ),
+
+        "priceToBook": first_valid(
+            info.get("priceToBook")
+        ),
+
+        "enterpriseToEbitda": first_valid(
+            info.get("enterpriseToEbitda")
+        ),
+
+        "enterpriseToRevenue": first_valid(
+            info.get("enterpriseToRevenue")
+        ),
+
+        "marketCap": first_valid(
+            info.get("marketCap")
+        ),
+
+        "enterpriseValue": first_valid(
+            info.get("enterpriseValue")
+        ),
+
+        "trailingEps": first_valid(
+            info.get("trailingEps")
+        ),
+
+        "forwardEps": first_valid(
+            info.get("forwardEps")
+        ),
+
+        "bookValue": first_valid(
+            info.get("bookValue")
+        ),
+
+        "beta": first_valid(
+            info.get("beta")
+        ),
+
+        "52WeekChange": (
+            safe_float(info.get("52WeekChange")) * 100
+            if safe_float(info.get("52WeekChange")) is not None
+            else None
+        ),
+    })
+
+
+# ============================================================
+# OWNERSHIP
+# ============================================================
+
+def build_ownership(info):
+
+    insider = first_valid(
+        info.get("heldPercentInsiders")
+    )
+
+    institutional = first_valid(
+        info.get("heldPercentInstitutions")
+    )
+
+    if insider is not None:
+        insider *= 100
+
+    if institutional is not None:
+        institutional *= 100
+
+    return clean_dict({
+
+        "insiderOwnership": insider,
+
+        "institutionalOwnership": institutional,
+
+        # Promoter ownership is deliberately left empty here.
+        # Yahoo does not reliably provide Indian promoter data.
+        # We will add NSE/BSE promoter/shareholding data separately.
+        "promoterOwnership": None,
+
+        "promoterTrend": None,
+
+        "promoterPledge": None,
+
+        "recentBigInvestors": [],
+    })
+
+
+# ============================================================
+# DIVIDEND
+# ============================================================
+
+def build_dividend(info):
+
+    dividend_yield = first_valid(
+        info.get("dividendYield")
+    )
+
+    if dividend_yield is not None:
+        dividend_yield *= 100
+
+    payout_ratio = first_valid(
+        info.get("payoutRatio")
+    )
+
+    if payout_ratio is not None:
+        payout_ratio *= 100
+
+    return clean_dict({
+
+        "yield": dividend_yield,
+
+        "rate": first_valid(
+            info.get("dividendRate")
+        ),
+
+        "payoutRatio": payout_ratio,
+
+        "fiveYearAvgYield": first_valid(
+            info.get("fiveYearAvgDividendYield")
+        ),
+    })
+
+
+# ============================================================
+# PRICE
+# ============================================================
+
+def build_price(history, info):
+
+    current = None
+
+    if history is not None and not history.empty:
+
+        try:
+
+            history.columns = [
+                str(column).lower().replace(" ", "")
+                for column in history.columns
+            ]
+
+            if "close" in history.columns:
+
+                close = pd.to_numeric(
+                    history["close"],
+                    errors="coerce"
+                ).dropna()
+
+                if not close.empty:
+                    current = safe_float(
+                        close.iloc[-1]
+                    )
+
+        except Exception:
+            pass
+
+    if current is None:
+
+        current = first_valid(
+            info.get("currentPrice"),
+            info.get("regularMarketPrice"),
+            info.get("previousClose")
+        )
+
+    technical = calculate_technical(
+        history
+    )
+
+    return clean_dict({
+
+        "current": current,
+
+        "previousClose": first_valid(
+            info.get("previousClose"),
+            info.get("regularMarketPreviousClose")
+        ),
+
+        "high52w": technical.get("high52w"),
+
+        "low52w": technical.get("low52w"),
+
+        "currency": info.get(
+            "currency"
+        ),
+
+        "exchange": info.get(
+            "exchange"
+        ),
+    })
+
+
+# ============================================================
+# ONE STOCK - FUNDAMENTAL REQUEST
+# ============================================================
+
+def fetch_fundamental_data(ticker):
+
+    for attempt in range(MAX_RETRIES):
+
+        try:
+
+            yf_stock = yf.Ticker(ticker)
+
+            # ------------------------------------------------
+            # Basic company information
+            # ------------------------------------------------
+
+            try:
+                info = yf_stock.get_info()
+            except Exception:
+                info = {}
+
+            if not isinstance(info, dict):
+                info = {}
+
+            # ------------------------------------------------
+            # Financial statements
+            # ------------------------------------------------
+
+            try:
+                income_stmt = yf_stock.get_income_stmt(
+                    freq="yearly"
+                )
+            except Exception as exc:
+                print(
+                    f"{ticker}: income statement unavailable: {exc}"
+                )
+                income_stmt = pd.DataFrame()
+
+            try:
+                balance_sheet = yf_stock.get_balance_sheet(
+                    freq="yearly"
+                )
+            except Exception as exc:
+                print(
+                    f"{ticker}: balance sheet unavailable: {exc}"
+                )
+                balance_sheet = pd.DataFrame()
+
+            try:
+                cashflow = yf_stock.get_cash_flow(
+                    freq="yearly"
+                )
+            except Exception as exc:
+                print(
+                    f"{ticker}: cash flow unavailable: {exc}"
+                )
+                cashflow = pd.DataFrame()
+
+            fundamentals = build_fundamentals(
+                info,
+                income_stmt,
+                balance_sheet,
+                cashflow
+            )
+
+            valuation = build_valuation(
+                info
+            )
+
+            ownership = build_ownership(
+                info
+            )
+
+            dividend = build_dividend(
+                info
+            )
+
+            return {
+                "info": info,
+                "fundamentals": fundamentals,
+                "valuation": valuation,
+                "ownership": ownership,
+                "dividend": dividend,
+            }
+
+        except Exception as exc:
+
+            print(
+                f"{ticker}: fundamental request failed "
+                f"(attempt {attempt + 1}/{MAX_RETRIES}): {exc}"
+            )
+
+            sleep_backoff(attempt)
+
+    return {
+        "info": {},
+        "fundamentals": {},
+        "valuation": {},
+        "ownership": {},
+        "dividend": {},
+    }
+
+
+# ============================================================
+# DATA QUALITY
+# ============================================================
+
+def calculate_data_quality(
+    price,
+    fundamentals,
+    valuation,
+    technical,
+    ownership,
+    dividend
+):
+
+    price_fields = [
+        "current",
+        "previousClose",
+        "high52w",
+        "low52w",
+    ]
+
+    fundamental_fields = [
+        "revenue",
+        "netIncome",
+        "freeCashFlow",
+        "roe",
+        "roic",
+        "debtToEquity",
+    ]
+
+    valuation_fields = [
+        "pe",
+        "forwardPE",
+        "priceToSales",
+        "priceToBook",
+        "enterpriseToEbitda",
+    ]
+
+    technical_fields = [
+        "sma50",
+        "sma200",
+        "momentum3m",
+        "momentum6m",
+        "volatility30d",
+    ]
+
+    def completeness(data, fields):
+
+        if not isinstance(data, dict):
+            return 0
+
+        available = 0
+
+        for field in fields:
+
+            if data.get(field) is not None:
+                available += 1
+
+        if not fields:
+            return 0
+
+        return round(
+            available / len(fields) * 100,
+            1
+        )
+
+    scores = {
+
+        "price": completeness(
+            price,
+            price_fields
+        ),
+
+        "fundamentals": completeness(
+            fundamentals,
+            fundamental_fields
+        ),
+
+        "valuation": completeness(
+            valuation,
+            valuation_fields
+        ),
+
+        "technical": completeness(
+            technical,
+            technical_fields
+        ),
+
+        "ownership": completeness(
+            ownership,
+            [
+                "insiderOwnership",
+                "institutionalOwnership",
+            ]
+        ),
+
+        "dividend": completeness(
+            dividend,
+            [
+                "yield",
+                "rate",
+                "payoutRatio",
+            ]
+        ),
+    }
+
+    overall = round(
+        sum(scores.values()) / len(scores),
+        1
+    )
+
+    return {
+        "overall": overall,
+        "sections": scores,
+        "status": (
+            "Good"
+            if overall >= 70
+            else "Partial"
+            if overall >= 40
+            else "Poor"
+        ),
+        "updatedAt": datetime.now(
+            timezone.utc
+        ).isoformat(),
+    }
+
+
+# ============================================================
+# UPDATE STOCK
+# ============================================================
+
+def update_stock(
+    stock,
+    history,
+    ticker
+):
+
+    original = dict(stock)
 
     try:
 
-        yf_stock = yf.Ticker(
+        fundamental_data = fetch_fundamental_data(
             ticker
         )
 
-        # -------------------------------------------------
-        # PRICE HISTORY
-        # -------------------------------------------------
+        info = fundamental_data["info"]
 
-        try:
+        fundamentals = fundamental_data[
+            "fundamentals"
+        ]
 
-            history = yf_stock.history(
-                period="5y",
-                auto_adjust=False
-            )
+        valuation = fundamental_data[
+            "valuation"
+        ]
 
-        except Exception as e:
+        ownership = fundamental_data[
+            "ownership"
+        ]
 
-            print(
-                f"History error {ticker}: {e}"
-            )
+        dividend = fundamental_data[
+            "dividend"
+        ]
 
-            history = pd.DataFrame()
-
-        if history is None or history.empty:
-
-            print(
-                f"No price history: {ticker}"
-            )
-
-            return stock
-
-        history = history.dropna(
-            subset=["Close"]
-        )
-
-        if history.empty:
-            return stock
-
-        # -------------------------------------------------
-        # COMPANY INFO
-        # -------------------------------------------------
-
-        try:
-            info = yf_stock.info or {}
-
-        except Exception as e:
-
-            print(
-                f"Info error {ticker}: {e}"
-            )
-
-            info = {}
-
-        # -------------------------------------------------
-        # FINANCIAL STATEMENTS
-        # -------------------------------------------------
-
-        try:
-            financials = (
-                yf_stock.financials
-            )
-
-        except Exception as e:
-
-            print(
-                f"Financials error {ticker}: {e}"
-            )
-
-            financials = pd.DataFrame()
-
-        try:
-            balance_sheet = (
-                yf_stock.balance_sheet
-            )
-
-        except Exception as e:
-
-            print(
-                f"Balance sheet error {ticker}: {e}"
-            )
-
-            balance_sheet = pd.DataFrame()
-
-        try:
-            cashflow = (
-                yf_stock.cashflow
-            )
-
-        except Exception as e:
-
-            print(
-                f"Cash flow error {ticker}: {e}"
-            )
-
-            cashflow = pd.DataFrame()
-
-        # -------------------------------------------------
-        # PRICE DATA
-        # -------------------------------------------------
-
-        price = safe_float(
-            history["Close"].iloc[-1]
-        )
-
-        high_52 = safe_float(
-            history["High"].tail(252).max()
-        )
-
-        low_52 = safe_float(
-            history["Low"].tail(252).min()
-        )
-
-        sma50 = safe_float(
-            history["Close"]
-            .rolling(50)
-            .mean()
-            .iloc[-1]
-        )
-
-        sma200 = safe_float(
-            history["Close"]
-            .rolling(200)
-            .mean()
-            .iloc[-1]
-        )
-
-        # -------------------------------------------------
-        # MOMENTUM
-        # -------------------------------------------------
-
-        price_3m = None
-        price_6m = None
-
-        if len(history) >= 64:
-
-            price_3m = safe_float(
-                history["Close"].iloc[-64]
-            )
-
-        if len(history) >= 126:
-
-            price_6m = safe_float(
-                history["Close"].iloc[-126]
-            )
-
-        momentum_3m = None
-        momentum_6m = None
-
-        if (
-            price is not None
-            and price_3m is not None
-            and price_3m > 0
-        ):
-
-            momentum_3m = (
-                (price / price_3m) - 1
-            ) * 100
-
-        if (
-            price is not None
-            and price_6m is not None
-            and price_6m > 0
-        ):
-
-            momentum_6m = (
-                (price / price_6m) - 1
-            ) * 100
-
-        # -------------------------------------------------
-        # GROWTH
-        # -------------------------------------------------
-
-        revenue_growth_3y = calculate_growth(
-            financials,
-            [
-                "Total Revenue",
-                "Operating Revenue"
-            ],
-            3
-        )
-
-        revenue_growth_5y = calculate_growth(
-            financials,
-            [
-                "Total Revenue",
-                "Operating Revenue"
-            ],
-            5
-        )
-
-        eps_growth_3y = calculate_growth(
-            financials,
-            [
-                "Diluted EPS",
-                "Basic EPS"
-            ],
-            3
-        )
-
-        eps_growth_5y = calculate_growth(
-            financials,
-            [
-                "Diluted EPS",
-                "Basic EPS"
-            ],
-            5
-        )
-
-        fcf_growth_3y = calculate_growth(
-            cashflow,
-            [
-                "Free Cash Flow"
-            ],
-            3
-        )
-
-        fcf_growth_5y = calculate_growth(
-            cashflow,
-            [
-                "Free Cash Flow"
-            ],
-            5
-        )
-
-        # -------------------------------------------------
-        # FINANCIAL METRICS
-        # -------------------------------------------------
-
-        market_cap = safe_float(
-            info.get("marketCap")
-        )
-
-        enterprise_value = safe_float(
-            info.get("enterpriseValue")
-        )
-
-        fcf = first_valid(
-            info,
-            [
-                "freeCashflow"
-            ]
-        )
-
-        if fcf is None:
-
-            operating_cashflow = first_valid(
-                info,
-                [
-                    "operatingCashflow"
-                ]
-            )
-
-            capital_expenditure = first_valid(
-                info,
-                [
-                    "capitalExpenditures"
-                ]
-            )
-
-            if (
-                operating_cashflow is not None
-                and capital_expenditure is not None
-            ):
-
-                fcf = (
-                    operating_cashflow
-                    + capital_expenditure
-                )
-
-        # -------------------------------------------------
-        # VALUATION
-        # -------------------------------------------------
-
-        pe = first_valid(
-            info,
-            [
-                "trailingPE"
-            ]
-        )
-
-        forward_pe = first_valid(
-            info,
-            [
-                "forwardPE"
-            ]
-        )
-
-        peg = first_valid(
-            info,
-            [
-                "pegRatio"
-            ]
-        )
-
-        price_to_sales = first_valid(
-            info,
-            [
-                "priceToSalesTrailing12Months"
-            ]
-        )
-
-        price_to_book = first_valid(
-            info,
-            [
-                "priceToBook"
-            ]
-        )
-
-        price_to_fcf = None
-
-        if (
-            market_cap is not None
-            and fcf is not None
-            and fcf > 0
-        ):
-
-            price_to_fcf = (
-                market_cap / fcf
-            )
-
-        # -------------------------------------------------
-        # PROFITABILITY
-        # -------------------------------------------------
-
-        profit_margin = first_valid(
-            info,
-            [
-                "profitMargins"
-            ]
-        )
-
-        if profit_margin is not None:
-            profit_margin *= 100
-
-        roe = first_valid(
-            info,
-            [
-                "returnOnEquity"
-            ]
-        )
-
-        if roe is not None:
-            roe *= 100
-
-        roic = calculate_roic(
-            financials,
-            balance_sheet,
+        price = build_price(
+            history,
             info
         )
 
-        debt_to_equity = first_valid(
-            info,
-            [
-                "debtToEquity"
-            ]
+        technical = calculate_technical(
+            history
         )
 
-        # Yahoo reports debt/equity
-        # as a percentage in some cases.
-        # Convert to ratio if clearly percentage.
-        if (
-            debt_to_equity is not None
-            and debt_to_equity > 10
-        ):
+        # ----------------------------------------------------
+        # Preserve useful existing universe metadata.
+        # ----------------------------------------------------
 
-            debt_to_equity /= 100
+        result = dict(original)
 
-        # -------------------------------------------------
-        # DIVIDENDS
-        # -------------------------------------------------
+        # ----------------------------------------------------
+        # Nested structures expected by app.js/scoring.js
+        # ----------------------------------------------------
 
-        dividend_yield = first_valid(
-            info,
-            [
-                "dividendYield"
-            ]
-        )
+        result["price"] = price
 
-        if dividend_yield is not None:
-            dividend_yield *= 100
+        result["fundamentals"] = fundamentals
 
-        dividend_rate = first_valid(
-            info,
-            [
-                "dividendRate"
-            ]
-        )
+        result["valuation"] = valuation
 
-        payout_ratio = first_valid(
-            info,
-            [
-                "payoutRatio"
-            ]
-        )
+        result["technical"] = technical
 
-        if payout_ratio is not None:
-            payout_ratio *= 100
+        result["ownership"] = ownership
 
-        # -------------------------------------------------
-        # OWNERSHIP
-        # -------------------------------------------------
+        result["dividend"] = dividend
 
-        insider_ownership = first_valid(
-            info,
-            [
-                "heldPercentInsiders"
-            ]
-        )
+        # ----------------------------------------------------
+        # Basic company information
+        # ----------------------------------------------------
 
-        if insider_ownership is not None:
-            insider_ownership *= 100
-
-        institutional_ownership = first_valid(
-            info,
-            [
-                "heldPercentInstitutions"
-            ]
-        )
-
-        if institutional_ownership is not None:
-            institutional_ownership *= 100
-
-        # Promoter ownership is NOT substituted
-        # with insider ownership.
-        #
-        # We will add official Indian promoter /
-        # shareholding data separately.
-        promoter_holding = None
-        promoter_change = None
-        promoter_pledge = None
-
-        # -------------------------------------------------
-        # COMPANY INFORMATION
-        # -------------------------------------------------
-
-        name = (
+        result["companyName"] = (
             info.get("longName")
             or info.get("shortName")
-            or stock.get("name")
+            or result.get("companyName")
+            or result.get("name")
             or ticker
         )
 
-        sector = (
+        result["sector"] = (
             info.get("sector")
-            or stock.get("sector")
-            or "Unknown"
+            or result.get("sector")
         )
 
-        industry = (
+        result["industry"] = (
             info.get("industry")
-            or stock.get("industry")
-            or "Unknown"
+            or result.get("industry")
         )
 
-        currency = (
-            info.get("currency")
-            or stock.get("currency")
+        result["country"] = (
+            info.get("country")
+            or result.get("country")
         )
 
-        exchange = (
-            info.get("exchange")
-            or stock.get("exchange")
+        result["website"] = (
+            info.get("website")
+            or result.get("website")
         )
 
-        # -------------------------------------------------
-        # DATA QUALITY
-        # -------------------------------------------------
+        # ----------------------------------------------------
+        # Flat compatibility fields
+        # ----------------------------------------------------
 
-        has_price = (
-            price is not None
+        current_price = price.get(
+            "current"
         )
 
-        has_financials = (
-            financials is not None
-            and not financials.empty
+        result["currentPrice"] = current_price
+
+        result["pe"] = valuation.get(
+            "pe"
         )
 
-        has_balance_sheet = (
-            balance_sheet is not None
-            and not balance_sheet.empty
+        result["forwardPE"] = valuation.get(
+            "forwardPE"
         )
 
-        has_cashflow = (
-            cashflow is not None
-            and not cashflow.empty
+        result["peg"] = valuation.get(
+            "peg"
         )
 
-        financial_data_count = sum(
-            value is not None
-            for value in [
-                revenue_growth_3y,
-                revenue_growth_5y,
-                eps_growth_3y,
-                eps_growth_5y,
-                fcf,
-                fcf_growth_3y,
-                fcf_growth_5y,
-                profit_margin,
-                roe,
-                roic,
-                debt_to_equity,
-                pe,
-                forward_pe,
-                peg,
-                price_to_fcf,
-                price_to_book
-            ]
+        result["roe"] = fundamentals.get(
+            "roe"
         )
 
-        # -------------------------------------------------
-        # FINAL DATA OBJECT
-        # -------------------------------------------------
-
-        data = {
-            # -------------------------------------------------
-            # CORE
-            # -------------------------------------------------
-
-            **stock,
-
-            "ticker": ticker,
-            "name": name,
-            "sector": sector,
-            "industry": industry,
-            "currency": currency,
-            "exchange": exchange,
-
-            # Keep both names for compatibility
-            "price": price,
-            "currentPrice": price,
-
-            "marketCap": market_cap,
-            "enterpriseValue": enterprise_value,
-
-            "high52Week": high_52,
-            "low52Week": low_52,
-
-            # -------------------------------------------------
-            # TECHNICAL
-            # -------------------------------------------------
-
-            "technical": {
-                "price": price,
-                "currentPrice": price,
-                "high52Week": high_52,
-                "low52Week": low_52,
-                "sma50": sma50,
-                "sma200": sma200,
-                "momentum3M": momentum_3m,
-                "momentum6M": momentum_6m
-            },
-
-            # Keep flat technical fields too
-            "sma50": sma50,
-            "sma200": sma200,
-            "momentum3M": momentum_3m,
-            "momentum6M": momentum_6m,
-
-            # -------------------------------------------------
-            # FUNDAMENTALS
-            # -------------------------------------------------
-
-            "fundamentals": {
-
-                "revenueGrowth3Y":
-                    revenue_growth_3y,
-
-                "revenueGrowth5Y":
-                    revenue_growth_5y,
-
-                "epsGrowth3Y":
-                    eps_growth_3y,
-
-                "epsGrowth5Y":
-                    eps_growth_5y,
-
-                "fcfGrowth3Y":
-                    fcf_growth_3y,
-
-                "fcfGrowth5Y":
-                    fcf_growth_5y,
-
-                "profitMargin":
-                    profit_margin,
-
-                "roe":
-                    roe,
-
-                "roic":
-                    roic,
-
-                "freeCashFlow":
-                    fcf,
-
-                "debtToEquity":
-                    debt_to_equity
-            },
-
-            # Keep flat fundamental fields too
-            "revenueGrowth3Y":
-                revenue_growth_3y,
-
-            "revenueGrowth5Y":
-                revenue_growth_5y,
-
-            "epsGrowth5Y":
-                eps_growth_5y,
-
-            "fcfGrowth5Y":
-                fcf_growth_5y,
-
-            "profitMargin":
-                profit_margin,
-
-            "roe":
-                roe,
-
-            "roic":
-                roic,
-
-            "freeCashFlow":
-                fcf,
-
-            "debtToEquity":
-                debt_to_equity,
-
-            # -------------------------------------------------
-            # VALUATION
-            # -------------------------------------------------
-
-            "valuation": {
-
-                "pe":
-                    pe,
-
-                "forwardPE":
-                    forward_pe,
-
-                "peg":
-                    peg,
-
-                "priceToFcf":
-                    price_to_fcf,
-
-                "priceToBook":
-                    price_to_book,
-
-                "priceSales":
-                    price_to_sales,
-
-                "enterpriseValue":
-                    enterprise_value
-            },
-
-            # Keep flat valuation fields too
-            "pe": pe,
-            "forwardPE": forward_pe,
-            "peg": peg,
-            "priceToFcf": price_to_fcf,
-            "priceToBook": price_to_book,
-            "priceSales": price_to_sales,
-
-            # -------------------------------------------------
-            # OWNERSHIP
-            # -------------------------------------------------
-
-            "ownership": {
-
-                "insiderHolding":
-                    insider_ownership,
-
-                "institutionalHolding":
-                    institutional_ownership,
-
-                "promoterHolding":
-                    promoter_holding,
-
-                "promoterChange":
-                    promoter_change,
-
-                "promoterPledge":
-                    promoter_pledge
-            },
-
-            # Flat versions for compatibility
-            "insiderOwnership":
-                insider_ownership,
-
-            "institutionalOwnership":
-                institutional_ownership,
-
-            # -------------------------------------------------
-            # DIVIDEND
-            # -------------------------------------------------
-
-            "dividend": {
-
-                "yield":
-                    dividend_yield,
-
-                "rate":
-                    dividend_rate,
-
-                "payout":
-                    payout_ratio,
-
-                # Historical dividend growth
-                # will be added in a later data layer.
-                "growth":
-                    None
-            },
-
-            "dividendYield":
-                dividend_yield,
-
-            "dividendRate":
-                dividend_rate,
-
-            "payoutRatio":
-                payout_ratio,
-
-            # -------------------------------------------------
-            # INVESTOR DATA
-            # -------------------------------------------------
-
-            "recentBigInvestors": [],
-
-            # -------------------------------------------------
-            # SOURCE / QUALITY
-            # -------------------------------------------------
-
-            "dataSource":
-                "Yahoo Finance / yfinance",
-
-            "dataQuality": {
-
-                "historyDays":
-                    len(history),
-
-                "hasPrice":
-                    has_price,
-
-                "hasFinancials":
-                    has_financials,
-
-                "hasBalanceSheet":
-                    has_balance_sheet,
-
-                "hasCashFlow":
-                    has_cashflow,
-
-                "financialMetricCount":
-                    financial_data_count,
-
-                "financialDataAvailable":
-                    financial_data_count > 0
-            }
+        result["roic"] = fundamentals.get(
+            "roic"
+        )
+
+        result["debtToEquity"] = fundamentals.get(
+            "debtToEquity"
+        )
+
+        result["revenueGrowth5Y"] = fundamentals.get(
+            "revenueGrowth5Y"
+        )
+
+        result["epsGrowth5Y"] = fundamentals.get(
+            "epsGrowth5Y"
+        )
+
+        result["freeCashFlow"] = fundamentals.get(
+            "freeCashFlow"
+        )
+
+        # ----------------------------------------------------
+        # Data quality
+        # ----------------------------------------------------
+
+        result["dataQuality"] = calculate_data_quality(
+            price,
+            fundamentals,
+            valuation,
+            technical,
+            ownership,
+            dividend
+        )
+
+        return clean_dict(result)
+
+    except Exception as exc:
+
+        print(
+            f"{ticker}: update error: {exc}"
+        )
+
+        # IMPORTANT:
+        # Keep the stock but explicitly mark the update as failed.
+        result = dict(original)
+
+        result["dataQuality"] = {
+            "overall": 0,
+            "status": "Failed",
+            "error": str(exc),
+            "updatedAt": datetime.now(
+                timezone.utc
+            ).isoformat(),
         }
 
+        return result
+
+
+# ============================================================
+# TICKER NORMALIZATION
+# ============================================================
+
+def get_ticker(stock):
+
+    possible_fields = [
+        "ticker",
+        "symbol",
+        "code",
+    ]
+
+    for field in possible_fields:
+
+        value = stock.get(field)
+
+        if value:
+
+            value = str(value).strip()
+
+            if value:
+                return value
+
+    return None
+
+
+# ============================================================
+# UPDATE ONE MARKET
+# ============================================================
+
+def update_market(market, filepath):
+
+    print("")
+    print("=" * 70)
+    print(f"UPDATING {market.upper()}")
+    print("=" * 70)
+
+    if not os.path.exists(filepath):
+
         print(
-            f"OK {ticker} | "
-            f"Price={price} | "
-            f"PE={pe} | "
-            f"Revenue5Y={revenue_growth_5y} | "
-            f"ROE={roe} | "
-            f"FCF={fcf}"
+            f"ERROR: {filepath} does not exist."
         )
 
-        return data
-
-    except Exception as e:
-
-        print(
-            f"ERROR {ticker}: "
-            f"{type(e).__name__}: {e}"
-        )
-
-        # Never destroy an otherwise valid
-        # universe entry because one data source failed.
-        return stock
-
-
-# =========================================================
-# LOAD UNIVERSE
-# =========================================================
-
-def load_universe(filename):
-
-    path = DATA_DIR / filename
+        return
 
     with open(
-        path,
+        filepath,
         "r",
         encoding="utf-8"
     ) as file:
 
-        return json.load(file)
+        data = json.load(file)
 
-
-# =========================================================
-# UPDATE MARKET
-# =========================================================
-
-def update_market(
-    universe_filename,
-    output_filename,
-    market
-):
-
-    universe = load_universe(
-        universe_filename
-    )
-
-    stocks = universe.get(
+    stocks = data.get(
         "stocks",
         []
     )
 
-    updated = []
-
-    print()
-    print("=" * 60)
-    print(
-        f"UPDATING {market.upper()}"
-    )
-    print(
-        f"Stocks: {len(stocks)}"
-    )
-    print("=" * 60)
-
-    for number, stock in enumerate(
-        stocks,
-        start=1
-    ):
+    if not stocks:
 
         print(
-            f"\n[{number}/{len(stocks)}]"
+            f"ERROR: {filepath} contains no stocks."
         )
 
-        updated_stock = update_stock(
-            stock
+        return
+
+    print(
+        f"Universe contains {len(stocks)} stocks."
+    )
+
+    # --------------------------------------------------------
+    # Collect tickers.
+    # --------------------------------------------------------
+
+    ticker_map = {}
+
+    for stock in stocks:
+
+        ticker = get_ticker(stock)
+
+        if ticker:
+            ticker_map[ticker] = stock
+
+    tickers = list(
+        ticker_map.keys()
+    )
+
+    print(
+        f"Found {len(tickers)} unique tickers."
+    )
+
+    # --------------------------------------------------------
+    # Batch download price history.
+    # --------------------------------------------------------
+
+    histories = {}
+
+    for start in range(
+        0,
+        len(tickers),
+        BATCH_SIZE
+    ):
+
+        batch_tickers = tickers[
+            start:start + BATCH_SIZE
+        ]
+
+        print("")
+        print(
+            f"Price batch "
+            f"{start + 1}-{start + len(batch_tickers)} "
+            f"of {len(tickers)}"
         )
 
-        updated.append(
-            updated_stock
+        batch_data = download_history_batch(
+            batch_tickers
         )
 
-        time.sleep(0.25)
+        for ticker in batch_tickers:
 
-    output = {
+            histories[ticker] = get_ticker_history(
+                batch_data,
+                ticker
+            )
 
-        "market": market,
+        if (
+            start + BATCH_SIZE
+            < len(tickers)
+        ):
 
-        "lastUpdated":
-            pd.Timestamp.utcnow().isoformat(),
+            time.sleep(
+                BATCH_SLEEP
+            )
 
-        "universeSize":
-            len(updated),
+    # --------------------------------------------------------
+    # Update stocks.
+    # --------------------------------------------------------
 
-        "stocks":
+    updated_stocks = []
+
+    price_success = 0
+    fundamental_success = 0
+    valuation_success = 0
+    technical_success = 0
+
+    for index, stock in enumerate(stocks):
+
+        ticker = get_ticker(stock)
+
+        if not ticker:
+
+            print(
+                f"Skipping stock #{index + 1}: "
+                f"no ticker field."
+            )
+
+            updated_stocks.append(
+                stock
+            )
+
+            continue
+
+        print("")
+        print(
+            f"[{index + 1}/{len(stocks)}] "
+            f"Updating {ticker}"
+        )
+
+        history = histories.get(
+            ticker,
+            pd.DataFrame()
+        )
+
+        if (
+            history is not None
+            and not history.empty
+        ):
+            price_success += 1
+
+        updated = update_stock(
+            stock,
+            history,
+            ticker
+        )
+
+        if updated.get(
+            "fundamentals"
+        ):
+            fundamental_success += 1
+
+        if updated.get(
+            "valuation"
+        ):
+            valuation_success += 1
+
+        if updated.get(
+            "technical"
+        ):
+            technical_success += 1
+
+        updated_stocks.append(
             updated
-    }
+        )
 
-    output_path = (
-        DATA_DIR /
-        output_filename
+        # Small pause between fundamental requests.
+        time.sleep(0.5)
+
+    # --------------------------------------------------------
+    # Save.
+    # --------------------------------------------------------
+
+    data["stocks"] = updated_stocks
+
+    data["lastUpdated"] = datetime.now(
+        timezone.utc
+    ).isoformat()
+
+    data["dataSource"] = (
+        "Yahoo Finance via yfinance"
     )
 
     with open(
-        output_path,
+        filepath,
         "w",
         encoding="utf-8"
     ) as file:
 
         json.dump(
-            output,
+            clean_dict(data),
             file,
             indent=2,
             ensure_ascii=False
         )
 
-    print()
-    print("=" * 60)
+    print("")
+    print("-" * 70)
+    print(f"{market.upper()} UPDATE COMPLETE")
+    print("-" * 70)
+
     print(
-        f"FINISHED {market.upper()}"
+        f"Stocks:             {len(stocks)}"
     )
+
     print(
-        f"Saved: {output_path}"
+        f"Price history:      {price_success}"
     )
+
     print(
-        f"Stocks: {len(updated)}"
+        f"Fundamentals:       {fundamental_success}"
     )
-    print("=" * 60)
+
+    print(
+        f"Valuation:          {valuation_success}"
+    )
+
+    print(
+        f"Technical:          {technical_success}"
+    )
+
+    print("-" * 70)
 
 
-# =========================================================
+# ============================================================
 # MAIN
-# =========================================================
+# ============================================================
 
 def main():
 
-    DATA_DIR.mkdir(
-        parents=True,
-        exist_ok=True
+    print("")
+    print("=" * 70)
+    print("INVESTMENT RADAR DATA UPDATE")
+    print("=" * 70)
+
+    print(
+        f"Started: "
+        f"{datetime.now(timezone.utc).isoformat()}"
     )
 
-    update_market(
-        "canada_universe.json",
-        "canada.json",
-        "Canada"
-    )
+    for market, filepath in DATA_FILES.items():
 
-    update_market(
-        "india_universe.json",
-        "india.json",
-        "India"
-    )
+        try:
+
+            update_market(
+                market,
+                filepath
+            )
+
+        except Exception as exc:
+
+            print("")
+            print(
+                f"ERROR updating {market}: {exc}"
+            )
+
+    print("")
+    print("=" * 70)
+    print("ALL MARKET UPDATES FINISHED")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
