@@ -1,623 +1,634 @@
 {
   "market": "Canada",
-  "lastUpdated": "2026-09-09T04:13:45.138503+00:00",
-  "universeSize": 127,
+  "lastUpdated": "2026-09-10T12:22:44.879218+00:00",
+  "universeSize": 128,
   "stocks": [
     {
       "ticker": "RY.TO",
       "name": "Royal Bank of Canada",
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
-      "marketCap": 399006498816.0,
-      "avgVolume60D": 3200688,
+      "marketCap": 395379310592.0,
+      "avgVolume60D": 3195210,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TD.TO",
       "name": "The Toronto-Dominion Bank",
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
-      "marketCap": 272287744000.0,
-      "avgVolume60D": 4865695,
+      "marketCap": 269862748160.0,
+      "avgVolume60D": 4883048,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "SHOP.TO",
       "name": "Shopify Inc.",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 240105046016.0,
-      "avgVolume60D": 2125710,
+      "marketCap": 227258269696.0,
+      "avgVolume60D": 2131757,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BMO.TO",
       "name": "Bank of Montreal",
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
-      "marketCap": 167850868736.0,
-      "avgVolume60D": 2172177,
+      "marketCap": 165654380544.0,
+      "avgVolume60D": 2169082,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BNS.TO",
       "name": "The Bank of Nova Scotia",
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
-      "marketCap": 156010233856.0,
-      "avgVolume60D": 4117515,
+      "marketCap": 155144863744.0,
+      "avgVolume60D": 4136118,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ENB.TO",
       "name": "Enbridge Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "marketCap": 152208916480.0,
-      "avgVolume60D": 7834458,
+      "marketCap": 151313448960.0,
+      "avgVolume60D": 7961092,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "CM.TO",
-      "name": "Canadian Imperial Bank of Commerce",
-      "sector": "Financial Services",
-      "industry": "Banks - Diversified",
-      "marketCap": 146313789440.0,
-      "avgVolume60D": 2518548,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CNQ.TO",
       "name": "Canadian Natural Resources Limited",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 144655450112.0,
-      "avgVolume60D": 14566213,
+      "marketCap": 146180980736.0,
+      "avgVolume60D": 14875197,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "CM.TO",
+      "name": "Canadian Imperial Bank of Commerce",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "marketCap": 144080273408.0,
+      "avgVolume60D": 2514495,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "AEM.TO",
       "name": "Agnico Eagle Mines Limited",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 140906151936.0,
-      "avgVolume60D": 1181090,
+      "marketCap": 141832798208.0,
+      "avgVolume60D": 1165662,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BN.TO",
       "name": "Brookfield Corporation",
       "sector": "Financial Services",
       "industry": "Asset Management",
-      "marketCap": 120971124736.0,
-      "avgVolume60D": 2820330,
+      "marketCap": 118872719360.0,
+      "avgVolume60D": 2820615,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "SU.TO",
       "name": "Suncor Energy Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "marketCap": 110647631872.0,
-      "avgVolume60D": 5424805,
+      "marketCap": 112513212416.0,
+      "avgVolume60D": 5520742,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CP.TO",
       "name": "Canadian Pacific Kansas City Limited",
       "sector": "Industrials",
       "industry": "Railroads",
-      "marketCap": 110517846016.0,
-      "avgVolume60D": 1273695,
+      "marketCap": 109410197504.0,
+      "avgVolume60D": 1271845,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BAM.TO",
       "name": "Brookfield Asset Management Ltd.",
       "sector": "Financial Services",
       "industry": "Asset Management",
-      "marketCap": 107686699008.0,
-      "avgVolume60D": 1536383,
+      "marketCap": 105322774528.0,
+      "avgVolume60D": 1529358,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CNR.TO",
       "name": "Canadian National Railway Company",
       "sector": "Industrials",
       "industry": "Railroads",
-      "marketCap": 102415613952.0,
-      "avgVolume60D": 1449667,
+      "marketCap": 101834915840.0,
+      "avgVolume60D": 1442303,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ABX.TO",
       "name": "Barrick Mining Corporation",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 100135608320.0,
-      "avgVolume60D": 4386277,
+      "marketCap": 101320646656.0,
+      "avgVolume60D": 4403700,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "MFC.TO",
       "name": "Manulife Financial Corporation",
       "sector": "Financial Services",
       "industry": "Insurance - Life",
-      "marketCap": 99256295424.0,
-      "avgVolume60D": 5307178,
+      "marketCap": 98459860992.0,
+      "avgVolume60D": 5338355,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "WPM.TO",
       "name": "Wheaton Precious Metals Corp.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 97131192320.0,
-      "avgVolume60D": 799413,
+      "marketCap": 98452799488.0,
+      "avgVolume60D": 796672,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TRP.TO",
       "name": "TC Energy Corporation",
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "marketCap": 91102511104.0,
-      "avgVolume60D": 3725960,
+      "marketCap": 91185856512.0,
+      "avgVolume60D": 3780922,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "IMO.TO",
       "name": "Imperial Oil Limited",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "marketCap": 87452901376.0,
-      "avgVolume60D": 721625,
+      "marketCap": 87917158400.0,
+      "avgVolume60D": 726213,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CVE.TO",
       "name": "Cenovus Energy Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "marketCap": 84447977472.0,
-      "avgVolume60D": 5279932,
+      "marketCap": 85222555648.0,
+      "avgVolume60D": 5214230,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "NA.TO",
       "name": "National Bank of Canada",
       "sector": "Financial Services",
       "industry": "Banks - Diversified",
-      "marketCap": 82659303424.0,
-      "avgVolume60D": 1392480,
+      "marketCap": 81511579648.0,
+      "avgVolume60D": 1389152,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "GWO.TO",
       "name": "Great-West Lifeco Inc.",
       "sector": "Financial Services",
       "industry": "Insurance - Life",
-      "marketCap": 81919754240.0,
-      "avgVolume60D": 1225493,
+      "marketCap": 80236773376.0,
+      "avgVolume60D": 1226618,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ATD.TO",
       "name": "Alimentation Couche-Tard Inc.",
       "sector": "Consumer Cyclical",
       "industry": "Specialty Retail",
-      "marketCap": 73418653696.0,
-      "avgVolume60D": 1642498,
+      "marketCap": 73336037376.0,
+      "avgVolume60D": 1652188,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "L.TO",
       "name": "Loblaw Companies Limited",
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
-      "marketCap": 72467759104.0,
-      "avgVolume60D": 1284145,
+      "marketCap": 72144191488.0,
+      "avgVolume60D": 1279885,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CCO.TO",
       "name": "Cameco Corporation",
       "sector": "Energy",
       "industry": "Uranium",
-      "marketCap": 61305622528.0,
-      "avgVolume60D": 988383,
+      "marketCap": 60451979264.0,
+      "avgVolume60D": 986660,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "SLF.TO",
       "name": "Sun Life Financial Inc.",
       "sector": "Financial Services",
       "industry": "Insurance - Diversified",
-      "marketCap": 61082722304.0,
-      "avgVolume60D": 1826540,
+      "marketCap": 60409098240.0,
+      "avgVolume60D": 1835767,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CSU.TO",
       "name": "Constellation Software Inc.",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 60476178432.0,
-      "avgVolume60D": 58898,
+      "marketCap": 59378454528.0,
+      "avgVolume60D": 58403,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TRI.TO",
       "name": "Thomson Reuters Corporation",
       "sector": "Industrials",
       "industry": "Specialty Business Services",
-      "marketCap": 59022520320.0,
-      "avgVolume60D": 744275,
+      "marketCap": 58030432256.0,
+      "avgVolume60D": 740797,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "POW.TO",
       "name": "Power Corporation of Canada",
       "sector": "Financial Services",
       "industry": "Insurance - Life",
-      "marketCap": 58460270592.0,
-      "avgVolume60D": 2014743,
+      "marketCap": 57920425984.0,
+      "avgVolume60D": 2033083,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "WCN.TO",
       "name": "Waste Connections, Inc.",
       "sector": "Industrials",
       "industry": "Waste Management",
-      "marketCap": 56618172416.0,
-      "avgVolume60D": 375450,
+      "marketCap": 55969124352.0,
+      "avgVolume60D": 377187,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "NTR.TO",
       "name": "Nutrien Ltd.",
       "sector": "Basic Materials",
       "industry": "Agricultural Inputs",
-      "marketCap": 53113483264.0,
-      "avgVolume60D": 1597202,
+      "marketCap": 53261418496.0,
+      "avgVolume60D": 1598773,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "QSR.TO",
       "name": "Restaurant Brands International Inc.",
       "sector": "Consumer Cyclical",
       "industry": "Restaurants",
-      "marketCap": 49448501248.0,
-      "avgVolume60D": 945833,
+      "marketCap": 48811724800.0,
+      "avgVolume60D": 928840,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TECK-B.TO",
       "name": "Teck Resources Limited",
       "sector": "Basic Materials",
       "industry": "Copper",
-      "marketCap": 48692051968.0,
-      "avgVolume60D": 1071140,
+      "marketCap": 47725568000.0,
+      "avgVolume60D": 1088047,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 501
+      "historyDays": 503
     },
     {
       "ticker": "FFH.TO",
       "name": "Fairfax Financial Holdings Limited",
       "sector": "Financial Services",
       "industry": "Insurance - Property & Casualty",
-      "marketCap": 46068412416.0,
-      "avgVolume60D": 62368,
+      "marketCap": 45779300352.0,
+      "avgVolume60D": 61883,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "IFC.TO",
       "name": "Intact Financial Corporation",
       "sector": "Financial Services",
       "industry": "Insurance - Property & Casualty",
-      "marketCap": 45979533312.0,
-      "avgVolume60D": 459032,
+      "marketCap": 45528080384.0,
+      "avgVolume60D": 460577,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BIP-UN.TO",
       "name": "Brookfield Infrastructure Partners L.P.",
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
-      "marketCap": 40723558400.0,
-      "avgVolume60D": 429427,
+      "marketCap": 40224706560.0,
+      "avgVolume60D": 417005,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 501
+      "historyDays": 503
     },
     {
       "ticker": "PPL.TO",
       "name": "Pembina Pipeline Corporation",
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "marketCap": 39441059840.0,
-      "avgVolume60D": 2244942,
+      "marketCap": 39545741312.0,
+      "avgVolume60D": 2224630,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "FTS.TO",
       "name": "Fortis Inc.",
       "sector": "Utilities",
       "industry": "Utilities - Regulated Electric",
-      "marketCap": 39180922880.0,
-      "avgVolume60D": 1398275,
+      "marketCap": 38905036800.0,
+      "avgVolume60D": 1397103,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "FM.TO",
       "name": "First Quantum Minerals Ltd.",
       "sector": "Basic Materials",
       "industry": "Copper",
-      "marketCap": 38306746368.0,
-      "avgVolume60D": 2719232,
+      "marketCap": 38623744000.0,
+      "avgVolume60D": 2702032,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "WN.TO",
       "name": "George Weston Limited",
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
-      "marketCap": 37727195136.0,
-      "avgVolume60D": 277737,
+      "marketCap": 37738422272.0,
+      "avgVolume60D": 277837,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "LUN.TO",
       "name": "Lundin Mining Corporation",
       "sector": "Basic Materials",
       "industry": "Copper",
-      "marketCap": 31882586112.0,
-      "avgVolume60D": 2384627,
+      "marketCap": 31720830976.0,
+      "avgVolume60D": 2376828,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "BCE.TO",
-      "name": "BCE Inc.",
-      "sector": "Communication Services",
-      "industry": "Telecom Services",
-      "marketCap": 30409668608.0,
-      "avgVolume60D": 4159930,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "PAAS.TO",
       "name": "Pan American Silver Corp.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 29197398016.0,
-      "avgVolume60D": 945958,
+      "marketCap": 30271260672.0,
+      "avgVolume60D": 945832,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "BCE.TO",
+      "name": "BCE Inc.",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "marketCap": 30073958400.0,
+      "avgVolume60D": 4169910,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "RCI-B.TO",
       "name": "Rogers Communications Inc.",
       "sector": "Communication Services",
       "industry": "Telecom Services",
-      "marketCap": 27443443712.0,
-      "avgVolume60D": 2072707,
+      "marketCap": 27194941440.0,
+      "avgVolume60D": 2066230,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "WSP.TO",
-      "name": "WSP Global Inc.",
-      "sector": "Industrials",
-      "industry": "Engineering & Construction",
-      "marketCap": 24651223040.0,
-      "avgVolume60D": 609778,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "MG.TO",
-      "name": "Magna International Inc.",
-      "sector": "Consumer Cyclical",
-      "industry": "Auto Parts",
-      "marketCap": 24560996352.0,
-      "avgVolume60D": 1170833,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TOU.TO",
       "name": "Tourmaline Oil Corp.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 24489678848.0,
-      "avgVolume60D": 2359593,
+      "marketCap": 24240973824.0,
+      "avgVolume60D": 2364287,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "MG.TO",
+      "name": "Magna International Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Parts",
+      "marketCap": 24221247488.0,
+      "avgVolume60D": 1175272,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
+    },
+    {
+      "ticker": "WSP.TO",
+      "name": "WSP Global Inc.",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "marketCap": 24089036800.0,
+      "avgVolume60D": 605653,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "WCP.TO",
       "name": "Whitecap Resources Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 22153697280.0,
-      "avgVolume60D": 5274660,
+      "marketCap": 22737332224.0,
+      "avgVolume60D": 5309423,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "BEP-UN.TO",
-      "name": "Brookfield Renewable Partners L.P.",
-      "sector": "Utilities",
-      "industry": "Utilities - Renewable",
-      "marketCap": 21521455104.0,
-      "avgVolume60D": 331224,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 501
+      "historyDays": 503
     },
     {
       "ticker": "EMA.TO",
       "name": "Emera Incorporated",
       "sector": "Utilities",
       "industry": "Utilities - Regulated Electric",
-      "marketCap": 21506643968.0,
-      "avgVolume60D": 1106448,
+      "marketCap": 21383784448.0,
+      "avgVolume60D": 1110323,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "BEP-UN.TO",
+      "name": "Brookfield Renewable Partners L.P.",
+      "sector": "Utilities",
+      "industry": "Utilities - Renewable",
+      "marketCap": 21010659328.0,
+      "avgVolume60D": 335592,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "GFL.TO",
       "name": "GFL Environmental Inc.",
       "sector": "Industrials",
       "industry": "Waste Management",
-      "marketCap": 21317791744.0,
-      "avgVolume60D": 844997,
+      "marketCap": 20920813568.0,
+      "avgVolume60D": 840125,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "T.TO",
-      "name": "TELUS Corporation",
-      "sector": "Communication Services",
-      "industry": "Telecom Services",
-      "marketCap": 20979001344.0,
-      "avgVolume60D": 9095745,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "RBA.TO",
       "name": "RB Global, Inc.",
       "sector": "Industrials",
       "industry": "Specialty Business Services",
-      "marketCap": 20907227136.0,
-      "avgVolume60D": 347377,
+      "marketCap": 20788699136.0,
+      "avgVolume60D": 351228,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "EQX.TO",
       "name": "Equinox Gold Corp.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 20337149952.0,
-      "avgVolume60D": 4358455,
+      "marketCap": 20722411520.0,
+      "avgVolume60D": 4334007,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "GIB-A.TO",
-      "name": "CGI Inc.",
-      "sector": "Technology",
-      "industry": "Information Technology Services",
-      "marketCap": 20173285376.0,
-      "avgVolume60D": 605183,
+      "ticker": "T.TO",
+      "name": "TELUS Corporation",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "marketCap": 20585250816.0,
+      "avgVolume60D": 9070865,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "IGM.TO",
       "name": "IGM Financial Inc.",
       "sector": "Financial Services",
       "industry": "Asset Management",
-      "marketCap": 19807942656.0,
-      "avgVolume60D": 437967,
+      "marketCap": 19738675200.0,
+      "avgVolume60D": 439123,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "GIB-A.TO",
+      "name": "CGI Inc.",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "marketCap": 19703226368.0,
+      "avgVolume60D": 608765,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
+    },
+    {
+      "ticker": "IVN.TO",
+      "name": "Ivanhoe Mines Ltd.",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining",
+      "marketCap": 19198982144.0,
+      "avgVolume60D": 4068457,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "ARX.TO",
@@ -625,780 +636,780 @@
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
       "marketCap": 19188787200.0,
-      "avgVolume60D": 5098345,
+      "avgVolume60D": 4945917,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 467
-    },
-    {
-      "ticker": "IVN.TO",
-      "name": "Ivanhoe Mines Ltd.",
-      "sector": "Basic Materials",
-      "industry": "Other Industrial Metals & Mining",
-      "marketCap": 18956498944.0,
-      "avgVolume60D": 3891032,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 469
     },
     {
       "ticker": "MRU.TO",
       "name": "Metro Inc.",
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
-      "marketCap": 18854957056.0,
-      "avgVolume60D": 535048,
+      "marketCap": 18865420288.0,
+      "avgVolume60D": 543095,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ALA.TO",
       "name": "AltaGas Ltd.",
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "marketCap": 16611177472.0,
-      "avgVolume60D": 856887,
+      "marketCap": 16779659264.0,
+      "avgVolume60D": 846528,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "SAP.TO",
-      "name": "Saputo Inc.",
-      "sector": "Consumer Defensive",
-      "industry": "Packaged Foods",
-      "marketCap": 15905446912.0,
-      "avgVolume60D": 802583,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "IMG.TO",
       "name": "IAMGOLD Corporation",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 15850959872.0,
-      "avgVolume60D": 1680868,
+      "marketCap": 16233530368.0,
+      "avgVolume60D": 1664510,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ELD.TO",
       "name": "Eldorado Gold Corporation",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 15781633024.0,
-      "avgVolume60D": 755143,
+      "marketCap": 16037227520.0,
+      "avgVolume60D": 750022,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "SAP.TO",
+      "name": "Saputo Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods",
+      "marketCap": 15794304000.0,
+      "avgVolume60D": 786963,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "TFII.TO",
       "name": "TFI International Inc.",
       "sector": "Industrials",
       "industry": "Trucking",
-      "marketCap": 15201600512.0,
-      "avgVolume60D": 231392,
+      "marketCap": 14991186944.0,
+      "avgVolume60D": 231088,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "QBR-B.TO",
-      "name": "Quebecor Inc.",
-      "sector": "Communication Services",
-      "industry": "Telecom Services",
-      "marketCap": 14262453248.0,
-      "avgVolume60D": 1010560,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "AG.TO",
       "name": "First Majestic Silver Corp.",
       "sector": "Basic Materials",
       "industry": "Silver",
-      "marketCap": 14106980352.0,
-      "avgVolume60D": 1593905,
+      "marketCap": 14422439936.0,
+      "avgVolume60D": 1601287,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "QBR-B.TO",
+      "name": "Quebecor Inc.",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "marketCap": 14296255488.0,
+      "avgVolume60D": 1009463,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "CU.TO",
       "name": "Canadian Utilities Limited",
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
-      "marketCap": 13935156224.0,
-      "avgVolume60D": 593653,
+      "marketCap": 13997793280.0,
+      "avgVolume60D": 590280,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "DPM.TO",
       "name": "DPM Metals Inc.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 13337614336.0,
-      "avgVolume60D": 833830,
+      "marketCap": 13282771968.0,
+      "avgVolume60D": 844747,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "GIL.TO",
       "name": "Gildan Activewear Inc.",
       "sector": "Consumer Cyclical",
       "industry": "Apparel Manufacturing",
-      "marketCap": 13167139840.0,
-      "avgVolume60D": 765972,
+      "marketCap": 12917131264.0,
+      "avgVolume60D": 762712,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "STN.TO",
-      "name": "Stantec Inc.",
-      "sector": "Industrials",
-      "industry": "Engineering & Construction",
-      "marketCap": 11301790720.0,
-      "avgVolume60D": 500595,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CHP-UN.TO",
       "name": "Choice Properties Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Retail",
-      "marketCap": 11110496256.0,
-      "avgVolume60D": 886453,
+      "marketCap": 11124972544.0,
+      "avgVolume60D": 890673,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "CAE.TO",
-      "name": "CAE Inc.",
+      "ticker": "STN.TO",
+      "name": "Stantec Inc.",
       "sector": "Industrials",
-      "industry": "Aerospace & Defense",
-      "marketCap": 10772289536.0,
-      "avgVolume60D": 907703,
+      "industry": "Engineering & Construction",
+      "marketCap": 10939863040.0,
+      "avgVolume60D": 504075,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "EMP-A.TO",
       "name": "Empire Company Limited",
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
-      "marketCap": 10690009088.0,
-      "avgVolume60D": 482218,
+      "marketCap": 10714630144.0,
+      "avgVolume60D": 485322,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "CAE.TO",
+      "name": "CAE Inc.",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "marketCap": 10688608256.0,
+      "avgVolume60D": 904155,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "SSRM.TO",
       "name": "SSR Mining Inc.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 10393257984.0,
-      "avgVolume60D": 460360,
+      "marketCap": 10597167104.0,
+      "avgVolume60D": 457320,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "CPX.TO",
-      "name": "Capital Power Corporation",
-      "sector": "Utilities",
-      "industry": "Utilities - Independent Power Producers",
-      "marketCap": 10090818560.0,
-      "avgVolume60D": 585580,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BTO.TO",
       "name": "B2Gold Corp.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 9934451712.0,
-      "avgVolume60D": 4639258,
+      "marketCap": 10106190848.0,
+      "avgVolume60D": 4598608,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "CPX.TO",
+      "name": "Capital Power Corporation",
+      "sector": "Utilities",
+      "industry": "Utilities - Independent Power Producers",
+      "marketCap": 9988717568.0,
+      "avgVolume60D": 583958,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "NXE.TO",
       "name": "NexGen Energy Ltd.",
       "sector": "Energy",
       "industry": "Uranium",
-      "marketCap": 9896670208.0,
-      "avgVolume60D": 1507190,
+      "marketCap": 9889965056.0,
+      "avgVolume60D": 1505970,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "OR.TO",
       "name": "OR Royalties Inc.",
       "sector": "Basic Materials",
       "industry": "Gold",
-      "marketCap": 9537914880.0,
-      "avgVolume60D": 426600,
+      "marketCap": 9627913216.0,
+      "avgVolume60D": 423705,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "DSG.TO",
       "name": "The Descartes Systems Group Inc.",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 8917843968.0,
-      "avgVolume60D": 461147,
+      "marketCap": 8692476928.0,
+      "avgVolume60D": 462725,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "ONEX.TO",
-      "name": "Onex Corporation",
-      "sector": "Financial Services",
-      "industry": "Asset Management",
-      "marketCap": 8377018368.0,
-      "avgVolume60D": 115165,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "PSK.TO",
       "name": "PrairieSky Royalty Ltd.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 8363299328.0,
-      "avgVolume60D": 422742,
+      "marketCap": 8421410304.0,
+      "avgVolume60D": 421557,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "ONEX.TO",
+      "name": "Onex Corporation",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "marketCap": 8355658240.0,
+      "avgVolume60D": 114708,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "FSV.TO",
       "name": "FirstService Corporation",
       "sector": "Real Estate",
       "industry": "Real Estate Services",
-      "marketCap": 8356210176.0,
-      "avgVolume60D": 202850,
+      "marketCap": 8321711104.0,
+      "avgVolume60D": 202268,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BEPC.TO",
       "name": "Brookfield Renewable Corporation",
       "sector": "Utilities",
       "industry": "Utilities - Renewable",
-      "marketCap": 8337223680.0,
-      "avgVolume60D": 361267,
+      "marketCap": 8108882944.0,
+      "avgVolume60D": 365575,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "OTEX.TO",
       "name": "Open Text Corporation",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 7808875008.0,
-      "avgVolume60D": 1335605,
+      "marketCap": 7580772352.0,
+      "avgVolume60D": 1342182,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "WFG.TO",
       "name": "West Fraser Timber Co. Ltd.",
       "sector": "Basic Materials",
       "industry": "Lumber & Wood Production",
-      "marketCap": 7386399744.0,
-      "avgVolume60D": 163217,
+      "marketCap": 7420853248.0,
+      "avgVolume60D": 159250,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "EIF.TO",
       "name": "Exchange Income Corporation",
       "sector": "Industrials",
       "industry": "Airlines",
-      "marketCap": 6827666432.0,
-      "avgVolume60D": 151310,
+      "marketCap": 6785377280.0,
+      "avgVolume60D": 149613,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "TVE.TO",
       "name": "Tamarack Valley Energy Ltd.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 6555496960.0,
-      "avgVolume60D": 1742125,
+      "marketCap": 6465239552.0,
+      "avgVolume60D": 1767553,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BB.TO",
       "name": "BlackBerry Limited",
       "sector": "Technology",
       "industry": "Software - Infrastructure",
-      "marketCap": 6335745536.0,
-      "avgVolume60D": 4376762,
+      "marketCap": 6259552768.0,
+      "avgVolume60D": 4337493,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "DOO.TO",
-      "name": "BRP Inc.",
-      "sector": "Consumer Cyclical",
-      "industry": "Recreational Vehicles",
-      "marketCap": 6192922624.0,
-      "avgVolume60D": 280545,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "REI-UN.TO",
       "name": "RioCan Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Retail",
-      "marketCap": 6063944704.0,
-      "avgVolume60D": 661875,
+      "marketCap": 6090145280.0,
+      "avgVolume60D": 677008,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 501
+      "historyDays": 503
     },
     {
       "ticker": "AQN.TO",
       "name": "Algonquin Power & Utilities Corp.",
       "sector": "Utilities",
       "industry": "Utilities - Diversified",
-      "marketCap": 6028331520.0,
-      "avgVolume60D": 2550460,
+      "marketCap": 5959040512.0,
+      "avgVolume60D": 2527388,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "LNR.TO",
-      "name": "Linamar Corporation",
+      "ticker": "DOO.TO",
+      "name": "BRP Inc.",
       "sector": "Consumer Cyclical",
-      "industry": "Auto Parts",
-      "marketCap": 5882455552.0,
-      "avgVolume60D": 143727,
+      "industry": "Recreational Vehicles",
+      "marketCap": 5944608256.0,
+      "avgVolume60D": 282188,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "AYA.TO",
       "name": "Aya Gold & Silver Inc.",
       "sector": "Basic Materials",
       "industry": "Silver",
-      "marketCap": 5784492032.0,
-      "avgVolume60D": 1230437,
+      "marketCap": 5944372224.0,
+      "avgVolume60D": 1226913,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "EQB.TO",
-      "name": "EQB Inc.",
-      "sector": "Financial Services",
-      "industry": "Banks - Regional",
-      "marketCap": 5510135296.0,
-      "avgVolume60D": 107813,
+      "ticker": "LNR.TO",
+      "name": "Linamar Corporation",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Parts",
+      "marketCap": 5818162688.0,
+      "avgVolume60D": 144780,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ERO.TO",
       "name": "Ero Copper Corp.",
       "sector": "Basic Materials",
       "industry": "Copper",
-      "marketCap": 5457113600.0,
-      "avgVolume60D": 436867,
+      "marketCap": 5513437184.0,
+      "avgVolume60D": 434822,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "EQB.TO",
+      "name": "EQB Inc.",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "marketCap": 5489703936.0,
+      "avgVolume60D": 108952,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "GEI.TO",
       "name": "Gibson Energy Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "marketCap": 5443804160.0,
-      "avgVolume60D": 655623,
+      "marketCap": 5488679936.0,
+      "avgVolume60D": 655185,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "PEY.TO",
       "name": "Peyto Exploration & Development Corp.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 5189287424.0,
-      "avgVolume60D": 645045,
+      "marketCap": 5092618240.0,
+      "avgVolume60D": 650672,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CAR-UN.TO",
       "name": "Canadian Apartment Properties Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Residential",
-      "marketCap": 4954608128.0,
-      "avgVolume60D": 408474,
+      "marketCap": 4943837184.0,
+      "avgVolume60D": 405994,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 501
-    },
-    {
-      "ticker": "FCR-UN.TO",
-      "name": "First Capital Real Estate Investment Trust",
-      "sector": "Real Estate",
-      "industry": "REIT - Retail",
-      "marketCap": 4822867968.0,
-      "avgVolume60D": 528510,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "BTE.TO",
       "name": "Baytex Energy Corp.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 4712607744.0,
-      "avgVolume60D": 4148910,
+      "marketCap": 4831472128.0,
+      "avgVolume60D": 4227627,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "FCR-UN.TO",
+      "name": "First Capital Real Estate Investment Trust",
+      "sector": "Real Estate",
+      "industry": "REIT - Retail",
+      "marketCap": 4824993792.0,
+      "avgVolume60D": 520602,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "SRU-UN.TO",
       "name": "SmartCentres Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Retail",
-      "marketCap": 4672008704.0,
-      "avgVolume60D": 315133,
+      "marketCap": 4665188352.0,
+      "avgVolume60D": 311085,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "EDR.TO",
       "name": "Endeavour Silver Corp.",
       "sector": "Basic Materials",
       "industry": "Silver",
-      "marketCap": 4542856192.0,
-      "avgVolume60D": 859213,
+      "marketCap": 4557663744.0,
+      "avgVolume60D": 852367,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "RUS.TO",
-      "name": "Russel Metals Inc.",
-      "sector": "Industrials",
-      "industry": "Industrial Distribution",
-      "marketCap": 4199268864.0,
-      "avgVolume60D": 227208,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "DML.TO",
       "name": "Denison Mines Corp.",
       "sector": "Energy",
       "industry": "Uranium",
-      "marketCap": 4182289920.0,
-      "avgVolume60D": 2951047,
+      "marketCap": 4191342848.0,
+      "avgVolume60D": 2862355,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "BDT.TO",
-      "name": "Bird Construction Inc.",
+      "ticker": "RUS.TO",
+      "name": "Russel Metals Inc.",
       "sector": "Industrials",
-      "industry": "Engineering & Construction",
-      "marketCap": 4059953408.0,
-      "avgVolume60D": 298967,
+      "industry": "Industrial Distribution",
+      "marketCap": 4159186688.0,
+      "avgVolume60D": 226527,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CRT-UN.TO",
       "name": "CT Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Retail",
-      "marketCap": 4051948288.0,
-      "avgVolume60D": 244465,
+      "marketCap": 4056729088.0,
+      "avgVolume60D": 243985,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "DIR-UN.TO",
-      "name": "Dream Industrial Real Estate Investment Trust",
-      "sector": "Real Estate",
-      "industry": "REIT - Industrial",
-      "marketCap": 3800595712.0,
-      "avgVolume60D": 524379,
+      "ticker": "BDT.TO",
+      "name": "Bird Construction Inc.",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "marketCap": 3872690432.0,
+      "avgVolume60D": 299475,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 501
+      "historyDays": 503
     },
     {
       "ticker": "SVM.TO",
       "name": "Silvercorp Metals Inc.",
       "sector": "Basic Materials",
       "industry": "Silver",
-      "marketCap": 3778203648.0,
-      "avgVolume60D": 893295,
+      "marketCap": 3835717376.0,
+      "avgVolume60D": 879762,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
-      "ticker": "BYD.TO",
-      "name": "Boyd Group Services Inc.",
-      "sector": "Consumer Cyclical",
-      "industry": "Auto & Truck Dealerships",
-      "marketCap": 3346286848.0,
-      "avgVolume60D": 104092,
+      "ticker": "DIR-UN.TO",
+      "name": "Dream Industrial Real Estate Investment Trust",
+      "sector": "Real Estate",
+      "industry": "REIT - Industrial",
+      "marketCap": 3803472640.0,
+      "avgVolume60D": 514300,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "MFI.TO",
       "name": "Maple Leaf Foods Inc.",
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
-      "marketCap": 3283032064.0,
-      "avgVolume60D": 220830,
+      "marketCap": 3269311232.0,
+      "avgVolume60D": 221120,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "BYD.TO",
+      "name": "Boyd Group Services Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "marketCap": 3209919488.0,
+      "avgVolume60D": 104158,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "HPS-A.TO",
       "name": "Hammond Power Solutions Inc.",
       "sector": "Industrials",
       "industry": "Electrical Equipment & Parts",
-      "marketCap": 2945754368.0,
-      "avgVolume60D": 68203,
+      "marketCap": 2915515904.0,
+      "avgVolume60D": 68298,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "FRU.TO",
       "name": "Freehold Royalties Ltd.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 2880783104.0,
-      "avgVolume60D": 575790,
+      "marketCap": 2913575168.0,
+      "avgVolume60D": 572822,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "NFI.TO",
-      "name": "NFI Group Inc.",
-      "sector": "Consumer Cyclical",
-      "industry": "Auto Manufacturers",
-      "marketCap": 2835955968.0,
-      "avgVolume60D": 282530,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "VET.TO",
       "name": "Vermilion Energy Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 2744287744.0,
-      "avgVolume60D": 1087165,
+      "marketCap": 2823744000.0,
+      "avgVolume60D": 1095968,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
-    },
-    {
-      "ticker": "HR-UN.TO",
-      "name": "H&R Real Estate Investment Trust",
-      "sector": "Real Estate",
-      "industry": "REIT - Diversified",
-      "marketCap": 2733567232.0,
-      "avgVolume60D": 804168,
-      "currency": "CAD",
-      "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "PXT.TO",
       "name": "Parex Resources Inc.",
       "sector": "Energy",
       "industry": "Oil & Gas E&P",
-      "marketCap": 2733442816.0,
-      "avgVolume60D": 919567,
+      "marketCap": 2783456768.0,
+      "avgVolume60D": 924428,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "NFI.TO",
+      "name": "NFI Group Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "marketCap": 2777593344.0,
+      "avgVolume60D": 283215,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
+    },
+    {
+      "ticker": "HR-UN.TO",
+      "name": "H&R Real Estate Investment Trust",
+      "sector": "Real Estate",
+      "industry": "REIT - Diversified",
+      "marketCap": 2708359936.0,
+      "avgVolume60D": 762958,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "ATS.TO",
       "name": "ATS Corporation",
       "sector": "Industrials",
       "industry": "Specialty Industrial Machinery",
-      "marketCap": 2630781952.0,
-      "avgVolume60D": 389775,
+      "marketCap": 2621950720.0,
+      "avgVolume60D": 387512,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
+    },
+    {
+      "ticker": "NWC.TO",
+      "name": "The North West Company Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Grocery Stores",
+      "marketCap": 2505039104.0,
+      "avgVolume60D": 109148,
+      "currency": "CAD",
+      "exchange": "TOR",
+      "historyDays": 503
     },
     {
       "ticker": "LB.TO",
       "name": "Laurentian Bank of Canada",
       "sector": "Financial Services",
       "industry": "Banks - Regional",
-      "marketCap": 1820464000.0,
-      "avgVolume60D": 170540,
+      "marketCap": 1822707072.0,
+      "avgVolume60D": 171257,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "LSPD.TO",
       "name": "Lightspeed Commerce Inc.",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 1817952256.0,
-      "avgVolume60D": 633032,
+      "marketCap": 1754595456.0,
+      "avgVolume60D": 627202,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ASM.TO",
       "name": "Avino Silver & Gold Mines Ltd.",
       "sector": "Basic Materials",
       "industry": "Other Precious Metals & Mining",
-      "marketCap": 1708744064.0,
-      "avgVolume60D": 710580,
+      "marketCap": 1722332416.0,
+      "avgVolume60D": 695278,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "AP-UN.TO",
       "name": "Allied Properties Real Estate Investment Trust",
       "sector": "Real Estate",
       "industry": "REIT - Office",
-      "marketCap": 1609189376.0,
-      "avgVolume60D": 593718,
+      "marketCap": 1618977664.0,
+      "avgVolume60D": 599650,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "LAC.TO",
       "name": "Lithium Americas Corp.",
       "sector": "Basic Materials",
       "industry": "Other Industrial Metals & Mining",
-      "marketCap": 1502997760.0,
-      "avgVolume60D": 972170,
+      "marketCap": 1601019264.0,
+      "avgVolume60D": 988087,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CJT.TO",
       "name": "Cargojet Inc.",
       "sector": "Industrials",
       "industry": "Airlines",
-      "marketCap": 1128489216.0,
-      "avgVolume60D": 127425,
+      "marketCap": 1133817216.0,
+      "avgVolume60D": 128832,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "IFP.TO",
       "name": "Interfor Corporation",
       "sector": "Basic Materials",
       "industry": "Lumber & Wood Production",
-      "marketCap": 910214656.0,
-      "avgVolume60D": 225223,
+      "marketCap": 903637888.0,
+      "avgVolume60D": 221763,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "ENGH.TO",
       "name": "Enghouse Systems Limited",
       "sector": "Technology",
       "industry": "Software - Application",
-      "marketCap": 856350464.0,
-      "avgVolume60D": 156875,
+      "marketCap": 842757632.0,
+      "avgVolume60D": 158305,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "GSY.TO",
       "name": "goeasy Ltd.",
       "sector": "Financial Services",
       "industry": "Credit Services",
-      "marketCap": 681455296.0,
-      "avgVolume60D": 95123,
+      "marketCap": 683379392.0,
+      "avgVolume60D": 93055,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     },
     {
       "ticker": "CHR.TO",
       "name": "Chorus Aviation Inc.",
       "sector": "Industrials",
       "industry": "Airports & Air Services",
-      "marketCap": 629488576.0,
-      "avgVolume60D": 48370,
+      "marketCap": 631519872.0,
+      "avgVolume60D": 48923,
       "currency": "CAD",
       "exchange": "TOR",
-      "historyDays": 502
+      "historyDays": 503
     }
   ]
 }
