@@ -2,11 +2,12 @@ name: Update Investment Data
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 11 * * 1-5"
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
@@ -24,81 +25,51 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build investment universe
+      - name: Download latest Investment Universe
         run: |
-          python scripts/build_universe.py
+          mkdir -p data
+          curl -L --fail --retry 3 https://raw.githubusercontent.com/tusharkumar95/Investment_Universe/main/data/canada_universe.json -o data/canada.json
+          curl -L --fail --retry 3 https://raw.githubusercontent.com/tusharkumar95/Investment_Universe/main/data/india_universe.json -o data/india.json
+
+      - name: Validate universe input
+        run: |
+          python - <<'PY'
+          import json
+          for path in ["data/canada.json", "data/india.json"]:
+              with open(path, encoding="utf-8") as f:
+                  data = json.load(f)
+              stocks = data.get("stocks", [])
+              print(f"{path}: {len(stocks)} universe stocks")
+              if len(stocks) < 100:
+                  raise SystemExit(f"{path} contains too few universe stocks")
+          PY
 
       - name: Update market data
-        run: |
-          python scripts/update_market_data.py
+        run: python scripts/update_market_data.py
 
       - name: Verify generated data
         run: |
           python - <<'PY'
           import json
-
-          for file in [
-              "data/canada.json",
-              "data/india.json"
-          ]:
-              with open(file) as f:
+          for file in ["data/canada.json", "data/india.json"]:
+              with open(file, encoding="utf-8") as f:
                   data = json.load(f)
-
               stocks = data.get("stocks", [])
-
               print(f"{file}: {len(stocks)} stocks")
-
-              if len(stocks) < 50:
-                  raise SystemExit(
-                      f"{file} contains too few stocks"
-                  )
-
-              price_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("price"), dict)
-                  and s["price"].get("current") is not None
-              )
-
-              fundamentals_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("fundamentals"), dict)
-              )
-
-              valuation_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("valuation"), dict)
-              )
-
-              technical_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("technical"), dict)
-              )
-
+              if len(stocks) < 100:
+                  raise SystemExit(f"{file} contains too few stocks")
+              price_count = sum(1 for s in stocks if isinstance(s.get("price"), dict) and s["price"].get("current") is not None)
+              fundamentals_count = sum(1 for s in stocks if isinstance(s.get("fundamentals"), dict))
+              valuation_count = sum(1 for s in stocks if isinstance(s.get("valuation"), dict))
+              technical_count = sum(1 for s in stocks if isinstance(s.get("technical"), dict))
               print(f"  Price data: {price_count}")
               print(f"  Fundamentals: {fundamentals_count}")
               print(f"  Valuation: {valuation_count}")
               print(f"  Technical: {technical_count}")
-
-              if price_count == 0:
-                  raise SystemExit(
-                      f"{file} contains NO actual price data"
-                  )
-
-              if fundamentals_count == 0:
-                  raise SystemExit(
-                      f"{file} contains NO fundamentals data"
-                  )
-
-              if valuation_count == 0:
-                  raise SystemExit(
-                      f"{file} contains NO valuation data"
-                  )
-
-              if technical_count == 0:
-                  raise SystemExit(
-                      f"{file} contains NO technical data"
-                  )
-
+              if price_count == 0: raise SystemExit(f"{file} contains NO actual price data")
+              if fundamentals_count == 0: raise SystemExit(f"{file} contains NO fundamentals data")
+              if valuation_count == 0: raise SystemExit(f"{file} contains NO valuation data")
+              if technical_count == 0: raise SystemExit(f"{file} contains NO technical data")
           print("DATA VALIDATION PASSED")
           PY
 
@@ -106,9 +77,6 @@ jobs:
         run: |
           git config user.name "Investment Radar"
           git config user.email "actions@github.com"
-
           git add data/*.json
-
           git diff --cached --quiet || git commit -m "Update investment data"
-
           git push
