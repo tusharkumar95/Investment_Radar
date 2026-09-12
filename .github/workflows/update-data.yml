@@ -35,14 +35,45 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          for path in ["data/canada.json", "data/india.json"]:
+
+          checks = [
+              ("Canada", "data/canada.json", "Canada"),
+              ("India", "data/india.json", "India"),
+          ]
+
+          for market, path, expected_market in checks:
               with open(path, encoding="utf-8") as f:
                   data = json.load(f)
+
               stocks = data.get("stocks", [])
               print(f"{path}: {len(stocks)} universe stocks")
-              if len(stocks) < 100:
-                  raise SystemExit(f"{path} contains too few universe stocks")
+              print(f"  source: {data.get('source')}")
+              print(f"  generated_at_utc: {data.get('generated_at_utc')}")
+
+              if data.get("market") != expected_market:
+                  raise SystemExit(f"{path} has unexpected market: {data.get('market')}")
+              if "Investment Universe" not in str(data.get("source", "")) and "Yahoo Finance screener" not in str(data.get("source", "")):
+                  raise SystemExit(f"{path} does not appear to be an Investment Universe output")
+              if len(stocks) != 150:
+                  raise SystemExit(f"{path} contains {len(stocks)} stocks; expected 150")
+
+              symbols = []
+              for stock in stocks:
+                  symbol = stock.get("symbol")
+                  if not symbol:
+                      raise SystemExit(f"{path} contains a stock without a symbol")
+                  if stock.get("quoteType") not in (None, "EQUITY"):
+                      raise SystemExit(f"{path} contains non-equity security: {symbol}")
+                  symbols.append(symbol)
+
+              if len(symbols) != len(set(symbols)):
+                  raise SystemExit(f"{path} contains duplicate symbols")
+
+          print("INVESTMENT UNIVERSE INPUT VALIDATION PASSED")
           PY
+
+      - name: Syntax check updater
+        run: python -m py_compile scripts/update_market_data.py
 
       - name: Update market data
         run: python scripts/update_market_data.py
