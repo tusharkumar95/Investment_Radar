@@ -1,0 +1,82 @@
+name: Build Custom Stock
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  build:
+    if: startsWith(github.event.issue.title, '[CUSTOM]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Parse custom request
+        id: request
+        env:
+          TITLE: ${{ github.event.issue.title }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          title = os.environ["TITLE"].strip()
+          match = re.fullmatch(r"\[CUSTOM\]\s+(Canada|India)\s+([A-Za-z0-9._-]{1,30})", title, re.I)
+          if not match:
+              raise SystemExit("Use title format: [CUSTOM] Canada GFL.TO or [CUSTOM] India TATAPOWER")
+          market = match.group(1).title()
+          ticker = match.group(2).upper()
+          if market == "India" and "." not in ticker:
+              ticker += ".NS"
+          print(f"market={market}")
+          print(f"ticker={ticker}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"market={market}\n")
+              f.write(f"ticker={ticker}\n")
+          PY
+
+      - name: Syntax check custom builder
+        run: python -m py_compile scripts/build_custom_stock.py
+
+      - name: Build custom stock
+        run: python scripts/build_custom_stock.py "${{ steps.request.outputs.ticker }}" "${{ steps.request.outputs.market }}"
+
+      - name: Commit custom stock
+        run: |
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add data/custom/*.json
+          git diff --cached --quiet || git commit -m "Add custom stock ${{ steps.request.outputs.ticker }}"
+          git push
+
+      - name: Report success
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          TICKER: ${{ steps.request.outputs.ticker }}
+        run: |
+          gh issue comment "$ISSUE" --body "Custom analysis built successfully for **$TICKER**. Open **My Stocks / Custom** in Investment Radar and analyze the ticker again."
+          gh issue close "$ISSUE"
+
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE" --body "The custom-stock build failed. No curated universe data was changed. Check the workflow log for the exact error."
