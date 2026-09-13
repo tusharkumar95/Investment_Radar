@@ -25,8 +25,6 @@ function normalizeMarketData(data) {
     data.stocks = data.stocks.map(stock => ({
         ...stock,
 
-        // Investment Universe currently provides shortName/symbol.
-        // Radar uses name/ticker internally, so normalize both here.
         name:
             stock.name ||
             stock.shortName ||
@@ -49,6 +47,323 @@ function normalizeMarketData(data) {
     }));
 
     return data;
+}
+
+
+/* =========================================
+   FRONT-END FORMATTING
+========================================= */
+
+function cleanNumber(value) {
+    if (value === null || value === undefined || value === "") {
+        return null;
+    }
+
+    const number = Number(value);
+
+    return Number.isFinite(number) ? number : null;
+}
+
+function formatPlain(value) {
+    const number = cleanNumber(value);
+
+    if (number === null) {
+        return "—";
+    }
+
+    return number.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+    });
+}
+
+function formatPercent(value) {
+    const number = cleanNumber(value);
+
+    if (number === null) {
+        return "—";
+    }
+
+    return `${number.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+    })}%`;
+}
+
+function formatMoney(value) {
+    const number = cleanNumber(value);
+
+    if (number === null) {
+        return "—";
+    }
+
+    const symbol = currentMarket === "India" ? "₹" : "$";
+
+    return `${symbol}${number.toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    })}`;
+}
+
+function formatRatio(value) {
+    const number = cleanNumber(value);
+
+    if (number === null) {
+        return "—";
+    }
+
+    return `${number.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+    })}x`;
+}
+
+function formatMetricByLabel(label, value) {
+    const text = String(label || "").toLowerCase();
+
+    if (
+        text.includes("growth") ||
+        text.includes("margin") ||
+        text.includes("roe") ||
+        text.includes("roic") ||
+        text.includes("yield") ||
+        text.includes("holding") ||
+        text.includes("change") ||
+        text.includes("pledge") ||
+        text.includes("momentum") ||
+        text.includes("volatility") ||
+        text.includes("drawdown") ||
+        text.includes("payout") ||
+        text.includes("confidence")
+    ) {
+        return formatPercent(value);
+    }
+
+    if (
+        text === "p/e" ||
+        text.includes("forward p/e") ||
+        text === "peg" ||
+        text.includes("price / sales") ||
+        text.includes("price / book") ||
+        text.includes("debt / equity") ||
+        text.includes("interest coverage") ||
+        text === "beta" ||
+        text.includes("ev / ebitda") ||
+        text.includes("ev / revenue")
+    ) {
+        return formatRatio(value);
+    }
+
+    if (
+        text.includes("price") ||
+        text.includes("fair value") ||
+        text.includes("entry") ||
+        text.includes("opportunity") ||
+        text.includes("cash flow") ||
+        text.includes("revenue") ||
+        text.includes("net income") ||
+        text.includes("operating income") ||
+        text.includes("gross profit") ||
+        text.includes("ebitda") ||
+        text.includes("cash") ||
+        text.includes("debt") ||
+        text.includes("equity") ||
+        text.includes("assets") ||
+        text.includes("market cap") ||
+        text.includes("enterprise value") ||
+        text.includes("52 week") ||
+        text.includes("average")
+    ) {
+        return formatMoney(value);
+    }
+
+    return formatPlain(value);
+}
+
+function formatExistingDetailMetrics() {
+
+    const detail = document.getElementById("detailView");
+
+    if (!detail || detail.style.display === "none") {
+        return;
+    }
+
+    detail.querySelectorAll(".metric").forEach(metric => {
+
+        const label = metric.querySelector(".metric-label");
+        const value = metric.querySelector(".metric-value");
+
+        if (!label || !value) {
+            return;
+        }
+
+        const raw = value.textContent.trim();
+
+        if (!raw || raw === "—") {
+            return;
+        }
+
+        if (
+            /^[A-Za-z₹$—]/.test(raw) &&
+            !/^[₹$-]?\d/.test(raw)
+        ) {
+            return;
+        }
+
+        const numeric = raw.replace(/[$₹,%x,\s]/g, "");
+
+        if (!numeric || !Number.isFinite(Number(numeric))) {
+            return;
+        }
+
+        value.textContent = formatMetricByLabel(
+            label.textContent,
+            numeric
+        );
+    });
+}
+
+
+/* =========================================
+   ADDITIONAL FINANCIAL DATA
+========================================= */
+
+function buildFinancialMetric(label, value, formatter) {
+    const formatted = formatter(value);
+
+    return `
+        <div class="metric">
+            <span class="metric-label">${label}</span>
+            <span class="metric-value">${formatted}</span>
+        </div>
+    `;
+}
+
+function enhanceDetailView() {
+
+    const detail = document.getElementById("detailView");
+
+    if (!detail || detail.style.display === "none") {
+        return;
+    }
+
+    if (detail.querySelector(".radar-financial-enhancements")) {
+        formatExistingDetailMetrics();
+        return;
+    }
+
+    const tickerElement = detail.querySelector(".detail-header p");
+    const ticker = tickerElement
+        ? tickerElement.textContent.trim()
+        : "";
+
+    if (!ticker) {
+        return;
+    }
+
+    const investment = (marketData[currentMarket]?.stocks || [])
+        .find(stock => stock.ticker === ticker);
+
+    if (!investment) {
+        return;
+    }
+
+    const f = investment.fundamentals || {};
+    const v = investment.valuation || {};
+    const d = investment.dividend || {};
+    const p = investment.price || {};
+    const t = investment.technical || {};
+
+    const financialSection = document.createElement("section");
+    financialSection.className = "detail-section radar-financial-enhancements";
+
+    financialSection.innerHTML = `
+        <div class="section-title">Financial Statements & Cash Flow</div>
+        <div class="metric-grid">
+            ${buildFinancialMetric("Revenue", f.revenue, formatMoney)}
+            ${buildFinancialMetric("Net Income", f.netIncome, formatMoney)}
+            ${buildFinancialMetric("Operating Income", f.operatingIncome, formatMoney)}
+            ${buildFinancialMetric("Gross Profit", f.grossProfit, formatMoney)}
+            ${buildFinancialMetric("EBITDA", f.ebitda, formatMoney)}
+            ${buildFinancialMetric("Operating Cash Flow", f.operatingCashFlow, formatMoney)}
+            ${buildFinancialMetric("Free Cash Flow", f.freeCashFlow, formatMoney)}
+            ${buildFinancialMetric("Cash", f.cash, formatMoney)}
+            ${buildFinancialMetric("Total Debt", f.totalDebt, formatMoney)}
+            ${buildFinancialMetric("Total Assets", f.totalAssets, formatMoney)}
+            ${buildFinancialMetric("Shareholders' Equity", f.stockholdersEquity, formatMoney)}
+            ${buildFinancialMetric("Interest Coverage", f.interestCoverage, formatRatio)}
+        </div>
+    `;
+
+    const valuationSection = document.createElement("section");
+    valuationSection.className = "detail-section radar-financial-enhancements";
+
+    valuationSection.innerHTML = `
+        <div class="section-title">Valuation & Income</div>
+        <div class="metric-grid">
+            ${buildFinancialMetric("Market Capitalization", v.marketCap, formatMoney)}
+            ${buildFinancialMetric("Enterprise Value", v.enterpriseValue, formatMoney)}
+            ${buildFinancialMetric("EV / EBITDA", v.evToEbitda, formatRatio)}
+            ${buildFinancialMetric("EV / Revenue", v.evToRevenue, formatRatio)}
+            ${buildFinancialMetric("Beta", v.beta, formatRatio)}
+            ${buildFinancialMetric("Dividend Yield", d.yield, formatPercent)}
+            ${buildFinancialMetric("Dividend Rate", d.rate, formatMoney)}
+            ${buildFinancialMetric("Payout Ratio", d.payoutRatio, formatPercent)}
+        </div>
+    `;
+
+    const technicalSection = document.createElement("section");
+    technicalSection.className = "detail-section radar-financial-enhancements";
+
+    technicalSection.innerHTML = `
+        <div class="section-title">Market Behaviour — Additional</div>
+        <div class="metric-grid">
+            ${buildFinancialMetric("Current Price", p.current, formatMoney)}
+            ${buildFinancialMetric("Previous Close", p.previousClose, formatMoney)}
+            ${buildFinancialMetric("Daily Change", p.changePercent, formatPercent)}
+            ${buildFinancialMetric("1 Year Momentum", t.momentum1y, formatPercent)}
+            ${buildFinancialMetric("30 Day Volatility", t.volatility30d, formatPercent)}
+            ${buildFinancialMetric("90 Day Volatility", t.volatility90d, formatPercent)}
+            ${buildFinancialMetric("52 Week Drawdown", t.drawdown52w, formatPercent)}
+            ${buildFinancialMetric("Current Volume", t.volume, formatPlain)}
+            ${buildFinancialMetric("20 Day Average Volume", t.averageVolume20d, formatPlain)}
+        </div>
+    `;
+
+    detail.appendChild(financialSection);
+    detail.appendChild(valuationSection);
+    detail.appendChild(technicalSection);
+
+    formatExistingDetailMetrics();
+}
+
+
+/* =========================================
+   DETAIL VIEW OBSERVER
+========================================= */
+
+function startDetailEnhancements() {
+
+    const detail = document.getElementById("detailView");
+
+    if (!detail || detail.dataset.radarObserver === "true") {
+        return;
+    }
+
+    detail.dataset.radarObserver = "true";
+
+    const observer = new MutationObserver(() => {
+        if (detail.style.display !== "none") {
+            enhanceDetailView();
+        }
+    });
+
+    observer.observe(detail, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ["style"]
+    });
 }
 
 
@@ -83,6 +398,7 @@ async function loadMarketData() {
         );
 
         renderRadar();
+        startDetailEnhancements();
 
     }
 
@@ -219,14 +535,10 @@ window.renderRadar = function() {
             .map(scoreInvestment)
             .sort((a, b) => b.score - a.score);
 
-    /* PAGE TITLE */
-
     document
         .getElementById("pageTitle")
         .textContent =
             `${currentMarket} ${currentView} Radar`;
-
-    /* PAGE DESCRIPTION */
 
     document
         .getElementById("pageDescription")
@@ -235,20 +547,14 @@ window.renderRadar = function() {
             ? "Finding high-quality investments with attractive fundamentals, valuation and margin of safety."
             : "Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";
 
-    /* STOCK COUNT */
-
     document
         .getElementById("stockCount")
         .textContent = investments.length;
-
-    /* STRONG CANDIDATES */
 
     document
         .getElementById("candidateCount")
         .textContent =
             investments.filter(item => item.score >= 80).length;
-
-    /* WATCHLIST */
 
     document
         .getElementById("watchlistCount")
@@ -257,14 +563,10 @@ window.renderRadar = function() {
                 item => item.score >= 60 && item.score < 80
             ).length;
 
-    /* INVESTMENT CONTAINER */
-
     const container =
         document.getElementById("investments");
 
     container.innerHTML = "";
-
-    /* NO DATA */
 
     if (investments.length === 0) {
 
@@ -281,8 +583,6 @@ window.renderRadar = function() {
 
     }
 
-    /* CREATE CARDS */
-
     investments.forEach(item => {
 
         let badgeClass = "yellow";
@@ -295,11 +595,14 @@ window.renderRadar = function() {
             badgeClass = "red";
         }
 
+        const fundamentals = item.fundamentals || {};
+        const valuation = item.valuation || {};
+        const price = item.price || {};
+
         const card = document.createElement("div");
 
         card.className = "investment";
         card.style.cursor = "pointer";
-
         card.dataset.ticker = item.ticker;
 
         card.innerHTML = `
@@ -311,15 +614,21 @@ window.renderRadar = function() {
                     ${item.verdict}
                 </span>
 
-                <div style="margin-top:10px;font-size:14px;">
-                    Psychology: <strong>
-                        ${item.psychology?.decision || "WAIT"}
-                    </strong>
+                <div style="margin-top:10px;font-size:14px;line-height:1.6;">
+                    Price: <strong>${formatMoney(price.current)}</strong>
+                    &nbsp;·&nbsp;
+                    P/E: <strong>${formatRatio(valuation.pe)}</strong>
+                    &nbsp;·&nbsp;
+                    ROE: <strong>${formatPercent(fundamentals.roe)}</strong>
+                    <br>
+                    Revenue Growth: <strong>${formatPercent(fundamentals.revenueGrowth5Y)}</strong>
+                    &nbsp;·&nbsp;
+                    Psychology: <strong>${item.psychology?.decision || "WAIT"}</strong>
                 </div>
             </div>
 
             <div class="score">
-                ${item.score}
+                ${Math.round(item.score)}
             </div>
         `;
 
