@@ -22,29 +22,165 @@ function normalizeMarketData(data) {
         return data;
     }
 
-    data.stocks = data.stocks.map(stock => ({
-        ...stock,
+    data.stocks = data.stocks.map(stock => {
 
-        name:
-            stock.name ||
-            stock.shortName ||
-            stock.longName ||
-            stock.companyName ||
-            stock.symbol ||
-            stock.ticker ||
-            "Unknown",
+        const priceData =
+            stock.price && typeof stock.price === "object"
+                ? stock.price
+                : {};
 
-        ticker:
-            stock.ticker ||
-            stock.symbol ||
-            stock.id ||
-            "",
+        const priceValue =
+            Number.isFinite(Number(stock.price))
+                ? Number(stock.price)
+                : Number.isFinite(Number(priceData.current))
+                    ? Number(priceData.current)
+                    : Number.isFinite(Number(stock.currentPrice))
+                        ? Number(stock.currentPrice)
+                        : null;
 
-        type:
-            stock.type ||
-            stock.quoteType ||
-            "Investment"
-    }));
+        const fundamentals = {
+            ...(stock.fundamentals || {})
+        };
+
+        const valuation = {
+            ...(stock.valuation || {})
+        };
+
+        const ownershipRaw = {
+            ...(stock.ownership || {})
+        };
+
+        const dividendRaw = {
+            ...(stock.dividend || {})
+        };
+
+        const technicalRaw = {
+            ...(stock.technical || {})
+        };
+
+        /* Normalize the data contract used by the scoring engine. */
+        fundamentals.revenueGrowth3Y =
+            fundamentals.revenueGrowth3Y ?? null;
+
+        fundamentals.fcfGrowth5Y =
+            fundamentals.fcfGrowth5Y ?? null;
+
+        ownershipRaw.insiderHolding =
+            ownershipRaw.insiderHolding ??
+            ownershipRaw.insiderOwnership ??
+            null;
+
+        ownershipRaw.institutionalHolding =
+            ownershipRaw.institutionalHolding ??
+            ownershipRaw.institutionalOwnership ??
+            null;
+
+        ownershipRaw.promoterHolding =
+            ownershipRaw.promoterHolding ??
+            ownershipRaw.promoterOwnership ??
+            null;
+
+        ownershipRaw.promoterPledge =
+            ownershipRaw.promoterPledge ?? null;
+
+        ownershipRaw.promoterChange =
+            ownershipRaw.promoterChange ?? null;
+
+        ownershipRaw.promoterTrend =
+            ownershipRaw.promoterTrend ?? null;
+
+        dividendRaw.payout =
+            dividendRaw.payout ??
+            dividendRaw.payoutRatio ??
+            null;
+
+        dividendRaw.growth =
+            dividendRaw.growth ??
+            dividendRaw.dividendGrowth ??
+            null;
+
+        technicalRaw.momentum3M =
+            technicalRaw.momentum3M ??
+            technicalRaw.momentum3m ??
+            null;
+
+        technicalRaw.momentum6M =
+            technicalRaw.momentum6M ??
+            technicalRaw.momentum6m ??
+            null;
+
+        technicalRaw.momentum1Y =
+            technicalRaw.momentum1Y ??
+            technicalRaw.momentum1y ??
+            null;
+
+        technicalRaw.high52Week =
+            technicalRaw.high52Week ??
+            technicalRaw.high52w ??
+            null;
+
+        technicalRaw.low52Week =
+            technicalRaw.low52Week ??
+            technicalRaw.low52w ??
+            null;
+
+        /* Calculate missing PEG from actual P/E and EPS growth. */
+        if (
+            valuation.peg == null &&
+            Number(valuation.pe) > 0 &&
+            Number(fundamentals.epsGrowth5Y) > 0
+        ) {
+            valuation.peg =
+                Number(valuation.pe) /
+                Number(fundamentals.epsGrowth5Y);
+        }
+
+        /* Calculate price/FCF from market cap and FCF when possible. */
+        if (
+            valuation.priceToFcf == null &&
+            Number(valuation.marketCap) > 0 &&
+            Number(fundamentals.freeCashFlow) > 0
+        ) {
+            valuation.priceToFcf =
+                Number(valuation.marketCap) /
+                Number(fundamentals.freeCashFlow);
+        }
+
+        return {
+            ...stock,
+
+            name:
+                stock.name ||
+                stock.shortName ||
+                stock.longName ||
+                stock.companyName ||
+                stock.symbol ||
+                stock.ticker ||
+                "Unknown",
+
+            ticker:
+                stock.ticker ||
+                stock.symbol ||
+                stock.id ||
+                "",
+
+            type:
+                stock.type ||
+                stock.quoteType ||
+                "Investment",
+
+            /* Engines expect price to be numeric. */
+            price: priceValue,
+            priceData,
+            currentPrice: priceValue,
+
+            fundamentals,
+            valuation,
+            ownership: ownershipRaw,
+            dividend: dividendRaw,
+            technical: technicalRaw
+        };
+    });
 
     return data;
 }
@@ -203,13 +339,6 @@ function formatExistingDetailMetrics() {
             return;
         }
 
-        if (
-            /^[A-Za-z₹$—]/.test(raw) &&
-            !/^[₹$-]?\d/.test(raw)
-        ) {
-            return;
-        }
-
         const numeric = raw.replace(/[$₹,%x,\s]/g, "");
 
         if (!numeric || !Number.isFinite(Number(numeric))) {
@@ -271,7 +400,7 @@ function enhanceDetailView() {
     const f = investment.fundamentals || {};
     const v = investment.valuation || {};
     const d = investment.dividend || {};
-    const p = investment.price || {};
+    const p = investment.priceData || {};
     const t = investment.technical || {};
 
     const financialSection = document.createElement("section");
@@ -308,7 +437,7 @@ function enhanceDetailView() {
             ${buildFinancialMetric("Beta", v.beta, formatRatio)}
             ${buildFinancialMetric("Dividend Yield", d.yield, formatPercent)}
             ${buildFinancialMetric("Dividend Rate", d.rate, formatMoney)}
-            ${buildFinancialMetric("Payout Ratio", d.payoutRatio, formatPercent)}
+            ${buildFinancialMetric("Payout Ratio", d.payout, formatPercent)}
         </div>
     `;
 
@@ -318,10 +447,10 @@ function enhanceDetailView() {
     technicalSection.innerHTML = `
         <div class="section-title">Market Behaviour — Additional</div>
         <div class="metric-grid">
-            ${buildFinancialMetric("Current Price", p.current, formatMoney)}
+            ${buildFinancialMetric("Current Price", investment.price, formatMoney)}
             ${buildFinancialMetric("Previous Close", p.previousClose, formatMoney)}
             ${buildFinancialMetric("Daily Change", p.changePercent, formatPercent)}
-            ${buildFinancialMetric("1 Year Momentum", t.momentum1y, formatPercent)}
+            ${buildFinancialMetric("1 Year Momentum", t.momentum1Y, formatPercent)}
             ${buildFinancialMetric("30 Day Volatility", t.volatility30d, formatPercent)}
             ${buildFinancialMetric("90 Day Volatility", t.volatility90d, formatPercent)}
             ${buildFinancialMetric("52 Week Drawdown", t.drawdown52w, formatPercent)}
@@ -597,7 +726,6 @@ window.renderRadar = function() {
 
         const fundamentals = item.fundamentals || {};
         const valuation = item.valuation || {};
-        const price = item.price || {};
 
         const card = document.createElement("div");
 
@@ -615,7 +743,7 @@ window.renderRadar = function() {
                 </span>
 
                 <div style="margin-top:10px;font-size:14px;line-height:1.6;">
-                    Price: <strong>${formatMoney(price.current)}</strong>
+                    Price: <strong>${formatMoney(item.price)}</strong>
                     &nbsp;·&nbsp;
                     P/E: <strong>${formatRatio(valuation.pe)}</strong>
                     &nbsp;·&nbsp;
