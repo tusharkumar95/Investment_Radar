@@ -43,11 +43,10 @@ jobs:
           ticker = match.group(2).upper()
           if market == "India" and "." not in ticker:
               ticker += ".NS"
-          print(f"market={market}")
-          print(f"ticker={ticker}")
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write(f"market={market}\n")
               f.write(f"ticker={ticker}\n")
+          print(f"Request: {market} / {ticker}")
           PY
 
       - name: Syntax check custom builder
@@ -55,6 +54,26 @@ jobs:
 
       - name: Build custom stock
         run: python scripts/build_custom_stock.py "${{ steps.request.outputs.ticker }}" "${{ steps.request.outputs.market }}"
+
+      - name: Refresh custom-stock index
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("data/custom")
+          root.mkdir(parents=True, exist_ok=True)
+          rows = []
+          for path in sorted(root.glob("*.json")):
+              if path.name == "index.json":
+                  continue
+              try:
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  rows.append({"ticker": data.get("ticker"), "name": data.get("name"), "market": data.get("market"), "updatedAt": data.get("custom", {}).get("updatedAt")})
+              except Exception:
+                  pass
+          (root / "index.json").write_text(json.dumps({"stocks": rows}, indent=2, ensure_ascii=False), encoding="utf-8")
+          print(f"Custom index: {len(rows)} stocks")
+          PY
 
       - name: Commit custom stock
         run: |
