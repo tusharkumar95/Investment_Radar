@@ -45,9 +45,7 @@ jobs:
           path = Path("scripts/update_market_data.py")
           text = path.read_text(encoding="utf-8")
 
-          # ------------------------------------------------------------
-          # 1. Replace fundamentals builder with stronger fallbacks.
-          # ------------------------------------------------------------
+          # Replace fundamentals builder with stronger fallbacks.
           start = text.index("def build_fundamentals(")
           end = text.index("# ============================================================\n# VALUATION", start)
 
@@ -124,9 +122,6 @@ jobs:
                   info.get("freeCashflow")
               )
 
-              # If Yahoo does not provide FCF directly, calculate it as
-              # operating cash flow minus capital expenditure. Yahoo may
-              # report capex as a negative cash-flow number, so use abs().
               if free_cash_flow is None and operating_cash_flow is not None and capex is not None:
                   free_cash_flow = operating_cash_flow - abs(capex)
 
@@ -211,9 +206,6 @@ jobs:
               if roe is None and net_income is not None and equity:
                   roe = (net_income / equity) * 100
 
-              # ROIC hierarchy:
-              # 1) calculated NOPAT / invested capital
-              # 2) Yahoo returnOnTotalCapital
               roic = None
               if operating_income is not None:
                   tax_rate = pct_from_decimal(info.get("taxRate"))
@@ -282,23 +274,23 @@ jobs:
 
           text = text[:start] + new_fundamentals + text[end:]
 
-          # ------------------------------------------------------------
-          # 2. Add canonical PEG and Price/FCF fallbacks.
-          # ------------------------------------------------------------
-          process_marker = '''        valuation = (\n            build_valuation(\n                info\n            )\n        )'''
-          process_replacement = '''        valuation = (\n            build_valuation(\n                info\n            )\n        )\n\n        # Canonical PEG fallback: P/E divided by positive EPS growth.\n        if (\n            valuation.get("peg") is None\n            and valuation.get("pe") is not None\n            and fundamentals.get("epsGrowth5Y") is not None\n            and fundamentals.get("epsGrowth5Y") > 0\n        ):\n            valuation["peg"] = (\n                valuation["pe"]\n                / fundamentals["epsGrowth5Y"]\n            )\n\n        # Canonical Price/FCF using market cap and FCF.\n        if (\n            valuation.get("priceToFcf") is None\n            and valuation.get("marketCap") is not None\n            and fundamentals.get("freeCashFlow") is not None\n            and fundamentals.get("freeCashFlow") > 0\n        ):\n            valuation["priceToFcf"] = (\n                valuation["marketCap"]\n                / fundamentals["freeCashFlow"]\n            )'''
-          if process_marker not in text:
-              raise SystemExit("Expected valuation call block was not found.")
-          text = text.replace(process_marker, process_replacement, 1)
+          # Add PEG and Price/FCF fallbacks once, without duplicating them on scheduled runs.
+          if "# Canonical PEG fallback:" not in text:
+              process_marker = '''        valuation = (\n            build_valuation(\n                info\n            )\n        )'''
+              process_replacement = '''        valuation = (\n            build_valuation(\n                info\n            )\n        )\n\n        # Canonical PEG fallback: P/E divided by positive EPS growth.\n        if (\n            valuation.get("peg") is None\n            and valuation.get("pe") is not None\n            and fundamentals.get("epsGrowth5Y") is not None\n            and fundamentals.get("epsGrowth5Y") > 0\n        ):\n            valuation["peg"] = (\n                valuation["pe"]\n                / fundamentals["epsGrowth5Y"]\n            )\n\n        # Canonical Price/FCF using market cap and FCF.\n        if (\n            valuation.get("priceToFcf") is None\n            and valuation.get("marketCap") is not None\n            and fundamentals.get("freeCashFlow") is not None\n            and fundamentals.get("freeCashFlow") > 0\n        ):\n            valuation["priceToFcf"] = (\n                valuation["marketCap"]\n                / fundamentals["freeCashFlow"]\n            )'''
+              if process_marker not in text:
+                  raise SystemExit("Expected valuation call block was not found.")
+              text = text.replace(process_marker, process_replacement, 1)
 
-          valuation_marker = '''        "priceToBook": first_valid(\n            info.get(\n                "priceToBook"\n            )\n        ),'''
-          valuation_replacement = '''        "priceToBook": first_valid(\n            info.get(\n                "priceToBook"\n            )\n        ),\n\n        "priceToFcf": first_valid(\n            info.get("priceToFreeCashFlow"),\n            info.get("priceToCashFlow")\n        ),'''
-          if valuation_marker not in text:
-              raise SystemExit("Expected valuation Price/Book block was not found.")
-          text = text.replace(valuation_marker, valuation_replacement, 1)
+          if '"priceToFcf": first_valid(' not in text:
+              valuation_marker = '''        "priceToBook": first_valid(\n            info.get(\n                "priceToBook"\n            )\n        ),'''
+              valuation_replacement = '''        "priceToBook": first_valid(\n            info.get(\n                "priceToBook"\n            )\n        ),\n\n        "priceToFcf": first_valid(\n            info.get("priceToFreeCashFlow"),\n            info.get("priceToCashFlow")\n        ),'''
+              if valuation_marker not in text:
+                  raise SystemExit("Expected valuation Price/Book block was not found.")
+              text = text.replace(valuation_marker, valuation_replacement, 1)
 
           path.write_text(text, encoding="utf-8")
-          print("Financial data engine upgrade applied.")
+          print("Financial data engine upgrade applied (idempotent).")
           PY
 
       - name: Repair updater syntax before compile
