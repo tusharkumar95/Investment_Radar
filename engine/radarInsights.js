@@ -1,4 +1,5 @@
 /* INVESTMENT RADAR - Score explanation and confidence layer */
+/* Frontend-only layer: no market-data workflow required. */
 
 (function () {
     function safeNumber(value) {
