@@ -1,6 +1,10 @@
 name: Apply Frontend Upgrade
 
 on:
+  push:
+    paths:
+      - "scripts/upgrade_frontend.py"
+      - ".github/workflows/upgrade-frontend.yml"
   workflow_dispatch:
 
 permissions:
