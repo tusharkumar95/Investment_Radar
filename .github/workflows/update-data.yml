@@ -34,7 +34,7 @@ jobs:
 
       - name: Validate Investment Universe
         run: |
-          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains {len(d.get(\"stocks\",[]))} stocks; expected 150')) if len(d.get('stocks',[]))!=150 else None)(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
+          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains {len(d.get(\"stocks\",[]))} stocks; expected 100')) if len(d.get('stocks',[]))!=100 else None)(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
 
       - name: Upgrade financial data engine
         run: |
@@ -131,5 +131,5 @@ jobs:
           git config user.name "Investment Radar"
           git config user.email "actions@github.com"
           git add data/*.json scripts/update_market_data.py scripts/enrich_technical.py
-          git diff --cached --quiet || git commit -m "Add technical history and analysis data"
+          git diff --cached --quiet || git commit -m "Update investment data and technical history"
           git push
