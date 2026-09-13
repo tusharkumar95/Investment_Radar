@@ -1,9 +1,6 @@
 /* INVESTMENT RADAR - Score explanation and confidence layer */
 /* Frontend-only layer: no market-data workflow required. */
 
-// Load valuation v2 synchronously before the application starts.
-document.write('<script src="engine/valuationV2.js"></script>');
-
 (function () {
     function safeNumber(value) {
         const n = Number(value);
