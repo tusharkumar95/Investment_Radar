@@ -1,0 +1,49 @@
+name: Apply Frontend Upgrade
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax check patcher
+        run: python -m py_compile scripts/upgrade_frontend.py
+
+      - name: Apply frontend patch
+        run: python scripts/upgrade_frontend.py
+
+      - name: Verify frontend patch
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text = Path("index.html").read_text(encoding="utf-8")
+          required = [
+              'href="custom.html"',
+              'engine/valuationV2.js',
+              'engine/radarInsights.js',
+          ]
+          for item in required:
+              if item not in text:
+                  raise SystemExit(f"Missing frontend upgrade: {item}")
+          print("FRONTEND UPGRADE VALIDATED")
+          PY
+
+      - name: Commit frontend upgrade
+        run: |
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add index.html scripts/upgrade_frontend.py
+          git diff --cached --quiet || git commit -m "Enable custom stocks and enhanced analysis"
+          git push
