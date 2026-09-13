@@ -1,4 +1,5 @@
 /* INVESTMENT RADAR - Valuation Engine v2 */
+/* Uses multiple valuation methods and exposes the methods used. */
 
 (function () {
     function n(value) {
