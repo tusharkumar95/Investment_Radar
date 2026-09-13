@@ -50,11 +50,16 @@ def series(frame, names):
 
 
 def cagr(values):
-    values = [x for x in values if x is not None and x > 0]
+    values = [x for x in values if x is not None]
     if len(values) < 2:
         return None
     years = min(5, len(values) - 1)
-    return ((values[-1] / values[-1 - years]) ** (1 / years) - 1) * 100
+    start = values[-1 - years]
+    end = values[-1]
+    # CAGR is not meaningful when the starting value is zero/negative.
+    if start is None or end is None or start <= 0 or end <= 0:
+        return None
+    return ((end / start) ** (1 / years) - 1) * 100
 
 
 def technical_rows(history):
@@ -144,8 +149,12 @@ def build(ticker, market):
     price_fcf = market_cap / fcf if market_cap and fcf and fcf > 0 else None
     peg = pe / eps_growth if pe and eps_growth and eps_growth > 0 else None
 
-    dividend_yield = pct(info.get("dividendYield"))
     dividend_rate = num(info.get("dividendRate"))
+    dividend_yield = None
+    if dividend_rate is not None and current:
+        dividend_yield = dividend_rate / current * 100
+    if dividend_yield is None:
+        dividend_yield = pct(info.get("dividendYield"))
     payout = pct(info.get("payoutRatio"))
 
     technical = {
