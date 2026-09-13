@@ -54,3 +54,22 @@ function getInvestments(){const data=marketData[currentMarket];return data?(data
 function scoreInvestment(investment){const score=currentView==="Long Term"?longTermScore(investment):shortTermScore(investment);return {...investment,score,verdict:getVerdict(score),dataQuality:getDataQualityReport(investment),psychology:psychologyAnalysis(investment),calculatedValuation:calculateValuation(investment)};}
 window.renderRadar=function(){const data=marketData[currentMarket];if(!data)return;const investments=getInvestments().map(scoreInvestment).sort((a,b)=>b.score-a.score).slice(0,100);document.getElementById("pageTitle").textContent=`${currentMarket} ${currentView} Radar`;document.getElementById("pageDescription").textContent=currentView==="Long Term"?"Finding high-quality investments with attractive fundamentals, valuation and margin of safety.":"Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";document.getElementById("stockCount").textContent=investments.length;document.getElementById("candidateCount").textContent=investments.filter(item=>item.score>=80).length;document.getElementById("watchlistCount").textContent=investments.filter(item=>item.score>=60&&item.score<80).length;const container=document.getElementById("investments");container.innerHTML="";if(!investments.length){container.innerHTML=`<div class="investment"><div class="investment-info"><h3>No investments loaded yet</h3><p>Our investment database is being built.</p></div></div>`;return;}investments.forEach(item=>{let badgeClass="yellow";if(item.score>=85)badgeClass="green";if(item.score<60)badgeClass="red";const f=item.fundamentals||{},v=item.valuation||{},card=document.createElement("div");card.className="investment";card.style.cursor="pointer";card.dataset.ticker=item.ticker;card.innerHTML=`<div class="investment-info"><h3>${item.name||"Unknown"}</h3><p>${item.ticker||""}</p><span class="badge ${badgeClass}">${item.verdict}</span><div style="margin-top:10px;font-size:14px;line-height:1.6;">Price: <strong>${formatMoney(item.price)}</strong> &nbsp;·&nbsp; P/E: <strong>${formatRatio(v.pe)}</strong> &nbsp;·&nbsp; ROE: <strong>${formatPercent(f.roe)}</strong><br>Revenue Growth: <strong>${formatPercent(f.revenueGrowth5Y)}</strong> &nbsp;·&nbsp; Psychology: <strong>${item.psychology?.decision||"WAIT"}</strong></div></div><div class="score">${Math.round(item.score)}</div>`;card.addEventListener("click",function(){openInvestmentByTicker(item.ticker);setTimeout(enhanceDetailView,0);});container.appendChild(card);});};
 loadMarketData();
+
+// Load the Radar insight/technical layer after the core app is defined.
+// This enables the 6-month target, chart/technical analysis, and score breakdown
+// on Canada/India stock detail pages as well as custom stocks.
+(function loadRadarInsightLayer() {
+    const scripts = [
+        'engine/radarInsights.js'
+    ];
+    let i = 0;
+    function next() {
+        if (i >= scripts.length) return;
+        const script = document.createElement('script');
+        script.src = scripts[i++];
+        script.onload = next;
+        script.onerror = () => console.warn('Could not load ' + script.src);
+        document.head.appendChild(script);
+    }
+    next();
+})();
