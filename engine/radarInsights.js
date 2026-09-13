@@ -1,4 +1,4 @@
-/* INVESTMENT RADAR - Score explanation and confidence layer */
+/* INVESTMENT RADAR - Score explanation, confidence, and analysis layer */
 /* Frontend-only layer: no market-data workflow required. */
 
 (function () {
@@ -26,7 +26,7 @@
         `;
     }
 
-    function longTermBreakdown(stock) {
+    function legacyLongTermBreakdown(stock) {
         return [
             ["Business Quality", businessQualityScore(stock), 25],
             ["Valuation", valuationScore(stock), 25],
@@ -38,7 +38,7 @@
         ];
     }
 
-    function shortTermBreakdown(stock) {
+    function legacyShortTermBreakdown(stock) {
         const t = stock.technical || {};
         const v = stock.valuation || {};
         const f = stock.fundamentals || {};
@@ -97,6 +97,13 @@
         ];
     }
 
+    function getBreakdown(stock) {
+        if (typeof window.getRadarScoreComponents === "function") {
+            return window.getRadarScoreComponents(stock, currentView);
+        }
+        return currentView === "Long Term" ? legacyLongTermBreakdown(stock) : legacyShortTermBreakdown(stock);
+    }
+
     // Correct schema aliases used by the live data so confidence does not
     // penalize fields that are present under their canonical names.
     const originalDataQuality = window.getDataQualityReport;
@@ -136,7 +143,6 @@
                 ["dividend.growth", investment?.dividend?.growth],
                 ["dividend.payout", investment?.dividend?.payout]
             ];
-
             const available = fields.filter(([, value]) => {
                 if (value === null || value === undefined || value === "") return false;
                 if (typeof value === "number") return Number.isFinite(value);
@@ -148,20 +154,42 @@
                 : completeness >= 55 ? { score: completeness, label: "Moderate", className: "yellow" }
                 : completeness >= 35 ? { score: completeness, label: "Low", className: "yellow" }
                 : { score: completeness, label: "Very Low", className: "red" };
-
             return { ...original, completeness, confidence, usable: completeness >= 40 };
         };
     }
 
+    function qualityPriceSection(stock) {
+        const quality = typeof window.radarQualityScore === "function" ? clamp(window.radarQualityScore(stock)) : null;
+        const price = typeof window.radarPriceScore === "function" ? clamp(window.radarPriceScore(stock)) : null;
+        if (quality === null && price === null) return null;
+
+        const qualityLabel = quality >= 80 ? "High-quality business" : quality >= 65 ? "Good business" : quality >= 50 ? "Mixed quality" : "Quality concerns";
+        const priceLabel = price >= 80 ? "Attractive price" : price >= 65 ? "Reasonable price" : price >= 50 ? "Mixed valuation" : "Expensive price";
+
+        const section = document.createElement("section");
+        section.className = "detail-section radar-quality-price";
+        section.innerHTML = `
+            <div class="section-title">Quality vs Price</div>
+            <div class="metric-grid">
+                <div class="metric"><span class="metric-label">Company Quality</span><span class="metric-value">${quality === null ? "—" : Math.round(quality) + "/100"}</span></div>
+                <div class="metric"><span class="metric-label">Current Price Attractiveness</span><span class="metric-value">${price === null ? "—" : Math.round(price) + "/100"}</span></div>
+            </div>
+            <p class="investment-thesis" style="margin-top:14px;">
+                ${quality !== null ? qualityLabel : "Quality data unavailable"} · ${price !== null ? priceLabel : "Price data unavailable"}. A strong company can still be a poor investment when bought at an excessive valuation.
+            </p>
+        `;
+        return section;
+    }
+
     function injectInsights(stock) {
         const detail = document.getElementById("detailView");
-        if (!detail || detail.style.display === "none") return;
+        if (!detail || detail.style.display === "none" || !stock) return;
         if (detail.querySelector(".radar-score-breakdown")) return;
 
         const report = typeof getDataQualityReport === "function" ? getDataQualityReport(stock) : null;
         const confidence = report?.confidence?.score ?? report?.completeness ?? null;
         const confidenceLabel = report?.confidence?.label || "Unknown";
-        const breakdown = currentView === "Long Term" ? longTermBreakdown(stock) : shortTermBreakdown(stock);
+        const breakdown = getBreakdown(stock);
 
         const section = document.createElement("section");
         section.className = "detail-section radar-score-breakdown";
@@ -169,13 +197,16 @@
             <div class="section-title">Radar Score Breakdown</div>
             ${breakdown.map(item => bar(item[0], item[1], item[2])).join("")}
             <p class="investment-thesis" style="margin-top:6px;">
-                Weights are the agreed ${currentView} model. Missing metrics are excluded rather than automatically treated as zero.
+                ${currentView === "Long Term" ? "Weights adapt modestly to the business model/sector." : "Weights follow the agreed short-term model."} Missing metrics reduce confidence rather than automatically becoming zero.
             </p>
         `;
 
         const firstSection = detail.querySelector(".detail-section");
         if (firstSection) firstSection.after(section);
         else detail.appendChild(section);
+
+        const qp = qualityPriceSection(stock);
+        if (qp) section.after(qp);
 
         const decisionSection = detail.querySelector(".detail-section");
         if (decisionSection && confidence !== null) {
@@ -198,4 +229,18 @@
             setTimeout(() => injectInsights(stock), 0);
         };
     }
+
+    /* Load the new scoring layer without changing the existing HTML script order. */
+    const scoringScript = document.createElement("script");
+    scoringScript.src = "engine/scoringV2.js";
+    scoringScript.onload = function () {
+        const refresh = () => {
+            if (typeof window.renderRadar === "function") window.renderRadar();
+        };
+        setTimeout(refresh, 0);
+    };
+    scoringScript.onerror = function () {
+        console.warn("Scoring v2 could not be loaded; existing scoring remains active.");
+    };
+    document.head.appendChild(scoringScript);
 })();
