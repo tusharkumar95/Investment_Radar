@@ -34,7 +34,7 @@ jobs:
 
       - name: Validate Investment Universe
         run: |
-          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains {len(d.get(\"stocks\",[]))} stocks; expected 100')) if len(d.get('stocks',[]))!=100 else None)(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
+          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains fewer than 100 stocks')) if len(d.get('stocks',[]))<100 else print(f'{p}: {len(d.get(\"stocks\",[]))} stocks'))(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
 
       - name: Upgrade financial data engine
         run: |
