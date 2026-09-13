@@ -2,6 +2,10 @@ name: Update Investment Data
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-data.yml"
   schedule:
     - cron: "30 11 * * 1-5"
 
@@ -55,8 +59,7 @@ jobs:
               operating_cash_flow = first_valid(statement_latest(cashflow, ["Operating Cash Flow", "Total Cash From Operating Activities", "Total Cash From Operating Activities Continuing Operations", "Cash Flow From Continuing Operating Activities"]), info.get("operatingCashflow"))
               capex = first_valid(statement_latest(cashflow, ["Capital Expenditure", "Capital Expenditure Reported", "Purchase Of PPE", "Purchase Of Property Plant And Equipment", "Net PPE Purchase And Sale"]))
               free_cash_flow = first_valid(statement_latest(cashflow, ["Free Cash Flow"]), info.get("freeCashflow"))
-              if free_cash_flow is None and operating_cash_flow is not None and capex is not None:
-                  free_cash_flow = operating_cash_flow - abs(capex)
+              if free_cash_flow is None and operating_cash_flow is not None and capex is not None: free_cash_flow = operating_cash_flow - abs(capex)
               cash = first_valid(statement_latest(balance, ["Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents", "Cash Financial", "Cash Equivalents"]), info.get("totalCash"))
               total_debt = first_valid(statement_latest(balance, ["Total Debt", "Total Debt And Capital Lease Obligation", "Long Term Debt And Capital Lease Obligation", "Long Term Debt"]), info.get("totalDebt"))
               total_assets = first_valid(statement_latest(balance, ["Total Assets"]), info.get("totalAssets"))
@@ -89,7 +92,6 @@ jobs:
               interest_expense = statement_latest(income, ["Interest Expense", "Interest Expense Non Operating", "Interest Expense Non-Operating"])
               interest_coverage = operating_income / abs(interest_expense) if operating_income is not None and interest_expense is not None and abs(interest_expense) > 0 else None
               return clean_value({"revenue":revenue,"netIncome":net_income,"operatingIncome":operating_income,"grossProfit":gross_profit,"ebitda":ebitda,"freeCashFlow":free_cash_flow,"operatingCashFlow":operating_cash_flow,"capitalExpenditure":capex,"cash":cash,"totalDebt":total_debt,"totalAssets":total_assets,"stockholdersEquity":equity,"revenueGrowth5Y":revenue_growth,"epsGrowth5Y":eps_growth,"profitMargin":profit_margin,"operatingMargin":operating_margin,"grossMargin":gross_margin,"eps":eps,"roe":roe,"roic":roic,"debtToEquity":debt_to_equity,"interestCoverage":interest_coverage})
-
           ''')
           text = text[:start] + new_fundamentals + text[end:]
           path.write_text(text, encoding="utf-8")
