@@ -72,6 +72,38 @@ jobs:
           print("INVESTMENT UNIVERSE INPUT VALIDATION PASSED")
           PY
 
+      - name: Patch known updater syntax issue
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("scripts/update_market_data.py")
+          text = path.read_text(encoding="utf-8")
+
+          broken = '''        print("")
+        print(
+            f"Price batch "
+            f"{start + 1}-"
+            f"{min("
+                start + BATCH_SIZE,
+                len(tickers)
+            )}"
+        )'''
+
+          fixed = '''        end = min(start + BATCH_SIZE, len(tickers))
+        print("")
+        print(f"Price batch {start + 1}-{end}")'''
+
+          if broken in text:
+              text = text.replace(broken, fixed, 1)
+              path.write_text(text, encoding="utf-8")
+              print("Patched known Price batch f-string syntax issue.")
+          elif 'print(f"Price batch {start + 1}-{end}")' in text:
+              print("Price batch syntax is already fixed.")
+          else:
+              raise SystemExit("Expected Price batch block was not found; refusing to continue.")
+          PY
+
       - name: Syntax check updater
         run: python -m py_compile scripts/update_market_data.py
 
