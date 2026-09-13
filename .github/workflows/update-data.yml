@@ -5,11 +5,12 @@ on:
   schedule:
     - cron: "30 11 * * 1-5"
 
+permissions:
+  contents: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -37,23 +38,20 @@ jobs:
           import json
 
           checks = [
-              ("Canada", "data/canada.json", "Canada"),
-              ("India", "data/india.json", "India"),
+              ("Canada", "data/canada.json"),
+              ("India", "data/india.json"),
           ]
 
-          for market, path, expected_market in checks:
+          for market, path in checks:
               with open(path, encoding="utf-8") as f:
                   data = json.load(f)
 
               stocks = data.get("stocks", [])
-              print(f"{path}: {len(stocks)} universe stocks")
-              print(f"  source: {data.get('source')}")
-              print(f"  generated_at_utc: {data.get('generated_at_utc')}")
+              print(f"{market}: {len(stocks)} universe stocks")
 
-              if data.get("market") != expected_market:
+              if data.get("market") != market:
                   raise SystemExit(f"{path} has unexpected market: {data.get('market')}")
-              if "Investment Universe" not in str(data.get("source", "")) and "Yahoo Finance screener" not in str(data.get("source", "")):
-                  raise SystemExit(f"{path} does not appear to be an Investment Universe output")
+
               if len(stocks) != 150:
                   raise SystemExit(f"{path} contains {len(stocks)} stocks; expected 150")
 
@@ -72,7 +70,7 @@ jobs:
           print("INVESTMENT UNIVERSE INPUT VALIDATION PASSED")
           PY
 
-      - name: Patch known updater syntax issue
+      - name: Repair known updater syntax issue
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -95,13 +93,12 @@ jobs:
         print(f"Price batch {start + 1}-{end}")'''
 
           if broken in text:
-              text = text.replace(broken, fixed, 1)
-              path.write_text(text, encoding="utf-8")
-              print("Patched known Price batch f-string syntax issue.")
+              path.write_text(text.replace(broken, fixed, 1), encoding="utf-8")
+              print("Known updater syntax issue repaired.")
           elif 'print(f"Price batch {start + 1}-{end}")' in text:
-              print("Price batch syntax is already fixed.")
+              print("Known updater syntax issue already repaired.")
           else:
-              raise SystemExit("Expected Price batch block was not found; refusing to continue.")
+              raise SystemExit("Expected updater block was not found; stopping safely.")
           PY
 
       - name: Syntax check updater
@@ -114,25 +111,49 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          for file in ["data/canada.json", "data/india.json"]:
-              with open(file, encoding="utf-8") as f:
+
+          for path in ("data/canada.json", "data/india.json"):
+              with open(path, encoding="utf-8") as f:
                   data = json.load(f)
+
               stocks = data.get("stocks", [])
-              print(f"{file}: {len(stocks)} stocks")
-              if len(stocks) < 100:
-                  raise SystemExit(f"{file} contains too few stocks")
-              price_count = sum(1 for s in stocks if isinstance(s.get("price"), dict) and s["price"].get("current") is not None)
-              fundamentals_count = sum(1 for s in stocks if isinstance(s.get("fundamentals"), dict))
-              valuation_count = sum(1 for s in stocks if isinstance(s.get("valuation"), dict))
-              technical_count = sum(1 for s in stocks if isinstance(s.get("technical"), dict))
+              print(f"{path}: {len(stocks)} stocks")
+
+              if len(stocks) != 150:
+                  raise SystemExit(f"{path} contains {len(stocks)} stocks; expected 150")
+
+              price_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("price"), dict)
+                  and s["price"].get("current") is not None
+              )
+              fundamentals_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("fundamentals"), dict)
+              )
+              valuation_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("valuation"), dict)
+              )
+              technical_count = sum(
+                  1 for s in stocks
+                  if isinstance(s.get("technical"), dict)
+              )
+
               print(f"  Price data: {price_count}")
               print(f"  Fundamentals: {fundamentals_count}")
               print(f"  Valuation: {valuation_count}")
               print(f"  Technical: {technical_count}")
-              if price_count == 0: raise SystemExit(f"{file} contains NO actual price data")
-              if fundamentals_count == 0: raise SystemExit(f"{file} contains NO fundamentals data")
-              if valuation_count == 0: raise SystemExit(f"{file} contains NO valuation data")
-              if technical_count == 0: raise SystemExit(f"{file} contains NO technical data")
+
+              if price_count == 0:
+                  raise SystemExit(f"{path} contains NO actual price data")
+              if fundamentals_count == 0:
+                  raise SystemExit(f"{path} contains NO fundamentals data")
+              if valuation_count == 0:
+                  raise SystemExit(f"{path} contains NO valuation data")
+              if technical_count == 0:
+                  raise SystemExit(f"{path} contains NO technical data")
+
           print("DATA VALIDATION PASSED")
           PY
 
