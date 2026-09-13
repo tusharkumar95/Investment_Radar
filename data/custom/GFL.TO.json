@@ -27,7 +27,7 @@
     "totalAssets": 19295200000.0,
     "stockholdersEquity": 7302800000.0,
     "revenueGrowth5Y": -0.7220253326774451,
-    "epsGrowth5Y": 7584.615384615384,
+    "epsGrowth5Y": null,
     "profitMargin": -2.87,
     "roe": -2.253,
     "roic": 1.7128373695570385,
@@ -56,7 +56,7 @@
     "recentBigInvestors": []
   },
   "dividend": {
-    "yield": 16.0,
+    "yield": 0.15171948830581783,
     "rate": 0.09,
     "payout": 16.690001,
     "growth": null
@@ -3437,7 +3437,7 @@
     ]
   },
   "custom": {
-    "updatedAt": "2026-09-13T20:20:21.243235+00:00",
+    "updatedAt": "2026-09-13T20:23:23.664341+00:00",
     "source": "Yahoo Finance via yfinance"
   }
 }
