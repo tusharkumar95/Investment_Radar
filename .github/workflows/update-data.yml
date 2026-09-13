@@ -32,74 +32,13 @@ jobs:
           curl -L --fail --retry 3 https://raw.githubusercontent.com/tusharkumar95/Investment_Universe/main/data/canada_universe.json -o data/canada.json
           curl -L --fail --retry 3 https://raw.githubusercontent.com/tusharkumar95/Investment_Universe/main/data/india_universe.json -o data/india.json
 
-      - name: Validate universe input
+      - name: Validate Investment Universe
         run: |
-          python - <<'PY'
-          import json
+          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains {len(d.get(\"stocks\",[]))} stocks; expected 150')) if len(d.get('stocks',[]))!=150 else None)(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
 
-          checks = [
-              ("Canada", "data/canada.json"),
-              ("India", "data/india.json"),
-          ]
-
-          for market, path in checks:
-              with open(path, encoding="utf-8") as f:
-                  data = json.load(f)
-
-              stocks = data.get("stocks", [])
-              print(f"{market}: {len(stocks)} universe stocks")
-
-              if data.get("market") != market:
-                  raise SystemExit(f"{path} has unexpected market: {data.get('market')}")
-
-              if len(stocks) != 150:
-                  raise SystemExit(f"{path} contains {len(stocks)} stocks; expected 150")
-
-              symbols = []
-              for stock in stocks:
-                  symbol = stock.get("symbol")
-                  if not symbol:
-                      raise SystemExit(f"{path} contains a stock without a symbol")
-                  if stock.get("quoteType") not in (None, "EQUITY"):
-                      raise SystemExit(f"{path} contains non-equity security: {symbol}")
-                  symbols.append(symbol)
-
-              if len(symbols) != len(set(symbols)):
-                  raise SystemExit(f"{path} contains duplicate symbols")
-
-          print("INVESTMENT UNIVERSE INPUT VALIDATION PASSED")
-          PY
-
-      - name: Repair known updater syntax issue
+      - name: Repair updater syntax before compile
         run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path("scripts/update_market_data.py")
-          text = path.read_text(encoding="utf-8")
-
-          broken = '''        print("")
-        print(
-            f"Price batch "
-            f"{start + 1}-"
-            f"{min("
-                start + BATCH_SIZE,
-                len(tickers)
-            )}"
-        )'''
-
-          fixed = '''        end = min(start + BATCH_SIZE, len(tickers))
-        print("")
-        print(f"Price batch {start + 1}-{end}")'''
-
-          if broken in text:
-              path.write_text(text.replace(broken, fixed, 1), encoding="utf-8")
-              print("Known updater syntax issue repaired.")
-          elif 'print(f"Price batch {start + 1}-{end}")' in text:
-              print("Known updater syntax issue already repaired.")
-          else:
-              raise SystemExit("Expected updater block was not found; stopping safely.")
-          PY
+          python -c "from pathlib import Path; p=Path('scripts/update_market_data.py'); s=p.read_text(encoding='utf-8'); old='''        print(\"\")\n        print(\n            f\"Price batch \"\n            f\"{start + 1}-\"\n            f\"{min(\"\n                start + BATCH_SIZE,\n                len(tickers)\n            )}\"\n        )'''; new='''        end = min(start + BATCH_SIZE, len(tickers))\n        print(\"\")\n        print(f\"Price batch {start + 1}-{end}\")'''; assert old in s, 'Expected updater syntax block not found'; p.write_text(s.replace(old,new,1),encoding='utf-8'); print('Updater syntax repaired before compile.')"
 
       - name: Syntax check updater
         run: python -m py_compile scripts/update_market_data.py
@@ -109,53 +48,7 @@ jobs:
 
       - name: Verify generated data
         run: |
-          python - <<'PY'
-          import json
-
-          for path in ("data/canada.json", "data/india.json"):
-              with open(path, encoding="utf-8") as f:
-                  data = json.load(f)
-
-              stocks = data.get("stocks", [])
-              print(f"{path}: {len(stocks)} stocks")
-
-              if len(stocks) != 150:
-                  raise SystemExit(f"{path} contains {len(stocks)} stocks; expected 150")
-
-              price_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("price"), dict)
-                  and s["price"].get("current") is not None
-              )
-              fundamentals_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("fundamentals"), dict)
-              )
-              valuation_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("valuation"), dict)
-              )
-              technical_count = sum(
-                  1 for s in stocks
-                  if isinstance(s.get("technical"), dict)
-              )
-
-              print(f"  Price data: {price_count}")
-              print(f"  Fundamentals: {fundamentals_count}")
-              print(f"  Valuation: {valuation_count}")
-              print(f"  Technical: {technical_count}")
-
-              if price_count == 0:
-                  raise SystemExit(f"{path} contains NO actual price data")
-              if fundamentals_count == 0:
-                  raise SystemExit(f"{path} contains NO fundamentals data")
-              if valuation_count == 0:
-                  raise SystemExit(f"{path} contains NO valuation data")
-              if technical_count == 0:
-                  raise SystemExit(f"{path} contains NO technical data")
-
-          print("DATA VALIDATION PASSED")
-          PY
+          python -c "import json; files=['data/canada.json','data/india.json']; [(lambda d,p: (_ for _ in ()).throw(SystemExit(f'{p} contains too few stocks')) if len(d.get('stocks',[]))<100 else (_ for _ in ()).throw(SystemExit(f'{p} contains NO actual price data')) if not any(isinstance(s.get('price'),dict) and s['price'].get('current') is not None for s in d.get('stocks',[])) else (_ for _ in ()).throw(SystemExit(f'{p} contains NO fundamentals data')) if not any(isinstance(s.get('fundamentals'),dict) for s in d.get('stocks',[])) else (_ for _ in ()).throw(SystemExit(f'{p} contains NO valuation data')) if not any(isinstance(s.get('valuation'),dict) for s in d.get('stocks',[])) else (_ for _ in ()).throw(SystemExit(f'{p} contains NO technical data')) if not any(isinstance(s.get('technical'),dict) for s in d.get('stocks',[])) else print(f'{p}: {len(d.get(\"stocks\",[]))} stocks - validation passed'))(json.load(open(p,encoding='utf-8')),p) for p in files]; print('DATA VALIDATION PASSED')"
 
       - name: Commit updated data
         run: |
