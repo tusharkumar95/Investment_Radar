@@ -59,7 +59,6 @@ function normalizeMarketData(data) {
         technical.high52Week = technical.high52Week ?? technical.high52w ?? null;
         technical.low52Week = technical.low52Week ?? technical.low52w ?? null;
 
-        /* Derive PEG when Yahoo did not provide it. */
         if (
             valuation.peg == null &&
             Number(valuation.pe) > 0 &&
@@ -68,7 +67,6 @@ function normalizeMarketData(data) {
             valuation.peg = Number(valuation.pe) / Number(fundamentals.epsGrowth5Y);
         }
 
-        /* Derive Price/FCF from market cap and FCF when possible. */
         if (
             valuation.priceToFcf == null &&
             Number(valuation.marketCap) > 0 &&
@@ -85,12 +83,9 @@ function normalizeMarketData(data) {
                 stock.companyName || stock.symbol || stock.ticker || "Unknown",
             ticker: stock.ticker || stock.symbol || stock.id || "",
             type: stock.type || stock.quoteType || "Investment",
-
-            /* Scoring and valuation engines expect a numeric price. */
             price: priceValue,
             currentPrice: priceValue,
             priceData,
-
             fundamentals,
             valuation,
             ownership,
@@ -128,11 +123,33 @@ function formatPercent(value) {
 function formatMoney(value) {
     const n = numeric(value);
     if (n === null) return "—";
-    const symbol = currentMarket === "India" ? "₹" : "$";
-    return `${symbol}${n.toLocaleString("en-US", {
-        minimumFractionDigits: 2,
+
+    const currency = currentMarket === "India" ? "₹" : "$";
+    let amount = n;
+    let suffix = "";
+
+    if (currentMarket === "India") {
+        if (Math.abs(n) >= 10000000) {
+            amount = n / 10000000;
+            suffix = " crore";
+        } else if (Math.abs(n) >= 100000) {
+            amount = n / 100000;
+            suffix = " lakh";
+        }
+    } else {
+        if (Math.abs(n) >= 1000000000) {
+            amount = n / 1000000000;
+            suffix = " billion";
+        } else if (Math.abs(n) >= 1000000) {
+            amount = n / 1000000;
+            suffix = " million";
+        }
+    }
+
+    return `${currency}${amount.toLocaleString("en-US", {
+        minimumFractionDigits: 0,
         maximumFractionDigits: 2
-    })}`;
+    })}${suffix}`;
 }
 
 function formatRatio(value) {
