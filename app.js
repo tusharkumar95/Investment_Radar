@@ -3,19 +3,53 @@
  * Main application controller
  */
 
-
 let currentMarket = "Canada";
-
 let currentView = "Long Term";
 
-
 let marketData = {
-
     Canada: null,
-
     India: null
-
 };
+
+
+/* =========================================
+   NORMALIZE INVESTMENT DATA
+========================================= */
+
+function normalizeMarketData(data) {
+
+    if (!data || !Array.isArray(data.stocks)) {
+        return data;
+    }
+
+    data.stocks = data.stocks.map(stock => ({
+        ...stock,
+
+        // Investment Universe currently provides shortName/symbol.
+        // Radar uses name/ticker internally, so normalize both here.
+        name:
+            stock.name ||
+            stock.shortName ||
+            stock.longName ||
+            stock.companyName ||
+            stock.symbol ||
+            stock.ticker ||
+            "Unknown",
+
+        ticker:
+            stock.ticker ||
+            stock.symbol ||
+            stock.id ||
+            "",
+
+        type:
+            stock.type ||
+            stock.quoteType ||
+            "Investment"
+    }));
+
+    return data;
+}
 
 
 /* =========================================
@@ -32,31 +66,21 @@ async function loadMarketData() {
         const indiaResponse =
             await fetch("data/india.json");
 
-
         if (!canadaResponse.ok) {
-
-            throw new Error(
-                "Canada data could not be loaded."
-            );
-
+            throw new Error("Canada data could not be loaded.");
         }
-
 
         if (!indiaResponse.ok) {
-
-            throw new Error(
-                "India data could not be loaded."
-            );
-
+            throw new Error("India data could not be loaded.");
         }
 
+        marketData.Canada = normalizeMarketData(
+            await canadaResponse.json()
+        );
 
-        marketData.Canada =
-            await canadaResponse.json();
-
-        marketData.India =
-            await indiaResponse.json();
-
+        marketData.India = normalizeMarketData(
+            await indiaResponse.json()
+        );
 
         renderRadar();
 
@@ -69,33 +93,18 @@ async function loadMarketData() {
             error
         );
 
-
         const container =
-            document.getElementById(
-                "investments"
-            );
-
+            document.getElementById("investments");
 
         if (container) {
 
             container.innerHTML = `
-
                 <div class="investment">
-
                     <div class="investment-info">
-
-                        <h3>
-                            Data loading error
-                        </h3>
-
-                        <p>
-                            ${error.message}
-                        </p>
-
+                        <h3>Data loading error</h3>
+                        <p>${error.message}</p>
                     </div>
-
                 </div>
-
             `;
 
         }
@@ -109,28 +118,17 @@ async function loadMarketData() {
    MARKET SELECTION
 ========================================= */
 
-window.selectMarket = function(
-    newMarket,
-    button
-) {
+window.selectMarket = function(newMarket, button) {
 
     currentMarket = newMarket;
-
 
     document
         .querySelectorAll(".market-btn")
         .forEach(btn => {
-
-            btn.classList.remove(
-                "active"
-            );
-
+            btn.classList.remove("active");
         });
 
-
     button.classList.add("active");
-
-
     renderRadar();
 
 };
@@ -140,28 +138,17 @@ window.selectMarket = function(
    VIEW SELECTION
 ========================================= */
 
-window.selectView = function(
-    newView,
-    button
-) {
+window.selectView = function(newView, button) {
 
     currentView = newView;
-
 
     document
         .querySelectorAll(".view-btn")
         .forEach(btn => {
-
-            btn.classList.remove(
-                "active"
-            );
-
+            btn.classList.remove("active");
         });
 
-
     button.classList.add("active");
-
-
     renderRadar();
 
 };
@@ -173,16 +160,11 @@ window.selectView = function(
 
 function getInvestments() {
 
-    const data =
-        marketData[currentMarket];
-
+    const data = marketData[currentMarket];
 
     if (!data) {
-
         return [];
-
     }
-
 
     return data.stocks || [];
 
@@ -193,58 +175,29 @@ function getInvestments() {
    SCORE INVESTMENT
 ========================================= */
 
-function scoreInvestment(
-    investment
-) {
+function scoreInvestment(investment) {
 
     let score;
 
-
-    if (
-        currentView === "Long Term"
-    ) {
-
-        score =
-            longTermScore(
-                investment
-            );
-
+    if (currentView === "Long Term") {
+        score = longTermScore(investment);
     }
-
     else {
-
-        score =
-            shortTermScore(
-                investment
-            );
-
+        score = shortTermScore(investment);
     }
 
+    const dataQuality = getDataQualityReport(investment);
+    const psychology = psychologyAnalysis(investment);
+    const valuation = calculateValuation(investment);
 
-    const dataQuality =
-    getDataQualityReport(investment);
-
-const psychology =
-    psychologyAnalysis(investment);
-
-    const valuation =
-    calculateValuation(investment);
-
-return {
-    ...investment,
-
-    score: score,
-
-    verdict: getVerdict(score),
-
-    dataQuality: dataQuality,
-
-    psychology: psychology,
-
-    calculatedValuation: valuation
-};
-
-        
+    return {
+        ...investment,
+        score: score,
+        verdict: getVerdict(score),
+        dataQuality: dataQuality,
+        psychology: psychology,
+        calculatedValuation: valuation
+    };
 
 }
 
@@ -255,247 +208,128 @@ return {
 
 window.renderRadar = function() {
 
-    const data =
-        marketData[currentMarket];
-
+    const data = marketData[currentMarket];
 
     if (!data) {
-
         return;
-
     }
 
-
     const investments =
-
         getInvestments()
-
-            .map(
-                scoreInvestment
-            )
-
-            .sort(
-                (a, b) =>
-                    b.score - a.score
-            );
-
+            .map(scoreInvestment)
+            .sort((a, b) => b.score - a.score);
 
     /* PAGE TITLE */
 
     document
-        .getElementById(
-            "pageTitle"
-        )
+        .getElementById("pageTitle")
         .textContent =
             `${currentMarket} ${currentView} Radar`;
-
 
     /* PAGE DESCRIPTION */
 
     document
-        .getElementById(
-            "pageDescription"
-        )
+        .getElementById("pageDescription")
         .textContent =
-
         currentView === "Long Term"
-
             ? "Finding high-quality investments with attractive fundamentals, valuation and margin of safety."
-
             : "Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";
-
 
     /* STOCK COUNT */
 
     document
-        .getElementById(
-            "stockCount"
-        )
-        .textContent =
-            investments.length;
-
+        .getElementById("stockCount")
+        .textContent = investments.length;
 
     /* STRONG CANDIDATES */
 
     document
-        .getElementById(
-            "candidateCount"
-        )
+        .getElementById("candidateCount")
         .textContent =
-
-            investments.filter(
-                item =>
-                    item.score >= 80
-            ).length;
-
+            investments.filter(item => item.score >= 80).length;
 
     /* WATCHLIST */
 
     document
-        .getElementById(
-            "watchlistCount"
-        )
+        .getElementById("watchlistCount")
         .textContent =
-
             investments.filter(
-                item =>
-                    item.score >= 60 &&
-                    item.score < 80
+                item => item.score >= 60 && item.score < 80
             ).length;
-
 
     /* INVESTMENT CONTAINER */
 
     const container =
-        document.getElementById(
-            "investments"
-        );
-
+        document.getElementById("investments");
 
     container.innerHTML = "";
 
-
     /* NO DATA */
 
-    if (
-        investments.length === 0
-    ) {
+    if (investments.length === 0) {
 
         container.innerHTML = `
-
             <div class="investment">
-
                 <div class="investment-info">
-
-                    <h3>
-                        No investments loaded yet
-                    </h3>
-
-                    <p>
-                        Our investment database
-                        is being built.
-                    </p>
-
+                    <h3>No investments loaded yet</h3>
+                    <p>Our investment database is being built.</p>
                 </div>
-
             </div>
-
         `;
 
         return;
 
     }
 
-
     /* CREATE CARDS */
 
-    investments.forEach(
-        item => {
+    investments.forEach(item => {
 
+        let badgeClass = "yellow";
 
-            let badgeClass =
-                "yellow";
-
-
-            if (
-                item.score >= 85
-            ) {
-
-                badgeClass =
-                    "green";
-
-            }
-
-
-            if (
-                item.score < 60
-            ) {
-
-                badgeClass =
-                    "red";
-
-            }
-
-
-            const card =
-                document.createElement(
-                    "div"
-                );
-
-
-            card.className =
-                "investment";
-
-
-            card.style.cursor =
-                "pointer";
-
-
-            /*
-             * Store ticker safely.
-             */
-
-            card.dataset.ticker =
-                item.ticker;
-
-
-            card.innerHTML = `
-
-                <div class="investment-info">
-
-                    <h3>
-                        ${item.name || "Unknown"}
-                    </h3>
-
-                    <p>
-                        ${item.ticker || ""}
-                    </p>
-
-                    <span class="badge ${badgeClass}">
-    ${item.verdict}
-</span>
-
-<div style="margin-top:10px;font-size:14px;">
-    Psychology: <strong>
-        ${item.psychology?.decision || "WAIT"}
-    </strong>
-</div>
-
-                </div>
-
-
-                <div class="score">
-
-                    ${item.score}
-
-                </div>
-
-            `;
-
-
-            /*
-             * Proper event listener.
-             * No inline onclick.
-             */
-
-            card.addEventListener(
-                "click",
-                function() {
-
-                    openInvestmentByTicker(
-                        item.ticker
-                    );
-
-                }
-            );
-
-
-            container.appendChild(
-                card
-            );
-
+        if (item.score >= 85) {
+            badgeClass = "green";
         }
-    );
+
+        if (item.score < 60) {
+            badgeClass = "red";
+        }
+
+        const card = document.createElement("div");
+
+        card.className = "investment";
+        card.style.cursor = "pointer";
+
+        card.dataset.ticker = item.ticker;
+
+        card.innerHTML = `
+            <div class="investment-info">
+                <h3>${item.name || "Unknown"}</h3>
+                <p>${item.ticker || ""}</p>
+
+                <span class="badge ${badgeClass}">
+                    ${item.verdict}
+                </span>
+
+                <div style="margin-top:10px;font-size:14px;">
+                    Psychology: <strong>
+                        ${item.psychology?.decision || "WAIT"}
+                    </strong>
+                </div>
+            </div>
+
+            <div class="score">
+                ${item.score}
+            </div>
+        `;
+
+        card.addEventListener("click", function() {
+            openInvestmentByTicker(item.ticker);
+        });
+
+        container.appendChild(card);
+
+    });
 
 };
 
