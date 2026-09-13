@@ -97,6 +97,62 @@
         ];
     }
 
+    // Correct schema aliases used by the live data so confidence does not
+    // penalize fields that are present under their canonical names.
+    const originalDataQuality = window.getDataQualityReport;
+    if (typeof originalDataQuality === "function") {
+        window.getDataQualityReport = function (investment) {
+            const original = originalDataQuality(investment) || {};
+            const fields = [
+                ["fundamentals.revenueGrowth5Y", investment?.fundamentals?.revenueGrowth5Y],
+                ["fundamentals.epsGrowth5Y", investment?.fundamentals?.epsGrowth5Y],
+                ["fundamentals.profitMargin", investment?.fundamentals?.profitMargin],
+                ["fundamentals.roe", investment?.fundamentals?.roe],
+                ["fundamentals.roic", investment?.fundamentals?.roic],
+                ["fundamentals.freeCashFlow", investment?.fundamentals?.freeCashFlow],
+                ["fundamentals.debtToEquity", investment?.fundamentals?.debtToEquity],
+                ["valuation.pe", investment?.valuation?.pe],
+                ["valuation.forwardPE", investment?.valuation?.forwardPE],
+                ["valuation.peg", investment?.valuation?.peg],
+                ["valuation.evToEbitda", investment?.valuation?.evToEbitda],
+                ["valuation.priceToFcf", investment?.valuation?.priceToFcf],
+                ["valuation.priceToBook", investment?.valuation?.priceToBook],
+                ["fundamentals.revenueGrowth3Y", investment?.fundamentals?.revenueGrowth3Y],
+                ["fundamentals.fcfGrowth5Y", investment?.fundamentals?.fcfGrowth5Y],
+                ["technical.momentum3M", investment?.technical?.momentum3M],
+                ["technical.momentum6M", investment?.technical?.momentum6M],
+                ["technical.sma50", investment?.technical?.sma50],
+                ["technical.sma200", investment?.technical?.sma200],
+                ["technical.high52Week", investment?.technical?.high52Week],
+                ["technical.low52Week", investment?.technical?.low52Week],
+                ["ownership.insiderHolding", investment?.ownership?.insiderHolding],
+                ["ownership.promoterHolding", investment?.ownership?.promoterHolding],
+                ["ownership.promoterChange", investment?.ownership?.promoterChange],
+                ["ownership.promoterPledge", investment?.ownership?.promoterPledge],
+                ["ownership.institutionalHolding", investment?.ownership?.institutionalHolding],
+                ["ownership.institutionalChange", investment?.ownership?.institutionalChange],
+                ["ownership.recentBigInvestors", investment?.ownership?.recentBigInvestors],
+                ["dividend.yield", investment?.dividend?.yield],
+                ["dividend.growth", investment?.dividend?.growth],
+                ["dividend.payout", investment?.dividend?.payout]
+            ];
+
+            const available = fields.filter(([, value]) => {
+                if (value === null || value === undefined || value === "") return false;
+                if (typeof value === "number") return Number.isFinite(value);
+                return true;
+            }).length;
+            const completeness = Math.round((available / fields.length) * 100);
+            const confidence = completeness >= 90 ? { score: completeness, label: "Very High", className: "green" }
+                : completeness >= 75 ? { score: completeness, label: "High", className: "green" }
+                : completeness >= 55 ? { score: completeness, label: "Moderate", className: "yellow" }
+                : completeness >= 35 ? { score: completeness, label: "Low", className: "yellow" }
+                : { score: completeness, label: "Very Low", className: "red" };
+
+            return { ...original, completeness, confidence, usable: completeness >= 40 };
+        };
+    }
+
     function injectInsights(stock) {
         const detail = document.getElementById("detailView");
         if (!detail || detail.style.display === "none") return;
