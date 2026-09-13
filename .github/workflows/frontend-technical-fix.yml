@@ -1,0 +1,49 @@
+name: Frontend Technical Layer Fix
+
+on:
+  push:
+    paths:
+      - '.github/workflows/frontend-technical-fix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject technical analysis layer into app bootstrap
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('app.js')
+          text = p.read_text()
+          marker = 'loadMarketData();'
+          if 'engine/radarInsights.js' not in text:
+              replacement = '''loadMarketData();\n\n// Load the Radar insight/technical layer after the core app is defined.\n// This enables the 6-month target, chart/technical analysis, and score breakdown\n// on Canada/India stock detail pages as well as custom stocks.\n(function loadRadarInsightLayer() {\n    const scripts = [\n        'engine/radarInsights.js'\n    ];\n    let i = 0;\n    function next() {\n        if (i >= scripts.length) return;\n        const script = document.createElement('script');\n        script.src = scripts[i++];\n        script.onload = next;\n        script.onerror = () => console.warn('Could not load ' + script.src);\n        document.head.appendChild(script);\n    }\n    next();\n})();'''
+              if text.count(marker) != 1:
+                  raise SystemExit(f'Expected exactly one {marker!r}, found {text.count(marker)}')
+              p.write_text(text.replace(marker, replacement))
+          else:
+              print('Radar insight layer already present; no change needed.')
+          PY
+
+      - name: Validate JavaScript bootstrap
+        run: |
+          node --check app.js
+
+      - name: Commit fix
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.js
+          if git diff --cached --quiet; then
+            echo 'No frontend change required.'
+          else
+            git commit -m 'Fix Canada India technical target layer'
+            git push
+          fi
