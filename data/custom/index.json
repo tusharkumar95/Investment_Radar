@@ -1,0 +1,10 @@
+{
+  "stocks": [
+    {
+      "ticker": "GFL.TO",
+      "name": "GFL Environmental Inc.",
+      "market": "Canada",
+      "updatedAt": "2026-09-13T20:20:21.243235+00:00"
+    }
+  ]
+}
