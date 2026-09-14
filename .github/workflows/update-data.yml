@@ -1,5 +1,6 @@
 name: Update Investment Data
 
+# Full rebuild trigger: refresh universe, fundamentals, valuation, and technical history.
 on:
   workflow_dispatch:
   push:
