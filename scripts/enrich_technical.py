@@ -63,22 +63,38 @@ def single_ticker_frame(downloaded, ticker):
     if downloaded is None or downloaded.empty: return None
     try:
         if isinstance(downloaded.columns, pd.MultiIndex):
-            levels = [set(map(str, downloaded.columns.get_level_values(i))) for i in range(downloaded.columns.nlevels)]
             frame = None
-            # yfinance may return either (ticker, field) or (field, ticker).
             for level in range(downloaded.columns.nlevels):
-                if ticker in levels[level]:
+                values = [str(v) for v in downloaded.columns.get_level_values(level)]
+                if ticker in values:
                     frame = downloaded.xs(ticker, axis=1, level=level, drop_level=True).copy()
                     break
             if frame is None: return None
             if isinstance(frame.columns, pd.MultiIndex):
-                frame.columns = frame.columns.get_level_values(-1)
+                frame.columns = [str(v[-1]) if isinstance(v, tuple) else str(v) for v in frame.columns]
         else:
             frame = downloaded.copy()
         needed = ["Open", "High", "Low", "Close", "Volume"]
         if not all(col in frame.columns for col in needed): return None
+        frame = frame[needed].copy()
+        for col in needed: frame[col] = pd.to_numeric(frame[col], errors="coerce")
         return frame.dropna(subset=["Close"])
-    except Exception:
+    except Exception as exc:
+        print(f"    column parsing error {ticker}: {exc}")
+        return None
+
+
+def fallback_history(ticker):
+    try:
+        frame = yf.Ticker(ticker).history(period=HISTORY_PERIOD, auto_adjust=False)
+        if frame is None or frame.empty: return None
+        needed = ["Open", "High", "Low", "Close", "Volume"]
+        if not all(col in frame.columns for col in needed): return None
+        frame = frame[needed].copy()
+        for col in needed: frame[col] = pd.to_numeric(frame[col], errors="coerce")
+        return frame.dropna(subset=["Close"])
+    except Exception as exc:
+        print(f"    fallback error {ticker}: {exc}")
         return None
 
 
@@ -92,14 +108,24 @@ def download_histories(tickers):
             downloaded = yf.download(batch, period=HISTORY_PERIOD, auto_adjust=False, group_by="ticker", threads=True, progress=False)
         except Exception as exc:
             print(f"  batch download error: {exc}")
-            continue
+            downloaded = None
+        missing = []
         for ticker in batch:
             frame = single_ticker_frame(downloaded, ticker)
-            if frame is not None and not frame.empty:
+            if frame is not None and len(frame) >= 100:
                 result[ticker] = frame
                 print(f"    history OK: {ticker} ({len(frame)} days)")
             else:
-                print(f"    history missing: {ticker}")
+                missing.append(ticker)
+        if missing:
+            print(f"  Falling back to individual history for {len(missing)} tickers")
+            for ticker in missing:
+                frame = fallback_history(ticker)
+                if frame is not None and len(frame) >= 100:
+                    result[ticker] = frame
+                    print(f"    fallback history OK: {ticker} ({len(frame)} days)")
+                else:
+                    print(f"    history unavailable: {ticker}")
         time.sleep(0.5)
     return result
 
@@ -146,6 +172,7 @@ def enrich(stock, history):
 
 
 def main():
+    total_enriched = 0
     for path in FILES:
         with path.open(encoding="utf-8") as f: data = json.load(f)
         stocks = data.get("stocks", [])
@@ -153,10 +180,14 @@ def main():
         print(f"\nEnriching {path.name}: {len(stocks)} stocks")
         histories = download_histories(tickers)
         data["stocks"] = [enrich(s, histories.get(s.get("ticker"))) for s in stocks]
-        enriched_count = sum(bool(s.get("technical", {}).get("history")) for s in data["stocks"])
+        enriched_count = sum(len(s.get("technical", {}).get("history", [])) >= 100 for s in data["stocks"])
+        total_enriched += enriched_count
         data["technicalEnrichment"] = {"historyPeriod": HISTORY_PERIOD, "storedDays": KEEP_DAYS, "batchSize": BATCH_SIZE, "stocksWithHistory": enriched_count, "updatedAt": pd.Timestamp.now(tz="UTC").isoformat()}
+        with path.open(encoding="utf-8") as f: pass
         with path.open("w", encoding="utf-8") as f: json.dump(data, f, indent=2, ensure_ascii=False, allow_nan=False)
         print(f"Saved {path} ({enriched_count}/{len(stocks)} with technical history)")
         time.sleep(1)
+    if total_enriched == 0:
+        raise SystemExit("Technical enrichment produced zero usable histories across both markets")
 
 if __name__ == "__main__": main()
