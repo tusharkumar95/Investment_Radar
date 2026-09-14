@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/update-data.yml"
+      - "scripts/enrich_technical.py"
+      - "scripts/update_market_data.py"
   schedule:
     - cron: "30 11 * * 1-5"
 
