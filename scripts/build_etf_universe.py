@@ -1,6 +1,7 @@
 import json
 import math
 from pathlib import Path
+from datetime import datetime, timezone
 
 import yfinance as yf
 
@@ -54,9 +55,7 @@ def holdings(ticker):
             return []
         rows = []
         for symbol, row in top.iterrows():
-            weight = None
-            if hasattr(row, "get"):
-                weight = row.get("Holding Percent")
+            weight = row.get("Holding Percent") if hasattr(row, "get") else None
             rows.append({"ticker": str(symbol), "weight": pct(weight)})
         return rows[:25]
     except Exception:
@@ -76,7 +75,7 @@ def build_market(market):
         if price is None:
             continue
 
-        expense = num(info.get("annualReportExpenseRatio") or info.get("annualHoldingsTurnover"))
+        expense = num(info.get("annualReportExpenseRatio"))
         if expense is not None and expense > 1:
             expense /= 100
 
@@ -110,7 +109,7 @@ def main():
         rows = build_market(market)
         payload = {
             "market": market,
-            "updatedAt": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+            "updatedAt": datetime.now(timezone.utc).isoformat(),
             "count": len(rows),
             "etfs": rows,
         }
