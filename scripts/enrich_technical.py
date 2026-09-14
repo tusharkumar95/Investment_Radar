@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FILES = [ROOT / "data" / "canada.json", ROOT / "data" / "india.json"]
 HISTORY_PERIOD = "5y"
 KEEP_DAYS = 420
+BATCH_SIZE = 25
 
 
 def num(v):
@@ -79,15 +80,63 @@ def technical_history(history):
     return rows
 
 
-def enrich(stock):
+def single_ticker_frame(downloaded, ticker):
+    if downloaded is None or downloaded.empty:
+        return None
+    try:
+        if isinstance(downloaded.columns, pd.MultiIndex):
+            level0 = list(downloaded.columns.get_level_values(0))
+            level1 = list(downloaded.columns.get_level_values(1))
+            if ticker in level0:
+                frame = downloaded[ticker].copy()
+            elif ticker in level1:
+                frame = downloaded.xs(ticker, axis=1, level=1).copy()
+            else:
+                return None
+        else:
+            frame = downloaded.copy()
+        needed = ["Open", "High", "Low", "Close", "Volume"]
+        if not all(col in frame.columns for col in needed):
+            return None
+        return frame.dropna(subset=["Close"])
+    except Exception:
+        return None
+
+
+def download_histories(tickers):
+    result = {}
+    for start in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[start:start + BATCH_SIZE]
+        end = start + len(batch)
+        print(f"  Technical batch {start + 1}-{end}")
+        try:
+            downloaded = yf.download(
+                batch,
+                period=HISTORY_PERIOD,
+                auto_adjust=False,
+                group_by="ticker",
+                threads=True,
+                progress=False,
+            )
+        except Exception as exc:
+            print(f"  batch download error: {exc}")
+            continue
+        for ticker in batch:
+            frame = single_ticker_frame(downloaded, ticker)
+            if frame is not None and not frame.empty:
+                result[ticker] = frame
+                print(f"    history OK: {ticker} ({len(frame)} days)")
+            else:
+                print(f"    history missing: {ticker}")
+        time.sleep(0.5)
+    return result
+
+
+def enrich(stock, history):
     ticker = stock.get("ticker")
-    if not ticker:
+    if not ticker or history is None or history.empty:
         return stock
     try:
-        history = yf.Ticker(ticker).history(period=HISTORY_PERIOD, auto_adjust=False)
-        if history is None or history.empty:
-            print(f"  no history: {ticker}")
-            return stock
         history = history.dropna(subset=["Close"])
         close = pd.to_numeric(history["Close"], errors="coerce").dropna()
         if close.empty:
@@ -104,8 +153,8 @@ def enrich(stock):
         vol30 = num(returns.tail(30).std() * math.sqrt(252) * 100) if len(returns) >= 30 else None
         vol90 = num(returns.tail(90).std() * math.sqrt(252) * 100) if len(returns) >= 90 else None
         last252 = history.tail(252)
-        high52 = num(last252["High"].max())
-        low52 = num(last252["Low"].min())
+        high52 = num(pd.to_numeric(last252["High"], errors="coerce").max())
+        low52 = num(pd.to_numeric(last252["Low"], errors="coerce").min())
         volume = pd.to_numeric(history["Volume"], errors="coerce").dropna()
         current_volume = num(volume.iloc[-1]) if not volume.empty else None
         average_volume20 = num(volume.tail(20).mean()) if len(volume) >= 20 else None
@@ -117,15 +166,26 @@ def enrich(stock):
 
         t = stock.get("technical") or {}
         t.update({
-            "price": current, "currentPrice": current,
-            "sma20": sma20, "sma50": sma50, "sma200": sma200,
-            "momentum3M": m3, "momentum6M": m6, "momentum1Y": m1y,
-            "volatility30d": vol30, "volatility90d": vol90,
-            "high52Week": high52, "low52Week": low52,
+            "price": current,
+            "currentPrice": current,
+            "sma20": sma20,
+            "sma50": sma50,
+            "sma200": sma200,
+            "momentum3M": m3,
+            "momentum6M": m6,
+            "momentum1Y": m1y,
+            "volatility30d": vol30,
+            "volatility90d": vol90,
+            "high52Week": high52,
+            "low52Week": low52,
             "drawdown52w": num((current / high52 - 1) * 100) if high52 else None,
-            "volume": current_volume, "averageVolume20d": average_volume20,
-            "rsi14": rsi(close), "atr14": atr(history), "macd": macd(close),
-            "trend": trend, "historyDays": len(history),
+            "volume": current_volume,
+            "averageVolume20d": average_volume20,
+            "rsi14": rsi(close),
+            "atr14": atr(history),
+            "macd": macd(close),
+            "trend": trend,
+            "historyDays": len(history),
             "history": technical_history(history),
         })
         stock["technical"] = clean(t)
@@ -133,7 +193,7 @@ def enrich(stock):
         stock["sma200"] = sma200
         stock["momentum3M"] = m3
         stock["momentum6M"] = m6
-        print(f"  technical OK: {ticker} ({len(history)} days)")
+        print(f"  technical enriched: {ticker} ({len(history)} days)")
     except Exception as exc:
         print(f"  technical error {ticker}: {exc}")
     return stock
@@ -144,16 +204,21 @@ def main():
         with path.open(encoding="utf-8") as f:
             data = json.load(f)
         stocks = data.get("stocks", [])
+        tickers = [s.get("ticker") for s in stocks if s.get("ticker")]
         print(f"\nEnriching {path.name}: {len(stocks)} stocks")
-        data["stocks"] = [enrich(s) for s in stocks]
+        histories = download_histories(tickers)
+        data["stocks"] = [enrich(s, histories.get(s.get("ticker"))) for s in stocks]
+        enriched_count = sum(bool(s.get("technical", {}).get("history")) for s in data["stocks"])
         data["technicalEnrichment"] = {
             "historyPeriod": HISTORY_PERIOD,
             "storedDays": KEEP_DAYS,
-            "updatedAt": pd.Timestamp.utcnow().isoformat(),
+            "batchSize": BATCH_SIZE,
+            "stocksWithHistory": enriched_count,
+            "updatedAt": pd.Timestamp.now(tz="UTC").isoformat(),
         }
         with path.open("w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False, allow_nan=False)
-        print(f"Saved {path}")
+        print(f"Saved {path} ({enriched_count}/{len(stocks)} with technical history)")
         time.sleep(1)
 
 
