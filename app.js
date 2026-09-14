@@ -73,3 +73,62 @@ loadMarketData();
     }
     next();
 })();
+
+// Persistent personal watchlist. Stored locally on this device only.
+(function setupPersonalWatchlist() {
+    const KEY = "investmentRadarWatchlist";
+    const read = () => {
+        try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; }
+    };
+    const write = list => localStorage.setItem(KEY, JSON.stringify([...new Set(list)]));
+    const isSaved = ticker => read().includes(ticker);
+
+    function addControls() {
+        const container = document.getElementById("investments");
+        if (!container) return;
+        container.querySelectorAll(".radar-save-btn").forEach(x => x.remove());
+        container.querySelectorAll(".investment").forEach(card => {
+            const ticker = card.dataset.ticker;
+            if (!ticker) return;
+            const button = document.createElement("button");
+            button.className = "radar-save-btn";
+            button.type = "button";
+            button.textContent = isSaved(ticker) ? "★ Saved" : "☆ Save";
+            button.style.cssText = "margin-top:12px;border:1px solid #d8dde3;background:#fff;border-radius:10px;padding:7px 11px;font-weight:700;cursor:pointer;color:#18212b";
+            button.onclick = event => {
+                event.stopPropagation();
+                const list = read();
+                if (list.includes(ticker)) {
+                    write(list.filter(x => x !== ticker));
+                    button.textContent = "☆ Save";
+                } else {
+                    list.push(ticker);
+                    write(list);
+                    button.textContent = "★ Saved";
+                }
+            };
+            const info = card.querySelector(".investment-info");
+            if (info) info.appendChild(button);
+        });
+    }
+
+    window.getRadarWatchlist = read;
+    window.toggleRadarWatchlist = ticker => {
+        const list = read();
+        write(list.includes(ticker) ? list.filter(x => x !== ticker) : [...list, ticker]);
+        addControls();
+    };
+
+    const originalRender = window.renderRadar;
+    window.renderRadar = function() {
+        if (typeof originalRender === "function") originalRender();
+        setTimeout(addControls, 0);
+    };
+
+    const observer = new MutationObserver(() => setTimeout(addControls, 0));
+    const start = () => {
+        const container = document.getElementById("investments");
+        if (container) observer.observe(container, { childList: true, subtree: true });
+    };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
