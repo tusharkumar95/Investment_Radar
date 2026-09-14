@@ -1,0 +1,1375 @@
+{
+  "market": "Canada",
+  "updatedAt": "2026-09-14T03:48:11.953543+00:00",
+  "count": 28,
+  "etfs": [
+    {
+      "ticker": "VFV.TO",
+      "name": "Vanguard S&P 500 Index ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 188.58,
+      "aum": 35156484096.0,
+      "expenseRatio": null,
+      "yield": 0.84,
+      "threeYearReturn": 21.573800000000002,
+      "fiveYearReturn": 14.71443,
+      "beta3Y": 0.99,
+      "inception": 1351814400,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": [
+        {
+          "ticker": "VOO",
+          "weight": 100.0
+        }
+      ]
+    },
+    {
+      "ticker": "XIC.TO",
+      "name": "iShares Core S&P/TSX Capped Composite Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 57.18,
+      "aum": 34336313344.0,
+      "expenseRatio": null,
+      "yield": 1.94,
+      "threeYearReturn": 24.25996,
+      "fiveYearReturn": 14.78739,
+      "beta3Y": 1.0,
+      "inception": 982281600,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "RY",
+          "weight": 7.628939999999999
+        },
+        {
+          "ticker": "TD",
+          "weight": 5.39701
+        },
+        {
+          "ticker": "SHOP",
+          "weight": 4.7991
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 3.1890300000000003
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 3.0031499999999998
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 2.95313
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 2.79169
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 2.7884800000000003
+        },
+        {
+          "ticker": "AEM.TO",
+          "weight": 2.74876
+        },
+        {
+          "ticker": "BN.TO",
+          "weight": 2.34871
+        }
+      ]
+    },
+    {
+      "ticker": "XEF.TO",
+      "name": "iShares Core MSCI EAFE IMI Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 51.98,
+      "aum": 23859922944.0,
+      "expenseRatio": null,
+      "yield": 2.3,
+      "threeYearReturn": 18.92718,
+      "fiveYearReturn": 10.409179,
+      "beta3Y": 1.0,
+      "inception": 1365552000,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "IEFA",
+          "weight": 3.66688
+        },
+        {
+          "ticker": "ASML.AS",
+          "weight": 2.41624
+        },
+        {
+          "ticker": "HSBA.L",
+          "weight": 1.3054100000000002
+        },
+        {
+          "ticker": "ROP.SW",
+          "weight": 1.12587
+        },
+        {
+          "ticker": "NOVN.SW",
+          "weight": 1.0312999999999999
+        },
+        {
+          "ticker": "SHEL.L",
+          "weight": 0.93408
+        },
+        {
+          "ticker": "NESN.SW",
+          "weight": 0.92215
+        },
+        {
+          "ticker": "8306.T",
+          "weight": 0.9018701
+        },
+        {
+          "ticker": "AZN.L",
+          "weight": 0.9001601
+        },
+        {
+          "ticker": "BHP.AX",
+          "weight": 0.8918699999999999
+        }
+      ]
+    },
+    {
+      "ticker": "XIU.TO",
+      "name": "iShares S&P/TSX 60 Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 52.92,
+      "aum": 22478424064.0,
+      "expenseRatio": null,
+      "yield": 2.12,
+      "threeYearReturn": 23.474991,
+      "fiveYearReturn": 14.43547,
+      "beta3Y": 0.96,
+      "inception": 938476800,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "RY",
+          "weight": 9.53844
+        },
+        {
+          "ticker": "TD",
+          "weight": 6.747870000000001
+        },
+        {
+          "ticker": "SHOP",
+          "weight": 6.0003098
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 3.98725
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 3.75483
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 3.6922902
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 3.4904398000000003
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 3.4864399999999995
+        },
+        {
+          "ticker": "AEM.TO",
+          "weight": 3.43677
+        },
+        {
+          "ticker": "BN.TO",
+          "weight": 2.9365899
+        }
+      ]
+    },
+    {
+      "ticker": "ZCN.TO",
+      "name": "BMO S&P/TSX Capped Composite Index ETF",
+      "market": "Canada",
+      "category": "BMO Asset Management Inc",
+      "currency": "CAD",
+      "price": 47.91,
+      "aum": 18366924800.0,
+      "expenseRatio": null,
+      "yield": 1.97,
+      "threeYearReturn": 24.25244,
+      "fiveYearReturn": 14.78052,
+      "beta3Y": 1.0,
+      "inception": 1243555200,
+      "issuer": "BMO Asset Management Inc",
+      "holdings": [
+        {
+          "ticker": "RY",
+          "weight": 7.9330300000000005
+        },
+        {
+          "ticker": "TD",
+          "weight": 5.48116
+        },
+        {
+          "ticker": "SHOP",
+          "weight": 4.8796
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 3.4197400000000004
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 2.98703
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 2.95939
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 2.95172
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 2.6402099
+        },
+        {
+          "ticker": "BN.TO",
+          "weight": 2.5412700999999998
+        },
+        {
+          "ticker": "AEM.TO",
+          "weight": 2.50047
+        }
+      ]
+    },
+    {
+      "ticker": "VCN.TO",
+      "name": "Vanguard FTSE Canada All Cap Index ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 72.78,
+      "aum": 17754396672.0,
+      "expenseRatio": null,
+      "yield": 1.96,
+      "threeYearReturn": 24.2252,
+      "fiveYearReturn": 14.95006,
+      "beta3Y": 0.99,
+      "inception": 1375401600,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": [
+        {
+          "ticker": "RY",
+          "weight": 8.294091
+        },
+        {
+          "ticker": "TD",
+          "weight": 5.6779798
+        },
+        {
+          "ticker": "SHOP",
+          "weight": 4.06416
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 3.59133
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 3.36445
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 3.0832501
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 3.06256
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 2.75493
+        },
+        {
+          "ticker": "BN.TO",
+          "weight": 2.51901
+        },
+        {
+          "ticker": "SU.TO",
+          "weight": 2.26003
+        }
+      ]
+    },
+    {
+      "ticker": "ZAG.TO",
+      "name": "BMO Aggregate Bond Index ETF",
+      "market": "Canada",
+      "category": "BMO Asset Management Inc",
+      "currency": "CAD",
+      "price": 13.35,
+      "aum": 13261745152.0,
+      "expenseRatio": null,
+      "yield": 3.47,
+      "threeYearReturn": 4.002470000000001,
+      "fiveYearReturn": -0.07439,
+      "beta3Y": 1.0,
+      "inception": 1263859200,
+      "issuer": "BMO Asset Management Inc",
+      "holdings": []
+    },
+    {
+      "ticker": "VIU.TO",
+      "name": "Vanguard FTSE Developed All Cap ex North Amer Idx ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 50.41,
+      "aum": 11588109312.0,
+      "expenseRatio": null,
+      "yield": 2.23,
+      "threeYearReturn": 20.958840000000002,
+      "fiveYearReturn": 11.3703206,
+      "beta3Y": 1.13,
+      "inception": 1448928000,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": [
+        {
+          "ticker": "005930.KQ",
+          "weight": 2.9497199000000003
+        },
+        {
+          "ticker": "000660.KQ",
+          "weight": 2.31856
+        },
+        {
+          "ticker": "ASML.AS",
+          "weight": 2.2098301
+        },
+        {
+          "ticker": "HSBA.L",
+          "weight": 1.26275
+        },
+        {
+          "ticker": "ROP.SW",
+          "weight": 1.06635
+        },
+        {
+          "ticker": "NOVN.SW",
+          "weight": 1.01243
+        },
+        {
+          "ticker": "NESN.SW",
+          "weight": 0.89418
+        },
+        {
+          "ticker": "SHEL.L",
+          "weight": 0.8867401
+        },
+        {
+          "ticker": "AZN.L",
+          "weight": 0.88456
+        },
+        {
+          "ticker": "8306.T",
+          "weight": 0.8465800000000001
+        }
+      ]
+    },
+    {
+      "ticker": "XBB.TO",
+      "name": "iShares Core Canadian Universe Bond Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 27.275,
+      "aum": 10595028992.0,
+      "expenseRatio": null,
+      "yield": 3.49,
+      "threeYearReturn": 3.9988402,
+      "fiveYearReturn": -0.07808,
+      "beta3Y": 1.0,
+      "inception": 974678400,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": []
+    },
+    {
+      "ticker": "VDY.TO",
+      "name": "Vanguard FTSE Canadian High Dividend Yield Index ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 76.72,
+      "aum": 9002671104.0,
+      "expenseRatio": null,
+      "yield": 3.1199999999999997,
+      "threeYearReturn": 29.04968,
+      "fiveYearReturn": 18.682689999999997,
+      "beta3Y": 0.8,
+      "inception": 1351814400,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": [
+        {
+          "ticker": "RY",
+          "weight": 15.8491
+        },
+        {
+          "ticker": "TD",
+          "weight": 10.8499005
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 6.862640000000001
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 6.42907
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 5.89152
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 5.85211
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 5.26432
+        },
+        {
+          "ticker": "SU.TO",
+          "weight": 4.31852
+        },
+        {
+          "ticker": "MFC.TO",
+          "weight": 4.01973
+        },
+        {
+          "ticker": "TRP.TO",
+          "weight": 3.7958
+        }
+      ]
+    },
+    {
+      "ticker": "VAB.TO",
+      "name": "Vanguard Canadian Aggregate Bond Index ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 22.23,
+      "aum": 7620145664.0,
+      "expenseRatio": null,
+      "yield": 3.4000000000000004,
+      "threeYearReturn": 3.8604,
+      "fiveYearReturn": -0.14419,
+      "beta3Y": 1.0,
+      "inception": 1322611200,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": []
+    },
+    {
+      "ticker": "XDIV.TO",
+      "name": "iShares Core MSCI Canadian Quality Dividend Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 45.98,
+      "aum": 6120181760.0,
+      "expenseRatio": null,
+      "yield": 3.1199999999999997,
+      "threeYearReturn": 28.165760000000002,
+      "fiveYearReturn": 19.309281,
+      "beta3Y": 0.62,
+      "inception": 1496793600,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "TD",
+          "weight": 9.231630000000001
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 9.14293
+        },
+        {
+          "ticker": "SU.TO",
+          "weight": 8.9551
+        },
+        {
+          "ticker": "RY",
+          "weight": 8.89911
+        },
+        {
+          "ticker": "MFC.TO",
+          "weight": 8.81907
+        },
+        {
+          "ticker": "SLF.TO",
+          "weight": 8.12644
+        },
+        {
+          "ticker": "POW.TO",
+          "weight": 6.5468399999999995
+        },
+        {
+          "ticker": "PPL.TO",
+          "weight": 5.26276
+        },
+        {
+          "ticker": "FTS.TO",
+          "weight": 5.2230403
+        },
+        {
+          "ticker": "QSR.TO",
+          "weight": 4.67438
+        }
+      ]
+    },
+    {
+      "ticker": "ZLB.TO",
+      "name": "BMO Low Volatility Canadian Equity ETF",
+      "market": "Canada",
+      "category": "BMO Investments Inc.",
+      "currency": "CAD",
+      "price": 59.62,
+      "aum": 6117772800.0,
+      "expenseRatio": null,
+      "yield": 1.8599999999999999,
+      "threeYearReturn": 16.45965,
+      "fiveYearReturn": 10.79164,
+      "beta3Y": 0.56,
+      "inception": 1319155200,
+      "issuer": "BMO Investments Inc.",
+      "holdings": [
+        {
+          "ticker": "GWO.TO",
+          "weight": 4.3800604
+        },
+        {
+          "ticker": "FTS.TO",
+          "weight": 4.2835202
+        },
+        {
+          "ticker": "QBR-B.TO",
+          "weight": 4.01334
+        },
+        {
+          "ticker": "H.TO",
+          "weight": 3.9090399999999996
+        },
+        {
+          "ticker": "L.TO",
+          "weight": 3.77304
+        },
+        {
+          "ticker": "EMP-A.TO",
+          "weight": 3.5056900000000004
+        },
+        {
+          "ticker": "EMA.TO",
+          "weight": 3.50001
+        },
+        {
+          "ticker": "IFC.TO",
+          "weight": 3.3041403
+        },
+        {
+          "ticker": "MRU.TO",
+          "weight": 3.15448
+        },
+        {
+          "ticker": "X.TO",
+          "weight": 3.11058
+        }
+      ]
+    },
+    {
+      "ticker": "XQQ.TO",
+      "name": "iShares NASDAQ 100 Index ETF (CAD-Hedged)",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 71.32,
+      "aum": 5508113920.0,
+      "expenseRatio": null,
+      "yield": 0.22,
+      "threeYearReturn": 22.19023,
+      "fiveYearReturn": 12.43842,
+      "beta3Y": 1.23,
+      "inception": 1304380800,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "NVDA",
+          "weight": 8.51714
+        },
+        {
+          "ticker": "AAPL",
+          "weight": 7.4185
+        },
+        {
+          "ticker": "MSFT",
+          "weight": 6.0072098
+        },
+        {
+          "ticker": "MU",
+          "weight": 4.7581602
+        },
+        {
+          "ticker": "AMZN",
+          "weight": 4.454549800000001
+        },
+        {
+          "ticker": "AMD",
+          "weight": 3.3779000000000003
+        },
+        {
+          "ticker": "GOOGL",
+          "weight": 3.15056
+        },
+        {
+          "ticker": "TSLA",
+          "weight": 2.93011
+        },
+        {
+          "ticker": "GOOG",
+          "weight": 2.91722
+        },
+        {
+          "ticker": "AVGO",
+          "weight": 2.79908
+        }
+      ]
+    },
+    {
+      "ticker": "VEE.TO",
+      "name": "Vanguard FTSE Emerging Markets All Cap Index ETF",
+      "market": "Canada",
+      "category": "Vanguard Investments Canada Inc",
+      "currency": "CAD",
+      "price": 50.27,
+      "aum": 4609872896.0,
+      "expenseRatio": null,
+      "yield": 1.83,
+      "threeYearReturn": 17.6099,
+      "fiveYearReturn": 7.33157,
+      "beta3Y": 0.62,
+      "inception": 1322611200,
+      "issuer": "Vanguard Investments Canada Inc",
+      "holdings": [
+        {
+          "ticker": "VWO",
+          "weight": 100.0
+        }
+      ]
+    },
+    {
+      "ticker": "XEI.TO",
+      "name": "iShares S&P/TSX Composite High Dividend Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 39.6,
+      "aum": 4364023808.0,
+      "expenseRatio": null,
+      "yield": 3.44,
+      "threeYearReturn": 23.908341,
+      "fiveYearReturn": 16.07597,
+      "beta3Y": 0.72,
+      "inception": 1302566400,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "CNQ.TO",
+          "weight": 5.3661298
+        },
+        {
+          "ticker": "TD",
+          "weight": 5.1572
+        },
+        {
+          "ticker": "SU.TO",
+          "weight": 5.128159999999999
+        },
+        {
+          "ticker": "RY",
+          "weight": 5.04657
+        },
+        {
+          "ticker": "NTR.TO",
+          "weight": 4.42162
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 4.37345
+        },
+        {
+          "ticker": "TRP.TO",
+          "weight": 4.23489
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 4.22929
+        },
+        {
+          "ticker": "BNS.TO",
+          "weight": 3.9835000000000003
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 3.69931
+        }
+      ]
+    },
+    {
+      "ticker": "CDZ.TO",
+      "name": "iShares S&P/TSX Canadian Dividend Aristocrats Index ETF Common Class",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 45.23,
+      "aum": 1235825280.0,
+      "expenseRatio": null,
+      "yield": 3.0199999,
+      "threeYearReturn": 19.93774,
+      "fiveYearReturn": 11.27308,
+      "beta3Y": 0.77,
+      "inception": 1157673600,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "SOBO.TO",
+          "weight": 3.48348
+        },
+        {
+          "ticker": "WTE.TO",
+          "weight": 2.87396
+        },
+        {
+          "ticker": "GEI.TO",
+          "weight": 2.8174900999999997
+        },
+        {
+          "ticker": "MTL.TO",
+          "weight": 2.80767
+        },
+        {
+          "ticker": "CNQ.TO",
+          "weight": 2.39112
+        },
+        {
+          "ticker": "PPL.TO",
+          "weight": 2.29825
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 2.1483801000000002
+        },
+        {
+          "ticker": "CVE.TO",
+          "weight": 2.03229
+        },
+        {
+          "ticker": "CRT-UN.TO",
+          "weight": 2.03055
+        },
+        {
+          "ticker": "TPZ.TO",
+          "weight": 1.9099499999999998
+        }
+      ]
+    },
+    {
+      "ticker": "XRE.TO",
+      "name": "iShares S&P/TSX Capped REIT Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 15.68,
+      "aum": 1105934080.0,
+      "expenseRatio": null,
+      "yield": 4.5600000000000005,
+      "threeYearReturn": 4.41737,
+      "fiveYearReturn": -0.35434,
+      "beta3Y": 0.93,
+      "inception": 1034812800,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "REI-UN.TO",
+          "weight": 12.816638999999999
+        },
+        {
+          "ticker": "GRT-UN.TO",
+          "weight": 11.387310000000001
+        },
+        {
+          "ticker": "CAR-UN.TO",
+          "weight": 10.5701305
+        },
+        {
+          "ticker": "FCR-UN.TO",
+          "weight": 10.1657
+        },
+        {
+          "ticker": "CHP-UN.TO",
+          "weight": 8.78143
+        },
+        {
+          "ticker": "DIR-UN.TO",
+          "weight": 8.09229
+        },
+        {
+          "ticker": "SRU-UN.TO",
+          "weight": 7.49041
+        },
+        {
+          "ticker": "HR-UN.TO",
+          "weight": 5.54289
+        },
+        {
+          "ticker": "PMZ-UN.TO",
+          "weight": 5.33068
+        },
+        {
+          "ticker": "BEI-UN.TO",
+          "weight": 5.18626
+        }
+      ]
+    },
+    {
+      "ticker": "XMV.TO",
+      "name": "iShares MSCI Min Vol Canada Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 60.38,
+      "aum": 399932512.0,
+      "expenseRatio": null,
+      "yield": 2.0499999,
+      "threeYearReturn": 20.17441,
+      "fiveYearReturn": 13.20292,
+      "beta3Y": 0.66,
+      "inception": 1343088000,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "BNS.TO",
+          "weight": 3.1541300000000003
+        },
+        {
+          "ticker": "TD",
+          "weight": 3.08849
+        },
+        {
+          "ticker": "ENB.TO",
+          "weight": 3.0506697999999997
+        },
+        {
+          "ticker": "RY",
+          "weight": 2.9765502
+        },
+        {
+          "ticker": "FTS.TO",
+          "weight": 2.9718202
+        },
+        {
+          "ticker": "CP.TO",
+          "weight": 2.96903
+        },
+        {
+          "ticker": "CNR.TO",
+          "weight": 2.95641
+        },
+        {
+          "ticker": "BMO.TO",
+          "weight": 2.9341
+        },
+        {
+          "ticker": "CM.TO",
+          "weight": 2.91094
+        },
+        {
+          "ticker": "GWO.TO",
+          "weight": 2.84863
+        }
+      ]
+    },
+    {
+      "ticker": "HURA.TO",
+      "name": "Global X Uranium Index ETF",
+      "market": "Canada",
+      "category": "Global X Investments Canada Inc.",
+      "currency": "CAD",
+      "price": 49.42,
+      "aum": 217278064.0,
+      "expenseRatio": null,
+      "yield": null,
+      "threeYearReturn": 19.59424,
+      "fiveYearReturn": 16.30649,
+      "beta3Y": 0.0,
+      "inception": 1557878400,
+      "issuer": "Global X Investments Canada Inc.",
+      "holdings": [
+        {
+          "ticker": "CCO.TO",
+          "weight": 19.775829
+        },
+        {
+          "ticker": "KAP",
+          "weight": 19.12198
+        },
+        {
+          "ticker": "OKLO",
+          "weight": 6.20228
+        },
+        {
+          "ticker": "NXE.TO",
+          "weight": 6.08459
+        },
+        {
+          "ticker": "UEC",
+          "weight": 5.3222499999999995
+        },
+        {
+          "ticker": "YCA.L",
+          "weight": 4.0454604
+        },
+        {
+          "ticker": "PDN.AX",
+          "weight": 3.2849000000000004
+        },
+        {
+          "ticker": "EFR.TO",
+          "weight": 3.23073
+        },
+        {
+          "ticker": "LEU",
+          "weight": 2.85446
+        }
+      ]
+    },
+    {
+      "ticker": "HCLN.TO",
+      "name": "Harvest Clean Energy ETF Class A units",
+      "market": "Canada",
+      "category": "Harvest Portfolios Group Inc.",
+      "currency": "CAD",
+      "price": 9.55,
+      "aum": 18921144.0,
+      "expenseRatio": null,
+      "yield": 0.0,
+      "threeYearReturn": -2.01465,
+      "fiveYearReturn": -8.97418,
+      "beta3Y": 0.98,
+      "inception": 1610323200,
+      "issuer": "Harvest Portfolios Group Inc.",
+      "holdings": [
+        {
+          "ticker": "VWS.CO",
+          "weight": 3.26063
+        },
+        {
+          "ticker": "CADLR.OL",
+          "weight": 2.98075
+        },
+        {
+          "ticker": "3800.HK",
+          "weight": 2.9606199
+        },
+        {
+          "ticker": "LAND.SW",
+          "weight": 2.81166
+        },
+        {
+          "ticker": "RNW",
+          "weight": 2.76042
+        },
+        {
+          "ticker": "0968.HK",
+          "weight": 2.71595
+        },
+        {
+          "ticker": "SCATC.OL",
+          "weight": 2.6911899999999997
+        },
+        {
+          "ticker": "S92.DE",
+          "weight": 2.6700102
+        },
+        {
+          "ticker": "VER.VI",
+          "weight": 2.6523499
+        },
+        {
+          "ticker": "MCY.NZ",
+          "weight": 2.6465099999999997
+        }
+      ]
+    },
+    {
+      "ticker": "ZSP.TO",
+      "name": "BMO S&P 500 Index ETF (CAD)",
+      "market": "Canada",
+      "category": "BMO Asset Management Inc",
+      "currency": "CAD",
+      "price": 116.39,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 0.76,
+      "threeYearReturn": 21.574499,
+      "fiveYearReturn": 14.70965,
+      "beta3Y": 0.98,
+      "inception": 1352851200,
+      "issuer": "BMO Asset Management Inc",
+      "holdings": [
+        {
+          "ticker": "NVDA",
+          "weight": 8.14645
+        },
+        {
+          "ticker": "AAPL",
+          "weight": 6.66309
+        },
+        {
+          "ticker": "MSFT",
+          "weight": 5.49022
+        },
+        {
+          "ticker": "AMZN",
+          "weight": 3.9270300000000002
+        },
+        {
+          "ticker": "GOOGL",
+          "weight": 3.0235000000000003
+        },
+        {
+          "ticker": "AVGO",
+          "weight": 2.95661
+        },
+        {
+          "ticker": "GOOG",
+          "weight": 2.4287
+        },
+        {
+          "ticker": "META",
+          "weight": 1.9064
+        },
+        {
+          "ticker": "MU",
+          "weight": 1.5415
+        },
+        {
+          "ticker": "JPM",
+          "weight": 1.4678299000000001
+        }
+      ]
+    },
+    {
+      "ticker": "XEC.TO",
+      "name": "iShares Core MSCI Emerging Markets IMI Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 44.55,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 1.5800001000000001,
+      "threeYearReturn": 22.89845,
+      "fiveYearReturn": 9.76124,
+      "beta3Y": 0.99,
+      "inception": 1571702400,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "2330.TW",
+          "weight": 13.08784
+        },
+        {
+          "ticker": "005930.KQ",
+          "weight": 6.2258700000000005
+        },
+        {
+          "ticker": "000660.KQ",
+          "weight": 4.7339402
+        },
+        {
+          "ticker": "0700.HK",
+          "weight": 2.48507
+        },
+        {
+          "ticker": "9988.HK",
+          "weight": 1.71277
+        },
+        {
+          "ticker": "IEMG",
+          "weight": 1.62682
+        },
+        {
+          "ticker": "2454.TW",
+          "weight": 1.25123
+        },
+        {
+          "ticker": "2308.TW",
+          "weight": 0.79218
+        },
+        {
+          "ticker": "005935",
+          "weight": 0.7661399999999999
+        },
+        {
+          "ticker": "00939",
+          "weight": 0.71453
+        }
+      ]
+    },
+    {
+      "ticker": "TEC.TO",
+      "name": "TD Global Technology Leaders Index ETF",
+      "market": "Canada",
+      "category": "TD Asset Management Inc",
+      "currency": "CAD",
+      "price": 61.35,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 0.08,
+      "threeYearReturn": 27.483030000000003,
+      "fiveYearReturn": 16.04282,
+      "beta3Y": 1.5,
+      "inception": 1648512000,
+      "issuer": "TD Asset Management Inc",
+      "holdings": [
+        {
+          "ticker": "NVDA",
+          "weight": 12.741789
+        },
+        {
+          "ticker": "AAPL",
+          "weight": 11.23368
+        },
+        {
+          "ticker": "MSFT",
+          "weight": 9.217069
+        },
+        {
+          "ticker": "AMZN",
+          "weight": 6.189489699999999
+        },
+        {
+          "ticker": "GOOGL",
+          "weight": 4.91706
+        },
+        {
+          "ticker": "AVGO",
+          "weight": 4.2845897
+        },
+        {
+          "ticker": "GOOG",
+          "weight": 4.2256497
+        },
+        {
+          "ticker": "META",
+          "weight": 3.11727
+        },
+        {
+          "ticker": "TSLA",
+          "weight": 2.79083
+        },
+        {
+          "ticker": "MU",
+          "weight": 2.6800001
+        }
+      ]
+    },
+    {
+      "ticker": "CEF.TO",
+      "name": "Sprott Physical Gold and Silver Trust",
+      "market": "Canada",
+      "category": "ETF",
+      "currency": "CAD",
+      "price": 61.32,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 0.0,
+      "threeYearReturn": null,
+      "fiveYearReturn": null,
+      "beta3Y": null,
+      "inception": null,
+      "issuer": "",
+      "holdings": []
+    },
+    {
+      "ticker": "ZLU.TO",
+      "name": "BMO Low Volatility US Equity ETF (CAD)",
+      "market": "Canada",
+      "category": "BMO Asset Management Inc",
+      "currency": "CAD",
+      "price": 63.51,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 1.67,
+      "threeYearReturn": 13.3563,
+      "fiveYearReturn": 10.1449296,
+      "beta3Y": 0.31,
+      "inception": 1363651200,
+      "issuer": "BMO Asset Management Inc",
+      "holdings": [
+        {
+          "ticker": "JNJ",
+          "weight": 2.94454
+        },
+        {
+          "ticker": "TDY",
+          "weight": 2.78691
+        },
+        {
+          "ticker": "COR",
+          "weight": 2.77304
+        },
+        {
+          "ticker": "GLW",
+          "weight": 2.6795499
+        },
+        {
+          "ticker": "CSCO",
+          "weight": 2.53493
+        },
+        {
+          "ticker": "CBOE",
+          "weight": 2.15326
+        },
+        {
+          "ticker": "NOC",
+          "weight": 2.1357201
+        },
+        {
+          "ticker": "MSI",
+          "weight": 2.1096202
+        },
+        {
+          "ticker": "ED",
+          "weight": 1.95839
+        },
+        {
+          "ticker": "AKAM",
+          "weight": 1.9466601
+        }
+      ]
+    },
+    {
+      "ticker": "XUU.TO",
+      "name": "iShares Core S&P U.S. Total Market Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 77.71,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 1.0199999,
+      "threeYearReturn": 21.100058999999998,
+      "fiveYearReturn": 13.953899999999999,
+      "beta3Y": 1.0,
+      "inception": 1571702400,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "ITOT",
+          "weight": 48.003718
+        },
+        {
+          "ticker": "IVV",
+          "weight": 46.360079999999996
+        },
+        {
+          "ticker": "IJH",
+          "weight": 2.4814800000000004
+        },
+        {
+          "ticker": "IJR",
+          "weight": 1.0112700000000001
+        },
+        {
+          "ticker": "UBER",
+          "weight": 0.07257999999999999
+        },
+        {
+          "ticker": "SNOW",
+          "weight": 0.07066
+        },
+        {
+          "ticker": "AVGO",
+          "weight": 0.066799996
+        },
+        {
+          "ticker": "CRWD",
+          "weight": 0.064539997
+        },
+        {
+          "ticker": "FERG",
+          "weight": 0.06255
+        },
+        {
+          "ticker": "NET",
+          "weight": 0.05993
+        }
+      ]
+    },
+    {
+      "ticker": "XAW.TO",
+      "name": "iShares Core MSCI All Country World ex Canada Index ETF",
+      "market": "Canada",
+      "category": "BlackRock Asset Management Canada Ltd",
+      "currency": "CAD",
+      "price": 58.53,
+      "aum": null,
+      "expenseRatio": null,
+      "yield": 1.2,
+      "threeYearReturn": 20.60465,
+      "fiveYearReturn": 12.602568999999999,
+      "beta3Y": 0.97,
+      "inception": 1571702400,
+      "issuer": "BlackRock Asset Management Canada Ltd",
+      "holdings": [
+        {
+          "ticker": "IVV",
+          "weight": 51.165956
+        },
+        {
+          "ticker": "XEF.TO",
+          "weight": 22.690160000000002
+        },
+        {
+          "ticker": "XEC.TO",
+          "weight": 12.77759
+        },
+        {
+          "ticker": "ITOT",
+          "weight": 8.24514
+        },
+        {
+          "ticker": "IJH",
+          "weight": 3.19833
+        },
+        {
+          "ticker": "IJR",
+          "weight": 1.8962400000000001
+        }
+      ]
+    }
+  ]
+}
