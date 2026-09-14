@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: "30 11 * * 1-5"
 
+concurrency:
+  group: investment-radar-data-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -137,4 +141,5 @@ jobs:
           git config user.email "actions@github.com"
           git add data/*.json scripts/update_market_data.py scripts/enrich_technical.py
           git diff --cached --quiet || git commit -m "Update investment data and technical history"
+          git pull --rebase origin main
           git push
