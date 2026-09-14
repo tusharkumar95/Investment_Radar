@@ -1,0 +1,56 @@
+name: Update ETF Radar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_etf_universe.py"
+      - "engine/etfRadar.js"
+      - "etf.html"
+
+permissions:
+  contents: write
+
+jobs:
+  update-etfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m py_compile scripts/build_etf_universe.py
+
+      - name: Build ETF universe
+        run: python scripts/build_etf_universe.py
+
+      - name: Validate ETF data
+        run: |
+          python - <<'PY'
+          import json
+          for market, path in [("Canada", "data/etf_canada.json"), ("India", "data/etf_india.json")]:
+              d=json.load(open(path,encoding="utf-8"))
+              if d.get("market") != market: raise SystemExit(f"Wrong market in {path}")
+              if len(d.get("etfs", [])) < 10: raise SystemExit(f"Too few ETFs in {path}")
+              print(f"{market}: {len(d['etfs'])} ETFs")
+          print("ETF VALIDATION PASSED")
+          PY
+
+      - name: Commit ETF data
+        run: |
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add data/etf_canada.json data/etf_india.json
+          git diff --cached --quiet || git commit -m "Update ETF Radar data"
+          git push
