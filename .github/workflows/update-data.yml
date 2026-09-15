@@ -45,7 +45,30 @@ jobs:
 
       - name: Validate Investment Universe
         run: |
-          python -c "import json; checks=[('Canada','data/canada.json'),('India','data/india.json')]; [(lambda d,m,p: (_ for _ in ()).throw(SystemExit(f'{p} has unexpected market: {d.get(\"market\")}')) if d.get('market')!=m else (_ for _ in ()).throw(SystemExit(f'{p} contains fewer than 100 stocks')) if len(d.get('stocks',[]))<100 else print(f'{p}: {len(d.get(\"stocks\",[]))} stocks'))(json.load(open(p,encoding='utf-8')),m,p) for m,p in checks]; print('INVESTMENT UNIVERSE VALIDATION PASSED')"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          checks=[('Canada',Path('data/canada.json')),('India',Path('data/india.json'))]
+          for market,path in checks:
+              data=json.loads(path.read_text(encoding='utf-8'))
+              stocks=data.get('stocks',[])
+              if data.get('market') != market:
+                  raise SystemExit(f'{path} has unexpected market: {data.get("market")}')
+              if len(stocks) < 100:
+                  raise SystemExit(f'{path} contains fewer than 100 stocks')
+              missing=[s.get('symbol') or s.get('ticker') for s in stocks if not s.get('industry')]
+              if missing:
+                  raise SystemExit(f'{path} contains stocks with missing industry: {missing[:10]}')
+              counts={}
+              for s in stocks:
+                  industry=s.get('industry','Unknown')
+                  counts[industry]=counts.get(industry,0)+1
+              offenders={k:v for k,v in counts.items() if v>10}
+              if offenders:
+                  raise SystemExit(f'{path} violates max 10 stocks per industry: {offenders}')
+              print(f'{market}: {len(stocks)} stocks; {len(counts)} industries; max industry count {max(counts.values())}')
+          print('INVESTMENT UNIVERSE VALIDATION PASSED')
+          PY
 
       - name: Upgrade financial data engine
         run: |
