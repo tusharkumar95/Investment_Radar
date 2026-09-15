@@ -1,0 +1,43 @@
+name: Update Small Cap Radar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "smallcap.html"
+      - "engine/smallcap.js"
+      - ".github/workflows/update-smallcap.yml"
+
+concurrency:
+  group: investment-radar-smallcap
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Sync small-cap universe
+        run: |
+          curl -L --fail --retry 3 https://raw.githubusercontent.com/tusharkumar95/Investment_Universe/main/data/smallcap_universe.json -o data/smallcap_universe.json
+          python - <<'PY'
+          import json
+          d=json.load(open('data/smallcap_universe.json',encoding='utf-8'))
+          assert d['markets']['Canada']['selected_count'] == 10
+          assert d['markets']['India']['selected_count'] == 10
+          print('Small-cap data: 10 Canada + 10 India')
+          PY
+      - name: Commit synced data
+        run: |
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add data/smallcap_universe.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Sync small-cap radar data"
+          git pull --rebase origin main
+          git push
