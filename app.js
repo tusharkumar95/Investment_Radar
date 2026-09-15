@@ -3,10 +3,7 @@
 let currentMarket = "Canada";
 let currentView = "Long Term";
 
-let marketData = {
-    Canada: null,
-    India: null
-};
+let marketData = { Canada: null, India: null };
 
 function normalizeMarketData(data) {
     if (!data || !Array.isArray(data.stocks)) return data;
@@ -42,93 +39,23 @@ function formatPlain(value) { const n = numeric(value); return n === null ? "—
 function formatPercent(value) { const n = numeric(value); return n === null ? "—" : `${n.toLocaleString("en-US", { maximumFractionDigits: 2 })}%`; }
 function formatMoney(value) { const n = numeric(value); if (n === null) return "—"; const currency = currentMarket === "India" ? "₹" : "$"; let amount=n,suffix=""; if(currentMarket==="India"){if(Math.abs(n)>=10000000){amount=n/10000000;suffix=" crore"}else if(Math.abs(n)>=100000){amount=n/100000;suffix=" lakh"}}else{if(Math.abs(n)>=1000000000){amount=n/1000000000;suffix=" billion"}else if(Math.abs(n)>=1000000){amount=n/1000000;suffix=" million"}} return `${currency}${amount.toLocaleString("en-US",{minimumFractionDigits:0,maximumFractionDigits:2})}${suffix}`; }
 function formatRatio(value) { const n=numeric(value); return n===null?"—":`${n.toLocaleString("en-US",{maximumFractionDigits:2})}x`; }
-function formatMetric(label,value){const text=String(label||"").toLowerCase();if(text.includes("growth")||text.includes("margin")||text.includes("roe")||text.includes("roic")||text.includes("yield")||text.includes("holding")||text.includes("change")||text.includes("pledge")||text.includes("momentum")||text.includes("volatility")||text.includes("drawdown")||text.includes("payout")||text.includes("confidence"))return formatPercent(value);if(text==="p/e"||text.includes("forward p/e")||text==="peg"||text.includes("price / sales")||text.includes("price / book")||text.includes("debt / equity")||text.includes("interest coverage")||text==="beta"||text.includes("ev / ebitda")||text.includes("ev / revenue"))return formatRatio(value);if(text.includes("price")||text.includes("fair value")||text.includes("entry")||text.includes("opportunity")||text.includes("cash flow")||text.includes("revenue")||text.includes("net income")||text.includes("operating income")||text.includes("gross profit")||text.includes("ebitda")||text.includes("cash")||text.includes("debt")||text.includes("equity")||text.includes("assets")||text.includes("market cap")||text.includes("enterprise value")||text.includes("52 week")||text.includes("average"))return formatMoney(value);return formatPlain(value);}
-function formatDetailMetrics(){const detail=document.getElementById("detailView");if(!detail||detail.style.display==="none")return;detail.querySelectorAll(".metric").forEach(metric=>{const label=metric.querySelector(".metric-label"),value=metric.querySelector(".metric-value");if(!label||!value)return;const raw=value.textContent.trim();if(!raw||raw==="—")return;const n=numeric(raw.replace(/[$₹,%x,\s]/g,""));if(n===null)return;const formatted=formatMetric(label.textContent,n);if(formatted!==raw)value.textContent=formatted;});}
 function financialMetric(label,value,formatter){return `<div class="metric"><span class="metric-label">${label}</span><span class="metric-value">${formatter(value)}</span></div>`;}
-function enhanceDetailView(){const detail=document.getElementById("detailView");if(!detail||detail.style.display==="none"||detail.querySelector(".radar-financial-enhancements"))return;const tickerElement=detail.querySelector(".detail-header p"),ticker=tickerElement?tickerElement.textContent.trim():"";if(!ticker)return;const investment=(marketData[currentMarket]?.stocks||[]).find(stock=>stock.ticker===ticker);if(!investment)return;const f=investment.fundamentals||{},v=investment.valuation||{},d=investment.dividend||{},p=investment.priceData||{},t=investment.technical||{};const financial=document.createElement("section");financial.className="detail-section radar-financial-enhancements";financial.innerHTML=`<div class="section-title">Financial Statements & Cash Flow</div><div class="metric-grid">${financialMetric("Revenue",f.revenue,formatMoney)}${financialMetric("Net Income",f.netIncome,formatMoney)}${financialMetric("Operating Income",f.operatingIncome,formatMoney)}${financialMetric("Gross Profit",f.grossProfit,formatMoney)}${financialMetric("EBITDA",f.ebitda,formatMoney)}${financialMetric("Operating Cash Flow",f.operatingCashFlow,formatMoney)}${financialMetric("Free Cash Flow",f.freeCashFlow,formatMoney)}${financialMetric("Cash",f.cash,formatMoney)}${financialMetric("Total Debt",f.totalDebt,formatMoney)}${financialMetric("Total Assets",f.totalAssets,formatMoney)}${financialMetric("Shareholders' Equity",f.stockholdersEquity,formatMoney)}${financialMetric("Interest Coverage",f.interestCoverage,formatRatio)}</div>`;const valuation=document.createElement("section");valuation.className="detail-section radar-financial-enhancements";valuation.innerHTML=`<div class="section-title">Valuation & Income</div><div class="metric-grid">${financialMetric("Market Capitalization",v.marketCap,formatMoney)}${financialMetric("Enterprise Value",v.enterpriseValue,formatMoney)}${financialMetric("EV / EBITDA",v.evToEbitda,formatRatio)}${financialMetric("EV / Revenue",v.evToRevenue,formatRatio)}${financialMetric("Beta",v.beta,formatRatio)}${financialMetric("Dividend Yield",d.yield,formatPercent)}${financialMetric("Dividend Rate",d.rate,formatMoney)}${financialMetric("Payout Ratio",d.payout,formatPercent)}</div>`;const technical=document.createElement("section");technical.className="detail-section radar-financial-enhancements";technical.innerHTML=`<div class="section-title">Market Behaviour — Additional</div><div class="metric-grid">${financialMetric("Current Price",investment.price,formatMoney)}${financialMetric("Previous Close",p.previousClose,formatMoney)}${financialMetric("Daily Change",p.changePercent,formatPercent)}${financialMetric("1 Year Momentum",t.momentum1Y,formatPercent)}${financialMetric("30 Day Volatility",t.volatility30d,formatPercent)}${financialMetric("90 Day Volatility",t.volatility90d,formatPercent)}${financialMetric("52 Week Drawdown",t.drawdown52w,formatPercent)}${financialMetric("Current Volume",t.volume,formatPlain)}${financialMetric("20 Day Average Volume",t.averageVolume20d,formatPlain)}</div>`;detail.appendChild(financial);detail.appendChild(valuation);detail.appendChild(technical);formatDetailMetrics();}
 
-async function loadMarketData(){try{const canadaResponse=await fetch("data/canada.json"),indiaResponse=await fetch("data/india.json");if(!canadaResponse.ok)throw new Error("Canada data could not be loaded.");if(!indiaResponse.ok)throw new Error("India data could not be loaded.");marketData.Canada=normalizeMarketData(await canadaResponse.json());marketData.India=normalizeMarketData(await indiaResponse.json());renderRadar();}catch(error){console.error("Unable to load investment data:",error);const container=document.getElementById("investments");if(container)container.innerHTML=`<div class="investment"><div class="investment-info"><h3>Data loading error</h3><p>${error.message}</p></div></div>`;}}
-window.selectMarket=function(newMarket,button){currentMarket=newMarket;document.querySelectorAll(".market-btn").forEach(btn=>btn.classList.remove("active"));button.classList.add("active");renderRadar();};
-window.selectView=function(newView,button){currentView=newView;document.querySelectorAll(".view-btn").forEach(btn=>btn.classList.remove("active"));button.classList.add("active");renderRadar();};
+function enhanceDetailView(){const detail=document.getElementById("detailView");if(!detail||detail.style.display==="none"||detail.querySelector(".radar-financial-enhancements"))return;const tickerElement=detail.querySelector(".detail-header p"),ticker=tickerElement?tickerElement.textContent.trim():"";if(!ticker)return;const investment=(marketData[currentMarket]?.stocks||[]).find(stock=>stock.ticker===ticker);if(!investment)return;const f=investment.fundamentals||{},v=investment.valuation||{},d=investment.dividend||{},p=investment.priceData||{},t=investment.technical||{};const financial=document.createElement("section");financial.className="detail-section radar-financial-enhancements";financial.innerHTML=`<div class="section-title">Financial Statements & Cash Flow</div><div class="metric-grid">${financialMetric("Revenue",f.revenue,formatMoney)}${financialMetric("Net Income",f.netIncome,formatMoney)}${financialMetric("Operating Income",f.operatingIncome,formatMoney)}${financialMetric("Gross Profit",f.grossProfit,formatMoney)}${financialMetric("EBITDA",f.ebitda,formatMoney)}${financialMetric("Operating Cash Flow",f.operatingCashFlow,formatMoney)}${financialMetric("Free Cash Flow",f.freeCashFlow,formatMoney)}${financialMetric("Cash",f.cash,formatMoney)}${financialMetric("Total Debt",f.totalDebt,formatMoney)}${financialMetric("Total Assets",f.totalAssets,formatMoney)}${financialMetric("Shareholders' Equity",f.stockholdersEquity,formatMoney)}${financialMetric("Interest Coverage",f.interestCoverage,formatRatio)}</div>`;const valuation=document.createElement("section");valuation.className="detail-section radar-financial-enhancements";valuation.innerHTML=`<div class="section-title">Valuation & Income</div><div class="metric-grid">${financialMetric("Market Capitalization",v.marketCap,formatMoney)}${financialMetric("Enterprise Value",v.enterpriseValue,formatMoney)}${financialMetric("EV / EBITDA",v.evToEbitda,formatRatio)}${financialMetric("EV / Revenue",v.evToRevenue,formatRatio)}${financialMetric("Beta",v.beta,formatRatio)}${financialMetric("Dividend Yield",d.yield,formatPercent)}${financialMetric("Dividend Rate",d.rate,formatMoney)}${financialMetric("Payout Ratio",d.payout,formatPercent)}</div>`;const technical=document.createElement("section");technical.className="detail-section radar-financial-enhancements";technical.innerHTML=`<div class="section-title">Market Behaviour — Additional</div><div class="metric-grid">${financialMetric("Current Price",investment.price,formatMoney)}${financialMetric("Previous Close",p.previousClose,formatMoney)}${financialMetric("Daily Change",p.changePercent,formatPercent)}${financialMetric("1 Year Momentum",t.momentum1Y,formatPercent)}${financialMetric("30 Day Volatility",t.volatility30d,formatPercent)}${financialMetric("90 Day Volatility",t.volatility90d,formatPercent)}${financialMetric("52 Week Drawdown",t.drawdown52w,formatPercent)}${financialMetric("Current Volume",t.volume,formatPlain)}${financialMetric("20 Day Average Volume",t.averageVolume20d,formatPlain)}</div>`;detail.appendChild(financial);detail.appendChild(valuation);detail.appendChild(technical);}
+
 function getInvestments(){const data=marketData[currentMarket];return data?(data.stocks||[]):[];}
 function scoreInvestment(investment){const score=currentView==="Long Term"?longTermScore(investment):shortTermScore(investment);return {...investment,score,verdict:getVerdict(score),dataQuality:getDataQualityReport(investment),psychology:psychologyAnalysis(investment),calculatedValuation:calculateValuation(investment)};}
-window.renderRadar=function(){const data=marketData[currentMarket];if(!data)return;const investments=getInvestments().map(scoreInvestment).sort((a,b)=>b.score-a.score).slice(0,100);document.getElementById("pageTitle").textContent=`${currentMarket} ${currentView} Radar`;document.getElementById("pageDescription").textContent=currentView==="Long Term"?"Finding high-quality investments with attractive fundamentals, valuation and margin of safety.":"Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";document.getElementById("stockCount").textContent=investments.length;document.getElementById("candidateCount").textContent=investments.filter(item=>item.score>=80).length;document.getElementById("watchlistCount").textContent=investments.filter(item=>item.score>=60&&item.score<80).length;const container=document.getElementById("investments");container.innerHTML="";if(!investments.length){container.innerHTML=`<div class="investment"><div class="investment-info"><h3>No investments loaded yet</h3><p>Our investment database is being built.</p></div></div>`;return;}investments.forEach(item=>{let badgeClass="yellow";if(item.score>=85)badgeClass="green";if(item.score<60)badgeClass="red";const f=item.fundamentals||{},v=item.valuation||{},card=document.createElement("div");card.className="investment";card.style.cursor="pointer";card.dataset.ticker=item.ticker;card.innerHTML=`<div class="investment-info"><h3>${item.name||"Unknown"}</h3><p>${item.ticker||""}</p><span class="badge ${badgeClass}">${item.verdict}</span><div style="margin-top:10px;font-size:14px;line-height:1.6;">Price: <strong>${formatMoney(item.price)}</strong> &nbsp;·&nbsp; P/E: <strong>${formatRatio(v.pe)}</strong> &nbsp;·&nbsp; ROE: <strong>${formatPercent(f.roe)}</strong><br>Revenue Growth: <strong>${formatPercent(f.revenueGrowth5Y)}</strong> &nbsp;·&nbsp; Psychology: <strong>${item.psychology?.decision||"WAIT"}</strong></div></div><div class="score">${Math.round(item.score)}</div>`;card.addEventListener("click",function(){openInvestmentByTicker(item.ticker);setTimeout(enhanceDetailView,0);});container.appendChild(card);});};
-loadMarketData();
 
-// Load the Radar insight/technical layer after the core app is defined.
-// This enables the 6-month target, chart/technical analysis, and score breakdown
-// on Canada/India stock detail pages as well as custom stocks.
-(function loadRadarInsightLayer() {
-    const scripts = [
-        'engine/radarInsights.js'
-    ];
-    let i = 0;
-    function next() {
-        if (i >= scripts.length) return;
-        const script = document.createElement('script');
-        script.src = scripts[i++];
-        script.onload = next;
-        script.onerror = () => console.warn('Could not load ' + script.src);
-        document.head.appendChild(script);
-    }
-    next();
-})();
+window.renderRadar=function(){const data=marketData[currentMarket];if(!data)return;let investments;try{investments=getInvestments().map(scoreInvestment).sort((a,b)=>b.score-a.score).slice(0,100);}catch(error){console.error("Radar scoring error:",error);const container=document.getElementById("investments");if(container)container.innerHTML=`<div class="investment"><div class="investment-info"><h3>Radar temporarily unavailable</h3><p>${error.message}</p></div></div>`;return;}const pageTitle=document.getElementById("pageTitle"),pageDescription=document.getElementById("pageDescription"),stockCount=document.getElementById("stockCount"),candidateCount=document.getElementById("candidateCount"),watchlistCount=document.getElementById("watchlistCount"),container=document.getElementById("investments");if(!container)return;if(pageTitle)pageTitle.textContent=`${currentMarket} ${currentView} Radar`;if(pageDescription)pageDescription.textContent=currentView==="Long Term"?"Finding high-quality investments with attractive fundamentals, valuation and margin of safety.":"Finding investments with strong momentum, valuation, market behaviour and near-term opportunity.";if(stockCount)stockCount.textContent=investments.length;if(candidateCount)candidateCount.textContent=investments.filter(item=>item.score>=80).length;if(watchlistCount)watchlistCount.textContent=investments.filter(item=>item.score>=60&&item.score<80).length;container.innerHTML="";if(!investments.length){container.innerHTML=`<div class="investment"><div class="investment-info"><h3>No investments loaded yet</h3><p>Our investment database is being built.</p></div></div>`;return;}investments.forEach(item=>{let badgeClass="yellow";if(item.score>=85)badgeClass="green";if(item.score<60)badgeClass="red";const f=item.fundamentals||{},v=item.valuation||{},card=document.createElement("div");card.className="investment";card.dataset.ticker=item.ticker;card.innerHTML=`<div class="investment-info"><h3>${item.name||"Unknown"}</h3><p>${item.ticker||""}</p><span class="badge ${badgeClass}">${item.verdict}</span><div style="margin-top:10px;font-size:14px;line-height:1.6;">Price: <strong>${formatMoney(item.price)}</strong> &nbsp;·&nbsp; P/E: <strong>${formatRatio(v.pe)}</strong> &nbsp;·&nbsp; ROE: <strong>${formatPercent(f.roe)}</strong><br>Revenue Growth: <strong>${formatPercent(f.revenueGrowth5Y)}</strong> &nbsp;·&nbsp; Psychology: <strong>${item.psychology?.decision||"WAIT"}</strong></div></div><div class="score">${Math.round(item.score)}</div>`;card.addEventListener("click",()=>{if(typeof window.openInvestmentByTicker==="function"){window.openInvestmentByTicker(item.ticker);setTimeout(enhanceDetailView,0);}});container.appendChild(card);});addWatchlistControls();};
 
-// Persistent personal watchlist. Stored locally on this device only.
-(function setupPersonalWatchlist() {
-    const KEY = "investmentRadarWatchlist";
-    const read = () => {
-        try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; }
-    };
-    const write = list => localStorage.setItem(KEY, JSON.stringify([...new Set(list)]));
-    const isSaved = ticker => read().includes(ticker);
+async function loadMarketData(){try{const [canadaResponse,indiaResponse]=await Promise.all([fetch("data/canada.json",{cache:"no-store"}),fetch("data/india.json",{cache:"no-store"})]);if(!canadaResponse.ok)throw new Error("Canada data could not be loaded.");if(!indiaResponse.ok)throw new Error("India data could not be loaded.");marketData.Canada=normalizeMarketData(await canadaResponse.json());marketData.India=normalizeMarketData(await indiaResponse.json());renderRadar();}catch(error){console.error("Unable to load investment data:",error);const container=document.getElementById("investments");if(container)container.innerHTML=`<div class="investment"><div class="investment-info"><h3>Data loading error</h3><p>${error.message}</p></div></div>`;}}
 
-    function addControls() {
-        const container = document.getElementById("investments");
-        if (!container) return;
-        container.querySelectorAll(".radar-save-btn").forEach(x => x.remove());
-        container.querySelectorAll(".investment").forEach(card => {
-            const ticker = card.dataset.ticker;
-            if (!ticker) return;
-            const button = document.createElement("button");
-            button.className = "radar-save-btn";
-            button.type = "button";
-            button.textContent = isSaved(ticker) ? "★ Saved" : "☆ Save";
-            button.style.cssText = "margin-top:12px;border:1px solid #d8dde3;background:#fff;border-radius:10px;padding:7px 11px;font-weight:700;cursor:pointer;color:#18212b";
-            button.onclick = event => {
-                event.stopPropagation();
-                const list = read();
-                if (list.includes(ticker)) {
-                    write(list.filter(x => x !== ticker));
-                    button.textContent = "☆ Save";
-                } else {
-                    list.push(ticker);
-                    write(list);
-                    button.textContent = "★ Saved";
-                }
-            };
-            const info = card.querySelector(".investment-info");
-            if (info) info.appendChild(button);
-        });
-    }
+window.selectMarket=function(newMarket,button){if(!marketData[newMarket])return;currentMarket=newMarket;document.querySelectorAll(".market-btn").forEach(btn=>btn.classList.remove("active"));if(button)button.classList.add("active");renderRadar();};
+window.selectView=function(newView,button){currentView=newView;document.querySelectorAll(".view-btn").forEach(btn=>btn.classList.remove("active"));if(button)button.classList.add("active");renderRadar();};
 
-    window.getRadarWatchlist = read;
-    window.toggleRadarWatchlist = ticker => {
-        const list = read();
-        write(list.includes(ticker) ? list.filter(x => x !== ticker) : [...list, ticker]);
-        addControls();
-    };
+/* Personal watchlist. Deliberately NO MutationObserver: the previous implementation observed the container it modified, causing an endless mutation loop and freezing the page. */
+(function setupPersonalWatchlist(){const KEY="investmentRadarWatchlist";function read(){try{const value=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(value)?value:[];}catch(error){return [];}}function write(list){try{localStorage.setItem(KEY,JSON.stringify([...new Set(list)]));}catch(error){console.warn("Watchlist could not be saved.",error);}}function addWatchlistControls(){const container=document.getElementById("investments");if(!container)return;const saved=read();container.querySelectorAll(".radar-save-btn").forEach(button=>button.remove());container.querySelectorAll(".investment[data-ticker]").forEach(card=>{const ticker=card.dataset.ticker;if(!ticker)return;const button=document.createElement("button");button.className="radar-save-btn";button.type="button";button.textContent=saved.includes(ticker)?"★ Saved":"☆ Save";button.style.cssText="margin-top:12px;border:1px solid #d8dde3;background:#fff;border-radius:10px;padding:7px 11px;font-weight:700;cursor:pointer;color:#18212b";button.addEventListener("click",event=>{event.preventDefault();event.stopPropagation();const list=read();if(list.includes(ticker)){write(list.filter(item=>item!==ticker));button.textContent="☆ Save";}else{list.push(ticker);write(list);button.textContent="★ Saved";}});const info=card.querySelector(".investment-info");if(info)info.appendChild(button);});}window.getRadarWatchlist=read;window.toggleRadarWatchlist=function(ticker){const list=read();write(list.includes(ticker)?list.filter(item=>item!==ticker):[...list,ticker]);addWatchlistControls();};window.addRadarWatchlistControls=addWatchlistControls;})();
 
-    const originalRender = window.renderRadar;
-    window.renderRadar = function() {
-        if (typeof originalRender === "function") originalRender();
-        setTimeout(addControls, 0);
-    };
+(function loadRadarInsightLayer(){const script=document.createElement("script");script.src="engine/radarInsights.js";script.async=false;script.onload=()=>console.log("Radar insight layer loaded.");script.onerror=()=>console.warn("Radar insight layer could not be loaded.");document.head.appendChild(script);})();
 
-    const observer = new MutationObserver(() => setTimeout(addControls, 0));
-    const start = () => {
-        const container = document.getElementById("investments");
-        if (container) observer.observe(container, { childList: true, subtree: true });
-    };
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
-})();
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",loadMarketData,{once:true});else loadMarketData();
