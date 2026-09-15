@@ -100,6 +100,11 @@ def fallback_history(ticker):
 
 def download_histories(tickers):
     result = {}
+    tickers = [t for t in tickers if t]
+    if not tickers:
+        print("  No tickers were found for technical enrichment.")
+        return result
+
     for start in range(0, len(tickers), BATCH_SIZE):
         batch = tickers[start:start + BATCH_SIZE]
         end = start + len(batch)
@@ -131,7 +136,9 @@ def download_histories(tickers):
 
 
 def enrich(stock, history):
-    ticker = stock.get("ticker")
+    ticker = stock.get("ticker") or stock.get("symbol") or stock.get("id")
+    if ticker and not stock.get("ticker"):
+        stock["ticker"] = ticker
     if not ticker or history is None or history.empty: return stock
     try:
         history = history.dropna(subset=["Close"])
@@ -176,14 +183,13 @@ def main():
     for path in FILES:
         with path.open(encoding="utf-8") as f: data = json.load(f)
         stocks = data.get("stocks", [])
-        tickers = [s.get("ticker") for s in stocks if s.get("ticker")]
-        print(f"\nEnriching {path.name}: {len(stocks)} stocks")
+        tickers = [s.get("ticker") or s.get("symbol") or s.get("id") for s in stocks]
+        print(f"\nEnriching {path.name}: {len(stocks)} stocks; {sum(bool(t) for t in tickers)} tickers found")
         histories = download_histories(tickers)
-        data["stocks"] = [enrich(s, histories.get(s.get("ticker"))) for s in stocks]
+        data["stocks"] = [enrich(s, histories.get(s.get("ticker") or s.get("symbol") or s.get("id"))) for s in stocks]
         enriched_count = sum(len(s.get("technical", {}).get("history", [])) >= 100 for s in data["stocks"])
         total_enriched += enriched_count
         data["technicalEnrichment"] = {"historyPeriod": HISTORY_PERIOD, "storedDays": KEEP_DAYS, "batchSize": BATCH_SIZE, "stocksWithHistory": enriched_count, "updatedAt": pd.Timestamp.now(tz="UTC").isoformat()}
-        with path.open(encoding="utf-8") as f: pass
         with path.open("w", encoding="utf-8") as f: json.dump(data, f, indent=2, ensure_ascii=False, allow_nan=False)
         print(f"Saved {path} ({enriched_count}/{len(stocks)} with technical history)")
         time.sleep(1)
