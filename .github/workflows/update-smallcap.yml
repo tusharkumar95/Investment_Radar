@@ -8,6 +8,8 @@ on:
       - "smallcap.html"
       - "engine/smallcap.js"
       - ".github/workflows/update-smallcap.yml"
+  schedule:
+    - cron: "45 11 * * 1-5"
 
 concurrency:
   group: investment-radar-smallcap
