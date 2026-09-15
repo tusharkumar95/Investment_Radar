@@ -1020,226 +1020,49 @@ def calculate_cagr_from_series(
 # ============================================================
 
 \
-def build_fundamentals(
-    info,
-    income,
-    balance,
-    cashflow
-):
-
-    revenue = first_valid(
-        statement_latest(income, [
-            "Total Revenue",
-            "Operating Revenue",
-            "Revenue"
-        ]),
-        info.get("totalRevenue")
-    )
-
-    net_income = first_valid(
-        statement_latest(income, [
-            "Net Income",
-            "Net Income Common Stockholders",
-            "Net Income Including Noncontrolling Interests"
-        ]),
-        info.get("netIncomeToCommon")
-    )
-
-    operating_income = first_valid(
-        statement_latest(income, [
-            "Operating Income",
-            "Operating Income As Reported",
-            "EBIT"
-        ]),
-        info.get("operatingIncome")
-    )
-
-    gross_profit = first_valid(
-        statement_latest(income, ["Gross Profit"]),
-        info.get("grossProfits")
-    )
-
-    ebitda = first_valid(
-        statement_latest(income, [
-            "EBITDA",
-            "Normalized EBITDA"
-        ]),
-        info.get("ebitda")
-    )
-
-    operating_cash_flow = first_valid(
-        statement_latest(cashflow, [
-            "Operating Cash Flow",
-            "Total Cash From Operating Activities",
-            "Total Cash From Operating Activities Continuing Operations",
-            "Cash Flow From Continuing Operating Activities"
-        ]),
-        info.get("operatingCashflow")
-    )
-
-    capex = first_valid(
-        statement_latest(cashflow, [
-            "Capital Expenditure",
-            "Capital Expenditure Reported",
-            "Purchase Of PPE",
-            "Purchase Of Property Plant And Equipment",
-            "Net PPE Purchase And Sale"
-        ])
-    )
-
-    free_cash_flow = first_valid(
-        statement_latest(cashflow, ["Free Cash Flow"]),
-        info.get("freeCashflow")
-    )
-
-    if free_cash_flow is None and operating_cash_flow is not None and capex is not None:
-        free_cash_flow = operating_cash_flow - abs(capex)
-
-    cash = first_valid(
-        statement_latest(balance, [
-            "Cash Cash Equivalents And Short Term Investments",
-            "Cash And Cash Equivalents",
-            "Cash Financial",
-            "Cash Equivalents"
-        ]),
-        info.get("totalCash")
-    )
-
-    total_debt = first_valid(
-        statement_latest(balance, [
-            "Total Debt",
-            "Total Debt And Capital Lease Obligation",
-            "Long Term Debt And Capital Lease Obligation",
-            "Long Term Debt"
-        ]),
-        info.get("totalDebt")
-    )
-
-    total_assets = first_valid(
-        statement_latest(balance, ["Total Assets"]),
-        info.get("totalAssets")
-    )
-
-    equity = first_valid(
-        statement_latest(balance, [
-            "Stockholders Equity",
-            "Total Stockholder Equity",
-            "Total Equity Gross Minority Interest",
-            "Total Equity",
-            "Common Stock Equity"
-        ]),
-        info.get("stockholdersEquity")
-    )
-
-    eps = first_valid(
-        info.get("trailingEps"),
-        statement_latest(income, [
-            "Diluted EPS",
-            "Diluted EPS Continuing Operations",
-            "Basic EPS",
-            "Basic EPS Continuing Operations"
-        ])
-    )
-
-    revenue_series = statement_series(income, [
-        "Total Revenue",
-        "Operating Revenue",
-        "Revenue"
-    ])
-    revenue_growth = calculate_cagr_from_series(revenue_series)
-    if revenue_growth is None:
-        revenue_growth = pct_from_decimal(info.get("revenueGrowth"))
-
-    eps_series = statement_series(income, [
-        "Diluted EPS",
-        "Diluted EPS Continuing Operations",
-        "Basic EPS",
-        "Basic EPS Continuing Operations"
-    ])
-    eps_growth = calculate_cagr_from_series(eps_series)
-    if eps_growth is None:
-        eps_growth = pct_from_decimal(info.get("earningsGrowth"))
-
+\
+def build_fundamentals(info, income, balance, cashflow):
+    revenue = first_valid(statement_latest(income, ["Total Revenue", "Operating Revenue", "Revenue"]), info.get("totalRevenue"))
+    net_income = first_valid(statement_latest(income, ["Net Income", "Net Income Common Stockholders", "Net Income Including Noncontrolling Interests"]), info.get("netIncomeToCommon"))
+    operating_income = first_valid(statement_latest(income, ["Operating Income", "Operating Income As Reported", "EBIT"]), info.get("operatingIncome"))
+    gross_profit = first_valid(statement_latest(income, ["Gross Profit"]), info.get("grossProfits"))
+    ebitda = first_valid(statement_latest(income, ["EBITDA", "Normalized EBITDA"]), info.get("ebitda"))
+    operating_cash_flow = first_valid(statement_latest(cashflow, ["Operating Cash Flow", "Total Cash From Operating Activities", "Total Cash From Operating Activities Continuing Operations", "Cash Flow From Continuing Operating Activities"]), info.get("operatingCashflow"))
+    capex = first_valid(statement_latest(cashflow, ["Capital Expenditure", "Capital Expenditure Reported", "Purchase Of PPE", "Purchase Of Property Plant And Equipment", "Net PPE Purchase And Sale"]))
+    free_cash_flow = first_valid(statement_latest(cashflow, ["Free Cash Flow"]), info.get("freeCashflow"))
+    if free_cash_flow is None and operating_cash_flow is not None and capex is not None: free_cash_flow = operating_cash_flow - abs(capex)
+    cash = first_valid(statement_latest(balance, ["Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents", "Cash Financial", "Cash Equivalents"]), info.get("totalCash"))
+    total_debt = first_valid(statement_latest(balance, ["Total Debt", "Total Debt And Capital Lease Obligation", "Long Term Debt And Capital Lease Obligation", "Long Term Debt"]), info.get("totalDebt"))
+    total_assets = first_valid(statement_latest(balance, ["Total Assets"]), info.get("totalAssets"))
+    equity = first_valid(statement_latest(balance, ["Stockholders Equity", "Total Stockholder Equity", "Total Equity Gross Minority Interest", "Total Equity", "Common Stock Equity"]), info.get("stockholdersEquity"))
+    eps = first_valid(info.get("trailingEps"), statement_latest(income, ["Diluted EPS", "Diluted EPS Continuing Operations", "Basic EPS", "Basic EPS Continuing Operations"]))
+    revenue_series = statement_series(income, ["Total Revenue", "Operating Revenue", "Revenue"])
+    revenue_growth = calculate_cagr_from_series(revenue_series) or pct_from_decimal(info.get("revenueGrowth"))
+    eps_series = statement_series(income, ["Diluted EPS", "Diluted EPS Continuing Operations", "Basic EPS", "Basic EPS Continuing Operations"])
+    eps_growth = calculate_cagr_from_series(eps_series) or pct_from_decimal(info.get("earningsGrowth"))
     profit_margin = pct_from_decimal(info.get("profitMargins"))
-    if profit_margin is None and revenue and net_income is not None:
-        profit_margin = (net_income / revenue) * 100
-
+    if profit_margin is None and revenue and net_income is not None: profit_margin = (net_income / revenue) * 100
     operating_margin = pct_from_decimal(info.get("operatingMargins"))
-    if operating_margin is None and revenue and operating_income is not None:
-        operating_margin = (operating_income / revenue) * 100
-
+    if operating_margin is None and revenue and operating_income is not None: operating_margin = (operating_income / revenue) * 100
     gross_margin = pct_from_decimal(info.get("grossMargins"))
-    if gross_margin is None and revenue and gross_profit is not None:
-        gross_margin = (gross_profit / revenue) * 100
-
+    if gross_margin is None and revenue and gross_profit is not None: gross_margin = (gross_profit / revenue) * 100
     roe = pct_from_decimal(info.get("returnOnEquity"))
-    if roe is None and net_income is not None and equity:
-        roe = (net_income / equity) * 100
-
+    if roe is None and net_income is not None and equity: roe = (net_income / equity) * 100
     roic = None
     if operating_income is not None:
-        tax_rate = pct_from_decimal(info.get("taxRate"))
-        if tax_rate is None:
-            tax_rate = 25.0
-
+        tax_rate = pct_from_decimal(info.get("taxRate")) or 25.0
         nopat = operating_income * (1 - tax_rate / 100)
-        invested_capital = None
-
-        if equity is not None:
-            invested_capital = equity
-            if total_debt is not None:
-                invested_capital += total_debt
-            if cash is not None:
-                invested_capital -= cash
-
-        if invested_capital is not None and invested_capital > 0:
-            roic = (nopat / invested_capital) * 100
-
-    if roic is None:
-        roic = pct_from_decimal(info.get("returnOnTotalCapital"))
-
+        invested_capital = equity
+        if invested_capital is not None:
+            if total_debt is not None: invested_capital += total_debt
+            if cash is not None: invested_capital -= cash
+        if invested_capital is not None and invested_capital > 0: roic = (nopat / invested_capital) * 100
+    if roic is None: roic = pct_from_decimal(info.get("returnOnTotalCapital"))
     debt_to_equity = ratio(info.get("debtToEquity"))
-    if debt_to_equity is None and total_debt is not None and equity:
-        debt_to_equity = total_debt / equity
-
-    interest_expense = statement_latest(income, [
-        "Interest Expense",
-        "Interest Expense Non Operating",
-        "Interest Expense Non-Operating"
-    ])
-
-    interest_coverage = None
-    if operating_income is not None and interest_expense is not None:
-        interest_expense = abs(interest_expense)
-        if interest_expense > 0:
-            interest_coverage = operating_income / interest_expense
-
-    return clean_value({
-        "revenue": revenue,
-        "netIncome": net_income,
-        "operatingIncome": operating_income,
-        "grossProfit": gross_profit,
-        "ebitda": ebitda,
-        "freeCashFlow": free_cash_flow,
-        "operatingCashFlow": operating_cash_flow,
-        "capitalExpenditure": capex,
-        "cash": cash,
-        "totalDebt": total_debt,
-        "totalAssets": total_assets,
-        "stockholdersEquity": equity,
-        "revenueGrowth5Y": revenue_growth,
-        "epsGrowth5Y": eps_growth,
-        "profitMargin": profit_margin,
-        "operatingMargin": operating_margin,
-        "grossMargin": gross_margin,
-        "eps": eps,
-        "roe": roe,
-        "roic": roic,
-        "debtToEquity": debt_to_equity,
-        "interestCoverage": interest_coverage,
-    })
-
-
+    if debt_to_equity is None and total_debt is not None and equity: debt_to_equity = total_debt / equity
+    interest_expense = statement_latest(income, ["Interest Expense", "Interest Expense Non Operating", "Interest Expense Non-Operating"])
+    interest_coverage = operating_income / abs(interest_expense) if operating_income is not None and interest_expense is not None and abs(interest_expense) > 0 else None
+    return clean_value({"revenue":revenue,"netIncome":net_income,"operatingIncome":operating_income,"grossProfit":gross_profit,"ebitda":ebitda,"freeCashFlow":free_cash_flow,"operatingCashFlow":operating_cash_flow,"capitalExpenditure":capex,"cash":cash,"totalDebt":total_debt,"totalAssets":total_assets,"stockholdersEquity":equity,"revenueGrowth5Y":revenue_growth,"epsGrowth5Y":eps_growth,"profitMargin":profit_margin,"operatingMargin":operating_margin,"grossMargin":gross_margin,"eps":eps,"roe":roe,"roic":roic,"debtToEquity":debt_to_equity,"interestCoverage":interest_coverage})
 # ============================================================
 # VALUATION
 # ============================================================
