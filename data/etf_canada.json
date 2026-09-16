@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-09-15T14:14:15.977795+00:00",
+  "updatedAt": "2026-09-16T03:21:49.592305+00:00",
   "count": 28,
   "etfs": [
     {
@@ -9,19 +9,20 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 187.7,
+      "price": 187.56,
       "aum": 35156484096.0,
       "expenseRatio": null,
       "yield": 0.84,
-      "threeYearReturn": 21.573800000000002,
-      "fiveYearReturn": 14.71443,
+      "threeYearReturn": 21.4888,
+      "fiveYearReturn": 14.7146,
       "beta3Y": 0.99,
       "inception": 1351814400,
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
           "ticker": "VOO",
-          "weight": 100.0
+          "weight": 100.0,
+          "name": "VOO"
         }
       ]
     },
@@ -31,55 +32,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 56.94,
+      "price": 57.02,
       "aum": 34336313344.0,
       "expenseRatio": null,
       "yield": 1.94,
-      "threeYearReturn": 24.25996,
-      "fiveYearReturn": 14.78739,
+      "threeYearReturn": 23.40958,
+      "fiveYearReturn": 14.860190000000001,
       "beta3Y": 1.0,
       "inception": 982281600,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 7.628939999999999
+          "weight": 7.628939999999999,
+          "name": "RY"
         },
         {
           "ticker": "TD",
-          "weight": 5.39701
+          "weight": 5.39701,
+          "name": "TD"
         },
         {
           "ticker": "SHOP",
-          "weight": 4.7991
+          "weight": 4.7991,
+          "name": "SHOP"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.1890300000000003
+          "weight": 3.1890300000000003,
+          "name": "BMO.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.0031499999999998
+          "weight": 3.0031499999999998,
+          "name": "BNS.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.95313
+          "weight": 2.95313,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.79169
+          "weight": 2.79169,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.7884800000000003
+          "weight": 2.7884800000000003,
+          "name": "CM.TO"
         },
         {
           "ticker": "AEM.TO",
-          "weight": 2.74876
+          "weight": 2.74876,
+          "name": "AEM.TO"
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.34871
+          "weight": 2.34871,
+          "name": "BN.TO"
         }
       ]
     },
@@ -89,55 +100,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 51.5,
+      "price": 51.62,
       "aum": 23859922944.0,
       "expenseRatio": null,
       "yield": 2.3,
-      "threeYearReturn": 18.92718,
-      "fiveYearReturn": 10.409179,
+      "threeYearReturn": 19.069152,
+      "fiveYearReturn": 10.41284,
       "beta3Y": 1.0,
       "inception": 1365552000,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "IEFA",
-          "weight": 3.66688
+          "weight": 3.66688,
+          "name": "IEFA"
         },
         {
           "ticker": "ASML.AS",
-          "weight": 2.41624
+          "weight": 2.41624,
+          "name": "ASML.AS"
         },
         {
           "ticker": "HSBA.L",
-          "weight": 1.3054100000000002
+          "weight": 1.3054100000000002,
+          "name": "HSBA.L"
         },
         {
           "ticker": "ROP.SW",
-          "weight": 1.12587
+          "weight": 1.12587,
+          "name": "ROP.SW"
         },
         {
           "ticker": "NOVN.SW",
-          "weight": 1.0312999999999999
+          "weight": 1.0312999999999999,
+          "name": "NOVN.SW"
         },
         {
           "ticker": "SHEL.L",
-          "weight": 0.93408
+          "weight": 0.93408,
+          "name": "SHEL.L"
         },
         {
           "ticker": "NESN.SW",
-          "weight": 0.92215
+          "weight": 0.92215,
+          "name": "NESN.SW"
         },
         {
           "ticker": "8306.T",
-          "weight": 0.9018701
+          "weight": 0.9018701,
+          "name": "8306.T"
         },
         {
           "ticker": "AZN.L",
-          "weight": 0.9001601
+          "weight": 0.9001601,
+          "name": "AZN.L"
         },
         {
           "ticker": "BHP.AX",
-          "weight": 0.8918699999999999
+          "weight": 0.8918699999999999,
+          "name": "BHP.AX"
         }
       ]
     },
@@ -147,55 +168,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 52.8,
+      "price": 52.91,
       "aum": 22478424064.0,
       "expenseRatio": null,
       "yield": 2.12,
-      "threeYearReturn": 23.474991,
-      "fiveYearReturn": 14.43547,
+      "threeYearReturn": 22.68301,
+      "fiveYearReturn": 14.55677,
       "beta3Y": 0.96,
       "inception": 938476800,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 9.53844
+          "weight": 9.53844,
+          "name": "RY"
         },
         {
           "ticker": "TD",
-          "weight": 6.747870000000001
+          "weight": 6.747870000000001,
+          "name": "TD"
         },
         {
           "ticker": "SHOP",
-          "weight": 6.0003098
+          "weight": 6.0003098,
+          "name": "SHOP"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.98725
+          "weight": 3.98725,
+          "name": "BMO.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.75483
+          "weight": 3.75483,
+          "name": "BNS.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.6922902
+          "weight": 3.6922902,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 3.4904398000000003
+          "weight": 3.4904398000000003,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.4864399999999995
+          "weight": 3.4864399999999995,
+          "name": "CM.TO"
         },
         {
           "ticker": "AEM.TO",
-          "weight": 3.43677
+          "weight": 3.43677,
+          "name": "AEM.TO"
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.9365899
+          "weight": 2.9365899,
+          "name": "BN.TO"
         }
       ]
     },
@@ -205,55 +236,65 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 47.72,
+      "price": 47.8,
       "aum": 18366924800.0,
       "expenseRatio": null,
       "yield": 1.97,
-      "threeYearReturn": 24.25244,
-      "fiveYearReturn": 14.78052,
+      "threeYearReturn": 23.4088,
+      "fiveYearReturn": 14.84662,
       "beta3Y": 1.0,
       "inception": 1243555200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 7.9330300000000005
+          "weight": 7.9330300000000005,
+          "name": "RY"
         },
         {
           "ticker": "TD",
-          "weight": 5.48116
+          "weight": 5.48116,
+          "name": "TD"
         },
         {
           "ticker": "SHOP",
-          "weight": 4.8796
+          "weight": 4.8796,
+          "name": "SHOP"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.4197400000000004
+          "weight": 3.4197400000000004,
+          "name": "BMO.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.98703
+          "weight": 2.98703,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.95939
+          "weight": 2.95939,
+          "name": "CM.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 2.95172
+          "weight": 2.95172,
+          "name": "BNS.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.6402099
+          "weight": 2.6402099,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.5412700999999998
+          "weight": 2.5412700999999998,
+          "name": "BN.TO"
         },
         {
           "ticker": "AEM.TO",
-          "weight": 2.50047
+          "weight": 2.50047,
+          "name": "AEM.TO"
         }
       ]
     },
@@ -263,55 +304,65 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 72.48,
+      "price": 72.61,
       "aum": 17754396672.0,
       "expenseRatio": null,
       "yield": 1.96,
-      "threeYearReturn": 24.2252,
-      "fiveYearReturn": 14.95006,
+      "threeYearReturn": 23.41104,
+      "fiveYearReturn": 15.010789999999998,
       "beta3Y": 0.99,
       "inception": 1375401600,
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 8.294091
+          "weight": 8.294091,
+          "name": "RY"
         },
         {
           "ticker": "TD",
-          "weight": 5.6779798
+          "weight": 5.6779798,
+          "name": "TD"
         },
         {
           "ticker": "SHOP",
-          "weight": 4.06416
+          "weight": 4.06416,
+          "name": "SHOP"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.59133
+          "weight": 3.59133,
+          "name": "BMO.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.36445
+          "weight": 3.36445,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.0832501
+          "weight": 3.0832501,
+          "name": "CM.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.06256
+          "weight": 3.06256,
+          "name": "BNS.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.75493
+          "weight": 2.75493,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.51901
+          "weight": 2.51901,
+          "name": "BN.TO"
         },
         {
           "ticker": "SU.TO",
-          "weight": 2.26003
+          "weight": 2.26003,
+          "name": "SU.TO"
         }
       ]
     },
@@ -321,16 +372,47 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 13.33,
+      "price": 13.36,
       "aum": 13261745152.0,
       "expenseRatio": null,
       "yield": 3.47,
-      "threeYearReturn": 4.002470000000001,
-      "fiveYearReturn": -0.07439,
+      "threeYearReturn": 3.97649,
+      "fiveYearReturn": -0.18946999,
       "beta3Y": 1.0,
       "inception": 1263859200,
       "issuer": "BMO Asset Management Inc",
-      "holdings": []
+      "holdings": [
+        {
+          "ticker": "PRICE/EARNINGS",
+          "weight": null,
+          "name": "PRICE/EARNINGS"
+        },
+        {
+          "ticker": "PRICE/BOOK",
+          "weight": null,
+          "name": "PRICE/BOOK"
+        },
+        {
+          "ticker": "PRICE/SALES",
+          "weight": null,
+          "name": "PRICE/SALES"
+        },
+        {
+          "ticker": "PRICE/CASHFLOW",
+          "weight": null,
+          "name": "PRICE/CASHFLOW"
+        },
+        {
+          "ticker": "MEDIAN MARKET CAP",
+          "weight": null,
+          "name": "MEDIAN MARKET CAP"
+        },
+        {
+          "ticker": "3 YEAR EARNINGS GROWTH",
+          "weight": null,
+          "name": "3 YEAR EARNINGS GROWTH"
+        }
+      ]
     },
     {
       "ticker": "VIU.TO",
@@ -342,51 +424,61 @@
       "aum": 11588109312.0,
       "expenseRatio": null,
       "yield": 2.23,
-      "threeYearReturn": 20.958840000000002,
-      "fiveYearReturn": 11.3703206,
+      "threeYearReturn": 20.60284,
+      "fiveYearReturn": 11.12514,
       "beta3Y": 1.13,
       "inception": 1448928000,
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
           "ticker": "005930.KQ",
-          "weight": 2.9497199000000003
+          "weight": 2.9497199000000003,
+          "name": "005930.KQ"
         },
         {
           "ticker": "000660.KQ",
-          "weight": 2.31856
+          "weight": 2.31856,
+          "name": "000660.KQ"
         },
         {
           "ticker": "ASML.AS",
-          "weight": 2.2098301
+          "weight": 2.2098301,
+          "name": "ASML.AS"
         },
         {
           "ticker": "HSBA.L",
-          "weight": 1.26275
+          "weight": 1.26275,
+          "name": "HSBA.L"
         },
         {
           "ticker": "ROP.SW",
-          "weight": 1.06635
+          "weight": 1.06635,
+          "name": "ROP.SW"
         },
         {
           "ticker": "NOVN.SW",
-          "weight": 1.01243
+          "weight": 1.01243,
+          "name": "NOVN.SW"
         },
         {
           "ticker": "NESN.SW",
-          "weight": 0.89418
+          "weight": 0.89418,
+          "name": "NESN.SW"
         },
         {
           "ticker": "SHEL.L",
-          "weight": 0.8867401
+          "weight": 0.8867401,
+          "name": "SHEL.L"
         },
         {
           "ticker": "AZN.L",
-          "weight": 0.88456
+          "weight": 0.88456,
+          "name": "AZN.L"
         },
         {
           "ticker": "8306.T",
-          "weight": 0.8465800000000001
+          "weight": 0.8465800000000001,
+          "name": "8306.T"
         }
       ]
     },
@@ -396,16 +488,47 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 27.25,
+      "price": 27.28,
       "aum": 10595028992.0,
       "expenseRatio": null,
       "yield": 3.49,
-      "threeYearReturn": 3.9988402,
-      "fiveYearReturn": -0.07808,
+      "threeYearReturn": 3.9477900000000004,
+      "fiveYearReturn": -0.16226999,
       "beta3Y": 1.0,
       "inception": 974678400,
       "issuer": "BlackRock Asset Management Canada Ltd",
-      "holdings": []
+      "holdings": [
+        {
+          "ticker": "PRICE/EARNINGS",
+          "weight": null,
+          "name": "PRICE/EARNINGS"
+        },
+        {
+          "ticker": "PRICE/BOOK",
+          "weight": null,
+          "name": "PRICE/BOOK"
+        },
+        {
+          "ticker": "PRICE/SALES",
+          "weight": null,
+          "name": "PRICE/SALES"
+        },
+        {
+          "ticker": "PRICE/CASHFLOW",
+          "weight": null,
+          "name": "PRICE/CASHFLOW"
+        },
+        {
+          "ticker": "MEDIAN MARKET CAP",
+          "weight": null,
+          "name": "MEDIAN MARKET CAP"
+        },
+        {
+          "ticker": "3 YEAR EARNINGS GROWTH",
+          "weight": null,
+          "name": "3 YEAR EARNINGS GROWTH"
+        }
+      ]
     },
     {
       "ticker": "VDY.TO",
@@ -413,55 +536,65 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 76.88,
+      "price": 77.21,
       "aum": 9002671104.0,
       "expenseRatio": null,
       "yield": 3.1199999999999997,
-      "threeYearReturn": 29.04968,
-      "fiveYearReturn": 18.682689999999997,
+      "threeYearReturn": 28.13087,
+      "fiveYearReturn": 18.74141,
       "beta3Y": 0.8,
       "inception": 1351814400,
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 15.8491
+          "weight": 15.8491,
+          "name": "RY"
         },
         {
           "ticker": "TD",
-          "weight": 10.8499005
+          "weight": 10.8499005,
+          "name": "TD"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 6.862640000000001
+          "weight": 6.862640000000001,
+          "name": "BMO.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 6.42907
+          "weight": 6.42907,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 5.89152
+          "weight": 5.89152,
+          "name": "CM.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 5.85211
+          "weight": 5.85211,
+          "name": "BNS.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 5.26432
+          "weight": 5.26432,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "SU.TO",
-          "weight": 4.31852
+          "weight": 4.31852,
+          "name": "SU.TO"
         },
         {
           "ticker": "MFC.TO",
-          "weight": 4.01973
+          "weight": 4.01973,
+          "name": "MFC.TO"
         },
         {
           "ticker": "TRP.TO",
-          "weight": 3.7958
+          "weight": 3.7958,
+          "name": "TRP.TO"
         }
       ]
     },
@@ -471,16 +604,47 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 22.21,
+      "price": 22.235,
       "aum": 7620145664.0,
       "expenseRatio": null,
       "yield": 3.4000000000000004,
-      "threeYearReturn": 3.8604,
-      "fiveYearReturn": -0.14419,
+      "threeYearReturn": 3.81344,
+      "fiveYearReturn": -0.24600999999999998,
       "beta3Y": 1.0,
       "inception": 1322611200,
       "issuer": "Vanguard Investments Canada Inc",
-      "holdings": []
+      "holdings": [
+        {
+          "ticker": "PRICE/EARNINGS",
+          "weight": null,
+          "name": "PRICE/EARNINGS"
+        },
+        {
+          "ticker": "PRICE/BOOK",
+          "weight": null,
+          "name": "PRICE/BOOK"
+        },
+        {
+          "ticker": "PRICE/SALES",
+          "weight": null,
+          "name": "PRICE/SALES"
+        },
+        {
+          "ticker": "PRICE/CASHFLOW",
+          "weight": null,
+          "name": "PRICE/CASHFLOW"
+        },
+        {
+          "ticker": "MEDIAN MARKET CAP",
+          "weight": null,
+          "name": "MEDIAN MARKET CAP"
+        },
+        {
+          "ticker": "3 YEAR EARNINGS GROWTH",
+          "weight": null,
+          "name": "3 YEAR EARNINGS GROWTH"
+        }
+      ]
     },
     {
       "ticker": "XDIV.TO",
@@ -488,55 +652,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 46.21,
+      "price": 46.41,
       "aum": 6120181760.0,
       "expenseRatio": null,
       "yield": 3.1199999999999997,
-      "threeYearReturn": 28.165760000000002,
-      "fiveYearReturn": 19.309281,
+      "threeYearReturn": 27.53177,
+      "fiveYearReturn": 19.418421,
       "beta3Y": 0.62,
       "inception": 1496793600,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "TD",
-          "weight": 9.231630000000001
+          "weight": 9.231630000000001,
+          "name": "TD"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 9.14293
+          "weight": 9.14293,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "SU.TO",
-          "weight": 8.9551
+          "weight": 8.9551,
+          "name": "SU.TO"
         },
         {
           "ticker": "RY",
-          "weight": 8.89911
+          "weight": 8.89911,
+          "name": "RY"
         },
         {
           "ticker": "MFC.TO",
-          "weight": 8.81907
+          "weight": 8.81907,
+          "name": "MFC.TO"
         },
         {
           "ticker": "SLF.TO",
-          "weight": 8.12644
+          "weight": 8.12644,
+          "name": "SLF.TO"
         },
         {
           "ticker": "POW.TO",
-          "weight": 6.5468399999999995
+          "weight": 6.5468399999999995,
+          "name": "POW.TO"
         },
         {
           "ticker": "PPL.TO",
-          "weight": 5.26276
+          "weight": 5.26276,
+          "name": "PPL.TO"
         },
         {
           "ticker": "FTS.TO",
-          "weight": 5.2230403
+          "weight": 5.2230403,
+          "name": "FTS.TO"
         },
         {
           "ticker": "QSR.TO",
-          "weight": 4.67438
+          "weight": 4.67438,
+          "name": "QSR.TO"
         }
       ]
     },
@@ -546,55 +720,65 @@
       "market": "Canada",
       "category": "BMO Investments Inc.",
       "currency": "CAD",
-      "price": 59.66,
+      "price": 59.6,
       "aum": 6117772800.0,
       "expenseRatio": null,
       "yield": 1.8599999999999999,
-      "threeYearReturn": 16.45965,
-      "fiveYearReturn": 10.79164,
+      "threeYearReturn": 16.09671,
+      "fiveYearReturn": 11.068849,
       "beta3Y": 0.56,
       "inception": 1319155200,
       "issuer": "BMO Investments Inc.",
       "holdings": [
         {
           "ticker": "GWO.TO",
-          "weight": 4.3800604
+          "weight": 4.3800604,
+          "name": "GWO.TO"
         },
         {
           "ticker": "FTS.TO",
-          "weight": 4.2835202
+          "weight": 4.2835202,
+          "name": "FTS.TO"
         },
         {
           "ticker": "QBR-B.TO",
-          "weight": 4.01334
+          "weight": 4.01334,
+          "name": "QBR-B.TO"
         },
         {
           "ticker": "H.TO",
-          "weight": 3.9090399999999996
+          "weight": 3.9090399999999996,
+          "name": "H.TO"
         },
         {
           "ticker": "L.TO",
-          "weight": 3.77304
+          "weight": 3.77304,
+          "name": "L.TO"
         },
         {
           "ticker": "EMP-A.TO",
-          "weight": 3.5056900000000004
+          "weight": 3.5056900000000004,
+          "name": "EMP-A.TO"
         },
         {
           "ticker": "EMA.TO",
-          "weight": 3.50001
+          "weight": 3.50001,
+          "name": "EMA.TO"
         },
         {
           "ticker": "IFC.TO",
-          "weight": 3.3041403
+          "weight": 3.3041403,
+          "name": "IFC.TO"
         },
         {
           "ticker": "MRU.TO",
-          "weight": 3.15448
+          "weight": 3.15448,
+          "name": "MRU.TO"
         },
         {
           "ticker": "X.TO",
-          "weight": 3.11058
+          "weight": 3.11058,
+          "name": "X.TO"
         }
       ]
     },
@@ -604,55 +788,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 70.52,
+      "price": 70.27,
       "aum": 5508113920.0,
       "expenseRatio": null,
       "yield": 0.22,
-      "threeYearReturn": 22.19023,
-      "fiveYearReturn": 12.43842,
+      "threeYearReturn": 21.8604,
+      "fiveYearReturn": 12.33259,
       "beta3Y": 1.23,
       "inception": 1304380800,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 8.51714
+          "weight": 8.51714,
+          "name": "NVDA"
         },
         {
           "ticker": "AAPL",
-          "weight": 7.4185
+          "weight": 7.4185,
+          "name": "AAPL"
         },
         {
           "ticker": "MSFT",
-          "weight": 6.0072098
+          "weight": 6.0072098,
+          "name": "MSFT"
         },
         {
           "ticker": "MU",
-          "weight": 4.7581602
+          "weight": 4.7581602,
+          "name": "MU"
         },
         {
           "ticker": "AMZN",
-          "weight": 4.454549800000001
+          "weight": 4.454549800000001,
+          "name": "AMZN"
         },
         {
           "ticker": "AMD",
-          "weight": 3.3779000000000003
+          "weight": 3.3779000000000003,
+          "name": "AMD"
         },
         {
           "ticker": "GOOGL",
-          "weight": 3.15056
+          "weight": 3.15056,
+          "name": "GOOGL"
         },
         {
           "ticker": "TSLA",
-          "weight": 2.93011
+          "weight": 2.93011,
+          "name": "TSLA"
         },
         {
           "ticker": "GOOG",
-          "weight": 2.91722
+          "weight": 2.91722,
+          "name": "GOOG"
         },
         {
           "ticker": "AVGO",
-          "weight": 2.79908
+          "weight": 2.79908,
+          "name": "AVGO"
         }
       ]
     },
@@ -662,19 +856,20 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 49.58,
+      "price": 49.515,
       "aum": 4609872896.0,
       "expenseRatio": null,
       "yield": 1.83,
-      "threeYearReturn": 17.6099,
-      "fiveYearReturn": 7.33157,
+      "threeYearReturn": 17.35235,
+      "fiveYearReturn": 7.2332904000000005,
       "beta3Y": 0.62,
       "inception": 1322611200,
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
           "ticker": "VWO",
-          "weight": 100.0
+          "weight": 100.0,
+          "name": "VWO"
         }
       ]
     },
@@ -684,55 +879,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 39.72,
+      "price": 39.82,
       "aum": 4364023808.0,
       "expenseRatio": null,
       "yield": 3.44,
-      "threeYearReturn": 23.908341,
-      "fiveYearReturn": 16.07597,
+      "threeYearReturn": 23.13757,
+      "fiveYearReturn": 16.10553,
       "beta3Y": 0.72,
       "inception": 1302566400,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "CNQ.TO",
-          "weight": 5.3661298
+          "weight": 5.3661298,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "TD",
-          "weight": 5.1572
+          "weight": 5.1572,
+          "name": "TD"
         },
         {
           "ticker": "SU.TO",
-          "weight": 5.128159999999999
+          "weight": 5.128159999999999,
+          "name": "SU.TO"
         },
         {
           "ticker": "RY",
-          "weight": 5.04657
+          "weight": 5.04657,
+          "name": "RY"
         },
         {
           "ticker": "NTR.TO",
-          "weight": 4.42162
+          "weight": 4.42162,
+          "name": "NTR.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 4.37345
+          "weight": 4.37345,
+          "name": "ENB.TO"
         },
         {
           "ticker": "TRP.TO",
-          "weight": 4.23489
+          "weight": 4.23489,
+          "name": "TRP.TO"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 4.22929
+          "weight": 4.22929,
+          "name": "BMO.TO"
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.9835000000000003
+          "weight": 3.9835000000000003,
+          "name": "BNS.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.69931
+          "weight": 3.69931,
+          "name": "CM.TO"
         }
       ]
     },
@@ -742,55 +947,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 45.3,
+      "price": 45.31,
       "aum": 1235825280.0,
       "expenseRatio": null,
       "yield": 3.0199999,
-      "threeYearReturn": 19.93774,
-      "fiveYearReturn": 11.27308,
+      "threeYearReturn": 19.40416,
+      "fiveYearReturn": 11.31771,
       "beta3Y": 0.77,
       "inception": 1157673600,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "SOBO.TO",
-          "weight": 3.48348
+          "weight": 3.48348,
+          "name": "SOBO.TO"
         },
         {
           "ticker": "WTE.TO",
-          "weight": 2.87396
+          "weight": 2.87396,
+          "name": "WTE.TO"
         },
         {
           "ticker": "GEI.TO",
-          "weight": 2.8174900999999997
+          "weight": 2.8174900999999997,
+          "name": "GEI.TO"
         },
         {
           "ticker": "MTL.TO",
-          "weight": 2.80767
+          "weight": 2.80767,
+          "name": "MTL.TO"
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.39112
+          "weight": 2.39112,
+          "name": "CNQ.TO"
         },
         {
           "ticker": "PPL.TO",
-          "weight": 2.29825
+          "weight": 2.29825,
+          "name": "PPL.TO"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.1483801000000002
+          "weight": 2.1483801000000002,
+          "name": "ENB.TO"
         },
         {
           "ticker": "CVE.TO",
-          "weight": 2.03229
+          "weight": 2.03229,
+          "name": "CVE.TO"
         },
         {
           "ticker": "CRT-UN.TO",
-          "weight": 2.03055
+          "weight": 2.03055,
+          "name": "CRT-UN.TO"
         },
         {
           "ticker": "TPZ.TO",
-          "weight": 1.9099499999999998
+          "weight": 1.9099499999999998,
+          "name": "TPZ.TO"
         }
       ]
     },
@@ -800,55 +1015,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 15.52,
+      "price": 15.49,
       "aum": 1105934080.0,
       "expenseRatio": null,
       "yield": 4.5600000000000005,
-      "threeYearReturn": 4.41737,
-      "fiveYearReturn": -0.35434,
+      "threeYearReturn": 3.54408,
+      "fiveYearReturn": -0.37979998000000004,
       "beta3Y": 0.93,
       "inception": 1034812800,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "REI-UN.TO",
-          "weight": 12.816638999999999
+          "weight": 12.816638999999999,
+          "name": "REI-UN.TO"
         },
         {
           "ticker": "GRT-UN.TO",
-          "weight": 11.387310000000001
+          "weight": 11.387310000000001,
+          "name": "GRT-UN.TO"
         },
         {
           "ticker": "CAR-UN.TO",
-          "weight": 10.5701305
+          "weight": 10.5701305,
+          "name": "CAR-UN.TO"
         },
         {
           "ticker": "FCR-UN.TO",
-          "weight": 10.1657
+          "weight": 10.1657,
+          "name": "FCR-UN.TO"
         },
         {
           "ticker": "CHP-UN.TO",
-          "weight": 8.78143
+          "weight": 8.78143,
+          "name": "CHP-UN.TO"
         },
         {
           "ticker": "DIR-UN.TO",
-          "weight": 8.09229
+          "weight": 8.09229,
+          "name": "DIR-UN.TO"
         },
         {
           "ticker": "SRU-UN.TO",
-          "weight": 7.49041
+          "weight": 7.49041,
+          "name": "SRU-UN.TO"
         },
         {
           "ticker": "HR-UN.TO",
-          "weight": 5.54289
+          "weight": 5.54289,
+          "name": "HR-UN.TO"
         },
         {
           "ticker": "PMZ-UN.TO",
-          "weight": 5.33068
+          "weight": 5.33068,
+          "name": "PMZ-UN.TO"
         },
         {
           "ticker": "BEI-UN.TO",
-          "weight": 5.18626
+          "weight": 5.18626,
+          "name": "BEI-UN.TO"
         }
       ]
     },
@@ -858,55 +1083,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 60.54,
+      "price": 60.66,
       "aum": 399932512.0,
       "expenseRatio": null,
       "yield": 2.0499999,
-      "threeYearReturn": 20.17441,
-      "fiveYearReturn": 13.20292,
+      "threeYearReturn": 19.58645,
+      "fiveYearReturn": 13.42863,
       "beta3Y": 0.66,
       "inception": 1343088000,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "BNS.TO",
-          "weight": 3.1541300000000003
+          "weight": 3.1541300000000003,
+          "name": "BNS.TO"
         },
         {
           "ticker": "TD",
-          "weight": 3.08849
+          "weight": 3.08849,
+          "name": "TD"
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.0506697999999997
+          "weight": 3.0506697999999997,
+          "name": "ENB.TO"
         },
         {
           "ticker": "RY",
-          "weight": 2.9765502
+          "weight": 2.9765502,
+          "name": "RY"
         },
         {
           "ticker": "FTS.TO",
-          "weight": 2.9718202
+          "weight": 2.9718202,
+          "name": "FTS.TO"
         },
         {
           "ticker": "CP.TO",
-          "weight": 2.96903
+          "weight": 2.96903,
+          "name": "CP.TO"
         },
         {
           "ticker": "CNR.TO",
-          "weight": 2.95641
+          "weight": 2.95641,
+          "name": "CNR.TO"
         },
         {
           "ticker": "BMO.TO",
-          "weight": 2.9341
+          "weight": 2.9341,
+          "name": "BMO.TO"
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.91094
+          "weight": 2.91094,
+          "name": "CM.TO"
         },
         {
           "ticker": "GWO.TO",
-          "weight": 2.84863
+          "weight": 2.84863,
+          "name": "GWO.TO"
         }
       ]
     },
@@ -916,51 +1151,60 @@
       "market": "Canada",
       "category": "Global X Investments Canada Inc.",
       "currency": "CAD",
-      "price": 47.58,
+      "price": 47.54,
       "aum": 217278064.0,
       "expenseRatio": null,
       "yield": null,
-      "threeYearReturn": 19.59424,
-      "fiveYearReturn": 16.30649,
+      "threeYearReturn": 16.07196,
+      "fiveYearReturn": 14.139031,
       "beta3Y": 0.0,
       "inception": 1557878400,
       "issuer": "Global X Investments Canada Inc.",
       "holdings": [
         {
           "ticker": "CCO.TO",
-          "weight": 19.775829
+          "weight": 19.775829,
+          "name": "CCO.TO"
         },
         {
           "ticker": "KAP",
-          "weight": 19.12198
+          "weight": 19.12198,
+          "name": "KAP"
         },
         {
           "ticker": "OKLO",
-          "weight": 6.20228
+          "weight": 6.20228,
+          "name": "OKLO"
         },
         {
           "ticker": "NXE.TO",
-          "weight": 6.08459
+          "weight": 6.08459,
+          "name": "NXE.TO"
         },
         {
           "ticker": "UEC",
-          "weight": 5.3222499999999995
+          "weight": 5.3222499999999995,
+          "name": "UEC"
         },
         {
           "ticker": "YCA.L",
-          "weight": 4.0454604
+          "weight": 4.0454604,
+          "name": "YCA.L"
         },
         {
           "ticker": "PDN.AX",
-          "weight": 3.2849000000000004
+          "weight": 3.2849000000000004,
+          "name": "PDN.AX"
         },
         {
           "ticker": "EFR.TO",
-          "weight": 3.23073
+          "weight": 3.23073,
+          "name": "EFR.TO"
         },
         {
           "ticker": "LEU",
-          "weight": 2.85446
+          "weight": 2.85446,
+          "name": "LEU"
         }
       ]
     },
@@ -970,55 +1214,65 @@
       "market": "Canada",
       "category": "Harvest Portfolios Group Inc.",
       "currency": "CAD",
-      "price": 9.26,
+      "price": 9.33,
       "aum": 18921144.0,
       "expenseRatio": null,
       "yield": 0.0,
-      "threeYearReturn": -2.01465,
-      "fiveYearReturn": -8.97418,
+      "threeYearReturn": -3.1396102000000004,
+      "fiveYearReturn": -9.40795,
       "beta3Y": 0.98,
       "inception": 1610323200,
       "issuer": "Harvest Portfolios Group Inc.",
       "holdings": [
         {
           "ticker": "VWS.CO",
-          "weight": 3.26063
+          "weight": 3.26063,
+          "name": "VWS.CO"
         },
         {
           "ticker": "CADLR.OL",
-          "weight": 2.98075
+          "weight": 2.98075,
+          "name": "CADLR.OL"
         },
         {
           "ticker": "3800.HK",
-          "weight": 2.9606199
+          "weight": 2.9606199,
+          "name": "3800.HK"
         },
         {
           "ticker": "LAND.SW",
-          "weight": 2.81166
+          "weight": 2.81166,
+          "name": "LAND.SW"
         },
         {
           "ticker": "RNW",
-          "weight": 2.76042
+          "weight": 2.76042,
+          "name": "RNW"
         },
         {
           "ticker": "0968.HK",
-          "weight": 2.71595
+          "weight": 2.71595,
+          "name": "0968.HK"
         },
         {
           "ticker": "SCATC.OL",
-          "weight": 2.6911899999999997
+          "weight": 2.6911899999999997,
+          "name": "SCATC.OL"
         },
         {
           "ticker": "S92.DE",
-          "weight": 2.6700102
+          "weight": 2.6700102,
+          "name": "S92.DE"
         },
         {
           "ticker": "VER.VI",
-          "weight": 2.6523499
+          "weight": 2.6523499,
+          "name": "VER.VI"
         },
         {
           "ticker": "MCY.NZ",
-          "weight": 2.6465099999999997
+          "weight": 2.6465099999999997,
+          "name": "MCY.NZ"
         }
       ]
     },
@@ -1028,55 +1282,65 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 115.87,
+      "price": 115.77,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.76,
-      "threeYearReturn": 21.574499,
-      "fiveYearReturn": 14.70965,
+      "threeYearReturn": 21.496950000000002,
+      "fiveYearReturn": 14.717740000000001,
       "beta3Y": 0.98,
       "inception": 1352851200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 8.14645
+          "weight": 8.14645,
+          "name": "NVDA"
         },
         {
           "ticker": "AAPL",
-          "weight": 6.66309
+          "weight": 6.66309,
+          "name": "AAPL"
         },
         {
           "ticker": "MSFT",
-          "weight": 5.49022
+          "weight": 5.49022,
+          "name": "MSFT"
         },
         {
           "ticker": "AMZN",
-          "weight": 3.9270300000000002
+          "weight": 3.9270300000000002,
+          "name": "AMZN"
         },
         {
           "ticker": "GOOGL",
-          "weight": 3.0235000000000003
+          "weight": 3.0235000000000003,
+          "name": "GOOGL"
         },
         {
           "ticker": "AVGO",
-          "weight": 2.95661
+          "weight": 2.95661,
+          "name": "AVGO"
         },
         {
           "ticker": "GOOG",
-          "weight": 2.4287
+          "weight": 2.4287,
+          "name": "GOOG"
         },
         {
           "ticker": "META",
-          "weight": 1.9064
+          "weight": 1.9064,
+          "name": "META"
         },
         {
           "ticker": "MU",
-          "weight": 1.5415
+          "weight": 1.5415,
+          "name": "MU"
         },
         {
           "ticker": "JPM",
-          "weight": 1.4678299000000001
+          "weight": 1.4678299000000001,
+          "name": "JPM"
         }
       ]
     },
@@ -1086,55 +1350,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 43.54,
+      "price": 43.43,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.5800001000000001,
-      "threeYearReturn": 22.89845,
-      "fiveYearReturn": 9.76124,
+      "threeYearReturn": 22.082160000000002,
+      "fiveYearReturn": 9.372959999999999,
       "beta3Y": 0.99,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "2330.TW",
-          "weight": 13.08784
+          "weight": 13.08784,
+          "name": "2330.TW"
         },
         {
           "ticker": "005930.KQ",
-          "weight": 6.2258700000000005
+          "weight": 6.2258700000000005,
+          "name": "005930.KQ"
         },
         {
           "ticker": "000660.KQ",
-          "weight": 4.7339402
+          "weight": 4.7339402,
+          "name": "000660.KQ"
         },
         {
           "ticker": "0700.HK",
-          "weight": 2.48507
+          "weight": 2.48507,
+          "name": "0700.HK"
         },
         {
           "ticker": "9988.HK",
-          "weight": 1.71277
+          "weight": 1.71277,
+          "name": "9988.HK"
         },
         {
           "ticker": "IEMG",
-          "weight": 1.62682
+          "weight": 1.62682,
+          "name": "IEMG"
         },
         {
           "ticker": "2454.TW",
-          "weight": 1.25123
+          "weight": 1.25123,
+          "name": "2454.TW"
         },
         {
           "ticker": "2308.TW",
-          "weight": 0.79218
+          "weight": 0.79218,
+          "name": "2308.TW"
         },
         {
           "ticker": "005935",
-          "weight": 0.7661399999999999
+          "weight": 0.7661399999999999,
+          "name": "005935"
         },
         {
           "ticker": "00939",
-          "weight": 0.71453
+          "weight": 0.71453,
+          "name": "00939"
         }
       ]
     },
@@ -1144,55 +1418,65 @@
       "market": "Canada",
       "category": "TD Asset Management Inc",
       "currency": "CAD",
-      "price": 61.01,
+      "price": 60.81,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.08,
-      "threeYearReturn": 27.483030000000003,
-      "fiveYearReturn": 16.04282,
+      "threeYearReturn": 27.69647,
+      "fiveYearReturn": 15.95539,
       "beta3Y": 1.5,
       "inception": 1648512000,
       "issuer": "TD Asset Management Inc",
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 12.741789
+          "weight": 12.741789,
+          "name": "NVDA"
         },
         {
           "ticker": "AAPL",
-          "weight": 11.23368
+          "weight": 11.23368,
+          "name": "AAPL"
         },
         {
           "ticker": "MSFT",
-          "weight": 9.217069
+          "weight": 9.217069,
+          "name": "MSFT"
         },
         {
           "ticker": "AMZN",
-          "weight": 6.189489699999999
+          "weight": 6.189489699999999,
+          "name": "AMZN"
         },
         {
           "ticker": "GOOGL",
-          "weight": 4.91706
+          "weight": 4.91706,
+          "name": "GOOGL"
         },
         {
           "ticker": "AVGO",
-          "weight": 4.2845897
+          "weight": 4.2845897,
+          "name": "AVGO"
         },
         {
           "ticker": "GOOG",
-          "weight": 4.2256497
+          "weight": 4.2256497,
+          "name": "GOOG"
         },
         {
           "ticker": "META",
-          "weight": 3.11727
+          "weight": 3.11727,
+          "name": "META"
         },
         {
           "ticker": "TSLA",
-          "weight": 2.79083
+          "weight": 2.79083,
+          "name": "TSLA"
         },
         {
           "ticker": "MU",
-          "weight": 2.6800001
+          "weight": 2.6800001,
+          "name": "MU"
         }
       ]
     },
@@ -1202,7 +1486,7 @@
       "market": "Canada",
       "category": "ETF",
       "currency": "CAD",
-      "price": 60.63,
+      "price": 60.52,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.0,
@@ -1219,55 +1503,65 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 63.925,
+      "price": 63.64,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.67,
-      "threeYearReturn": 13.3563,
-      "fiveYearReturn": 10.1449296,
+      "threeYearReturn": 13.369580000000001,
+      "fiveYearReturn": 10.435741,
       "beta3Y": 0.31,
       "inception": 1363651200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
           "ticker": "JNJ",
-          "weight": 2.94454
+          "weight": 2.94454,
+          "name": "JNJ"
         },
         {
           "ticker": "TDY",
-          "weight": 2.78691
+          "weight": 2.78691,
+          "name": "TDY"
         },
         {
           "ticker": "COR",
-          "weight": 2.77304
+          "weight": 2.77304,
+          "name": "COR"
         },
         {
           "ticker": "GLW",
-          "weight": 2.6795499
+          "weight": 2.6795499,
+          "name": "GLW"
         },
         {
           "ticker": "CSCO",
-          "weight": 2.53493
+          "weight": 2.53493,
+          "name": "CSCO"
         },
         {
           "ticker": "CBOE",
-          "weight": 2.15326
+          "weight": 2.15326,
+          "name": "CBOE"
         },
         {
           "ticker": "NOC",
-          "weight": 2.1357201
+          "weight": 2.1357201,
+          "name": "NOC"
         },
         {
           "ticker": "MSI",
-          "weight": 2.1096202
+          "weight": 2.1096202,
+          "name": "MSI"
         },
         {
           "ticker": "ED",
-          "weight": 1.95839
+          "weight": 1.95839,
+          "name": "ED"
         },
         {
           "ticker": "AKAM",
-          "weight": 1.9466601
+          "weight": 1.9466601,
+          "name": "AKAM"
         }
       ]
     },
@@ -1277,55 +1571,65 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 77.37,
+      "price": 77.33,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.0199999,
-      "threeYearReturn": 21.100058999999998,
-      "fiveYearReturn": 13.953899999999999,
+      "threeYearReturn": 21.062950999999998,
+      "fiveYearReturn": 13.98724,
       "beta3Y": 1.0,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "ITOT",
-          "weight": 48.003718
+          "weight": 48.003718,
+          "name": "ITOT"
         },
         {
           "ticker": "IVV",
-          "weight": 46.360079999999996
+          "weight": 46.360079999999996,
+          "name": "IVV"
         },
         {
           "ticker": "IJH",
-          "weight": 2.4814800000000004
+          "weight": 2.4814800000000004,
+          "name": "IJH"
         },
         {
           "ticker": "IJR",
-          "weight": 1.0112700000000001
+          "weight": 1.0112700000000001,
+          "name": "IJR"
         },
         {
           "ticker": "UBER",
-          "weight": 0.07257999999999999
+          "weight": 0.07257999999999999,
+          "name": "UBER"
         },
         {
           "ticker": "SNOW",
-          "weight": 0.07066
+          "weight": 0.07066,
+          "name": "SNOW"
         },
         {
           "ticker": "AVGO",
-          "weight": 0.066799996
+          "weight": 0.066799996,
+          "name": "AVGO"
         },
         {
           "ticker": "CRWD",
-          "weight": 0.064539997
+          "weight": 0.064539997,
+          "name": "CRWD"
         },
         {
           "ticker": "FERG",
-          "weight": 0.06255
+          "weight": 0.06255,
+          "name": "FERG"
         },
         {
           "ticker": "NET",
-          "weight": 0.05993
+          "weight": 0.05993,
+          "name": "NET"
         }
       ]
     },
@@ -1335,39 +1639,45 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 58.0,
+      "price": 57.96,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.2,
-      "threeYearReturn": 20.60465,
-      "fiveYearReturn": 12.602568999999999,
+      "threeYearReturn": 20.37756,
+      "fiveYearReturn": 12.4945,
       "beta3Y": 0.97,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
           "ticker": "IVV",
-          "weight": 51.165956
+          "weight": 51.165956,
+          "name": "IVV"
         },
         {
           "ticker": "XEF.TO",
-          "weight": 22.690160000000002
+          "weight": 22.690160000000002,
+          "name": "XEF.TO"
         },
         {
           "ticker": "XEC.TO",
-          "weight": 12.77759
+          "weight": 12.77759,
+          "name": "XEC.TO"
         },
         {
           "ticker": "ITOT",
-          "weight": 8.24514
+          "weight": 8.24514,
+          "name": "ITOT"
         },
         {
           "ticker": "IJH",
-          "weight": 3.19833
+          "weight": 3.19833,
+          "name": "IJH"
         },
         {
           "ticker": "IJR",
-          "weight": 1.8962400000000001
+          "weight": 1.8962400000000001,
+          "name": "IJR"
         }
       ]
     }
