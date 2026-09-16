@@ -12,6 +12,7 @@ STATIC={
 'AUTO':[('M&M','Mahindra & Mahindra Limited',23.57),('MARUTI','Maruti Suzuki India Limited',14.42),('BAJAJ-AUTO','Bajaj Auto Limited',9.91),('EICHERMOT','Eicher Motors Limited',8.38),('TVSMOTOR','TVS Motor Company Limited',7.87),('TMPV','Tata Motors Passenger Vehicles Limited',5.51),('HEROMOTOCO','Hero MotoCorp Limited',5.43),('MOTHERSON','Samvardhana Motherson International Limited',5.17),('BHARATFORG','Bharat Forge Limited',4.55),('ASHOKLEY','Ashok Leyland Limited',3.69)],
 'CPSE':[('NTPC','NTPC Limited',20.05),('BEL','Bharat Electronics Limited',19.34),('POWERGRID','Power Grid Corporation of India Limited',18.76),('COALINDIA','Coal India Limited',14.46),('ONGC','Oil & Natural Gas Corporation Limited',13.73),('NHPC','NHPC Limited',4.32),('OIL','Oil India Limited',3.65),('COCHINSHIP','Cochin Shipyard Limited',1.76),('NLCINDIA','NLC India Limited',1.58),('NBCC','NBCC (India) Limited',1.43)]}
 GROUPS={**{x:'NIFTY50' for x in ['NIFTYBEES.NS','SETFNIF50.NS','HDFCNIFTY.NS','NIFTYIETF.NS']},**{x:'BANK' for x in ['BANKBEES.NS']},**{x:'IT' for x in ['ITBEES.NS','ITETF.NS']},**{x:'PHARMA' for x in ['PHARMABEES.NS','HEALTHIETF.NS']},**{x:'AUTO' for x in ['AUTOBEES.NS']},**{x:'CPSE' for x in ['CPSEETF.NS']}}
+NAME_CACHE={}
 def num(v):
  try:x=float(v);return x if math.isfinite(x) else None
  except:return None
@@ -51,6 +52,17 @@ def names():
     if s.get('ticker') and s.get('name'):d[str(s['ticker']).upper()]=s['name']
   except:pass
  return d
+def resolve_name(symbol,known):
+ key=str(symbol or '').strip().upper()
+ if not key:return None
+ if key in known:return known[key]
+ if key in NAME_CACHE:return NAME_CACHE[key]
+ try:
+  i=info(key)
+  name=i.get('longName') or i.get('shortName') or i.get('displayName')
+  if name:NAME_CACHE[key]=name;return name
+ except Exception as e:print(f'Name lookup unavailable for {key}: {e}')
+ return key
 def build(market):
  ns=names();rows=[]
  for t in CANDIDATES[market]:
@@ -62,7 +74,8 @@ def build(market):
   er=num(i.get('annualReportExpenseRatio'));er=er/100 if er is not None and er>1 else er
   hs=holdings(t)
   for h in hs:
-   if not h.get('ticker'):h['ticker']=ns.get(h.get('symbol','').upper(),h.get('symbol'))
+   symbol=h.get('symbol') or h.get('ticker')
+   if not h.get('ticker') or h.get('ticker')==symbol:h['ticker']=resolve_name(symbol,ns)
   rows.append({'ticker':t,'name':i.get('longName') or i.get('shortName') or t,'market':market,'category':i.get('category') or i.get('fundFamily') or 'ETF','currency':i.get('currency') or ('CAD' if market=='Canada' else 'INR'),'price':price,'aum':num(i.get('totalAssets')),'expenseRatio':er,'yield':pct(i.get('yield') or i.get('trailingAnnualDividendYield')),'threeYearReturn':pct(i.get('threeYearAverageReturn')),'fiveYearReturn':pct(i.get('fiveYearAverageReturn')),'beta3Y':num(i.get('beta3Year')),'inception':i.get('fundInceptionDate'),'issuer':i.get('fundFamily') or i.get('issuer') or '','holdings':hs})
   print(f'{market}: {t} -> {len(hs)} holdings')
  rows.sort(key=lambda x:(x.get('aum') or 0),reverse=True);return rows
