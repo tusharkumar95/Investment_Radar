@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-09-16T03:21:49.592305+00:00",
+  "updatedAt": "2026-09-16T03:24:28.299681+00:00",
   "count": 28,
   "etfs": [
     {
@@ -21,8 +21,8 @@
       "holdings": [
         {
           "ticker": "VOO",
-          "weight": 100.0,
-          "name": "VOO"
+          "symbol": "VOO",
+          "weight": 100.0
         }
       ]
     },
@@ -44,53 +44,53 @@
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 7.628939999999999,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 7.628939999999999
         },
         {
           "ticker": "TD",
-          "weight": 5.39701,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 5.39701
         },
         {
           "ticker": "SHOP",
-          "weight": 4.7991,
-          "name": "SHOP"
+          "symbol": "SHOP",
+          "weight": 4.7991
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.1890300000000003,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 3.1890300000000003
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.0031499999999998,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 3.0031499999999998
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.95313,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 2.95313
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.79169,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 2.79169
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.7884800000000003,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 2.7884800000000003
         },
         {
           "ticker": "AEM.TO",
-          "weight": 2.74876,
-          "name": "AEM.TO"
+          "symbol": "AEM.TO",
+          "weight": 2.74876
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.34871,
-          "name": "BN.TO"
+          "symbol": "BN.TO",
+          "weight": 2.34871
         }
       ]
     },
@@ -112,53 +112,53 @@
       "holdings": [
         {
           "ticker": "IEFA",
-          "weight": 3.66688,
-          "name": "IEFA"
+          "symbol": "IEFA",
+          "weight": 3.66688
         },
         {
           "ticker": "ASML.AS",
-          "weight": 2.41624,
-          "name": "ASML.AS"
+          "symbol": "ASML.AS",
+          "weight": 2.41624
         },
         {
           "ticker": "HSBA.L",
-          "weight": 1.3054100000000002,
-          "name": "HSBA.L"
+          "symbol": "HSBA.L",
+          "weight": 1.3054100000000002
         },
         {
           "ticker": "ROP.SW",
-          "weight": 1.12587,
-          "name": "ROP.SW"
+          "symbol": "ROP.SW",
+          "weight": 1.12587
         },
         {
           "ticker": "NOVN.SW",
-          "weight": 1.0312999999999999,
-          "name": "NOVN.SW"
+          "symbol": "NOVN.SW",
+          "weight": 1.0312999999999999
         },
         {
           "ticker": "SHEL.L",
-          "weight": 0.93408,
-          "name": "SHEL.L"
+          "symbol": "SHEL.L",
+          "weight": 0.93408
         },
         {
           "ticker": "NESN.SW",
-          "weight": 0.92215,
-          "name": "NESN.SW"
+          "symbol": "NESN.SW",
+          "weight": 0.92215
         },
         {
           "ticker": "8306.T",
-          "weight": 0.9018701,
-          "name": "8306.T"
+          "symbol": "8306.T",
+          "weight": 0.9018701
         },
         {
           "ticker": "AZN.L",
-          "weight": 0.9001601,
-          "name": "AZN.L"
+          "symbol": "AZN.L",
+          "weight": 0.9001601
         },
         {
           "ticker": "BHP.AX",
-          "weight": 0.8918699999999999,
-          "name": "BHP.AX"
+          "symbol": "BHP.AX",
+          "weight": 0.8918699999999999
         }
       ]
     },
@@ -180,53 +180,53 @@
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 9.53844,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 9.53844
         },
         {
           "ticker": "TD",
-          "weight": 6.747870000000001,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 6.747870000000001
         },
         {
           "ticker": "SHOP",
-          "weight": 6.0003098,
-          "name": "SHOP"
+          "symbol": "SHOP",
+          "weight": 6.0003098
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.98725,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 3.98725
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.75483,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 3.75483
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.6922902,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 3.6922902
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 3.4904398000000003,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 3.4904398000000003
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.4864399999999995,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 3.4864399999999995
         },
         {
           "ticker": "AEM.TO",
-          "weight": 3.43677,
-          "name": "AEM.TO"
+          "symbol": "AEM.TO",
+          "weight": 3.43677
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.9365899,
-          "name": "BN.TO"
+          "symbol": "BN.TO",
+          "weight": 2.9365899
         }
       ]
     },
@@ -248,53 +248,53 @@
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 7.9330300000000005,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 7.9330300000000005
         },
         {
           "ticker": "TD",
-          "weight": 5.48116,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 5.48116
         },
         {
           "ticker": "SHOP",
-          "weight": 4.8796,
-          "name": "SHOP"
+          "symbol": "SHOP",
+          "weight": 4.8796
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.4197400000000004,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 3.4197400000000004
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.98703,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 2.98703
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.95939,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 2.95939
         },
         {
           "ticker": "BNS.TO",
-          "weight": 2.95172,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 2.95172
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.6402099,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 2.6402099
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.5412700999999998,
-          "name": "BN.TO"
+          "symbol": "BN.TO",
+          "weight": 2.5412700999999998
         },
         {
           "ticker": "AEM.TO",
-          "weight": 2.50047,
-          "name": "AEM.TO"
+          "symbol": "AEM.TO",
+          "weight": 2.50047
         }
       ]
     },
@@ -316,53 +316,53 @@
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 8.294091,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 8.294091
         },
         {
           "ticker": "TD",
-          "weight": 5.6779798,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 5.6779798
         },
         {
           "ticker": "SHOP",
-          "weight": 4.06416,
-          "name": "SHOP"
+          "symbol": "SHOP",
+          "weight": 4.06416
         },
         {
           "ticker": "BMO.TO",
-          "weight": 3.59133,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 3.59133
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.36445,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 3.36445
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.0832501,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 3.0832501
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.06256,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 3.06256
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.75493,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 2.75493
         },
         {
           "ticker": "BN.TO",
-          "weight": 2.51901,
-          "name": "BN.TO"
+          "symbol": "BN.TO",
+          "weight": 2.51901
         },
         {
           "ticker": "SU.TO",
-          "weight": 2.26003,
-          "name": "SU.TO"
+          "symbol": "SU.TO",
+          "weight": 2.26003
         }
       ]
     },
@@ -384,33 +384,33 @@
       "holdings": [
         {
           "ticker": "PRICE/EARNINGS",
-          "weight": null,
-          "name": "PRICE/EARNINGS"
+          "symbol": "PRICE/EARNINGS",
+          "weight": null
         },
         {
           "ticker": "PRICE/BOOK",
-          "weight": null,
-          "name": "PRICE/BOOK"
+          "symbol": "PRICE/BOOK",
+          "weight": null
         },
         {
           "ticker": "PRICE/SALES",
-          "weight": null,
-          "name": "PRICE/SALES"
+          "symbol": "PRICE/SALES",
+          "weight": null
         },
         {
           "ticker": "PRICE/CASHFLOW",
-          "weight": null,
-          "name": "PRICE/CASHFLOW"
+          "symbol": "PRICE/CASHFLOW",
+          "weight": null
         },
         {
           "ticker": "MEDIAN MARKET CAP",
-          "weight": null,
-          "name": "MEDIAN MARKET CAP"
+          "symbol": "MEDIAN MARKET CAP",
+          "weight": null
         },
         {
           "ticker": "3 YEAR EARNINGS GROWTH",
-          "weight": null,
-          "name": "3 YEAR EARNINGS GROWTH"
+          "symbol": "3 YEAR EARNINGS GROWTH",
+          "weight": null
         }
       ]
     },
@@ -432,53 +432,53 @@
       "holdings": [
         {
           "ticker": "005930.KQ",
-          "weight": 2.9497199000000003,
-          "name": "005930.KQ"
+          "symbol": "005930.KQ",
+          "weight": 2.9497199000000003
         },
         {
           "ticker": "000660.KQ",
-          "weight": 2.31856,
-          "name": "000660.KQ"
+          "symbol": "000660.KQ",
+          "weight": 2.31856
         },
         {
           "ticker": "ASML.AS",
-          "weight": 2.2098301,
-          "name": "ASML.AS"
+          "symbol": "ASML.AS",
+          "weight": 2.2098301
         },
         {
           "ticker": "HSBA.L",
-          "weight": 1.26275,
-          "name": "HSBA.L"
+          "symbol": "HSBA.L",
+          "weight": 1.26275
         },
         {
           "ticker": "ROP.SW",
-          "weight": 1.06635,
-          "name": "ROP.SW"
+          "symbol": "ROP.SW",
+          "weight": 1.06635
         },
         {
           "ticker": "NOVN.SW",
-          "weight": 1.01243,
-          "name": "NOVN.SW"
+          "symbol": "NOVN.SW",
+          "weight": 1.01243
         },
         {
           "ticker": "NESN.SW",
-          "weight": 0.89418,
-          "name": "NESN.SW"
+          "symbol": "NESN.SW",
+          "weight": 0.89418
         },
         {
           "ticker": "SHEL.L",
-          "weight": 0.8867401,
-          "name": "SHEL.L"
+          "symbol": "SHEL.L",
+          "weight": 0.8867401
         },
         {
           "ticker": "AZN.L",
-          "weight": 0.88456,
-          "name": "AZN.L"
+          "symbol": "AZN.L",
+          "weight": 0.88456
         },
         {
           "ticker": "8306.T",
-          "weight": 0.8465800000000001,
-          "name": "8306.T"
+          "symbol": "8306.T",
+          "weight": 0.8465800000000001
         }
       ]
     },
@@ -500,33 +500,33 @@
       "holdings": [
         {
           "ticker": "PRICE/EARNINGS",
-          "weight": null,
-          "name": "PRICE/EARNINGS"
+          "symbol": "PRICE/EARNINGS",
+          "weight": null
         },
         {
           "ticker": "PRICE/BOOK",
-          "weight": null,
-          "name": "PRICE/BOOK"
+          "symbol": "PRICE/BOOK",
+          "weight": null
         },
         {
           "ticker": "PRICE/SALES",
-          "weight": null,
-          "name": "PRICE/SALES"
+          "symbol": "PRICE/SALES",
+          "weight": null
         },
         {
           "ticker": "PRICE/CASHFLOW",
-          "weight": null,
-          "name": "PRICE/CASHFLOW"
+          "symbol": "PRICE/CASHFLOW",
+          "weight": null
         },
         {
           "ticker": "MEDIAN MARKET CAP",
-          "weight": null,
-          "name": "MEDIAN MARKET CAP"
+          "symbol": "MEDIAN MARKET CAP",
+          "weight": null
         },
         {
           "ticker": "3 YEAR EARNINGS GROWTH",
-          "weight": null,
-          "name": "3 YEAR EARNINGS GROWTH"
+          "symbol": "3 YEAR EARNINGS GROWTH",
+          "weight": null
         }
       ]
     },
@@ -548,53 +548,53 @@
       "holdings": [
         {
           "ticker": "RY",
-          "weight": 15.8491,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 15.8491
         },
         {
           "ticker": "TD",
-          "weight": 10.8499005,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 10.8499005
         },
         {
           "ticker": "BMO.TO",
-          "weight": 6.862640000000001,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 6.862640000000001
         },
         {
           "ticker": "ENB.TO",
-          "weight": 6.42907,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 6.42907
         },
         {
           "ticker": "CM.TO",
-          "weight": 5.89152,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 5.89152
         },
         {
           "ticker": "BNS.TO",
-          "weight": 5.85211,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 5.85211
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 5.26432,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 5.26432
         },
         {
           "ticker": "SU.TO",
-          "weight": 4.31852,
-          "name": "SU.TO"
+          "symbol": "SU.TO",
+          "weight": 4.31852
         },
         {
           "ticker": "MFC.TO",
-          "weight": 4.01973,
-          "name": "MFC.TO"
+          "symbol": "MFC.TO",
+          "weight": 4.01973
         },
         {
           "ticker": "TRP.TO",
-          "weight": 3.7958,
-          "name": "TRP.TO"
+          "symbol": "TRP.TO",
+          "weight": 3.7958
         }
       ]
     },
@@ -616,33 +616,33 @@
       "holdings": [
         {
           "ticker": "PRICE/EARNINGS",
-          "weight": null,
-          "name": "PRICE/EARNINGS"
+          "symbol": "PRICE/EARNINGS",
+          "weight": null
         },
         {
           "ticker": "PRICE/BOOK",
-          "weight": null,
-          "name": "PRICE/BOOK"
+          "symbol": "PRICE/BOOK",
+          "weight": null
         },
         {
           "ticker": "PRICE/SALES",
-          "weight": null,
-          "name": "PRICE/SALES"
+          "symbol": "PRICE/SALES",
+          "weight": null
         },
         {
           "ticker": "PRICE/CASHFLOW",
-          "weight": null,
-          "name": "PRICE/CASHFLOW"
+          "symbol": "PRICE/CASHFLOW",
+          "weight": null
         },
         {
           "ticker": "MEDIAN MARKET CAP",
-          "weight": null,
-          "name": "MEDIAN MARKET CAP"
+          "symbol": "MEDIAN MARKET CAP",
+          "weight": null
         },
         {
           "ticker": "3 YEAR EARNINGS GROWTH",
-          "weight": null,
-          "name": "3 YEAR EARNINGS GROWTH"
+          "symbol": "3 YEAR EARNINGS GROWTH",
+          "weight": null
         }
       ]
     },
@@ -664,53 +664,53 @@
       "holdings": [
         {
           "ticker": "TD",
-          "weight": 9.231630000000001,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 9.231630000000001
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 9.14293,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 9.14293
         },
         {
           "ticker": "SU.TO",
-          "weight": 8.9551,
-          "name": "SU.TO"
+          "symbol": "SU.TO",
+          "weight": 8.9551
         },
         {
           "ticker": "RY",
-          "weight": 8.89911,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 8.89911
         },
         {
           "ticker": "MFC.TO",
-          "weight": 8.81907,
-          "name": "MFC.TO"
+          "symbol": "MFC.TO",
+          "weight": 8.81907
         },
         {
           "ticker": "SLF.TO",
-          "weight": 8.12644,
-          "name": "SLF.TO"
+          "symbol": "SLF.TO",
+          "weight": 8.12644
         },
         {
           "ticker": "POW.TO",
-          "weight": 6.5468399999999995,
-          "name": "POW.TO"
+          "symbol": "POW.TO",
+          "weight": 6.5468399999999995
         },
         {
           "ticker": "PPL.TO",
-          "weight": 5.26276,
-          "name": "PPL.TO"
+          "symbol": "PPL.TO",
+          "weight": 5.26276
         },
         {
           "ticker": "FTS.TO",
-          "weight": 5.2230403,
-          "name": "FTS.TO"
+          "symbol": "FTS.TO",
+          "weight": 5.2230403
         },
         {
           "ticker": "QSR.TO",
-          "weight": 4.67438,
-          "name": "QSR.TO"
+          "symbol": "QSR.TO",
+          "weight": 4.67438
         }
       ]
     },
@@ -732,53 +732,53 @@
       "holdings": [
         {
           "ticker": "GWO.TO",
-          "weight": 4.3800604,
-          "name": "GWO.TO"
+          "symbol": "GWO.TO",
+          "weight": 4.3800604
         },
         {
           "ticker": "FTS.TO",
-          "weight": 4.2835202,
-          "name": "FTS.TO"
+          "symbol": "FTS.TO",
+          "weight": 4.2835202
         },
         {
           "ticker": "QBR-B.TO",
-          "weight": 4.01334,
-          "name": "QBR-B.TO"
+          "symbol": "QBR-B.TO",
+          "weight": 4.01334
         },
         {
           "ticker": "H.TO",
-          "weight": 3.9090399999999996,
-          "name": "H.TO"
+          "symbol": "H.TO",
+          "weight": 3.9090399999999996
         },
         {
           "ticker": "L.TO",
-          "weight": 3.77304,
-          "name": "L.TO"
+          "symbol": "L.TO",
+          "weight": 3.77304
         },
         {
           "ticker": "EMP-A.TO",
-          "weight": 3.5056900000000004,
-          "name": "EMP-A.TO"
+          "symbol": "EMP-A.TO",
+          "weight": 3.5056900000000004
         },
         {
           "ticker": "EMA.TO",
-          "weight": 3.50001,
-          "name": "EMA.TO"
+          "symbol": "EMA.TO",
+          "weight": 3.50001
         },
         {
           "ticker": "IFC.TO",
-          "weight": 3.3041403,
-          "name": "IFC.TO"
+          "symbol": "IFC.TO",
+          "weight": 3.3041403
         },
         {
           "ticker": "MRU.TO",
-          "weight": 3.15448,
-          "name": "MRU.TO"
+          "symbol": "MRU.TO",
+          "weight": 3.15448
         },
         {
           "ticker": "X.TO",
-          "weight": 3.11058,
-          "name": "X.TO"
+          "symbol": "X.TO",
+          "weight": 3.11058
         }
       ]
     },
@@ -800,53 +800,53 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 8.51714,
-          "name": "NVDA"
+          "symbol": "NVDA",
+          "weight": 8.51714
         },
         {
           "ticker": "AAPL",
-          "weight": 7.4185,
-          "name": "AAPL"
+          "symbol": "AAPL",
+          "weight": 7.4185
         },
         {
           "ticker": "MSFT",
-          "weight": 6.0072098,
-          "name": "MSFT"
+          "symbol": "MSFT",
+          "weight": 6.0072098
         },
         {
           "ticker": "MU",
-          "weight": 4.7581602,
-          "name": "MU"
+          "symbol": "MU",
+          "weight": 4.7581602
         },
         {
           "ticker": "AMZN",
-          "weight": 4.454549800000001,
-          "name": "AMZN"
+          "symbol": "AMZN",
+          "weight": 4.454549800000001
         },
         {
           "ticker": "AMD",
-          "weight": 3.3779000000000003,
-          "name": "AMD"
+          "symbol": "AMD",
+          "weight": 3.3779000000000003
         },
         {
           "ticker": "GOOGL",
-          "weight": 3.15056,
-          "name": "GOOGL"
+          "symbol": "GOOGL",
+          "weight": 3.15056
         },
         {
           "ticker": "TSLA",
-          "weight": 2.93011,
-          "name": "TSLA"
+          "symbol": "TSLA",
+          "weight": 2.93011
         },
         {
           "ticker": "GOOG",
-          "weight": 2.91722,
-          "name": "GOOG"
+          "symbol": "GOOG",
+          "weight": 2.91722
         },
         {
           "ticker": "AVGO",
-          "weight": 2.79908,
-          "name": "AVGO"
+          "symbol": "AVGO",
+          "weight": 2.79908
         }
       ]
     },
@@ -868,8 +868,8 @@
       "holdings": [
         {
           "ticker": "VWO",
-          "weight": 100.0,
-          "name": "VWO"
+          "symbol": "VWO",
+          "weight": 100.0
         }
       ]
     },
@@ -891,53 +891,53 @@
       "holdings": [
         {
           "ticker": "CNQ.TO",
-          "weight": 5.3661298,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 5.3661298
         },
         {
           "ticker": "TD",
-          "weight": 5.1572,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 5.1572
         },
         {
           "ticker": "SU.TO",
-          "weight": 5.128159999999999,
-          "name": "SU.TO"
+          "symbol": "SU.TO",
+          "weight": 5.128159999999999
         },
         {
           "ticker": "RY",
-          "weight": 5.04657,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 5.04657
         },
         {
           "ticker": "NTR.TO",
-          "weight": 4.42162,
-          "name": "NTR.TO"
+          "symbol": "NTR.TO",
+          "weight": 4.42162
         },
         {
           "ticker": "ENB.TO",
-          "weight": 4.37345,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 4.37345
         },
         {
           "ticker": "TRP.TO",
-          "weight": 4.23489,
-          "name": "TRP.TO"
+          "symbol": "TRP.TO",
+          "weight": 4.23489
         },
         {
           "ticker": "BMO.TO",
-          "weight": 4.22929,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 4.22929
         },
         {
           "ticker": "BNS.TO",
-          "weight": 3.9835000000000003,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 3.9835000000000003
         },
         {
           "ticker": "CM.TO",
-          "weight": 3.69931,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 3.69931
         }
       ]
     },
@@ -959,53 +959,53 @@
       "holdings": [
         {
           "ticker": "SOBO.TO",
-          "weight": 3.48348,
-          "name": "SOBO.TO"
+          "symbol": "SOBO.TO",
+          "weight": 3.48348
         },
         {
           "ticker": "WTE.TO",
-          "weight": 2.87396,
-          "name": "WTE.TO"
+          "symbol": "WTE.TO",
+          "weight": 2.87396
         },
         {
           "ticker": "GEI.TO",
-          "weight": 2.8174900999999997,
-          "name": "GEI.TO"
+          "symbol": "GEI.TO",
+          "weight": 2.8174900999999997
         },
         {
           "ticker": "MTL.TO",
-          "weight": 2.80767,
-          "name": "MTL.TO"
+          "symbol": "MTL.TO",
+          "weight": 2.80767
         },
         {
           "ticker": "CNQ.TO",
-          "weight": 2.39112,
-          "name": "CNQ.TO"
+          "symbol": "CNQ.TO",
+          "weight": 2.39112
         },
         {
           "ticker": "PPL.TO",
-          "weight": 2.29825,
-          "name": "PPL.TO"
+          "symbol": "PPL.TO",
+          "weight": 2.29825
         },
         {
           "ticker": "ENB.TO",
-          "weight": 2.1483801000000002,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 2.1483801000000002
         },
         {
           "ticker": "CVE.TO",
-          "weight": 2.03229,
-          "name": "CVE.TO"
+          "symbol": "CVE.TO",
+          "weight": 2.03229
         },
         {
           "ticker": "CRT-UN.TO",
-          "weight": 2.03055,
-          "name": "CRT-UN.TO"
+          "symbol": "CRT-UN.TO",
+          "weight": 2.03055
         },
         {
           "ticker": "TPZ.TO",
-          "weight": 1.9099499999999998,
-          "name": "TPZ.TO"
+          "symbol": "TPZ.TO",
+          "weight": 1.9099499999999998
         }
       ]
     },
@@ -1027,53 +1027,53 @@
       "holdings": [
         {
           "ticker": "REI-UN.TO",
-          "weight": 12.816638999999999,
-          "name": "REI-UN.TO"
+          "symbol": "REI-UN.TO",
+          "weight": 12.816638999999999
         },
         {
           "ticker": "GRT-UN.TO",
-          "weight": 11.387310000000001,
-          "name": "GRT-UN.TO"
+          "symbol": "GRT-UN.TO",
+          "weight": 11.387310000000001
         },
         {
           "ticker": "CAR-UN.TO",
-          "weight": 10.5701305,
-          "name": "CAR-UN.TO"
+          "symbol": "CAR-UN.TO",
+          "weight": 10.5701305
         },
         {
           "ticker": "FCR-UN.TO",
-          "weight": 10.1657,
-          "name": "FCR-UN.TO"
+          "symbol": "FCR-UN.TO",
+          "weight": 10.1657
         },
         {
           "ticker": "CHP-UN.TO",
-          "weight": 8.78143,
-          "name": "CHP-UN.TO"
+          "symbol": "CHP-UN.TO",
+          "weight": 8.78143
         },
         {
           "ticker": "DIR-UN.TO",
-          "weight": 8.09229,
-          "name": "DIR-UN.TO"
+          "symbol": "DIR-UN.TO",
+          "weight": 8.09229
         },
         {
           "ticker": "SRU-UN.TO",
-          "weight": 7.49041,
-          "name": "SRU-UN.TO"
+          "symbol": "SRU-UN.TO",
+          "weight": 7.49041
         },
         {
           "ticker": "HR-UN.TO",
-          "weight": 5.54289,
-          "name": "HR-UN.TO"
+          "symbol": "HR-UN.TO",
+          "weight": 5.54289
         },
         {
           "ticker": "PMZ-UN.TO",
-          "weight": 5.33068,
-          "name": "PMZ-UN.TO"
+          "symbol": "PMZ-UN.TO",
+          "weight": 5.33068
         },
         {
           "ticker": "BEI-UN.TO",
-          "weight": 5.18626,
-          "name": "BEI-UN.TO"
+          "symbol": "BEI-UN.TO",
+          "weight": 5.18626
         }
       ]
     },
@@ -1095,53 +1095,53 @@
       "holdings": [
         {
           "ticker": "BNS.TO",
-          "weight": 3.1541300000000003,
-          "name": "BNS.TO"
+          "symbol": "BNS.TO",
+          "weight": 3.1541300000000003
         },
         {
           "ticker": "TD",
-          "weight": 3.08849,
-          "name": "TD"
+          "symbol": "TD",
+          "weight": 3.08849
         },
         {
           "ticker": "ENB.TO",
-          "weight": 3.0506697999999997,
-          "name": "ENB.TO"
+          "symbol": "ENB.TO",
+          "weight": 3.0506697999999997
         },
         {
           "ticker": "RY",
-          "weight": 2.9765502,
-          "name": "RY"
+          "symbol": "RY",
+          "weight": 2.9765502
         },
         {
           "ticker": "FTS.TO",
-          "weight": 2.9718202,
-          "name": "FTS.TO"
+          "symbol": "FTS.TO",
+          "weight": 2.9718202
         },
         {
           "ticker": "CP.TO",
-          "weight": 2.96903,
-          "name": "CP.TO"
+          "symbol": "CP.TO",
+          "weight": 2.96903
         },
         {
           "ticker": "CNR.TO",
-          "weight": 2.95641,
-          "name": "CNR.TO"
+          "symbol": "CNR.TO",
+          "weight": 2.95641
         },
         {
           "ticker": "BMO.TO",
-          "weight": 2.9341,
-          "name": "BMO.TO"
+          "symbol": "BMO.TO",
+          "weight": 2.9341
         },
         {
           "ticker": "CM.TO",
-          "weight": 2.91094,
-          "name": "CM.TO"
+          "symbol": "CM.TO",
+          "weight": 2.91094
         },
         {
           "ticker": "GWO.TO",
-          "weight": 2.84863,
-          "name": "GWO.TO"
+          "symbol": "GWO.TO",
+          "weight": 2.84863
         }
       ]
     },
@@ -1163,48 +1163,48 @@
       "holdings": [
         {
           "ticker": "CCO.TO",
-          "weight": 19.775829,
-          "name": "CCO.TO"
+          "symbol": "CCO.TO",
+          "weight": 19.775829
         },
         {
           "ticker": "KAP",
-          "weight": 19.12198,
-          "name": "KAP"
+          "symbol": "KAP",
+          "weight": 19.12198
         },
         {
           "ticker": "OKLO",
-          "weight": 6.20228,
-          "name": "OKLO"
+          "symbol": "OKLO",
+          "weight": 6.20228
         },
         {
           "ticker": "NXE.TO",
-          "weight": 6.08459,
-          "name": "NXE.TO"
+          "symbol": "NXE.TO",
+          "weight": 6.08459
         },
         {
           "ticker": "UEC",
-          "weight": 5.3222499999999995,
-          "name": "UEC"
+          "symbol": "UEC",
+          "weight": 5.3222499999999995
         },
         {
           "ticker": "YCA.L",
-          "weight": 4.0454604,
-          "name": "YCA.L"
+          "symbol": "YCA.L",
+          "weight": 4.0454604
         },
         {
           "ticker": "PDN.AX",
-          "weight": 3.2849000000000004,
-          "name": "PDN.AX"
+          "symbol": "PDN.AX",
+          "weight": 3.2849000000000004
         },
         {
           "ticker": "EFR.TO",
-          "weight": 3.23073,
-          "name": "EFR.TO"
+          "symbol": "EFR.TO",
+          "weight": 3.23073
         },
         {
           "ticker": "LEU",
-          "weight": 2.85446,
-          "name": "LEU"
+          "symbol": "LEU",
+          "weight": 2.85446
         }
       ]
     },
@@ -1226,53 +1226,53 @@
       "holdings": [
         {
           "ticker": "VWS.CO",
-          "weight": 3.26063,
-          "name": "VWS.CO"
+          "symbol": "VWS.CO",
+          "weight": 3.26063
         },
         {
           "ticker": "CADLR.OL",
-          "weight": 2.98075,
-          "name": "CADLR.OL"
+          "symbol": "CADLR.OL",
+          "weight": 2.98075
         },
         {
           "ticker": "3800.HK",
-          "weight": 2.9606199,
-          "name": "3800.HK"
+          "symbol": "3800.HK",
+          "weight": 2.9606199
         },
         {
           "ticker": "LAND.SW",
-          "weight": 2.81166,
-          "name": "LAND.SW"
+          "symbol": "LAND.SW",
+          "weight": 2.81166
         },
         {
           "ticker": "RNW",
-          "weight": 2.76042,
-          "name": "RNW"
+          "symbol": "RNW",
+          "weight": 2.76042
         },
         {
           "ticker": "0968.HK",
-          "weight": 2.71595,
-          "name": "0968.HK"
+          "symbol": "0968.HK",
+          "weight": 2.71595
         },
         {
           "ticker": "SCATC.OL",
-          "weight": 2.6911899999999997,
-          "name": "SCATC.OL"
+          "symbol": "SCATC.OL",
+          "weight": 2.6911899999999997
         },
         {
           "ticker": "S92.DE",
-          "weight": 2.6700102,
-          "name": "S92.DE"
+          "symbol": "S92.DE",
+          "weight": 2.6700102
         },
         {
           "ticker": "VER.VI",
-          "weight": 2.6523499,
-          "name": "VER.VI"
+          "symbol": "VER.VI",
+          "weight": 2.6523499
         },
         {
           "ticker": "MCY.NZ",
-          "weight": 2.6465099999999997,
-          "name": "MCY.NZ"
+          "symbol": "MCY.NZ",
+          "weight": 2.6465099999999997
         }
       ]
     },
@@ -1294,53 +1294,53 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 8.14645,
-          "name": "NVDA"
+          "symbol": "NVDA",
+          "weight": 8.14645
         },
         {
           "ticker": "AAPL",
-          "weight": 6.66309,
-          "name": "AAPL"
+          "symbol": "AAPL",
+          "weight": 6.66309
         },
         {
           "ticker": "MSFT",
-          "weight": 5.49022,
-          "name": "MSFT"
+          "symbol": "MSFT",
+          "weight": 5.49022
         },
         {
           "ticker": "AMZN",
-          "weight": 3.9270300000000002,
-          "name": "AMZN"
+          "symbol": "AMZN",
+          "weight": 3.9270300000000002
         },
         {
           "ticker": "GOOGL",
-          "weight": 3.0235000000000003,
-          "name": "GOOGL"
+          "symbol": "GOOGL",
+          "weight": 3.0235000000000003
         },
         {
           "ticker": "AVGO",
-          "weight": 2.95661,
-          "name": "AVGO"
+          "symbol": "AVGO",
+          "weight": 2.95661
         },
         {
           "ticker": "GOOG",
-          "weight": 2.4287,
-          "name": "GOOG"
+          "symbol": "GOOG",
+          "weight": 2.4287
         },
         {
           "ticker": "META",
-          "weight": 1.9064,
-          "name": "META"
+          "symbol": "META",
+          "weight": 1.9064
         },
         {
           "ticker": "MU",
-          "weight": 1.5415,
-          "name": "MU"
+          "symbol": "MU",
+          "weight": 1.5415
         },
         {
           "ticker": "JPM",
-          "weight": 1.4678299000000001,
-          "name": "JPM"
+          "symbol": "JPM",
+          "weight": 1.4678299000000001
         }
       ]
     },
@@ -1362,53 +1362,53 @@
       "holdings": [
         {
           "ticker": "2330.TW",
-          "weight": 13.08784,
-          "name": "2330.TW"
+          "symbol": "2330.TW",
+          "weight": 13.08784
         },
         {
           "ticker": "005930.KQ",
-          "weight": 6.2258700000000005,
-          "name": "005930.KQ"
+          "symbol": "005930.KQ",
+          "weight": 6.2258700000000005
         },
         {
           "ticker": "000660.KQ",
-          "weight": 4.7339402,
-          "name": "000660.KQ"
+          "symbol": "000660.KQ",
+          "weight": 4.7339402
         },
         {
           "ticker": "0700.HK",
-          "weight": 2.48507,
-          "name": "0700.HK"
+          "symbol": "0700.HK",
+          "weight": 2.48507
         },
         {
           "ticker": "9988.HK",
-          "weight": 1.71277,
-          "name": "9988.HK"
+          "symbol": "9988.HK",
+          "weight": 1.71277
         },
         {
           "ticker": "IEMG",
-          "weight": 1.62682,
-          "name": "IEMG"
+          "symbol": "IEMG",
+          "weight": 1.62682
         },
         {
           "ticker": "2454.TW",
-          "weight": 1.25123,
-          "name": "2454.TW"
+          "symbol": "2454.TW",
+          "weight": 1.25123
         },
         {
           "ticker": "2308.TW",
-          "weight": 0.79218,
-          "name": "2308.TW"
+          "symbol": "2308.TW",
+          "weight": 0.79218
         },
         {
           "ticker": "005935",
-          "weight": 0.7661399999999999,
-          "name": "005935"
+          "symbol": "005935",
+          "weight": 0.7661399999999999
         },
         {
           "ticker": "00939",
-          "weight": 0.71453,
-          "name": "00939"
+          "symbol": "00939",
+          "weight": 0.71453
         }
       ]
     },
@@ -1430,53 +1430,53 @@
       "holdings": [
         {
           "ticker": "NVDA",
-          "weight": 12.741789,
-          "name": "NVDA"
+          "symbol": "NVDA",
+          "weight": 12.741789
         },
         {
           "ticker": "AAPL",
-          "weight": 11.23368,
-          "name": "AAPL"
+          "symbol": "AAPL",
+          "weight": 11.23368
         },
         {
           "ticker": "MSFT",
-          "weight": 9.217069,
-          "name": "MSFT"
+          "symbol": "MSFT",
+          "weight": 9.217069
         },
         {
           "ticker": "AMZN",
-          "weight": 6.189489699999999,
-          "name": "AMZN"
+          "symbol": "AMZN",
+          "weight": 6.189489699999999
         },
         {
           "ticker": "GOOGL",
-          "weight": 4.91706,
-          "name": "GOOGL"
+          "symbol": "GOOGL",
+          "weight": 4.91706
         },
         {
           "ticker": "AVGO",
-          "weight": 4.2845897,
-          "name": "AVGO"
+          "symbol": "AVGO",
+          "weight": 4.2845897
         },
         {
           "ticker": "GOOG",
-          "weight": 4.2256497,
-          "name": "GOOG"
+          "symbol": "GOOG",
+          "weight": 4.2256497
         },
         {
           "ticker": "META",
-          "weight": 3.11727,
-          "name": "META"
+          "symbol": "META",
+          "weight": 3.11727
         },
         {
           "ticker": "TSLA",
-          "weight": 2.79083,
-          "name": "TSLA"
+          "symbol": "TSLA",
+          "weight": 2.79083
         },
         {
           "ticker": "MU",
-          "weight": 2.6800001,
-          "name": "MU"
+          "symbol": "MU",
+          "weight": 2.6800001
         }
       ]
     },
@@ -1515,53 +1515,53 @@
       "holdings": [
         {
           "ticker": "JNJ",
-          "weight": 2.94454,
-          "name": "JNJ"
+          "symbol": "JNJ",
+          "weight": 2.94454
         },
         {
           "ticker": "TDY",
-          "weight": 2.78691,
-          "name": "TDY"
+          "symbol": "TDY",
+          "weight": 2.78691
         },
         {
           "ticker": "COR",
-          "weight": 2.77304,
-          "name": "COR"
+          "symbol": "COR",
+          "weight": 2.77304
         },
         {
           "ticker": "GLW",
-          "weight": 2.6795499,
-          "name": "GLW"
+          "symbol": "GLW",
+          "weight": 2.6795499
         },
         {
           "ticker": "CSCO",
-          "weight": 2.53493,
-          "name": "CSCO"
+          "symbol": "CSCO",
+          "weight": 2.53493
         },
         {
           "ticker": "CBOE",
-          "weight": 2.15326,
-          "name": "CBOE"
+          "symbol": "CBOE",
+          "weight": 2.15326
         },
         {
           "ticker": "NOC",
-          "weight": 2.1357201,
-          "name": "NOC"
+          "symbol": "NOC",
+          "weight": 2.1357201
         },
         {
           "ticker": "MSI",
-          "weight": 2.1096202,
-          "name": "MSI"
+          "symbol": "MSI",
+          "weight": 2.1096202
         },
         {
           "ticker": "ED",
-          "weight": 1.95839,
-          "name": "ED"
+          "symbol": "ED",
+          "weight": 1.95839
         },
         {
           "ticker": "AKAM",
-          "weight": 1.9466601,
-          "name": "AKAM"
+          "symbol": "AKAM",
+          "weight": 1.9466601
         }
       ]
     },
@@ -1583,53 +1583,53 @@
       "holdings": [
         {
           "ticker": "ITOT",
-          "weight": 48.003718,
-          "name": "ITOT"
+          "symbol": "ITOT",
+          "weight": 48.003718
         },
         {
           "ticker": "IVV",
-          "weight": 46.360079999999996,
-          "name": "IVV"
+          "symbol": "IVV",
+          "weight": 46.360079999999996
         },
         {
           "ticker": "IJH",
-          "weight": 2.4814800000000004,
-          "name": "IJH"
+          "symbol": "IJH",
+          "weight": 2.4814800000000004
         },
         {
           "ticker": "IJR",
-          "weight": 1.0112700000000001,
-          "name": "IJR"
+          "symbol": "IJR",
+          "weight": 1.0112700000000001
         },
         {
           "ticker": "UBER",
-          "weight": 0.07257999999999999,
-          "name": "UBER"
+          "symbol": "UBER",
+          "weight": 0.07257999999999999
         },
         {
           "ticker": "SNOW",
-          "weight": 0.07066,
-          "name": "SNOW"
+          "symbol": "SNOW",
+          "weight": 0.07066
         },
         {
           "ticker": "AVGO",
-          "weight": 0.066799996,
-          "name": "AVGO"
+          "symbol": "AVGO",
+          "weight": 0.066799996
         },
         {
           "ticker": "CRWD",
-          "weight": 0.064539997,
-          "name": "CRWD"
+          "symbol": "CRWD",
+          "weight": 0.064539997
         },
         {
           "ticker": "FERG",
-          "weight": 0.06255,
-          "name": "FERG"
+          "symbol": "FERG",
+          "weight": 0.06255
         },
         {
           "ticker": "NET",
-          "weight": 0.05993,
-          "name": "NET"
+          "symbol": "NET",
+          "weight": 0.05993
         }
       ]
     },
@@ -1651,33 +1651,33 @@
       "holdings": [
         {
           "ticker": "IVV",
-          "weight": 51.165956,
-          "name": "IVV"
+          "symbol": "IVV",
+          "weight": 51.165956
         },
         {
           "ticker": "XEF.TO",
-          "weight": 22.690160000000002,
-          "name": "XEF.TO"
+          "symbol": "XEF.TO",
+          "weight": 22.690160000000002
         },
         {
           "ticker": "XEC.TO",
-          "weight": 12.77759,
-          "name": "XEC.TO"
+          "symbol": "XEC.TO",
+          "weight": 12.77759
         },
         {
           "ticker": "ITOT",
-          "weight": 8.24514,
-          "name": "ITOT"
+          "symbol": "ITOT",
+          "weight": 8.24514
         },
         {
           "ticker": "IJH",
-          "weight": 3.19833,
-          "name": "IJH"
+          "symbol": "IJH",
+          "weight": 3.19833
         },
         {
           "ticker": "IJR",
-          "weight": 1.8962400000000001,
-          "name": "IJR"
+          "symbol": "IJR",
+          "weight": 1.8962400000000001
         }
       ]
     }
