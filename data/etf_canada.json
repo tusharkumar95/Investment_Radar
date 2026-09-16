@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-09-16T03:26:06.407329+00:00",
+  "updatedAt": "2026-09-16T03:46:02.165803+00:00",
   "count": 28,
   "etfs": [
     {
@@ -22,7 +22,7 @@
         {
           "symbol": "VOO",
           "weight": 100.0,
-          "ticker": "VOO"
+          "ticker": "Vanguard S&P 500 ETF"
         }
       ]
     },
@@ -45,52 +45,52 @@
         {
           "symbol": "RY",
           "weight": 7.628939999999999,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
           "weight": 5.39701,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SHOP",
           "weight": 4.7991,
-          "ticker": "SHOP"
+          "ticker": "Shopify Inc."
         },
         {
           "symbol": "BMO.TO",
           "weight": 3.1890300000000003,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "BNS.TO",
           "weight": 3.0031499999999998,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "ENB.TO",
           "weight": 2.95313,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CNQ.TO",
           "weight": 2.79169,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "CM.TO",
           "weight": 2.7884800000000003,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "AEM.TO",
           "weight": 2.74876,
-          "ticker": "AEM.TO"
+          "ticker": "Agnico Eagle Mines Limited"
         },
         {
           "symbol": "BN.TO",
           "weight": 2.34871,
-          "ticker": "BN.TO"
+          "ticker": "Brookfield Corporation"
         }
       ]
     },
@@ -113,52 +113,52 @@
         {
           "symbol": "IEFA",
           "weight": 3.66688,
-          "ticker": "IEFA"
+          "ticker": "iShares Core MSCI EAFE ETF"
         },
         {
           "symbol": "ASML.AS",
           "weight": 2.41624,
-          "ticker": "ASML.AS"
+          "ticker": "ASML Holding N.V."
         },
         {
           "symbol": "HSBA.L",
           "weight": 1.3054100000000002,
-          "ticker": "HSBA.L"
+          "ticker": "HSBC Holdings plc"
         },
         {
           "symbol": "ROP.SW",
           "weight": 1.12587,
-          "ticker": "ROP.SW"
+          "ticker": "Roche Holding AG"
         },
         {
           "symbol": "NOVN.SW",
           "weight": 1.0312999999999999,
-          "ticker": "NOVN.SW"
+          "ticker": "Novartis AG"
         },
         {
           "symbol": "SHEL.L",
           "weight": 0.93408,
-          "ticker": "SHEL.L"
+          "ticker": "Shell plc"
         },
         {
           "symbol": "NESN.SW",
           "weight": 0.92215,
-          "ticker": "NESN.SW"
+          "ticker": "Nestlé S.A."
         },
         {
           "symbol": "8306.T",
           "weight": 0.9018701,
-          "ticker": "8306.T"
+          "ticker": "Mitsubishi UFJ Financial Group, Inc."
         },
         {
           "symbol": "AZN.L",
           "weight": 0.9001601,
-          "ticker": "AZN.L"
+          "ticker": "AstraZeneca PLC"
         },
         {
           "symbol": "BHP.AX",
           "weight": 0.8918699999999999,
-          "ticker": "BHP.AX"
+          "ticker": "BHP Group Limited"
         }
       ]
     },
@@ -181,52 +181,52 @@
         {
           "symbol": "RY",
           "weight": 9.53844,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
           "weight": 6.747870000000001,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SHOP",
           "weight": 6.0003098,
-          "ticker": "SHOP"
+          "ticker": "Shopify Inc."
         },
         {
           "symbol": "BMO.TO",
           "weight": 3.98725,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "BNS.TO",
           "weight": 3.75483,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "ENB.TO",
           "weight": 3.6922902,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CNQ.TO",
           "weight": 3.4904398000000003,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "CM.TO",
           "weight": 3.4864399999999995,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "AEM.TO",
           "weight": 3.43677,
-          "ticker": "AEM.TO"
+          "ticker": "Agnico Eagle Mines Limited"
         },
         {
           "symbol": "BN.TO",
           "weight": 2.9365899,
-          "ticker": "BN.TO"
+          "ticker": "Brookfield Corporation"
         }
       ]
     },
@@ -249,52 +249,52 @@
         {
           "symbol": "RY",
           "weight": 7.9330300000000005,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
           "weight": 5.48116,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SHOP",
           "weight": 4.8796,
-          "ticker": "SHOP"
+          "ticker": "Shopify Inc."
         },
         {
           "symbol": "BMO.TO",
           "weight": 3.4197400000000004,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "ENB.TO",
           "weight": 2.98703,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CM.TO",
           "weight": 2.95939,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "BNS.TO",
           "weight": 2.95172,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "CNQ.TO",
           "weight": 2.6402099,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "BN.TO",
           "weight": 2.5412700999999998,
-          "ticker": "BN.TO"
+          "ticker": "Brookfield Corporation"
         },
         {
           "symbol": "AEM.TO",
           "weight": 2.50047,
-          "ticker": "AEM.TO"
+          "ticker": "Agnico Eagle Mines Limited"
         }
       ]
     },
@@ -317,52 +317,52 @@
         {
           "symbol": "RY",
           "weight": 8.294091,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
           "weight": 5.6779798,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SHOP",
           "weight": 4.06416,
-          "ticker": "SHOP"
+          "ticker": "Shopify Inc."
         },
         {
           "symbol": "BMO.TO",
           "weight": 3.59133,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "ENB.TO",
           "weight": 3.36445,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CM.TO",
           "weight": 3.0832501,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "BNS.TO",
           "weight": 3.06256,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "CNQ.TO",
           "weight": 2.75493,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "BN.TO",
           "weight": 2.51901,
-          "ticker": "BN.TO"
+          "ticker": "Brookfield Corporation"
         },
         {
           "symbol": "SU.TO",
           "weight": 2.26003,
-          "ticker": "SU.TO"
+          "ticker": "Suncor Energy Inc."
         }
       ]
     },
@@ -433,52 +433,52 @@
         {
           "symbol": "005930.KQ",
           "weight": 2.9497199000000003,
-          "ticker": "005930.KQ"
+          "ticker": "Samsung Electronics Co Ltd"
         },
         {
           "symbol": "000660.KQ",
           "weight": 2.31856,
-          "ticker": "000660.KQ"
+          "ticker": "SK Hynix Inc"
         },
         {
           "symbol": "ASML.AS",
           "weight": 2.2098301,
-          "ticker": "ASML.AS"
+          "ticker": "ASML Holding N.V."
         },
         {
           "symbol": "HSBA.L",
           "weight": 1.26275,
-          "ticker": "HSBA.L"
+          "ticker": "HSBC Holdings plc"
         },
         {
           "symbol": "ROP.SW",
           "weight": 1.06635,
-          "ticker": "ROP.SW"
+          "ticker": "Roche Holding AG"
         },
         {
           "symbol": "NOVN.SW",
           "weight": 1.01243,
-          "ticker": "NOVN.SW"
+          "ticker": "Novartis AG"
         },
         {
           "symbol": "NESN.SW",
           "weight": 0.89418,
-          "ticker": "NESN.SW"
+          "ticker": "Nestlé S.A."
         },
         {
           "symbol": "SHEL.L",
           "weight": 0.8867401,
-          "ticker": "SHEL.L"
+          "ticker": "Shell plc"
         },
         {
           "symbol": "AZN.L",
           "weight": 0.88456,
-          "ticker": "AZN.L"
+          "ticker": "AstraZeneca PLC"
         },
         {
           "symbol": "8306.T",
           "weight": 0.8465800000000001,
-          "ticker": "8306.T"
+          "ticker": "Mitsubishi UFJ Financial Group, Inc."
         }
       ]
     },
@@ -549,52 +549,52 @@
         {
           "symbol": "RY",
           "weight": 15.8491,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
           "weight": 10.8499005,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "BMO.TO",
           "weight": 6.862640000000001,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "ENB.TO",
           "weight": 6.42907,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CM.TO",
           "weight": 5.89152,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "BNS.TO",
           "weight": 5.85211,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "CNQ.TO",
           "weight": 5.26432,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "SU.TO",
           "weight": 4.31852,
-          "ticker": "SU.TO"
+          "ticker": "Suncor Energy Inc."
         },
         {
           "symbol": "MFC.TO",
           "weight": 4.01973,
-          "ticker": "MFC.TO"
+          "ticker": "Manulife Financial Corporation"
         },
         {
           "symbol": "TRP.TO",
           "weight": 3.7958,
-          "ticker": "TRP.TO"
+          "ticker": "TC Energy Corporation"
         }
       ]
     },
@@ -665,52 +665,52 @@
         {
           "symbol": "TD",
           "weight": 9.231630000000001,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "CNQ.TO",
           "weight": 9.14293,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "SU.TO",
           "weight": 8.9551,
-          "ticker": "SU.TO"
+          "ticker": "Suncor Energy Inc."
         },
         {
           "symbol": "RY",
           "weight": 8.89911,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "MFC.TO",
           "weight": 8.81907,
-          "ticker": "MFC.TO"
+          "ticker": "Manulife Financial Corporation"
         },
         {
           "symbol": "SLF.TO",
           "weight": 8.12644,
-          "ticker": "SLF.TO"
+          "ticker": "Sun Life Financial Inc."
         },
         {
           "symbol": "POW.TO",
           "weight": 6.5468399999999995,
-          "ticker": "POW.TO"
+          "ticker": "Power Corporation of Canada"
         },
         {
           "symbol": "PPL.TO",
           "weight": 5.26276,
-          "ticker": "PPL.TO"
+          "ticker": "Pembina Pipeline Corporation"
         },
         {
           "symbol": "FTS.TO",
           "weight": 5.2230403,
-          "ticker": "FTS.TO"
+          "ticker": "Fortis Inc."
         },
         {
           "symbol": "QSR.TO",
           "weight": 4.67438,
-          "ticker": "QSR.TO"
+          "ticker": "Restaurant Brands International Inc."
         }
       ]
     },
@@ -733,52 +733,52 @@
         {
           "symbol": "GWO.TO",
           "weight": 4.3800604,
-          "ticker": "GWO.TO"
+          "ticker": "Great-West Lifeco Inc."
         },
         {
           "symbol": "FTS.TO",
           "weight": 4.2835202,
-          "ticker": "FTS.TO"
+          "ticker": "Fortis Inc."
         },
         {
           "symbol": "QBR-B.TO",
           "weight": 4.01334,
-          "ticker": "QBR-B.TO"
+          "ticker": "Quebecor Inc."
         },
         {
           "symbol": "H.TO",
           "weight": 3.9090399999999996,
-          "ticker": "H.TO"
+          "ticker": "Hydro One Limited"
         },
         {
           "symbol": "L.TO",
           "weight": 3.77304,
-          "ticker": "L.TO"
+          "ticker": "Loblaw Companies Limited"
         },
         {
           "symbol": "EMP-A.TO",
           "weight": 3.5056900000000004,
-          "ticker": "EMP-A.TO"
+          "ticker": "Empire Company Limited"
         },
         {
           "symbol": "EMA.TO",
           "weight": 3.50001,
-          "ticker": "EMA.TO"
+          "ticker": "Emera Incorporated"
         },
         {
           "symbol": "IFC.TO",
           "weight": 3.3041403,
-          "ticker": "IFC.TO"
+          "ticker": "Intact Financial Corporation"
         },
         {
           "symbol": "MRU.TO",
           "weight": 3.15448,
-          "ticker": "MRU.TO"
+          "ticker": "Metro Inc."
         },
         {
           "symbol": "X.TO",
           "weight": 3.11058,
-          "ticker": "X.TO"
+          "ticker": "TMX Group Limited"
         }
       ]
     },
@@ -801,52 +801,52 @@
         {
           "symbol": "NVDA",
           "weight": 8.51714,
-          "ticker": "NVDA"
+          "ticker": "NVIDIA Corporation"
         },
         {
           "symbol": "AAPL",
           "weight": 7.4185,
-          "ticker": "AAPL"
+          "ticker": "Apple Inc."
         },
         {
           "symbol": "MSFT",
           "weight": 6.0072098,
-          "ticker": "MSFT"
+          "ticker": "Microsoft Corporation"
         },
         {
           "symbol": "MU",
           "weight": 4.7581602,
-          "ticker": "MU"
+          "ticker": "Micron Technology, Inc."
         },
         {
           "symbol": "AMZN",
           "weight": 4.454549800000001,
-          "ticker": "AMZN"
+          "ticker": "Amazon.com, Inc."
         },
         {
           "symbol": "AMD",
           "weight": 3.3779000000000003,
-          "ticker": "AMD"
+          "ticker": "Advanced Micro Devices, Inc."
         },
         {
           "symbol": "GOOGL",
           "weight": 3.15056,
-          "ticker": "GOOGL"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "TSLA",
           "weight": 2.93011,
-          "ticker": "TSLA"
+          "ticker": "Tesla, Inc."
         },
         {
           "symbol": "GOOG",
           "weight": 2.91722,
-          "ticker": "GOOG"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "AVGO",
           "weight": 2.79908,
-          "ticker": "AVGO"
+          "ticker": "Broadcom Inc."
         }
       ]
     },
@@ -869,7 +869,7 @@
         {
           "symbol": "VWO",
           "weight": 100.0,
-          "ticker": "VWO"
+          "ticker": "Vanguard FTSE Emerging Markets Index Fund ETF Shares"
         }
       ]
     },
@@ -892,52 +892,52 @@
         {
           "symbol": "CNQ.TO",
           "weight": 5.3661298,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "TD",
           "weight": 5.1572,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SU.TO",
           "weight": 5.128159999999999,
-          "ticker": "SU.TO"
+          "ticker": "Suncor Energy Inc."
         },
         {
           "symbol": "RY",
           "weight": 5.04657,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "NTR.TO",
           "weight": 4.42162,
-          "ticker": "NTR.TO"
+          "ticker": "Nutrien Ltd."
         },
         {
           "symbol": "ENB.TO",
           "weight": 4.37345,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "TRP.TO",
           "weight": 4.23489,
-          "ticker": "TRP.TO"
+          "ticker": "TC Energy Corporation"
         },
         {
           "symbol": "BMO.TO",
           "weight": 4.22929,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "BNS.TO",
           "weight": 3.9835000000000003,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "CM.TO",
           "weight": 3.69931,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         }
       ]
     },
@@ -960,52 +960,52 @@
         {
           "symbol": "SOBO.TO",
           "weight": 3.48348,
-          "ticker": "SOBO.TO"
+          "ticker": "South Bow Corporation"
         },
         {
           "symbol": "WTE.TO",
           "weight": 2.87396,
-          "ticker": "WTE.TO"
+          "ticker": "Westshore Terminals Investment Corporation"
         },
         {
           "symbol": "GEI.TO",
           "weight": 2.8174900999999997,
-          "ticker": "GEI.TO"
+          "ticker": "Gibson Energy Inc."
         },
         {
           "symbol": "MTL.TO",
           "weight": 2.80767,
-          "ticker": "MTL.TO"
+          "ticker": "Mullen Group Ltd."
         },
         {
           "symbol": "CNQ.TO",
           "weight": 2.39112,
-          "ticker": "CNQ.TO"
+          "ticker": "Canadian Natural Resources Limited"
         },
         {
           "symbol": "PPL.TO",
           "weight": 2.29825,
-          "ticker": "PPL.TO"
+          "ticker": "Pembina Pipeline Corporation"
         },
         {
           "symbol": "ENB.TO",
           "weight": 2.1483801000000002,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CVE.TO",
           "weight": 2.03229,
-          "ticker": "CVE.TO"
+          "ticker": "Cenovus Energy Inc."
         },
         {
           "symbol": "CRT-UN.TO",
           "weight": 2.03055,
-          "ticker": "CRT-UN.TO"
+          "ticker": "CT Real Estate Investment Trust"
         },
         {
           "symbol": "TPZ.TO",
           "weight": 1.9099499999999998,
-          "ticker": "TPZ.TO"
+          "ticker": "Topaz Energy Corp."
         }
       ]
     },
@@ -1028,52 +1028,52 @@
         {
           "symbol": "REI-UN.TO",
           "weight": 12.816638999999999,
-          "ticker": "REI-UN.TO"
+          "ticker": "RioCan Real Estate Investment Trust"
         },
         {
           "symbol": "GRT-UN.TO",
           "weight": 11.387310000000001,
-          "ticker": "GRT-UN.TO"
+          "ticker": "Granite Real Estate Investment Trust"
         },
         {
           "symbol": "CAR-UN.TO",
           "weight": 10.5701305,
-          "ticker": "CAR-UN.TO"
+          "ticker": "Canadian Apartment Properties Real Estate Investment Trust"
         },
         {
           "symbol": "FCR-UN.TO",
           "weight": 10.1657,
-          "ticker": "FCR-UN.TO"
+          "ticker": "First Capital Real Estate Investment Trust"
         },
         {
           "symbol": "CHP-UN.TO",
           "weight": 8.78143,
-          "ticker": "CHP-UN.TO"
+          "ticker": "Choice Properties Real Estate Investment Trust"
         },
         {
           "symbol": "DIR-UN.TO",
           "weight": 8.09229,
-          "ticker": "DIR-UN.TO"
+          "ticker": "Dream Industrial Real Estate Investment Trust"
         },
         {
           "symbol": "SRU-UN.TO",
           "weight": 7.49041,
-          "ticker": "SRU-UN.TO"
+          "ticker": "SmartCentres Real Estate Investment Trust"
         },
         {
           "symbol": "HR-UN.TO",
           "weight": 5.54289,
-          "ticker": "HR-UN.TO"
+          "ticker": "H&R Real Estate Investment Trust"
         },
         {
           "symbol": "PMZ-UN.TO",
           "weight": 5.33068,
-          "ticker": "PMZ-UN.TO"
+          "ticker": "Primaris Real Estate Investment Trust"
         },
         {
           "symbol": "BEI-UN.TO",
           "weight": 5.18626,
-          "ticker": "BEI-UN.TO"
+          "ticker": "Boardwalk Real Estate Investment Trust"
         }
       ]
     },
@@ -1096,52 +1096,52 @@
         {
           "symbol": "BNS.TO",
           "weight": 3.1541300000000003,
-          "ticker": "BNS.TO"
+          "ticker": "The Bank of Nova Scotia"
         },
         {
           "symbol": "TD",
           "weight": 3.08849,
-          "ticker": "TD"
+          "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "ENB.TO",
           "weight": 3.0506697999999997,
-          "ticker": "ENB.TO"
+          "ticker": "Enbridge Inc."
         },
         {
           "symbol": "RY",
           "weight": 2.9765502,
-          "ticker": "RY"
+          "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "FTS.TO",
           "weight": 2.9718202,
-          "ticker": "FTS.TO"
+          "ticker": "Fortis Inc."
         },
         {
           "symbol": "CP.TO",
           "weight": 2.96903,
-          "ticker": "CP.TO"
+          "ticker": "Canadian Pacific Kansas City Limited"
         },
         {
           "symbol": "CNR.TO",
           "weight": 2.95641,
-          "ticker": "CNR.TO"
+          "ticker": "Canadian National Railway Company"
         },
         {
           "symbol": "BMO.TO",
           "weight": 2.9341,
-          "ticker": "BMO.TO"
+          "ticker": "Bank of Montreal"
         },
         {
           "symbol": "CM.TO",
           "weight": 2.91094,
-          "ticker": "CM.TO"
+          "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "GWO.TO",
           "weight": 2.84863,
-          "ticker": "GWO.TO"
+          "ticker": "Great-West Lifeco Inc."
         }
       ]
     },
@@ -1164,47 +1164,47 @@
         {
           "symbol": "CCO.TO",
           "weight": 19.775829,
-          "ticker": "CCO.TO"
+          "ticker": "Cameco Corporation"
         },
         {
           "symbol": "KAP",
           "weight": 19.12198,
-          "ticker": "KAP"
+          "ticker": "KCAP Financial, Inc. SR NT 19"
         },
         {
           "symbol": "OKLO",
           "weight": 6.20228,
-          "ticker": "OKLO"
+          "ticker": "Oklo Inc."
         },
         {
           "symbol": "NXE.TO",
           "weight": 6.08459,
-          "ticker": "NXE.TO"
+          "ticker": "NexGen Energy Ltd."
         },
         {
           "symbol": "UEC",
           "weight": 5.3222499999999995,
-          "ticker": "UEC"
+          "ticker": "Uranium Energy Corp."
         },
         {
           "symbol": "YCA.L",
           "weight": 4.0454604,
-          "ticker": "YCA.L"
+          "ticker": "Yellow Cake plc"
         },
         {
           "symbol": "PDN.AX",
           "weight": 3.2849000000000004,
-          "ticker": "PDN.AX"
+          "ticker": "Paladin Energy Ltd"
         },
         {
           "symbol": "EFR.TO",
           "weight": 3.23073,
-          "ticker": "EFR.TO"
+          "ticker": "Energy Fuels Inc."
         },
         {
           "symbol": "LEU",
           "weight": 2.85446,
-          "ticker": "LEU"
+          "ticker": "Centrus Energy Corp."
         }
       ]
     },
@@ -1227,52 +1227,52 @@
         {
           "symbol": "VWS.CO",
           "weight": 3.26063,
-          "ticker": "VWS.CO"
+          "ticker": "Vestas Wind Systems A/S"
         },
         {
           "symbol": "CADLR.OL",
           "weight": 2.98075,
-          "ticker": "CADLR.OL"
+          "ticker": "Cadeler A/S"
         },
         {
           "symbol": "3800.HK",
           "weight": 2.9606199,
-          "ticker": "3800.HK"
+          "ticker": "GCL Technology Holdings Limited"
         },
         {
           "symbol": "LAND.SW",
           "weight": 2.81166,
-          "ticker": "LAND.SW"
+          "ticker": "Landis+Gyr Group AG"
         },
         {
           "symbol": "RNW",
           "weight": 2.76042,
-          "ticker": "RNW"
+          "ticker": "ReNew Energy Global Plc"
         },
         {
           "symbol": "0968.HK",
           "weight": 2.71595,
-          "ticker": "0968.HK"
+          "ticker": "Xinyi Solar Holdings Limited"
         },
         {
           "symbol": "SCATC.OL",
           "weight": 2.6911899999999997,
-          "ticker": "SCATC.OL"
+          "ticker": "Scatec ASA"
         },
         {
           "symbol": "S92.DE",
           "weight": 2.6700102,
-          "ticker": "S92.DE"
+          "ticker": "SMA Solar Technology AG"
         },
         {
           "symbol": "VER.VI",
           "weight": 2.6523499,
-          "ticker": "VER.VI"
+          "ticker": "VERBUND AG"
         },
         {
           "symbol": "MCY.NZ",
           "weight": 2.6465099999999997,
-          "ticker": "MCY.NZ"
+          "ticker": "Mercury NZ Limited"
         }
       ]
     },
@@ -1295,52 +1295,52 @@
         {
           "symbol": "NVDA",
           "weight": 8.14645,
-          "ticker": "NVDA"
+          "ticker": "NVIDIA Corporation"
         },
         {
           "symbol": "AAPL",
           "weight": 6.66309,
-          "ticker": "AAPL"
+          "ticker": "Apple Inc."
         },
         {
           "symbol": "MSFT",
           "weight": 5.49022,
-          "ticker": "MSFT"
+          "ticker": "Microsoft Corporation"
         },
         {
           "symbol": "AMZN",
           "weight": 3.9270300000000002,
-          "ticker": "AMZN"
+          "ticker": "Amazon.com, Inc."
         },
         {
           "symbol": "GOOGL",
           "weight": 3.0235000000000003,
-          "ticker": "GOOGL"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "AVGO",
           "weight": 2.95661,
-          "ticker": "AVGO"
+          "ticker": "Broadcom Inc."
         },
         {
           "symbol": "GOOG",
           "weight": 2.4287,
-          "ticker": "GOOG"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "META",
           "weight": 1.9064,
-          "ticker": "META"
+          "ticker": "Meta Platforms, Inc."
         },
         {
           "symbol": "MU",
           "weight": 1.5415,
-          "ticker": "MU"
+          "ticker": "Micron Technology, Inc."
         },
         {
           "symbol": "JPM",
           "weight": 1.4678299000000001,
-          "ticker": "JPM"
+          "ticker": "JPMorgan Chase & Co."
         }
       ]
     },
@@ -1363,42 +1363,42 @@
         {
           "symbol": "2330.TW",
           "weight": 13.08784,
-          "ticker": "2330.TW"
+          "ticker": "Taiwan Semiconductor Manufacturing Company Limited"
         },
         {
           "symbol": "005930.KQ",
           "weight": 6.2258700000000005,
-          "ticker": "005930.KQ"
+          "ticker": "Samsung Electronics Co Ltd"
         },
         {
           "symbol": "000660.KQ",
           "weight": 4.7339402,
-          "ticker": "000660.KQ"
+          "ticker": "SK Hynix Inc"
         },
         {
           "symbol": "0700.HK",
           "weight": 2.48507,
-          "ticker": "0700.HK"
+          "ticker": "Tencent Holdings Limited"
         },
         {
           "symbol": "9988.HK",
           "weight": 1.71277,
-          "ticker": "9988.HK"
+          "ticker": "Alibaba Group Holding Limited"
         },
         {
           "symbol": "IEMG",
           "weight": 1.62682,
-          "ticker": "IEMG"
+          "ticker": "iShares Core MSCI Emerging Markets ETF"
         },
         {
           "symbol": "2454.TW",
           "weight": 1.25123,
-          "ticker": "2454.TW"
+          "ticker": "MediaTek Inc."
         },
         {
           "symbol": "2308.TW",
           "weight": 0.79218,
-          "ticker": "2308.TW"
+          "ticker": "Delta Electronics, Inc."
         },
         {
           "symbol": "005935",
@@ -1431,52 +1431,52 @@
         {
           "symbol": "NVDA",
           "weight": 12.741789,
-          "ticker": "NVDA"
+          "ticker": "NVIDIA Corporation"
         },
         {
           "symbol": "AAPL",
           "weight": 11.23368,
-          "ticker": "AAPL"
+          "ticker": "Apple Inc."
         },
         {
           "symbol": "MSFT",
           "weight": 9.217069,
-          "ticker": "MSFT"
+          "ticker": "Microsoft Corporation"
         },
         {
           "symbol": "AMZN",
           "weight": 6.189489699999999,
-          "ticker": "AMZN"
+          "ticker": "Amazon.com, Inc."
         },
         {
           "symbol": "GOOGL",
           "weight": 4.91706,
-          "ticker": "GOOGL"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "AVGO",
           "weight": 4.2845897,
-          "ticker": "AVGO"
+          "ticker": "Broadcom Inc."
         },
         {
           "symbol": "GOOG",
           "weight": 4.2256497,
-          "ticker": "GOOG"
+          "ticker": "Alphabet Inc."
         },
         {
           "symbol": "META",
           "weight": 3.11727,
-          "ticker": "META"
+          "ticker": "Meta Platforms, Inc."
         },
         {
           "symbol": "TSLA",
           "weight": 2.79083,
-          "ticker": "TSLA"
+          "ticker": "Tesla, Inc."
         },
         {
           "symbol": "MU",
           "weight": 2.6800001,
-          "ticker": "MU"
+          "ticker": "Micron Technology, Inc."
         }
       ]
     },
@@ -1516,52 +1516,52 @@
         {
           "symbol": "JNJ",
           "weight": 2.94454,
-          "ticker": "JNJ"
+          "ticker": "Johnson & Johnson"
         },
         {
           "symbol": "TDY",
           "weight": 2.78691,
-          "ticker": "TDY"
+          "ticker": "Teledyne Technologies Incorporated"
         },
         {
           "symbol": "COR",
           "weight": 2.77304,
-          "ticker": "COR"
+          "ticker": "Cencora, Inc."
         },
         {
           "symbol": "GLW",
           "weight": 2.6795499,
-          "ticker": "GLW"
+          "ticker": "Corning Incorporated"
         },
         {
           "symbol": "CSCO",
           "weight": 2.53493,
-          "ticker": "CSCO"
+          "ticker": "Cisco Systems, Inc."
         },
         {
           "symbol": "CBOE",
           "weight": 2.15326,
-          "ticker": "CBOE"
+          "ticker": "Cboe Global Markets, Inc."
         },
         {
           "symbol": "NOC",
           "weight": 2.1357201,
-          "ticker": "NOC"
+          "ticker": "Northrop Grumman Corporation"
         },
         {
           "symbol": "MSI",
           "weight": 2.1096202,
-          "ticker": "MSI"
+          "ticker": "Motorola Solutions, Inc."
         },
         {
           "symbol": "ED",
           "weight": 1.95839,
-          "ticker": "ED"
+          "ticker": "Consolidated Edison, Inc."
         },
         {
           "symbol": "AKAM",
           "weight": 1.9466601,
-          "ticker": "AKAM"
+          "ticker": "Akamai Technologies, Inc."
         }
       ]
     },
@@ -1584,52 +1584,52 @@
         {
           "symbol": "ITOT",
           "weight": 48.003718,
-          "ticker": "ITOT"
+          "ticker": "iShares Core S&P Total U.S. Stock Market ETF"
         },
         {
           "symbol": "IVV",
           "weight": 46.360079999999996,
-          "ticker": "IVV"
+          "ticker": "iShares Core S&P 500 ETF"
         },
         {
           "symbol": "IJH",
           "weight": 2.4814800000000004,
-          "ticker": "IJH"
+          "ticker": "iShares Core S&P Mid-Cap ETF"
         },
         {
           "symbol": "IJR",
           "weight": 1.0112700000000001,
-          "ticker": "IJR"
+          "ticker": "iShares Core S&P Small-Cap ETF"
         },
         {
           "symbol": "UBER",
           "weight": 0.07257999999999999,
-          "ticker": "UBER"
+          "ticker": "Uber Technologies, Inc."
         },
         {
           "symbol": "SNOW",
           "weight": 0.07066,
-          "ticker": "SNOW"
+          "ticker": "Snowflake Inc."
         },
         {
           "symbol": "AVGO",
           "weight": 0.066799996,
-          "ticker": "AVGO"
+          "ticker": "Broadcom Inc."
         },
         {
           "symbol": "CRWD",
           "weight": 0.064539997,
-          "ticker": "CRWD"
+          "ticker": "CrowdStrike Holdings, Inc."
         },
         {
           "symbol": "FERG",
           "weight": 0.06255,
-          "ticker": "FERG"
+          "ticker": "Ferguson Enterprises Inc."
         },
         {
           "symbol": "NET",
           "weight": 0.05993,
-          "ticker": "NET"
+          "ticker": "Cloudflare, Inc."
         }
       ]
     },
@@ -1652,32 +1652,32 @@
         {
           "symbol": "IVV",
           "weight": 51.165956,
-          "ticker": "IVV"
+          "ticker": "iShares Core S&P 500 ETF"
         },
         {
           "symbol": "XEF.TO",
           "weight": 22.690160000000002,
-          "ticker": "XEF.TO"
+          "ticker": "iShares Core MSCI EAFE IMI Index ETF"
         },
         {
           "symbol": "XEC.TO",
           "weight": 12.77759,
-          "ticker": "XEC.TO"
+          "ticker": "iShares Core MSCI Emerging Markets IMI Index ETF"
         },
         {
           "symbol": "ITOT",
           "weight": 8.24514,
-          "ticker": "ITOT"
+          "ticker": "iShares Core S&P Total U.S. Stock Market ETF"
         },
         {
           "symbol": "IJH",
           "weight": 3.19833,
-          "ticker": "IJH"
+          "ticker": "iShares Core S&P Mid-Cap ETF"
         },
         {
           "symbol": "IJR",
           "weight": 1.8962400000000001,
-          "ticker": "IJR"
+          "ticker": "iShares Core S&P Small-Cap ETF"
         }
       ]
     }
