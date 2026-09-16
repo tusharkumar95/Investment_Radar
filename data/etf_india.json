@@ -1,6 +1,6 @@
 {
   "market": "India",
-  "updatedAt": "2026-09-16T03:24:44.769186+00:00",
+  "updatedAt": "2026-09-16T03:26:13.049103+00:00",
   "count": 29,
   "etfs": [
     {
@@ -18,7 +18,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "HDFCBANK.NS",
+          "ticker": "HDFC Bank Limited",
+          "weight": 9.85
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "ticker": "ICICI Bank Limited",
+          "weight": 9.45
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "ticker": "Reliance Industries Limited",
+          "weight": 7.83
+        },
+        {
+          "symbol": "BHARTIARTL.NS",
+          "ticker": "Bharti Airtel Limited",
+          "weight": 5.0
+        },
+        {
+          "symbol": "LT.NS",
+          "ticker": "Larsen & Toubro Limited",
+          "weight": 4.3
+        },
+        {
+          "symbol": "SBIN.NS",
+          "ticker": "State Bank of India",
+          "weight": 3.97
+        },
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 3.61
+        },
+        {
+          "symbol": "AXISBANK.NS",
+          "ticker": "Axis Bank Limited",
+          "weight": 3.39
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "ticker": "Kotak Mahindra Bank Limited",
+          "weight": 2.8
+        },
+        {
+          "symbol": "M&M.NS",
+          "ticker": "Mahindra & Mahindra Limited",
+          "weight": 2.66
+        }
+      ]
     },
     {
       "ticker": "JUNIORBEES.NS",
@@ -52,7 +103,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "HDFCBANK.NS",
+          "ticker": "HDFC Bank Limited",
+          "weight": 17.02
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "ticker": "ICICI Bank Limited",
+          "weight": 14.85
+        },
+        {
+          "symbol": "SBIN.NS",
+          "ticker": "State Bank of India",
+          "weight": 10.27
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "ticker": "Kotak Mahindra Bank Limited",
+          "weight": 9.88
+        },
+        {
+          "symbol": "AXISBANK.NS",
+          "ticker": "Axis Bank Limited",
+          "weight": 9.19
+        },
+        {
+          "symbol": "FEDERALBNK.NS",
+          "ticker": "The Federal Bank Limited",
+          "weight": 7.15
+        },
+        {
+          "symbol": "INDUSINDBK.NS",
+          "ticker": "IndusInd Bank Limited",
+          "weight": 5.44
+        },
+        {
+          "symbol": "AUBANK.NS",
+          "ticker": "AU Small Finance Bank Limited",
+          "weight": 4.82
+        },
+        {
+          "symbol": "IDFCFIRSTB.NS",
+          "ticker": "IDFC First Bank Limited",
+          "weight": 4.67
+        },
+        {
+          "symbol": "BANKBARODA.NS",
+          "ticker": "Bank of Baroda Limited",
+          "weight": 3.47
+        }
+      ]
     },
     {
       "ticker": "ITBEES.NS",
@@ -69,7 +171,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 28.86
+        },
+        {
+          "symbol": "TCS.NS",
+          "ticker": "Tata Consultancy Services Limited",
+          "weight": 20.25
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "ticker": "HCL Technologies Limited",
+          "weight": 11.44
+        },
+        {
+          "symbol": "TECHM.NS",
+          "ticker": "Tech Mahindra Limited",
+          "weight": 10.52
+        },
+        {
+          "symbol": "COFORGE.NS",
+          "ticker": "Coforge Limited",
+          "weight": 7.03
+        },
+        {
+          "symbol": "PERSISTENT.NS",
+          "ticker": "Persistent Systems Limited",
+          "weight": 6.19
+        },
+        {
+          "symbol": "WIPRO.NS",
+          "ticker": "Wipro Limited",
+          "weight": 5.08
+        },
+        {
+          "symbol": "LTIM.NS",
+          "ticker": "LTIMindtree Limited",
+          "weight": 4.29
+        },
+        {
+          "symbol": "MPHASIS.NS",
+          "ticker": "Mphasis Limited",
+          "weight": 3.27
+        },
+        {
+          "symbol": "OFSS.NS",
+          "ticker": "Oracle Financial Services Software Limited",
+          "weight": 3.04
+        }
+      ]
     },
     {
       "ticker": "PHARMABEES.NS",
@@ -86,7 +239,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "SUNPHARMA.NS",
+          "ticker": "Sun Pharmaceutical Industries Limited",
+          "weight": 21.29
+        },
+        {
+          "symbol": "DIVISLAB.NS",
+          "ticker": "Divi's Laboratories Limited",
+          "weight": 10.34
+        },
+        {
+          "symbol": "CIPLA.NS",
+          "ticker": "Cipla Limited",
+          "weight": 8.37
+        },
+        {
+          "symbol": "TORNTPHARM.NS",
+          "ticker": "Torrent Pharmaceuticals Limited",
+          "weight": 7.59
+        },
+        {
+          "symbol": "LAURUSLABS.NS",
+          "ticker": "Laurus Labs Limited",
+          "weight": 7.14
+        },
+        {
+          "symbol": "DRREDDY.NS",
+          "ticker": "Dr. Reddy's Laboratories Limited",
+          "weight": 7.07
+        },
+        {
+          "symbol": "LUPIN.NS",
+          "ticker": "Lupin Limited",
+          "weight": 5.93
+        },
+        {
+          "symbol": "AUROPHARMA.NS",
+          "ticker": "Aurobindo Pharma Limited",
+          "weight": 4.42
+        },
+        {
+          "symbol": "ALKEM.NS",
+          "ticker": "Alkem Laboratories Limited",
+          "weight": 3.4
+        },
+        {
+          "symbol": "GLENMARK.NS",
+          "ticker": "Glenmark Pharmaceuticals Limited",
+          "weight": 3.4
+        }
+      ]
     },
     {
       "ticker": "CPSEETF.NS",
@@ -103,7 +307,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "NTPC.NS",
+          "ticker": "NTPC Limited",
+          "weight": 20.05
+        },
+        {
+          "symbol": "BEL.NS",
+          "ticker": "Bharat Electronics Limited",
+          "weight": 19.34
+        },
+        {
+          "symbol": "POWERGRID.NS",
+          "ticker": "Power Grid Corporation of India Limited",
+          "weight": 18.76
+        },
+        {
+          "symbol": "COALINDIA.NS",
+          "ticker": "Coal India Limited",
+          "weight": 14.46
+        },
+        {
+          "symbol": "ONGC.NS",
+          "ticker": "Oil & Natural Gas Corporation Limited",
+          "weight": 13.73
+        },
+        {
+          "symbol": "NHPC.NS",
+          "ticker": "NHPC Limited",
+          "weight": 4.32
+        },
+        {
+          "symbol": "OIL.NS",
+          "ticker": "Oil India Limited",
+          "weight": 3.65
+        },
+        {
+          "symbol": "COCHINSHIP.NS",
+          "ticker": "Cochin Shipyard Limited",
+          "weight": 1.76
+        },
+        {
+          "symbol": "NLCINDIA.NS",
+          "ticker": "NLC India Limited",
+          "weight": 1.58
+        },
+        {
+          "symbol": "NBCC.NS",
+          "ticker": "NBCC (India) Limited",
+          "weight": 1.43
+        }
+      ]
     },
     {
       "ticker": "GOLDBEES.NS",
@@ -171,7 +426,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "HDFCBANK.NS",
+          "ticker": "HDFC Bank Limited",
+          "weight": 9.85
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "ticker": "ICICI Bank Limited",
+          "weight": 9.45
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "ticker": "Reliance Industries Limited",
+          "weight": 7.83
+        },
+        {
+          "symbol": "BHARTIARTL.NS",
+          "ticker": "Bharti Airtel Limited",
+          "weight": 5.0
+        },
+        {
+          "symbol": "LT.NS",
+          "ticker": "Larsen & Toubro Limited",
+          "weight": 4.3
+        },
+        {
+          "symbol": "SBIN.NS",
+          "ticker": "State Bank of India",
+          "weight": 3.97
+        },
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 3.61
+        },
+        {
+          "symbol": "AXISBANK.NS",
+          "ticker": "Axis Bank Limited",
+          "weight": 3.39
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "ticker": "Kotak Mahindra Bank Limited",
+          "weight": 2.8
+        },
+        {
+          "symbol": "M&M.NS",
+          "ticker": "Mahindra & Mahindra Limited",
+          "weight": 2.66
+        }
+      ]
     },
     {
       "ticker": "ICICIB22.NS",
@@ -205,7 +511,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "HDFCBANK.NS",
+          "ticker": "HDFC Bank Limited",
+          "weight": 9.85
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "ticker": "ICICI Bank Limited",
+          "weight": 9.45
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "ticker": "Reliance Industries Limited",
+          "weight": 7.83
+        },
+        {
+          "symbol": "BHARTIARTL.NS",
+          "ticker": "Bharti Airtel Limited",
+          "weight": 5.0
+        },
+        {
+          "symbol": "LT.NS",
+          "ticker": "Larsen & Toubro Limited",
+          "weight": 4.3
+        },
+        {
+          "symbol": "SBIN.NS",
+          "ticker": "State Bank of India",
+          "weight": 3.97
+        },
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 3.61
+        },
+        {
+          "symbol": "AXISBANK.NS",
+          "ticker": "Axis Bank Limited",
+          "weight": 3.39
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "ticker": "Kotak Mahindra Bank Limited",
+          "weight": 2.8
+        },
+        {
+          "symbol": "M&M.NS",
+          "ticker": "Mahindra & Mahindra Limited",
+          "weight": 2.66
+        }
+      ]
     },
     {
       "ticker": "NIFTYIETF.NS",
@@ -222,7 +579,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "HDFCBANK.NS",
+          "ticker": "HDFC Bank Limited",
+          "weight": 9.85
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "ticker": "ICICI Bank Limited",
+          "weight": 9.45
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "ticker": "Reliance Industries Limited",
+          "weight": 7.83
+        },
+        {
+          "symbol": "BHARTIARTL.NS",
+          "ticker": "Bharti Airtel Limited",
+          "weight": 5.0
+        },
+        {
+          "symbol": "LT.NS",
+          "ticker": "Larsen & Toubro Limited",
+          "weight": 4.3
+        },
+        {
+          "symbol": "SBIN.NS",
+          "ticker": "State Bank of India",
+          "weight": 3.97
+        },
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 3.61
+        },
+        {
+          "symbol": "AXISBANK.NS",
+          "ticker": "Axis Bank Limited",
+          "weight": 3.39
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "ticker": "Kotak Mahindra Bank Limited",
+          "weight": 2.8
+        },
+        {
+          "symbol": "M&M.NS",
+          "ticker": "Mahindra & Mahindra Limited",
+          "weight": 2.66
+        }
+      ]
     },
     {
       "ticker": "LOWVOL1.NS",
@@ -324,7 +732,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "M&M.NS",
+          "ticker": "Mahindra & Mahindra Limited",
+          "weight": 23.57
+        },
+        {
+          "symbol": "MARUTI.NS",
+          "ticker": "Maruti Suzuki India Limited",
+          "weight": 14.42
+        },
+        {
+          "symbol": "BAJAJ-AUTO.NS",
+          "ticker": "Bajaj Auto Limited",
+          "weight": 9.91
+        },
+        {
+          "symbol": "EICHERMOT.NS",
+          "ticker": "Eicher Motors Limited",
+          "weight": 8.38
+        },
+        {
+          "symbol": "TVSMOTOR.NS",
+          "ticker": "TVS Motor Company Limited",
+          "weight": 7.87
+        },
+        {
+          "symbol": "TMPV.NS",
+          "ticker": "Tata Motors Passenger Vehicles Limited",
+          "weight": 5.51
+        },
+        {
+          "symbol": "HEROMOTOCO.NS",
+          "ticker": "Hero MotoCorp Limited",
+          "weight": 5.43
+        },
+        {
+          "symbol": "MOTHERSON.NS",
+          "ticker": "Samvardhana Motherson International Limited",
+          "weight": 5.17
+        },
+        {
+          "symbol": "BHARATFORG.NS",
+          "ticker": "Bharat Forge Limited",
+          "weight": 4.55
+        },
+        {
+          "symbol": "ASHOKLEY.NS",
+          "ticker": "Ashok Leyland Limited",
+          "weight": 3.69
+        }
+      ]
     },
     {
       "ticker": "CONSUMBEES.NS",
@@ -375,7 +834,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "SUNPHARMA.NS",
+          "ticker": "Sun Pharmaceutical Industries Limited",
+          "weight": 21.29
+        },
+        {
+          "symbol": "DIVISLAB.NS",
+          "ticker": "Divi's Laboratories Limited",
+          "weight": 10.34
+        },
+        {
+          "symbol": "CIPLA.NS",
+          "ticker": "Cipla Limited",
+          "weight": 8.37
+        },
+        {
+          "symbol": "TORNTPHARM.NS",
+          "ticker": "Torrent Pharmaceuticals Limited",
+          "weight": 7.59
+        },
+        {
+          "symbol": "LAURUSLABS.NS",
+          "ticker": "Laurus Labs Limited",
+          "weight": 7.14
+        },
+        {
+          "symbol": "DRREDDY.NS",
+          "ticker": "Dr. Reddy's Laboratories Limited",
+          "weight": 7.07
+        },
+        {
+          "symbol": "LUPIN.NS",
+          "ticker": "Lupin Limited",
+          "weight": 5.93
+        },
+        {
+          "symbol": "AUROPHARMA.NS",
+          "ticker": "Aurobindo Pharma Limited",
+          "weight": 4.42
+        },
+        {
+          "symbol": "ALKEM.NS",
+          "ticker": "Alkem Laboratories Limited",
+          "weight": 3.4
+        },
+        {
+          "symbol": "GLENMARK.NS",
+          "ticker": "Glenmark Pharmaceuticals Limited",
+          "weight": 3.4
+        }
+      ]
     },
     {
       "ticker": "METALIETF.NS",
@@ -443,7 +953,58 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [
+        {
+          "symbol": "INFY.NS",
+          "ticker": "Infosys Limited",
+          "weight": 28.86
+        },
+        {
+          "symbol": "TCS.NS",
+          "ticker": "Tata Consultancy Services Limited",
+          "weight": 20.25
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "ticker": "HCL Technologies Limited",
+          "weight": 11.44
+        },
+        {
+          "symbol": "TECHM.NS",
+          "ticker": "Tech Mahindra Limited",
+          "weight": 10.52
+        },
+        {
+          "symbol": "COFORGE.NS",
+          "ticker": "Coforge Limited",
+          "weight": 7.03
+        },
+        {
+          "symbol": "PERSISTENT.NS",
+          "ticker": "Persistent Systems Limited",
+          "weight": 6.19
+        },
+        {
+          "symbol": "WIPRO.NS",
+          "ticker": "Wipro Limited",
+          "weight": 5.08
+        },
+        {
+          "symbol": "LTIM.NS",
+          "ticker": "LTIMindtree Limited",
+          "weight": 4.29
+        },
+        {
+          "symbol": "MPHASIS.NS",
+          "ticker": "Mphasis Limited",
+          "weight": 3.27
+        },
+        {
+          "symbol": "OFSS.NS",
+          "ticker": "Oracle Financial Services Software Limited",
+          "weight": 3.04
+        }
+      ]
     },
     {
       "ticker": "GILT5YBEES.NS",

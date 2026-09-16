@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-09-16T03:24:28.299681+00:00",
+  "updatedAt": "2026-09-16T03:26:06.407329+00:00",
   "count": 28,
   "etfs": [
     {
@@ -20,9 +20,9 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "VOO",
           "symbol": "VOO",
-          "weight": 100.0
+          "weight": 100.0,
+          "ticker": "VOO"
         }
       ]
     },
@@ -43,54 +43,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 7.628939999999999
+          "weight": 7.628939999999999,
+          "ticker": "RY"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 5.39701
+          "weight": 5.39701,
+          "ticker": "TD"
         },
         {
-          "ticker": "SHOP",
           "symbol": "SHOP",
-          "weight": 4.7991
+          "weight": 4.7991,
+          "ticker": "SHOP"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 3.1890300000000003
+          "weight": 3.1890300000000003,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 3.0031499999999998
+          "weight": 3.0031499999999998,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 2.95313
+          "weight": 2.95313,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 2.79169
+          "weight": 2.79169,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 2.7884800000000003
+          "weight": 2.7884800000000003,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "AEM.TO",
           "symbol": "AEM.TO",
-          "weight": 2.74876
+          "weight": 2.74876,
+          "ticker": "AEM.TO"
         },
         {
-          "ticker": "BN.TO",
           "symbol": "BN.TO",
-          "weight": 2.34871
+          "weight": 2.34871,
+          "ticker": "BN.TO"
         }
       ]
     },
@@ -111,54 +111,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "IEFA",
           "symbol": "IEFA",
-          "weight": 3.66688
+          "weight": 3.66688,
+          "ticker": "IEFA"
         },
         {
-          "ticker": "ASML.AS",
           "symbol": "ASML.AS",
-          "weight": 2.41624
+          "weight": 2.41624,
+          "ticker": "ASML.AS"
         },
         {
-          "ticker": "HSBA.L",
           "symbol": "HSBA.L",
-          "weight": 1.3054100000000002
+          "weight": 1.3054100000000002,
+          "ticker": "HSBA.L"
         },
         {
-          "ticker": "ROP.SW",
           "symbol": "ROP.SW",
-          "weight": 1.12587
+          "weight": 1.12587,
+          "ticker": "ROP.SW"
         },
         {
-          "ticker": "NOVN.SW",
           "symbol": "NOVN.SW",
-          "weight": 1.0312999999999999
+          "weight": 1.0312999999999999,
+          "ticker": "NOVN.SW"
         },
         {
-          "ticker": "SHEL.L",
           "symbol": "SHEL.L",
-          "weight": 0.93408
+          "weight": 0.93408,
+          "ticker": "SHEL.L"
         },
         {
-          "ticker": "NESN.SW",
           "symbol": "NESN.SW",
-          "weight": 0.92215
+          "weight": 0.92215,
+          "ticker": "NESN.SW"
         },
         {
-          "ticker": "8306.T",
           "symbol": "8306.T",
-          "weight": 0.9018701
+          "weight": 0.9018701,
+          "ticker": "8306.T"
         },
         {
-          "ticker": "AZN.L",
           "symbol": "AZN.L",
-          "weight": 0.9001601
+          "weight": 0.9001601,
+          "ticker": "AZN.L"
         },
         {
-          "ticker": "BHP.AX",
           "symbol": "BHP.AX",
-          "weight": 0.8918699999999999
+          "weight": 0.8918699999999999,
+          "ticker": "BHP.AX"
         }
       ]
     },
@@ -179,54 +179,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 9.53844
+          "weight": 9.53844,
+          "ticker": "RY"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 6.747870000000001
+          "weight": 6.747870000000001,
+          "ticker": "TD"
         },
         {
-          "ticker": "SHOP",
           "symbol": "SHOP",
-          "weight": 6.0003098
+          "weight": 6.0003098,
+          "ticker": "SHOP"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 3.98725
+          "weight": 3.98725,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 3.75483
+          "weight": 3.75483,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 3.6922902
+          "weight": 3.6922902,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 3.4904398000000003
+          "weight": 3.4904398000000003,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 3.4864399999999995
+          "weight": 3.4864399999999995,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "AEM.TO",
           "symbol": "AEM.TO",
-          "weight": 3.43677
+          "weight": 3.43677,
+          "ticker": "AEM.TO"
         },
         {
-          "ticker": "BN.TO",
           "symbol": "BN.TO",
-          "weight": 2.9365899
+          "weight": 2.9365899,
+          "ticker": "BN.TO"
         }
       ]
     },
@@ -247,54 +247,54 @@
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 7.9330300000000005
+          "weight": 7.9330300000000005,
+          "ticker": "RY"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 5.48116
+          "weight": 5.48116,
+          "ticker": "TD"
         },
         {
-          "ticker": "SHOP",
           "symbol": "SHOP",
-          "weight": 4.8796
+          "weight": 4.8796,
+          "ticker": "SHOP"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 3.4197400000000004
+          "weight": 3.4197400000000004,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 2.98703
+          "weight": 2.98703,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 2.95939
+          "weight": 2.95939,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 2.95172
+          "weight": 2.95172,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 2.6402099
+          "weight": 2.6402099,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "BN.TO",
           "symbol": "BN.TO",
-          "weight": 2.5412700999999998
+          "weight": 2.5412700999999998,
+          "ticker": "BN.TO"
         },
         {
-          "ticker": "AEM.TO",
           "symbol": "AEM.TO",
-          "weight": 2.50047
+          "weight": 2.50047,
+          "ticker": "AEM.TO"
         }
       ]
     },
@@ -315,54 +315,54 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 8.294091
+          "weight": 8.294091,
+          "ticker": "RY"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 5.6779798
+          "weight": 5.6779798,
+          "ticker": "TD"
         },
         {
-          "ticker": "SHOP",
           "symbol": "SHOP",
-          "weight": 4.06416
+          "weight": 4.06416,
+          "ticker": "SHOP"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 3.59133
+          "weight": 3.59133,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 3.36445
+          "weight": 3.36445,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 3.0832501
+          "weight": 3.0832501,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 3.06256
+          "weight": 3.06256,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 2.75493
+          "weight": 2.75493,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "BN.TO",
           "symbol": "BN.TO",
-          "weight": 2.51901
+          "weight": 2.51901,
+          "ticker": "BN.TO"
         },
         {
-          "ticker": "SU.TO",
           "symbol": "SU.TO",
-          "weight": 2.26003
+          "weight": 2.26003,
+          "ticker": "SU.TO"
         }
       ]
     },
@@ -383,34 +383,34 @@
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
-          "ticker": "PRICE/EARNINGS",
           "symbol": "PRICE/EARNINGS",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/EARNINGS"
         },
         {
-          "ticker": "PRICE/BOOK",
           "symbol": "PRICE/BOOK",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/BOOK"
         },
         {
-          "ticker": "PRICE/SALES",
           "symbol": "PRICE/SALES",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/SALES"
         },
         {
-          "ticker": "PRICE/CASHFLOW",
           "symbol": "PRICE/CASHFLOW",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/CASHFLOW"
         },
         {
-          "ticker": "MEDIAN MARKET CAP",
           "symbol": "MEDIAN MARKET CAP",
-          "weight": null
+          "weight": null,
+          "ticker": "MEDIAN MARKET CAP"
         },
         {
-          "ticker": "3 YEAR EARNINGS GROWTH",
           "symbol": "3 YEAR EARNINGS GROWTH",
-          "weight": null
+          "weight": null,
+          "ticker": "3 YEAR EARNINGS GROWTH"
         }
       ]
     },
@@ -431,54 +431,54 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "005930.KQ",
           "symbol": "005930.KQ",
-          "weight": 2.9497199000000003
+          "weight": 2.9497199000000003,
+          "ticker": "005930.KQ"
         },
         {
-          "ticker": "000660.KQ",
           "symbol": "000660.KQ",
-          "weight": 2.31856
+          "weight": 2.31856,
+          "ticker": "000660.KQ"
         },
         {
-          "ticker": "ASML.AS",
           "symbol": "ASML.AS",
-          "weight": 2.2098301
+          "weight": 2.2098301,
+          "ticker": "ASML.AS"
         },
         {
-          "ticker": "HSBA.L",
           "symbol": "HSBA.L",
-          "weight": 1.26275
+          "weight": 1.26275,
+          "ticker": "HSBA.L"
         },
         {
-          "ticker": "ROP.SW",
           "symbol": "ROP.SW",
-          "weight": 1.06635
+          "weight": 1.06635,
+          "ticker": "ROP.SW"
         },
         {
-          "ticker": "NOVN.SW",
           "symbol": "NOVN.SW",
-          "weight": 1.01243
+          "weight": 1.01243,
+          "ticker": "NOVN.SW"
         },
         {
-          "ticker": "NESN.SW",
           "symbol": "NESN.SW",
-          "weight": 0.89418
+          "weight": 0.89418,
+          "ticker": "NESN.SW"
         },
         {
-          "ticker": "SHEL.L",
           "symbol": "SHEL.L",
-          "weight": 0.8867401
+          "weight": 0.8867401,
+          "ticker": "SHEL.L"
         },
         {
-          "ticker": "AZN.L",
           "symbol": "AZN.L",
-          "weight": 0.88456
+          "weight": 0.88456,
+          "ticker": "AZN.L"
         },
         {
-          "ticker": "8306.T",
           "symbol": "8306.T",
-          "weight": 0.8465800000000001
+          "weight": 0.8465800000000001,
+          "ticker": "8306.T"
         }
       ]
     },
@@ -499,34 +499,34 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "PRICE/EARNINGS",
           "symbol": "PRICE/EARNINGS",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/EARNINGS"
         },
         {
-          "ticker": "PRICE/BOOK",
           "symbol": "PRICE/BOOK",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/BOOK"
         },
         {
-          "ticker": "PRICE/SALES",
           "symbol": "PRICE/SALES",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/SALES"
         },
         {
-          "ticker": "PRICE/CASHFLOW",
           "symbol": "PRICE/CASHFLOW",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/CASHFLOW"
         },
         {
-          "ticker": "MEDIAN MARKET CAP",
           "symbol": "MEDIAN MARKET CAP",
-          "weight": null
+          "weight": null,
+          "ticker": "MEDIAN MARKET CAP"
         },
         {
-          "ticker": "3 YEAR EARNINGS GROWTH",
           "symbol": "3 YEAR EARNINGS GROWTH",
-          "weight": null
+          "weight": null,
+          "ticker": "3 YEAR EARNINGS GROWTH"
         }
       ]
     },
@@ -547,54 +547,54 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 15.8491
+          "weight": 15.8491,
+          "ticker": "RY"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 10.8499005
+          "weight": 10.8499005,
+          "ticker": "TD"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 6.862640000000001
+          "weight": 6.862640000000001,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 6.42907
+          "weight": 6.42907,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 5.89152
+          "weight": 5.89152,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 5.85211
+          "weight": 5.85211,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 5.26432
+          "weight": 5.26432,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "SU.TO",
           "symbol": "SU.TO",
-          "weight": 4.31852
+          "weight": 4.31852,
+          "ticker": "SU.TO"
         },
         {
-          "ticker": "MFC.TO",
           "symbol": "MFC.TO",
-          "weight": 4.01973
+          "weight": 4.01973,
+          "ticker": "MFC.TO"
         },
         {
-          "ticker": "TRP.TO",
           "symbol": "TRP.TO",
-          "weight": 3.7958
+          "weight": 3.7958,
+          "ticker": "TRP.TO"
         }
       ]
     },
@@ -615,34 +615,34 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "PRICE/EARNINGS",
           "symbol": "PRICE/EARNINGS",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/EARNINGS"
         },
         {
-          "ticker": "PRICE/BOOK",
           "symbol": "PRICE/BOOK",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/BOOK"
         },
         {
-          "ticker": "PRICE/SALES",
           "symbol": "PRICE/SALES",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/SALES"
         },
         {
-          "ticker": "PRICE/CASHFLOW",
           "symbol": "PRICE/CASHFLOW",
-          "weight": null
+          "weight": null,
+          "ticker": "PRICE/CASHFLOW"
         },
         {
-          "ticker": "MEDIAN MARKET CAP",
           "symbol": "MEDIAN MARKET CAP",
-          "weight": null
+          "weight": null,
+          "ticker": "MEDIAN MARKET CAP"
         },
         {
-          "ticker": "3 YEAR EARNINGS GROWTH",
           "symbol": "3 YEAR EARNINGS GROWTH",
-          "weight": null
+          "weight": null,
+          "ticker": "3 YEAR EARNINGS GROWTH"
         }
       ]
     },
@@ -663,54 +663,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 9.231630000000001
+          "weight": 9.231630000000001,
+          "ticker": "TD"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 9.14293
+          "weight": 9.14293,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "SU.TO",
           "symbol": "SU.TO",
-          "weight": 8.9551
+          "weight": 8.9551,
+          "ticker": "SU.TO"
         },
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 8.89911
+          "weight": 8.89911,
+          "ticker": "RY"
         },
         {
-          "ticker": "MFC.TO",
           "symbol": "MFC.TO",
-          "weight": 8.81907
+          "weight": 8.81907,
+          "ticker": "MFC.TO"
         },
         {
-          "ticker": "SLF.TO",
           "symbol": "SLF.TO",
-          "weight": 8.12644
+          "weight": 8.12644,
+          "ticker": "SLF.TO"
         },
         {
-          "ticker": "POW.TO",
           "symbol": "POW.TO",
-          "weight": 6.5468399999999995
+          "weight": 6.5468399999999995,
+          "ticker": "POW.TO"
         },
         {
-          "ticker": "PPL.TO",
           "symbol": "PPL.TO",
-          "weight": 5.26276
+          "weight": 5.26276,
+          "ticker": "PPL.TO"
         },
         {
-          "ticker": "FTS.TO",
           "symbol": "FTS.TO",
-          "weight": 5.2230403
+          "weight": 5.2230403,
+          "ticker": "FTS.TO"
         },
         {
-          "ticker": "QSR.TO",
           "symbol": "QSR.TO",
-          "weight": 4.67438
+          "weight": 4.67438,
+          "ticker": "QSR.TO"
         }
       ]
     },
@@ -731,54 +731,54 @@
       "issuer": "BMO Investments Inc.",
       "holdings": [
         {
-          "ticker": "GWO.TO",
           "symbol": "GWO.TO",
-          "weight": 4.3800604
+          "weight": 4.3800604,
+          "ticker": "GWO.TO"
         },
         {
-          "ticker": "FTS.TO",
           "symbol": "FTS.TO",
-          "weight": 4.2835202
+          "weight": 4.2835202,
+          "ticker": "FTS.TO"
         },
         {
-          "ticker": "QBR-B.TO",
           "symbol": "QBR-B.TO",
-          "weight": 4.01334
+          "weight": 4.01334,
+          "ticker": "QBR-B.TO"
         },
         {
-          "ticker": "H.TO",
           "symbol": "H.TO",
-          "weight": 3.9090399999999996
+          "weight": 3.9090399999999996,
+          "ticker": "H.TO"
         },
         {
-          "ticker": "L.TO",
           "symbol": "L.TO",
-          "weight": 3.77304
+          "weight": 3.77304,
+          "ticker": "L.TO"
         },
         {
-          "ticker": "EMP-A.TO",
           "symbol": "EMP-A.TO",
-          "weight": 3.5056900000000004
+          "weight": 3.5056900000000004,
+          "ticker": "EMP-A.TO"
         },
         {
-          "ticker": "EMA.TO",
           "symbol": "EMA.TO",
-          "weight": 3.50001
+          "weight": 3.50001,
+          "ticker": "EMA.TO"
         },
         {
-          "ticker": "IFC.TO",
           "symbol": "IFC.TO",
-          "weight": 3.3041403
+          "weight": 3.3041403,
+          "ticker": "IFC.TO"
         },
         {
-          "ticker": "MRU.TO",
           "symbol": "MRU.TO",
-          "weight": 3.15448
+          "weight": 3.15448,
+          "ticker": "MRU.TO"
         },
         {
-          "ticker": "X.TO",
           "symbol": "X.TO",
-          "weight": 3.11058
+          "weight": 3.11058,
+          "ticker": "X.TO"
         }
       ]
     },
@@ -799,54 +799,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "NVDA",
           "symbol": "NVDA",
-          "weight": 8.51714
+          "weight": 8.51714,
+          "ticker": "NVDA"
         },
         {
-          "ticker": "AAPL",
           "symbol": "AAPL",
-          "weight": 7.4185
+          "weight": 7.4185,
+          "ticker": "AAPL"
         },
         {
-          "ticker": "MSFT",
           "symbol": "MSFT",
-          "weight": 6.0072098
+          "weight": 6.0072098,
+          "ticker": "MSFT"
         },
         {
-          "ticker": "MU",
           "symbol": "MU",
-          "weight": 4.7581602
+          "weight": 4.7581602,
+          "ticker": "MU"
         },
         {
-          "ticker": "AMZN",
           "symbol": "AMZN",
-          "weight": 4.454549800000001
+          "weight": 4.454549800000001,
+          "ticker": "AMZN"
         },
         {
-          "ticker": "AMD",
           "symbol": "AMD",
-          "weight": 3.3779000000000003
+          "weight": 3.3779000000000003,
+          "ticker": "AMD"
         },
         {
-          "ticker": "GOOGL",
           "symbol": "GOOGL",
-          "weight": 3.15056
+          "weight": 3.15056,
+          "ticker": "GOOGL"
         },
         {
-          "ticker": "TSLA",
           "symbol": "TSLA",
-          "weight": 2.93011
+          "weight": 2.93011,
+          "ticker": "TSLA"
         },
         {
-          "ticker": "GOOG",
           "symbol": "GOOG",
-          "weight": 2.91722
+          "weight": 2.91722,
+          "ticker": "GOOG"
         },
         {
-          "ticker": "AVGO",
           "symbol": "AVGO",
-          "weight": 2.79908
+          "weight": 2.79908,
+          "ticker": "AVGO"
         }
       ]
     },
@@ -867,9 +867,9 @@
       "issuer": "Vanguard Investments Canada Inc",
       "holdings": [
         {
-          "ticker": "VWO",
           "symbol": "VWO",
-          "weight": 100.0
+          "weight": 100.0,
+          "ticker": "VWO"
         }
       ]
     },
@@ -890,54 +890,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 5.3661298
+          "weight": 5.3661298,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 5.1572
+          "weight": 5.1572,
+          "ticker": "TD"
         },
         {
-          "ticker": "SU.TO",
           "symbol": "SU.TO",
-          "weight": 5.128159999999999
+          "weight": 5.128159999999999,
+          "ticker": "SU.TO"
         },
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 5.04657
+          "weight": 5.04657,
+          "ticker": "RY"
         },
         {
-          "ticker": "NTR.TO",
           "symbol": "NTR.TO",
-          "weight": 4.42162
+          "weight": 4.42162,
+          "ticker": "NTR.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 4.37345
+          "weight": 4.37345,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "TRP.TO",
           "symbol": "TRP.TO",
-          "weight": 4.23489
+          "weight": 4.23489,
+          "ticker": "TRP.TO"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 4.22929
+          "weight": 4.22929,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 3.9835000000000003
+          "weight": 3.9835000000000003,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 3.69931
+          "weight": 3.69931,
+          "ticker": "CM.TO"
         }
       ]
     },
@@ -958,54 +958,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "SOBO.TO",
           "symbol": "SOBO.TO",
-          "weight": 3.48348
+          "weight": 3.48348,
+          "ticker": "SOBO.TO"
         },
         {
-          "ticker": "WTE.TO",
           "symbol": "WTE.TO",
-          "weight": 2.87396
+          "weight": 2.87396,
+          "ticker": "WTE.TO"
         },
         {
-          "ticker": "GEI.TO",
           "symbol": "GEI.TO",
-          "weight": 2.8174900999999997
+          "weight": 2.8174900999999997,
+          "ticker": "GEI.TO"
         },
         {
-          "ticker": "MTL.TO",
           "symbol": "MTL.TO",
-          "weight": 2.80767
+          "weight": 2.80767,
+          "ticker": "MTL.TO"
         },
         {
-          "ticker": "CNQ.TO",
           "symbol": "CNQ.TO",
-          "weight": 2.39112
+          "weight": 2.39112,
+          "ticker": "CNQ.TO"
         },
         {
-          "ticker": "PPL.TO",
           "symbol": "PPL.TO",
-          "weight": 2.29825
+          "weight": 2.29825,
+          "ticker": "PPL.TO"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 2.1483801000000002
+          "weight": 2.1483801000000002,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "CVE.TO",
           "symbol": "CVE.TO",
-          "weight": 2.03229
+          "weight": 2.03229,
+          "ticker": "CVE.TO"
         },
         {
-          "ticker": "CRT-UN.TO",
           "symbol": "CRT-UN.TO",
-          "weight": 2.03055
+          "weight": 2.03055,
+          "ticker": "CRT-UN.TO"
         },
         {
-          "ticker": "TPZ.TO",
           "symbol": "TPZ.TO",
-          "weight": 1.9099499999999998
+          "weight": 1.9099499999999998,
+          "ticker": "TPZ.TO"
         }
       ]
     },
@@ -1026,54 +1026,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "REI-UN.TO",
           "symbol": "REI-UN.TO",
-          "weight": 12.816638999999999
+          "weight": 12.816638999999999,
+          "ticker": "REI-UN.TO"
         },
         {
-          "ticker": "GRT-UN.TO",
           "symbol": "GRT-UN.TO",
-          "weight": 11.387310000000001
+          "weight": 11.387310000000001,
+          "ticker": "GRT-UN.TO"
         },
         {
-          "ticker": "CAR-UN.TO",
           "symbol": "CAR-UN.TO",
-          "weight": 10.5701305
+          "weight": 10.5701305,
+          "ticker": "CAR-UN.TO"
         },
         {
-          "ticker": "FCR-UN.TO",
           "symbol": "FCR-UN.TO",
-          "weight": 10.1657
+          "weight": 10.1657,
+          "ticker": "FCR-UN.TO"
         },
         {
-          "ticker": "CHP-UN.TO",
           "symbol": "CHP-UN.TO",
-          "weight": 8.78143
+          "weight": 8.78143,
+          "ticker": "CHP-UN.TO"
         },
         {
-          "ticker": "DIR-UN.TO",
           "symbol": "DIR-UN.TO",
-          "weight": 8.09229
+          "weight": 8.09229,
+          "ticker": "DIR-UN.TO"
         },
         {
-          "ticker": "SRU-UN.TO",
           "symbol": "SRU-UN.TO",
-          "weight": 7.49041
+          "weight": 7.49041,
+          "ticker": "SRU-UN.TO"
         },
         {
-          "ticker": "HR-UN.TO",
           "symbol": "HR-UN.TO",
-          "weight": 5.54289
+          "weight": 5.54289,
+          "ticker": "HR-UN.TO"
         },
         {
-          "ticker": "PMZ-UN.TO",
           "symbol": "PMZ-UN.TO",
-          "weight": 5.33068
+          "weight": 5.33068,
+          "ticker": "PMZ-UN.TO"
         },
         {
-          "ticker": "BEI-UN.TO",
           "symbol": "BEI-UN.TO",
-          "weight": 5.18626
+          "weight": 5.18626,
+          "ticker": "BEI-UN.TO"
         }
       ]
     },
@@ -1094,54 +1094,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "BNS.TO",
           "symbol": "BNS.TO",
-          "weight": 3.1541300000000003
+          "weight": 3.1541300000000003,
+          "ticker": "BNS.TO"
         },
         {
-          "ticker": "TD",
           "symbol": "TD",
-          "weight": 3.08849
+          "weight": 3.08849,
+          "ticker": "TD"
         },
         {
-          "ticker": "ENB.TO",
           "symbol": "ENB.TO",
-          "weight": 3.0506697999999997
+          "weight": 3.0506697999999997,
+          "ticker": "ENB.TO"
         },
         {
-          "ticker": "RY",
           "symbol": "RY",
-          "weight": 2.9765502
+          "weight": 2.9765502,
+          "ticker": "RY"
         },
         {
-          "ticker": "FTS.TO",
           "symbol": "FTS.TO",
-          "weight": 2.9718202
+          "weight": 2.9718202,
+          "ticker": "FTS.TO"
         },
         {
-          "ticker": "CP.TO",
           "symbol": "CP.TO",
-          "weight": 2.96903
+          "weight": 2.96903,
+          "ticker": "CP.TO"
         },
         {
-          "ticker": "CNR.TO",
           "symbol": "CNR.TO",
-          "weight": 2.95641
+          "weight": 2.95641,
+          "ticker": "CNR.TO"
         },
         {
-          "ticker": "BMO.TO",
           "symbol": "BMO.TO",
-          "weight": 2.9341
+          "weight": 2.9341,
+          "ticker": "BMO.TO"
         },
         {
-          "ticker": "CM.TO",
           "symbol": "CM.TO",
-          "weight": 2.91094
+          "weight": 2.91094,
+          "ticker": "CM.TO"
         },
         {
-          "ticker": "GWO.TO",
           "symbol": "GWO.TO",
-          "weight": 2.84863
+          "weight": 2.84863,
+          "ticker": "GWO.TO"
         }
       ]
     },
@@ -1162,49 +1162,49 @@
       "issuer": "Global X Investments Canada Inc.",
       "holdings": [
         {
-          "ticker": "CCO.TO",
           "symbol": "CCO.TO",
-          "weight": 19.775829
+          "weight": 19.775829,
+          "ticker": "CCO.TO"
         },
         {
-          "ticker": "KAP",
           "symbol": "KAP",
-          "weight": 19.12198
+          "weight": 19.12198,
+          "ticker": "KAP"
         },
         {
-          "ticker": "OKLO",
           "symbol": "OKLO",
-          "weight": 6.20228
+          "weight": 6.20228,
+          "ticker": "OKLO"
         },
         {
-          "ticker": "NXE.TO",
           "symbol": "NXE.TO",
-          "weight": 6.08459
+          "weight": 6.08459,
+          "ticker": "NXE.TO"
         },
         {
-          "ticker": "UEC",
           "symbol": "UEC",
-          "weight": 5.3222499999999995
+          "weight": 5.3222499999999995,
+          "ticker": "UEC"
         },
         {
-          "ticker": "YCA.L",
           "symbol": "YCA.L",
-          "weight": 4.0454604
+          "weight": 4.0454604,
+          "ticker": "YCA.L"
         },
         {
-          "ticker": "PDN.AX",
           "symbol": "PDN.AX",
-          "weight": 3.2849000000000004
+          "weight": 3.2849000000000004,
+          "ticker": "PDN.AX"
         },
         {
-          "ticker": "EFR.TO",
           "symbol": "EFR.TO",
-          "weight": 3.23073
+          "weight": 3.23073,
+          "ticker": "EFR.TO"
         },
         {
-          "ticker": "LEU",
           "symbol": "LEU",
-          "weight": 2.85446
+          "weight": 2.85446,
+          "ticker": "LEU"
         }
       ]
     },
@@ -1225,54 +1225,54 @@
       "issuer": "Harvest Portfolios Group Inc.",
       "holdings": [
         {
-          "ticker": "VWS.CO",
           "symbol": "VWS.CO",
-          "weight": 3.26063
+          "weight": 3.26063,
+          "ticker": "VWS.CO"
         },
         {
-          "ticker": "CADLR.OL",
           "symbol": "CADLR.OL",
-          "weight": 2.98075
+          "weight": 2.98075,
+          "ticker": "CADLR.OL"
         },
         {
-          "ticker": "3800.HK",
           "symbol": "3800.HK",
-          "weight": 2.9606199
+          "weight": 2.9606199,
+          "ticker": "3800.HK"
         },
         {
-          "ticker": "LAND.SW",
           "symbol": "LAND.SW",
-          "weight": 2.81166
+          "weight": 2.81166,
+          "ticker": "LAND.SW"
         },
         {
-          "ticker": "RNW",
           "symbol": "RNW",
-          "weight": 2.76042
+          "weight": 2.76042,
+          "ticker": "RNW"
         },
         {
-          "ticker": "0968.HK",
           "symbol": "0968.HK",
-          "weight": 2.71595
+          "weight": 2.71595,
+          "ticker": "0968.HK"
         },
         {
-          "ticker": "SCATC.OL",
           "symbol": "SCATC.OL",
-          "weight": 2.6911899999999997
+          "weight": 2.6911899999999997,
+          "ticker": "SCATC.OL"
         },
         {
-          "ticker": "S92.DE",
           "symbol": "S92.DE",
-          "weight": 2.6700102
+          "weight": 2.6700102,
+          "ticker": "S92.DE"
         },
         {
-          "ticker": "VER.VI",
           "symbol": "VER.VI",
-          "weight": 2.6523499
+          "weight": 2.6523499,
+          "ticker": "VER.VI"
         },
         {
-          "ticker": "MCY.NZ",
           "symbol": "MCY.NZ",
-          "weight": 2.6465099999999997
+          "weight": 2.6465099999999997,
+          "ticker": "MCY.NZ"
         }
       ]
     },
@@ -1293,54 +1293,54 @@
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
-          "ticker": "NVDA",
           "symbol": "NVDA",
-          "weight": 8.14645
+          "weight": 8.14645,
+          "ticker": "NVDA"
         },
         {
-          "ticker": "AAPL",
           "symbol": "AAPL",
-          "weight": 6.66309
+          "weight": 6.66309,
+          "ticker": "AAPL"
         },
         {
-          "ticker": "MSFT",
           "symbol": "MSFT",
-          "weight": 5.49022
+          "weight": 5.49022,
+          "ticker": "MSFT"
         },
         {
-          "ticker": "AMZN",
           "symbol": "AMZN",
-          "weight": 3.9270300000000002
+          "weight": 3.9270300000000002,
+          "ticker": "AMZN"
         },
         {
-          "ticker": "GOOGL",
           "symbol": "GOOGL",
-          "weight": 3.0235000000000003
+          "weight": 3.0235000000000003,
+          "ticker": "GOOGL"
         },
         {
-          "ticker": "AVGO",
           "symbol": "AVGO",
-          "weight": 2.95661
+          "weight": 2.95661,
+          "ticker": "AVGO"
         },
         {
-          "ticker": "GOOG",
           "symbol": "GOOG",
-          "weight": 2.4287
+          "weight": 2.4287,
+          "ticker": "GOOG"
         },
         {
-          "ticker": "META",
           "symbol": "META",
-          "weight": 1.9064
+          "weight": 1.9064,
+          "ticker": "META"
         },
         {
-          "ticker": "MU",
           "symbol": "MU",
-          "weight": 1.5415
+          "weight": 1.5415,
+          "ticker": "MU"
         },
         {
-          "ticker": "JPM",
           "symbol": "JPM",
-          "weight": 1.4678299000000001
+          "weight": 1.4678299000000001,
+          "ticker": "JPM"
         }
       ]
     },
@@ -1361,54 +1361,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "2330.TW",
           "symbol": "2330.TW",
-          "weight": 13.08784
+          "weight": 13.08784,
+          "ticker": "2330.TW"
         },
         {
-          "ticker": "005930.KQ",
           "symbol": "005930.KQ",
-          "weight": 6.2258700000000005
+          "weight": 6.2258700000000005,
+          "ticker": "005930.KQ"
         },
         {
-          "ticker": "000660.KQ",
           "symbol": "000660.KQ",
-          "weight": 4.7339402
+          "weight": 4.7339402,
+          "ticker": "000660.KQ"
         },
         {
-          "ticker": "0700.HK",
           "symbol": "0700.HK",
-          "weight": 2.48507
+          "weight": 2.48507,
+          "ticker": "0700.HK"
         },
         {
-          "ticker": "9988.HK",
           "symbol": "9988.HK",
-          "weight": 1.71277
+          "weight": 1.71277,
+          "ticker": "9988.HK"
         },
         {
-          "ticker": "IEMG",
           "symbol": "IEMG",
-          "weight": 1.62682
+          "weight": 1.62682,
+          "ticker": "IEMG"
         },
         {
-          "ticker": "2454.TW",
           "symbol": "2454.TW",
-          "weight": 1.25123
+          "weight": 1.25123,
+          "ticker": "2454.TW"
         },
         {
-          "ticker": "2308.TW",
           "symbol": "2308.TW",
-          "weight": 0.79218
+          "weight": 0.79218,
+          "ticker": "2308.TW"
         },
         {
-          "ticker": "005935",
           "symbol": "005935",
-          "weight": 0.7661399999999999
+          "weight": 0.7661399999999999,
+          "ticker": "005935"
         },
         {
-          "ticker": "00939",
           "symbol": "00939",
-          "weight": 0.71453
+          "weight": 0.71453,
+          "ticker": "00939"
         }
       ]
     },
@@ -1429,54 +1429,54 @@
       "issuer": "TD Asset Management Inc",
       "holdings": [
         {
-          "ticker": "NVDA",
           "symbol": "NVDA",
-          "weight": 12.741789
+          "weight": 12.741789,
+          "ticker": "NVDA"
         },
         {
-          "ticker": "AAPL",
           "symbol": "AAPL",
-          "weight": 11.23368
+          "weight": 11.23368,
+          "ticker": "AAPL"
         },
         {
-          "ticker": "MSFT",
           "symbol": "MSFT",
-          "weight": 9.217069
+          "weight": 9.217069,
+          "ticker": "MSFT"
         },
         {
-          "ticker": "AMZN",
           "symbol": "AMZN",
-          "weight": 6.189489699999999
+          "weight": 6.189489699999999,
+          "ticker": "AMZN"
         },
         {
-          "ticker": "GOOGL",
           "symbol": "GOOGL",
-          "weight": 4.91706
+          "weight": 4.91706,
+          "ticker": "GOOGL"
         },
         {
-          "ticker": "AVGO",
           "symbol": "AVGO",
-          "weight": 4.2845897
+          "weight": 4.2845897,
+          "ticker": "AVGO"
         },
         {
-          "ticker": "GOOG",
           "symbol": "GOOG",
-          "weight": 4.2256497
+          "weight": 4.2256497,
+          "ticker": "GOOG"
         },
         {
-          "ticker": "META",
           "symbol": "META",
-          "weight": 3.11727
+          "weight": 3.11727,
+          "ticker": "META"
         },
         {
-          "ticker": "TSLA",
           "symbol": "TSLA",
-          "weight": 2.79083
+          "weight": 2.79083,
+          "ticker": "TSLA"
         },
         {
-          "ticker": "MU",
           "symbol": "MU",
-          "weight": 2.6800001
+          "weight": 2.6800001,
+          "ticker": "MU"
         }
       ]
     },
@@ -1514,54 +1514,54 @@
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
-          "ticker": "JNJ",
           "symbol": "JNJ",
-          "weight": 2.94454
+          "weight": 2.94454,
+          "ticker": "JNJ"
         },
         {
-          "ticker": "TDY",
           "symbol": "TDY",
-          "weight": 2.78691
+          "weight": 2.78691,
+          "ticker": "TDY"
         },
         {
-          "ticker": "COR",
           "symbol": "COR",
-          "weight": 2.77304
+          "weight": 2.77304,
+          "ticker": "COR"
         },
         {
-          "ticker": "GLW",
           "symbol": "GLW",
-          "weight": 2.6795499
+          "weight": 2.6795499,
+          "ticker": "GLW"
         },
         {
-          "ticker": "CSCO",
           "symbol": "CSCO",
-          "weight": 2.53493
+          "weight": 2.53493,
+          "ticker": "CSCO"
         },
         {
-          "ticker": "CBOE",
           "symbol": "CBOE",
-          "weight": 2.15326
+          "weight": 2.15326,
+          "ticker": "CBOE"
         },
         {
-          "ticker": "NOC",
           "symbol": "NOC",
-          "weight": 2.1357201
+          "weight": 2.1357201,
+          "ticker": "NOC"
         },
         {
-          "ticker": "MSI",
           "symbol": "MSI",
-          "weight": 2.1096202
+          "weight": 2.1096202,
+          "ticker": "MSI"
         },
         {
-          "ticker": "ED",
           "symbol": "ED",
-          "weight": 1.95839
+          "weight": 1.95839,
+          "ticker": "ED"
         },
         {
-          "ticker": "AKAM",
           "symbol": "AKAM",
-          "weight": 1.9466601
+          "weight": 1.9466601,
+          "ticker": "AKAM"
         }
       ]
     },
@@ -1582,54 +1582,54 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "ITOT",
           "symbol": "ITOT",
-          "weight": 48.003718
+          "weight": 48.003718,
+          "ticker": "ITOT"
         },
         {
-          "ticker": "IVV",
           "symbol": "IVV",
-          "weight": 46.360079999999996
+          "weight": 46.360079999999996,
+          "ticker": "IVV"
         },
         {
-          "ticker": "IJH",
           "symbol": "IJH",
-          "weight": 2.4814800000000004
+          "weight": 2.4814800000000004,
+          "ticker": "IJH"
         },
         {
-          "ticker": "IJR",
           "symbol": "IJR",
-          "weight": 1.0112700000000001
+          "weight": 1.0112700000000001,
+          "ticker": "IJR"
         },
         {
-          "ticker": "UBER",
           "symbol": "UBER",
-          "weight": 0.07257999999999999
+          "weight": 0.07257999999999999,
+          "ticker": "UBER"
         },
         {
-          "ticker": "SNOW",
           "symbol": "SNOW",
-          "weight": 0.07066
+          "weight": 0.07066,
+          "ticker": "SNOW"
         },
         {
-          "ticker": "AVGO",
           "symbol": "AVGO",
-          "weight": 0.066799996
+          "weight": 0.066799996,
+          "ticker": "AVGO"
         },
         {
-          "ticker": "CRWD",
           "symbol": "CRWD",
-          "weight": 0.064539997
+          "weight": 0.064539997,
+          "ticker": "CRWD"
         },
         {
-          "ticker": "FERG",
           "symbol": "FERG",
-          "weight": 0.06255
+          "weight": 0.06255,
+          "ticker": "FERG"
         },
         {
-          "ticker": "NET",
           "symbol": "NET",
-          "weight": 0.05993
+          "weight": 0.05993,
+          "ticker": "NET"
         }
       ]
     },
@@ -1650,34 +1650,34 @@
       "issuer": "BlackRock Asset Management Canada Ltd",
       "holdings": [
         {
-          "ticker": "IVV",
           "symbol": "IVV",
-          "weight": 51.165956
+          "weight": 51.165956,
+          "ticker": "IVV"
         },
         {
-          "ticker": "XEF.TO",
           "symbol": "XEF.TO",
-          "weight": 22.690160000000002
+          "weight": 22.690160000000002,
+          "ticker": "XEF.TO"
         },
         {
-          "ticker": "XEC.TO",
           "symbol": "XEC.TO",
-          "weight": 12.77759
+          "weight": 12.77759,
+          "ticker": "XEC.TO"
         },
         {
-          "ticker": "ITOT",
           "symbol": "ITOT",
-          "weight": 8.24514
+          "weight": 8.24514,
+          "ticker": "ITOT"
         },
         {
-          "ticker": "IJH",
           "symbol": "IJH",
-          "weight": 3.19833
+          "weight": 3.19833,
+          "ticker": "IJH"
         },
         {
-          "ticker": "IJR",
           "symbol": "IJR",
-          "weight": 1.8962400000000001
+          "weight": 1.8962400000000001,
+          "ticker": "IJR"
         }
       ]
     }
