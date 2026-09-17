@@ -1,0 +1,53 @@
+name: Repair Radar Data Payload
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/repair-data-payload.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Trim technical history
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ("canada.json", "india.json"):
+              path=Path("data")/name
+              data=json.loads(path.read_text(encoding="utf-8"))
+              for stock in data.get("stocks",[]):
+                  technical=stock.get("technical") or {}
+                  history=technical.get("history")
+                  if isinstance(history,list):
+                      technical["history"]=history[-320:]
+                      technical["historyDays"]=len(technical["history"])
+                  stock["technical"]=technical
+              data["technicalEnrichment"]=(data.get("technicalEnrichment") or {}) | {"storedDays":320}
+              path.write_text(json.dumps(data,separators=(",",":"),ensure_ascii=False),encoding="utf-8")
+              print(name, path.stat().st_size, "bytes")
+          PY
+      - name: Validate payload
+        run: |
+          python - <<'PY'
+          import json
+          for name in ("canada.json","india.json"):
+              data=json.load(open("data/"+name,encoding="utf-8"))
+              assert len(data.get("stocks",[])) >= 100
+              assert all(len((s.get("technical") or {}).get("history",[])) <= 320 for s in data["stocks"])
+              print(name,"OK",len(data["stocks"]),"stocks")
+          PY
+      - name: Commit repaired data
+        run: |
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add data/canada.json data/india.json
+          git commit -m "Reduce radar data payload for mobile loading" || exit 0
+          git push
