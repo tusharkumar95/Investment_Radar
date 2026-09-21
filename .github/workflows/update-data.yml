@@ -158,6 +158,29 @@ jobs:
               print(f"{market}: "+", ".join(f"{k} {v}/{total}" for k,v in checks.items()))
           PY
 
+      - name: Build lightweight radar payloads
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for market in ("canada", "india"):
+              source=Path(f"data/{market}.json")
+              data=json.loads(source.read_text(encoding="utf-8"))
+              histories={}
+              for stock in data.get("stocks", []):
+                  ticker=stock.get("ticker") or stock.get("symbol") or stock.get("id")
+                  technical=stock.get("technical") or {}
+                  histories[ticker]={"history":technical.get("history",[])} if ticker else None
+                  if ticker and "history" in technical:
+                      technical.pop("history",None)
+                  if ticker:
+                      technical["historyAvailable"]=bool(histories[ticker] and histories[ticker]["history"])
+              slim=Path(f"data/{market}_radar.json")
+              slim.write_text(json.dumps(data,separators=(",",":"),ensure_ascii=False),encoding="utf-8")
+              Path(f"data/history_{market}.json").write_text(json.dumps({k:v for k,v in histories.items() if v},separators=(",",":"),ensure_ascii=False),encoding="utf-8")
+              print(f"Built lightweight {market} radar payload")
+          PY
+
       - name: Commit updated data and engine
         run: |
           git config user.name "Investment Radar"
