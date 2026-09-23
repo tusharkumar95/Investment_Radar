@@ -1029,6 +1029,7 @@ def calculate_cagr_from_series(
 \
 \
 \
+\
 def build_fundamentals(info, income, balance, cashflow):
     revenue = first_valid(statement_latest(income, ["Total Revenue", "Operating Revenue", "Revenue"]), info.get("totalRevenue"))
     net_income = first_valid(statement_latest(income, ["Net Income", "Net Income Common Stockholders", "Net Income Including Noncontrolling Interests"]), info.get("netIncomeToCommon"))
