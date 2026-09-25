@@ -140,8 +140,29 @@ window.openInvestmentByTicker = function(ticker) {
     const psychology =
         psychologyAnalysis(enrichedInvestment);
 
-    const scored =
-        scoreInvestment(enrichedInvestment);
+    const decision =
+        typeof window.getRadarDecision === "function"
+            ? window.getRadarDecision(enrichedInvestment, currentView)
+            : null;
+
+    const fallbackScore =
+        currentView === "Short Term" && typeof window.shortTermScore === "function"
+            ? window.shortTermScore(enrichedInvestment)
+            : typeof window.longTermScore === "function"
+                ? window.longTermScore(enrichedInvestment)
+                : 50;
+
+    const scored = decision
+        ? {
+            score: decision.score,
+            verdict: decision.verdict,
+            dataQuality: { confidence: decision.confidence?.score ?? 0 }
+        }
+        : {
+            score: fallbackScore,
+            verdict: fallbackScore >= 85 ? "STRONG BUY" : fallbackScore >= 75 ? "BUY" : fallbackScore >= 65 ? "ACCUMULATE" : fallbackScore >= 50 ? "WATCH" : fallbackScore >= 35 ? "WAIT" : "AVOID",
+            dataQuality: { confidence: 0 }
+        };
 
 
     const radar =
