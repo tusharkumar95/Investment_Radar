@@ -137,6 +137,27 @@
         return section;
     }
 
+    function scoreExplanation(stock) {
+        const d = typeof window.getRadarDecision === "function" ? window.getRadarDecision(stock, currentView) : null;
+        const parts = getBreakdown(stock).filter(x => Number.isFinite(Number(x[1])));
+        if (!parts.length) return null;
+        const sorted = [...parts].sort((a,b) => Number(b[1])-Number(a[1]));
+        const strengths = sorted.slice(0,2);
+        const risks = sorted.slice(-2).reverse();
+        const label = x => `${x[0]} ${Math.round(Number(x[1]))}/100`;
+        const section = document.createElement("section");
+        section.className = "detail-section radar-score-explanation";
+        section.innerHTML = `<div class="section-title">What Is Driving The Score?</div>
+            <div class="metric-grid">
+                <div class="metric"><span class="metric-label">Strongest Factors</span><span class="metric-value">${strengths.map(label).join(" · ")}</span></div>
+                <div class="metric"><span class="metric-label">Main Weaknesses</span><span class="metric-value">${risks.map(label).join(" · ")}</span></div>
+            </div>
+            <p class="investment-thesis" style="margin-top:14px;">${currentView === "Long Term"
+                ? "Long-term mode emphasizes business quality, valuation and durable growth. Sector-aware weights adjust the importance of each factor."
+                : "Short-term mode emphasizes momentum, price action and market trend while still checking valuation and fundamentals."} ${d ? d.reason : ""}</p>`;
+        return section;
+    }
+
     function injectInsights(stock) {
         const detail = document.getElementById("detailView");
         if (!detail || detail.style.display === "none" || !stock) return;
@@ -148,7 +169,7 @@
         const section = document.createElement("section"); section.className = "detail-section radar-score-breakdown";
         section.innerHTML = `<div class="section-title">Radar Score Breakdown</div>${breakdown.map(item => bar(item[0], item[1], item[2])).join("")}<p class="investment-thesis" style="margin-top:6px;">${currentView === "Long Term" ? "Weights adapt modestly to the business model/sector." : "Weights follow the agreed short-term model."} Missing metrics reduce confidence rather than automatically becoming zero.</p>`;
         const firstSection = detail.querySelector(".detail-section"); if (firstSection) firstSection.after(section); else detail.appendChild(section);
-        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const qp = qualityPriceSection(stock); if (qp) (snapshot || section).after(qp);
+        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const explanation = scoreExplanation(stock); if (explanation) (snapshot || section).after(explanation);\n        const qp = qualityPriceSection(stock); if (qp) (explanation || snapshot || section).after(qp);
         const decisionSection = detail.querySelector(".detail-section");
         if (decisionSection && confidence !== null) {
             const confidenceMetric = Array.from(decisionSection.querySelectorAll(".metric")).find(metric => { const label=metric.querySelector(".metric-label"); return label && label.textContent.trim().toLowerCase()==="data confidence"; });
