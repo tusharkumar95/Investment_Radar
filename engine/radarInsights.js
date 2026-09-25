@@ -108,6 +108,35 @@
         return section;
     }
 
+    function decisionSnapshot(stock) {
+        if (typeof window.getRadarDecision !== "function") return null;
+        const d = window.getRadarDecision(stock, currentView);
+        const v = d.valuation || {};
+        const money = value => {
+            const n = Number(value);
+            if (!Number.isFinite(n) || n <= 0) return "—";
+            const currency = currentMarket === "India" ? "₹" : "$";
+            return currency + n.toLocaleString(undefined,{maximumFractionDigits:2});
+        };
+        const mos = Number(v.marginOfSafety);
+        const section = document.createElement("section");
+        section.className = "detail-section radar-decision-snapshot";
+        section.innerHTML = `<div class="section-title">Decision Snapshot</div>
+            <div class="metric-grid">
+                <div class="metric"><span class="metric-label">Current Action</span><span class="metric-value">${d.verdict}</span></div>
+                <div class="metric"><span class="metric-label">Price Zone</span><span class="metric-value">${d.priceZone}</span></div>
+                <div class="metric"><span class="metric-label">Business Quality</span><span class="metric-value">${Math.round(d.qualityScore)}/100</span></div>
+                <div class="metric"><span class="metric-label">Price Attractiveness</span><span class="metric-value">${Math.round(d.priceScore)}/100</span></div>
+                <div class="metric"><span class="metric-label">Fair Value Range</span><span class="metric-value">${money(v.fairValueLow)} – ${money(v.fairValueHigh)}</span></div>
+                <div class="metric"><span class="metric-label">Attractive Entry</span><span class="metric-value">${money(v.buyPrice)}</span></div>
+                <div class="metric"><span class="metric-label">Strong Opportunity</span><span class="metric-value">${money(v.strongBuyPrice)}</span></div>
+                <div class="metric"><span class="metric-label">Margin of Safety</span><span class="metric-value">${Number.isFinite(mos) ? mos.toFixed(1)+"%" : "—"}</span></div>
+                <div class="metric"><span class="metric-label">Data Confidence</span><span class="metric-value">${Math.round(d.confidence.score)}% · ${d.confidence.label}</span></div>
+            </div>
+            <p class="investment-thesis" style="margin-top:14px;">${d.reason} Fair value is a modelled range, not a precise price target.</p>`;
+        return section;
+    }
+
     function injectInsights(stock) {
         const detail = document.getElementById("detailView");
         if (!detail || detail.style.display === "none" || !stock) return;
@@ -119,7 +148,7 @@
         const section = document.createElement("section"); section.className = "detail-section radar-score-breakdown";
         section.innerHTML = `<div class="section-title">Radar Score Breakdown</div>${breakdown.map(item => bar(item[0], item[1], item[2])).join("")}<p class="investment-thesis" style="margin-top:6px;">${currentView === "Long Term" ? "Weights adapt modestly to the business model/sector." : "Weights follow the agreed short-term model."} Missing metrics reduce confidence rather than automatically becoming zero.</p>`;
         const firstSection = detail.querySelector(".detail-section"); if (firstSection) firstSection.after(section); else detail.appendChild(section);
-        const qp = qualityPriceSection(stock); if (qp) section.after(qp);
+        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const qp = qualityPriceSection(stock); if (qp) (snapshot || section).after(qp);
         const decisionSection = detail.querySelector(".detail-section");
         if (decisionSection && confidence !== null) {
             const confidenceMetric = Array.from(decisionSection.querySelectorAll(".metric")).find(metric => { const label=metric.querySelector(".metric-label"); return label && label.textContent.trim().toLowerCase()==="data confidence"; });
@@ -147,7 +176,4 @@
         });
     });
 
-    loadScript("engine/scoringV2.js", function () {
-        if (typeof window.renderRadar === "function") setTimeout(window.renderRadar, 0);
-    });
 })();
