@@ -158,6 +158,33 @@
         return section;
     }
 
+    function whatWouldChange(stock) {
+        const d = typeof window.getRadarDecision === "function" ? window.getRadarDecision(stock, currentView) : null;
+        if (!d) return null;
+        const v=d.valuation||{}, t=stock.technical||{}, f=stock.fundamentals||{};
+        const price=safeNumber(stock.price), buy=safeNumber(v.buyPrice), strong=safeNumber(v.strongBuyPrice), sma50=safeNumber(t.sma50), sma200=safeNumber(t.sma200), m3=safeNumber(t.momentum3M);
+        const items=[];
+        if(currentView==="Long Term"){
+            if(price!==null&&buy!==null&&price>buy) items.push(`Price falls to the attractive-entry area near ${currentMarket==="India"?"₹":"$"}${buy.toLocaleString(undefined,{maximumFractionDigits:2})} or fair value rises as fundamentals improve.`);
+            else if(price!==null&&buy!==null&&price<=buy) items.push("Price is already in the attractive-entry area; stronger business quality or confidence would improve conviction.");
+            const roe=safeNumber(f.roe), growth=safeNumber(f.epsGrowth5Y), debt=safeNumber(f.debtToEquity);
+            if(roe!==null&&roe<15) items.push("ROE improving toward 15%+ would strengthen the quality case.");
+            if(growth!==null&&growth<10) items.push("Sustained EPS growth moving toward 10%+ would strengthen the growth case.");
+            if(debt!==null&&debt>1) items.push("Lower debt-to-equity would reduce balance-sheet risk.");
+            if(strong!==null&&price!==null&&price>strong) items.push(`A price near ${currentMarket==="India"?"₹":"$"}${strong.toLocaleString(undefined,{maximumFractionDigits:2})} would enter the model's strong-opportunity zone, assuming fundamentals remain intact.`);
+        }else{
+            if(price!==null&&sma50!==null&&price<sma50) items.push("Price moving back above the 50-day average would improve price action.");
+            if(sma50!==null&&sma200!==null&&sma50<=sma200) items.push("The 50-day average moving above the 200-day average would confirm a stronger trend.");
+            if(m3!==null&&m3<5) items.push("3-month momentum improving above roughly +5% would strengthen the momentum signal.");
+            if(!items.length) items.push("Momentum and trend are already constructive; maintaining them without a sharp valuation deterioration would support the setup.");
+        }
+        if((d.confidence?.score??100)<55) items.push("Better data coverage is needed before treating a higher score as high-conviction.");
+        const section=document.createElement("section");
+        section.className="detail-section radar-change-triggers";
+        section.innerHTML=`<div class="section-title">What Would Make This More Attractive?</div><div class="investment-thesis">${items.slice(0,4).map(x=>`<div style="margin:0 0 10px;">• ${x}</div>`).join("")}</div><p style="font-size:12px;color:#7a8590;margin-top:12px;">These are model triggers, not predictions or guaranteed buy levels.</p>`;
+        return section;
+    }
+
     function injectInsights(stock) {
         const detail = document.getElementById("detailView");
         if (!detail || detail.style.display === "none" || !stock) return;
@@ -169,7 +196,7 @@
         const section = document.createElement("section"); section.className = "detail-section radar-score-breakdown";
         section.innerHTML = `<div class="section-title">Radar Score Breakdown</div>${breakdown.map(item => bar(item[0], item[1], item[2])).join("")}<p class="investment-thesis" style="margin-top:6px;">${currentView === "Long Term" ? "Weights adapt modestly to the business model/sector." : "Weights follow the agreed short-term model."} Missing metrics reduce confidence rather than automatically becoming zero.</p>`;
         const firstSection = detail.querySelector(".detail-section"); if (firstSection) firstSection.after(section); else detail.appendChild(section);
-        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const explanation = scoreExplanation(stock); if (explanation) (snapshot || section).after(explanation);\n        const qp = qualityPriceSection(stock); if (qp) (explanation || snapshot || section).after(qp);
+        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const explanation = scoreExplanation(stock); if (explanation) (snapshot || section).after(explanation);\n        const qp = qualityPriceSection(stock); if (qp) (explanation || snapshot || section).after(qp);\n        const triggers = whatWouldChange(stock); if (triggers) (qp || explanation || snapshot || section).after(triggers);
         const decisionSection = detail.querySelector(".detail-section");
         if (decisionSection && confidence !== null) {
             const confidenceMetric = Array.from(decisionSection.querySelectorAll(".metric")).find(metric => { const label=metric.querySelector(".metric-label"); return label && label.textContent.trim().toLowerCase()==="data confidence"; });
