@@ -842,15 +842,19 @@
 
 
 
-                <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;margin:-10px 0 14px;">
-            <a href="smallcap.html" style="display:inline-block;background:#17202a;color:#fff;border-radius:13px;padding:10px 14px;font-weight:800;text-decoration:none;">🚀 Small Cap / Sky Rocket</a>
-            <a href="etf.html" style="display:inline-block;background:#fff;color:#263442;border:1px solid #d8dde3;border-radius:13px;padding:10px 14px;font-weight:800;text-decoration:none;">📊 ETF Radar</a>
-            <a href="portfolio.html" style="display:inline-block;background:#fff;color:#263442;border:1px solid #d8dde3;border-radius:13px;padding:10px 14px;font-weight:800;text-decoration:none;">💼 Portfolio</a>
-        </div>
-
-<div style="display:flex;justify-content:flex-end;margin:-10px 0 18px;">
-            <a href="custom.html" style="display:inline-block;background:#ffffff;color:#263442;border:1px solid #d8dde3;border-radius:14px;padding:11px 16px;font-weight:800;text-decoration:none;box-shadow:0 5px 15px rgba(20,30,40,0.05);">⭐ My Stocks / Custom</a>
-        </div>
+        <section id="homeDashboard" style="margin:4px 0 22px;">
+            <div style="display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:10px;">
+                <div><div style="font-size:12px;font-weight:900;letter-spacing:1.2px;color:#7b8590;">MY RADAR</div><div style="font-size:24px;font-weight:850;letter-spacing:-.5px;">Investment Dashboard</div></div>
+                <div id="dashboardMarket" style="font-size:13px;color:#68737e;font-weight:800;">Canada</div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:9px;">
+                <button id="dashWatch" type="button" onclick="radarFilter='Watchlist';render()" style="text-align:left;border:1px solid #e0e5ea;background:#fff;border-radius:17px;padding:14px;cursor:pointer;"><span style="display:block;color:#7b8590;font-size:11px;font-weight:900;">WATCHLIST</span><strong id="dashWatchCount" style="display:block;font-size:25px;margin:5px 0;">0</strong><span style="font-size:12px;color:#68737e;">Saved stocks</span></button>
+                <a href="portfolio.html" style="text-decoration:none;color:inherit;border:1px solid #e0e5ea;background:#fff;border-radius:17px;padding:14px;"><span style="display:block;color:#7b8590;font-size:11px;font-weight:900;">PORTFOLIO</span><strong id="dashPortfolioCount" style="display:block;font-size:25px;margin:5px 0;">0</strong><span style="font-size:12px;color:#68737e;">Tracked holdings →</span></a>
+                <a href="etf.html" style="text-decoration:none;color:inherit;border:1px solid #e0e5ea;background:#fff;border-radius:17px;padding:14px;"><span style="display:block;color:#7b8590;font-size:11px;font-weight:900;">ETF RADAR</span><strong style="display:block;font-size:25px;margin:5px 0;">ETF</strong><span style="font-size:12px;color:#68737e;">Overlap & funds →</span></a>
+                <a href="smallcap.html" style="text-decoration:none;color:inherit;border:1px solid #e0e5ea;background:#fff;border-radius:17px;padding:14px;"><span style="display:block;color:#7b8590;font-size:11px;font-weight:900;">SMALL CAP</span><strong style="display:block;font-size:25px;margin:5px 0;">V2</strong><span style="font-size:12px;color:#68737e;">Growth & risk screen →</span></a>
+                <a href="custom.html" style="text-decoration:none;color:inherit;border:1px solid #e0e5ea;background:#fff;border-radius:17px;padding:14px;"><span style="display:block;color:#7b8590;font-size:11px;font-weight:900;">CUSTOM</span><strong style="display:block;font-size:25px;margin:5px 0;">＋</strong><span style="font-size:12px;color:#68737e;">Analyze a ticker →</span></a>
+            </div>
+        </section>
 
         <!-- =====================================
              RADAR VIEW
@@ -988,7 +992,7 @@
     <script src="detail.js?v=20260924"></script>
 
 
-    <script src="app.js?v=20260928fix2"></script>
+    <script src="app.js?v=20261001dashboard"></script>
     <script src="engine/radarInsights.js?v=20260924"></script>
 
 
