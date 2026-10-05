@@ -9,7 +9,7 @@
         if(holdings.length>=20) score+=5;
         if(yieldPct!=null&&yieldPct>0) score+=3;
         score=Math.max(0,Math.min(100,Math.round(score)));
-        const verdict=score>=85?"Strong Buy":score>=75?"Buy":score>=65?"Accumulate":score>=50?"Watch":"Avoid";
+        const verdict=score>=85?"Excellent Fit":score>=75?"Strong Fit":score>=65?"Good Fit":score>=50?"Review":"Weak Fit";
         return {...etf,score,verdict};
     }
     function holdingKey(x){ return String(x.symbol||x.ticker||'').toUpperCase(); }
