@@ -196,7 +196,10 @@
         const section = document.createElement("section"); section.className = "detail-section radar-score-breakdown";
         section.innerHTML = `<div class="section-title">Radar Score Breakdown</div>${breakdown.map(item => bar(item[0], item[1], item[2])).join("")}<p class="investment-thesis" style="margin-top:6px;">${currentView === "Long Term" ? "Weights adapt modestly to the business model/sector." : "Weights follow the agreed short-term model."} Missing metrics reduce confidence rather than automatically becoming zero.</p>`;
         const firstSection = detail.querySelector(".detail-section"); if (firstSection) firstSection.after(section); else detail.appendChild(section);
-        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);\n        const explanation = scoreExplanation(stock); if (explanation) (snapshot || section).after(explanation);\n        const qp = qualityPriceSection(stock); if (qp) (explanation || snapshot || section).after(qp);\n        const triggers = whatWouldChange(stock); if (triggers) (qp || explanation || snapshot || section).after(triggers);
+        const snapshot = decisionSnapshot(stock); if (snapshot) section.after(snapshot);
+        const explanation = scoreExplanation(stock); if (explanation) (snapshot || section).after(explanation);
+        const qp = qualityPriceSection(stock); if (qp) (explanation || snapshot || section).after(qp);
+        const triggers = whatWouldChange(stock); if (triggers) (qp || explanation || snapshot || section).after(triggers);
         const decisionSection = detail.querySelector(".detail-section");
         if (decisionSection && confidence !== null) {
             const confidenceMetric = Array.from(decisionSection.querySelectorAll(".metric")).find(metric => { const label=metric.querySelector(".metric-label"); return label && label.textContent.trim().toLowerCase()==="data confidence"; });
