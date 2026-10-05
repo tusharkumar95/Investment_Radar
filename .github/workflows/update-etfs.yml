@@ -2,6 +2,8 @@ name: Update ETF Radar
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "15 12 * * 1-5"
   push:
     branches: [main]
     paths:
