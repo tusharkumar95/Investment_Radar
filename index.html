@@ -837,6 +837,26 @@
             #homeDashboard > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
             #watchSummary { grid-template-columns: 1fr 1fr !important; }
         }
+
+        /* v1 mobile release overrides */
+        @media (max-width:700px){
+            html{-webkit-text-size-adjust:100%}
+            html,body{overflow-x:hidden}
+            body{padding-bottom:env(safe-area-inset-bottom)}
+            .app{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:calc(32px + env(safe-area-inset-bottom))}
+            button,input,select{min-height:44px}
+            input,select{font-size:16px!important}
+            #homeDashboard>div:nth-of-type(2){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+            #homeDashboard a,#homeDashboard button{min-width:0;overflow-wrap:anywhere}
+            #watchSummary{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+            .investment-info,.detail-header>div{min-width:0}
+            .investment-info h3,.investment-info p,.detail-header h1{overflow-wrap:anywhere}
+        }
+        @media (max-width:430px){
+            #homeDashboard>div:nth-of-type(2){grid-template-columns:1fr!important}
+            .stats-grid{grid-template-columns:1fr 1fr}
+            #watchSummary{grid-template-columns:1fr 1fr!important}
+        }
 </style>
 
 </head>
