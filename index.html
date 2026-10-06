@@ -799,6 +799,40 @@
 
 @media(max-width:700px){html{-webkit-text-size-adjust:100%}input,select,textarea{font-size:16px!important}.investment{display:flex;align-items:flex-start}.investment-actions{flex-wrap:wrap}.detail-section{overflow:hidden}#watchSummary{grid-template-columns:repeat(2,minmax(0,1fr))!important}#watchSummary>div{min-width:0;padding:10px!important}#watchSummary small{font-size:10px}#watchSummary div div{font-size:21px!important}}
 @media(max-width:390px){#watchSummary{grid-template-columns:1fr 1fr!important}.investment{padding:15px}.score{font-size:29px}}
+
+        /* Mobile / iPhone release polish */
+        @media (max-width: 700px) {
+            html { -webkit-text-size-adjust: 100%; }
+            html, body { overflow-x: hidden; }
+            body { padding-bottom: env(safe-area-inset-bottom); }
+            .app { padding: 12px max(12px,env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)); }
+            button, select, input, .market-btn, .view-btn { min-height: 44px; }
+            .hero { padding: 20px 17px; }
+            .hero h1 { font-size: 29px; line-height: 1.08; }
+            .hero p { font-size: 15px; line-height: 1.45; }
+            .stats-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+            .stat-card { padding: 14px; min-width: 0; }
+            .stat-card strong { font-size: 27px; }
+            .investment { padding: 15px; }
+            .investment-info { min-width: 0; }
+            .investment-info h3 { font-size: 19px; overflow-wrap: anywhere; }
+            .score { font-size: 27px; }
+            #homeDashboard > div:nth-of-type(2) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+            #homeDashboard a, #homeDashboard button { min-width: 0; overflow-wrap: anywhere; }
+            #attentionPanel { padding: 13px !important; }
+            #watchSummary { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+            .detail-header { padding: 18px; }
+            .detail-header h1 { font-size: 27px; overflow-wrap: anywhere; }
+            .detail-section { padding: 16px; }
+        }
+        @media (max-width: 390px) {
+            .app { padding-left: 10px; padding-right: 10px; }
+            .market-btn, .view-btn { font-size: 13px; padding: 10px 6px; }
+            .hero h1 { font-size: 27px; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            #homeDashboard > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
+            #watchSummary { grid-template-columns: 1fr 1fr !important; }
+        }
 </style>
 
 </head>
