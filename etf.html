@@ -10,6 +10,9 @@
 @media(max-width:390px){.detail-grid{grid-template-columns:1fr}.holding{grid-template-columns:minmax(0,1fr) 62px}}
 
 @media(max-width:700px){a,button,input,select{-webkit-tap-highlight-color:transparent}button,a,.btn,.back,.nav,.tab,.market,.run,.add{touch-action:manipulation}input,select{font-size:16px!important}}
+
+/* v1 mobile release overrides */
+@media(max-width:700px){html{-webkit-text-size-adjust:100%}html,body{overflow-x:hidden}body{padding-bottom:env(safe-area-inset-bottom)}a,button,input,select{-webkit-tap-highlight-color:transparent;touch-action:manipulation}button,input,select,.back,.nav,.tab,.market,.run,.add,.btn{min-height:44px}input,select{font-size:16px!important}}
 </style>
 </head>
 <body>
