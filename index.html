@@ -779,7 +779,24 @@
 
         }
 
-    </style>
+    
+        @media (max-width: 700px) {
+            html,body{overflow-x:hidden}
+            body{padding-bottom:env(safe-area-inset-bottom)}
+            .app{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+            button,input,select{min-height:44px}
+            #homeDashboard>div:first-child{align-items:flex-start!important;flex-direction:column}
+            #homeDashboard>div:nth-child(2){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+            #homeDashboard a,#homeDashboard button{min-width:0}
+            #attentionPanel{padding:12px!important}
+            .investment{gap:12px}
+            .investment-info{overflow:hidden}
+            .investment-info h3,.investment-info p{overflow-wrap:anywhere}
+        }
+        @media (max-width: 390px) {
+            #homeDashboard>div:nth-child(2){grid-template-columns:1fr!important}
+        }
+</style>
 
 </head>
 
