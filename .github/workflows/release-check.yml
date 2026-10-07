@@ -1,0 +1,62 @@
+name: Investment Radar Release Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "app.js"
+      - "detail.js"
+      - "portfolio.html"
+      - "etf.html"
+      - "smallcap.html"
+      - "custom.html"
+      - "engine/**"
+      - "scripts/release_check.py"
+      - "scripts/enrich_etf_sectors.py"
+      - "data/canada_radar.json"
+      - "data/india_radar.json"
+      - "data/etf_canada.json"
+      - "data/etf_india.json"
+      - "data/smallcap_universe.json"
+      - ".github/workflows/update-data.yml"
+      - ".github/workflows/update-etfs.yml"
+      - ".github/workflows/update-smallcap.yml"
+      - ".github/workflows/custom-stock.yml"
+      - ".github/workflows/release-check.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: investment-radar-release-check
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Static and data release checks
+        run: python scripts/release_check.py
+
+      - name: JavaScript syntax checks
+        shell: bash
+        run: |
+          node --check app.js
+          node --check detail.js
+          for file in engine/*.js; do
+            echo "Checking $file"
+            node --check "$file"
+          done
+
+      - name: Release result
+        run: echo "Investment Radar v1 source/data release checks passed."
