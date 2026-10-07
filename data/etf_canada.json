@@ -1,84 +1,15 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-10-07T03:41:54.856727+00:00",
-  "count": 28,
+  "updatedAt": "2026-10-07T18:59:02.944790+00:00",
+  "count": 27,
   "etfs": [
-    {
-      "ticker": "VFV.TO",
-      "name": "Vanguard S&P 500 Index ETF",
-      "market": "Canada",
-      "category": "Vanguard Investments Canada Inc",
-      "currency": "CAD",
-      "price": 197.0,
-      "aum": 35156484096.0,
-      "expenseRatio": null,
-      "yield": 0.84,
-      "threeYearReturn": 25.100319999999996,
-      "fiveYearReturn": 16.47823,
-      "beta3Y": 0.99,
-      "inception": 1351814400,
-      "issuer": "Vanguard Investments Canada Inc",
-      "holdings": [
-        {
-          "symbol": "VOO",
-          "weight": 100.0,
-          "ticker": "Vanguard S&P 500 ETF"
-        }
-      ],
-      "sectors": [
-        {
-          "sector": "Technology",
-          "weight": 37.43
-        },
-        {
-          "sector": "Financial Services",
-          "weight": 12.19
-        },
-        {
-          "sector": "Communication Services",
-          "weight": 9.91
-        },
-        {
-          "sector": "Consumer Cyclical",
-          "weight": 9.58
-        },
-        {
-          "sector": "Healthcare",
-          "weight": 9.1
-        },
-        {
-          "sector": "Industrials",
-          "weight": 8.16
-        },
-        {
-          "sector": "Consumer Defensive",
-          "weight": 4.61
-        },
-        {
-          "sector": "Energy",
-          "weight": 3.36
-        },
-        {
-          "sector": "Utilities",
-          "weight": 2.15
-        },
-        {
-          "sector": "Real Estate",
-          "weight": 1.88
-        },
-        {
-          "sector": "Basic Materials",
-          "weight": 1.62
-        }
-      ]
-    },
     {
       "ticker": "XIC.TO",
       "name": "iShares Core S&P/TSX Capped Composite Index ETF",
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 56.89,
+      "price": 56.03,
       "aum": 34336313344.0,
       "expenseRatio": null,
       "yield": 1.94,
@@ -192,7 +123,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 52.06,
+      "price": 51.7,
       "aum": 23859922944.0,
       "expenseRatio": null,
       "yield": 2.3,
@@ -306,7 +237,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 53.04,
+      "price": 52.3,
       "aum": 22478424064.0,
       "expenseRatio": null,
       "yield": 2.12,
@@ -416,7 +347,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 47.68,
+      "price": 46.94,
       "aum": 18366924800.0,
       "expenseRatio": null,
       "yield": 1.97,
@@ -530,7 +461,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 72.435,
+      "price": 71.34,
       "aum": 17754396672.0,
       "expenseRatio": null,
       "yield": 1.96,
@@ -644,7 +575,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 13.39,
+      "price": 13.37,
       "aum": 13261745152.0,
       "expenseRatio": null,
       "yield": 3.47,
@@ -693,7 +624,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 50.36,
+      "price": 50.035,
       "aum": 11588109312.0,
       "expenseRatio": null,
       "yield": 2.23,
@@ -807,7 +738,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 27.3,
+      "price": 27.285,
       "aum": 10595028992.0,
       "expenseRatio": null,
       "yield": 3.49,
@@ -856,7 +787,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 75.69,
+      "price": 74.36,
       "aum": 9002671104.0,
       "expenseRatio": null,
       "yield": 3.1199999999999997,
@@ -966,7 +897,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 22.26,
+      "price": 22.24,
       "aum": 7620145664.0,
       "expenseRatio": null,
       "yield": 3.4000000000000004,
@@ -1015,7 +946,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 45.35,
+      "price": 44.755,
       "aum": 6120181760.0,
       "expenseRatio": null,
       "yield": 3.1199999999999997,
@@ -1109,7 +1040,7 @@
       "market": "Canada",
       "category": "BMO Investments Inc.",
       "currency": "CAD",
-      "price": 58.62,
+      "price": 58.3,
       "aum": 6117772800.0,
       "expenseRatio": null,
       "yield": 1.8599999999999999,
@@ -1219,7 +1150,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 75.83,
+      "price": 75.62,
       "aum": 5508113920.0,
       "expenseRatio": null,
       "yield": 0.22,
@@ -1329,7 +1260,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 51.79,
+      "price": 51.33,
       "aum": 4609872896.0,
       "expenseRatio": null,
       "yield": 1.83,
@@ -1398,7 +1329,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 39.0,
+      "price": 38.57,
       "aum": 4364023808.0,
       "expenseRatio": null,
       "yield": 3.44,
@@ -1512,7 +1443,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 45.28,
+      "price": 44.745,
       "aum": 1235825280.0,
       "expenseRatio": null,
       "yield": 3.0199999,
@@ -1622,7 +1553,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 15.37,
+      "price": 15.35,
       "aum": 1105934080.0,
       "expenseRatio": null,
       "yield": 4.5600000000000005,
@@ -1802,7 +1733,7 @@
       "market": "Canada",
       "category": "Global X Investments Canada Inc.",
       "currency": "CAD",
-      "price": 48.51,
+      "price": 46.94,
       "aum": 217278064.0,
       "expenseRatio": null,
       "yield": null,
@@ -1965,7 +1896,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 121.67,
+      "price": 121.82,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.76,
@@ -2079,7 +2010,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 46.05,
+      "price": 45.7,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.5800001000000001,
@@ -2193,7 +2124,7 @@
       "market": "Canada",
       "category": "TD Asset Management Inc",
       "currency": "CAD",
-      "price": 66.595,
+      "price": 66.62,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.08,
@@ -2291,7 +2222,7 @@
       "market": "Canada",
       "category": "ETF",
       "currency": "CAD",
-      "price": 59.37,
+      "price": 58.35,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.0,
@@ -2309,7 +2240,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 62.685,
+      "price": 62.88,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.67,
@@ -2423,7 +2354,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 81.12,
+      "price": 81.04,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.0199999,
@@ -2537,7 +2468,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 60.45,
+      "price": 60.28,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.2,
@@ -2626,5 +2557,5 @@
       ]
     }
   ],
-  "sectorCoverageEtfs": 24
+  "sectorCoverageEtfs": 23
 }
