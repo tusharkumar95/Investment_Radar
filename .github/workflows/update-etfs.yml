@@ -16,8 +16,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: investment-radar-etf
-  cancel-in-progress: true
+  group: investment-radar-data-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   update-etfs:
