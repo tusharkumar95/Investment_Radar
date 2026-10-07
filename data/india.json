@@ -303531,76 +303531,76 @@
       "exchange": "NSI",
       "quoteType": "EQUITY",
       "industry": "Automobiles",
-      "marketCap": null,
+      "marketCap": 60705742848,
       "averageDailyVolume3Month": 2453455,
       "regularMarketPrice": 151.77,
       "regularMarketChangePercent": 5.242353,
       "trailingPE": 25.94359,
-      "forwardPE": null,
+      "forwardPE": 18.97125,
       "priceToBook": 5.2721715,
       "universe_score": 67.339,
       "screening_penalty": 0,
       "price": {
-        "current": 151.77000427246094,
-        "previousClose": null,
-        "changePercent": null,
-        "currency": null,
-        "exchange": null
+        "current": 151.77,
+        "previousClose": 144.21,
+        "changePercent": 5.2423548991054725,
+        "currency": "INR",
+        "exchange": "NSI"
       },
       "fundamentals": {
         "revenue": 17022814000,
-        "netIncome": null,
+        "netIncome": 2337510912,
         "operatingIncome": 3329221000,
-        "grossProfit": null,
+        "grossProfit": 10362066944,
         "ebitda": 3940204000,
         "freeCashFlow": null,
         "operatingCashFlow": null,
         "capitalExpenditure": null,
-        "cash": null,
-        "totalDebt": null,
+        "cash": 1064174976,
+        "totalDebt": 1497432960,
         "totalAssets": null,
         "stockholdersEquity": null,
         "revenueGrowth5Y": 1.5274825420253269,
-        "epsGrowth5Y": null,
-        "profitMargin": null,
-        "operatingMargin": 19.557406901115172,
-        "grossMargin": null,
-        "eps": null,
+        "epsGrowth5Y": 6.1,
+        "profitMargin": 8.821999,
+        "operatingMargin": 10.945,
+        "grossMargin": 39.106,
+        "eps": 5.85,
         "roe": null,
         "roic": null,
-        "debtToEquity": null,
+        "debtToEquity": 13.054,
         "interestCoverage": null
       },
       "valuation": {
-        "pe": null,
-        "forwardPE": null,
-        "peg": null,
-        "priceToSales": null,
-        "priceToBook": null,
+        "pe": 25.94359,
+        "forwardPE": 18.97125,
+        "peg": 4.253047540983607,
+        "priceToSales": 2.291026,
+        "priceToBook": 5.2721715,
         "priceToFcf": null,
-        "evToEbitda": null,
-        "evToRevenue": null,
-        "marketCap": null,
-        "enterpriseValue": null,
-        "trailingEps": null,
-        "forwardEps": null,
-        "bookValue": null,
-        "beta": null,
-        "fiftyTwoWeekChange": null
+        "evToEbitda": 15.161,
+        "evToRevenue": 2.313,
+        "marketCap": 60705742848,
+        "enterpriseValue": 61288030208,
+        "trailingEps": 5.85,
+        "forwardEps": 8,
+        "bookValue": 28.787,
+        "beta": 0.294,
+        "fiftyTwoWeekChange": 48.746777
       },
       "ownership": {
-        "insiderOwnership": null,
-        "institutionalOwnership": null,
+        "insiderOwnership": 48.083999999999996,
+        "institutionalOwnership": 5.92,
         "promoterOwnership": null,
         "promoterPledge": null,
         "promoterTrend": null,
         "recentBigInvestors": []
       },
       "dividend": {
-        "yield": null,
-        "rate": null,
-        "payoutRatio": null,
-        "fiveYearAverageYield": null
+        "yield": 1.73,
+        "rate": 2.5,
+        "payoutRatio": 35.900003000000005,
+        "fiveYearAverageYield": 1.55
       },
       "technical": {
         "sma50": 129.7194010925293,
@@ -306995,35 +306995,35 @@
           }
         ]
       },
-      "currentPrice": 151.77000427246094,
-      "currency": null,
-      "pe": null,
+      "currentPrice": 151.77,
+      "currency": "INR",
+      "pe": 25.94359,
       "roe": null,
       "roic": null,
       "revenueGrowth5Y": 1.5274825420253269,
-      "epsGrowth5Y": null,
+      "epsGrowth5Y": 6.1,
       "freeCashFlow": null,
-      "debtToEquity": null,
+      "debtToEquity": 13.054,
       "dataQuality": {
-        "score": 20,
-        "available": 3,
+        "score": 80,
+        "available": 12,
         "total": 15,
         "fields": {
           "price": 1,
           "revenue": 1,
           "revenueGrowth": 1,
-          "eps": 0,
-          "epsGrowth": 0,
-          "profitMargin": 0,
+          "eps": 1,
+          "epsGrowth": 1,
+          "profitMargin": 1,
           "roe": 0,
           "roic": 0,
           "freeCashFlow": 0,
-          "debtToEquity": 0,
-          "pe": 0,
-          "forwardPE": 0,
-          "peg": 0,
-          "institutionalOwnership": 0,
-          "dividendYield": 0
+          "debtToEquity": 1,
+          "pe": 1,
+          "forwardPE": 1,
+          "peg": 1,
+          "institutionalOwnership": 1,
+          "dividendYield": 1
         }
       },
       "ticker": "JAMNAAUTO.NS",
@@ -432475,7 +432475,7 @@
   },
   "dataSummary": {
     "stocks": 100,
-    "averageQuality": 75.6,
+    "averageQuality": 76.2,
     "coverage": {
       "revenue": {
         "count": 100,
@@ -432486,16 +432486,16 @@
         "percent": 100
       },
       "eps": {
-        "count": 99,
-        "percent": 99
+        "count": 100,
+        "percent": 100
       },
       "epsGrowth": {
-        "count": 81,
-        "percent": 81
+        "count": 82,
+        "percent": 82
       },
       "profitMargin": {
-        "count": 99,
-        "percent": 99
+        "count": 100,
+        "percent": 100
       },
       "roe": {
         "count": 21,
@@ -432510,38 +432510,38 @@
         "percent": 4
       },
       "debtToEquity": {
-        "count": 81,
-        "percent": 81
+        "count": 82,
+        "percent": 82
       },
       "pe": {
-        "count": 91,
-        "percent": 91
+        "count": 92,
+        "percent": 92
       },
       "forwardPE": {
-        "count": 91,
-        "percent": 91
+        "count": 92,
+        "percent": 92
       },
       "peg": {
-        "count": 69,
-        "percent": 69
+        "count": 70,
+        "percent": 70
       },
       "institutionalOwnership": {
-        "count": 99,
-        "percent": 99
+        "count": 100,
+        "percent": 100
       },
       "dividendYield": {
-        "count": 99,
-        "percent": 99
+        "count": 100,
+        "percent": 100
       }
     },
-    "updatedAt": "2026-10-07T17:58:28.872491+00:00"
+    "updatedAt": "2026-10-07T18:23:02.978242+00:00"
   },
-  "lastUpdated": "2026-10-07T17:58:28.872514+00:00",
+  "lastUpdated": "2026-10-07T18:23:02.978273+00:00",
   "technicalEnrichment": {
     "historyPeriod": "5y",
     "storedDays": 420,
     "batchSize": 25,
     "stocksWithHistory": 91,
-    "updatedAt": "2026-10-07T17:58:55.784871+00:00"
+    "updatedAt": "2026-10-07T18:23:23.149587+00:00"
   }
 }
