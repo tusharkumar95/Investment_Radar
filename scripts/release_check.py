@@ -61,8 +61,9 @@ def check_portfolio():
         '<option value="India">',
         "CAD and INR are intentionally analyzed separately",
         "Risk & Diversification",
-        "investmentRadarPortfolioV1",
+        "PORTFOLIO.load()",
     )
+    require("engine/portfolio.js", "investmentRadarPortfolioV1", "market", "avgCost")
 
 
 def check_smallcap():
