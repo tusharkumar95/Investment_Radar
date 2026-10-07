@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "scripts/build_etf_universe.py"
+      - "scripts/enrich_etf_sectors.py"
       - "engine/etfRadar.js"
       - "etf.html"
 
@@ -39,10 +40,15 @@ jobs:
         run: git pull --rebase origin main
 
       - name: Syntax check
-        run: python -m py_compile scripts/build_etf_universe.py
+        run: |
+          python -m py_compile scripts/build_etf_universe.py
+          python -m py_compile scripts/enrich_etf_sectors.py
 
       - name: Build ETF universe
         run: python scripts/build_etf_universe.py
+
+      - name: Enrich ETF sector exposure
+        run: python scripts/enrich_etf_sectors.py
 
       - name: Validate ETF data
         run: |
@@ -52,7 +58,9 @@ jobs:
               d=json.load(open(path,encoding="utf-8"))
               if d.get("market") != market: raise SystemExit(f"Wrong market in {path}")
               if len(d.get("etfs", [])) < 10: raise SystemExit(f"Too few ETFs in {path}")
-              print(f"{market}: {len(d['etfs'])} ETFs")
+              with_sectors=sum(bool(e.get("sectors")) for e in d.get("etfs", []))
+              if with_sectors < 1: raise SystemExit(f"No sector exposure available in {path}")
+              print(f"{market}: {len(d['etfs'])} ETFs · sector exposure {with_sectors}/{len(d['etfs'])}")
           print("ETF VALIDATION PASSED")
           PY
 
