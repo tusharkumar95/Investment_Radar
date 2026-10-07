@@ -8,6 +8,12 @@ permissions:
   contents: write
   issues: write
 
+# Custom Analysis also writes generated JSON to main, so it shares the same
+# queue as the scheduled market, ETF, and Small Cap writers.
+concurrency:
+  group: investment-radar-data-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     if: startsWith(github.event.issue.title, '[CUSTOM]')
@@ -68,10 +74,17 @@ jobs:
                   continue
               try:
                   data = json.loads(path.read_text(encoding="utf-8"))
-                  rows.append({"ticker": data.get("ticker"), "name": data.get("name"), "market": data.get("market"), "updatedAt": data.get("custom", {}).get("updatedAt")})
+                  rows.append({
+                      "ticker": data.get("ticker"),
+                      "name": data.get("name"),
+                      "market": data.get("market"),
+                      "updatedAt": data.get("custom", {}).get("updatedAt"),
+                  })
               except Exception:
                   pass
-          (root / "index.json").write_text(json.dumps({"stocks": rows}, indent=2, ensure_ascii=False), encoding="utf-8")
+          (root / "index.json").write_text(
+              json.dumps({"stocks": rows}, indent=2, ensure_ascii=False),encoding="utf-8"
+          )
           print(f"Custom index: {len(rows)} stocks")
           PY
 
@@ -80,8 +93,13 @@ jobs:
           git config user.name "Investment Radar"
           git config user.email "actions@github.com"
           git add data/custom/*.json
-          git diff --cached --quiet || git commit -m "Add custom stock ${{ steps.request.outputs.ticker }}"
-          git push
+          if git diff --cached --quiet; then
+            echo "No custom-stock data changes."
+          else
+            git commit -m "Add custom stock ${{ steps.request.outputs.ticker }}"
+            git pull --rebase origin main
+            git push
+          fi
 
       - name: Report success
         env:
