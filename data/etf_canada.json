@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-10-07T00:43:59.688471+00:00",
+  "updatedAt": "2026-10-07T03:41:54.856727+00:00",
   "count": 28,
   "etfs": [
     {
@@ -23,6 +23,52 @@
           "symbol": "VOO",
           "weight": 100.0,
           "ticker": "Vanguard S&P 500 ETF"
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 37.43
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 12.19
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 9.91
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 9.58
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 9.1
+        },
+        {
+          "sector": "Industrials",
+          "weight": 8.16
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 4.61
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.36
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.15
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.88
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 1.62
         }
       ]
     },
@@ -92,6 +138,52 @@
           "weight": 2.34871,
           "ticker": "Brookfield Corporation"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 33.98
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 18.76
+        },
+        {
+          "sector": "Energy",
+          "weight": 17.09
+        },
+        {
+          "sector": "Industrials",
+          "weight": 9.93
+        },
+        {
+          "sector": "Technology",
+          "weight": 7.99
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.56
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.91
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 2.68
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 1.59
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.34
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.18
+        }
       ]
     },
     {
@@ -159,6 +251,52 @@
           "symbol": "BHP.AX",
           "weight": 0.8918699999999999,
           "ticker": "BHP Group Limited"
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 24.29
+        },
+        {
+          "sector": "Industrials",
+          "weight": 19.39
+        },
+        {
+          "sector": "Technology",
+          "weight": 11.13
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 9.6
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 8.17
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 6.73
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 6.28
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 4.65
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.69
+        },
+        {
+          "sector": "Utilities",
+          "weight": 3.39
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 2.7
         }
       ]
     },
@@ -228,6 +366,48 @@
           "weight": 2.9365899,
           "ticker": "Brookfield Corporation"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 40.38
+        },
+        {
+          "sector": "Energy",
+          "weight": 17.09
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 14.16
+        },
+        {
+          "sector": "Technology",
+          "weight": 9.45
+        },
+        {
+          "sector": "Industrials",
+          "weight": 7.77
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.83
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 2.97
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.44
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 1.72
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 0.19
+        }
       ]
     },
     {
@@ -295,6 +475,52 @@
           "symbol": "BN.TO",
           "weight": 2.3527801,
           "ticker": "Brookfield Corporation"
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 33.96
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 18.94
+        },
+        {
+          "sector": "Energy",
+          "weight": 16.79
+        },
+        {
+          "sector": "Industrials",
+          "weight": 9.99
+        },
+        {
+          "sector": "Technology",
+          "weight": 8.14
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.54
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.89
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 2.66
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 1.57
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.35
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.17
         }
       ]
     },
@@ -364,6 +590,52 @@
           "weight": 2.3471100000000003,
           "ticker": "Brookfield Corporation"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 34.77
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 18.9
+        },
+        {
+          "sector": "Energy",
+          "weight": 17.18
+        },
+        {
+          "sector": "Industrials",
+          "weight": 9.98
+        },
+        {
+          "sector": "Technology",
+          "weight": 8.21
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.43
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 2.54
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.31
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.36
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 1.23
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.09
+        }
       ]
     },
     {
@@ -412,7 +684,8 @@
           "weight": null,
           "ticker": "3 YEAR EARNINGS GROWTH"
         }
-      ]
+      ],
+      "sectors": []
     },
     {
       "ticker": "VIU.TO",
@@ -480,6 +753,52 @@
           "weight": 0.8236201000000001,
           "ticker": "Siemens Aktiengesellschaft"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 23.03
+        },
+        {
+          "sector": "Industrials",
+          "weight": 18.8
+        },
+        {
+          "sector": "Technology",
+          "weight": 16.43
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 8.84
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 7.86
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 6.22
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 5.88
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 3.91
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.4
+        },
+        {
+          "sector": "Utilities",
+          "weight": 3.09
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 2.54
+        }
       ]
     },
     {
@@ -528,7 +847,8 @@
           "weight": null,
           "ticker": "3 YEAR EARNINGS GROWTH"
         }
-      ]
+      ],
+      "sectors": []
     },
     {
       "ticker": "VDY.TO",
@@ -596,6 +916,48 @@
           "weight": 3.5707198000000004,
           "ticker": "TC Energy Corporation"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 58.96
+        },
+        {
+          "sector": "Energy",
+          "weight": 29.14
+        },
+        {
+          "sector": "Utilities",
+          "weight": 3.53
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 2.8
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 2.47
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 2.08
+        },
+        {
+          "sector": "Technology",
+          "weight": 0.38
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 0.32
+        },
+        {
+          "sector": "Industrials",
+          "weight": 0.23
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.09
+        }
       ]
     },
     {
@@ -644,7 +1006,8 @@
           "weight": null,
           "ticker": "3 YEAR EARNINGS GROWTH"
         }
-      ]
+      ],
+      "sectors": []
     },
     {
       "ticker": "XDIV.TO",
@@ -711,6 +1074,32 @@
           "symbol": "QSR.TO",
           "weight": 4.67438,
           "ticker": "Restaurant Brands International Inc."
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 45.59
+        },
+        {
+          "sector": "Energy",
+          "weight": 31.28
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 9.0
+        },
+        {
+          "sector": "Utilities",
+          "weight": 9.0
+        },
+        {
+          "sector": "Industrials",
+          "weight": 2.61
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 2.51
         }
       ]
     },
@@ -780,6 +1169,48 @@
           "weight": 3.14667,
           "ticker": "Metro Inc."
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 26.95
+        },
+        {
+          "sector": "Utilities",
+          "weight": 16.87
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 16.8
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 8.84
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 8.74
+        },
+        {
+          "sector": "Industrials",
+          "weight": 8.63
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 6.18
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 3.99
+        },
+        {
+          "sector": "Energy",
+          "weight": 1.77
+        },
+        {
+          "sector": "Technology",
+          "weight": 1.23
+        }
       ]
     },
     {
@@ -848,6 +1279,48 @@
           "weight": 2.79908,
           "ticker": "Broadcom Inc."
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 59.04
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 12.68
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 11.09
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 6.23
+        },
+        {
+          "sector": "Industrials",
+          "weight": 4.08
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 4.01
+        },
+        {
+          "sector": "Utilities",
+          "weight": 1.14
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 1.0
+        },
+        {
+          "sector": "Energy",
+          "weight": 0.53
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 0.21
+        }
       ]
     },
     {
@@ -870,6 +1343,52 @@
           "symbol": "VWO",
           "weight": 100.0,
           "ticker": "Vanguard FTSE Emerging Markets Index Fund ETF Shares"
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 30.28
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 20.58
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 10.47
+        },
+        {
+          "sector": "Industrials",
+          "weight": 7.63
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 7.33
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 7.14
+        },
+        {
+          "sector": "Energy",
+          "weight": 4.15
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 3.94
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 3.51
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.83
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 2.13
         }
       ]
     },
@@ -939,6 +1458,52 @@
           "weight": 3.69931,
           "ticker": "Canadian Imperial Bank of Commerce"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Energy",
+          "weight": 31.27
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 31.06
+        },
+        {
+          "sector": "Utilities",
+          "weight": 11.22
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 7.25
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 6.18
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 4.74
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 4.58
+        },
+        {
+          "sector": "Industrials",
+          "weight": 2.28
+        },
+        {
+          "sector": "Technology",
+          "weight": 0.74
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 0.5
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.19
+        }
       ]
     },
     {
@@ -1006,6 +1571,48 @@
           "symbol": "TPZ.TO",
           "weight": 1.9099499999999998,
           "ticker": "Topaz Energy Corp."
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Energy",
+          "weight": 23.85
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 19.41
+        },
+        {
+          "sector": "Industrials",
+          "weight": 15.69
+        },
+        {
+          "sector": "Utilities",
+          "weight": 9.16
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 7.62
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 6.84
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 6.55
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 4.52
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 3.49
+        },
+        {
+          "sector": "Technology",
+          "weight": 2.88
         }
       ]
     },
@@ -1075,6 +1682,12 @@
           "weight": 5.18626,
           "ticker": "Boardwalk Real Estate Investment Trust"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Real Estate",
+          "weight": 100.0
+        }
       ]
     },
     {
@@ -1143,6 +1756,44 @@
           "weight": 2.84863,
           "ticker": "Great-West Lifeco Inc."
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Financial Services",
+          "weight": 34.78
+        },
+        {
+          "sector": "Energy",
+          "weight": 16.27
+        },
+        {
+          "sector": "Industrials",
+          "weight": 10.75
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 9.35
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 8.5
+        },
+        {
+          "sector": "Utilities",
+          "weight": 6.93
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 5.33
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 4.39
+        },
+        {
+          "sector": "Technology",
+          "weight": 3.7
+        }
       ]
     },
     {
@@ -1205,6 +1856,24 @@
           "symbol": "LEU",
           "weight": 2.85446,
           "ticker": "Centrus Energy Corp."
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Energy",
+          "weight": 87.1
+        },
+        {
+          "sector": "Utilities",
+          "weight": 7.71
+        },
+        {
+          "sector": "Industrials",
+          "weight": 4.55
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 0.65
         }
       ]
     },
@@ -1274,6 +1943,20 @@
           "weight": 2.6465099999999997,
           "ticker": "Mercury NZ Limited"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Utilities",
+          "weight": 51.43
+        },
+        {
+          "sector": "Industrials",
+          "weight": 26.61
+        },
+        {
+          "sector": "Technology",
+          "weight": 21.97
+        }
       ]
     },
     {
@@ -1341,6 +2024,52 @@
           "symbol": "TSLA",
           "weight": 1.48176,
           "ticker": "Tesla, Inc."
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 38.46
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 12.11
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 9.62
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 9.35
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 9.29
+        },
+        {
+          "sector": "Industrials",
+          "weight": 7.81
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 4.46
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.4
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.0
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.81
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 1.68
         }
       ]
     },
@@ -1410,6 +2139,52 @@
           "weight": 0.71453,
           "ticker": "00939"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 40.07
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 18.33
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 8.44
+        },
+        {
+          "sector": "Industrials",
+          "weight": 7.68
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 6.58
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 5.7
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 3.56
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.38
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 2.86
+        },
+        {
+          "sector": "Utilities",
+          "weight": 1.88
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 1.52
+        }
       ]
     },
     {
@@ -1478,6 +2253,36 @@
           "weight": 2.6800001,
           "ticker": "Micron Technology, Inc."
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 68.45
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 14.53
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 10.89
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 3.53
+        },
+        {
+          "sector": "Industrials",
+          "weight": 1.48
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 0.7
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 0.42
+        }
       ]
     },
     {
@@ -1495,7 +2300,8 @@
       "beta3Y": null,
       "inception": null,
       "issuer": "",
-      "holdings": []
+      "holdings": [],
+      "sectors": []
     },
     {
       "ticker": "ZLU.TO",
@@ -1562,6 +2368,52 @@
           "symbol": "NOC",
           "weight": 2.0141698,
           "ticker": "Northrop Grumman Corporation"
+        }
+      ],
+      "sectors": [
+        {
+          "sector": "Healthcare",
+          "weight": 19.85
+        },
+        {
+          "sector": "Technology",
+          "weight": 18.36
+        },
+        {
+          "sector": "Utilities",
+          "weight": 18.29
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 11.61
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 11.39
+        },
+        {
+          "sector": "Industrials",
+          "weight": 7.56
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 4.3
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 3.72
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.68
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 0.82
+        },
+        {
+          "sector": "Energy",
+          "weight": 0.43
         }
       ]
     },
@@ -1631,6 +2483,52 @@
           "weight": 0.05993,
           "ticker": "Cloudflare, Inc."
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 36.79
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 12.42
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 9.55
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 9.41
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 8.9
+        },
+        {
+          "sector": "Industrials",
+          "weight": 8.87
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 4.28
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.58
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 2.29
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.03
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 1.89
+        }
       ]
     },
     {
@@ -1679,7 +2577,54 @@
           "weight": 1.8962400000000001,
           "ticker": "iShares Core S&P Small-Cap ETF"
         }
+      ],
+      "sectors": [
+        {
+          "sector": "Technology",
+          "weight": 31.18
+        },
+        {
+          "sector": "Financial Services",
+          "weight": 15.83
+        },
+        {
+          "sector": "Industrials",
+          "weight": 11.13
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 9.07
+        },
+        {
+          "sector": "Healthcare",
+          "weight": 8.76
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 7.56
+        },
+        {
+          "sector": "Consumer Defensive",
+          "weight": 4.62
+        },
+        {
+          "sector": "Basic Materials",
+          "weight": 3.65
+        },
+        {
+          "sector": "Energy",
+          "weight": 3.57
+        },
+        {
+          "sector": "Real Estate",
+          "weight": 2.31
+        },
+        {
+          "sector": "Utilities",
+          "weight": 2.31
+        }
       ]
     }
-  ]
+  ],
+  "sectorCoverageEtfs": 24
 }
