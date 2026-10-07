@@ -3,6 +3,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+WRITER_WORKFLOWS = (
+    ".github/workflows/update-data.yml",
+    ".github/workflows/update-etfs.yml",
+    ".github/workflows/update-smallcap.yml",
+    ".github/workflows/custom-stock.yml",
+)
+
+LEGACY_FILES = (
+    ".github/workflows/frontend-technical-fix.yml",
+    ".github/workflows/repair-data-payload.yml",
+    ".github/workflows/upgrade-frontend.yml",
+    "scripts/upgrade_frontend.py",
+    "scripts/build_universe.py",
+)
+
 
 def text(path):
     return (ROOT / path).read_text(encoding="utf-8")
@@ -14,6 +29,14 @@ def require(path, *tokens):
     if missing:
         raise AssertionError(f"{path}: missing release requirement(s): {missing}")
     print(f"PASS {path}: {len(tokens)} release checks")
+
+
+def forbid(path, *tokens):
+    body = text(path)
+    present = [token for token in tokens if token in body]
+    if present:
+        raise AssertionError(f"{path}: obsolete release content still present: {present}")
+    print(f"PASS {path}: obsolete runtime patch logic absent")
 
 
 def load_json(path):
@@ -114,15 +137,46 @@ def check_data():
 
 
 def check_workflows():
-    for path in (
-        ".github/workflows/update-data.yml",
-        ".github/workflows/update-etfs.yml",
-        ".github/workflows/update-smallcap.yml",
-        ".github/workflows/custom-stock.yml",
-    ):
+    for path in WRITER_WORKFLOWS:
         assert (ROOT / path).exists(), f"Missing workflow: {path}"
+        require(
+            path,
+            "group: investment-radar-data-${{ github.ref }}",
+            "cancel-in-progress: false",
+        )
+
     require(".github/workflows/update-etfs.yml", "enrich_etf_sectors.py", "No sector exposure available")
     require(".github/workflows/update-smallcap.yml", "selected_count'] == 10")
+    require(
+        ".github/workflows/update-data.yml",
+        "data/canada_radar.json",
+        "data/india_radar.json",
+        "data/history_canada.json",
+        "data/history_india.json",
+    )
+    forbid(
+        ".github/workflows/update-data.yml",
+        "Upgrade financial data engine",
+        "Repair updater syntax before compile",
+    )
+
+
+def check_cleanup():
+    for path in LEGACY_FILES:
+        assert not (ROOT / path).exists(), f"Obsolete v1 build artifact still present: {path}"
+    print(f"PASS cleanup: {len(LEGACY_FILES)} obsolete build/repair files removed")
+
+    # The base + V2 engine pairs are intentional: the base files provide helper
+    # score functions, while the V2 layers override the final scoring/valuation
+    # entry points. Protect them from accidental cleanup.
+    for path in (
+        "engine/scoring.js",
+        "engine/scoringV2.js",
+        "engine/valuation.js",
+        "engine/valuationV2.js",
+    ):
+        assert (ROOT / path).exists(), f"Required scoring/valuation layer missing: {path}"
+    print("PASS cleanup: active base/V2 engine layers preserved")
 
 
 def main():
@@ -134,6 +188,7 @@ def main():
     check_custom()
     check_data()
     check_workflows()
+    check_cleanup()
     print("\nINVESTMENT RADAR V1 RELEASE CHECK: PASS")
 
 
