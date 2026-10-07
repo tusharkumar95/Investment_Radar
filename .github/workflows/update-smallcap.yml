@@ -12,8 +12,8 @@ on:
     - cron: "45 11 * * 1-5"
 
 concurrency:
-  group: investment-radar-smallcap
-  cancel-in-progress: true
+  group: investment-radar-data-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
