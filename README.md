@@ -4,7 +4,7 @@ Personal Canada + India investment research dashboard built for a mobile-first G
 
 ## Stable release
 
-**Version 1.0.1 — October 2026 maintenance baseline**
+**Version 1.0.2 — October 2026 final v1 cleanup baseline**
 
 ### Included
 - Canada and India Stock Radar
@@ -15,7 +15,7 @@ Personal Canada + India investment research dashboard built for a mobile-first G
 - Up-to-3-stock comparison
 - Market-aware Portfolio analysis with CAD and INR kept separate
 - ETF Radar with ETF-to-ETF holdings overlap, sector duplication and saved-portfolio overlap analysis
-- Small Cap / Sky Rocket research screen with 10 Canada + 10 India operating-company selections
+- Small Cap v3 / Sky Rocket research screen with 10 Canada + 10 India operating-company selections
 - Custom Analysis with saved-Radar fallback and explicit data coverage
 - Home attention dashboard
 - Dataset freshness/staleness indicators
@@ -46,6 +46,8 @@ The upstream `Investment_Universe` repository supplies the diversified Canada/In
 ## V1 cleanup completed
 The stable v1 maintenance pass removed the old one-time frontend patcher, data-payload repair workflow, technical-layer repair workflow and superseded local universe builder. The main market-data workflow now runs the permanent source code directly instead of rewriting `update_market_data.py` during every refresh.
 
+The Small Cap page now has one consolidated mobile ruleset rather than layered release-patch CSS, is explicitly labeled v3, and uses a bumped cache key so installed iPhone/PWA copies pick up the current frontend.
+
 The base/V2 scoring and valuation file pairs remain intentionally. The base scoring layer provides component functions used by the V2 decision layer; the V2 valuation layer intentionally replaces the final valuation entry point. They are active dependencies, not obsolete duplicates.
 
 ## Release validation
@@ -53,12 +55,13 @@ The base/V2 scoring and valuation file pairs remain intentionally. The base scor
 - mobile/PWA safeguards on all five user-facing pages
 - Canada/India and Long/Short-Term wiring
 - Watchlist, Compare and Portfolio integration
-- Small Cap 10+10 operating-company rules
+- Small Cap v3 10+10 operating-company rules and frontend label/cache baseline
 - ETF holdings and sector coverage requirements
 - Custom Analysis fallbacks
 - current Radar datasets
 - production workflow presence and shared write-queue configuration
 - absence of obsolete v1 repair/migration files
+- preservation of required base/V2 scoring and valuation dependencies
 - JavaScript syntax
 
 ## Known limitations
@@ -68,4 +71,4 @@ The base/V2 scoring and valuation file pairs remain intentionally. The base scor
 - Scores, fair-value ranges, targets and classifications are model outputs for research. They are not guarantees or personalized financial advice.
 
 ## Release discipline
-Version 1.0.1 is the stable v1 maintenance baseline. New product features should be treated as v2 work and should preserve the v1 data-integrity and release-check rules above.
+Version 1.0.2 is the final stable v1 maintenance baseline. New product features should be treated as v2 work and should preserve the v1 data-integrity and release-check rules above.
