@@ -14,6 +14,7 @@ LEGACY_FILES = (
     ".github/workflows/frontend-technical-fix.yml",
     ".github/workflows/repair-data-payload.yml",
     ".github/workflows/upgrade-frontend.yml",
+    ".github/workflows/finalize-v1-labels.yml",
     "scripts/upgrade_frontend.py",
     "scripts/build_universe.py",
 )
@@ -62,6 +63,9 @@ def check_home_radar():
         "smallcap.html",
         "custom.html",
         "dataFreshness",
+        ">V3</strong>",
+        "app.js?v=1.0.2",
+        "engine/scoringV2.js?v=1.0.2",
     )
     require(
         "app.js",
@@ -179,6 +183,7 @@ def check_cleanup():
     print("PASS cleanup: active base/V2 engine layers preserved")
 
     forbid("smallcap.html", "/* v1 mobile release overrides */", "Mobile / iPhone release polish")
+    forbid("index.html", ">V2</strong>", "?v=1.0.0")
 
 
 def main():
