@@ -36,7 +36,7 @@ def forbid(path, *tokens):
     present = [token for token in tokens if token in body]
     if present:
         raise AssertionError(f"{path}: obsolete release content still present: {present}")
-    print(f"PASS {path}: obsolete runtime patch logic absent")
+    print(f"PASS {path}: obsolete content absent")
 
 
 def load_json(path):
@@ -103,6 +103,7 @@ def check_smallcap():
             assert stock.get("businessFit") == "Operating company", f"{market}: non-operating candidate: {stock.get('ticker')}"
         print(f"PASS small-cap {market}: 10 operating-company selections")
     require("engine/smallcap.js", "setMarket=function", "STALE DATA", "smallcap_universe.json")
+    require("smallcap.html", "Small Cap v3", "engine/smallcap.js?v=1.0.2")
 
 
 def check_etf():
@@ -166,9 +167,8 @@ def check_cleanup():
         assert not (ROOT / path).exists(), f"Obsolete v1 build artifact still present: {path}"
     print(f"PASS cleanup: {len(LEGACY_FILES)} obsolete build/repair files removed")
 
-    # The base + V2 engine pairs are intentional: the base files provide helper
-    # score functions, while the V2 layers override the final scoring/valuation
-    # entry points. Protect them from accidental cleanup.
+    # These pairs look duplicated by filename but are active dependencies.
+    # Base layers provide component functions; V2 layers own the final calibrated entry points.
     for path in (
         "engine/scoring.js",
         "engine/scoringV2.js",
@@ -177,6 +177,8 @@ def check_cleanup():
     ):
         assert (ROOT / path).exists(), f"Required scoring/valuation layer missing: {path}"
     print("PASS cleanup: active base/V2 engine layers preserved")
+
+    forbid("smallcap.html", "/* v1 mobile release overrides */", "Mobile / iPhone release polish")
 
 
 def main():
