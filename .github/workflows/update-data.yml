@@ -50,15 +50,18 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import math
           from pathlib import Path
+
           checks=[('Canada',Path('data/canada.json')),('India',Path('data/india.json'))]
           for market,path in checks:
               data=json.loads(path.read_text(encoding='utf-8'))
               stocks=data.get('stocks',[])
+              count=len(stocks)
               if data.get('market') != market:
                   raise SystemExit(f'{path} has unexpected market: {data.get("market")}')
-              if len(stocks) < 100:
-                  raise SystemExit(f'{path} contains fewer than 100 stocks')
+              if not 50 <= count <= 100:
+                  raise SystemExit(f'{path} contains {count} stocks; allowed range is 50-100')
               missing=[s.get('symbol') or s.get('ticker') for s in stocks if not s.get('industry')]
               if missing:
                   raise SystemExit(f'{path} contains stocks with missing industry: {missing[:10]}')
@@ -69,7 +72,14 @@ jobs:
               offenders={k:v for k,v in counts.items() if v>10}
               if offenders:
                   raise SystemExit(f'{path} violates max 10 stocks per industry: {offenders}')
-              print(f'{market}: {len(stocks)} stocks; {len(counts)} industries; max industry count {max(counts.values())}')
+
+              sector_counts=data.get('sector_counts') or {}
+              sector_cap=max(1,math.floor(count*0.22))
+              sector_offenders={k:v for k,v in sector_counts.items() if k!='Unknown' and v>sector_cap}
+              if sector_offenders:
+                  raise SystemExit(f'{path} violates proportional sector cap {sector_cap}: {sector_offenders}')
+
+              print(f'{market}: {count} fresh stocks; {len(counts)} industries; max industry count {max(counts.values())}; sector cap {sector_cap}')
           print('INVESTMENT UNIVERSE VALIDATION PASSED')
           PY
 
@@ -91,8 +101,9 @@ jobs:
           for path in ('data/canada.json','data/india.json'):
               data=json.load(open(path,encoding='utf-8'))
               stocks=data.get('stocks',[])
-              if len(stocks) < 100:
-                  raise SystemExit(f'{path} contains too few stocks')
+              count=len(stocks)
+              if not 50 <= count <= 100:
+                  raise SystemExit(f'{path} contains {count} stocks after enrichment; allowed range is 50-100')
               if not any(isinstance(s.get('price'),dict) and s['price'].get('current') is not None for s in stocks):
                   raise SystemExit(f'{path} contains NO actual price data')
               if not any(isinstance(s.get('fundamentals'),dict) for s in stocks):
@@ -101,7 +112,7 @@ jobs:
                   raise SystemExit(f'{path} contains NO valuation data')
               if not any(isinstance(s.get('technical'),dict) and len(s['technical'].get('history',[]))>=100 for s in stocks):
                   raise SystemExit(f'{path} contains NO technical history')
-              print(f'{path}: {len(stocks)} stocks - validation passed')
+              print(f'{path}: {count} stocks - validation passed')
           print('DATA VALIDATION PASSED')
           PY
 
