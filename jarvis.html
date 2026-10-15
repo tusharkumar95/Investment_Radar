@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Jarvis → Investment Radar</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;height:100%;background:#f4f6f8;color:#17202a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.handoff{height:100%;display:grid;grid-template-rows:auto 1fr}.bar{padding:10px max(12px,env(safe-area-inset-right)) 10px max(12px,env(safe-area-inset-left));background:rgba(255,255,255,.94);border-bottom:1px solid #dde2e7;backdrop-filter:blur(18px);display:grid;gap:7px}.bar-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.bar small{font-size:10px;font-weight:900;letter-spacing:.1em;color:#71808e}.bar strong{font-size:14px}.bar p{margin:0;font-size:12px;line-height:1.35;color:#65717d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar a,.bar button{border:1px solid #d8dde3;background:#fff;color:#17202a;text-decoration:none;border-radius:10px;padding:8px 10px;font:inherit;font-size:12px;font-weight:750;cursor:pointer}.actions{display:flex;gap:7px}.frame{width:100%;height:100%;border:0;background:#f4f6f8}@media(max-width:540px){.bar-top{align-items:flex-start}.actions{flex-wrap:wrap}.bar p{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
+  </style>
+</head>
+<body>
+  <div class="handoff">
+    <div class="bar">
+      <div class="bar-top">
+        <div><small>FROM JARVIS</small><strong id="title">Opening Investment Radar…</strong></div>
+        <div class="actions"><a href="../Jarvis/">← Jarvis</a><button id="clear" type="button">Clear handoff</button></div>
+      </div>
+      <p id="prompt"></p>
+    </div>
+    <iframe id="radarFrame" class="frame" title="Investment Radar"></iframe>
+  </div>
+  <script>
+    (()=>{
+      const KEY='jarvis-app-handoff-v1';
+      let payload=null;
+      try{payload=JSON.parse(localStorage.getItem(KEY)||'null')}catch{}
+      const params=new URLSearchParams(location.search);
+      if(!payload||payload.target!=='investment-radar'){
+        payload={target:'investment-radar',prompt:params.get('prompt')||'',answer:'',ticker:params.get('ticker')||'',market:params.get('market')||'',route:params.get('route')||'home',created:new Date().toISOString()};
+      }
+      const age=Date.now()-new Date(payload.created||0).getTime();
+      if(Number.isFinite(age)&&age>24*60*60*1000)payload={...payload,prompt:'',answer:'',ticker:'',route:'home'};
+      const route=['custom','etf','portfolio','smallcap','home'].includes(payload.route)?payload.route:'home';
+      const target={custom:'custom.html',etf:'etf.html',portfolio:'portfolio.html',smallcap:'smallcap.html',home:'index.html'}[route];
+      const labels={custom:'Custom stock analysis',etf:'ETF Radar',portfolio:'Portfolio',smallcap:'Small Cap Radar',home:'Investment Radar'};
+      document.getElementById('title').textContent=labels[route];
+      document.getElementById('prompt').textContent=payload.prompt||'Jarvis opened the most relevant Radar workspace.';
+      const frame=document.getElementById('radarFrame');
+      frame.src=target;
+      frame.addEventListener('load',()=>{
+        if(route!=='custom')return;
+        try{
+          const doc=frame.contentDocument;
+          const ticker=doc?.getElementById('ticker');
+          const market=doc?.getElementById('market');
+          const run=doc?.getElementById('run');
+          if(ticker&&payload.ticker)ticker.value=payload.ticker;
+          if(market&&['Canada','India'].includes(payload.market))market.value=payload.market;
+          if(ticker&&ticker.value&&run)setTimeout(()=>run.click(),120);
+        }catch{}
+      });
+      document.getElementById('clear').addEventListener('click',()=>{
+        try{localStorage.removeItem(KEY)}catch{}
+        document.getElementById('prompt').textContent='Handoff cleared. Investment Radar remains open.';
+      });
+    })();
+  </script>
+</body>
+</html>
