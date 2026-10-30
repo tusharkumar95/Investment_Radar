@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3f5f7">
+<title>Track Sheet · Investment Radar</title>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#f3f5f7;color:#17202a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a,button,select{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button,select{font:inherit;min-height:44px}
+button{cursor:pointer}
+main{max-width:1100px;margin:auto;padding:14px 14px calc(28px + env(safe-area-inset-bottom))}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}
+.back{display:inline-flex;align-items:center;justify-content:center;border:1px solid #dbe0e5;background:#fff;border-radius:12px;padding:10px 14px;text-decoration:none;color:#24313d;font-weight:800;font-size:13px;min-height:44px}
+.eyebrow{font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:900;color:#7a8590}
+h1{font-size:clamp(26px,5vw,37px);letter-spacing:-1px;margin:4px 0 6px}
+h2{font-size:19px;margin:0 0 6px;letter-spacing:-.3px}
+p{line-height:1.5}
+.panel{border-radius:18px;border:1px solid #e0e5e9;background:#fff;padding:17px 18px;margin-bottom:10px;box-shadow:0 4px 16px rgba(20,30,40,.035)}
+.muted{font-size:12px;color:#6a7782;line-height:1.5}
+.intro p{color:#63707d;font-size:13px;margin:0}
+.status{display:inline-block;border-radius:9px;background:#eef1f4;padding:7px 10px;color:#51606c;font-size:11px;font-weight:800;margin-top:10px}
+.controls{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin:9px 0}
+.market-picker{display:flex;gap:7px;flex:1}
+.market{background:#fff;border:1px solid #d9e0e6;color:#596570;border-radius:12px;padding:10px 16px;font-weight:850;flex:1}
+.market.active{background:#17202a;border-color:#17202a;color:white}
+.date-picker{width:100%;max-width:240px;border:1px solid #d9e0e6;border-radius:12px;padding:9px 12px;background:white;color:#263442;font-weight:700}
+.date-scroll{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:3px 0 9px;margin-bottom:2px}
+.date-scroll::-webkit-scrollbar{display:none}
+.date-tab{border:1px solid #d9e0e6;border-radius:999px;white-space:nowrap;background:#fff;padding:8px 13px;color:#53616d;font-size:12px;font-weight:800;min-height:39px}
+.date-tab.active{background:#17202a;color:#fff;border-color:#17202a}
+.headline{display:flex;gap:14px;justify-content:space-between;align-items:center}
+.headline strong{font-size:21px}
+.headline small{font-size:11px;color:#75818c;font-weight:800}
+.grid-note{font-size:11px;color:#677480;margin:8px 0 0}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e3e7eb;border-radius:14px}
+table{border-collapse:collapse;min-width:950px;width:100%;text-align:right;font-variant-numeric:tabular-nums}
+th,td{padding:12px 10px;border-bottom:1px solid #edf0f2;white-space:nowrap}
+th{background:#f5f7f8;color:#6c7a85;font-weight:850;font-size:10px;letter-spacing:.3px}
+tr:last-child td{border-bottom:0}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff;z-index:1;border-right:1px solid #edf0f2}
+th:first-child{background:#f5f7f8;z-index:2}
+td{font-size:12px;font-weight:750}
+.stockname{font-size:11px;font-weight:500;color:#75818c;display:block;margin-top:3px;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.ticker{font-size:14px;font-weight:900}
+.row-button{border:0;background:none;color:#142b42;min-height:36px;padding:0;text-align:left}
+.up{color:#137b4c}.down{color:#b84b4d}.flat{color:#62707c}
+.tag{font-size:10px;font-weight:850;padding:4px 7px;border-radius:7px;background:#eff2f4;color:#586673;display:inline-block;margin-top:4px}
+.pick{color:#6d7a86}
+.detail{display:none}.detail.visible{display:block}
+.detail-head{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.close{background:#eef1f4;border:0;border-radius:10px;padding:9px 11px;font-size:12px;font-weight:850}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:12px 0}
+.metric{background:#f5f7f8;border-radius:11px;padding:10px}
+.metric small{display:block;font-size:10px;color:#7a8590;font-weight:800}
+.metric b{display:block;font-size:16px;margin-top:5px;overflow-wrap:anywhere}
+.chart{width:100%;margin:9px 0;min-height:100px}
+.chart svg{width:100%;height:auto;display:block}
+.daily{max-height:360px;overflow:auto;border:1px solid #edf0f2;border-radius:10px}
+.daily table{min-width:0}
+.daily th:first-child,.daily td:first-child{position:static}
+.daily th,.daily td{padding:9px;font-size:12px}
+.loading{padding:18px;text-align:center;color:#697681}
+@media(max-width:650px){
+main{padding:12px max(11px,env(safe-area-inset-right)) calc(30px + env(safe-area-inset-bottom)) max(11px,env(safe-area-inset-left))}
+.panel{padding:14px 12px;border-radius:15px}
+header{gap:7px}
+header .back{font-size:12px;padding:9px}
+.controls{display:block}
+.date-picker{max-width:none;margin:9px 0 0;font-size:16px}
+.market{padding:9px 8px;font-size:13px}
+.summary{grid-template-columns:repeat(2,1fr)}
+h1{font-size:27px}
+}
+</style>
+</head>
+<body>
+<main>
+<header><strong>Investment Radar</strong><a class="back" href="index.html">← Stock Radar</a></header>
+<section class="panel intro">
+  <span class="eyebrow">Short-term performance tracker</span>
+  <h1>Track Sheet</h1>
+  <p>The five highest-scoring short-term Radar stocks in each market, frozen by recommendation date. Follow what happened afterward without losing old picks when the rankings change.</p>
+  <span class="status" id="status">Loading tracking data…</span>
+</section>
+<div class="controls">
+  <div class="market-picker" aria-label="Market">
+    <button class="market active" data-market="Canada">🇨🇦 Canada</button>
+    <button class="market" data-market="India">🇮🇳 India</button>
+  </div>
+  <select class="date-picker" id="datePicker" aria-label="Choose recommendation date"></select>
+</div>
+<nav id="dateTabs" class="date-scroll" aria-label="Recent recommendation dates"></nav>
+<section class="panel">
+  <div class="headline"><div><span class="eyebrow">Original selection</span><h2 id="snapshotTitle">Top 5</h2></div><small id="sourceTime"></small></div>
+  <div id="results" class="loading">Loading history…</div>
+  <p class="grid-note">D+5 / +10 / +15 / +30 are calendar-day checkpoints. The first available trading close on or after each target date is used, with the actual session date shown. Pending means that close is not available yet. Gains are price changes only, before dividends, fees and taxes.</p>
+</section>
+<section class="panel detail" id="detail"></section>
+<section class="panel"><strong>How tracking works</strong>
+  <p class="muted">The recorded price is the price shown in Radar's source data when that day's ranked list was captured, not an executed purchase. That source quote can be delayed; its data refresh time is displayed. Subsequent daily values are historical, unadjusted closing prices obtained from the market-data source. A ranking is a research screen, not necessarily a buy recommendation. If market data is missing, the value is left blank rather than estimated.</p>
+</section>
+</main>
+<script src="track-sheet.js?v=2.0.0"></script>
+</body>
+</html>
