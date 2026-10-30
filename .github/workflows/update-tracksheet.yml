@@ -1,0 +1,80 @@
+name: Update Track Sheet
+
+on:
+  workflow_dispatch:
+  # 23:15 UTC is after both Canadian and Indian regular trading sessions.
+  schedule:
+    - cron: "15 23 * * 1-5"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-tracksheet.yml"
+      - "scripts/build_track_sheet.mjs"
+      - "scripts/refresh_track_prices.py"
+
+permissions:
+  contents: write
+
+# Use the existing data-writer queue to avoid competing pushes.
+concurrency:
+  group: investment-radar-data-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Use current main
+        run: git pull --rebase origin main
+
+      - name: Check scripts
+        run: |
+          node --check scripts/build_track_sheet.mjs
+          python -m py_compile scripts/refresh_track_prices.py
+
+      - name: Capture date and top five using actual Radar scoring
+        run: node scripts/build_track_sheet.mjs
+
+      - name: Install market data tools
+        run: pip install -r requirements.txt
+
+      - name: Update daily price observations
+        run: python scripts/refresh_track_prices.py
+
+      - name: Validate history and commit
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("data/track_sheet.json",encoding="utf-8"))
+          assert d["schema"] == 1
+          assert isinstance(d.get("cohorts"),list) and d["cohorts"]
+          assert isinstance(d.get("quotes"),dict)
+          dates=[x["date"] for x in d["cohorts"]]
+          assert len(dates)==len(set(dates))
+          for cohort in d["cohorts"]:
+              assert set(cohort["markets"])=={"Canada","India"}
+              for market in ["Canada","India"]:
+                  stocks=cohort["markets"][market]["stocks"]
+                  assert len(stocks)==5
+                  assert len({s["ticker"] for s in stocks})==5
+                  assert all(s["recordedPrice"]>0 for s in stocks)
+          print("Track Sheet history validated:",len(dates),"cohorts")
+          PY
+          git config user.name "Investment Radar"
+          git config user.email "actions@github.com"
+          git add data/track_sheet.json
+          if git diff --cached --quiet; then
+            echo "No Track Sheet data changes"
+            exit 0
+          fi
+          git commit -m "Update Track Sheet recommendations and prices"
+          git pull --rebase -X theirs origin main
+          git push
