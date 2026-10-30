@@ -18,6 +18,7 @@ Personal Canada + India investment research dashboard built for a mobile-first G
 - Small Cap v3 / Sky Rocket research screen with 10 Canada + 10 India operating-company selections
 - Custom Analysis with saved-Radar fallback and explicit data coverage
 - Home attention dashboard
+- **Track Sheet (v2)**: immutable daily Canada + India top-five Short Term cohorts, archived recommendation-price baselines, daily Yahoo close observations, and calendar-day +5/+10/+15/+30 price checkpoints
 - Dataset freshness/staleness indicators
 - Mobile/PWA-oriented interface
 
@@ -38,6 +39,7 @@ The active data-writing workflows are:
 - `update-etfs.yml` — ETF universe, holdings and sector exposure
 - `update-smallcap.yml` — synchronized Small Cap v3 dataset
 - `custom-stock.yml` — on-demand Custom Analysis data
+- `update-tracksheet.yml` — after-market Canada/India Short Term top-five cohort capture and 40-day follow-up price history
 
 All workflows that write generated data to `main` share one concurrency queue (`investment-radar-data-*`). This prevents the push collision that previously allowed simultaneous data jobs to fail at the final commit step.
 
@@ -72,3 +74,6 @@ The base/V2 scoring and valuation file pairs remain intentionally. The base scor
 
 ## Release discipline
 Version 1.0.2 is the final stable v1 maintenance baseline. New product features should be treated as v2 work and should preserve the v1 data-integrity and release-check rules above.
+
+## Track Sheet notes
+Track Sheet uses exactly the production Short Term scoring and decision-engine files via Node.js, so it does not independently invent rankings. Every weekday snapshot saves five ranked stocks for each market, and reruns preserve existing dates unchanged. The baseline is the Radar quote captured from the latest source dataset (which may have been refreshed earlier in the session), not a trade fill. Follow-up dates are **calendar days**, using the first available actual trading close on or after each milestone. Unavailable prices remain missing; no forecast or interpolation is substituted. Quote data comes from Yahoo Finance via yfinance; it is unadjusted, and excludes dividends, commissions and taxes. Snapshots are public research data in this GitHub Pages repository, not private portfolio holdings.
