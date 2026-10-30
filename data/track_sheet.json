@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-10-30T23:56:30.601Z",
+  "cohorts": [
+    {
+      "date": "2026-10-30",
+      "markets": {
+        "Canada": {
+          "sourceUpdatedAt": "2026-10-30T17:07:34.068923+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "BHC.TO",
+              "name": "BAUSCH HEALTH COMPANIES INC",
+              "score": 86,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 11.83,
+              "recordedAt": "2026-10-30T17:07:34.068923+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "CNQ.TO",
+              "name": "CDN NATURAL RES",
+              "score": 85,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 78.2,
+              "recordedAt": "2026-10-30T17:07:34.068923+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "WCP.TO",
+              "name": "WHITECAP RESOURCES INC",
+              "score": 85,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 19.53,
+              "recordedAt": "2026-10-30T17:07:34.068923+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "DHT-UN.TO",
+              "name": "DRI HEALTHCARE TRUST",
+              "score": 83,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 18.09,
+              "recordedAt": "2026-10-30T17:07:34.068923+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "BNS.TO",
+              "name": "BANK OF NOVA SCOTIA",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 130.86,
+              "recordedAt": "2026-10-30T17:07:34.068923+00:00"
+            }
+          ]
+        },
+        "India": {
+          "sourceUpdatedAt": "2026-10-30T17:10:18.478694+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "SKYGOLD.NS",
+              "name": "SKY GOLD AND DIAMONDS LTD",
+              "score": 84,
+              "verdict": "BUY",
+              "priceZone": "Attractive",
+              "currency": "INR",
+              "recordedPrice": 883.2,
+              "recordedAt": "2026-10-30T17:10:18.478694+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "PNB.NS",
+              "name": "PUNJAB NATIONAL BANK",
+              "score": 83,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 122.85,
+              "recordedAt": "2026-10-30T17:10:18.478694+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "UNIONBANK.NS",
+              "name": "UNION BANK OF INDIA",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 186,
+              "recordedAt": "2026-10-30T17:10:18.478694+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "CHENNPETRO.NS",
+              "name": "CHENNAI PETROLEUM CORP LT",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 1511.5,
+              "recordedAt": "2026-10-30T17:10:18.478694+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "GLAND.NS",
+              "name": "GLAND PHARMA LIMITED",
+              "score": 78,
+              "verdict": "BUY",
+              "priceZone": "Expensive",
+              "currency": "INR",
+              "recordedPrice": 3095.9,
+              "recordedAt": "2026-10-30T17:10:18.478694+00:00"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "quotes": {
+    "Canada:BHC.TO": {
+      "2026-10-30": 11.47
+    },
+    "Canada:BNS.TO": {
+      "2026-10-30": 131.05
+    },
+    "Canada:CNQ.TO": {
+      "2026-10-30": 78.42
+    },
+    "Canada:DHT-UN.TO": {
+      "2026-10-30": 18.14
+    },
+    "Canada:WCP.TO": {
+      "2026-10-30": 19.62
+    },
+    "India:CHENNPETRO.NS": {
+      "2026-10-30": 1511.5
+    },
+    "India:GLAND.NS": {},
+    "India:PNB.NS": {
+      "2026-10-30": 122.85
+    },
+    "India:SKYGOLD.NS": {
+      "2026-10-30": 883.2
+    },
+    "India:UNIONBANK.NS": {
+      "2026-10-30": 186.0
+    }
+  },
+  "quotesUpdatedAt": "2026-10-30T23:56:42.495885+00:00",
+  "quoteFailures": []
+}
