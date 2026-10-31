@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-31T02:17:08.954176+00:00",
+  "updated": "2026-10-31T02:39:48.122703+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-10-30",
@@ -6926,7 +6926,7 @@
   "sourceInfo": {
     "india": "NSE bulk/block disclosed transaction activity",
     "canada": "Verified Canadian deals and separately labeled unverified disclosure leads",
-    "canadaDiscoveryUpdated": "2026-10-31T02:17:07.823395+00:00",
+    "canadaDiscoveryUpdated": "2026-10-31T02:39:46.119465+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
