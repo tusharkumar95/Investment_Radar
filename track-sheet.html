@@ -64,6 +64,20 @@ td{font-size:12px;font-weight:750}
 .daily th:first-child,.daily td:first-child{position:static}
 .daily th,.daily td{padding:9px;font-size:12px}
 .loading{padding:18px;text-align:center;color:#697681}
+/* Track Sheet: compact sticky stock column with prices immediately visible. */
+#results table{table-layout:fixed;min-width:940px}
+#results th,#results td{box-sizing:border-box;vertical-align:middle;padding:12px 8px}
+#results th:nth-child(1),#results td:nth-child(1){width:128px;min-width:128px;max-width:128px}
+#results th:nth-child(2),#results td:nth-child(2){width:98px}
+#results th:nth-child(3),#results td:nth-child(3){width:100px}
+#results th:nth-child(n+4):nth-child(-n+7),#results td:nth-child(n+4):nth-child(-n+7){width:120px}
+#results th:nth-child(8),#results td:nth-child(8){width:134px}
+#results tbody tr{height:112px}
+#results .row-button{width:100%;display:block;white-space:normal;line-height:1.35}
+#results .ticker{display:block;font-size:13px;line-height:1.35;overflow-wrap:anywhere}
+#results .stockname{display:block;white-space:normal;overflow-wrap:anywhere;max-width:none;line-height:1.35;margin-top:5px;font-size:11px}
+#results .tag{max-width:100%;white-space:normal;text-align:center;line-height:1.25;font-size:9px;padding:4px 5px}
+#results td>strong{font-size:12px}
 @media(max-width:650px){
 main{padding:12px max(11px,env(safe-area-inset-right)) calc(30px + env(safe-area-inset-bottom)) max(11px,env(safe-area-inset-left))}
 .panel{padding:14px 12px;border-radius:15px}
@@ -104,6 +118,6 @@ h1{font-size:27px}
   <p class="muted">The recorded price is the price shown in Radar's source data when that day's ranked list was captured, not an executed purchase. That source quote can be delayed; its data refresh time is displayed. Subsequent daily values are historical, unadjusted closing prices obtained from the market-data source. A ranking is a research screen, not necessarily a buy recommendation. If market data is missing, the value is left blank rather than estimated.</p>
 </section>
 </main>
-<script src="track-sheet.js?v=2.0.0"></script>
+<script src="track-sheet.js?v=2.0.1"></script>
 </body>
 </html>
