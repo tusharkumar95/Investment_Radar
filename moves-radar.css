@@ -1,0 +1,38 @@
+:root{--text:#17202a;--muted:#6c7782;--soft:#8b95a0;--blue:#4b7298;--green:#4b8c67;--shadow-soft:0 3px 12px rgba(20,30,40,.035)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;min-height:100vh;color:var(--text);background:#f3f5f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit}button{cursor:pointer}a{color:#496c90}
+main{max-width:1000px;margin:auto;padding:14px max(11px,env(safe-area-inset-left)) calc(34px + env(safe-area-inset-bottom)) max(11px,env(safe-area-inset-right))}
+.radar-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+.radar-name{font-weight:900;font-size:13px;letter-spacing:-.2px}
+.radar-back{border:1px solid #dbe0e5;background:#fff;border-radius:12px;padding:11px 12px;text-decoration:none;color:#24313d;font-weight:800;font-size:12px;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}
+.radar-hero{background:#fff;border:1px solid #e1e5e9;border-radius:18px;padding:17px 18px;box-shadow:var(--shadow-soft)}
+.radar-hero h1{font-size:clamp(25px,5vw,37px);letter-spacing:-.8px;margin:2px 0 6px;font-weight:850}
+.radar-hero p{font-size:12px;color:#65717d;line-height:1.45;margin:0}
+.radar-hero .eyebrow{font-weight:850;letter-spacing:.12em;font-size:10px;color:#7d8790}
+.radar-hero-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}
+.radar-hero-actions a{font-size:11px;text-decoration:none;font-weight:800;color:#456c91}
+.radar-hero-actions button{font-size:11px;border:1px solid #dce2e7;background:#f5f7f8;border-radius:10px;color:#40505e;padding:8px 12px;font-weight:800;min-height:37px}
+.news-section{margin:12px 0 20px}
+.card{position:relative;overflow:hidden;margin:8px 0;padding:15px 15px 14px 17px;background:#fff;border:1px solid #e1e5e9;border-radius:16px;box-shadow:var(--shadow-soft)}
+.accent-dot{position:absolute;left:0;top:13px;bottom:13px;width:3px;background:var(--green)}
+.card-title{margin:0;font-size:17px;line-height:1.27;font-weight:850;letter-spacing:-.2px}
+.ticker{color:#87929e;font-size:11px;font-weight:780}
+.move-investor{margin:6px 0 11px;color:var(--muted);font-size:12px;font-weight:650}
+.move-date{color:#87929e;font-size:9px;font-weight:720}
+.move-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.move-grid>div{min-width:0;background:#f5f7f8;border-radius:10px;padding:9px 7px}
+.move-grid small{display:block;font-size:8px;font-weight:800;color:#8995a0;line-height:1.3}
+.move-grid strong{display:block;margin-top:4px;font-size:11px;line-height:1.3;overflow-wrap:anywhere;color:#43505b}
+.moves-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.moves-filter{display:flex;flex-direction:column;gap:5px;min-width:0;color:#6c7782;font-size:11px;font-weight:760}
+.moves-filter select{min-width:0;width:100%;min-height:43px;padding:9px 8px;background:#fff;border:1px solid #dbe0e5;border-radius:11px;color:#25313d;font-size:12px}
+.move-mode.active{background:#17202a;color:#fff;border-color:#17202a}
+.moves-subtab.active{background:#fff;color:#17202a}
+.move-market.active{background:#e7eef5;color:#315c7d}
+.moves-v3 .moves-source-policy{background:#eef1f4;color:#596570}
+.move-role{color:#75818c}.move-source-v2{color:#87929e}.move-source-v2 a{color:#426c92}
+.moves-intro span{color:#76818c}.moves-v3-top{background:#e8edf1}
+.moves-track-detail,.moves-lead{background:#fff;border-color:#dfe5ea}
+.moves-alert-card{background:#eff8f1}.moves-v3 .move-grid-v2 strong{white-space:normal}
+@media(max-width:700px){input,select{font-size:16px!important}.radar-hero{padding:14px}.radar-hero h1{font-size:26px}}
