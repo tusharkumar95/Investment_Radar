@@ -16,7 +16,7 @@
     .control-shell{position:sticky;top:0;z-index:20;margin:0 -4px 12px;padding:8px 4px 10px;background:rgba(243,245,247,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
     .market-selector,.view-selector,.tool-selector{display:grid;gap:7px}
     .market-selector{grid-template-columns:1fr 1fr;margin-bottom:7px}
-    .tool-selector{grid-template-columns:repeat(5,1fr);margin-bottom:7px}
+    .tool-selector{grid-template-columns:repeat(6,1fr);margin-bottom:7px}
     .view-selector{grid-template-columns:1fr 1fr;margin-bottom:7px}
     .market-btn,.view-btn,.tool-btn{appearance:none;border:1px solid #d8dde3;background:#fff;color:#5f6b76;border-radius:13px;min-height:44px;padding:9px 10px;font-size:14px;font-weight:800;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;transition:.15s ease;white-space:nowrap}
     .market-btn.active,.view-btn.active{background:#18212b;color:#fff;border-color:#18212b;box-shadow:0 3px 10px rgba(24,33,43,.13)}
@@ -87,8 +87,7 @@
       input,select{font-size:16px!important}
       .app{padding:8px max(10px,env(safe-area-inset-right)) calc(26px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
       .control-shell{margin-bottom:8px;padding-top:6px}
-      .tool-selector{grid-template-columns:repeat(2,1fr)}
-      .tool-selector a[href="track-sheet.html"]{grid-column:1 / -1}
+      .tool-selector{grid-template-columns:repeat(3,1fr)}
       .market-btn,.view-btn,.tool-btn{min-height:44px;padding:8px 7px;font-size:13px;border-radius:12px}
       .hero{padding:12px 13px;border-radius:14px;margin-bottom:7px}
       .hero-top{display:block}
@@ -140,6 +139,7 @@
         <a class="tool-btn" href="etf.html">◎ ETF Radar</a>
         <a class="tool-btn" href="smallcap.html">↗ Small Cap</a>
         <a class="tool-btn" href="track-sheet.html">▤ Track Sheet</a>
+        <a class="tool-btn" href="moves.html">◎ Moves</a>
       </nav>
     </div>
 
