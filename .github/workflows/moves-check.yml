@@ -1,0 +1,45 @@
+name: Investment Radar Moves Check
+on:
+  push:
+    branches: [main]
+    paths:
+      - "moves.html"
+      - "moves.js"
+      - "moves-core.js"
+      - "moves-radar.css"
+      - "moves-v2.css"
+      - "moves-v3.css"
+      - "index.html"
+      - ".github/workflows/moves-check.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate frontend JS syntax
+        run: |
+          node --check moves-core.js
+          node --check moves.js
+          grep -q 'href="moves.html"' index.html
+          grep -q 'src="moves-core.js?v=1"' moves.html
+          grep -q 'src="moves.js?v=1"' moves.html
+          test -f moves-radar.css
+          test -f moves-v2.css
+          test -f moves-v3.css
+      - name: Validate historical data preserved
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("moves-daily.json",encoding="utf-8"))
+          t=json.load(open("moves-tracking.json",encoding="utf-8"))
+          h=json.load(open("moves-history.json",encoding="utf-8"))
+          assert d["schema"]==t["schema"]==1
+          assert isinstance(h["records"],list) and h["records"]
+          assert any(x.get("symbol")=="DPWIRES" and x.get("day")=="2026-10-06" for x in t["tracks"])
+          assert t["quotes"].get("India:DPWIRES")
+          assert all(a["buyers"]>=2 for a in d["alerts"])
+          print("Preserved",len(h["records"]),"historical disclosures,",len(t["tracks"]),"tracked signals,",len(d["dates"]),"dated views")
+          PY
