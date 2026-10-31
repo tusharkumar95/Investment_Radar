@@ -122,7 +122,7 @@
       detail.classList.remove("visible");
       return;
     }
-    const head = '<thead><tr><th>Original rank / stock</th><th>Radar score</th><th>Recorded price</th>' +
+    const head = '<thead><tr><th>Stock</th><th>Recorded price</th><th>Radar score</th>' +
       DAYS.map(n => '<th>D+' + n + '</th>').join("") + '<th>Last tracked close</th></tr></thead>';
     const rows = group.stocks.map(s => {
       const series = priceSeries(s, date);
@@ -132,8 +132,8 @@
       return '<tr><td><button class="row-button" type="button" data-ticker="' + esc(s.ticker) +
         '"><span class="ticker">#' + s.rank + ' ' + esc(s.ticker) + ' ↗</span>' +
         '<span class="stockname">' + esc(s.name) + '</span></button></td>' +
-        '<td><strong>' + esc(s.score) + '/100</strong><br><span class="tag">' + esc(s.verdict) + '</span></td>' +
-        '<td><strong>' + money(baseline) + '</strong></td>' + checkpoints +
+        '<td><strong>' + money(baseline) + '</strong></td>' +
+        '<td><strong>' + esc(s.score) + '/100</strong><br><span class="tag">' + esc(s.verdict) + '</span></td>' + checkpoints +
         '<td>' + (last ? checkpointCell(last, baseline) : '<span class="pick">Pending</span>') + '</td></tr>';
     }).join("");
     results.className = "";
