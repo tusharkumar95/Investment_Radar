@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-10-31T02:39:46.118910+00:00",
+  "testedAt": "2026-11-02T21:50:01.971878+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 5,
+      "count": 7,
       "items": [
         {
           "title": "HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC. - Yahoo! Finance Canada",
@@ -20,40 +20,59 @@
           "source": "The Globe and Mail"
         },
         {
+          "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
+          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
+          "source": "TradingView"
+        },
+        {
           "title": "David Patterson Files Early Warning Report in Respect of Aurbis Resources Corp. - Yahoo Finance",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPX1Z0MjAxX1NNeUxjU3NYS2JWejdnVVBjdmFsZndwUVU5TkhFc0dBMkdwZzd5d21hX2dvemtzZFA4Ty1UcFNEQy1IUkl3MjZaLWFTamlOX1dmeE5kLU1kWkVpbXh5QzU3Q3dvd3kteHE2QVBaOXo3cHlnR3I0V3JidERFMWlMSTNmYTJqbldOak5XaDJQOEtBay1xYUJONzRITFE?oc=5",
           "published": "Thu, 29 Oct 2026 01:05:00 GMT",
           "source": "Yahoo Finance"
         },
         {
-          "title": "Tana Resources Corp CEO Vartan Korajian Acquires 2 Million Shares in Debt Settlement, Lifts Stake to 12.49% - kalkine.ca",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcnZZNW84VEpzUVhEdUJZblE2TEhGQmxwZ0ZfdU9aUk1wXzkxQnk0UWhVRXYxT0VEZTMyalVMdU9LTkh2b3hsdjBoSU9YM1dKV3FmVFowNGpmVHBsYWVxbkNKNy1Tb2dGQmZEdXVna1REOGFxSEpKWG05QzVNYTFKczZ3TVhQSlVHdllvMi1jdVJOWTBMbFRkVnFkTTFwQ1ZfWm9zLTZRVEZ6VVBYOXNOLUQySzB0aWdONWRJNDZqS3R0TzN3X0sxZkdLSHdIMFk4bFlWeHZpdmJmdw?oc=5",
-          "published": "Fri, 30 Oct 2026 00:20:00 GMT",
-          "source": "kalkine.ca"
+          "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Lelezard",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQmZLbFk2akhpSTdOQnZBcmVWMUZ5dl96ZDVEYVZ1dEZKenpRbU5rb2s0clRZX196eGFKZU14RTEwNF9yRTg5RThMSDk3b0tSdGtHYkI4V0NWR1FtX0pFMUg3Yk1GeTJ0eVRJcTg4VGx2V2NhdW1nZnZtajV4cExTbE5JelQtZ0FCQmRacWR4dTZCVXpEbkhIdmpCdlM4YTRoUEY0R0RNekh5QnlXRXEyaDY4UkFDelVWeGE0QTVmcWJ3TU1tQVlZaw?oc=5",
+          "published": "Sat, 31 Oct 2026 06:26:10 GMT",
+          "source": "Lelezard"
         },
         {
-          "title": "High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeHlvcHdodHZoY2xuemtIdWpPS1RTU3BJYWZIRjNDdWRVaElmbDNadUtfZ00xY2RhYmZwLVRiSi1RZEFnTGtfUjBrNFR6YXhEeGdWd1QySzJWc1cyMFE1MGtZaDR3cEZPbHB5LWE0bE1pNllFUzFXbHdUUjhZVDI5RkJwdjdxUzV5LXhkRm9ZQk5FckRjVFJXVlVwQ1REelJGSFlFWGtxSTZ1a0FwLUgxc3I1ME9mbkNaWHhhcFhrV29WWmhmckhZb1lkNlNnQ1hPaTV3R1Z5LXB1SEJpWWVRWGE2UXpkYWJt?oc=5",
-          "published": "Mon, 26 Oct 2026 11:11:00 GMT",
+          "title": "Laurentian Bank Completes Transactions with NBC and Fairstone Bank - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOU25PdEpQcTE2NTlBbDlNTWd6dG1pOXlNNU5KMXk3SE9vNUJoMUYyRTVjWDNtY0dYazhGTk50QTNBVkZTNWRCejNXVVhRaWMtTU9zUlpyZjVla1BweUFqWnFKeFdyT3pzakR4TEJBeXc0RHZvQU9yOEN0czJSck5oamNUU2o0d2oxVHR3MmNTY0xfNm5IUjNDT2dMY3FaWG51RUJ1Mi15bkNWMzVqTWlrc2ppWVBDcEROdTkzbWVLVENCU2hqTVE?oc=5",
+          "published": "Mon, 02 Nov 2026 13:30:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
+          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
+          "source": "Kalkine Media"
         }
       ]
     },
     {
       "query": "\"early warning\" \"acquiror\" \"acquired\" TSX when:7d",
       "ok": true,
-      "count": 0,
-      "items": []
+      "count": 1,
+      "items": [
+        {
+          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
+          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
+          "source": "Kalkine Media"
+        }
+      ]
     },
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "title": "Early Warning Press Release - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVlVFUS11d1hpMHc1cGlPLXNfc2t2ZlFzTDJQb0ZPRkpQY1AxTklTWFA2dXR1bXNOYy1sdmtLNXR0ZEh5N0FwckY4Y1pJNTE2OGNta0FoLThmek8tc01ncC0xYjZNMVE3eFQ1d19vYlFqRG5ybEw2bElnckZaSEJ3cy1n?oc=5",
-          "published": "Thu, 29 Oct 2026 02:10:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWTdEVl93QVhpQU1WNG9qTGMxaFpxWEl2RTRVYVZlU09fUnJHNnFzMloyY0Vub1FEYVpuZkUxcGkwQ2tTV2J0REFUcGhQd2lCeWl5WnFJTVZwblFTWUZZcDJ6N21WN3pTVjRGRGJmNjNiem9WYVByUGNMM0RPUC01aXB3?oc=5",
+          "published": "Thu, 29 Oct 2026 02:36:00 GMT",
           "source": "Yahoo! Finance Canada"
         },
         {
@@ -63,10 +82,16 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC. - Yahoo Finance Singapore",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdmdTT3NnM3dZNzUxYzJYMU1idExqS2NiMGNLQjN2Z29EX0VqaFRabm00Yl9JdDVpalgzMDdmdDBDM0pOZ1dXMmdLZ2tQOEVtQXFPbk10S0phYl9udGl4cnlfQm5qa1BWWVFva01UaVNoYjJ3ZVhzUzYwaTl4eEc4YUx2ZHp4eG9BTVpF?oc=5",
-          "published": "Wed, 28 Oct 2026 11:00:00 GMT",
-          "source": "Yahoo Finance Singapore"
+          "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
+          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
+          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
+          "source": "Kalkine Media"
         }
       ]
     }

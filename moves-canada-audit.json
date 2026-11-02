@@ -1,13 +1,40 @@
 {
-  "updated": "2026-10-31T02:39:46.150837+00:00",
-  "candidateCount": 14,
-  "needsReview": 11,
+  "updated": "2026-11-02T21:50:01.997053+00:00",
+  "candidateCount": 15,
+  "needsReview": 12,
   "possibleDuplicates": 3,
   "records": [
     {
+      "headline": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Lelezard",
+      "published": "Sat, 31 Oct 2026 06:26:10 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQmZLbFk2akhpSTdOQnZBcmVWMUZ5dl96ZDVEYVZ1dEZKenpRbU5rb2s0clRZX196eGFKZU14RTEwNF9yRTg5RThMSDk3b0tSdGtHYkI4V0NWR1FtX0pFMUg3Yk1GeTJ0eVRJcTg4VGx2V2NhdW1nZnZtajV4cExTbE5JelQtZ0FCQmRacWR4dTZCVXpEbkhIdmpCdlM4YTRoUEY0R0RNekh5QnlXRXEyaDY4UkFDelVWeGE0QTVmcWJ3TU1tQVlZaw?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
+      "headline": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
+      "published": "Sat, 31 Oct 2026 01:26:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
+      "headline": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
+      "published": "Sat, 31 Oct 2026 01:25:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
       "headline": "Early Warning Press Release - Yahoo! Finance Canada",
-      "published": "Thu, 29 Oct 2026 02:10:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVlVFUS11d1hpMHc1cGlPLXNfc2t2ZlFzTDJQb0ZPRkpQY1AxTklTWFA2dXR1bXNOYy1sdmtLNXR0ZEh5N0FwckY4Y1pJNTE2OGNta0FoLThmek8tc01ncC0xYjZNMVE3eFQ1d19vYlFqRG5ybEw2bElnckZaSEJ3cy1n?oc=5",
+      "published": "Thu, 29 Oct 2026 02:36:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWTdEVl93QVhpQU1WNG9qTGMxaFpxWEl2RTRVYVZlU09fUnJHNnFzMloyY0Vub1FEYVpuZkUxcGkwQ2tTV2J0REFUcGhQd2lCeWl5WnFJTVZwblFTWUZZcDJ6N21WN3pTVjRGRGJmNjNiem9WYVByUGNMM0RPUC01aXB3?oc=5",
       "reviewStatus": "needs_original_source_review",
       "possibleMatches": [],
       "verified": false,
@@ -124,24 +151,6 @@
           "company": "TNR Gold Corp."
         }
       ],
-      "verified": false,
-      "note": "Headline matching is only a review hint, not transaction verification."
-    },
-    {
-      "headline": "Mr. Eric Krafft Reports Participation on the Private Placement of Leading Edge Materials Corp. - The Globe and Mail",
-      "published": "Fri, 02 Oct 2026 15:57:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNNDN3WjhCM1dLLVNOQUEwUmk3M3N6U2Y3Sm4tcnJEU0JVMXdQOEVPU05EdVZnQkhDMllxY05jcXZkTWc3LVZ2R1VWVXFnV0JXTzB4VWdEeHFJQ21VWFRiVWcyUC14WFJoSWVqZXpzci1qdzZ3YTF6LXFVZGpfR01fdVZjWDluLXNoOU53UWRyOU9wUUR0NlpGQ21yWHlXMXN5UHFkOERZQzBJaW1mUDVDMXM1Q1NQdi11RzBiZXJXTkI2c0dUeFQxOHdmQzVqakZWZHI5ckNMQU5KTzVleEpuaWpnZk9kNnczRWtIR0FFMG5IVW9YUEt4SWJfY0N4YU8za1ZNaDNzM3pJZw?oc=5",
-      "reviewStatus": "needs_original_source_review",
-      "possibleMatches": [],
-      "verified": false,
-      "note": "Headline matching is only a review hint, not transaction verification."
-    },
-    {
-      "headline": "MAX Power Announces $10 Million Strategic Investment at $2.50 Per Unit from Eric Sprott - Hydrogen Central",
-      "published": "Fri, 02 Oct 2026 14:19:14 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaXViUDZXVjhjQTJUVi1rLTY3akV4OXl5LTc2VW1Gb2NiMGJQVjFTQjV3aFVhMXRvdTJSYmxHNTRpdVBjVkd6am5IQkIxTTltOEtVd19Lcnk0TGtxOUk3R0RHUmJhVllVTlRqQk42Sy1Zc2k5S2o4WWdXeV9hOXluWmNob3ZmcWc4YkpPNEFuV3RYWU95NnRFNE53aXNnN2FLbXdGeUppbVhNWXNpWmxTa041SW1Cdw?oc=5",
-      "reviewStatus": "needs_original_source_review",
-      "possibleMatches": [],
       "verified": false,
       "note": "Headline matching is only a review hint, not transaction verification."
     }

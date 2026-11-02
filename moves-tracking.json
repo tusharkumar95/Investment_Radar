@@ -2,6 +2,67 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-02:India:RADIOWALLA",
+      "day": "2026-11-02",
+      "market": "India",
+      "symbol": "RADIOWALLA",
+      "company": "Radiowalla Network Ltd",
+      "buyers": 2,
+      "investors": [
+        "NAUTILUS PRIVATE CAPITAL LTD",
+        "SS CORPORATE SECURITIES LIMITED"
+      ],
+      "value": 4354816.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 21.27,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-02T21:50:03.389068+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-02:India:MOBIKWIK",
+      "day": "2026-11-02",
+      "market": "India",
+      "symbol": "MOBIKWIK",
+      "company": "One Mobikwik Systems Ltd",
+      "buyers": 2,
+      "investors": [
+        "BANK OF INDIA MUTUAL FUND",
+        "HRTI PRIVATE LIMITED"
+      ],
+      "value": 185422913.91,
+      "currency": "INR",
+      "disclosedAvgPrice": 225.32,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-02T21:50:03.389068+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-02:India:EDELALTS",
+      "day": "2026-11-02",
+      "market": "India",
+      "symbol": "EDELALTS",
+      "company": "EAAA India Alternatives L",
+      "buyers": 3,
+      "investors": [
+        "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
+        "HDFC MUTUAL FUND",
+        "LARSEN AND TOUBRO LIMITED"
+      ],
+      "value": 3163924099.77,
+      "currency": "INR",
+      "disclosedAvgPrice": 1684.6233,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-02T21:50:03.389068+00:00",
+      "firstBuyerCount": 3,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-10-30:India:SWIGGY",
       "day": "2026-10-30",
       "market": "India",
@@ -292,7 +353,8 @@
       "2026-10-26": 2573.3,
       "2026-10-27": 2830.6001,
       "2026-10-28": 2840.3,
-      "2026-10-29": 2836
+      "2026-10-29": 2836,
+      "2026-10-30": 2715.7
     },
     "India:RATNAVEER": {
       "2026-10-23": 330.7,
@@ -308,7 +370,8 @@
     "India:SHIVAUM": {
       "2026-10-27": 540.1,
       "2026-10-28": 545.45,
-      "2026-10-29": 541.85
+      "2026-10-29": 541.85,
+      "2026-10-30": 545.3
     },
     "India:SWIGGY": {
       "2026-10-30": 176.6
@@ -344,10 +407,17 @@
       "2026-10-26": 173.75,
       "2026-10-27": 186.39,
       "2026-10-28": 181.4,
-      "2026-10-29": 182.86
+      "2026-10-29": 182.86,
+      "2026-10-30": 178.83
+    },
+    "India:EDELALTS": {
+      "2026-11-02": 1727.8
+    },
+    "India:MOBIKWIK": {
+      "2026-11-02": 225.85
     }
   },
-  "updatedAt": "2026-10-31T02:39:48.122703+00:00",
+  "updatedAt": "2026-11-02T21:50:03.389068+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -357,12 +427,15 @@
     "India:SWIGGY": "SWIGGY.NS",
     "India:TONBO": "TONBO.NS",
     "India:VNL": "VNL.NS",
-    "India:DPWIRES": "DPWIRES.NS"
+    "India:DPWIRES": "DPWIRES.NS",
+    "India:EDELALTS": "EDELALTS.NS",
+    "India:MOBIKWIK": "MOBIKWIK.NS"
   },
-  "quotesUpdatedAt": "2026-10-31T02:39:50.515657+00:00",
+  "quotesUpdatedAt": "2026-11-02T21:50:06.757544+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:LAMOSAIC",
+    "India:RADIOWALLA",
     "India:RKFAL"
   ],
   "quoteSource": "Yahoo Finance via yfinance; unadjusted daily closes, possibly delayed"
