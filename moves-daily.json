@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-02T22:51:46.410064+00:00",
+  "updated": "2026-11-02T23:39:38.348683+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-02",
@@ -1407,6 +1407,7 @@
         }
       ],
       "canada": [],
+      "canadaReported": [],
       "canadaLeads": [],
       "alerts": [
         {
@@ -1467,17 +1468,10 @@
       "date": "2026-10-31",
       "india": [],
       "canada": [],
+      "canadaReported": [],
       "canadaLeads": [
         {
           "id": "lead:2026-10-31:0",
-          "day": "2026-10-31",
-          "headline": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Lelezard",
-          "source": "Lelezard",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQmZLbFk2akhpSTdOQnZBcmVWMUZ5dl96ZDVEYVZ1dEZKenpRbU5rb2s0clRZX196eGFKZU14RTEwNF9yRTg5RThMSDk3b0tSdGtHYkI4V0NWR1FtX0pFMUg3Yk1GeTJ0eVRJcTg4VGx2V2NhdW1nZnZtajV4cExTbE5JelQtZ0FCQmRacWR4dTZCVXpEbkhIdmpCdlM4YTRoUEY0R0RNekh5QnlXRXEyaDY4UkFDelVWeGE0QTVmcWJ3TU1tQVlZaw?oc=5",
-          "verification": "Unverified — open original filing before acting"
-        },
-        {
-          "id": "lead:2026-10-31:1",
           "day": "2026-10-31",
           "headline": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "source": "TradingView",
@@ -1485,11 +1479,19 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-10-31:2",
+          "id": "lead:2026-10-31:1",
           "day": "2026-10-31",
           "headline": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
           "source": "Kalkine Media",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-10-31:2",
+          "day": "2026-10-31",
+          "headline": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Yahoo Finance",
+          "source": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSVFhdDZqd0NuUUhXc1Bsb2dnbnZwa3BBSmh6VjJLU29kQlF6d1puR0hZNzZURllZX0NYSlFmZHJVTTRtRU1vakpkdmNGWVhOTkFYMWlVbGNrUDBhTlJRSFEyNUZWcWNzMzFUbE5rSUtpdUxSM1hteVNmR0lVaXJyM2R2U3ZRYTlpUUozbnhSVXpoaDFNVVQ0Z3NkTlprNDlGYUE?oc=5",
           "verification": "Unverified — open original filing before acting"
         }
       ],
@@ -2881,6 +2883,7 @@
           "verified": true
         }
       ],
+      "canadaReported": [],
       "canadaLeads": [],
       "alerts": [
         {
@@ -3965,6 +3968,7 @@
         }
       ],
       "canada": [],
+      "canadaReported": [],
       "canadaLeads": [
         {
           "id": "lead:2026-10-29:3",
@@ -4865,6 +4869,7 @@
           "verified": true
         }
       ],
+      "canadaReported": [],
       "canadaLeads": [
         {
           "id": "lead:2026-10-28:5",
@@ -5840,6 +5845,7 @@
         }
       ],
       "canada": [],
+      "canadaReported": [],
       "canadaLeads": [],
       "alerts": [
         {
@@ -6846,6 +6852,7 @@
         }
       ],
       "canada": [],
+      "canadaReported": [],
       "canadaLeads": [
         {
           "id": "lead:2026-10-26:6",
@@ -7154,10 +7161,19 @@
       "verified": true
     }
   ],
+  "canadaReportedArchive": [],
   "sourceInfo": {
     "india": "NSE bulk/block disclosed transaction activity",
-    "canada": "Verified Canadian deals and separately labeled unverified disclosure leads",
-    "canadaDiscoveryUpdated": "2026-11-02T22:51:44.685626+00:00",
+    "canada": "Confirmed Canadian deals plus separately labelled third-party SEDI-derived reports and unverified disclosure leads",
+    "canadaReportedFeed": {
+      "ok": true,
+      "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
+      "count": 0,
+      "error": null,
+      "asOf": "2026-11-02T23:39:36.888Z"
+    },
+    "canadaReportedAttribution": "https://marketclerk.com",
+    "canadaDiscoveryUpdated": "2026-11-02T23:39:35.662660+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "updated": "2026-11-02T23:39:36.709045+00:00",
+  "source": "Market Clerk",
+  "attributionUrl": "https://marketclerk.com",
+  "license": "CC BY 4.0 — attribute and link back",
+  "policy": "Secondary reports only; these are not primary-verified SEDI data.",
+  "status": {
+    "ok": true,
+    "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
+    "count": 0,
+    "error": null,
+    "asOf": "2026-11-02T23:39:36.888Z"
+  },
+  "records": []
+}
