@@ -11,6 +11,14 @@ on:
       - "moves-v3.css"
       - "index.html"
       - ".github/workflows/moves-check.yml"
+  pull_request:
+    paths:
+      - "moves.html"
+      - "moves.js"
+      - "scripts/build_moves_daily.py"
+      - "scripts/fetch_canada_insiders.py"
+      - "scripts/test_canada_insiders.py"
+      - ".github/workflows/moves-check.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -25,10 +33,14 @@ jobs:
           node --check moves.js
           grep -q 'href="moves.html"' index.html
           grep -q 'src="moves-core.js?v=1"' moves.html
-          grep -q 'src="moves.js?v=1"' moves.html
+          grep -q 'src="moves.js?v=2"' moves.html
           test -f moves-radar.css
           test -f moves-v2.css
           test -f moves-v3.css
+      - name: Test Canadian feed parser without network
+        run: |
+          python -m py_compile scripts/build_moves_daily.py scripts/fetch_canada_insiders.py scripts/test_canada_insiders.py
+          python scripts/test_canada_insiders.py
       - name: Validate historical data preserved
         run: |
           python - <<'PY'

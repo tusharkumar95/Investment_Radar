@@ -105,6 +105,7 @@ def create():
     verified = read("moves-canada-verified.json", {}).get("records", [])
     sedi = read("moves-canada-sedi.json", {}).get("records", [])
     automated = read("moves-canada-auto.json", {}).get("records", [])
+    secondary = read("moves-canada-reported.json", {}).get("records", [])
     by_id = {}
     for raw in history:
         if raw.get("market") not in ("India", None):
@@ -129,10 +130,36 @@ def create():
             key = str(row.get("sourceUrl") or row.get("id") or (row["day"], row["company"], row.get("investor")))
             ca_by_id[key] = row
     canada = sorted(ca_by_id.values(), key=lambda r: r["day"], reverse=True)
+    # Supplement sparse verified disclosures with explicitly UNVERIFIED third-party
+    # SEDI-derived insider reports. These do not enter confirmed buyer alerts.
+    # Deduplicate against primary reports to avoid two cards for one purchase.
+    def purchase_key(row):
+        return (
+            str(row.get("symbol") or "").upper().strip(),
+            " ".join(str(row.get("investor") or "").upper().split()),
+            str(row.get("direction") or "BUY").upper(),
+            iso(row.get("transactionDate")),
+            int(row.get("quantity") or row.get("shares") or 0),
+        )
+
+    confirmed_keys = {purchase_key(r) for r in canada}
+    reported_map = {}
+    for raw in secondary:
+        row = dict(raw)
+        row["day"] = iso(row.get("disclosureDate") or row.get("date"))
+        row["market"] = "Canada"
+        row["verified"] = False
+        if not row.get("day") or not row.get("sourceUrl") or not row.get("symbol"):
+            continue
+        key = purchase_key(row)
+        if key in confirmed_keys:
+            continue
+        reported_map[str(row.get("id") or key)] = row
+    canada_reported = sorted(reported_map.values(), key=lambda r: r["day"], reverse=True)
     leads = canadian_leads()
 
     dates = sorted({
-        x["day"] for x in [*india, *canada, *leads] if in_window(x.get("day"))
+        x["day"] for x in [*india, *canada, *canada_reported, *leads] if in_window(x.get("day"))
     }, reverse=True)
 
     # A multiple-buyer event must contain distinct named buyers. A duplicate
@@ -194,20 +221,24 @@ def create():
             "date": day,
             "india": [r for r in india if r["day"] == day],
             "canada": [r for r in canada if r["day"] == day],
+            "canadaReported": [r for r in canada_reported if r["day"] == day],
             "canadaLeads": [r for r in leads if r["day"] == day],
             "alerts": [a for a in alerts if a["day"] == day],
         } for day in dates],
         "alerts": alerts,
         "canadaArchive": canada[:20],
+        "canadaReportedArchive": canada_reported[:60],
         "sourceInfo": {
             "india": "NSE bulk/block disclosed transaction activity",
-            "canada": "Verified Canadian deals and separately labeled unverified disclosure leads",
+            "canada": "Confirmed Canadian deals plus separately labelled third-party SEDI-derived reports and unverified disclosure leads",
+            "canadaReportedFeed": read("moves-canada-reported.json", {}).get("status", {}),
+            "canadaReportedAttribution": "https://marketclerk.com",
             "canadaDiscoveryUpdated": read("moves-canada-candidates.json", {}).get("updated"),
             "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh",
         },
     }
     write("moves-daily.json", daily)
-    print("Moves days:", len(dates), "India:", len(india), "Canada verified:", len(canada), "Canadian leads:", len(leads), "alerts:", len(alerts), "stored tracks:", len(saved))
+    print("Moves days:", len(dates), "India:", len(india), "Canada verified:", len(canada), "Canada reported:", len(canada_reported), "Canadian leads:", len(leads), "alerts:", len(alerts), "stored tracks:", len(saved))
 
 
 if __name__ == "__main__":

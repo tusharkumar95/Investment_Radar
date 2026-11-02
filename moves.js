@@ -28,12 +28,14 @@
   }
   function totalValue(row){
     if(row.market==="India")return "₹"+Number(row.valueCr||row.netBuyValueCr||0).toLocaleString("en-IN",{maximumFractionDigits:2})+" Cr";
+    if(row.reported && row.currency!=="CAD")return Number(row.reportedValue||0).toLocaleString("en-CA",{maximumFractionDigits:2})+" "+(row.currency==="UNSPECIFIED"?"(currency unspecified)":row.currency);
     return cash(row.valueCAD||row.value||0,"Canada",true);
   }
   function countBuyers(track){return Number(track.buyers||track.firstBuyerCount||0);}
   function marketIcon(m){return m==="Canada"?"🇨🇦":"🇮🇳";}
   function eventDate(row){return row.day||row.disclosureDate||row.date||"";}
   function statusTag(row){
+    if(row.verified===false)return '<span class="move-strength low">Third-party report</span>';
     const s=String(row.strength||"");
     const score=Number(row.moveScore||0);
     return '<span class="move-strength '+(score>=78?"exceptional":score>=62?"strong":score>=45?"watch":"low")+'">'+esc(s||"Verified")+'</span>';
@@ -43,7 +45,7 @@
   function dayData(){return allDays().find(d=>d.date===state.moveDate)||allDays()[0]||{india:[],canada:[],canadaLeads:[],alerts:[]};}
   function selectedRows(){
     const d=dayData();
-    return [...(d.india||[]),...(d.canada||[])].filter(r=>{
+    return [...(d.india||[]),...(d.canada||[]),...(d.canadaReported||[])].filter(r=>{
       if(state.moveMarket!=="All"&&r.market!==state.moveMarket)return false;
       if(state.investorQuery&&r.investor!==state.investorQuery)return false;
       if(state.companyQuery&&r.company!==state.companyQuery)return false;
@@ -63,7 +65,7 @@
       '<button type="button" class="moves-track-btn" onclick="selectMoveTrack('+JSON.stringify(a.id).replaceAll('"',"&quot;")+')">View automatic tracking →</button></article>';
   }
   function activityCard(r){
-    const price=r.market==="India"?cash(r.avgPrice||r.avgBuyPrice,"India"):cash(r.avgPrice||r.priceCAD,"Canada");
+    const price=r.market==="India"?cash(r.avgPrice||r.avgBuyPrice,"India"):(r.reported&&r.currency!=="CAD"?Number(r.avgPrice||0).toLocaleString("en-CA",{maximumFractionDigits:4})+" "+(r.currency==="UNSPECIFIED"?"(currency unspecified)":r.currency):cash(r.avgPrice||r.priceCAD,"Canada"));
     const qty=Number(r.netQty||r.quantity||r.shares||0).toLocaleString(r.market==="India"?"en-IN":"en-CA");
     const disclosure=r.market==="Canada"&&r.disclosureDate?
       '<span class="moves-small">Disclosed '+fmt(r.disclosureDate)+(r.transactionDate?" · Trade "+fmt(r.transactionDate):" · Trade date unspecified")+'</span>':"";
@@ -85,7 +87,7 @@
     return '<section class="moves-canada-section"><h3>🇨🇦 Canadian disclosure desk <span>'+leads.length+' leads</span></h3>'+
       '<p class="moves-description">Canada is monitored automatically for filings. The following are discovery leads, <strong>not verified purchases</strong>; the source must confirm a completed trade. Latest discovery: '+(last?esc(new Date(last).toLocaleDateString("en-CA")):"unavailable")+'.</p>'+
       (leads.length?leads.slice(0,15).map(x=>'<article class="moves-lead"><span class="moves-lead-label">Needs verification · '+fmt(x.day)+'</span><p>'+esc(x.headline)+'</p>'+sourceLink(x.url)+'</article>').join(""):'<p class="moves-empty">No recent Canadian filing candidates found.</p>')+
-      '<details class="moves-archive"><summary>Previously verified Canadian transactions ('+archive.length+')</summary>'+
+      '<details class="moves-archive" '+(state.moveMarket==="Canada"&&!(dayData().canada||[]).length?"open":"")+'><summary>Previously verified Canadian transactions ('+archive.length+')</summary>'+
       (archive.length?archive.map(x=>'<div class="moves-archive-row"><b>'+esc(x.company)+' · '+esc(x.symbol)+'</b><span>Disclosed '+fmt(x.day)+' · '+esc(x.investor)+'</span>'+sourceLink(x.sourceUrl)+'</div>').join(""):'<p>No verified Canadian acquisitions available.</p>')+
       '</details></section>';
   }
@@ -154,9 +156,21 @@
   window.setMovesPanel=function(panel){state.movesPanel=panel==="tracks"?"tracks":"activity";render();};
   window.selectMoveTrack=function(id){state.activeMoveTrack=id;state.movesPanel="tracks";render();window.scrollTo({top:0,behavior:"smooth"});};
   window.setMoveMode=function(mode){if(["All","Notable","Accumulating","Insider Buying","Selling"].includes(mode)){state.moveMode=mode;render();}};
-  window.setMoveMarket=function(m){if(["All","Canada","India"].includes(m)){state.moveMarket=m;render();}};
+  window.setMoveMarket=function(m){
+    if(!["All","Canada","India"].includes(m))return;
+    state.moveMarket=m;
+    if(m!=="All"){
+      const key=m==="Canada"?"canada":"india";
+      const onDate=(dayData()[key]||[]).length>0||(m==="Canada"&&(dayData().canadaReported||[]).length>0);
+      if(!onDate){
+        const newest=allDays().find(d=>(d[key]||[]).length>0||(m==="Canada"&&(d.canadaReported||[]).length>0));
+        if(newest)state.moveDate=newest.date;
+      }
+    }
+    render();
+  };
   moveFilterOptions=function(field){
-    return [...new Set(allDays().flatMap(d=>[...(d.india||[]),...(d.canada||[])]).map(r=>String(r[field]||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+    return [...new Set(allDays().flatMap(d=>[...(d.india||[]),...(d.canada||[]),...(d.canadaReported||[])]).map(r=>String(r[field]||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
   };
   movesView=function(){
     if(!state.movesDaily)return '<div class="moves-empty">Loading Moves archive…</div>';
@@ -174,14 +188,14 @@
       '<div class="move-market-strip">'+["All","Canada","India"].map(m=>'<button class="move-market '+(state.moveMarket===m?"active":"")+'" onclick="setMoveMarket(\''+m+'\')">'+m+'</button>').join("")+'</div>'+
       (state.movesPanel==="tracks"?tracksView():
       '<label class="moves-date-picker"><span>Disclosure date · last 7 days</span><select onchange="setMoveDate(this.value)">'+
-      (dates.length?dates.map(d=>'<option value="'+esc(d.date)+'" '+(d.date===state.moveDate?"selected":"")+'>'+fmt(d.date)+' · '+((d.india||[]).length+(d.canada||[]).length)+' verified transactions</option>').join(""):'<option>No activity</option>')+'</select></label>'+
+      (dates.length?dates.map(d=>'<option value="'+esc(d.date)+'" '+(d.date===state.moveDate?"selected":"")+'>'+fmt(d.date)+' · '+((d.india||[]).length+(d.canada||[]).length+(d.canadaReported||[]).length)+' disclosures / reports</option>').join(""):'<option>No activity</option>')+'</select></label>'+
       (alerts.length?'<div class="moves-alert-list"><h3>Multiple buyers detected</h3>'+alerts.map(signalCard).join("")+'</div>':"")+
       '<div class="move-mode-strip">'+modes.map(m=>'<button class="move-mode '+(state.moveMode===m?"active":"")+'" onclick="setMoveMode(\''+m+'\')">'+m+'</button>').join("")+'</div>'+
       '<div class="moves-filters">'+opts("investor",state.investorQuery,"setInvestorFilter","Investor / insider")+opts("company",state.companyQuery,"setCompanyFilter","Company")+'</div>'+
-      '<div class="moves-intro"><strong>'+rows.length+' verified disclosures</strong><span>Selected date: '+fmt(state.moveDate)+'. Different buyers on one stock are counted once each.</span></div>'+
-      (rows.length?rows.slice(0,80).map(activityCard).join(""):'<div class="moves-empty">No verified disclosures match this date and filter. Try All or another date.</div>')+
+      '<div class="moves-intro"><strong>'+rows.length+' disclosed / reported transactions</strong><span>Selected date: '+fmt(state.moveDate)+'. Different buyers on one stock are counted once each.</span></div>'+
+      (rows.length?rows.slice(0,80).map(activityCard).join(""):'<div class="moves-empty">No disclosed or reported transactions match this date and filter. Try All or another date.</div>')+
       leadsView())+
-      '<p class="moves-source-policy">🇮🇳 India: NSE bulk and block deals. 🇨🇦 Canada: confirmed acquisitions only in verified activity; unverified Canadian filings appear in a separate discovery desk. Disclosed purchases are not stock recommendations. Data can be delayed.</p>'+
+      '<p class="moves-source-policy">🇮🇳 India: official NSE bulk/block deals. 🇨🇦 Canada: confirmed acquisitions plus separately labelled SEDI-derived reports via <a href="https://marketclerk.com" target="_blank" rel="noopener noreferrer">Market Clerk</a> (CC BY 4.0, periodically imported, not independently verified). Unverified filing leads remain separate and do not trigger confirmed-buyer alerts. Dates are disclosure dates; trade dates may be earlier. Not investment advice.</p>'+
       '</section>';
   };
   async function refresh(){

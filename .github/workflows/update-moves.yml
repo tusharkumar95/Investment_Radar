@@ -13,6 +13,8 @@ on:
       - "scripts/build_moves_daily.py"
       - "scripts/refresh_moves_prices.py"
       - "scripts/fetch_canada_disclosures.py"
+      - "scripts/fetch_canada_insiders.py"
+      - "scripts/test_canada_insiders.py"
       - "moves-canada-verified.json"
       - "moves-canada-sedi.json"
       - "moves-tracking.json"
@@ -34,12 +36,15 @@ jobs:
       - name: Install quote reader
         run: python -m pip install --quiet "yfinance>=0.2.50,<2"
       - name: Check Python syntax
-        run: python -m py_compile scripts/fetch_moves.py scripts/build_moves_daily.py scripts/refresh_moves_prices.py scripts/fetch_canada_disclosures.py scripts/test_canada_discovery.py scripts/audit_canada_moves.py
+        run: |
+          python -m py_compile scripts/fetch_moves.py scripts/build_moves_daily.py scripts/refresh_moves_prices.py scripts/fetch_canada_disclosures.py scripts/fetch_canada_insiders.py scripts/test_canada_discovery.py scripts/audit_canada_moves.py scripts/test_canada_insiders.py
+          python scripts/test_canada_insiders.py
       - name: Refresh Moves
         run: |
           python scripts/test_canada_discovery.py
           python scripts/audit_canada_moves.py
           python scripts/fetch_canada_disclosures.py
+          python scripts/fetch_canada_insiders.py
           python scripts/fetch_moves.py
           python scripts/build_moves_daily.py
           python scripts/refresh_moves_prices.py
@@ -67,7 +72,7 @@ jobs:
           git config user.name "radar-moves-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           publish() {
-            git add moves.json moves-history.json moves-intelligence.json moves-daily.json moves-tracking.json moves-canada-discovery-test.json moves-canada-candidates.json moves-canada-audit.json moves-canada-auto.json
+            git add moves.json moves-history.json moves-intelligence.json moves-daily.json moves-tracking.json moves-canada-discovery-test.json moves-canada-candidates.json moves-canada-audit.json moves-canada-auto.json moves-canada-reported.json
             git diff --cached --quiet && return 0
             git commit -m "Update Investment Radar Moves"
             git push origin HEAD:main
@@ -78,6 +83,7 @@ jobs:
           python scripts/test_canada_discovery.py
           python scripts/audit_canada_moves.py
           python scripts/fetch_canada_disclosures.py
+          python scripts/fetch_canada_insiders.py
           python scripts/fetch_moves.py
           python scripts/build_moves_daily.py
           python scripts/refresh_moves_prices.py
