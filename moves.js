@@ -85,7 +85,7 @@
     return '<section class="moves-canada-section"><h3>🇨🇦 Canadian disclosure desk <span>'+leads.length+' leads</span></h3>'+
       '<p class="moves-description">Canada is monitored automatically for filings. The following are discovery leads, <strong>not verified purchases</strong>; the source must confirm a completed trade. Latest discovery: '+(last?esc(new Date(last).toLocaleDateString("en-CA")):"unavailable")+'.</p>'+
       (leads.length?leads.slice(0,15).map(x=>'<article class="moves-lead"><span class="moves-lead-label">Needs verification · '+fmt(x.day)+'</span><p>'+esc(x.headline)+'</p>'+sourceLink(x.url)+'</article>').join(""):'<p class="moves-empty">No recent Canadian filing candidates found.</p>')+
-      '<details class="moves-archive"><summary>Previously verified Canadian transactions ('+archive.length+')</summary>'+
+      '<details class="moves-archive" '+(state.moveMarket==="Canada"&&!(dayData().canada||[]).length?"open":"")+'><summary>Previously verified Canadian transactions ('+archive.length+')</summary>'+
       (archive.length?archive.map(x=>'<div class="moves-archive-row"><b>'+esc(x.company)+' · '+esc(x.symbol)+'</b><span>Disclosed '+fmt(x.day)+' · '+esc(x.investor)+'</span>'+sourceLink(x.sourceUrl)+'</div>').join(""):'<p>No verified Canadian acquisitions available.</p>')+
       '</details></section>';
   }
@@ -154,7 +154,19 @@
   window.setMovesPanel=function(panel){state.movesPanel=panel==="tracks"?"tracks":"activity";render();};
   window.selectMoveTrack=function(id){state.activeMoveTrack=id;state.movesPanel="tracks";render();window.scrollTo({top:0,behavior:"smooth"});};
   window.setMoveMode=function(mode){if(["All","Notable","Accumulating","Insider Buying","Selling"].includes(mode)){state.moveMode=mode;render();}};
-  window.setMoveMarket=function(m){if(["All","Canada","India"].includes(m)){state.moveMarket=m;render();}};
+  window.setMoveMarket=function(m){
+    if(!["All","Canada","India"].includes(m))return;
+    state.moveMarket=m;
+    if(m!=="All"){
+      const key=m==="Canada"?"canada":"india";
+      const onDate=(dayData()[key]||[]).length>0;
+      if(!onDate){
+        const newest=allDays().find(d=>(d[key]||[]).length>0);
+        if(newest)state.moveDate=newest.date;
+      }
+    }
+    render();
+  };
   moveFilterOptions=function(field){
     return [...new Set(allDays().flatMap(d=>[...(d.india||[]),...(d.canada||[])]).map(r=>String(r[field]||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
   };
@@ -181,7 +193,7 @@
       '<div class="moves-intro"><strong>'+rows.length+' verified disclosures</strong><span>Selected date: '+fmt(state.moveDate)+'. Different buyers on one stock are counted once each.</span></div>'+
       (rows.length?rows.slice(0,80).map(activityCard).join(""):'<div class="moves-empty">No verified disclosures match this date and filter. Try All or another date.</div>')+
       leadsView())+
-      '<p class="moves-source-policy">🇮🇳 India: NSE bulk and block deals. 🇨🇦 Canada: confirmed acquisitions only in verified activity; unverified Canadian filings appear in a separate discovery desk. Disclosed purchases are not stock recommendations. Data can be delayed.</p>'+
+      '<p class="moves-source-policy">🇮🇳 India: official NSE bulk and block disclosures. 🇨🇦 Canada: a smaller set of individually confirmed acquisitions; Canadian SEDI insider reporting is not in this automatic feed. Unverified filing leads are separate. Dates are disclosure dates; Canadian reports can appear days after the trade. This is not a recommendation. Data may be incomplete.</p>'+
       '</section>';
   };
   async function refresh(){
