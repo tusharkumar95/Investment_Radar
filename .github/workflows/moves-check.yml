@@ -25,7 +25,7 @@ jobs:
           node --check moves.js
           grep -q 'href="moves.html"' index.html
           grep -q 'src="moves-core.js?v=1"' moves.html
-          grep -q 'src="moves.js?v=1"' moves.html
+          grep -q 'src="moves.js?v=2"' moves.html
           test -f moves-radar.css
           test -f moves-v2.css
           test -f moves-v3.css
