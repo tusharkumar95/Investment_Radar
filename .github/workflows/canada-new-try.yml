@@ -10,7 +10,10 @@ on:
       - "canada-new-try.html"
       - "canada-new-try.js"
       - "scripts/canada_new_try.py"
+      - "scripts/canada_discovery_lab.py"
+      - "scripts/test_canada_discovery_lab.py"
       - "scripts/test_canada_new_try.py"
+      - "canada-corporate-verified.json"
       - ".github/workflows/canada-new-try.yml"
   push:
     branches: [main]
@@ -18,7 +21,10 @@ on:
       - "canada-new-try.html"
       - "canada-new-try.js"
       - "scripts/canada_new_try.py"
+      - "scripts/canada_discovery_lab.py"
+      - "scripts/test_canada_discovery_lab.py"
       - "scripts/test_canada_new_try.py"
+      - "canada-corporate-verified.json"
       - ".github/workflows/canada-new-try.yml"
 permissions:
   contents: write
@@ -37,11 +43,15 @@ jobs:
         run: python -m pip install --quiet "yfinance>=0.2.50,<2" "pandas>=2,<3"
       - name: Validate isolated experiment
         run: |
-          python -m py_compile scripts/canada_new_try.py scripts/test_canada_new_try.py
+          python -m py_compile scripts/canada_new_try.py scripts/canada_discovery_lab.py scripts/test_canada_new_try.py scripts/test_canada_discovery_lab.py
           python scripts/test_canada_new_try.py
+          python scripts/test_canada_discovery_lab.py
           node --check canada-new-try.js
           test -f canada-new-try.html
           test -f canada-new-try.json
+      - name: Collect publisher and regulator disclosure leads
+        if: github.event_name != 'pull_request'
+        run: python scripts/canada_discovery_lab.py
       - name: Update experimental dataset
         if: github.event_name != 'pull_request'
         run: python scripts/canada_new_try.py
@@ -52,12 +62,17 @@ jobs:
           import json
           j=json.load(open('canada-new-try.json', encoding='utf-8'))
           assert j['schema']==2
-          assert all(isinstance(j[k],list) for k in ('purchases','companies','multipleBuyers','tracks'))
+          assert all(isinstance(j[k],list) for k in ('purchases','companies','multipleBuyers','tracks','investorWatch','leads','usFilings','sourceHealth'))
           assert not any(k in j for k in ('canadaStocks','cdrs','ownership','momentum'))
           assert all(x.get('verifiedPurchase') and x.get('investor') and x.get('sourceUrl') for x in j['purchases'])
           assert all('relativeVolume' not in x and 'score' not in x for x in j['purchases'])
           assert all(t.get('lane')=='Verified ownership' and t.get('id','').startswith('owner:') for t in j['tracks'])
-          assert all(x.get('distinctBuyers',0)>=2 for x in j['multipleBuyers'])
+          assert all(x.get('independentGroups',0)>=2 for x in j['multipleBuyers'])
+          assert all(x.get('verifiedPurchase') is False for x in j['leads'])
+          assert all(x.get('status')=='Filing published — purchase not established' for x in j['usFilings'])
+          assert not any(x.get('verifiedPurchase') for x in j['usFilings'])
+          assert len(j['purchases']) >= 8
+          assert any(x.get('symbolRaw')=='LAB' for x in j['purchases'])
           print("Verified corporate-purchase signals:",len(j['purchases']),"tracked",len(j['tracks']))
           PY
       - name: Publish ONLY experimental data
@@ -67,14 +82,15 @@ jobs:
           set -euo pipefail
           git config user.name "canada-pilot-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- canada-new-try.json; then exit 0; fi
-          git add canada-new-try.json
+          if git diff --quiet -- canada-new-try.json canada-new-try-leads.json; then exit 0; fi
+          git add canada-new-try.json canada-new-try-leads.json
           git commit -m "Refresh Canada New Try pilot data"
           if git push origin HEAD:main; then exit 0; fi
           git fetch origin main
           git reset --hard origin/main
+          python scripts/canada_discovery_lab.py
           python scripts/canada_new_try.py
-          git add canada-new-try.json
+          git add canada-new-try.json canada-new-try-leads.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Refresh Canada New Try pilot data after retry"
           git push origin HEAD:main
