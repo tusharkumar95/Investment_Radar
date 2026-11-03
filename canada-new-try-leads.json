@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T02:21:50.631075+00:00",
+  "updated": "2026-11-03T02:26:48.397803+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -442,7 +442,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 4,
+      "items": 5,
       "relevant": 3
     },
     {

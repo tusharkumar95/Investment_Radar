@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-03T02:21:59.400486+00:00",
+  "updated": "2026-11-03T02:26:56.913617+00:00",
   "day": "2026-11-02",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -167,6 +167,52 @@
       "provenance": "Individually checked primary corporate release"
     },
     {
+      "id": "owner:5e07cd7b2fbb93c34257",
+      "symbol": "MOON.V",
+      "symbolRaw": "MOON",
+      "name": "Blue Moon Metals Inc.",
+      "investor": "The Elmet Group Co.",
+      "buyerType": "Named investor (type unconfirmed)",
+      "direction": "BUY",
+      "shares": 3500000,
+      "disclosedPrice": 10.0,
+      "valueCAD": 35000000.0,
+      "transactionDate": "2026-10-16",
+      "disclosureDate": "2026-10-19",
+      "transactionType": "Closed strategic private placement — units (share plus warrant)",
+      "source": "Blue Moon Metals issuer release (corroborated by Elmet 8-K)",
+      "sourceUrl": "https://bluemoonmetals.com/blue-moon-metals-closes-c35-million-private-placement-with-the-elmet-group-and-board-appointment/",
+      "verifiedPurchase": true,
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "3,500,000 newly issued shares included in 3,500,000 units; each unit also includes one additional-share warrant. This is newly invested cash, not secondary-market trading. Original issuer site publication is Oct 19 despite conflicting dateline, and Elmet's Oct 21 SEC 8-K explicitly states Oct 16 closing.",
+      "buyerGroup": null,
+      "jointActors": false,
+      "provenance": "Individually checked primary corporate release"
+    },
+    {
+      "id": "owner:689e89913bda0250d9db",
+      "symbol": "GBU.V",
+      "symbolRaw": "GBU",
+      "name": "Gabriel Resources Ltd.",
+      "investor": "Electrum Global Holdings L.P.",
+      "buyerType": "Corporate / investment entity (name-based)",
+      "direction": "BUY",
+      "shares": 19954648,
+      "disclosedPrice": 0.0825,
+      "valueCAD": 1646258.46,
+      "transactionDate": "2026-10-16",
+      "disclosureDate": "2026-10-19",
+      "transactionType": "Closed private placement — units (share plus warrant)",
+      "source": "Electrum Global Holdings — original early-warning disclosure (Canada NewsWire)",
+      "sourceUrl": "https://www.newswire.ca/news-releases/electrum-global-holdings-l-p-acquires-units-of-gabriel-resources-ltd-in-private-placement-808136732.html",
+      "verifiedPurchase": true,
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "Investment amount calculated from explicitly disclosed unit count × C$0.0825; separate from subsequent combined holdings of Electrum and its joint actors. Unit includes one new common share and one warrant. This is NOT the same legal investor as Electrum Strategic Opportunities Fund L.P.",
+      "buyerGroup": "electrum-global-holdings-joint-actors",
+      "jointActors": true,
+      "provenance": "Individually checked primary corporate release"
+    },
+    {
       "id": "owner:decc716404c842794c48",
       "symbol": "V",
       "symbolRaw": "V",
@@ -290,6 +336,40 @@
       ]
     },
     {
+      "symbol": "MOON.V",
+      "name": "Blue Moon Metals Inc.",
+      "distinctBuyers": 1,
+      "independentGroups": 1,
+      "investors": [
+        "The Elmet Group Co."
+      ],
+      "repeatInvestors": [],
+      "jointActorDisclosure": false,
+      "transactions": 1,
+      "latestDisclosure": "2026-10-19",
+      "totalDisclosedCAD": 35000000.0,
+      "sourceIds": [
+        "owner:5e07cd7b2fbb93c34257"
+      ]
+    },
+    {
+      "symbol": "GBU.V",
+      "name": "Gabriel Resources Ltd.",
+      "distinctBuyers": 1,
+      "independentGroups": 1,
+      "investors": [
+        "Electrum Global Holdings L.P."
+      ],
+      "repeatInvestors": [],
+      "jointActorDisclosure": true,
+      "transactions": 1,
+      "latestDisclosure": "2026-10-19",
+      "totalDisclosedCAD": 1646258.46,
+      "sourceIds": [
+        "owner:689e89913bda0250d9db"
+      ]
+    },
+    {
       "symbol": "V",
       "name": "Verdera Energy Corp.",
       "distinctBuyers": 1,
@@ -326,6 +406,50 @@
   ],
   "multipleBuyers": [],
   "tracks": [
+    {
+      "id": "owner:5e07cd7b2fbb93c34257",
+      "symbol": "MOON.V",
+      "name": "Blue Moon Metals Inc.",
+      "lane": "Verified ownership",
+      "investor": "The Elmet Group Co.",
+      "started": "2026-11-02",
+      "disclosureDate": "2026-10-19",
+      "transactionDate": "2026-10-16",
+      "valueCAD": 35000000.0,
+      "reason": "Verified named investment purchase",
+      "sourceUrl": "https://bluemoonmetals.com/blue-moon-metals-closes-c35-million-private-placement-with-the-elmet-group-and-board-appointment/",
+      "checkpoints": [
+        {
+          "offset": 0,
+          "day": "2026-11-02",
+          "price": 5.39
+        },
+        {
+          "offset": 5,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 10,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 15,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 30,
+          "day": null,
+          "price": null
+        }
+      ],
+      "lastPrice": 5.39,
+      "lastPriceDate": "2026-11-02",
+      "priceChangePct": 0.0,
+      "quoteStatus": "Available"
+    },
     {
       "id": "owner:b65a8417e34a60f959f2",
       "symbol": "FDY.TO",
@@ -457,6 +581,50 @@
       "lastPriceDate": null,
       "priceChangePct": null,
       "quoteStatus": "No confirmed CAD close"
+    },
+    {
+      "id": "owner:689e89913bda0250d9db",
+      "symbol": "GBU.V",
+      "name": "Gabriel Resources Ltd.",
+      "lane": "Verified ownership",
+      "investor": "Electrum Global Holdings L.P.",
+      "started": "2026-11-02",
+      "disclosureDate": "2026-10-19",
+      "transactionDate": "2026-10-16",
+      "valueCAD": 1646258.46,
+      "reason": "Verified named investment purchase",
+      "sourceUrl": "https://www.newswire.ca/news-releases/electrum-global-holdings-l-p-acquires-units-of-gabriel-resources-ltd-in-private-placement-808136732.html",
+      "checkpoints": [
+        {
+          "offset": 0,
+          "day": "2026-11-02",
+          "price": 0.09
+        },
+        {
+          "offset": 5,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 10,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 15,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 30,
+          "day": null,
+          "price": null
+        }
+      ],
+      "lastPrice": 0.09,
+      "lastPriceDate": "2026-11-02",
+      "priceChangePct": 0.0,
+      "quoteStatus": "Available"
     },
     {
       "id": "owner:d556531b422c6175a679",
@@ -776,6 +944,28 @@
         "Lotus Creek Exploration Inc."
       ],
       "latestDisclosure": "2026-10-28",
+      "candidateArticles": 2,
+      "status": "Verified transactions found"
+    },
+    {
+      "name": "The Elmet Group Co.",
+      "verifiedPurchases": 1,
+      "totalDisclosedCAD": 35000000.0,
+      "companies": [
+        "Blue Moon Metals Inc."
+      ],
+      "latestDisclosure": "2026-10-19",
+      "candidateArticles": 23,
+      "status": "Verified transactions found"
+    },
+    {
+      "name": "Electrum Global Holdings L.P.",
+      "verifiedPurchases": 1,
+      "totalDisclosedCAD": 1646258.46,
+      "companies": [
+        "Gabriel Resources Ltd."
+      ],
+      "latestDisclosure": "2026-10-19",
       "candidateArticles": 2,
       "status": "Verified transactions found"
     },
@@ -1291,7 +1481,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 4,
+      "items": 5,
       "relevant": 3
     },
     {
@@ -1394,11 +1584,11 @@
     }
   ],
   "status": {
-    "verifiedPurchases": 9,
-    "companies": 6,
-    "distinctBuyers": 7,
+    "verifiedPurchases": 11,
+    "companies": 8,
+    "distinctBuyers": 9,
     "multipleBuyerSignals": 0,
-    "tracked": 9,
+    "tracked": 11,
     "quoteErrors": [],
     "disclosureLeads": 38,
     "usFilingNotices": 0,
