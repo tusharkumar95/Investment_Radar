@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T04:11:31.056730+00:00",
+  "updated": "2026-11-03T20:01:33.517202+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -211,6 +211,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
+    },
+    {
+      "id": "lead:a8628e7f256418b2d3",
+      "title": "Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director - The Globe and Mail",
+      "date": "2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNWEwzYjBZSFVqQ2VOS056a1U0RExURHczMFRhdEpsOTF5RnpERURCdHpKQ3QxSWpVUzJkVjNXUGo1Q0tQb1BqY3NXRWVHZEU3aG5qZGtXYnZ2UGhVbnpkRUtCamMyeXVvOVpUN0FjTlJjcHVNZEVWVTVzV0VTRE5XRWsxR2hpMHZ1akU0UV9lZEFmRkhjbEoyQlFVV3E0bERMajJwWlRZallFRGNiakJUd05DblJjNGFOVDVVa0dDWUhWQlEwbnNtaGRXNU43ZWI2Z0xOXzBpa295NkhoeGlDSmtCMTlKVVVwQzBIYW1IVEs2YW4xcFBOTURMVXJrVEhic2kxUjV5cHBVa3pBS2pub0w4SFNjVGJrTHdWWlRfd1Q2aEZNXzhib2xOZDFHbl92WWxrUDVDWlpEakJRaWNrSEV1bDJmN28",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director    The Globe and Mail "
     },
     {
       "id": "lead:128d46a31c56f3d6a6",
@@ -460,7 +471,7 @@
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
       "ok": true,
-      "items": 0,
+      "items": 1,
       "relevant": 0
     },
     {
@@ -530,9 +541,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 38,
+    "leadCount": 39,
     "usFilingCount": 0,
-    "needsReview": 38
+    "needsReview": 39
   },
   "officialSources": [
     {

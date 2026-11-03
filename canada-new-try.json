@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-03T04:11:36.041725+00:00",
-  "day": "2026-11-02",
+  "updated": "2026-11-03T20:01:42.196340+00:00",
+  "day": "2026-11-03",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 5.39,
-      "lastPriceDate": "2026-11-02",
-      "priceChangePct": 0.0,
+      "lastPrice": 4.745,
+      "lastPriceDate": "2026-11-03",
+      "priceChangePct": -11.97,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.01,
-      "lastPriceDate": "2026-11-02",
-      "priceChangePct": 0.0,
+      "lastPrice": 4.08,
+      "lastPriceDate": "2026-11-03",
+      "priceChangePct": 1.75,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.51,
-      "lastPriceDate": "2026-11-02",
-      "priceChangePct": 0.0,
+      "lastPrice": 4.5,
+      "lastPriceDate": "2026-11-03",
+      "priceChangePct": -0.22,
       "quoteStatus": "Available"
     },
     {
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-02",
+      "lastPriceDate": "2026-11-03",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-02",
+      "lastPriceDate": "2026-11-03",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 1.12,
-      "lastPriceDate": "2026-11-02",
+      "lastPriceDate": "2026-11-03",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-02",
+      "lastPriceDate": "2026-11-03",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-02",
+      "lastPriceDate": "2026-11-03",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 23,
+      "candidateArticles": 24,
       "status": "Verified transactions found"
     },
     {
@@ -1252,6 +1252,17 @@
       "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
     },
     {
+      "id": "lead:a8628e7f256418b2d3",
+      "title": "Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director - The Globe and Mail",
+      "date": "2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNWEwzYjBZSFVqQ2VOS056a1U0RExURHczMFRhdEpsOTF5RnpERURCdHpKQ3QxSWpVUzJkVjNXUGo1Q0tQb1BqY3NXRWVHZEU3aG5qZGtXYnZ2UGhVbnpkRUtCamMyeXVvOVpUN0FjTlJjcHVNZEVWVTVzV0VTRE5XRWsxR2hpMHZ1akU0UV9lZEFmRkhjbEoyQlFVV3E0bERMajJwWlRZallFRGNiakJUd05DblJjNGFOVDVVa0dDWUhWQlEwbnNtaGRXNU43ZWI2Z0xOXzBpa295NkhoeGlDSmtCMTlKVVVwQzBIYW1IVEs2YW4xcFBOTURMVXJrVEhic2kxUjV5cHBVa3pBS2pub0w4SFNjVGJrTHdWWlRfd1Q2aEZNXzhib2xOZDFHbl92WWxrUDVDWlpEakJRaWNrSEV1bDJmN28",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director    The Globe and Mail "
+    },
+    {
       "id": "lead:128d46a31c56f3d6a6",
       "title": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - Yahoo Finance",
       "date": "2026-10-20",
@@ -1499,7 +1510,7 @@
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
       "ok": true,
-      "items": 0,
+      "items": 1,
       "relevant": 0
     },
     {
@@ -1590,7 +1601,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 38,
+    "disclosureLeads": 39,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
