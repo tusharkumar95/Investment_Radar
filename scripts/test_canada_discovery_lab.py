@@ -20,8 +20,9 @@ assert lead_type("Investment firm plans to acquire shares","")=="Potential / inc
 assert parse_sec_filings(sample_rss(),"SC 13D")[0]["status"]=="Filing published — purchase not established"
 
 corporate=json.load(open("canada-corporate-verified.json",encoding="utf-8"))
-assert len(corporate["records"])==4
-normalized=[normalized_purchase(x) for x in corporate["records"]]
+assert len(corporate["records"])==5
+assert any(r["investor"].startswith("Electrum Strategic") and r["valueCAD"]==405000 for r in corporate["records"])
+normalized=[normalized_purchase(x) for x in corporate["records"] if x["symbol"]=="LAB"]
 assert all(normalized)
 assert len({x["id"] for x in normalized})==4
 assert len({x["transactionDate"] for x in normalized})==2
