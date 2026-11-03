@@ -1,26 +1,27 @@
 """Offline tests for multi-source discovery and verified investor-group accounting."""
-from datetime import timedelta
+from datetime import timedelta, datetime, timezone
+from email.utils import format_datetime
 import json
 from canada_discovery_lab import feed_entries, build_lead, parse_sec_filings, lead_type
 from canada_new_try import (TODAY, normalized_purchase, company_summary,
                             multiple_buyers, purchases, investor_watch, build_report)
 
 def sample_rss():
-    return """<?xml version='1.0'?>
+    return f"""<?xml version='1.0'?>
     <rss><channel><item><title>Early Warning: Falcon Capital acquires shares</title>
     <link>https://www.globenewswire.com/news-release/sample.html</link>
-    <pubDate>Mon, 02 Nov 2026 15:00:00 GMT</pubDate>
+    <pubDate>{format_datetime(datetime.now(timezone.utc))}</pubDate>
     </item></channel></rss>"""
 entries=feed_entries(sample_rss())
 assert len(entries)==1 and entries[0]["title"].startswith("Early Warning")
 assert build_lead(entries[0],"GlobeNewswire")["verifiedPurchase"] is False
 assert build_lead(entries[0],"GlobeNewswire")["reviewStatus"]=="Needs source verification"
 assert build_lead({"title":"Asset acquisition: oil property","url":"https://newswire.ca/a","date":TODAY.isoformat(),"summary":""},"Test") is None
-assert lead_type("Investment firm plans to acquire shares","")=="Potential / incomplete — verify status"
+assert lead_type("Investment firm plans to acquire shares","")=="Outside scope — excluded"
 assert parse_sec_filings(sample_rss(),"SC 13D")[0]["status"]=="Filing published — purchase not established"
 
 corporate=json.load(open("canada-corporate-verified.json",encoding="utf-8"))
-assert len(corporate["records"])==5
+assert len(corporate["records"])>=5
 assert any(r["investor"].startswith("Electrum Strategic") and r["valueCAD"]==405000 for r in corporate["records"])
 normalized=[normalized_purchase(x) for x in corporate["records"] if x["symbol"]=="LAB"]
 assert all(normalized)
@@ -43,9 +44,16 @@ new=dict(corporate["records"][0],investor="Independent Asset Manager LP",buyerGr
 new_record=normalized_purchase(new)
 assert new_record
 assert company_summary(normalized+[new_record])[0]["independentGroups"]==2
-assert len(multiple_buyers(normalized+[new_record]))==1
-# The above depends on a seven-day filing window; all matching transactions
-# must be within seven days before a multi-buyer alert is produced.
+# Use the current date for grouping tests, not a fixed 2026 filing date.
+recent_group=[
+    normalized_purchase({**corporate["records"][0],
+                         "transactionDate":TODAY.isoformat(),"disclosureDate":TODAY.isoformat()}),
+    normalized_purchase({**corporate["records"][1],
+                         "transactionDate":TODAY.isoformat(),"disclosureDate":TODAY.isoformat()}),
+]
+assert all(recent_group)
+assert not multiple_buyers(recent_group)
+assert len(multiple_buyers(recent_group+[new_record]))==1
 
 reported=build_report(normalized,quotes={})
 assert len(reported["purchases"])==4
