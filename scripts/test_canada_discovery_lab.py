@@ -15,7 +15,7 @@ entries=feed_entries(sample_rss())
 assert len(entries)==1 and entries[0]["title"].startswith("Early Warning")
 assert build_lead(entries[0],"GlobeNewswire")["verifiedPurchase"] is False
 assert build_lead(entries[0],"GlobeNewswire")["reviewStatus"]=="Needs source verification"
-assert build_lead({"title":"Acquires oil property","url":"https://newswire.ca/a","date":TODAY.isoformat(),"summary":""},"Test") is None
+assert build_lead({"title":"Asset acquisition: oil property","url":"https://newswire.ca/a","date":TODAY.isoformat(),"summary":""},"Test") is None
 assert lead_type("Investment firm plans to acquire shares","")=="Potential / incomplete — verify status"
 assert parse_sec_filings(sample_rss(),"SC 13D")[0]["status"]=="Filing published — purchase not established"
 
@@ -42,7 +42,7 @@ new=dict(corporate["records"][0],investor="Independent Asset Manager LP",buyerGr
 new_record=normalized_purchase(new)
 assert new_record
 assert company_summary(normalized+[new_record])[0]["independentGroups"]==2
-assert len(multiple_buyers(normalized+[new_record]))==1 or len(multiple_buyers(normalized+[new_record]))==0
+assert len(multiple_buyers(normalized+[new_record]))==1
 # The above depends on a seven-day filing window; all matching transactions
 # must be within seven days before a multi-buyer alert is produced.
 
