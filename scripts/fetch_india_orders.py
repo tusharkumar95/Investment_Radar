@@ -124,7 +124,7 @@ def parsed_amount(text):
   context=t[max(0,m.start()-130):min(len(t),m.end()+95)]
   # Prefer an explicit order size, not company revenue, unrelated funding,
   # share price, or unrelated numeric metrics.
-  if re.search(r"\b(order|contract|project|work order|letter of award|award value)\b",context,re.I):
+  if re.search(r"\b(orders?|contracts?|projects?|work orders?|letter of award|award value)\b",context,re.I):
    found.append(v)
  return round(max(found),2) if found else None
 
