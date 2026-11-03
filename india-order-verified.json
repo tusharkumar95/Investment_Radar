@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "updated": "2026-11-02",
+  "sourcePolicy": "Manually verified completed awards, with exact quoted values or stated company size bands; do not convert bands to exact values. This is a verified baseline, not an automated list of all NSE/BSE awards.",
+  "records": [
+    {
+      "company": "Larsen & Toubro Limited",
+      "symbol": "LT",
+      "announcementDate": "2026-11-02",
+      "announcedAt": "2026-11-02T04:48:00+00:00",
+      "title": "L&T wins significant construction orders for residential and commercial developments",
+      "summary": "Several completed construction order awards for residential projects in Mumbai and Bengaluru and commercial development in Hyderabad. Company labels the orders Significant (₹1,000–2,500 crore); exact amount and customer are not disclosed.",
+      "customer": "Undisclosed client",
+      "contractType": "Residential and commercial construction EPC",
+      "orderStatus": "Awarded / secured",
+      "currency": "INR",
+      "valueMinCr": 1000,
+      "valueMaxCr": 2500,
+      "verified": true,
+      "source": "Original company announcement filed with NSE and BSE",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/PAM_02112026101835_PressRelease02112026.pdf",
+      "notes": "The ₹1,000–2,500 Cr bracket is L&T's published classification, NOT an exact contract value, and should not be summed as if all individual orders are separately sized."
+    },
+    {
+      "company": "KEC International Limited",
+      "symbol": "KEC",
+      "announcementDate": "2026-10-24",
+      "announcedAt": "2026-10-24T04:05:46+00:00",
+      "title": "KEC International wins transmission orders from PGCIL",
+      "summary": "KEC International's NSE corporate disclosure says it won substantial new orders worth ₹2,872 crore from Power Grid Corporation of India Limited (PGCIL).",
+      "customer": "Power Grid Corporation of India Limited",
+      "contractType": "Power transmission projects",
+      "orderStatus": "Awarded / secured",
+      "currency": "INR",
+      "valueMinCr": 2872,
+      "valueMaxCr": 2872,
+      "verified": true,
+      "source": "Official NSE corporate-announcement summary",
+      "sourceUrl": "https://www.nseindia.com/get-quote/equity/KEC/KEC-International-Limited",
+      "notes": "Amount and counterparty reported in the official NSE corporate-announcements listing dated October 24, 2026. The original attached company filing should be reviewed for full scope and terms."
+    }
+  ]
+}
