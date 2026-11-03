@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "updated": "2026-11-02",
-  "sourcePolicy": "Manually corroborated completed, individual corporate investments from original acquiror disclosures. First and second Labrador Gold tranches tracked separately; joint actors treated as one independent buyer group.",
+  "sourcePolicy": "Completed named investments individually corroborated from primary corporate releases. Include private placements but distinguish them from open-market buying and from non-cash debt settlements; joint actors count as one independent group.",
   "records": [
     {
       "market": "Canada",
@@ -106,6 +106,29 @@
       "disclosureDate": "2026-10-26",
       "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/26/3388626/0/en/early-warning-disclosure-by-matachewan-consolidated-mines-limited-and-mcchip-resources-inc.html",
       "type": "Closed private placement — non-flow-through shares (second tranche)"
+    },
+    {
+      "market": "Canada",
+      "company": "Nickel Creek Platinum Corp.",
+      "symbol": "NCP",
+      "exchange": "TSXV",
+      "currency": "CAD",
+      "direction": "BUY",
+      "investor": "Electrum Strategic Opportunities Fund L.P.",
+      "shares": 300000,
+      "priceCAD": 1.35,
+      "valueCAD": 405000,
+      "transactionDate": "2026-10-28",
+      "disclosureDate": "2026-10-30",
+      "type": "Closed private placement — common shares",
+      "status": "Completed",
+      "sourceName": "Canada NewsWire — original acquiror early-warning disclosure",
+      "sourceUrl": "https://www.newswire.ca/news-releases/electrum-strategic-opportunities-fund-l-p-acquires-units-of-nickel-creek-platinum-corp--866017722.html",
+      "verifiedBy": "Original acquiror announcement states Electrum purchased 300,000 common shares in a completed C$405,000 private placement on October 28, 2026; TSXV symbol corroborated by issuer disclosures.",
+      "buyerGroup": "electrum-strategic-opportunities-and-joint-actors",
+      "jointActors": true,
+      "relatedBuyers": [],
+      "notes": "Electrum directly subscribed for 300,000 new common shares; not to be confused with aggregate existing holdings of Electrum and its joint actors. No volume-based inference."
     }
   ]
 }
