@@ -50,7 +50,7 @@ SEARCH_QUERIES=[
 ]
 SEC_FORMS=("SC 13D","SC 13G","13F-HR")
 INTEREST=re.compile(
-    r"early.warning|acquir(?:ed|es|ing|or)|purchas(?:e|ed)|investment in|"
+    r"early.warning|acquir(?:e|ed|es|ing|or)|acquisit(?:ion|ions)|purchas(?:e|ed)|investment in|"
     r"strategic investment|increases? (?:its )?stake|subscrib(?:ed|es)|"
     r"insider buying|major shareholder|private placement|ownership|13f|13d|13g", re.I)
 CLOSED=re.compile(r"\b(closed|closing|completed|acquired|purchased|subscribed)\b",re.I)
