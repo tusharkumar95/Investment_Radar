@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T02:26:48.397803+00:00",
+  "updated": "2026-11-03T04:11:31.056730+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
