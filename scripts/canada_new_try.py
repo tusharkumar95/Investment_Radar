@@ -112,19 +112,28 @@ def normalized_purchase(record):
         "sourceUrl": source, "verifiedPurchase": True,
         "evidence": "Named acquisition documented in a reviewed public disclosure",
         "notes": str(record.get("notes") or ""),
+        "buyerGroup": str(record.get("buyerGroup") or "").strip() or None,
+        "jointActors": bool(record.get("jointActors")),
+        "provenance": "Individually checked primary corporate release" if record.get("verifiedBy") else "Reviewed public acquisition disclosure",
     }
 
 def purchases():
     # Do not import secondary reported-only SEDI feeds, Google News headlines,
     # or generic price-volume scans as confirmed acquisitions.
     manual = read("moves-canada-verified.json", {}).get("records", [])
+    corporate = read("canada-corporate-verified.json", {}).get("records", [])
     sedi = read("moves-canada-sedi.json", {}).get("records", [])
     records = {}
-    for record in [*manual, *sedi]:
+    for record in [*manual, *corporate, *sedi]:
         row = normalized_purchase(record)
         if row:
             records[row["id"]] = row
     return sorted(records.values(), key=lambda r: (r["disclosureDate"], r["valueCAD"]), reverse=True)
+
+def identity_group(event):
+    # Related joint actors count as ONE independent investment group,
+    # even if each legal entity's actual purchase is itemized separately.
+    return event.get("buyerGroup") or "investor:"+" ".join(event["investor"].lower().split())
 
 def company_summary(events):
     groups = defaultdict(list)
@@ -133,10 +142,15 @@ def company_summary(events):
     result = []
     for ticker, records in groups.items():
         buyers = sorted({r["investor"] for r in records})
+        identities = {identity_group(r) for r in records}
+        recurring = sorted({r["investor"] for r in records
+                            if sum(1 for t in records if t["investor"]==r["investor"]) > 1})
         dates = [r["disclosureDate"] for r in records]
         result.append({
             "symbol": records[0]["symbol"], "name": records[0]["name"],
-            "distinctBuyers": len(buyers), "investors": buyers,
+            "distinctBuyers": len(buyers), "independentGroups": len(identities),
+            "investors": buyers, "repeatInvestors": recurring,
+            "jointActorDisclosure": any(x.get("jointActors") for x in records),
             "transactions": len(records), "latestDisclosure": max(dates),
             "totalDisclosedCAD": round(sum(r["valueCAD"] for r in records),2),
             "sourceIds": [r["id"] for r in records],
@@ -144,11 +158,39 @@ def company_summary(events):
     return sorted(result, key=lambda x: (x["latestDisclosure"], x["totalDisclosedCAD"]),reverse=True)
 
 def multiple_buyers(events):
-    # Distinct names / same Canadian issuer / disclosure window, not price action.
-    recent = [e for e in events if (TODAY-date.fromisoformat(e["disclosureDate"])).days <= 7]
+    # Distinct independently operating buyer groups, not just separate
+    # company names. For example Matachewan + McChip act jointly.
+    recent = [e for e in events if 0 <= (TODAY-date.fromisoformat(e["disclosureDate"])).days <= 7]
     groups = company_summary(recent)
-    return [dict(x, status="Two or more *named* buyers disclosed within seven days")
-            for x in groups if x["distinctBuyers"] >= 2]
+    return [dict(x,status="Two or more independent named buyer groups disclosed within seven days")
+            for x in groups if x["independentGroups"] >= 2]
+
+def investor_watch(events, leads):
+    followed = [
+      "Brookfield Corporation", "Fairfax Financial Holdings", "Sprott",
+      "Altius Minerals Corporation", "Matachewan Consolidated Mines, Limited",
+      "McChip Resources Inc.", "Nemesia S.à.r.l.", "Hartree Partners, LP",
+      "PowerOne Capital Corp."
+    ]
+    names = list(followed)
+    for e in events:
+        if e["investor"] not in names:
+            names.append(e["investor"])
+    out = []
+    for name in names:
+        transactions = [e for e in events if name.lower() in e["investor"].lower()
+                        or e["investor"].lower() in name.lower()]
+        clean = name.lower().split()[0]
+        candidate_count = sum(1 for x in leads if clean in x.get("title","").lower())
+        out.append({
+            "name":name, "verifiedPurchases":len(transactions),
+            "totalDisclosedCAD":round(sum(x["valueCAD"] for x in transactions),2),
+            "companies":sorted({x["name"] for x in transactions}),
+            "latestDisclosure":max((x["disclosureDate"] for x in transactions),default=None),
+            "candidateArticles":candidate_count,
+            "status":"Verified transactions found" if transactions else "Monitored — no confirmed purchase in ledger"
+        })
+    return sorted(out,key=lambda x:(x["verifiedPurchases"],x["latestDisclosure"] or ""),reverse=True)
 
 def download_closes(symbols):
     """Quotes ONLY for companies with verified purchase; never used to find buys."""
@@ -235,20 +277,33 @@ def build_report(events, quotes=None, quote_errors=None):
     companies = company_summary(events)
     alerts = multiple_buyers(events)
     tracked = tracks_for(events, quotes)
+    discovery = read("canada-new-try-leads.json", {})
+    leads = discovery.get("leads", [])
+    sec = discovery.get("usFilings", [])
+    sources = discovery.get("sourceHealth", [])
+    watchers = investor_watch(events, leads)
     return {
         "schema": 2, "updated": NOW, "day": TODAY.isoformat(),
         "name": "Canada New Try — named institutional & corporate purchases",
-        "policy": "Only named, independently verified investment acquisitions. No volume/momentum signals. CAD-listed U.S. CDRs are excluded unless there is documentary evidence of a purchase of the CDR itself.",
+        "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
         "purchases": events, "companies": companies,
         "multipleBuyers": alerts, "tracks": tracked,
+        "investorWatch": watchers, "leads": leads[:160],
+        "usFilings": sec[:100], "sourceHealth": sources,
+        "officialSources": discovery.get("officialSources", []),
         "status": {"verifiedPurchases":len(events),"companies":len(companies),
                    "distinctBuyers":len(set(x["investor"] for x in events)),
                    "multipleBuyerSignals":len(alerts),
                    "tracked":len(tracked),"quoteErrors":quote_errors[:8],
+                   "disclosureLeads":len(leads),"usFilingNotices":len(sec),
+                   "sourcesOnline":sum(1 for s in sources if s.get("ok")),
+                   "sourcesChecked":len(sources),
                    "quotePurpose":"Price tracking for verified purchases only"},
         "sources": [
             {"name":"Independently reviewed Canadian acquisition disclosures",
              "file":"moves-canada-verified.json"},
+            {"name":"Individually verified corporate placements and early-warning announcements",
+             "file":"canada-corporate-verified.json"},
             {"name":"Manually verified SEDI transactions (if imported)",
              "file":"moves-canada-sedi.json"},
             {"name":"Post-disclosure price history only",

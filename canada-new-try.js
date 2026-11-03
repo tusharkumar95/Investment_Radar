@@ -6,7 +6,10 @@
   const descriptions={
     purchases:["Documented acquisitions","Named buyers and disclosed transactions from independently reviewed Canadian sources. The disclosure may post days or weeks after the actual trade."],
     companies:["Companies with documented buyers","Aggregate only the named purchases in this dataset. Total values are disclosed transactions, not estimates of corporate ownership."],
-    multipleBuyers:["Multiple independently identified buyers","Two or more distinct named buyers disclosed transactions in the same Canadian security within the past seven days. No event is invented when only one buyer is known."],
+    multipleBuyers:["Independent buyer groups","Two or more independent investor groups must disclose purchases of the same Canadian issuer within seven days. Related joint actors count as one group."],
+    investorWatch:["Named investors to follow","Confirmed investments are linked to investor names. Monitored investor names with no documented purchase are shown as such; they are NOT buys."],
+    leads:["Disclosures awaiting verification","Research queue from corporate press releases and public news feeds. These are headlines, not established purchases. No tracking or alerts until source review."],
+    usFilings:["U.S. institutional filings","SEC 13D/13G beneficial-ownership and 13F portfolio notices. Filings do not establish a purchase on the publication date or any purchase of a Canadian-hedged CDR."],
     tracks:["Purchase-based Track Sheet","Tracks are created only from verified acquisition records. Closing prices measure subsequent performance, not whether another investor bought."]
   };
   const state={feed:null,tab:"purchases",query:"",sort:"newest"};
@@ -29,9 +32,10 @@
       '<div class="cardtop"><span class="label">DOCUMENTED PURCHASE</span><span class="pill">'+fmt(r.disclosureDate)+'</span></div>'+
       '<h3>'+esc(r.name)+'</h3><div class="ticker">'+esc(r.symbol)+'</div>'+
       '<div class="signal">Buyer: '+esc(r.investor)+'</div>'+
+      (r.jointActors?'<div class="reason">Joint-acting investor group · counts as one independent buyer</div>':"")+
       '<div class="reason">'+esc(r.buyerType||"Named investor")+'</div>'+
       '<div class="numbers">'+metric("Shares purchased",quantity(r.shares))+metric("Disclosed investment",money(r.valueCAD))+metric("Price per share",money(r.disclosedPrice))+'</div>'+
-      '<div class="reason">Trade: '+fmt(r.transactionDate)+' · Disclosed: '+fmt(r.disclosureDate)+'</div>'+
+      '<div class="reason">'+esc(r.transactionType||"Acquisition")+' · Trade: '+fmt(r.transactionDate)+' · Disclosed: '+fmt(r.disclosureDate)+'</div>'+
       '<div class="foot">'+sourceLink(r.sourceUrl,"View disclosed transaction")+
       ' · '+esc(r.source||"Reviewed acquisition")+
       (r.notes?'<div>'+esc(r.notes)+'</div>':"")+'</div></article>';
@@ -41,7 +45,9 @@
     return '<article class="rowcard">'+
       '<div class="cardtop"><span class="label">DISCLOSED INVESTOR PURCHASES</span><span class="pill">'+fmt(r.latestDisclosure)+'</span></div>'+
       '<h3>'+esc(r.name)+'</h3><div class="ticker">'+esc(r.symbol)+'</div>'+
-      '<div class="numbers">'+metric("Distinct named buyers",quantity(r.distinctBuyers))+metric("Verified transactions",quantity(r.transactions))+metric("Total disclosed",money(r.totalDisclosedCAD))+'</div>'+
+      '<div class="numbers">'+metric("Independent investor groups",quantity(r.independentGroups??r.distinctBuyers))+metric("Verified transactions",quantity(r.transactions))+metric("Total disclosed",money(r.totalDisclosedCAD))+'</div>'+
+      (r.jointActorDisclosure?'<div class="reason">Related entities disclosed joint action; not separate independent buyers.</div>':"")+
+      (r.repeatInvestors?.length?'<div class="signal">Repeat disclosed buying: '+r.repeatInvestors.map(esc).join(", ")+'</div>':"")+
       '<div class="reason">Buyers: '+(r.investors||[]).map(esc).join(" · ")+'</div>'+
       '<div class="foot">'+sources.map(x=>sourceLink(x.sourceUrl, x.investor)).join(" · ")+'</div></article>';
   }
@@ -58,6 +64,29 @@
       [0,5,10,15,30].map(n=>'<tr><td>D+'+n+'</td><td>'+fmt(val(n)?.day)+'</td><td>'+money(val(n)?.price)+'</td></tr>').join("")+
       '</tbody></table></div><div class="foot">'+esc(r.quoteStatus||"Unconfirmed quote")+' · '+sourceLink(r.sourceUrl,"Original disclosure")+'</div></article>';
   }
+  function watchCard(r){
+    return '<article class="rowcard"><div class="cardtop"><span class="label">FOLLOWING NAMED INVESTOR</span>'+
+    '<span class="pill">'+(r.verifiedPurchases?esc(r.verifiedPurchases)+" verified":"No confirmed purchases")+'</span></div>'+
+    '<h3>'+esc(r.name)+'</h3><div class="numbers">'+metric("Confirmed transactions",quantity(r.verifiedPurchases))+
+    metric("Total disclosed",money(r.verifiedPurchases?r.totalDisclosedCAD:null))+metric("Headlines to review",quantity(r.candidateArticles))+'</div>'+
+    '<div class="reason">'+esc(r.status)+'</div>'+
+    (r.companies?.length?'<div class="signal">Bought: '+r.companies.map(esc).join(", ")+'</div>':"")+
+    '<div class="foot">Latest confirmation: '+fmt(r.latestDisclosure)+'</div></article>';
+  }
+  function leadCard(r){
+    return '<article class="rowcard"><div class="cardtop"><span class="label">NEEDS VERIFICATION · NOT A BUY</span>'+
+    '<span class="pill">'+fmt(r.date)+'</span></div><h3>'+esc(r.title)+'</h3>'+
+    '<div class="signal">'+esc(r.type)+'</div>'+
+    (r.summary?'<div class="reason">'+esc(r.summary)+'</div>':"")+
+    '<div class="foot">'+sourceLink(r.url,"Open discovery article")+
+    ' · '+esc(r.discoveredVia||"Public feed")+'</div></article>';
+  }
+  function secCard(r){
+    return '<article class="rowcard"><div class="cardtop"><span class="label">SEC FILING · NOT A CONFIRMED BUY</span>'+
+    '<span class="pill">'+fmt(r.date)+'</span></div><h3>'+esc(r.title)+'</h3>'+
+    '<div class="signal">'+esc(r.form)+" · "+esc(r.status)+'</div>'+
+    '<div class="reason">'+esc(r.notes)+'</div><div class="foot">'+sourceLink(r.url,"Read SEC filing")+'</div></article>';
+  }
   function valueOf(x){return x.valueCAD??x.totalDisclosedCAD??0;}
   function repaint(){
     if(!state.feed)return;
@@ -66,32 +95,36 @@
     $("#sectionDescription").textContent=descriptions[state.tab][1];
     const query=state.query.toLowerCase().trim();
     const input=Array.isArray(state.feed[state.tab])?[...state.feed[state.tab]]:[];
-    const rows=input.filter(x=>[x.symbol,x.name,x.investor,x.buyerType,...(x.investors||[])].some(v=>String(v||"").toLowerCase().includes(query)));
+    const rows=input.filter(x=>[x.symbol,x.name,x.investor,x.buyerType,x.title,x.form,x.discoveredVia,x.status,...(x.investors||[]),...(x.companies||[])].some(v=>String(v||"").toLowerCase().includes(query)));
     if(state.sort==="largest")rows.sort((a,b)=>valueOf(b)-valueOf(a));
     else if(state.sort==="ticker")rows.sort((a,b)=>String(a.symbol).localeCompare(String(b.symbol)));
-    else rows.sort((a,b)=>String(b.disclosureDate||b.latestDisclosure||b.started||"").localeCompare(String(a.disclosureDate||a.latestDisclosure||a.started||"")));
-    let view=state.tab==="tracks"?trackCard:state.tab==="purchases"?disclosureCard:companyCard;
+    else rows.sort((a,b)=>String(b.disclosureDate||b.latestDisclosure||b.started||b.date||"").localeCompare(String(a.disclosureDate||a.latestDisclosure||a.started||a.date||"")));
+    let view=({tracks:trackCard,purchases:disclosureCard,companies:companyCard,multipleBuyers:companyCard,investorWatch:watchCard,leads:leadCard,usFilings:secCard})[state.tab]||disclosureCard;
     $("#cards").innerHTML=rows.length?rows.map(view).join(""):
-      '<div class="empty">No verified named purchases match these filters. This is a data-coverage gap, not evidence that companies are not buying.</div>';
+      '<div class="empty">No matching records for this view. Missing records or unavailable feeds never imply that no investors are buying.</div>';
   }
   async function load(){
     try{
       const resp=await fetch("canada-new-try.json?t="+Date.now(),{cache:"no-store"});
       if(!resp.ok)throw Error("Purchase dataset not yet published");
       const feed=await resp.json();
-      if(feed.schema!==2||!["purchases","companies","multipleBuyers","tracks"].every(k=>Array.isArray(feed[k])))throw Error("Outdated or invalid purchase dataset");
+      if(feed.schema!==2||!["purchases","companies","multipleBuyers","tracks","investorWatch","leads","usFilings"].every(k=>Array.isArray(feed[k])))throw Error("Outdated or invalid purchase dataset");
       state.feed=feed;
       const s=feed.status||{};
       $("#updated").textContent="Data refreshed "+(feed.updated?new Date(feed.updated).toLocaleString("en-CA",{timeZone:"America/Toronto"}):"unavailable")+
         " · Last documented purchase "+(feed.purchases[0]?fmt(feed.purchases[0].disclosureDate):"not available");
       $("#stats").innerHTML=[
         ["Verified purchases",s.verifiedPurchases??0],["Named investors",s.distinctBuyers??0],
-        ["Companies bought",s.companies??0],["Purchase-based tracks",s.tracked??0]
+        ["Companies bought",s.companies??0],["Disclosure leads (unverified)",s.disclosureLeads??0]
       ].map(([a,b])=>'<div class="metric"><small>'+esc(a)+'</small><b>'+b+'</b></div>').join("");
-      $("#sourceHealth").textContent="Only reviewed acquisition records and manually verified SEDI imports are included. "+
-        "A Canadian listing or a U.S. CDR does not qualify without a transaction naming a buyer. "+
-        "Records may arrive after the trading date. Delayed closing prices are used only after a purchase is documented. "+
-        ((s.quoteErrors||[]).length?"Some historical closes are unavailable; blanks are intentional.":"Unavailable prices are never estimated.");
+      $("#sourceHealth").textContent="Confirmed purchases require a named investor and an individually reviewed original acquisition disclosure. "+
+        "Press release headlines and SEC filings go to separate research queues; they do not trigger purchase alerts or tracking. "+
+        "Joint actors count as one independent investor group. Historical prices are used only after confirmed purchases.";
+      const sourceRows=feed.sourceHealth||[];
+      $("#sourceStatus").innerHTML=sourceRows.length?sourceRows.map(x=>
+        '<div class="healthrow"><span class="'+(x.ok?"sourceok":"sourcefail")+'">'+(x.ok?"✓ ":"Unavailable: ")+esc(x.name)+'</span>'+
+        (x.ok?" · "+esc(x.items??0)+" items":" · "+esc(x.error||""))+'</div>').join(""):
+        'Disclosure feed diagnostics will appear after the next scan.';
       repaint();
     }catch(e){
       $("#updated").textContent="Verified-purchase feed unavailable";

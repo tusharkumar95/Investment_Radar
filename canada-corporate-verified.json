@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "updated": "2026-11-02",
+  "sourcePolicy": "Manually corroborated completed, individual corporate investments from original acquiror disclosures. First and second Labrador Gold tranches tracked separately; joint actors treated as one independent buyer group.",
+  "records": [
+    {
+      "market": "Canada",
+      "company": "Labrador Gold Corp.",
+      "symbol": "LAB",
+      "exchange": "TSXV",
+      "currency": "CAD",
+      "direction": "BUY",
+      "priceCAD": 0.05,
+      "status": "Completed",
+      "sourceName": "GlobeNewswire — original acquiror early-warning disclosure",
+      "verifiedBy": "Primary acquiror statement individually identifies buyer, shares, price, completed tranche and transaction date",
+      "buyerGroup": "matachewan-mcchip-joint-actors",
+      "relatedBuyers": [
+        "Matachewan Consolidated Mines, Limited",
+        "McChip Resources Inc."
+      ],
+      "jointActors": true,
+      "notes": "Joint-acting investor group: never treat the two names as two independent investors. Issuer-issued private placement, not an open-market purchase. Investment shares shown are incremental per tranche, not cumulative ownership.",
+      "investor": "Matachewan Consolidated Mines, Limited",
+      "shares": 21337905,
+      "valueCAD": 1066895.25,
+      "transactionDate": "2026-10-19",
+      "disclosureDate": "2026-10-20",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/20/3385050/0/en/early-warning-disclosure-by-matachewan-consolidated-mines-limited-and-mcchip-resources-inc.html",
+      "type": "Closed private placement — flow-through shares (first tranche)"
+    },
+    {
+      "market": "Canada",
+      "company": "Labrador Gold Corp.",
+      "symbol": "LAB",
+      "exchange": "TSXV",
+      "currency": "CAD",
+      "direction": "BUY",
+      "priceCAD": 0.05,
+      "status": "Completed",
+      "sourceName": "GlobeNewswire — original acquiror early-warning disclosure",
+      "verifiedBy": "Primary acquiror statement individually identifies buyer, shares, price, completed tranche and transaction date",
+      "buyerGroup": "matachewan-mcchip-joint-actors",
+      "relatedBuyers": [
+        "Matachewan Consolidated Mines, Limited",
+        "McChip Resources Inc."
+      ],
+      "jointActors": true,
+      "notes": "Joint-acting investor group: never treat the two names as two independent investors. Issuer-issued private placement, not an open-market purchase. Investment shares shown are incremental per tranche, not cumulative ownership.",
+      "investor": "McChip Resources Inc.",
+      "shares": 21337904,
+      "valueCAD": 1066895.2,
+      "transactionDate": "2026-10-19",
+      "disclosureDate": "2026-10-20",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/20/3385050/0/en/early-warning-disclosure-by-matachewan-consolidated-mines-limited-and-mcchip-resources-inc.html",
+      "type": "Closed private placement — flow-through shares (first tranche)"
+    },
+    {
+      "market": "Canada",
+      "company": "Labrador Gold Corp.",
+      "symbol": "LAB",
+      "exchange": "TSXV",
+      "currency": "CAD",
+      "direction": "BUY",
+      "priceCAD": 0.05,
+      "status": "Completed",
+      "sourceName": "GlobeNewswire — original acquiror early-warning disclosure",
+      "verifiedBy": "Primary acquiror statement individually identifies buyer, shares, price, completed tranche and transaction date",
+      "buyerGroup": "matachewan-mcchip-joint-actors",
+      "relatedBuyers": [
+        "Matachewan Consolidated Mines, Limited",
+        "McChip Resources Inc."
+      ],
+      "jointActors": true,
+      "notes": "Joint-acting investor group: never treat the two names as two independent investors. Issuer-issued private placement, not an open-market purchase. Investment shares shown are incremental per tranche, not cumulative ownership.",
+      "investor": "Matachewan Consolidated Mines, Limited",
+      "shares": 7263250,
+      "valueCAD": 363162.5,
+      "transactionDate": "2026-10-23",
+      "disclosureDate": "2026-10-26",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/26/3388626/0/en/early-warning-disclosure-by-matachewan-consolidated-mines-limited-and-mcchip-resources-inc.html",
+      "type": "Closed private placement — non-flow-through shares (second tranche)"
+    },
+    {
+      "market": "Canada",
+      "company": "Labrador Gold Corp.",
+      "symbol": "LAB",
+      "exchange": "TSXV",
+      "currency": "CAD",
+      "direction": "BUY",
+      "priceCAD": 0.05,
+      "status": "Completed",
+      "sourceName": "GlobeNewswire — original acquiror early-warning disclosure",
+      "verifiedBy": "Primary acquiror statement individually identifies buyer, shares, price, completed tranche and transaction date",
+      "buyerGroup": "matachewan-mcchip-joint-actors",
+      "relatedBuyers": [
+        "Matachewan Consolidated Mines, Limited",
+        "McChip Resources Inc."
+      ],
+      "jointActors": true,
+      "notes": "Joint-acting investor group: never treat the two names as two independent investors. Issuer-issued private placement, not an open-market purchase. Investment shares shown are incremental per tranche, not cumulative ownership.",
+      "investor": "McChip Resources Inc.",
+      "shares": 7263250,
+      "valueCAD": 363162.5,
+      "transactionDate": "2026-10-23",
+      "disclosureDate": "2026-10-26",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/26/3388626/0/en/early-warning-disclosure-by-matachewan-consolidated-mines-limited-and-mcchip-resources-inc.html",
+      "type": "Closed private placement — non-flow-through shares (second tranche)"
+    }
+  ]
+}

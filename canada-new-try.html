@@ -42,13 +42,13 @@ table{border-collapse:collapse;width:100%;min-width:550px;font-size:12px;text-al
 .statusline{font-size:11px;color:#6d7884;margin:8px 0}
 .warn{background:#fffaea;color:#75561f;border-radius:10px;padding:10px;margin-top:10px;font-size:11px}
 footer{font-size:11px;color:#87929b;line-height:1.55;padding:8px 1px}
-@media(max-width:640px){#cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{padding:15px}.section{padding:12px}.metric{padding:11px}.toolbar{display:block}select{margin-top:7px;max-width:none;width:100%}}
+.source-details{border:1px solid #e3e8ec;border-radius:12px;padding:12px;margin-top:12px}.source-details summary{font-weight:800;font-size:12px;cursor:pointer}.source-details #sourceStatus{padding-top:9px}.healthrow{border-bottom:1px solid #edf0f2;padding:6px 0;font-size:11px}.sourceok{color:#216843}.sourcefail{color:#a44849}@media(max-width:640px){#cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{padding:15px}.section{padding:12px}.metric{padding:11px}.toolbar{display:block}select{margin-top:7px;max-width:none;width:100%}}
 </style>
 </head><body><main>
 <header><strong>Investment Radar · Lab</strong><a href="moves.html">← Back to Moves</a></header>
 <section class="hero"><span class="eyebrow">Independent experiment · documented corporate and institutional buying</span>
 <h1>Canada New Try <span class="pill pilot">PILOT</span></h1>
-<p>This experiment tracks purchases by named companies, funds and significant investors that are supported by reviewed Canadian disclosures. No market-activity signals. India Moves and the main Radar are unchanged.</p>
+<p>Follow verified investments made by named companies, funds and significant shareholders. A wider search now checks corporate press releases and ownership reports. Unverified announcements are separated from confirmed purchases. India Moves and the main Radar are unchanged.</p>
 <div class="statusline" id="updated">Loading the pilot feed…</div>
 </section>
 <div class="stats" id="stats"><div class="metric"><small>Verified acquisitions</small><b>—</b></div><div class="metric"><small>Named investors</small><b>—</b></div><div class="metric"><small>Companies</small><b>—</b></div><div class="metric"><small>Purchase-based tracks</small><b>—</b></div></div>
@@ -56,7 +56,10 @@ footer{font-size:11px;color:#87929b;line-height:1.55;padding:8px 1px}
 <nav class="tabs" id="tabs" aria-label="Pilot views">
 <button type="button" data-tab="purchases" class="active">Verified purchases</button>
 <button type="button" data-tab="companies">Companies bought</button>
-<button type="button" data-tab="multipleBuyers">Multiple buyers</button>
+<button type="button" data-tab="multipleBuyers">Independent buyers</button>
+<button type="button" data-tab="investorWatch">Follow investors</button>
+<button type="button" data-tab="leads">Research queue</button>
+<button type="button" data-tab="usFilings">U.S. filings</button>
 <button type="button" data-tab="tracks">Purchase Track Sheet</button>
 </nav>
 <div class="toolbar"><input id="filter" aria-label="Filter by stock or investor" placeholder="Search stock, ticker or investor">
@@ -66,8 +69,8 @@ footer{font-size:11px;color:#87929b;line-height:1.55;padding:8px 1px}
 </section>
 <section class="section">
 <h2>How to interpret this experiment</h2>
-<p class="muted">Only publicly documented transactions are shown as buys. The buyer, company, quantity, disclosed value, trade date and publication date are recorded when available. Disclosure dates can be later than the trade date. U.S. stocks with Canadian Depositary Receipts (CDRs) are not shown as Canadian purchases unless there is evidence that the CDR itself was purchased. Missing disclosures stay missing.</p>
-<div class="warn" id="sourceHealth">Source status will appear here. Missing prices are not filled with estimated values.</div>
+<p class="muted">Verified purchases are reviewed against source documents, with named buyers, quantities, consideration and trade dates. Corporate private placements are labelled differently from open-market purchases. Joint actors count as one independent buyer group; repeated purchases are not confused with total ownership. Research queue headlines are NOT buy signals. U.S. 13D/13G/13F notices represent filings, not confirmed same-day transactions or purchases of Canadian CDRs. SEDI and SEDAR+ access is manual or otherwise authorized; they are not scraped.</p>
+<div class="warn" id="sourceHealth">Source status will appear here. Missing prices are not filled with estimated values.</div><details class="source-details"><summary>Disclosure collection health</summary><div id="sourceStatus" class="muted">Checking sources…</div></details>
 </section>
 <footer>Experimental feature. Optional historical closing prices are for measuring performance after a documented purchase, not finding purchases. Its tracking stays separate from India Moves and the production Track Sheet.</footer>
-</main><script src="canada-new-try.js?v=2"></script></body></html>
+</main><script src="canada-new-try.js?v=3"></script></body></html>
