@@ -50,9 +50,13 @@ SEARCH_QUERIES=[
 ]
 SEC_FORMS=("SC 13D","SC 13G","13F-HR")
 INTEREST=re.compile(
-    r"early.warning|acquir(?:e|ed|es|ing|or)|acquisit(?:ion|ions)|purchas(?:e|ed)|investment in|"
-    r"strategic investment|increases? (?:its )?stake|subscrib(?:ed|es)|"
-    r"insider buying|major shareholder|private placement|ownership|13f|13d|13g", re.I)
+    # Equity/security ownership, not acquisition of a business, property, or asset.
+    r"early.warning|major.shareholder|insider.buy|13f|13d|13g|"
+    r"(?:acquir\\w*|purchas\\w*|subscrib\\w*).{0,85}(?:shares|units|securities|equity|stock|stake)|"
+    r"(?:shares|units|securities|equity|stock|stake).{0,85}(?:acquir\\w*|purchas\\w*|subscrib\\w*)|"
+    r"private.placement|strategic.equity.investment|share.acquisition|"
+    r"investment in .{0,65}(?:shares|equity|common.stock)|"
+    r"(?:raises?|closes?).{0,55}(?:equity|financing|placement)", re.I)
 CLOSED=re.compile(r"\b(closed|closing|completed|acquired|purchased|subscribed)\b",re.I)
 NON_INVESTMENT=re.compile(r"\b(class action|securities litigation|share buyback|buyback|repurchases own shares|"
                           r"asset acquisition|acquires mining property|debt facility)\b",re.I)
@@ -115,7 +119,11 @@ def cnw_listing_entries(raw):
         link=urllib.parse.urljoin("https://www.newswire.ca",html.unescape(href))
         if urllib.parse.urlparse(link).hostname not in ("newswire.ca","www.newswire.ca"):continue
         if not re.search(r"^/news-releases/.+\.html$",urllib.parse.urlparse(link).path):continue
-        if title:entries.append({"title":title[:260],"url":link,"date":None,"summary":""})
+        if title:
+            m=re.search(r"\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\s+\\d{1,2},\\s+20\\d{2}\\b",title,re.I)
+            try: article_day=datetime.strptime(m.group(0).replace(".",""),"%b %d, %Y").date().isoformat() if m else None
+            except ValueError:article_day=None
+            entries.append({"title":title[:260],"url":link,"date":article_day,"summary":""})
     return entries
 
 def in_window(day):
@@ -127,6 +135,10 @@ def in_window(day):
 def lead_type(title,summary):
     text=title+" "+summary
     if NON_INVESTMENT.search(title):return "Outside scope — excluded"
+    # Announced takeovers/mergers are generally agreements, not completed
+    # investment purchases by a reporting fund or corporation.
+    if re.search(r"\\b(to be acquired|agreement to acquire|to acquire|merger agreement|tender offer)\\b",title,re.I):
+        return "Outside scope — excluded"
     if not INTEREST.search(text):return None
     if re.search(r"\b(announces?|plans?|intends?|proposes?|subject to|expected to)\b",title,re.I) and not CLOSED.search(title):
         return "Potential / incomplete — verify status"
@@ -171,7 +183,15 @@ def refresh():
     if OUT.exists():
         try:old=json.loads(OUT.read_text(encoding="utf-8"))
         except (ValueError,OSError):pass
-    leads={l["id"]:l for l in old.get("leads",[]) if in_window(l.get("date")) and l.get("reviewStatus")=="Needs source verification"}
+    # Reclassify previously cached headlines on EVERY refresh; otherwise old
+    # irrelevant asset-acquisition stories would remain in the queue forever.
+    leads={}
+    for oldrow in old.get("leads",[]):
+        if oldrow.get("reviewStatus")!="Needs source verification":continue
+        candidate=build_lead({"title":oldrow.get("title",""),"url":oldrow.get("url",""),
+                              "date":oldrow.get("date"),"summary":oldrow.get("summary","")},
+                             oldrow.get("discoveredVia","Previously discovered"))
+        if candidate:leads[candidate["id"]]=candidate
     filings={f["id"]:f for f in old.get("usFilings",[]) if in_window(f.get("date"))}
     source_health=[]
     for name,url in PUBLISHER_FEEDS:
@@ -199,15 +219,21 @@ def refresh():
         except Exception as e:
             source_health.append({"name":"News search: "+q[:55],"ok":False,"error":str(e)[:130]})
         time.sleep(.20)
-    listing="https://www.newswire.ca/news-releases/financial-services-latest-news/acquisitions-mergers-and-takeovers-list/?page=1&pagesize=100"
-    try:
-        rows=cnw_listing_entries(fetch(listing))
-        n=0
-        for row in rows:
-            v=build_lead(row,"Canada NewsWire acquisition listing")
-            if v:leads[v["id"]]=v;n+=1
-        source_health.append({"name":"Canada NewsWire / Acquisitions","ok":True,"items":len(rows),"relevant":n})
-    except Exception as e:source_health.append({"name":"Canada NewsWire / Acquisitions","ok":False,"error":str(e)[:130]})
+    for label,listing in [
+        ("Canada NewsWire / Acquisitions",
+         "https://www.newswire.ca/news-releases/financial-services-latest-news/acquisitions-mergers-and-takeovers-list/?page=1&pagesize=100"),
+        ("Canada NewsWire / Private placements",
+         "https://www.newswire.ca/news-releases/financial-services-latest-news/private-placement-list/?page=1&pagesize=100"),
+    ]:
+        try:
+            rows=cnw_listing_entries(fetch(listing))
+            n=0
+            for row in rows:
+                v=build_lead(row,label)
+                if v:leads[v["id"]]=v;n+=1
+            source_health.append({"name":label,"ok":True,"items":len(rows),"relevant":n})
+        except Exception as e:
+            source_health.append({"name":label,"ok":False,"error":str(e)[:130]})
     # SEC EDGAR is separate from Canadian investment confirmations.
     for form in SEC_FORMS:
         url="https://www.sec.gov/cgi-bin/browse-edgar?"+urllib.parse.urlencode({
