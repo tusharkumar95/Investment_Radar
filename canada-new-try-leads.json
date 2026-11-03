@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "updated": null,
+  "policy": "Unverified headlines and SEC filing notices are NOT completed purchases and cannot create tracks or alerts.",
+  "leads": [],
+  "usFilings": [],
+  "sourceHealth": [],
+  "status": {
+    "sources": 0,
+    "available": 0,
+    "leadCount": 0,
+    "usFilingCount": 0,
+    "needsReview": 0
+  },
+  "officialSources": [
+    {
+      "name": "SEDI",
+      "url": "https://www.sedi.ca/",
+      "access": "Manual / authorized access only"
+    },
+    {
+      "name": "SEDAR+",
+      "url": "https://www.sedarplus.ca/",
+      "access": "Manual / authorized access only"
+    },
+    {
+      "name": "SEC EDGAR",
+      "url": "https://www.sec.gov/edgar/search/",
+      "access": "Public filings"
+    }
+  ]
+}
