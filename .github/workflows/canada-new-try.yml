@@ -51,13 +51,14 @@ jobs:
           python - <<'PY'
           import json
           j=json.load(open('canada-new-try.json', encoding='utf-8'))
-          assert j['schema']==1
-          assert isinstance(j['ownership'],list) and isinstance(j['cdrs'],list)
-          assert isinstance(j['canadaStocks'],list) and isinstance(j['tracks'],list)
-          assert all(x['verifiedPurchase'] for x in j['ownership'])
-          assert all(not x['verifiedPurchase'] for x in j['cdrs']+j['canadaStocks'])
-          assert all(x.get('lane')=='CAD-Hedged CDRs' for x in j['cdrs'])
-          print("Pilot signals:",len(j['ownership']),len(j['canadaStocks']),len(j['cdrs']))
+          assert j['schema']==2
+          assert all(isinstance(j[k],list) for k in ('purchases','companies','multipleBuyers','tracks'))
+          assert not any(k in j for k in ('canadaStocks','cdrs','ownership','momentum'))
+          assert all(x.get('verifiedPurchase') and x.get('investor') and x.get('sourceUrl') for x in j['purchases'])
+          assert all('relativeVolume' not in x and 'score' not in x for x in j['purchases'])
+          assert all(t.get('lane')=='Verified ownership' and t.get('id','').startswith('owner:') for t in j['tracks'])
+          assert all(x.get('distinctBuyers',0)>=2 for x in j['multipleBuyers'])
+          print("Verified corporate-purchase signals:",len(j['purchases']),"tracked",len(j['tracks']))
           PY
       - name: Publish ONLY experimental data
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

@@ -1,105 +1,106 @@
-/* Canada New Try — separate, read-only experimental UI; no production app state. */
+/* Canada New Try — verified named acquisitions only, no activity-based signals. */
 (() => {
   "use strict";
-  const qs = s => document.querySelector(s);
-  const tabs = [...document.querySelectorAll("[data-tab]")];
-  const descriptions = {
-    ownership: ["Confirmed acquisitions","Verified company/acquiror releases. One identified buyer is enough for this lane; filing and transaction dates are shown separately."],
-    canadaStocks: ["Canadian price + volume activity","A new approach based on Canadian-listing momentum, unusual volume and trend. It does NOT prove insider or institutional buying."],
-    cdrs: ["U.S. stocks through CAD-hedged CDRs","These are Canadian-listed depositary receipts, not NYSE/Nasdaq shares. Only confirmed CAD listing quotes are shown."],
-    tracks: ["Experimental Track Sheet","Signals are recorded separately from the production Track Sheet. Follow CAD listing closes at D+0/5/10/15/30 calendar days."]
+  const $=s=>document.querySelector(s);
+  const tabs=[...document.querySelectorAll("[data-tab]")];
+  const descriptions={
+    purchases:["Documented acquisitions","Named buyers and disclosed transactions from independently reviewed Canadian sources. The disclosure may post days or weeks after the actual trade."],
+    companies:["Companies with documented buyers","Aggregate only the named purchases in this dataset. Total values are disclosed transactions, not estimates of corporate ownership."],
+    multipleBuyers:["Multiple independently identified buyers","Two or more distinct named buyers disclosed transactions in the same Canadian security within the past seven days. No event is invented when only one buyer is known."],
+    tracks:["Purchase-based Track Sheet","Tracks are created only from verified acquisition records. Closing prices measure subsequent performance, not whether another investor bought."]
   };
-  const state = {feed:null, tab:"ownership", query:"", sort:"score"};
-  const esc = s => String(s ?? "").replace(/[&<>"']/g, a => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[a]));
-  const money = n => Number.isFinite(Number(n)) && n != null ? "C$"+Number(n).toLocaleString("en-CA",{minimumFractionDigits:2,maximumFractionDigits:4}) : "—";
-  const dec = (n,places=1) => n == null || !Number.isFinite(Number(n)) ? "—" : Number(n).toFixed(places);
-  const percent = n => n == null ? "—" : '<span class="'+(Number(n)>=0?"up":"down")+'">'+(Number(n)>0?"+":"")+dec(n,2)+"%</span>";
-  const date = value => {if(!value)return "—";let d=new Date(value+"T12:00:00Z");return Number.isNaN(d.valueOf())?esc(value):d.toLocaleDateString("en-CA",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"});};
-  const safeLink = (url,label) => {try {const u=new URL(url);return u.protocol==="https:"?'<a href="'+esc(u.href)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+" ↗</a>":"";} catch{return "";}};
-  const foot = s => '<div class="foot">'+s+"</div>";
-  const numeric = (label,content) => '<div><small>'+label+'</small><b>'+content+'</b></div>';
-
-  function card(item) {
-    const owner = state.tab === "ownership";
-    const rvol = item.relativeVolume == null ? "—" : dec(item.relativeVolume,2)+"×";
-    const source = safeLink(item.sourceUrl, owner?"Original disclosure":state.tab==="cdrs"?"CDR issuer":"Data source");
-    const numbers = owner ?
-      numeric("Disclosed value", money(item.valueCAD)) + numeric("Market close", money(item.price)) + numeric("Trade date", date(item.transactionDate)):
-      numeric("CAD listing", money(item.price)) + numeric("5-day return", percent(item.return5d)) + numeric("Relative volume", rvol);
-    return '<article class="rowcard">'+
-      '<div class="cardtop"><span class="label">'+esc(owner?"CONFIRMED TRANSACTION":item.lane||"RESEARCH")+'</span><span class="score">'+(item.score??"—")+'<small style="font-size:10px;color:#8a949e"> / 100</small></span></div>'+
-      '<h3>'+esc(item.name||item.symbol)+'</h3><div class="ticker">'+esc(item.symbol)+" · "+esc(item.priceDate ? "Close "+date(item.priceDate) : owner ? "Filed "+date(item.disclosureDate) : "Quote missing")+'</div>'+
-      '<div class="signal">'+esc(item.signal||item.reason||"Research signal")+'</div>'+
-      '<div class="reason">'+esc(item.reason||item.evidence||"")+'</div>'+
-      '<div class="numbers">'+numbers+'</div>'+
-      foot(source+(owner?' · <strong>Documented acquisition</strong>':' · <strong>Not evidence of identified investor buying</strong>')+
-        (item.investor?'<div>Buyer: '+esc(item.investor)+'</div>':"")+
-        (item.disclosureDate?'<div>Disclosure: '+date(item.disclosureDate)+'</div>':"")+
-        (!item.isLiveQuote?'<div>Live CAD quote not confirmed</div>':""))+
-      '</article>';
+  const state={feed:null,tab:"purchases",query:"",sort:"newest"};
+  const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[x]));
+  const money=n=>n!=null&&Number.isFinite(Number(n))?"C$"+Number(n).toLocaleString("en-CA",{minimumFractionDigits:2,maximumFractionDigits:2}):"—";
+  const quantity=n=>n!=null&&Number.isFinite(Number(n))?Number(n).toLocaleString("en-CA"):"—";
+  const percent=n=>n==null?"—":'<span class="'+(Number(n)>=0?"up":"down")+'">'+(Number(n)>0?"+":"")+Number(n).toFixed(2)+"%</span>";
+  function fmt(v){
+    if(!v)return "Not disclosed";
+    const d=new Date(String(v).slice(0,10)+"T12:00:00Z");
+    return Number.isFinite(d.valueOf())?d.toLocaleDateString("en-CA",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):esc(v);
   }
-
-  function trackCard(t) {
-    const points=t.checkpoints||[];
+  function sourceLink(url,label){
+    try{const u=new URL(url);if(u.protocol==="https:")return '<a target="_blank" rel="noopener noreferrer" href="'+esc(u.href)+'">'+esc(label)+" ↗</a>";}catch(_){}
+    return "";
+  }
+  const metric=(a,b)=>'<div><small>'+esc(a)+'</small><b>'+b+'</b></div>';
+  function disclosureCard(r){
     return '<article class="rowcard">'+
-      '<div class="cardtop"><span class="label">'+esc(t.lane||"Tracking")+'</span><span class="pill">'+date(t.started)+'</span></div>'+
-      '<h3>'+esc(t.name||t.symbol)+'</h3><div class="ticker">'+esc(t.symbol)+'</div>'+
-      '<div class="signal">'+esc(t.reason||"")+'</div>'+
-      '<div class="numbers">'+numeric("Start close",money(points[0]?.price))+numeric("Last close",money(t.lastPrice))+numeric("Change",percent(t.priceChangePct))+'</div>'+
+      '<div class="cardtop"><span class="label">DOCUMENTED PURCHASE</span><span class="pill">'+fmt(r.disclosureDate)+'</span></div>'+
+      '<h3>'+esc(r.name)+'</h3><div class="ticker">'+esc(r.symbol)+'</div>'+
+      '<div class="signal">Buyer: '+esc(r.investor)+'</div>'+
+      '<div class="reason">'+esc(r.buyerType||"Named investor")+'</div>'+
+      '<div class="numbers">'+metric("Shares purchased",quantity(r.shares))+metric("Disclosed investment",money(r.valueCAD))+metric("Price per share",money(r.disclosedPrice))+'</div>'+
+      '<div class="reason">Trade: '+fmt(r.transactionDate)+' · Disclosed: '+fmt(r.disclosureDate)+'</div>'+
+      '<div class="foot">'+sourceLink(r.sourceUrl,"View disclosed transaction")+
+      ' · '+esc(r.source||"Reviewed acquisition")+
+      (r.notes?'<div>'+esc(r.notes)+'</div>':"")+'</div></article>';
+  }
+  function companyCard(r){
+    const sources=(state.feed.purchases||[]).filter(x=>r.sourceIds.includes(x.id));
+    return '<article class="rowcard">'+
+      '<div class="cardtop"><span class="label">DISCLOSED INVESTOR PURCHASES</span><span class="pill">'+fmt(r.latestDisclosure)+'</span></div>'+
+      '<h3>'+esc(r.name)+'</h3><div class="ticker">'+esc(r.symbol)+'</div>'+
+      '<div class="numbers">'+metric("Distinct named buyers",quantity(r.distinctBuyers))+metric("Verified transactions",quantity(r.transactions))+metric("Total disclosed",money(r.totalDisclosedCAD))+'</div>'+
+      '<div class="reason">Buyers: '+(r.investors||[]).map(esc).join(" · ")+'</div>'+
+      '<div class="foot">'+sources.map(x=>sourceLink(x.sourceUrl, x.investor)).join(" · ")+'</div></article>';
+  }
+  function trackCard(r){
+    const points=r.checkpoints||[];
+    const val=o=>points.find(x=>x.offset===o);
+    return '<article class="rowcard">'+
+      '<div class="cardtop"><span class="label">VERIFIED PURCHASE TRACK</span><span class="pill">Started '+fmt(r.started)+'</span></div>'+
+      '<h3>'+esc(r.name)+'</h3><div class="ticker">'+esc(r.symbol)+'</div>'+
+      '<div class="signal">'+esc(r.investor)+'</div>'+
+      '<div class="reason">'+money(r.valueCAD)+' disclosed · Published '+fmt(r.disclosureDate)+'</div>'+
+      '<div class="numbers">'+metric("Signal-day close",money(val(0)?.price))+metric("Last confirmed close",money(r.lastPrice))+metric("Price change",percent(r.priceChangePct))+'</div>'+
       '<div class="tablewrap"><table><thead><tr><th>Checkpoint</th><th>Session</th><th>Close (CAD)</th></tr></thead><tbody>'+
-      [0,5,10,15,30].map(offset=>{
-         const p=points.find(x=>x.offset===offset);
-         return '<tr><td>D+'+offset+'</td><td>'+date(p?.day)+'</td><td>'+money(p?.price)+'</td></tr>';
-      }).join("")+'</tbody></table></div>'+
-      foot('First observed '+date(t.started)+' · '+esc(t.quoteStatus||"Quote not confirmed")+' '+safeLink(t.sourceUrl,"Source"))+'</article>';
+      [0,5,10,15,30].map(n=>'<tr><td>D+'+n+'</td><td>'+fmt(val(n)?.day)+'</td><td>'+money(val(n)?.price)+'</td></tr>').join("")+
+      '</tbody></table></div><div class="foot">'+esc(r.quoteStatus||"Unconfirmed quote")+' · '+sourceLink(r.sourceUrl,"Original disclosure")+'</div></article>';
   }
-
-  function repaint() {
-    const feed=state.feed;
-    if(!feed)return;
-    tabs.forEach(b=>{const on=b.dataset.tab===state.tab;b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
-    qs("#sectionTitle").textContent=descriptions[state.tab][0];
-    qs("#sectionDescription").textContent=descriptions[state.tab][1];
-    const entries=Array.isArray(feed[state.tab])?[...feed[state.tab]]:[];
-    const needle=state.query.trim().toLowerCase();
-    const filtered=entries.filter(x=>[x.symbol,x.name,x.investor,x.reason,x.signal,x.lane].some(s=>String(s||"").toLowerCase().includes(needle)));
-    if(state.sort==="ticker")filtered.sort((a,b)=>String(a.symbol).localeCompare(String(b.symbol)));
-    else if(state.sort==="newest")filtered.sort((a,b)=>String(b.disclosureDate||b.started||b.priceDate||"").localeCompare(String(a.disclosureDate||a.started||a.priceDate||"")));
-    else filtered.sort((a,b)=>Number(b.score||0)-Number(a.score||0));
-    qs("#cards").innerHTML=filtered.length ? filtered.map(state.tab==="tracks"?trackCard:card).join("") :
-      '<div class="empty">No matching records yet. This can mean no qualifying disclosed transactions or no confirmed CAD quotes. Try another tab or clear the search.</div>';
+  function valueOf(x){return x.valueCAD??x.totalDisclosedCAD??0;}
+  function repaint(){
+    if(!state.feed)return;
+    tabs.forEach(t=>{const on=t.dataset.tab===state.tab;t.classList.toggle("active",on);t.setAttribute("aria-pressed",String(on));});
+    $("#sectionTitle").textContent=descriptions[state.tab][0];
+    $("#sectionDescription").textContent=descriptions[state.tab][1];
+    const query=state.query.toLowerCase().trim();
+    const input=Array.isArray(state.feed[state.tab])?[...state.feed[state.tab]]:[];
+    const rows=input.filter(x=>[x.symbol,x.name,x.investor,x.buyerType,...(x.investors||[])].some(v=>String(v||"").toLowerCase().includes(query)));
+    if(state.sort==="largest")rows.sort((a,b)=>valueOf(b)-valueOf(a));
+    else if(state.sort==="ticker")rows.sort((a,b)=>String(a.symbol).localeCompare(String(b.symbol)));
+    else rows.sort((a,b)=>String(b.disclosureDate||b.latestDisclosure||b.started||"").localeCompare(String(a.disclosureDate||a.latestDisclosure||a.started||"")));
+    let view=state.tab==="tracks"?trackCard:state.tab==="purchases"?disclosureCard:companyCard;
+    $("#cards").innerHTML=rows.length?rows.map(view).join(""):
+      '<div class="empty">No verified named purchases match these filters. This is a data-coverage gap, not evidence that companies are not buying.</div>';
   }
-
   async function load(){
     try{
-      const res=await fetch("canada-new-try.json?t="+Date.now(),{cache:"no-store"});
-      if(!res.ok)throw new Error("Pilot dataset not published");
-      const feed=await res.json();
-      if(feed.schema!==1||!Array.isArray(feed.ownership)||!Array.isArray(feed.cdrs)||!Array.isArray(feed.tracks))throw new Error("Invalid pilot dataset");
+      const resp=await fetch("canada-new-try.json?t="+Date.now(),{cache:"no-store"});
+      if(!resp.ok)throw Error("Purchase dataset not yet published");
+      const feed=await resp.json();
+      if(feed.schema!==2||!["purchases","companies","multipleBuyers","tracks"].every(k=>Array.isArray(feed[k])))throw Error("Outdated or invalid purchase dataset");
       state.feed=feed;
-      const status=feed.status||{};
-      qs("#updated").textContent="Feed updated "+(feed.updated?new Date(feed.updated).toLocaleString("en-CA",{timeZone:"America/Toronto"}):"not available")+" · Latest quoted session "+(status.lastPriceDate||"not available");
-      qs("#stats").innerHTML=[
-        ["Verified acquisitions",feed.ownership.length],
-        ["Canadian quotes",status.canadaQuoted??0],
-        ["CAD-hedged CDRs quoted",status.cdrQuoted??0],
-        ["Experimental tracks",feed.tracks.length]
-      ].map(x=>'<div class="metric"><small>'+esc(x[0])+'</small><b>'+x[1]+'</b></div>').join("");
-      const errors=status.quoteErrors||[];
-      qs("#sourceHealth").textContent="Scan universe: "+(status.universe??0)+
-        " Canadian-listed tickers including "+(status.cdrUniverse??0)+" selected CAD-hedged CDRs. "+
-        "Confirmed ownership comes from independently checked original releases. "+
-        (errors.length?"Some quote requests failed; unavailable data are omitted.":"No quote transport errors reported.")+
-        " CDR quotes may be delayed or temporarily unavailable.";
+      const s=feed.status||{};
+      $("#updated").textContent="Data refreshed "+(feed.updated?new Date(feed.updated).toLocaleString("en-CA",{timeZone:"America/Toronto"}):"unavailable")+
+        " · Last documented purchase "+(feed.purchases[0]?fmt(feed.purchases[0].disclosureDate):"not available");
+      $("#stats").innerHTML=[
+        ["Verified purchases",s.verifiedPurchases??0],["Named investors",s.distinctBuyers??0],
+        ["Companies bought",s.companies??0],["Purchase-based tracks",s.tracked??0]
+      ].map(([a,b])=>'<div class="metric"><small>'+esc(a)+'</small><b>'+b+'</b></div>').join("");
+      $("#sourceHealth").textContent="Only reviewed acquisition records and manually verified SEDI imports are included. "+
+        "A Canadian listing or a U.S. CDR does not qualify without a transaction naming a buyer. "+
+        "Records may arrive after the trading date. Delayed closing prices are used only after a purchase is documented. "+
+        ((s.quoteErrors||[]).length?"Some historical closes are unavailable; blanks are intentional.":"Unavailable prices are never estimated.");
       repaint();
     }catch(e){
-      qs("#updated").textContent="Pilot data unavailable";
-      qs("#cards").innerHTML='<div class="empty">The pilot has not published valid data. The existing Investment Radar app is unaffected.</div>';
-      qs("#sourceHealth").textContent=String(e);
+      $("#updated").textContent="Verified-purchase feed unavailable";
+      $("#cards").innerHTML='<div class="empty">The revised purchase-only dataset is not available yet. There are no substitute market-activity signals.</div>';
+      $("#sourceHealth").textContent=String(e);
     }
   }
-  tabs.forEach(b=>b.addEventListener("click",()=>{state.tab=b.dataset.tab;state.query="";qs("#filter").value="";repaint();}));
-  qs("#filter").addEventListener("input",e=>{state.query=e.target.value;repaint();});
-  qs("#sort").addEventListener("change",e=>{state.sort=e.target.value;repaint();});
+  tabs.forEach(t=>t.addEventListener("click",()=>{state.tab=t.dataset.tab;state.query="";$("#filter").value="";repaint();}));
+  $("#filter").addEventListener("input",e=>{state.query=e.target.value;repaint();});
+  $("#sort").addEventListener("change",e=>{state.sort=e.target.value;repaint();});
   load();
 })();

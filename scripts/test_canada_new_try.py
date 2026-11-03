@@ -1,40 +1,55 @@
-"""Offline smoke tests for the independent Canadian experiment."""
+"""Contract checks: never publish a signal without a named disclosed purchase."""
 from datetime import timedelta
-from canada_new_try import TODAY, iso, checkpoint, momentum, owner_signal, watch_universe
+from canada_new_try import (TODAY, normalized_purchase, entity_type, ticker_exchange,
+                            company_summary, multiple_buyers, checkpoint, build_report, purchases)
 
-u, _ = watch_universe()
-assert u["NVDA.TO"]["cdr"] == "NVDA"
-assert u["NVDA.TO"]["lane"] == "CAD-Hedged CDRs"
-assert u["FDY.TO"]["lane"] == "Canadian Stocks"
-
-day = (TODAY - timedelta(days=2)).isoformat()
-entry = {
-    "direction": "BUY", "company": "Example Canada Ltd.",
-    "symbol": "EX", "exchange": "TSX", "investor": "Example investor",
-    "shares": 100000, "priceCAD": 4.5, "valueCAD": 450000,
-    "disclosureDate": day, "transactionDate": (TODAY - timedelta(days=3)).isoformat(),
-    "sourceUrl": "https://www.newswire.ca/example",
-    "status": "Completed"
+day=(TODAY-timedelta(days=2)).isoformat()
+trade=(TODAY-timedelta(days=3)).isoformat()
+base={
+    "market":"Canada", "direction":"BUY","company":"Sample Copper Corp.",
+    "symbol":"SMP","exchange":"TSX","investor":"Example Capital Corporation",
+    "shares":100000,"priceCAD":4.5,"valueCAD":450000,
+    "disclosureDate":day,"transactionDate":trade,
+    "type":"Open-market acquisition","status":"Completed",
+    "sourceUrl":"https://www.newswire.ca/sample","sourceName":"Example corporate release"
 }
-signal = owner_signal(entry, None)
-assert signal and signal["verifiedPurchase"]
-assert signal["symbol"] == "EX.TO"
-assert signal["investor"] == "Example investor"
-assert signal["price"] is None
-assert signal["signal"] == "Completed disclosed acquisition"
-assert owner_signal({**entry,"direction":"SELL"}, None) is None
-assert owner_signal({**entry,"status":"Proposed"}, None) is None
+a=normalized_purchase(base)
+assert a and a["verifiedPurchase"] and a["symbol"]=="SMP.TO"
+assert a["investor"]=="Example Capital Corporation"
+assert a["valueCAD"]==450000
+assert a["transactionDate"]==trade and a["disclosureDate"]==day
+assert "Corporate" in a["buyerType"]
+assert "Corporate" in entity_type("Nemesia S.à.r.l.")
+assert ticker_exchange({"symbol":"V"}) is None
+assert normalized_purchase({**base,"direction":"SELL"}) is None
+assert normalized_purchase({**base,"direction":"UNKNOWN"}) is None
+assert normalized_purchase({**base,"status":"Proposed"}) is None
+assert normalized_purchase({**base,"investor":""}) is None
+assert normalized_purchase({**base,"sourceUrl":""}) is None
+assert normalized_purchase({**base,"disclosureDate":(TODAY+timedelta(days=1)).isoformat()}) is None
 
-from_date = TODAY - timedelta(days=8)
-points = {from_date.isoformat():10, (from_date+timedelta(days=6)).isoformat():12}
-assert checkpoint(points, from_date, 0)["price"] == 10
-assert checkpoint(points, from_date, 5)["price"] == 12
-assert checkpoint(points, from_date, 15)["price"] is None
+b=normalized_purchase({**base,"investor":"Another Asset Fund", "valueCAD":220000})
+assert a["id"]!=b["id"]
+groups=company_summary([a,b])
+assert len(groups)==1 and groups[0]["distinctBuyers"]==2
+assert len(multiple_buyers([a,b]))==1
+assert not multiple_buyers([a,a])  # one buyer never becomes a false multiple-buyer alert
+points={(TODAY-timedelta(days=8)).isoformat():10,(TODAY-timedelta(days=2)).isoformat():12}
+begin=TODAY-timedelta(days=8)
+assert checkpoint(points,begin,0)["price"]==10
+assert checkpoint(points,begin,5)["price"]==12
+assert checkpoint(points,begin,15)["price"] is None
 
-info = {"symbol":"NVDA.TO","name":"Nvidia CDR (CAD Hedged)","lane":"CAD-Hedged CDRs","cdr":"NVDA"}
-quote = {"price":45,"priceDate":day,"relativeVolume":2.5,"return5d":5,"rsi14":62,"sma20":43,"sma50":41,"breakout20":True}
-n = momentum(info, quote)
-assert n["signal"] == "Breakout + unusual volume"
-assert n["verifiedPurchase"] is False
-assert n["sourceUrl"].startswith("https://cdr.cibc.com")
-print("Canada New Try offline smoke tests: PASS")
+report=build_report([a,b],quotes={})
+assert report["schema"]==2
+assert len(report["purchases"])==2
+assert len(report["multipleBuyers"])==1
+assert set(report.keys()).isdisjoint({"canadaStocks","cdrs","momentum"})
+assert all("relativeVolume" not in x and "score" not in x for x in report["purchases"])
+assert all(t["lane"]=="Verified ownership" and t["id"].startswith("owner:") for t in report["tracks"])
+assert all(t["quoteStatus"]=="No confirmed CAD close" for t in report["tracks"])
+
+real=purchases()
+assert all(x.get("verifiedPurchase") for x in real)
+assert all(x.get("sourceUrl") and x.get("investor") for x in real)
+print("Canada verified-purchases-only contract: PASS",len(real),"curated transactions")
