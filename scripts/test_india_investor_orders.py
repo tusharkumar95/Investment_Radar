@@ -60,6 +60,10 @@ assert all(x["valueMinCr"]>=ALERT_FLOOR_CR for x in seed_records())
 retained=merge([*seed_records(),order],{"orders":[]})
 assert len(retained)==3
 assert len({x["id"] for x in retained})==3
+assert order["id"]==parse_order(found[0],"NSE announcements alternate",official=True)["id"]
+stale=merge(seed_records(),{"orders":[{**order,"firstSeenAt":NOW.isoformat()}]})
+assert any(x["id"]==order["id"] and x["notSeenInLatestScan"] and x["firstSeenAt"]==NOW.isoformat() for x in stale)
+assert sum(x.get("alertEligible",False) for x in stale)>=2
 assert sum(x.get("verified",False) for x in retained)==2
 assert OFFICIAL["NSE corporate announcements RSS"].startswith("https://nsearchives.")
 print("India investor tracking & verified order tracker tests: PASS")
