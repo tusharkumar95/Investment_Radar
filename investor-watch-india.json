@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T12:09:22.374590+00:00",
+  "updated": "2026-11-03T19:41:54.627599+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-02",
-    "trades": 506,
-    "investors": 313
+    "latest": "2026-11-03",
+    "trades": 553,
+    "investors": 332
   },
   "featured": [
     {
@@ -535,19 +535,88 @@
       "status": "Exchange-disclosed transactions observed"
     },
     {
-      "id": "investor:13e65f5c8423a15b",
-      "name": "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
+      "id": "investor:66d15a5b88babd80",
+      "name": "ABAKKUS INVESTMENT MANAGERS PRIVATE LIMITED",
+      "type": "Named investor / company",
       "observedTransactions": 1,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 118.43,
+      "buyValueCr": 49.84,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 118.43,
-      "latestDisclosure": "2026-11-02",
+      "netDisclosedValueCr": 49.84,
+      "latestDisclosure": "2026-11-03",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "ABAKKUS INVESTMENT MANAGERS PRIVATE LIMITED",
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyQty": 1315000,
+          "sellQty": 0,
+          "buyValueINR": 498385000.0,
+          "sellValueINR": 0,
+          "netShares": 1315000,
+          "netValueINR": 498385000.0,
+          "avgBuyPrice": 379.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "4e49477870cef81110"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyValueCr": 49.84,
+          "sellValueCr": 0.0,
+          "netShares": 1315000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
+      "displayName": "Abakkus Investment",
+      "watchOnly": false,
+      "status": "Exchange-disclosed transactions observed"
+    },
+    {
+      "id": "investor:13e65f5c8423a15b",
+      "name": "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 160.5,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 160.5,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyQty": 1070604,
+          "sellQty": 0,
+          "buyValueINR": 420758078.04,
+          "sellValueINR": 0,
+          "netShares": 1070604,
+          "netValueINR": 420758078.04,
+          "avgBuyPrice": 393.01,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "5b638af950be8ba7e3"
+        },
         {
           "date": "2026-11-02",
           "name": "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
@@ -572,6 +641,15 @@
           "buyValueCr": 118.43,
           "sellValueCr": 0.0,
           "netShares": 700000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyValueCr": 42.08,
+          "sellValueCr": 0.0,
+          "netShares": 1070604,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -1034,16 +1112,50 @@
       "id": "investor:dd10dd67e238433a",
       "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
+      "observedTransactions": 4,
+      "observedBuyDays": 2,
       "observedSellDays": 0,
-      "buyValueCr": 299.67,
+      "buyValueCr": 800.67,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 299.67,
-      "latestDisclosure": "2026-10-22",
+      "netDisclosedValueCr": 800.67,
+      "latestDisclosure": "2026-11-03",
       "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
+      "repeatBuyCompanies": [
+        "GALLANTT"
+      ],
       "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 5000000,
+          "sellQty": 0,
+          "buyValueINR": 2505000000.0,
+          "sellValueINR": 0,
+          "netShares": 5000000,
+          "netValueINR": 2505000000.0,
+          "avgBuyPrice": 501.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "832b5c23c59d3c4491"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 5000000,
+          "sellQty": 0,
+          "buyValueINR": 2505000000.0,
+          "sellValueINR": 0,
+          "netShares": 5000000,
+          "netValueINR": 2505000000.0,
+          "avgBuyPrice": 501.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "b8d34f2266f1682968"
+        },
         {
           "date": "2026-10-22",
           "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
@@ -1081,15 +1193,15 @@
         {
           "symbol": "GALLANTT",
           "company": "Gallantt Ispat Limited",
-          "buyValueCr": 299.67,
+          "buyValueCr": 800.67,
           "sellValueCr": 0.0,
-          "netShares": 5303950,
-          "buyDays": 1,
+          "netShares": 15303950,
+          "buyDays": 2,
           "sellDays": 0
         }
       ],
       "observations": {
-        "repeatPurchases": false,
+        "repeatPurchases": true,
         "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
@@ -3512,22 +3624,154 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:2ed9b965626fd706",
+      "name": "MONET SECURITIES PRIVATE LTD",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 34.92,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 34.92,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "MONET SECURITIES PRIVATE LTD",
+          "symbol": "RBA",
+          "company": "Restaurant Brand Asia Ltd",
+          "buyQty": 4014172,
+          "sellQty": 0,
+          "buyValueINR": 349192822.28,
+          "sellValueINR": 0,
+          "netShares": 4014172,
+          "netValueINR": 349192822.28,
+          "avgBuyPrice": 86.99,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "f468f083d03139a89c"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "RBA",
+          "company": "Restaurant Brand Asia Ltd",
+          "buyValueCr": 34.92,
+          "sellValueCr": 0.0,
+          "netShares": 4014172,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:2a19f3b3759326ca",
+      "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 1,
+      "buyValueCr": 37.5,
+      "sellValueCr": 2.9,
+      "netDisclosedValueCr": 34.6,
+      "latestDisclosure": "2026-10-29",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-10-29",
+          "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
+          "symbol": "RAIN",
+          "company": "Rain Industries Limited",
+          "buyQty": 1800000,
+          "sellQty": 140896,
+          "buyValueINR": 375012000.0,
+          "sellValueINR": 29013304.32,
+          "netShares": 1659104,
+          "netValueINR": 345998695.68,
+          "avgBuyPrice": 208.34,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "a080011a819a2f1034"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "RAIN",
+          "company": "Rain Industries Limited",
+          "buyValueCr": 37.5,
+          "sellValueCr": 2.9,
+          "netShares": 1659104,
+          "buyDays": 1,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:a845d163545f54ae",
       "name": "L7 HITECH PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 11,
-      "observedBuyDays": 7,
-      "observedSellDays": 6,
-      "buyValueCr": 38.96,
-      "sellValueCr": 4.07,
-      "netDisclosedValueCr": 34.89,
-      "latestDisclosure": "2026-10-29",
-      "uniqueCompanies": 8,
+      "observedTransactions": 13,
+      "observedBuyDays": 8,
+      "observedSellDays": 8,
+      "buyValueCr": 39.35,
+      "sellValueCr": 5.48,
+      "netDisclosedValueCr": 33.87,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 9,
       "repeatBuyCompanies": [
         "EVENTIONS",
         "MOMSBELIEF"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "L7 HITECH PRIVATE LIMITED",
+          "symbol": "JAYESH",
+          "company": "Jayesh Logistics Limited",
+          "buyQty": 0,
+          "sellQty": 116000,
+          "buyValueINR": 0,
+          "sellValueINR": 13920000.0,
+          "netShares": -116000,
+          "netValueINR": -13920000.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "41410d60c5584a9e8a"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "L7 HITECH PRIVATE LIMITED",
+          "symbol": "EVENTIONS",
+          "company": "Eventions Limited",
+          "buyQty": 73200,
+          "sellQty": 3600,
+          "buyValueINR": 3954264.0,
+          "sellValueINR": 194868.0,
+          "netShares": 69600,
+          "netValueINR": 3759396.0,
+          "avgBuyPrice": 54.02,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "e0325fbdbc98877e62"
+        },
         {
           "date": "2026-10-29",
           "name": "L7 HITECH PRIVATE LIMITED",
@@ -3736,11 +3980,11 @@
         {
           "symbol": "EVENTIONS",
           "company": "Eventions Limited",
-          "buyValueCr": 1.13,
-          "sellValueCr": 0.33,
-          "netShares": 141600,
-          "buyDays": 2,
-          "sellDays": 1
+          "buyValueCr": 1.53,
+          "sellValueCr": 0.35,
+          "netShares": 211200,
+          "buyDays": 3,
+          "sellDays": 2
         },
         {
           "symbol": "MOS",
@@ -3749,6 +3993,15 @@
           "sellValueCr": 1.8,
           "netShares": -3004000,
           "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "JAYESH",
+          "company": "Jayesh Logistics Limited",
+          "buyValueCr": 0.0,
+          "sellValueCr": 1.39,
+          "netShares": -116000,
+          "buyDays": 0,
           "sellDays": 1
         },
         {
@@ -3783,56 +4036,6 @@
         "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:2a19f3b3759326ca",
-      "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 37.5,
-      "sellValueCr": 2.9,
-      "netDisclosedValueCr": 34.6,
-      "latestDisclosure": "2026-10-29",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-29",
-          "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
-          "symbol": "RAIN",
-          "company": "Rain Industries Limited",
-          "buyQty": 1800000,
-          "sellQty": 140896,
-          "buyValueINR": 375012000.0,
-          "sellValueINR": 29013304.32,
-          "netShares": 1659104,
-          "netValueINR": 345998695.68,
-          "avgBuyPrice": 208.34,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "a080011a819a2f1034"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RAIN",
-          "company": "Rain Industries Limited",
-          "buyValueCr": 37.5,
-          "sellValueCr": 2.9,
-          "netShares": 1659104,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -4220,6 +4423,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:1c71fd6096d0b2be",
+      "name": "TRUST MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 25.68,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 25.68,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "TRUST MUTUAL FUND",
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyQty": 602572,
+          "sellQty": 0,
+          "buyValueINR": 256755929.2,
+          "sellValueINR": 0,
+          "netShares": 602572,
+          "netValueINR": 256755929.2,
+          "avgBuyPrice": 426.1,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6576f9b2731accd4c3"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyValueCr": 25.68,
+          "sellValueCr": 0.0,
+          "netShares": 602572,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:c5c342380ad0e671",
       "name": "MAHALAKSHMI ELECTRONICS PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -4257,6 +4510,56 @@
           "buyValueCr": 24.76,
           "sellValueCr": 0.0,
           "netShares": 1010948,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:c72e7b5125b91c88",
+      "name": "SANJAY POPATLAL JAIN",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 18.43,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 18.43,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "SANJAY POPATLAL JAIN",
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyQty": 500000,
+          "sellQty": 0,
+          "buyValueINR": 184285000.0,
+          "sellValueINR": 0,
+          "netShares": 500000,
+          "netValueINR": 184285000.0,
+          "avgBuyPrice": 368.57,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "dce4da9387bdc0d2a9"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SFCTECH",
+          "company": "SFC Environmental Tech L",
+          "buyValueCr": 18.43,
+          "sellValueCr": 0.0,
+          "netShares": 500000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -4473,20 +4776,84 @@
       "id": "investor:54ee6370ce8397d3",
       "name": "PROGNOSIS SECURITIES PVT. LTD",
       "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 11,
-      "observedBuyDays": 9,
-      "observedSellDays": 7,
-      "buyValueCr": 37.46,
-      "sellValueCr": 23.12,
-      "netDisclosedValueCr": 14.34,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 5,
+      "observedTransactions": 15,
+      "observedBuyDays": 13,
+      "observedSellDays": 9,
+      "buyValueCr": 41.77,
+      "sellValueCr": 28.39,
+      "netDisclosedValueCr": 13.38,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 8,
       "repeatBuyCompanies": [
-        "VOLERCAR",
         "MOMSBELIEF",
+        "VOLERCAR",
         "MARSONS"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "PROGNOSIS SECURITIES PVT. LTD",
+          "symbol": "PAPADMALJI",
+          "company": "Papadmalji Agro Foods Ltd",
+          "buyQty": 131200,
+          "sellQty": 0,
+          "buyValueINR": 5115488.0,
+          "sellValueINR": 0,
+          "netShares": 131200,
+          "netValueINR": 5115488.0,
+          "avgBuyPrice": 38.99,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "0c2fdd080bc6b878f3"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "PROGNOSIS SECURITIES PVT. LTD",
+          "symbol": "MOMSBELIEF",
+          "company": "Rays of Belief Limited",
+          "buyQty": 78271,
+          "sellQty": 164991,
+          "buyValueINR": 20440471.65,
+          "sellValueINR": 41594231.1,
+          "netShares": -86720,
+          "netValueINR": -21153759.45,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "5a19caba948947c902"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "PROGNOSIS SECURITIES PVT. LTD",
+          "symbol": "KCK",
+          "company": "Kck Industries Limited",
+          "buyQty": 1150000,
+          "sellQty": 0,
+          "buyValueINR": 12949000.0,
+          "sellValueINR": 0,
+          "netShares": 1150000,
+          "netValueINR": 12949000.0,
+          "avgBuyPrice": 11.26,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "79e7975f23b254dc8e"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "PROGNOSIS SECURITIES PVT. LTD",
+          "symbol": "FASCINATE",
+          "company": "Fascinate Textiles Ltd",
+          "buyQty": 40800,
+          "sellQty": 100000,
+          "buyValueINR": 4528800.0,
+          "sellValueINR": 11078000.0,
+          "netShares": -59200,
+          "netValueINR": -6549200.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "a75df683b723461fb5"
+        },
         {
           "date": "2026-10-30",
           "name": "PROGNOSIS SECURITIES PVT. LTD",
@@ -4677,11 +5044,11 @@
         {
           "symbol": "MOMSBELIEF",
           "company": "Rays of Belief Limited",
-          "buyValueCr": 13.04,
-          "sellValueCr": 7.69,
-          "netShares": 218730,
-          "buyDays": 4,
-          "sellDays": 3
+          "buyValueCr": 15.09,
+          "sellValueCr": 11.85,
+          "netShares": 132010,
+          "buyDays": 5,
+          "sellDays": 4
         },
         {
           "symbol": "VOLERCAR",
@@ -4698,6 +5065,33 @@
           "buyValueCr": 2.06,
           "sellValueCr": 0.33,
           "netShares": 137387,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "KCK",
+          "company": "Kck Industries Limited",
+          "buyValueCr": 1.29,
+          "sellValueCr": 0.0,
+          "netShares": 1150000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "PAPADMALJI",
+          "company": "Papadmalji Agro Foods Ltd",
+          "buyValueCr": 0.51,
+          "sellValueCr": 0.0,
+          "netShares": 131200,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "FASCINATE",
+          "company": "Fascinate Textiles Ltd",
+          "buyValueCr": 0.45,
+          "sellValueCr": 1.11,
+          "netShares": -59200,
           "buyDays": 1,
           "sellDays": 1
         },
@@ -4857,6 +5251,56 @@
           "buyValueCr": 10.81,
           "sellValueCr": 0.0,
           "netShares": 325000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:9ac2decbb80a5c99",
+      "name": "KALPANA MANGALA",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 10.12,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 10.12,
+      "latestDisclosure": "2026-11-03",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-03",
+          "name": "KALPANA MANGALA",
+          "symbol": "NELCAST",
+          "company": "Nelcast Limited",
+          "buyQty": 618343,
+          "sellQty": 0,
+          "buyValueINR": 101191831.95,
+          "sellValueINR": 0,
+          "netShares": 618343,
+          "netValueINR": 101191831.95,
+          "avgBuyPrice": 163.65,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "0afe454ef4cbce9d95"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "NELCAST",
+          "company": "Nelcast Limited",
+          "buyValueCr": 10.12,
+          "sellValueCr": 0.0,
+          "netShares": 618343,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5039,256 +5483,6 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:2b6ebad37d74753d",
-      "name": "YASHVI HITESH PATEL",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 8.05,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 8.05,
-      "latestDisclosure": "2026-10-22",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-22",
-          "name": "YASHVI HITESH PATEL",
-          "symbol": "RAVITA",
-          "company": "Ravita Engineering Ser L",
-          "buyQty": 718800,
-          "sellQty": 0,
-          "buyValueINR": 80476848.0,
-          "sellValueINR": 0,
-          "netShares": 718800,
-          "netValueINR": 80476848.0,
-          "avgBuyPrice": 111.96,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "24983c6de7bebf6595"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RAVITA",
-          "company": "Ravita Engineering Ser L",
-          "buyValueCr": 8.05,
-          "sellValueCr": 0.0,
-          "netShares": 718800,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:9982e202577fc59b",
-      "name": "JAGID VANITABEN RAJENDRAPRASAD",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 1,
-      "buyValueCr": 8.76,
-      "sellValueCr": 1.28,
-      "netDisclosedValueCr": 7.48,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "JAGID VANITABEN RAJENDRAPRASAD",
-          "symbol": "EVENTIONS",
-          "company": "Eventions Limited",
-          "buyQty": 106800,
-          "sellQty": 0,
-          "buyValueINR": 6427224.0,
-          "sellValueINR": 0,
-          "netShares": 106800,
-          "netValueINR": 6427224.0,
-          "avgBuyPrice": 60.18,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "988d5a50b934a354a4"
-        },
-        {
-          "date": "2026-10-14",
-          "name": "JAGID VANITABEN RAJENDRAPRASAD",
-          "symbol": "RHETAN",
-          "company": "Rhetan TMT Limited",
-          "buyQty": 4472411,
-          "sellQty": 698438,
-          "buyValueINR": 81218983.76,
-          "sellValueINR": 12788399.78,
-          "netShares": 3773973,
-          "netValueINR": 68430583.98,
-          "avgBuyPrice": 18.16,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "89b96b55adfd9a44"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RHETAN",
-          "company": "Rhetan TMT Limited",
-          "buyValueCr": 8.12,
-          "sellValueCr": 1.28,
-          "netShares": 3773973,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "EVENTIONS",
-          "company": "Eventions Limited",
-          "buyValueCr": 0.64,
-          "sellValueCr": 0.0,
-          "netShares": 106800,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:e1711d7cd92e683e",
-      "name": "MC JAIN INFOSERVICES PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 7.4,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 7.4,
-      "latestDisclosure": "2026-10-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-06",
-          "name": "MC JAIN INFOSERVICES PRIVATE LIMITED",
-          "symbol": "SRIT",
-          "company": "SRIT India Limited",
-          "buyQty": 500000,
-          "sellQty": 0,
-          "buyValueINR": 74000000.0,
-          "sellValueINR": 0,
-          "netShares": 500000,
-          "netValueINR": 74000000.0,
-          "avgBuyPrice": 148.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "b024a45fb969fc90"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SRIT",
-          "company": "SRIT India Limited",
-          "buyValueCr": 7.4,
-          "sellValueCr": 0.0,
-          "netShares": 500000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:8b06a26e5212d397",
-      "name": "IMC INDIA SECURITIES PRIVATE LIMITED",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 2,
-      "buyValueCr": 20.63,
-      "sellValueCr": 13.37,
-      "netDisclosedValueCr": 7.26,
-      "latestDisclosure": "2026-10-14",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-14",
-          "name": "IMC INDIA SECURITIES PRIVATE LIMITED",
-          "symbol": "GERMAN",
-          "company": "German Green Steel N Pw L",
-          "buyQty": 422571,
-          "sellQty": 198720,
-          "buyValueINR": 50881774.11,
-          "sellValueINR": 23433062.4,
-          "netShares": 223851,
-          "netValueINR": 27448711.71,
-          "avgBuyPrice": 120.41,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "bbea72bd6814c566"
-        },
-        {
-          "date": "2026-10-06",
-          "name": "IMC INDIA SECURITIES PRIVATE LIMITED",
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyQty": 667796,
-          "sellQty": 477930,
-          "buyValueINR": 155369417.36,
-          "sellValueINR": 110224995.9,
-          "netShares": 189866,
-          "netValueINR": 45144421.46,
-          "avgBuyPrice": 232.66,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "ddf7a7aef0ee88f9"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyValueCr": 15.54,
-          "sellValueCr": 11.02,
-          "netShares": 189866,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "GERMAN",
-          "company": "German Green Steel N Pw L",
-          "buyValueCr": 5.09,
-          "sellValueCr": 2.34,
-          "netShares": 223851,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
