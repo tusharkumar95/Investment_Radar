@@ -1,0 +1,94 @@
+name: India Big Order Wins + Follow Investors
+on:
+  schedule:
+    # 08:37–23:17 India Standard Time, Monday–Saturday.
+    # Scheduled Actions can be delayed; this is not a real-time exchange feed.
+    - cron: "7,27,47 3-17 * * 1-6"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_india_investor_watch.py"
+      - "scripts/fetch_india_orders.py"
+      - "scripts/test_india_investor_orders.py"
+      - "india-order-verified.json"
+      - "follow-investors.html"
+      - "follow-investors.js"
+      - "india-orders.html"
+      - "india-orders.js"
+      - ".github/workflows/investment-radar-investors-orders.yml"
+  pull_request:
+    paths:
+      - "scripts/build_india_investor_watch.py"
+      - "scripts/fetch_india_orders.py"
+      - "scripts/test_india_investor_orders.py"
+      - "india-order-verified.json"
+      - "follow-investors.html"
+      - "follow-investors.js"
+      - "india-orders.html"
+      - "india-orders.js"
+      - ".github/workflows/investment-radar-investors-orders.yml"
+permissions:
+  contents: write
+concurrency:
+  group: radar-india-investors-orders
+  cancel-in-progress: true
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify source parsers and safe data contracts
+        run: |
+          python -m py_compile scripts/build_india_investor_watch.py scripts/fetch_india_orders.py scripts/test_india_investor_orders.py
+          python scripts/test_india_investor_orders.py
+          node --check follow-investors.js
+          node --check india-orders.js
+          test -f india-orders.html && test -f follow-investors.html
+      - name: Build India investor watch from existing official Moves archive
+        if: github.event_name != 'pull_request'
+        run: python scripts/build_india_investor_watch.py
+      - name: Poll official order disclosure RSS and separate research leads
+        if: github.event_name != 'pull_request'
+        run: python scripts/fetch_india_orders.py
+      - name: Prevent fabricated orders and investor data
+        if: github.event_name != 'pull_request'
+        run: |
+          python - <<'PY'
+          import json
+          w=json.load(open('investor-watch-india.json',encoding='utf-8'))
+          d=json.load(open('india-order-wins.json',encoding='utf-8'))
+          assert w['schema']==d['schema']==1
+          assert isinstance(w['featured'],list) and isinstance(w['discovered'],list)
+          assert w['coverage']['trades']>0
+          assert all(p['netDisclosedValueCr']==round(p['buyValueCr']-p['sellValueCr'],2) for p in w['discovered'])
+          assert all(p.get('verified') and p.get('orderStatus')=='Awarded / secured' for p in d['verifiedOrders'])
+          assert all(x.get('sourceClass')=='original-exchange-filing' for x in d['verifiedOrders'])
+          assert all(not x.get('verified') and not x.get('alertEligible') for x in d['researchLeads'])
+          assert all(x.get('isFinal') and x.get('valueMinCr',0)>=d['thresholdCr'] for x in d['alerts'])
+          assert all(x.get('sourceUrl') and x.get('company') for x in d['alerts'])
+          assert d['status']['verified']>=2
+          print('India investors',w['coverage']['investors'],'| order wins',d['status'])
+          PY
+      - name: Publish ONLY the two independent derived JSON datasets
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "radar-contracts-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          publish() {
+            git add investor-watch-india.json india-order-wins.json
+            git diff --cached --quiet && return 0
+            git commit -m "Refresh India investor watch and order wins"
+            git push origin HEAD:main
+          }
+          if publish; then exit 0; fi
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/build_india_investor_watch.py
+          python scripts/fetch_india_orders.py
+          publish
