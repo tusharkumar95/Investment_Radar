@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3f5f7"><title>Big Order Wins · Investment Radar</title>
+<style>
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#1c2b39;background:#f3f5f7;margin:0;font-size:13px}
+main{max-width:1080px;margin:0 auto;padding:13px 13px calc(36px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+header strong{font-size:14px}header a{border:1px solid #e0e6eb;border-radius:12px;padding:11px;background:#fff;font-weight:750;color:#436178;text-decoration:none;font-size:12px}
+.hero,.panel,.card,.stat{border-radius:16px;border:1px solid #e0e6eb;background:#fff;box-shadow:0 4px 14px #20374608}
+.hero,.panel{padding:16px;margin-bottom:11px}.eyebrow{color:#77909c;font-size:10px;font-weight:900;letter-spacing:1px}
+h1{font-size:clamp(27px,4vw,35px);margin:5px 0 9px;letter-spacing:-1px}h2{font-size:18px;margin:0 0 8px}h3{font-size:16px;line-height:1.35;margin:0 0 4px}
+.muted{font-size:12px;color:#6e7c89;line-height:1.55;margin:4px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}.stat{padding:12px}.stat small{display:block;color:#738695;font-size:10px}.stat b{font-size:21px;display:block;margin-top:5px}
+.tabs{display:flex;overflow:auto;gap:7px;margin:5px 0 12px;padding:1px 0}.tabs button{border:1px solid #dae3e8;border-radius:11px;background:#fff;color:#526979;font-size:12px;padding:11px 13px;white-space:nowrap;min-height:44px;font-weight:800;cursor:pointer}
+.tabs button.active{background:#18394c;border-color:#18394c;color:white}
+.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:7px;margin-bottom:14px}
+input,select{border:1px solid #dbe2e8;border-radius:11px;background:#fff;color:#314453;min-height:43px;padding:10px;font:inherit;font-size:12px;min-width:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.card{padding:15px;min-width:0}.card .top{display:flex;justify-content:space-between;gap:9px;align-items:center}
+.cat{color:#72889a;font-size:10px;letter-spacing:.4px;font-weight:900;text-transform:uppercase}
+.pill{display:inline-block;padding:6px 9px;border-radius:999px;background:#f1f5f8;color:#48697d;font-size:10px;font-weight:850;white-space:nowrap}
+.pill.ok{background:#e8f5ee;color:#17704b}.pill.warn{background:#fff3db;color:#936c20}
+.card h3{margin:10px 0 4px}.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:11px 0}
+.metrics div{background:#f4f7f8;border-radius:9px;padding:10px}.metrics small{display:block;font-size:10px;color:#82929e}.metrics b{display:block;font-size:16px;margin-top:4px}
+.note{font-size:12px;line-height:1.5;color:#536979;margin:9px 0}.foot{font-size:11px;border-top:1px solid #e9eef1;padding-top:10px;margin-top:10px;color:#738590}
+a{color:#196786;text-decoration:none}.warning{padding:12px;background:#fff9e9;border-radius:10px;color:#725b37;font-size:12px;line-height:1.5}
+details{border-top:1px solid #e8eef2;padding-top:10px;margin-top:10px}summary{font-size:12px;cursor:pointer;font-weight:800}
+.status{padding:7px 2px;border-bottom:1px solid #eef1f3;font-size:11px;color:#62788a}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero,.panel{padding:12px}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1 / -1}}
+</style></head><body><main>
+<header><strong>Investment Radar · Signals</strong><div><a href="moves.html">← Moves</a> <a href="follow-investors.html">Follow Investors</a></div></header>
+<section class="hero"><div class="eyebrow">INDIA · COMPANY CONTRACT AWARDS</div><h1>Big Order Wins</h1>
+<p class="muted">Track Indian listed companies announcing significant new business through NSE/BSE disclosures. A won order is not the same as revenue already earned. Tentative bids and media headlines never count as verified awards.</p>
+<p class="muted" id="lastSync">Loading disclosure feed…</p></section>
+<div class="stats" id="stats"><div class="stat"><small>Verified awards</small><b>—</b></div></div>
+<section class="panel"><nav class="tabs" aria-label="Order views">
+<button type="button" data-tab="alerts" class="active">Big alerts</button>
+<button type="button" data-tab="verifiedOrders">Source-verified</button>
+<button type="button" data-tab="exchangeNotices">Exchange announcements</button>
+<button type="button" data-tab="researchLeads">Needs verification</button>
+</nav>
+<div class="toolbar"><input type="search" id="query" placeholder="Search company, customer or project" aria-label="Search order announcements">
+<select id="size" aria-label="Order minimum"><option value="0">Any size</option><option value="100" selected>₹100 Cr+</option><option value="500">₹500 Cr+</option><option value="1000">₹1,000 Cr+</option><option value="5000">₹5,000 Cr+</option></select>
+<select id="sort" aria-label="Sort orders"><option value="newest">Newest</option><option value="largest">Largest</option></select></div>
+<h2 id="viewTitle">Significant disclosed order announcements</h2>
+<div class="cards" id="cards" aria-live="polite"><div class="warning">Checking live data…</div></div></section>
+<section class="panel"><h2>Source reliability</h2>
+<p class="muted">The poller checks official NSE and BSE RSS feeds during Indian market hours. Exchange feed availability varies; it may run late or return incomplete summaries. Only an original source reviewed for contract value earns the “Source-verified” label. A feed notice with a rupee amount remains “Attachment needs review” until checked. Google News results are research leads only, never verified wins or notifications.</p>
+<div id="sourceHealth" class="warning">No source status yet.</div>
+<details><summary>What qualifies as a large order?</summary>
+<p class="muted">For now, the alert floor is ₹100 crore of awarded contract value (or an issuer's documented order-size classification with a lower bound of at least ₹100 crore). The default filters can be adjusted above. Revenue significance cannot be estimated without verified annual turnover, and a ₹100 crore order can be huge for one business but immaterial to another. Orders may span multiple years, may contain cancellation clauses, and can be modified.</p></details></section>
+<p class="muted">This is a research alert, not a buy recommendation. Publicly reported award values can differ from ultimate executed revenue. The exchange source PDF should always be reviewed for scope, duration and customer.</p>
+</main><script src="india-orders.js?v=1"></script></body></html>
