@@ -2,6 +2,70 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-03:India:SFCTECH",
+      "day": "2026-11-03",
+      "market": "India",
+      "symbol": "SFCTECH",
+      "company": "SFC Environmental Tech L",
+      "buyers": 4,
+      "investors": [
+        "ABAKKUS INVESTMENT MANAGERS PRIVATE LIMITED",
+        "CARNELIAN ASSET MANAGEMENT & ADVISORS PRIVATE LIMITED",
+        "SANJAY POPATLAL JAIN",
+        "TRUST MUTUAL FUND"
+      ],
+      "value": 1360184007.24,
+      "currency": "INR",
+      "disclosedAvgPrice": 391.67,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-03T19:40:44.450058+00:00",
+      "firstBuyerCount": 4,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-03:India:EVENTIONS",
+      "day": "2026-11-03",
+      "market": "India",
+      "symbol": "EVENTIONS",
+      "company": "Eventions Limited",
+      "buyers": 3,
+      "investors": [
+        "BROTHER ENTERPRISE",
+        "L7 HITECH PRIVATE LIMITED",
+        "SHYAM ENTERPRISE"
+      ],
+      "value": 26439792.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 54.0067,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-03T19:40:44.450058+00:00",
+      "firstBuyerCount": 3,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-03:India:BLSPOLY",
+      "day": "2026-11-03",
+      "market": "India",
+      "symbol": "BLSPOLY",
+      "company": "BLS Polymers Limited",
+      "buyers": 3,
+      "investors": [
+        "NIVESH CONSULTANCY PRIVATE LIMITED",
+        "PATRONUS TRADETECH LLP",
+        "YUGA STOCKS AND COMMODITIES PRIVATE LIMITED"
+      ],
+      "value": 168616425.48,
+      "currency": "INR",
+      "disclosedAvgPrice": 257.1733,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-03T19:40:44.450058+00:00",
+      "firstBuyerCount": 3,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-02:India:RADIOWALLA",
       "day": "2026-11-02",
       "market": "India",
@@ -322,7 +386,7 @@
       "2026-10-27": 625.4,
       "2026-10-28": 608.45,
       "2026-10-29": 638.7,
-      "2026-11-02": 647.7,
+      "2026-11-02": 647.8,
       "2026-11-03": 657.1
     },
     "India:INDOTECH": {
@@ -369,7 +433,7 @@
       "2026-10-27": 1284.2,
       "2026-10-28": 1219.5,
       "2026-10-29": 1209.15,
-      "2026-11-02": 1254.0,
+      "2026-11-02": 1267.0,
       "2026-11-03": 1232.5
     },
     "India:VNL": {
@@ -377,11 +441,11 @@
       "2026-10-27": 93.88,
       "2026-10-28": 98.57,
       "2026-10-29": 103.34,
-      "2026-11-02": 100.6,
+      "2026-11-02": 100.96,
       "2026-11-03": 100.14
     },
     "India:EDELALTS": {
-      "2026-11-02": 1728.0,
+      "2026-11-02": 1727.8,
       "2026-11-03": 1722.6
     },
     "India:MOBIKWIK": {
@@ -390,9 +454,15 @@
     },
     "India:RADIOWALLA": {
       "2026-11-02": 23.0
+    },
+    "India:BLSPOLY": {
+      "2026-11-03": 268.8
+    },
+    "India:SFCTECH": {
+      "2026-11-03": 426.1
     }
   },
-  "updatedAt": "2026-11-03T09:48:27.754125+00:00",
+  "updatedAt": "2026-11-03T19:40:44.450058+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -404,9 +474,11 @@
     "India:VNL": "VNL.NS",
     "India:EDELALTS": "EDELALTS.NS",
     "India:MOBIKWIK": "MOBIKWIK.NS",
-    "India:RADIOWALLA": "RADIOWALLA.NS"
+    "India:RADIOWALLA": "RADIOWALLA.NS",
+    "India:BLSPOLY": "BLSPOLY.NS",
+    "India:SFCTECH": "SFCTECH.NS"
   },
-  "quotesUpdatedAt": "2026-11-03T09:48:33.178967+00:00",
+  "quotesUpdatedAt": "2026-11-03T19:40:48.510697+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:LAMOSAIC",

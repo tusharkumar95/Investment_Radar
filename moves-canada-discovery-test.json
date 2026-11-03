@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-03T09:48:25.046299+00:00",
+  "testedAt": "2026-11-03T19:40:42.048764+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -16,7 +16,7 @@
         {
           "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
+          "published": "Sat, 31 Oct 2026 01:26:05 GMT",
           "source": "TradingView"
         },
         {
@@ -32,12 +32,6 @@
           "source": "Yahoo Finance"
         },
         {
-          "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Lelezard",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQmZLbFk2akhpSTdOQnZBcmVWMUZ5dl96ZDVEYVZ1dEZKenpRbU5rb2s0clRZX196eGFKZU14RTEwNF9yRTg5RThMSDk3b0tSdGtHYkI4V0NWR1FtX0pFMUg3Yk1GeTJ0eVRJcTg4VGx2V2NhdW1nZnZtajV4cExTbE5JelQtZ0FCQmRacWR4dTZCVXpEbkhIdmpCdlM4YTRoUEY0R0RNekh5QnlXRXEyaDY4UkFDelVWeGE0QTVmcWJ3TU1tQVlZaw?oc=5",
-          "published": "Sat, 31 Oct 2026 06:26:10 GMT",
-          "source": "Lelezard"
-        },
-        {
           "title": "Tana Resources Corp CEO Vartan Korajian Acquires 2 Million Shares in Debt Settlement, Lifts Stake to 12.49% - kalkine.ca",
           "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcnZZNW84VEpzUVhEdUJZblE2TEhGQmxwZ0ZfdU9aUk1wXzkxQnk0UWhVRXYxT0VEZTMyalVMdU9LTkh2b3hsdjBoSU9YM1dKV3FmVFowNGpmVHBsYWVxbkNKNy1Tb2dGQmZEdXVna1REOGFxSEpKWG05QzVNYTFKczZ3TVhQSlVHdllvMi1jdVJOWTBMbFRkVnFkTTFwQ1ZfWm9zLTZRVEZ6VVBYOXNOLUQySzB0aWdONWRJNDZqS3R0TzN3X0sxZkdLSHdIMFk4bFlWeHZpdmJmdw?oc=5",
           "published": "Fri, 30 Oct 2026 00:20:00 GMT",
@@ -48,6 +42,12 @@
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
           "published": "Sat, 31 Oct 2026 01:25:00 GMT",
           "source": "Kalkine Media"
+        },
+        {
+          "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSVFhdDZqd0NuUUhXc1Bsb2dnbnZwa3BBSmh6VjJLU29kQlF6d1puR0hZNzZURllZX0NYSlFmZHJVTTRtRU1vakpkdmNGWVhOTkFYMWlVbGNrUDBhTlJRSFEyNUZWcWNzMzFUbE5rSUtpdUxSM1hteVNmR0lVaXJyM2R2U3ZRYTlpUUozbnhSVXpoaDFNVVQ0Z3NkTlprNDlGYUE?oc=5",
+          "published": "Sat, 31 Oct 2026 00:22:00 GMT",
+          "source": "Yahoo Finance"
         }
       ]
     },
@@ -67,7 +67,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "items": [
         {
           "title": "Early Warning Press Release - Yahoo! Finance Canada",
@@ -78,20 +78,26 @@
         {
           "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
+          "published": "Sat, 31 Oct 2026 01:26:05 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Gordon Mining Completes Acquisition of the Tungsten Tail Project, Sierra County, New Mexico - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNdi1aN1NnZ1R1cU5QWVREYUlfTWRLQWFYU0hpNUFKVE9naVVrTzZEdjU3SzMzdnVBTnA4Mmt1cGRHSkFQemRKczVqOHlSemE4djZIWUhWVGh0WVV5TlZQbDFybnUzb0ZWcG1yNk9ycTVGbVR6dEZmaVJ6MU5kQ3M5YkFjNjg5Vl9kLWktZ2ZQbi1uRXVzZU9oSUw5ZEpVN1BPRVJuVVJpeDBfS20wNDFGQXBSc05wdUxCam96R2VzSUNVdFpKZEZXWjZ5VEpvdTJ5RlVvY0E1SS1ZZ1dlSndZMkJreGlOdGFOeWpWVGNxd2YwUVNXZ2llWElHamNNQ0U?oc=5",
+          "published": "Mon, 02 Nov 2026 23:00:04 GMT",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": "Foremost Clean Energy Announces Formation of GR and Blackwing Joint Ventures and Issuance of Warrants to Denison at a Significant Premium - Junior Mining Network",
+          "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxNS25LWTAybHhFdnZNVUlzMFc0RGN1bXVXd21SNUZweVRkY3RsVVZZNVpEcVVSVG9qSWZpcnRaaHhlMFdJcHo1b1NPVG1qY0FiVFNjM0M5NUR4eEMxY1RPcEh6RndxTlBoazh5RVdMVUVQY3I5ajRueXpPNEZQRFh6YVFkOURNbzRHNk43ZXFWZVBJc3RabXhVOTN2cmVfdHNMb2FXSmpuVUZGd0VVajBQeFczckI2ZU9BdGxGQ0p5MlBRdDkxTzhVQUI1Z1hwenhWeEhwdGlhTEFjME42NmdkU1B1bnFEQnFjTUJfNzdwa0RpU3RUdjJMbWo3SFVLMTdySEFmZ1BZU2tSX3huOWRzcmZUR0poTFV1MHNETERZdVIzUWlUMmt5RzZFS25zSFNEMXVBY2xCd2FDeWV0Q1JB?oc=5",
+          "published": "Tue, 03 Nov 2026 12:31:26 GMT",
+          "source": "Junior Mining Network"
         },
         {
           "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
           "published": "Sat, 31 Oct 2026 01:25:00 GMT",
           "source": "Kalkine Media"
-        },
-        {
-          "title": "Gordon Mining Completes Acquisition of the Tungsten Tail Project, Sierra County, New Mexico - TMX Newsfile",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOODRISXRMQkhNYm03NFZZVnFhcFA3b2huclBTTnctZGpscldkaTlxT3ZsUzhPRWRmVVlOR1pvMi13QW1rVnVzLWhUbVBEUmxRajRVbXBBWGhPTEtlYU0tSURxcGEzaER6VVpCdDV4M0FpMXZWZ25EWUUydzFlejlSUk9YWDVJM09kRjR6Z3otME1ScGstaU5IQ0J2RU1QYlhXazlvdHl1T0Y0QmFOVEhfbnQ1NEhzd0FrNWNicHU4OE5XZWs2MnA5S2JTNEJIUQ?oc=5",
-          "published": "Mon, 02 Nov 2026 22:24:00 GMT",
-          "source": "TMX Newsfile"
         }
       ]
     }
