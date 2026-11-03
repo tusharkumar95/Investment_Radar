@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-03T20:01:42.196340+00:00",
+  "updated": "2026-11-03T22:15:59.391710+00:00",
   "day": "2026-11-03",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.745,
+      "lastPrice": 4.69,
       "lastPriceDate": "2026-11-03",
-      "priceChangePct": -11.97,
+      "priceChangePct": -12.99,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.5,
+      "lastPrice": 4.43,
       "lastPriceDate": "2026-11-03",
-      "priceChangePct": -0.22,
+      "priceChangePct": -1.77,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 24,
+      "candidateArticles": 26,
       "status": "Verified transactions found"
     },
     {
@@ -1043,6 +1043,61 @@
   ],
   "leads": [
     {
+      "id": "lead:f64f6444738a7c6859",
+      "title": "Invivyd Reports Inducement Grants Under Nasdaq Listing Rule 5635(c)(4)",
+      "date": "2026-11-03",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394082/0/en/invivyd-reports-inducement-grants-under-nasdaq-listing-rule-5635-c-4.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " NEW HAVEN, Conn., Nov.  03, 2026  (GLOBE NEWSWIRE) -- Invivyd, Inc. (Nasdaq: IVVD) today announced that on November 1, 2026, Invivyd granted seven newly hired non-executive employees options to purchase an aggregate of 175,000 shares of its common stock, each as a material inducement for each emplo"
+    },
+    {
+      "id": "lead:b265f904b0eca825ad",
+      "title": "Aecon Completes Purchase of Preferred Shares of Aecon Utilities",
+      "date": "2026-11-03",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394663/0/en/aecon-completes-purchase-of-preferred-shares-of-aecon-utilities.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " TORONTO, Nov.  03, 2026  (GLOBE NEWSWIRE) -- Aecon Group Inc. (TSX: ARE) (“Aecon”) announced today the closing of the previously disclosed agreement to purchase all the outstanding Preferred Shares of Aecon Utilities for $320 million in cash. The purchase was funded from available cash on hand. "
+    },
+    {
+      "id": "lead:1b2b2c1da3abf2e321",
+      "title": "Subsea 7 S.A. Notification of major holding",
+      "date": "2026-11-03",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394566/0/en/subsea-7-s-a-notification-of-major-holding.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Subsea 7 S.A. has received notification of transactions in its shares by a major shareholder. Please see the attachment for details. This information is pursuant to the EU Market Abuse Regulation and subject to the disclosure requirements pursuant to Section 5-12 of the Norwegian Securities Trading"
+    },
+    {
+      "id": "lead:fba920fe254bac7c0e",
+      "title": "Candel Therapeutics Announces Inducement Grants Under Nasdaq Listing Rule 5635(c)(4)",
+      "date": "2026-11-02",
+      "url": "https://www.globenewswire.com/news-release/2026/11/02/3393715/0/en/candel-therapeutics-announces-inducement-grants-under-nasdaq-listing-rule-5635-c-4.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " NEEDHAM, Mass., Nov.  02, 2026  (GLOBE NEWSWIRE) -- Candel Therapeutics, Inc. (Candel or the Company) (Nasdaq: CADL), a clinical-stage biopharmaceutical company focused on developing multimodal immunotherapies to improve disease outcomes for patients with cancer, today announced that on October 31,"
+    },
+    {
+      "id": "lead:90b6c9e564a0402a12",
+      "title": "Major shareholder announcement",
+      "date": "2026-11-02",
+      "url": "https://www.globenewswire.com/news-release/2026/11/02/3393028/0/en/major-shareholder-announcement.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "  Company announcement   No. 71/2026 "
+    },
+    {
       "id": "lead:d519673b126e4512fc",
       "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
       "date": "2026-10-31",
@@ -1118,6 +1173,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:2067585c81a11cb69b",
+      "title": "Borregaard ASA: Reporting of transactions in Borregaard ASA's shares made by person discharging managerial responsibilities",
+      "date": "2026-10-29",
+      "url": "https://www.globenewswire.com/news-release/2026/10/29/3391011/0/en/borregaard-asa-reporting-of-transactions-in-borregaard-asa-s-shares-made-by-person-discharging-managerial-responsibilities.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Magnus Krogh Ankarstrand, member of the board of Borregaard ASA, has on 29 October 2026 purchased 500 shares in Borregaard ASA at a price of NOK 154.70 per share. Following this transaction, Magnus Krogh Ankarstrand owns 500 shares in Borregaard ASA. The shares are purchased at Oslo Stock Exchange."
     },
     {
       "id": "lead:a6cf1c61a73d1b348c",
@@ -1470,24 +1536,38 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:5ff03ce8d4ee3051a3",
+      "title": "17:15 ET \n                        Euromax Announces Proposed Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today a non-brokered private placement of up to 113,828,80",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/euromax-announces-proposed-private-placement-864723810.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 5
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 1
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
@@ -1559,7 +1639,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 24
+      "relevant": 25
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1601,9 +1681,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 39,
+    "disclosureLeads": 46,
     "usFilingNotices": 0,
-    "sourcesOnline": 12,
+    "sourcesOnline": 15,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
