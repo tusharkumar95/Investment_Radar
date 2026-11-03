@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "updated": null,
+  "source": "NSE bulk/block historical archive",
+  "coverage": {
+    "earliest": null,
+    "latest": null,
+    "trades": 0,
+    "investors": 0
+  },
+  "featured": [],
+  "discovered": [],
+  "notes": "Awaiting first scheduled scan."
+}

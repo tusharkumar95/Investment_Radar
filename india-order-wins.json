@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "updated": null,
+  "market": "India",
+  "thresholdCr": 100,
+  "orders": [],
+  "alerts": [],
+  "verifiedOrders": [],
+  "exchangeNotices": [],
+  "researchLeads": [],
+  "sourceHealth": [],
+  "status": {
+    "orders": 0,
+    "verified": 0,
+    "exchangeNotices": 0,
+    "researchLeads": 0,
+    "significantAlerts": 0,
+    "sourcesAvailable": 0,
+    "sourcesChecked": 0,
+    "latestAnnouncementDate": null
+  },
+  "sources": {
+    "NSE": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
+    "BSE": "https://www.bseindia.com/data/xml/announcements.xml"
+  },
+  "policy": "Awaiting first live scan."
+}
