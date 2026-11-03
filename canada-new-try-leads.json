@@ -1,32 +1,944 @@
 {
   "schema": 1,
-  "updated": null,
-  "policy": "Unverified headlines and SEC filing notices are NOT completed purchases and cannot create tracks or alerts.",
-  "leads": [],
+  "updated": "2026-11-03T02:15:46.648666+00:00",
+  "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
+  "leads": [
+    {
+      "id": "lead:d519673b126e4512fc",
+      "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
+      "date": "2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR)    Kalkine Media "
+    },
+    {
+      "id": "lead:23bdde1cb3c5225045",
+      "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - PR Newswire Canada",
+      "date": "2026-10-31",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSzU3SEtONlMtRm9PTDZkZDA1OS0wR1dmZ09uTm8waUVqd0F3eWRkckNITUpGeTdTbUJLQzh0dkpXWFdzU0ZBOW5ZYnlvbXpXM0t4cDJMZkNrd0EzVDlGRkFhaUV0REFYeEtuTVYyNS1yOGxRR3VMMHFFZ09DY1RwV3d0X0JRLUhaWW01cXlES2h0M1VldTAwNlpUSzloQkxuVWI5VmdDSHBfNFdlcGFFOElSb1ZqTnFtMERwZ1pyRWZ3R2s2R0hEUV9EOC1Wcnlw",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY    PR Newswire Canada "
+    },
+    {
+      "id": "lead:dd92a662977dc2ecf5",
+      "title": "High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash - PR Newswire Canada",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQTVZRSmZJdmUzaHU4Q052dEVCalJMaVd3LWhlXzJpM0ZhWFpGOElaZE9ZNFB4MkhHVGc2d1oyS3dROUI4RVJZUWVNWnlLdWRDQVp0cHNiRmwzVF9KLVhkOVVqZjVzNmFaQ05DNmx1TzIzV0ZTU3FVcnM1REN0aDNLbEdHMGNTRGtFTEt2cXFLMFhKZ3BjMmFSeTVDcGYzcjN3TkRZanMyc0ljVUtTaXZ2OERvbmQtZzhuVWR2c3BFcWttQ1NHUnhiQ0tyajh1QW5rUVo3dVV4VElMcUpxb3c",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash    PR Newswire Canada "
+    },
+    {
+      "id": "lead:abfe98c72b2f20c2f3",
+      "title": "High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash - TradingView",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeHlvcHdodHZoY2xuemtIdWpPS1RTU3BJYWZIRjNDdWRVaElmbDNadUtfZ00xY2RhYmZwLVRiSi1RZEFnTGtfUjBrNFR6YXhEeGdWd1QySzJWc1cyMFE1MGtZaDR3cEZPbHB5LWE0bE1pNllFUzFXbHdUUjhZVDI5RkJwdjdxUzV5LXhkRm9ZQk5FckRjVFJXVlVwQ1REelJGSFlFWGtxSTZ1a0FwLUgxc3I1ME9mbkNaWHhhcFhrV29WWmhmckhZb1lkNlNnQ1hPaTV3R1Z5LXB1SEJpWWVRWGE2UXpkYWJt",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash    TradingView "
+    },
+    {
+      "id": "lead:5d050d7d8da03c00da",
+      "title": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - The Globe and Mail",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPOTNid3hBeEoxTWR2TlE3YzhuVi1rNWRMenZzTUItdmx0Z1BDVUg1cEkxSXpBUW5DR2t6MktFSUI4bTcwRUhidUF0cnp0aWpna0ZCLS1YbnJxUklQYjdYSTRNakg1YTR3aTYtOVFTQ056SXozWWxnWFBDcHpmeTNXWTd6N280OWFaSDRHdU1pTW40WFNMdmluVFRra3JYQWQ5V0psTi1uZFNLV0pmUkJWQnNQOC1hNHhpd0w5SHBJSmdMaWpGbEFzcEZrQnMzZEwxbFRMWGhlYzRFdVIyNXNxUHoyN1JUOWNQZnU1SVNJczRCemhlOEJJRi01SmpIOHkwcHZVb0M4NDNIZw",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    The Globe and Mail "
+    },
+    {
+      "id": "lead:0785d25f5f3c92a4f5",
+      "title": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - Yahoo! Finance Canada",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRkRhWFFHd3RpX2FqZkFkOGVwWk1Ba1ZkSGF6bGx5VmZMcXdTVktxVFdkOG82el9XWnk0dFJqbGlHUmRvS3dyelpyVXhpRENTMjFnN21MYkRnVHdIQVBvRkVJUUJ3QnlHMVdVcVN5M2lQbmY2bHZWeVdMN3E5U0R2SlA3YmxYWWV0R0NmNl8yVWxvZ182bzZ3UXVTYWhXUQ",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    Yahoo! Finance Canada "
+    },
+    {
+      "id": "lead:1b83555e8325e58703",
+      "title": "Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation - Investing News Network",
+      "date": "2026-10-22",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYzBxNEpNbzc3ZEhNMmJ3SlFER1RPYTAwa1lWUFhmUUNDNkcta0dmOVhpV3ZoclpaRDdXcTZOMEtQSDNLeFZpNVllbVVJZ0k0WkdUYXBOV1oxZG1BR3c2MWpKMEZ5RUZ2Y1lPWHd5dWxjXzJoMWRHX0VmN3B2STFqRFhRZHRmOGtiNTRqdGRfQU93YXpXZE01ZU9BRTMzY1pxYXAxY2JXQUx1MUxjRjh2TVVrNUxPT3pOTHJNNTZsY0t5dw",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation    Investing News Network "
+    },
+    {
+      "id": "lead:2384e281518235229e",
+      "title": "Matachewan and McChip take near-20% stake in Labrador Gold through private placement - The Globe and Mail",
+      "date": "2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMUtrOWMycjdkV1AwYUtqNFc0dlhrREg1X1dwY3pGMjZ3TVpHajZxdTM1UU1xVy1Dbk9jVW1xSjB5WUVDZGIwSFFjZXotT0ltZWNpNVo5VG1kMDZrMmdaT1VHUDM4dm1hWXpRQnp6QkFHQk0taDQ3bG1Bcml2Qm1rTWgwTTJKWHpMN0xVT2YtLVZodzN1NW8wTFlyZGdCNGdQUnVQS2V1QVBaVjhGcmZGZ1lrLXI4VlJ5M3hCWGdKQ3JuNi1VZWs1SXBydGoxS3ctU3pjbXM1WEhBemxKWnhJcVhPZ3ItampUY3NUam1nRlFrdWwxc3g0",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
+    },
+    {
+      "id": "lead:fb08a7694ecea45c2d",
+      "title": "Oct 21, 2026, 07:00 ET \n                          Englobe completes acquisition of Calgary-based Reinbold Engineering Group\n                         \n                         Englobe, a leading Canadian engineering and environmental services firm, announced to",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/englobe-completes-acquisition-of-calgary-based-reinbold-engineering-group-826467715.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:f90c8b72f378ca9474",
+      "title": "Oct 15, 2026, 13:56 ET \n                          Recipe Unlimited Accelerates Global Growth with Agreement to Acquire Greece-Based QSR Market Leader Evergood\n                         \n                         Recipe Unlimited Corporation (\"Recipe\"), Canada's ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/recipe-unlimited-accelerates-global-growth-with-agreement-to-acquire-greece-based-qsr-market-leader-evergood-801260410.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:f2d8fb3dcf022edb90",
+      "title": "Oct 29, 2026, 20:45 ET \n                          VIZSLA COPPER COMPLETES ACQUISITION OF DELTA AND HELM BAY PROJECTS FROM AGNICO EAGLE\n                         \n                         Vizsla Copper Corp. (TSXV: VCU) (OTCQB: VCUFF) (FRANKFURT: 97E1) (\"Vizsla ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/vizsla-copper-completes-acquisition-of-delta-and-helm-bay-projects-from-agnico-eagle-845803209.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:de726ab71d0d7aa822",
+      "title": "Oct 26, 2026, 09:55 ET \n                          Umios to Acquire High Liner Foods, Creating a Vertically Integrated Global Protein Leader\n                         \n                         Umios Corporation (TSE: 1333) (\"Umios\") today announced that it has e",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/umios-to-acquire-high-liner-foods-creating-a-vertically-integrated-global-protein-leader-894772455.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:dbf8627cf87f89b931",
+      "title": "Oct 15, 2026, 07:00 ET \n                        TERRAVEST ANNOUNCES AUTOMATIC PURCHASE PLAN FOR COMMON SHARES\n                       \n                       TerraVest Industries Inc. (\"TerraVest\" or the \"Corporation\") (TSX: TVK) announced today that, in connec",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/terravest-announces-automatic-purchase-plan-for-common-shares-803308264.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d87426042833585f2b",
+      "title": "09:38 ET \n                          Eagle Point Software Acquires Global eTraining, Expanding Learning Capabilities and Accelerating Innovation\n                         \n                         Eagle Point Software, maker of the Pinnacle Series applied learni",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/eagle-point-software-acquires-global-etraining-expanding-learning-capabilities-and-accelerating-innovation-846236724.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d6d276a75fed9bf161",
+      "title": "Oct 21, 2026, 09:00 ET \n                          HR Path Strengthens its Australian Presence with Strategic Acquisition of Payroll Experts Australia\n                         \n                         HR Path, a global leader in HR consulting and HRIS solution",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/hr-path-strengthens-its-australian-presence-with-strategic-acquisition-of-payroll-experts-australia-897716034.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d3da1ea556bad5b8e6",
+      "title": "Oct 23, 2026, 08:00 ET \n                          Malteurop acquires the Chunlei Malting Co. malting plant - A strategic investment that significantly expands its operations and strengthens its position in export markets\n                         \n             ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/malteurop-acquires-the-chunlei-malting-co-malting-plant-a-strategic-investment-that-significantly-expands-its-operations-and-strengthens-its-position-in-export-markets-848987487.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d29e430ef4c92496b3",
+      "title": "Oct 21, 2026, 10:52 ET \n                        Arcanus Aerial Systems Appoints Drone Pioneer Pedram Nowroozi as Chief Technology Officer and Agrees to Acquire Infinit Drones and Nested Technologies\n                       \n                       Arcanus Aerial",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/arcanus-aerial-systems-appoints-drone-pioneer-pedram-nowroozi-as-chief-technology-officer-and-agrees-to-acquire-infinit-drones-and-nested-technologies-877574731.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d1ab0c542a804241ef",
+      "title": "Oct 19, 2026, 12:24 ET \n                        Buhler Versatile Inc. Completes Acquisition of ATLAS Group, Strengthening Global Manufacturing Presence\n                       \n                       Buhler Versatile Inc., a Canadian manufacturer of agricultura",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/buhler-versatile-inc-completes-acquisition-of-atlas-group-strengthening-global-manufacturing-presence-875157629.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:cfef0a4e586ea9e47a",
+      "title": "Oct 30, 2026, 17:00 ET \n                          Blue Moon Metals Announces Termination of Ropa Acquisition and Completion of Continuance to Ontario\n                         \n                         Blue Moon Metals Inc. (\"Blue Moon\" or the \"Company\") (TSXV:",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/blue-moon-metals-announces-termination-of-ropa-acquisition-and-completion-of-continuance-to-ontario-809914109.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:cec14af0f532a5d473",
+      "title": "Oct 26, 2026, 07:00 ET \n                          Zafin signs definitive agreement to acquire Naehas\n                         \n                         Zafin, the AI platform company for regulated institutions, today announced that it has signed a definitive a",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/zafin-signs-definitive-agreement-to-acquire-naehas-804159625.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:ca28ead2f2d1aee4b5",
+      "title": "Oct 22, 2026, 08:00 ET \n                        Power Sustainable Lios Leads Acquisition of Fine Choice Foods to Accelerate North American Growth\n                       \n                       Power Sustainable Lios Inc. (\"Lios\"), the specialist food-focused p",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/power-sustainable-lios-leads-acquisition-of-fine-choice-foods-to-accelerate-north-american-growth-889127514.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:c306f78a418accaf9d",
+      "title": "Oct 22, 2026, 06:00 ET \n                          H.I.G. Capital Acquires a Majority Stake in L4A to Support Continued Growth and Expansion\n                         \n                         H.I.G. Capital (\"H.I.G.\"), a leading global alternative investment fi",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/h-i-g-capital-acquires-a-majority-stake-in-l4a-to-support-continued-growth-and-expansion-872591884.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:c03a6418d4af97a7f8",
+      "title": "Oct 26, 2026, 16:53 ET \n                          Blue Moon Announces the Signing of the Refurbishment Contract for the Springer Mill, Engages with Wood Group and Acquires Accommodations for Springer Site\n                         \n                         Blue",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/blue-moon-announces-the-signing-of-the-refurbishment-contract-for-the-springer-mill-engages-with-wood-group-and-acquires-accommodations-for-springer-site-894191923.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:bc8fff4dc40f3428c0",
+      "title": "Oct 22, 2026, 11:52 ET \n                        Boroo Announces Agreement to Acquire Victoria Gold Corp. and Expects to Commit Over $1.5 Billion to the Yukon-Based Eagle Gold Mine\n                       \n                       Boroo Pte. Ltd. (\"Boroo\" or the \"",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/boroo-announces-agreement-to-acquire-victoria-gold-corp-and-expects-to-commit-over-1-5-billion-to-the-yukon-based-eagle-gold-mine-868918032.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:b885c54a7a3fac6ee9",
+      "title": "Oct 19, 2026, 12:42 ET \n                        Ewing Morris Announces Premium All-Cash Offer to Acquire Shares of Decibel Cannabis Company Inc.\n                       \n                       Ewing Morris, on behalf of investment vehicles and accounts managed ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/ewing-morris-announces-premium-all-cash-offer-to-acquire-shares-of-decibel-cannabis-company-inc--822410672.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:b7e87d820080cfda19",
+      "title": "Oct 16, 2026, 08:36 ET \n                        Vale Base Metals completes transaction to establish new ownership of Thompson Mine Complex\n                       \n                       Vale Base Metals (\"VBM\", or the \"Company\"), today announced the completion",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/vale-base-metals-completes-transaction-to-establish-new-ownership-of-thompson-mine-complex-885264307.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:b096c12d90d8d97ac6",
+      "title": "Oct 26, 2026, 06:45 ET \n                          Ovintiv Announces Agreement to Acquire Montney Oil Producer, Logan Energy Corp.\n                         \n                         Ovintiv Inc. (NYSE: OVV) (TSX: OVV) (\"Ovintiv\" or the \"Company\") and Logan Ener",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/ovintiv-announces-agreement-to-acquire-montney-oil-producer-logan-energy-corp--850642959.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:b0016b26351a228fde",
+      "title": "Oct 16, 2026, 07:00 ET \n                          CSL Group Acquires SIMPL Wireless to Bring Critical Connectivity® to North America\n                         \n                         CSL Group, the leading global provider of Critical Connectivity®, has acquir",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/csl-group-acquires-simpl-wireless-to-bring-critical-connectivity-r-to-north-america-832242760.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:a856645adacfb17019",
+      "title": "Oct 26, 2026, 12:42 ET \n                          Urban Capital Acquires Remaining Development Lands at M City\n                         \n                         Urban Capital today announced its acquisition of the remaining development lands at M City, known ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/urban-capital-acquires-remaining-development-lands-at-m-city-843572910.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:a13f90e58de67d8f53",
+      "title": "Oct 28, 2026, 15:00 ET \n                          PIGEON ACQUIRES NOURISH, BRINGING MORE BRAND-BUILDING EXPERTISE TO THE TABLE\n                         \n                         The two independent Canadian agencies are cooking something new, blending creative",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/pigeon-acquires-nourish-bringing-more-brand-building-expertise-to-the-table-804589163.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:99ca81ed22cbbefc0a",
+      "title": "Oct 19, 2026, 07:18 ET \n                        Chorus Aviation announces agreement to acquire SkyCare Air Ambulance\n                       \n                       Chorus Aviation Inc. (\"Chorus\" or the \"Company\") (TSX: CHR) is pleased to announce that it has e",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/chorus-aviation-announces-agreement-to-acquire-skycare-air-ambulance-876943265.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:98f64778e721f04b4c",
+      "title": "Oct 14, 2026, 08:00 ET \n                          MEDFAR acquires AlloMia, advancing MYLE as a system of intelligence for clinics\n                         \n                         MEDFAR, the Canadian healthcare technology company behind the electronic medica",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/medfar-acquires-allomia-advancing-myle-as-a-system-of-intelligence-for-clinics-860139604.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:93c8df2d50dd2b44cf",
+      "title": "Oct 22, 2026, 07:00 ET \n                          PRC-Saltillo Acquires Ner Chat, Bringing Minspeak® Symbols to Glint Visual Support Platform\n                         \n                         PRC-Saltillo, a global leader in augmentative and alternative commu",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/prc-saltillo-acquires-ner-chat-bringing-minspeak-r-symbols-to-glint-visual-support-platform-887306774.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:8ecb038fdb158d5ef4",
+      "title": "Oct 30, 2026, 16:15 ET \n                          Scotiabank closes previously announced transaction to fully acquire Scotia Group Jamaica Limited\n                         \n                         Scotiabank today announced the successful completion of its pr",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/scotiabank-closes-previously-announced-transaction-to-fully-acquire-scotia-group-jamaica-limited-898601839.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:8baf724c172e6e758e",
+      "title": "Oct 28, 2026, 07:00 ET \n                        HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC.\n                       \n                       Hartree Partners, LP (\"Hartree\") announces that it ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/hartree-partners-lp-provides-early-warning-disclosure-with-respect-to-securities-of-lotus-creek-exploration-inc--831972190.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:823efb84c9b51f315b",
+      "title": "Oct 26, 2026, 07:11 ET \n                        High Liner Foods Enters into Agreement to Be Acquired by Umios for C$27.00 per Share in Cash\n                       \n                       High Liner Foods Incorporated (\"High Liner Foods\" or the \"Company\") (TSX",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/high-liner-foods-enters-into-agreement-to-be-acquired-by-umios-for-c-27-00-per-share-in-cash-825744026.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:820dda76afecb824a2",
+      "title": "Oct 16, 2026, 02:00 ET \n                        NIPPON EXPRESS HOLDINGS Acquires All Shares of Metro Supply Chain Group\n                       \n                       NIPPON EXPRESS HOLDINGS, INC. (\"NX Group\") acquired all shares of Metro Supply Chain Group In",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/nippon-express-holdings-acquires-all-shares-of-metro-supply-chain-group-801766805.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:81915572b3377c91a7",
+      "title": "07:00 ET \n                        Chorus Aviation completes the acquisition of SkyCare Air Ambulance\n                       \n                       Chorus Aviation Inc. (\"Chorus\") (TSX: CHR) announced today it has completed the previously announced acquisition",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/chorus-aviation-completes-the-acquisition-of-skycare-air-ambulance-864049935.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:7c50fc6cc6c99193b2",
+      "title": "Oct 19, 2026, 06:30 ET \n                        COREX ANNOUNCES AGREEMENT TO BE ACQUIRED BY SATURN OIL & GAS INC.\n                       \n                       Corex Resources Ltd. (\"Corex\" or the \"Company\") announces that it has entered into an arrangement a",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/corex-announces-agreement-to-be-acquired-by-saturn-oil-amp-gas-inc--829202326.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:75bc4b0751930d2368",
+      "title": "Oct 16, 2026, 06:00 ET \n                          Soneil Investments Acquires 6-Property GTA Portfolio for $180M+\n                         \n                         Soneil Investments has completed the acquisition of a six-property commercial real estate portf",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/soneil-investments-acquires-6-property-gta-portfolio-for-180m--837086738.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:71eddfa389a7111d00",
+      "title": "Oct 21, 2026, 12:30 ET \n                          Mapmygenome Completes Acquisition of dnaPower Inc. to Accelerate North American Expansion in DNA, Microbiome, Longevity and Precision Health Testing\n                         \n                         Mapmygenom",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/mapmygenome-completes-acquisition-of-dnapower-inc-to-accelerate-north-american-expansion-in-dna-microbiome-longevity-and-precision-health-testing-800950776.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:6b1508173317d69344",
+      "title": "Oct 30, 2026, 19:58 ET \n                        NEMESIA SARL ACQUIRES SHARES OF FARADAY COPPER CORP. AND IS IMPACTED BY PASSIVE DILUTION\n                       \n                       Nemesia S.à.r.l, \"(Nemesia\"), a company controlled by trusts settled by the ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/nemesia-sarl-acquires-shares-of-faraday-copper-corp-and-is-impacted-by-passive-dilution-890124103.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:6942529c6f9a00e56e",
+      "title": "Oct 29, 2026, 18:02 ET \n                          /C O R R E C T I O N - EnGlobe Corp/\n                         \n                         Englobe has entered into an agreement to acquire Obsidian Engineering Corp. (Obsidian), a Calgary-based multidisciplinary ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/englobe-to-acquire-calgary-engineering-firm-obsidian-engineering-adding-over-400-professionals-818661078.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:66681b29f4a1b92a65",
+      "title": "Oct 19, 2026, 08:30 ET \n                          Green Rise Foods Inc. Announces Agreement to be Acquired by Pereira Verde Inc. and $1.2 Million Capital Injection\n                         \n                         Green Rise Foods Inc. (TSX-V: GRF) (\"Green Ri",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/green-rise-foods-inc-announces-agreement-to-be-acquired-by-pereira-verde-inc-and-1-2-million-capital-injection-872719713.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:6273d86715a38c0e81",
+      "title": "07:00 ET \n                          Englobe completes acquisition of Ontario engineering firm Crozier\n                         \n                         Englobe, a leading Canadian engineering and environmental services firm, announced today that it has comple",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/englobe-completes-acquisition-of-ontario-engineering-firm-crozier-883316117.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:60c3e28824e2a53d42",
+      "title": "Oct 29, 2026, 16:01 ET \n                          Coveo Acquires Anglera to Make Product Data a Competitive Advantage in AI-Powered eCommerce\n                         \n                         Coveo (\"Coveo\" or the \"Company\") (TSX: CVO), the Experience AI lead",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/coveo-acquires-anglera-to-make-product-data-a-competitive-advantage-in-ai-powered-ecommerce-895803317.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:5fe1ba99b450348471",
+      "title": "Oct 13, 2026, 17:13 ET \n                          Cormorant Utility Services Announces Ownership Transition, Strengthening Foundation for Future Growth\n                         \n                         Cormorant Utility Services (\"Cormorant\"), a Canadian powe",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/cormorant-utility-services-announces-ownership-transition-strengthening-foundation-for-future-growth-821123436.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:5e84a272a92776ed2c",
+      "title": "Oct 22, 2026, 17:10 ET \n                        Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation\n                       \n                       Urion Investments Holdings Sárl (the \"Acquiror\") acting on behalf o",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/urion-investments-holdings-sarl-files-early-warning-report-in-respect-of-atico-mining-corporation-825226935.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:5ce4836ed69ead0e88",
+      "title": "Oct 19, 2026, 08:00 ET \n                        KORT Payments to Acquire AptPay, Expanding Real-Time Payments and Payment Orchestration Across North America\n                       \n                       KORT Payments (\"KORT\"), a specialized omnichannel paymen",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/kort-payments-to-acquire-aptpay-expanding-real-time-payments-and-payment-orchestration-across-north-america-876964147.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:5c7cb20b3cd0e387f1",
+      "title": "Oct 30, 2026, 14:42 ET \n                          Bow Valley College moves to acquire former Central Library block for health care training hub\n                         \n                         Following a generous grant of $5million for planning and developm",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/bow-valley-college-moves-to-acquire-former-central-library-block-for-health-care-training-hub-827968143.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:5a38fb7278069934fc",
+      "title": "Oct 26, 2026, 08:00 ET \n                          Oligo Medic Signs Letter of Intent to Acquire Episurf's Custom Implant Business\n                         \n                         Oligo Medic Inc., today announced that it has entered into a letter of intent t",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/oligo-medic-signs-letter-of-intent-to-acquire-episurf-s-custom-implant-business-859792303.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:57ec5f2513b2aa97e8",
+      "title": "Oct 28, 2026, 08:00 ET \n                          Transpharmation Ltd. Announces Strategic Acquisition of OrganoTherapeutics SARL\n                         \n                         Transpharmation Ltd., a science-led global leader in neuroscience, pain and met",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/transpharmation-ltd-announces-strategic-acquisition-of-organotherapeutics-sarl-855429328.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:53f1b55f3347469d61",
+      "title": "Oct 30, 2026, 08:30 ET \n                        ELECTRUM STRATEGIC OPPORTUNITIES FUND L.P. ACQUIRES UNITS OF NICKEL CREEK PLATINUM CORP.\n                       \n                       Pursuant to a private placement of Nickel Creek Platinum Corp. (the \"issuer\"",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/electrum-strategic-opportunities-fund-l-p-acquires-units-of-nickel-creek-platinum-corp--866017722.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4e79c5c6ca61e39c73",
+      "title": "Oct 15, 2026, 03:01 ET \n                          Intellistake's Acquisition Target NanoAi Proves Explosive Threat Detection in Under One Second at a 10ft Standoff Distance\n                         \n                         Intellistake Technologies Corp. (CSE",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/intellistake-s-acquisition-target-nanoai-proves-explosive-threat-detection-in-under-one-second-at-a-10ft-standoff-distance-823636462.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4e76ffcdade2fff199",
+      "title": "06:00 ET \n                          Arvore Partners Completes Add-On Acquisition in its Light Industrial Vertical\n                         \n                         Omnigence Asset Management (\"Omnigence\") is pleased to announce that Arvore Partners LP (\"Arvor",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/arvore-partners-completes-add-on-acquisition-in-its-light-industrial-vertical-854173270.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4dcb2c8368fbe6a2a7",
+      "title": "Nov 01, 2026, 11:01 ET \n                        BMO Completes Acquisition of Euroz Hartleys Capital Markets Business, Strengthening its Leading Global Metals and Mining Franchise\n                       \n                       BMO Financial Group (TSX: BMO) (NY",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/bmo-completes-acquisition-of-euroz-hartleys-capital-markets-business-strengthening-its-leading-global-metals-and-mining-franchise-818576890.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4d94ff683c28987685",
+      "title": "Oct 20, 2026, 13:39 ET \n                          Stealth Health Acquires Kramer, Expanding Access to Compounded Medications Across Canada\n                         \n                         Stealth Health, a leading North American telemedicine platform focused",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/stealth-health-acquires-kramer-expanding-access-to-compounded-medications-across-canada-817904143.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4b56acbb6728afe497",
+      "title": "Oct 13, 2026, 05:00 ET \n                          Golden Shield Announces Signing of Binding Letter of Intent for C$6 Million Strategic Investment and Recapitalization with Walsh Karra Holdings\n                         \n                         Golden Shield R",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/golden-shield-announces-signing-of-binding-letter-of-intent-for-c-6-million-strategic-investment-and-recapitalization-with-walsh-karra-holdings-869720999.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:4a4e444b00288976c5",
+      "title": "Oct 28, 2026, 14:21 ET \n                        Canadian War Museum acquires Canadian-made contemporary armoured vehicle\n                       \n                       As contemporary conflicts reshape the global security landscape, the Canadian War Museum is ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/canadian-war-museum-acquires-canadian-made-contemporary-armoured-vehicle-860403051.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:497f757eebd414a8d9",
+      "title": "Oct 22, 2026, 11:00 ET \n                          M&E Realty Partners Launches with 835,000-SF Kentucky Acquisition\n                         \n                         Epta Development Corp. (\"EDC\") and Maynards Group of Companies (\"Maynards\") today announced t",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/m-amp-e-realty-partners-launches-with-835-000-sf-kentucky-acquisition-851691644.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:439f949fce84b2337d",
+      "title": "Oct 26, 2026, 06:45 ET \n                          LOGAN ENERGY CORP. ANNOUNCES AGREEMENT TO BE ACQUIRED BY OVINTIV INC., FOR $1.40 PER SHARE IN CASH AND THE SPIN-OUT OF LOGAN OIL CORP., A NEW GROWTH-ORIENTED OIL COMPANY\n                         \n              ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/logan-energy-corp-announces-agreement-to-be-acquired-by-ovintiv-inc-for-1-40-per-share-in-cash-and-the-spin-out-of-logan-oil-corp-a-new-growth-oriented-oil-company-870892900.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:2d27aee21d2fd8fbcd",
+      "title": "Oct 20, 2026, 16:00 ET \n                          COMMERCIAL BAKERIES ANNOUNCES THE STRATEGIC ACQUISITION OF PARTNERS, A TASTEFUL CHOICE COMPANY\n                         \n                         Commercial Bakeries Corp. (\"Commercial Bakeries\"), a producer of",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/commercial-bakeries-announces-the-strategic-acquisition-of-partners-a-tasteful-choice-company-809441572.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:288686b2a0ea970162",
+      "title": "Oct 14, 2026, 19:37 ET \n                          BTB Continues Portfolio Repositioning with its Second Industrial Acquisition of 2026 in Acheson, Alberta\n                         \n                         BTB Real Estate Investment Trust (TSX: BTB.UN) (\"BTB\" ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/btb-continues-portfolio-repositioning-with-its-second-industrial-acquisition-of-2026-in-acheson-alberta-826647928.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:27275b60fd68e6158d",
+      "title": "11:54 ET \n                          PRA Group Celebrates 30 Years of Business by Ringing Nasdaq Opening Bell\n                         \n                         PRA Group, Inc. (Nasdaq: PRAA), a global leader in acquiring and collecting nonperforming loans, tod",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/pra-group-celebrates-30-years-of-business-by-ringing-nasdaq-opening-bell-867894662.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:254ce07975374706a3",
+      "title": "Oct 21, 2026, 09:00 ET \n                          Further Acquires Welbi to Unite Sales & Marketing and Resident Experience with AI\n                         \n                         Further, Senior Living's Leading AI Partner, today announced it has acquired ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/further-acquires-welbi-to-unite-sales-amp-marketing-and-resident-experience-with-ai-816399443.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:1d880a1eedaf0dcd65",
+      "title": "07:00 ET \n                          Alvéole Expands Its European Presence with Acquisition of Italy's Leading Urban Beekeeping Company\n                         \n                         Alvéole, a global provider of urban biodiversity solutions, has acquired A",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/alveole-expands-its-european-presence-with-acquisition-of-italy-s-leading-urban-beekeeping-company-851675180.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:1c8304fd21fdcf0432",
+      "title": "Oct 29, 2026, 07:00 ET \n                          Ontario Nature Protects Critical Urban Biodiversity Jewel in Whitby With the Acquisition of Thickson's Woods\n                         \n                         Ontario Nature is proud to announce the addition o",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/ontario-nature-protects-critical-urban-biodiversity-jewel-in-whitby-with-the-acquisition-of-thickson-s-woods-888804021.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:1776dba724dfa4aa35",
+      "title": "Oct 26, 2026, 09:30 ET \n                          Clio Acquires Horizon Scanning Platform, Page\n                         \n                         Clio, the global leader in legal AI, today announced that it has acquired Page, an AI-driven government relations",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/clio-acquires-horizon-scanning-platform-page-897470244.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:1500cc1ae8ea632b17",
+      "title": "Oct 13, 2026, 08:00 ET \n                          SOURCE ROCK ROYALTIES ACQUIRES ALBERTA HEAVY OIL GROSS OVERRIDING ROYALTY IN 126,000 ACRES OF OIL SANDS LEASES\n                         \n                         Source Rock Royalties Ltd. (\"Source Rock\") (TSXV",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/source-rock-royalties-acquires-alberta-heavy-oil-gross-overriding-royalty-in-126-000-acres-of-oil-sands-leases-827314297.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:0adbfac82cc368cc5d",
+      "title": "Oct 13, 2026, 16:51 ET \n                        4370422 Canada Inc. Enters into Definitive Agreement to be Acquired by Davie Canada Yard Inc.\n                       \n                       4370422 Canada Inc. (the \"Company\"), formerly known as Davie Yards Inc.",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/4370422-canada-inc-enters-into-definitive-agreement-to-be-acquired-by-davie-canada-yard-inc--802217982.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:0878642d78fdee2085",
+      "title": "Oct 27, 2026, 06:30 ET \n                        BCE announces partnership with La Caisse, which will acquire 49.9% stake in Bell wireless tower infrastructure company\n                       \n                       BCE Inc. (NYSE: BCE) TSX: BCE), Canada's large",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/bce-announces-partnership-with-la-caisse-which-will-acquire-49-9-stake-in-bell-wireless-tower-infrastructure-company-822276026.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:079083ab9fbc0729fd",
+      "title": "Oct 27, 2026, 09:00 ET \n                          Odeko Acquires Nantel McDiarmid in First Cross-Border Transaction\n                         \n                         Odeko, the all-in-one operations and technology partner for over 30,000 local coffee shops, c",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/odeko-acquires-nantel-mcdiarmid-in-first-cross-border-transaction-844060557.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:04458840ec66f4a50c",
+      "title": "Oct 16, 2026, 18:08 ET \n                        DGEN TECHNOLOGIES (FORMERLY CHINA KELI ELECTRIC COMPANY) COMPLETES ACQUISITION AND NAME CHANGE AND FILES CSE LISTING STATEMENT\n                       \n                       DGEN Technologies Corp. (formerly Chin",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/dgen-technologies-formerly-china-keli-electric-company-completes-acquisition-and-name-change-and-files-cse-listing-statement-897894028.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:01c2a120aa15116d46",
+      "title": "08:00 ET \n                          Creative Currency Acquires Launch Media\n                         \n                         Creative Currency, the Toronto-based advertising agency and content studio, today announced it has acquired Launch Media, a fast-grow",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/creative-currency-acquires-launch-media-818452261.html",
+      "discoveredVia": "Canada NewsWire acquisition listing",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    }
+  ],
   "usFilings": [],
-  "sourceHealth": [],
+  "sourceHealth": [
+    {
+      "name": "GlobeNewswire / Major Shareholders",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "GlobeNewswire / Insider Buy-Sell",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "GlobeNewswire / Public Companies",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
+      "ok": true,
+      "items": 5,
+      "relevant": 4
+    },
+    {
+      "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
+      "ok": true,
+      "items": 5,
+      "relevant": 2
+    },
+    {
+      "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"Altius\" \"acquired shares\" when:30d",
+      "ok": true,
+      "items": 0,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
+      "ok": true,
+      "items": 2,
+      "relevant": 0
+    },
+    {
+      "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "ok": true,
+      "items": 3,
+      "relevant": 2
+    },
+    {
+      "name": "Canada NewsWire / Acquisitions",
+      "ok": true,
+      "items": 100,
+      "relevant": 66
+    },
+    {
+      "name": "SEC EDGAR SC 13D",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "SEC EDGAR SC 13G",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "SEC EDGAR 13F-HR",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
   "status": {
-    "sources": 0,
-    "available": 0,
-    "leadCount": 0,
+    "sources": 17,
+    "available": 11,
+    "leadCount": 74,
     "usFilingCount": 0,
-    "needsReview": 0
+    "needsReview": 74
   },
   "officialSources": [
     {
-      "name": "SEDI",
+      "name": "SEDI — Canadian insider filings",
       "url": "https://www.sedi.ca/",
-      "access": "Manual / authorized access only"
+      "access": "manual / permitted access only"
     },
     {
-      "name": "SEDAR+",
+      "name": "SEDAR+ — early warning and monthly reports",
       "url": "https://www.sedarplus.ca/",
-      "access": "Manual / authorized access only"
+      "access": "manual / permitted access only"
     },
     {
-      "name": "SEC EDGAR",
+      "name": "SEC EDGAR — U.S. filings",
       "url": "https://www.sec.gov/edgar/search/",
-      "access": "Public filings"
+      "access": "RSS, filer reports; not purchase-by-date"
     }
   ]
 }
