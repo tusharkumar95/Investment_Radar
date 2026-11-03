@@ -1,12 +1,12 @@
 {
   "schema": 2,
-  "updated": "2026-11-03T00:57:19.240Z",
+  "updated": "2026-11-03T00:58:49.697771+00:00",
   "day": "2026-11-02",
   "name": "Canada New Try — named institutional & corporate purchases",
-  "policy": "Named documented purchases only. No volume or momentum signals. CDRs excluded without proof of purchases of the CDR itself.",
+  "policy": "Only named, independently verified investment acquisitions. No volume/momentum signals. CAD-listed U.S. CDRs are excluded unless there is documentary evidence of a purchase of the CDR itself.",
   "purchases": [
     {
-      "id": "owner:FDY:2026-10-30:Nemesia S.à.r.l.",
+      "id": "owner:b65a8417e34a60f959f2",
       "symbol": "FDY.TO",
       "symbolRaw": "FDY",
       "name": "Faraday Copper Corp.",
@@ -15,18 +15,18 @@
       "direction": "BUY",
       "shares": 971830,
       "disclosedPrice": 4.4622,
-      "valueCAD": 4336500,
+      "valueCAD": 4336500.0,
       "transactionDate": "2026-10-28",
       "disclosureDate": "2026-10-30",
-      "transactionType": "Verified acquisition",
+      "transactionType": "Open-market acquisition",
       "source": "Nemesia — Canada NewsWire original announcement",
       "sourceUrl": "https://www.newswire.ca/news-releases/nemesia-sarl-acquires-shares-of-faraday-copper-corp-and-is-impacted-by-passive-dilution-890124103.html",
       "verifiedPurchase": true,
-      "evidence": "Named acquisition documented in reviewed public disclosure",
-      "notes": ""
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "Purchases on October 28; disclosure on October 30. Despite new purchases, percentage ownership fell because the company's total share count increased (passive dilution)."
     },
     {
-      "id": "owner:LTC:2026-10-28:Hartree Partners, LP",
+      "id": "owner:ee5b7fae6a544b10ea73",
       "symbol": "LTC.V",
       "symbolRaw": "LTC",
       "name": "Lotus Creek Exploration Inc.",
@@ -38,15 +38,15 @@
       "valueCAD": 3708195.98,
       "transactionDate": "2026-10-27",
       "disclosureDate": "2026-10-28",
-      "transactionType": "Verified acquisition",
+      "transactionType": "Open-market acquisition",
       "source": "Hartree Partners — Canada NewsWire original announcement",
       "sourceUrl": "https://www.newswire.ca/news-releases/hartree-partners-lp-provides-early-warning-disclosure-with-respect-to-securities-of-lotus-creek-exploration-inc--831972190.html",
       "verifiedPurchase": true,
-      "evidence": "Named acquisition documented in reviewed public disclosure",
-      "notes": ""
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "Transaction October 27, disclosure October 28. Original issuer announcement identifies a completed TSXV open-market acquisition."
     },
     {
-      "id": "owner:V:2026-10-07:PowerOne Capital Corp. (joint actor of Pat DiCapo)",
+      "id": "owner:decc716404c842794c48",
       "symbol": "V",
       "symbolRaw": "V",
       "name": "Verdera Energy Corp.",
@@ -55,18 +55,18 @@
       "direction": "BUY",
       "shares": 1000000,
       "disclosedPrice": 0.3208,
-      "valueCAD": 320800,
+      "valueCAD": 320800.0,
       "transactionDate": null,
       "disclosureDate": "2026-10-07",
-      "transactionType": "Verified acquisition",
+      "transactionType": "TSXV share acquisition",
       "source": "ACCESS Newswire — acquiror announcement",
       "sourceUrl": "https://www.marketscreener.com/news/powerone-capital-corp-acquires-shares-of-verdera-energy-corp-ce785dded880f72d",
       "verifiedPurchase": true,
-      "evidence": "Named acquisition documented in reviewed public disclosure",
-      "notes": ""
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "Transaction date not stated in the source; disclosure date is not treated as transaction date."
     },
     {
-      "id": "owner:TNR:2026-10-06:Altius Minerals Corporation (via Altius Resources Inc.)",
+      "id": "owner:7976550a16b8e5ffd32e",
       "symbol": "TNR",
       "symbolRaw": "TNR",
       "name": "TNR Gold Corp.",
@@ -75,15 +75,15 @@
       "direction": "BUY",
       "shares": 7437500,
       "disclosedPrice": 0.23,
-      "valueCAD": 1710625,
+      "valueCAD": 1710625.0,
       "transactionDate": "2026-07-17",
       "disclosureDate": "2026-10-06",
-      "transactionType": "Verified acquisition",
+      "transactionType": "Open-market acquisition",
       "source": "Altius Minerals — early-warning disclosure",
       "sourceUrl": "https://altiusminerals.com/investor-information/press-releases/",
       "verifiedPurchase": true,
-      "evidence": "Named acquisition documented in reviewed public disclosure",
-      "notes": ""
+      "evidence": "Named acquisition documented in a reviewed public disclosure",
+      "notes": "Disclosure filed in October for shares acquired in July; not a new October purchase."
     }
   ],
   "companies": [
@@ -96,9 +96,9 @@
       ],
       "transactions": 1,
       "latestDisclosure": "2026-10-30",
-      "totalDisclosedCAD": 4336500,
+      "totalDisclosedCAD": 4336500.0,
       "sourceIds": [
-        "owner:FDY:2026-10-30:Nemesia S.à.r.l."
+        "owner:b65a8417e34a60f959f2"
       ]
     },
     {
@@ -112,7 +112,7 @@
       "latestDisclosure": "2026-10-28",
       "totalDisclosedCAD": 3708195.98,
       "sourceIds": [
-        "owner:LTC:2026-10-28:Hartree Partners, LP"
+        "owner:ee5b7fae6a544b10ea73"
       ]
     },
     {
@@ -124,9 +124,9 @@
       ],
       "transactions": 1,
       "latestDisclosure": "2026-10-07",
-      "totalDisclosedCAD": 320800,
+      "totalDisclosedCAD": 320800.0,
       "sourceIds": [
-        "owner:V:2026-10-07:PowerOne Capital Corp. (joint actor of Pat DiCapo)"
+        "owner:decc716404c842794c48"
       ]
     },
     {
@@ -138,16 +138,16 @@
       ],
       "transactions": 1,
       "latestDisclosure": "2026-10-06",
-      "totalDisclosedCAD": 1710625,
+      "totalDisclosedCAD": 1710625.0,
       "sourceIds": [
-        "owner:TNR:2026-10-06:Altius Minerals Corporation (via Altius Resources Inc.)"
+        "owner:7976550a16b8e5ffd32e"
       ]
     }
   ],
   "multipleBuyers": [],
   "tracks": [
     {
-      "id": "owner:FDY:2026-10-30:Nemesia S.à.r.l.",
+      "id": "owner:b65a8417e34a60f959f2",
       "symbol": "FDY.TO",
       "name": "Faraday Copper Corp.",
       "lane": "Verified ownership",
@@ -155,48 +155,43 @@
       "started": "2026-11-02",
       "disclosureDate": "2026-10-30",
       "transactionDate": "2026-10-28",
-      "valueCAD": 4336500,
+      "valueCAD": 4336500.0,
       "reason": "Verified named investment purchase",
       "sourceUrl": "https://www.newswire.ca/news-releases/nemesia-sarl-acquires-shares-of-faraday-copper-corp-and-is-impacted-by-passive-dilution-890124103.html",
       "checkpoints": [
         {
           "offset": 0,
-          "target": "2026-11-02",
           "day": "2026-11-02",
           "price": 4.01
         },
         {
           "offset": 5,
-          "target": "2026-11-07",
           "day": null,
           "price": null
         },
         {
           "offset": 10,
-          "target": "2026-11-12",
           "day": null,
           "price": null
         },
         {
           "offset": 15,
-          "target": "2026-11-17",
           "day": null,
           "price": null
         },
         {
           "offset": 30,
-          "target": "2026-12-02",
           "day": null,
           "price": null
         }
       ],
       "lastPrice": 4.01,
-      "lastPriceDate": null,
-      "priceChangePct": 0,
+      "lastPriceDate": "2026-11-02",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
-      "id": "owner:LTC:2026-10-28:Hartree Partners, LP",
+      "id": "owner:ee5b7fae6a544b10ea73",
       "symbol": "LTC.V",
       "name": "Lotus Creek Exploration Inc.",
       "lane": "Verified ownership",
@@ -210,60 +205,37 @@
       "checkpoints": [
         {
           "offset": 0,
-          "target": "2026-11-02",
           "day": "2026-11-02",
           "price": 4.51
         },
         {
           "offset": 5,
-          "target": "2026-11-07",
           "day": null,
           "price": null
         },
         {
           "offset": 10,
-          "target": "2026-11-12",
           "day": null,
           "price": null
         },
         {
           "offset": 15,
-          "target": "2026-11-17",
           "day": null,
           "price": null
         },
         {
           "offset": 30,
-          "target": "2026-12-02",
           "day": null,
           "price": null
         }
       ],
       "lastPrice": 4.51,
-      "lastPriceDate": null,
-      "priceChangePct": 0,
+      "lastPriceDate": "2026-11-02",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
-      "id": "owner:V:2026-10-07:PowerOne Capital Corp. (joint actor of Pat DiCapo)",
-      "symbol": "V",
-      "name": "Verdera Energy Corp.",
-      "lane": "Verified ownership",
-      "investor": "PowerOne Capital Corp. (joint actor of Pat DiCapo)",
-      "started": "2026-11-02",
-      "disclosureDate": "2026-10-07",
-      "transactionDate": null,
-      "valueCAD": 320800,
-      "reason": "Verified named investment purchase",
-      "sourceUrl": "https://www.marketscreener.com/news/powerone-capital-corp-acquires-shares-of-verdera-energy-corp-ce785dded880f72d",
-      "checkpoints": [],
-      "lastPrice": null,
-      "lastPriceDate": null,
-      "priceChangePct": null,
-      "quoteStatus": "Missing / not confirmed"
-    },
-    {
-      "id": "owner:TNR:2026-10-06:Altius Minerals Corporation (via Altius Resources Inc.)",
+      "id": "owner:7976550a16b8e5ffd32e",
       "symbol": "TNR",
       "name": "TNR Gold Corp.",
       "lane": "Verified ownership",
@@ -271,14 +243,84 @@
       "started": "2026-11-02",
       "disclosureDate": "2026-10-06",
       "transactionDate": "2026-07-17",
-      "valueCAD": 1710625,
+      "valueCAD": 1710625.0,
       "reason": "Verified named investment purchase",
       "sourceUrl": "https://altiusminerals.com/investor-information/press-releases/",
-      "checkpoints": [],
+      "checkpoints": [
+        {
+          "offset": 0,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 5,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 10,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 15,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 30,
+          "day": null,
+          "price": null
+        }
+      ],
       "lastPrice": null,
       "lastPriceDate": null,
       "priceChangePct": null,
-      "quoteStatus": "Missing / not confirmed"
+      "quoteStatus": "No confirmed CAD close"
+    },
+    {
+      "id": "owner:decc716404c842794c48",
+      "symbol": "V",
+      "name": "Verdera Energy Corp.",
+      "lane": "Verified ownership",
+      "investor": "PowerOne Capital Corp. (joint actor of Pat DiCapo)",
+      "started": "2026-11-02",
+      "disclosureDate": "2026-10-07",
+      "transactionDate": null,
+      "valueCAD": 320800.0,
+      "reason": "Verified named investment purchase",
+      "sourceUrl": "https://www.marketscreener.com/news/powerone-capital-corp-acquires-shares-of-verdera-energy-corp-ce785dded880f72d",
+      "checkpoints": [
+        {
+          "offset": 0,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 5,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 10,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 15,
+          "day": null,
+          "price": null
+        },
+        {
+          "offset": 30,
+          "day": null,
+          "price": null
+        }
+      ],
+      "lastPrice": null,
+      "lastPriceDate": null,
+      "priceChangePct": null,
+      "quoteStatus": "No confirmed CAD close"
     }
   ],
   "status": {
@@ -296,8 +338,12 @@
       "file": "moves-canada-verified.json"
     },
     {
-      "name": "Manually verified SEDI transactions",
+      "name": "Manually verified SEDI transactions (if imported)",
       "file": "moves-canada-sedi.json"
+    },
+    {
+      "name": "Post-disclosure price history only",
+      "url": "https://finance.yahoo.com"
     }
   ]
 }
