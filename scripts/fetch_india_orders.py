@@ -206,8 +206,12 @@ def merge(rows,previous):
  # Preserve all previously seen filings across transient feed outages and
  # short rolling RSS windows. Mark unavailable-on-current-poll items stale.
  # Their original firstSeenAt is immutable; they are not new alerts.
+ known_urls={canonical_url(x.get("sourceUrl")) for x in records.values()}
  for rid,prior in old.items():
   if rid not in records:
+   # Migrating from source-specific to URL-based IDs must not duplicate
+   # previously discovered filings.
+   if canonical_url(prior.get("sourceUrl")) in known_urls:continue
    archived=dict(prior)
    archived["notSeenInLatestScan"]=True
    records[rid]=archived
