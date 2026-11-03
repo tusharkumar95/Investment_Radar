@@ -46,28 +46,28 @@ footer{font-size:11px;color:#87929b;line-height:1.55;padding:8px 1px}
 </style>
 </head><body><main>
 <header><strong>Investment Radar · Lab</strong><a href="moves.html">← Back to Moves</a></header>
-<section class="hero"><span class="eyebrow">Independent experiment · Canada + CAD-hedged U.S. exposure</span>
+<section class="hero"><span class="eyebrow">Independent experiment · documented corporate and institutional buying</span>
 <h1>Canada New Try <span class="pill pilot">PILOT</span></h1>
-<p>Different logic from India: verified acquisitions, price/volume acceleration in Canadian stocks, and U.S. companies available as CAD-hedged Canadian Depositary Receipts (CDRs). No changes to the main Radar or existing India Moves engine.</p>
+<p>This experiment tracks purchases by named companies, funds and significant investors that are supported by reviewed Canadian disclosures. No market-activity signals. India Moves and the main Radar are unchanged.</p>
 <div class="statusline" id="updated">Loading the pilot feed…</div>
 </section>
-<div class="stats" id="stats"><div class="metric"><small>Verified acquisitions</small><b>—</b></div><div class="metric"><small>Canadian quotes</small><b>—</b></div><div class="metric"><small>CDRs quoted</small><b>—</b></div><div class="metric"><small>Tracked signals</small><b>—</b></div></div>
+<div class="stats" id="stats"><div class="metric"><small>Verified acquisitions</small><b>—</b></div><div class="metric"><small>Named investors</small><b>—</b></div><div class="metric"><small>Companies</small><b>—</b></div><div class="metric"><small>Purchase-based tracks</small><b>—</b></div></div>
 <section class="section">
 <nav class="tabs" id="tabs" aria-label="Pilot views">
-<button type="button" data-tab="ownership" class="active">Confirmed buys</button>
-<button type="button" data-tab="canadaStocks">Canada activity</button>
-<button type="button" data-tab="cdrs">U.S. in CAD</button>
-<button type="button" data-tab="tracks">Test Track Sheet</button>
+<button type="button" data-tab="purchases" class="active">Verified purchases</button>
+<button type="button" data-tab="companies">Companies bought</button>
+<button type="button" data-tab="multipleBuyers">Multiple buyers</button>
+<button type="button" data-tab="tracks">Purchase Track Sheet</button>
 </nav>
 <div class="toolbar"><input id="filter" aria-label="Filter by stock or investor" placeholder="Search stock, ticker or investor">
-<select id="sort" aria-label="Sort"><option value="score">Strongest signal</option><option value="newest">Newest report</option><option value="ticker">Ticker A–Z</option></select></div>
-<h2 id="sectionTitle">Confirmed acquisitions</h2><p class="muted" id="sectionDescription">Original published disclosure; a single buyer can qualify for tracking.</p>
+<select id="sort" aria-label="Sort"><option value="newest">Newest disclosure</option><option value="largest">Largest disclosed value</option><option value="ticker">Ticker A–Z</option></select></div>
+<h2 id="sectionTitle">Confirmed acquisitions</h2><p class="muted" id="sectionDescription">Each entry names the buyer and links to a reviewed disclosure. One documented buyer is enough for tracking.</p>
 <div id="cards" aria-live="polite"><div class="empty">Loading…</div></div>
 </section>
 <section class="section">
 <h2>How to interpret this experiment</h2>
-<p class="muted">A confirmed acquisition is a documented ownership transaction, but filing dates can follow trade dates. A price/volume alert is only a market-behaviour observation; it does not identify a buyer. CDRs trade in CAD and generally offer notional hedging, but they are not identical to U.S. shares. Hedging costs, spreads and depositary ratios affect returns. Signals are research leads, not buy recommendations.</p>
+<p class="muted">Only publicly documented transactions are shown as buys. The buyer, company, quantity, disclosed value, trade date and publication date are recorded when available. Disclosure dates can be later than the trade date. U.S. stocks with Canadian Depositary Receipts (CDRs) are not shown as Canadian purchases unless there is evidence that the CDR itself was purchased. Missing disclosures stay missing.</p>
 <div class="warn" id="sourceHealth">Source status will appear here. Missing prices are not filled with estimated values.</div>
 </section>
-<footer>Experimental feature. Public delayed quotes, not execution prices. Historical snapshots and test tracking are isolated from the production Track Sheet and existing Moves multi-buyer alerts.</footer>
-</main><script src="canada-new-try.js?v=1"></script></body></html>
+<footer>Experimental feature. Optional historical closing prices are for measuring performance after a documented purchase, not finding purchases. Its tracking stays separate from India Moves and the production Track Sheet.</footer>
+</main><script src="canada-new-try.js?v=2"></script></body></html>
