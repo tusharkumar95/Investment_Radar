@@ -52,8 +52,8 @@ SEC_FORMS=("SC 13D","SC 13G","13F-HR")
 INTEREST=re.compile(
     # Equity/security ownership, not acquisition of a business, property, or asset.
     r"early.warning|major.shareholder|insider.buy|13f|13d|13g|"
-    r"(?:acquir\\w*|purchas\\w*|subscrib\\w*).{0,85}(?:shares|units|securities|equity|stock|stake)|"
-    r"(?:shares|units|securities|equity|stock|stake).{0,85}(?:acquir\\w*|purchas\\w*|subscrib\\w*)|"
+    r"(?:acquir\w*|purchas\w*|subscrib\w*).{0,85}(?:shares|units|securities|equity|stock|stake)|"
+    r"(?:shares|units|securities|equity|stock|stake).{0,85}(?:acquir\w*|purchas\w*|subscrib\w*)|"
     r"private.placement|strategic.equity.investment|share.acquisition|"
     r"investment in .{0,65}(?:shares|equity|common.stock)|"
     r"(?:raises?|closes?).{0,55}(?:equity|financing|placement)", re.I)
@@ -120,7 +120,7 @@ def cnw_listing_entries(raw):
         if urllib.parse.urlparse(link).hostname not in ("newswire.ca","www.newswire.ca"):continue
         if not re.search(r"^/news-releases/.+\.html$",urllib.parse.urlparse(link).path):continue
         if title:
-            m=re.search(r"\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\s+\\d{1,2},\\s+20\\d{2}\\b",title,re.I)
+            m=re.search(r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+20\d{2}\b",title,re.I)
             try: article_day=datetime.strptime(m.group(0).replace(".",""),"%b %d, %Y").date().isoformat() if m else None
             except ValueError:article_day=None
             entries.append({"title":title[:260],"url":link,"date":article_day,"summary":""})
@@ -137,7 +137,7 @@ def lead_type(title,summary):
     if NON_INVESTMENT.search(title):return "Outside scope — excluded"
     # Announced takeovers/mergers are generally agreements, not completed
     # investment purchases by a reporting fund or corporation.
-    if re.search(r"\\b(to be acquired|agreement to acquire|to acquire|merger agreement|tender offer)\\b",title,re.I):
+    if re.search(r"\b(to be acquired|agreement to acquire|to acquire|merger agreement|tender offer)\b",title,re.I):
         return "Outside scope — excluded"
     if not INTEREST.search(text):return None
     if re.search(r"\b(announces?|plans?|intends?|proposes?|subject to|expected to)\b",title,re.I) and not CLOSED.search(title):
