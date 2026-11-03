@@ -12,7 +12,7 @@
         "NAUTILUS PRIVATE CAPITAL LTD",
         "SS CORPORATE SECURITIES LIMITED"
       ],
-      "value": 4354816.0,
+      "value": 4354816,
       "currency": "INR",
       "disclosedAvgPrice": 21.27,
       "source": "Verified exchange/public disclosures",
@@ -312,32 +312,6 @@
       "firstDetectedAt": "2026-10-31T01:31:07.253864+00:00",
       "firstBuyerCount": 2,
       "trackingSource": "Daily market closing prices (unadjusted)"
-    },
-    {
-      "id": "2026-10-06:India:DPWIRES:historical",
-      "day": "2026-10-06",
-      "market": "India",
-      "symbol": "DPWIRES",
-      "company": "D P Wires Limited",
-      "manual": true,
-      "trackingType": "Single disclosed investor — historical",
-      "buyers": 1,
-      "firstBuyerCount": 1,
-      "investors": [
-        "AMITABH HARIVANSH RAI BACHCHAN"
-      ],
-      "buyQty": 129000,
-      "sellQty": 60021,
-      "netBuyQty": 68979,
-      "disclosedAvgPrice": 223.58,
-      "disclosedSellAvgPrice": 227.57,
-      "value": 15422324.82,
-      "currency": "INR",
-      "source": "NSE bulk deals (October 6, 2026)",
-      "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-      "status": "Historical single-investor transaction added to price tracking, not a multi-buyer alert",
-      "trackingSource": "Daily unadjusted market closes, independent of disclosed trade prices",
-      "firstDetectedAt": "2026-10-06T00:00:00+00:00"
     }
   ],
   "quotes": {
@@ -384,7 +358,7 @@
       "2026-10-27": 1284.2,
       "2026-10-28": 1219.5,
       "2026-10-29": 1209.15,
-      "2026-11-02": 1267.0
+      "2026-11-02": 1267
     },
     "India:VNL": {
       "2026-10-30": 104.13,
@@ -393,26 +367,6 @@
       "2026-10-29": 103.34,
       "2026-11-02": 100.96
     },
-    "India:DPWIRES": {
-      "2026-10-06": 221.54,
-      "2026-10-07": 227.46,
-      "2026-10-08": 215.64,
-      "2026-10-09": 224.88,
-      "2026-10-12": 229.15,
-      "2026-10-13": 220.73,
-      "2026-10-14": 213.59,
-      "2026-10-15": 200.9,
-      "2026-10-16": 204.11,
-      "2026-10-19": 194.74,
-      "2026-10-21": 180.05,
-      "2026-10-22": 189.5,
-      "2026-10-23": 179.73,
-      "2026-10-26": 173.75,
-      "2026-10-27": 186.39,
-      "2026-10-28": 181.4,
-      "2026-10-29": 182.86,
-      "2026-10-30": 178.83
-    },
     "India:EDELALTS": {
       "2026-11-02": 1727.8
     },
@@ -420,7 +374,7 @@
       "2026-11-02": 225.85
     }
   },
-  "updatedAt": "2026-11-02T23:39:38.348683+00:00",
+  "updatedAt": "2026-11-03T00:25:27.745Z",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -430,7 +384,6 @@
     "India:SWIGGY": "SWIGGY.NS",
     "India:TONBO": "TONBO.NS",
     "India:VNL": "VNL.NS",
-    "India:DPWIRES": "DPWIRES.NS",
     "India:EDELALTS": "EDELALTS.NS",
     "India:MOBIKWIK": "MOBIKWIK.NS"
   },

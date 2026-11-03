@@ -50,8 +50,8 @@ jobs:
           h=json.load(open("moves-history.json",encoding="utf-8"))
           assert d["schema"]==t["schema"]==1
           assert isinstance(h["records"],list) and h["records"]
-          assert any(x.get("symbol")=="DPWIRES" and x.get("day")=="2026-10-06" for x in t["tracks"])
-          assert t["quotes"].get("India:DPWIRES")
+          assert not any(x.get("manual") and x.get("symbol")=="DPWIRES" for x in t["tracks"])
+          assert "India:DPWIRES" not in t["quotes"]
           assert all(a["buyers"]>=2 for a in d["alerts"])
           print("Preserved",len(h["records"]),"historical disclosures,",len(t["tracks"]),"tracked signals,",len(d["dates"]),"dated views")
           PY
