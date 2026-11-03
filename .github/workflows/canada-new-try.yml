@@ -1,0 +1,79 @@
+name: Canada New Try — Independent Pilot
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"
+    - cron: "0 17 * * 1-5"
+    - cron: "0 23 * * 1-5"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "canada-new-try.html"
+      - "canada-new-try.js"
+      - "scripts/canada_new_try.py"
+      - "scripts/test_canada_new_try.py"
+      - ".github/workflows/canada-new-try.yml"
+  push:
+    branches: [main]
+    paths:
+      - "canada-new-try.html"
+      - "canada-new-try.js"
+      - "scripts/canada_new_try.py"
+      - "scripts/test_canada_new_try.py"
+      - ".github/workflows/canada-new-try.yml"
+permissions:
+  contents: write
+concurrency:
+  group: canada-new-try-pilot
+  cancel-in-progress: true
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install public-market quote dependency
+        run: python -m pip install --quiet "yfinance>=0.2.50,<2" "pandas>=2,<3"
+      - name: Validate isolated experiment
+        run: |
+          python -m py_compile scripts/canada_new_try.py scripts/test_canada_new_try.py
+          python scripts/test_canada_new_try.py
+          node --check canada-new-try.js
+          test -f canada-new-try.html
+          test -f canada-new-try.json
+      - name: Update experimental dataset
+        if: github.event_name != 'pull_request'
+        run: python scripts/canada_new_try.py
+      - name: Validate experimental output
+        if: github.event_name != 'pull_request'
+        run: |
+          python - <<'PY'
+          import json
+          j=json.load(open('canada-new-try.json', encoding='utf-8'))
+          assert j['schema']==1
+          assert isinstance(j['ownership'],list) and isinstance(j['cdrs'],list)
+          assert isinstance(j['canadaStocks'],list) and isinstance(j['tracks'],list)
+          assert all(x['verifiedPurchase'] for x in j['ownership'])
+          assert all(not x['verifiedPurchase'] for x in j['cdrs']+j['canadaStocks'])
+          assert all(x.get('lane')=='CAD-Hedged CDRs' for x in j['cdrs'])
+          print("Pilot signals:",len(j['ownership']),len(j['canadaStocks']),len(j['cdrs']))
+          PY
+      - name: Publish ONLY experimental data
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "canada-pilot-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- canada-new-try.json; then exit 0; fi
+          git add canada-new-try.json
+          git commit -m "Refresh Canada New Try pilot data"
+          if git push origin HEAD:main; then exit 0; fi
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/canada_new_try.py
+          git add canada-new-try.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh Canada New Try pilot data after retry"
+          git push origin HEAD:main
