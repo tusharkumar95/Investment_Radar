@@ -62,7 +62,11 @@ def iso(v):
 def ticker_exchange(row):
     symbol = str(row.get("symbol") or "").upper().strip()
     exchange = str(row.get("exchange") or "").upper()
-    return symbol + (".V" if exchange in ("TSXV", "TSX-V") else ".TO")
+    if exchange in ("TSXV", "TSX-V"):
+        return symbol + ".V"
+    if exchange in ("TSX", "TOR"):
+        return symbol + ".TO"
+    return symbol  # Do not invent a listing exchange when not disclosed.
 
 
 def watch_universe():
@@ -209,7 +213,7 @@ def owner_signal(event, quote):
     if str(event.get("direction") or "BUY").upper() != "BUY":
         return None
     filed = iso(event.get("disclosureDate"))
-    if not filed or (TODAY - date.fromisoformat(filed)).days > 45:
+    if not filed or not 0 <= (TODAY - date.fromisoformat(filed)).days <= 45:
         return None
     if event.get("status", "").lower().startswith("proposed"):
         return None
