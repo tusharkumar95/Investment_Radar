@@ -47,7 +47,6 @@ assert parsed_amount("We have secured a purchase order worth Rs 1,287 crore") ==
 assert parsed_amount("We have received an ₹50 lakh work order") == 0.5
 assert parsed_amount("We posted annual revenue of Rs 200 crore") is None
 order=parse_order(found[0],"NSE corporate announcements RSS",official=True)
-print("ORDER DEBUG",order, "AMOUNT",parsed_amount(found[0]["title"]+" "+found[0]["description"]))
 assert order and order["valueCr"]==1287 and order["alertEligible"]
 assert order["verified"] is False and "needs review" in order["status"]
 l1=parse_order(found[1],"NSE corporate announcements RSS",official=True)
