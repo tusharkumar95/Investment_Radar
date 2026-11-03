@@ -154,7 +154,7 @@ def parse_order(item,source,official=False):
  source_class="official-exchange" if official else "media-discovery"
  amount=parsed_amount(text)
  day=(dt.date().isoformat() if dt else None)
- rid="order:"+hashlib.sha256((source+"|"+url).encode()).hexdigest()[:22]
+ rid="order:"+hashlib.sha256(url.encode()).hexdigest()[:22]  # Same NSE notice via mirrored RSS = one alert.
  status="Bid / non-final announcement — not a won order" if pending else (
     "Exchange order announcement — attachment needs review" if official else
     "Media lead — verify with exchange filing")
@@ -200,12 +200,17 @@ def merge(rows,previous):
   prior=old.get(row["id"])
   if prior:
    row["firstSeenAt"]=prior.get("firstSeenAt") or NOW.isoformat()
+   row["notSeenInLatestScan"]=False
   else:row["firstSeenAt"]=NOW.isoformat()
   records[row["id"]]=row
- # Keep verified original records even when they disappear from the RSS.
+ # Preserve all previously seen filings across transient feed outages and
+ # short rolling RSS windows. Mark unavailable-on-current-poll items stale.
+ # Their original firstSeenAt is immutable; they are not new alerts.
  for rid,prior in old.items():
-  if rid not in records and prior.get("verified"):
-   records[rid]=prior
+  if rid not in records:
+   archived=dict(prior)
+   archived["notSeenInLatestScan"]=True
+   records[rid]=archived
  # Latest 45 days; keep exact source time; don't invent day for date-less RSS.
  cutoff=(NOW-timedelta(days=MAX_DAYS)).date()
  filtered=[]
