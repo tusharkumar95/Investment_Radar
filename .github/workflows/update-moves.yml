@@ -62,7 +62,7 @@ jobs:
           assert all(a.get('day') and a.get('symbol') and a.get('market') for a in manual)
           assert not set(a['id'] for a in manual)&set(a['id'] for a in d.get('alerts',[]))
           assert isinstance(t.get('quotes'),dict)
-          assert any(a['symbol']=='DPWIRES' and a['day']=='2026-10-06' for a in manual)
+          assert not any(a['symbol']=='DPWIRES' for a in manual)
           print('Moves ready:',len(d['days']),'dates,',len(t['tracks']),'tracked stocks')
           PY
       - name: Publish data safely with retry
