@@ -187,7 +187,7 @@ def refresh():
     # irrelevant asset-acquisition stories would remain in the queue forever.
     leads={}
     for oldrow in old.get("leads",[]):
-        if oldrow.get("reviewStatus")!="Needs source verification":continue
+        if oldrow.get("reviewStatus")!="Needs source verification" or not oldrow.get("date"):continue  # Undated leads must be freshly rediscovered; do not retain forever.
         candidate=build_lead({"title":oldrow.get("title",""),"url":oldrow.get("url",""),
                               "date":oldrow.get("date"),"summary":oldrow.get("summary","")},
                              oldrow.get("discoveredVia","Previously discovered"))
