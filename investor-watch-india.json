@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T19:41:54.627599+00:00",
+  "updated": "2026-11-04T10:46:26.471053+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
