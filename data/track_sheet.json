@@ -1,7 +1,132 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-03T03:55:05.855Z",
+  "updatedAt": "2026-11-04T02:59:39.035Z",
   "cohorts": [
+    {
+      "date": "2026-11-03",
+      "markets": {
+        "Canada": {
+          "sourceUpdatedAt": "2026-11-03T18:35:26.598739+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "BHC.TO",
+              "name": "BAUSCH HEALTH COMPANIES INC",
+              "score": 86,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 11.33,
+              "recordedAt": "2026-11-03T18:35:26.598739+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "CNQ.TO",
+              "name": "CDN NATURAL RES",
+              "score": 84,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 75.18,
+              "recordedAt": "2026-11-03T18:35:26.598739+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "DHT-UN.TO",
+              "name": "DRI HEALTHCARE TRUST",
+              "score": 83,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 18.58,
+              "recordedAt": "2026-11-03T18:35:26.598739+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "BNS.TO",
+              "name": "BANK OF NOVA SCOTIA",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 131.38,
+              "recordedAt": "2026-11-03T18:35:26.598739+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "PLZ-UN.TO",
+              "name": "PLAZA RETAIL REIT",
+              "score": 81,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 5.28,
+              "recordedAt": "2026-11-03T18:35:26.598739+00:00"
+            }
+          ]
+        },
+        "India": {
+          "sourceUpdatedAt": "2026-11-03T18:38:07.826358+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "PNB.NS",
+              "name": "PUNJAB NATIONAL BANK",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 120.97,
+              "recordedAt": "2026-11-03T18:38:07.826358+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "UNIONBANK.NS",
+              "name": "UNION BANK OF INDIA",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 183.2,
+              "recordedAt": "2026-11-03T18:38:07.826358+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "CHENNPETRO.NS",
+              "name": "CHENNAI PETROLEUM CORP LT",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 1540.6,
+              "recordedAt": "2026-11-03T18:38:07.826358+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "GLAND.NS",
+              "name": "GLAND PHARMA LIMITED",
+              "score": 78,
+              "verdict": "BUY",
+              "priceZone": "Expensive",
+              "currency": "INR",
+              "recordedPrice": 3158.9,
+              "recordedAt": "2026-11-03T18:38:07.826358+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "AUROPHARMA.NS",
+              "name": "AUROBINDO PHARMA LTD",
+              "score": 77,
+              "verdict": "BUY",
+              "priceZone": "Attractive",
+              "currency": "INR",
+              "recordedPrice": 1694.5,
+              "recordedAt": "2026-11-03T18:38:07.826358+00:00"
+            }
+          ]
+        }
+      }
+    },
     {
       "date": "2026-11-02",
       "markets": {
@@ -256,48 +381,67 @@
   "quotes": {
     "Canada:BHC.TO": {
       "2026-10-30": 11.47,
-      "2026-11-02": 11.25
+      "2026-11-02": 11.25,
+      "2026-11-03": 11.41
     },
     "Canada:BNS.TO": {
       "2026-10-30": 131.05,
-      "2026-11-02": 131.61
+      "2026-11-02": 131.61,
+      "2026-11-03": 131.17
     },
     "Canada:CNQ.TO": {
       "2026-10-30": 78.42,
-      "2026-11-02": 75.12
+      "2026-11-02": 75.12,
+      "2026-11-03": 74.97
     },
     "Canada:DHT-UN.TO": {
       "2026-10-30": 18.14,
-      "2026-11-02": 18.33
+      "2026-11-02": 18.33,
+      "2026-11-03": 18.53
     },
     "Canada:WCP.TO": {
       "2026-10-30": 19.62,
-      "2026-11-02": 18.34
+      "2026-11-02": 18.34,
+      "2026-11-03": 18.6
     },
     "India:CHENNPETRO.NS": {
       "2026-10-30": 1511.5,
-      "2026-11-02": 1546.0
+      "2026-11-02": 1546,
+      "2026-11-03": 1540.6
     },
     "India:GLAND.NS": {
-      "2026-10-30": 3095.8999
+      "2026-10-30": 3095.8999,
+      "2026-11-02": 3066.6001
     },
     "India:PNB.NS": {
       "2026-10-30": 122.85,
-      "2026-11-02": 123.06
+      "2026-11-02": 123.06,
+      "2026-11-03": 120.97
     },
     "India:SKYGOLD.NS": {
-      "2026-10-30": 883.2
+      "2026-10-30": 883.2,
+      "2026-11-02": 870.75
     },
     "India:UNIONBANK.NS": {
       "2026-10-30": 186,
-      "2026-11-02": 186.0
+      "2026-11-02": 186
     },
     "Canada:MFC.TO": {
-      "2026-11-02": 62.68
+      "2026-11-02": 62.68,
+      "2026-11-03": 62.8
     },
-    "India:AUROPHARMA.NS": {},
-    "India:SMCGLOBAL.NS": {}
+    "India:AUROPHARMA.NS": {
+      "2026-11-02": 1683.8,
+      "2026-11-03": 1694.5
+    },
+    "India:SMCGLOBAL.NS": {
+      "2026-11-02": 92.32,
+      "2026-11-03": 90.45
+    },
+    "Canada:PLZ-UN.TO": {
+      "2026-11-03": 5.3
+    }
   },
-  "quotesUpdatedAt": "2026-11-03T03:55:25.560356+00:00",
+  "quotesUpdatedAt": "2026-11-04T02:59:58.635408+00:00",
   "quoteFailures": []
 }
