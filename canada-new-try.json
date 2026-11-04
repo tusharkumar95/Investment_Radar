@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-04T02:51:12.504707+00:00",
-  "day": "2026-11-03",
+  "updated": "2026-11-04T20:18:44.651335+00:00",
+  "day": "2026-11-04",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.69,
-      "lastPriceDate": "2026-11-03",
-      "priceChangePct": -12.99,
+      "lastPrice": 4.21,
+      "lastPriceDate": "2026-11-04",
+      "priceChangePct": -21.89,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.08,
-      "lastPriceDate": "2026-11-03",
-      "priceChangePct": 1.75,
+      "lastPrice": 4.06,
+      "lastPriceDate": "2026-11-04",
+      "priceChangePct": 1.25,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.43,
-      "lastPriceDate": "2026-11-03",
-      "priceChangePct": -1.77,
+      "lastPrice": 4.17,
+      "lastPriceDate": "2026-11-04",
+      "priceChangePct": -7.54,
       "quoteStatus": "Available"
     },
     {
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.09,
-      "lastPriceDate": "2026-11-03",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.075,
+      "lastPriceDate": "2026-11-04",
+      "priceChangePct": -16.67,
       "quoteStatus": "Available"
     },
     {
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-03",
+      "lastPriceDate": "2026-11-04",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-03",
+      "lastPriceDate": "2026-11-04",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-03",
+      "lastPriceDate": "2026-11-04",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-03",
+      "lastPriceDate": "2026-11-04",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 24,
+      "candidateArticles": 25,
       "status": "Verified transactions found"
     },
     {
@@ -1043,6 +1043,17 @@
   ],
   "leads": [
     {
+      "id": "lead:49074401ff9ca1b1b1",
+      "title": "Pan American Silver: Early Warning News Release - Business Wire",
+      "date": "2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Pan American Silver: Early Warning News Release    Business Wire "
+    },
+    {
       "id": "lead:0b235fe67a70fe4178",
       "title": "Pan American Silver: Early Warning News Release - Finviz",
       "date": "2026-11-04",
@@ -1074,6 +1085,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " TORONTO, Nov.  03, 2026  (GLOBE NEWSWIRE) -- Aecon Group Inc. (TSX: ARE) (“Aecon”) announced today the closing of the previously disclosed agreement to purchase all the outstanding Preferred Shares of Aecon Utilities for $320 million in cash. The purchase was funded from available cash on hand. "
+    },
+    {
+      "id": "lead:5ff03ce8d4ee3051a3",
+      "title": "Nov 03, 2026, 17:15 ET \n                        Euromax Announces Proposed Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today a non-brokered private placement of up",
+      "date": "2026-11-03",
+      "url": "https://www.newswire.ca/news-releases/euromax-announces-proposed-private-placement-864723810.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     },
     {
       "id": "lead:1b2b2c1da3abf2e321",
@@ -1505,12 +1527,23 @@
       "summary": ""
     },
     {
-      "id": "lead:5ff03ce8d4ee3051a3",
-      "title": "17:15 ET \n                        Euromax Announces Proposed Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today a non-brokered private placement of up to 113,828,80",
+      "id": "lead:2ce9af25d61a5c5b93",
+      "title": "12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the closing of its",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/euromax-announces-proposed-private-placement-864723810.html",
+      "url": "https://www.newswire.ca/news-releases/nican-announces-closing-of-non-brokered-private-placement-for-gross-proceeds-of-4-050-000-859449453.html",
       "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:22247773e87a45bb1e",
+      "title": "03:27 ET \n                          Samsung Electronics Acquires 10.16% Stake in TCL CSOT, Deepening Strategic Alignment and Business Collaboration\n                         \n                         TCL Technology and Samsung Electronics Co., Ltd. (Samsung Ele",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/samsung-electronics-acquires-10-16-stake-in-tcl-csot-deepening-strategic-alignment-and-business-collaboration-864158727.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -1536,8 +1569,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
-      "relevant": 4
+      "items": 5,
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1584,7 +1617,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
+      "items": 3,
       "relevant": 0
     },
     {
@@ -1597,13 +1630,13 @@
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 8
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 22
+      "relevant": 23
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1645,7 +1678,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 43,
+    "disclosureLeads": 46,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
