@@ -2,6 +2,70 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-04:India:SUPREMEENG",
+      "day": "2026-11-04",
+      "market": "India",
+      "symbol": "SUPREMEENG",
+      "company": "Supreme Engineering Ltd",
+      "buyers": 2,
+      "investors": [
+        "JAYESH DAMJI SONI",
+        "NEO APEX SHARE BROKING SERVICES LLP"
+      ],
+      "value": 18615000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 4.38,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-04T19:55:58.034324+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-04:India:MKJEWELS",
+      "day": "2026-11-04",
+      "market": "India",
+      "symbol": "MKJEWELS",
+      "company": "MK Sons Fine Jewels Ltd",
+      "buyers": 6,
+      "investors": [
+        "ADVENT GLOBAL FUND PCC- ADVENT GLOBAL FUND - CELL1",
+        "MANUJA GAUTAM SHROFF",
+        "SAPAN ANIL SHAH HUF",
+        "SATYANARAYAN J KABRA",
+        "SWING WEALTH MANAGEMENT PRIVATE LIMITED",
+        "VEERBHADRA SALES PRIVATE LIMITED"
+      ],
+      "value": 390413557.3,
+      "currency": "INR",
+      "disclosedAvgPrice": 166.2733,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-04T19:55:58.034324+00:00",
+      "firstBuyerCount": 6,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-04:India:AJMERA",
+      "day": "2026-11-04",
+      "market": "India",
+      "symbol": "AJMERA",
+      "company": "Ajmera Realty & Inf I Ltd",
+      "buyers": 2,
+      "investors": [
+        "CELLO PENS AND STATIONERY PRIVATE LIMITED",
+        "GOPANI JIGNESH GUNVANT"
+      ],
+      "value": 553466400.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 140.28,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-04T19:55:58.034324+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-03:India:SFCTECH",
       "day": "2026-11-03",
       "market": "India",
@@ -473,9 +537,18 @@
     "India:SFCTECH": {
       "2026-11-03": 426.1,
       "2026-11-04": 408.1
+    },
+    "India:AJMERA": {
+      "2026-11-04": 139.75
+    },
+    "India:MKJEWELS": {
+      "2026-11-04": 162.2
+    },
+    "India:SUPREMEENG": {
+      "2026-11-04": 4.38
     }
   },
-  "updatedAt": "2026-11-04T09:36:06.902534+00:00",
+  "updatedAt": "2026-11-04T19:55:58.034324+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -489,9 +562,12 @@
     "India:MOBIKWIK": "MOBIKWIK.NS",
     "India:RADIOWALLA": "RADIOWALLA.NS",
     "India:BLSPOLY": "BLSPOLY.NS",
-    "India:SFCTECH": "SFCTECH.NS"
+    "India:SFCTECH": "SFCTECH.NS",
+    "India:AJMERA": "AJMERA.NS",
+    "India:MKJEWELS": "MKJEWELS.NS",
+    "India:SUPREMEENG": "SUPREMEENG.NS"
   },
-  "quotesUpdatedAt": "2026-11-04T09:36:10.432561+00:00",
+  "quotesUpdatedAt": "2026-11-04T19:56:07.179201+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:LAMOSAIC",
