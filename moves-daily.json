@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T19:55:58.034324+00:00",
+  "updated": "2026-11-04T20:53:50.782816+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-04",
@@ -8771,10 +8771,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-04T19:55:56.982Z"
+      "asOf": "2026-11-04T20:53:49.015Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-04T19:55:56.233788+00:00",
+    "canadaDiscoveryUpdated": "2026-11-04T20:53:47.979895+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
