@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-04T20:18:44.651335+00:00",
+  "updated": "2026-11-04T22:30:36.542382+00:00",
   "day": "2026-11-04",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.21,
+      "lastPrice": 4.11,
       "lastPriceDate": "2026-11-04",
-      "priceChangePct": -21.89,
+      "priceChangePct": -23.75,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.06,
+      "lastPrice": 4.04,
       "lastPriceDate": "2026-11-04",
-      "priceChangePct": 1.25,
+      "priceChangePct": 0.75,
       "quoteStatus": "Available"
     },
     {
