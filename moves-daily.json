@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T20:53:50.782816+00:00",
+  "updated": "2026-11-05T01:36:08.204863+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-04",
@@ -1579,6 +1579,14 @@
       "canadaLeads": [
         {
           "id": "lead:2026-11-04:0",
+          "day": "2026-11-04",
+          "headline": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-04:1",
           "day": "2026-11-04",
           "headline": "Pan American Silver: Early Warning News Release - Business Wire",
           "source": "Business Wire",
@@ -5049,7 +5057,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-10-31:1",
+          "id": "lead:2026-10-31:2",
           "day": "2026-10-31",
           "headline": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Lelezard",
           "source": "Lelezard",
@@ -5057,7 +5065,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-10-31:2",
+          "id": "lead:2026-10-31:3",
           "day": "2026-10-31",
           "headline": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "source": "TradingView",
@@ -5065,7 +5073,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-10-31:3",
+          "id": "lead:2026-10-31:4",
           "day": "2026-10-31",
           "headline": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
           "source": "Kalkine Media",
@@ -7549,7 +7557,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-10-29:4",
+          "id": "lead:2026-10-29:5",
           "day": "2026-10-29",
           "headline": "Early Warning Press Release - Yahoo! Finance Canada",
           "source": "Yahoo! Finance Canada",
@@ -7557,7 +7565,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-10-29:5",
+          "id": "lead:2026-10-29:6",
           "day": "2026-10-29",
           "headline": "David Patterson Files Early Warning Report in Respect of Aurbis Resources Corp. - Yahoo Finance",
           "source": "Yahoo Finance",
@@ -8450,7 +8458,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-10-28:6",
+          "id": "lead:2026-10-28:7",
           "day": "2026-10-28",
           "headline": "HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC. - Yahoo! Finance Canada",
           "source": "Yahoo! Finance Canada",
@@ -8771,10 +8779,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-04T20:53:49.015Z"
+      "asOf": "2026-11-05T01:36:07.238Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-04T20:53:47.979895+00:00",
+    "canadaDiscoveryUpdated": "2026-11-05T01:36:06.442929+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

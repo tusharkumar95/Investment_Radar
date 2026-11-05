@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-04T20:53:47.979371+00:00",
+  "testedAt": "2026-11-05T01:36:06.442218+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -18,6 +18,12 @@
           "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
           "published": "Sat, 31 Oct 2026 01:26:05 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc?oc=5",
+          "published": "Wed, 04 Nov 2026 23:42:56 GMT",
+          "source": "The Globe and Mail"
         },
         {
           "title": "Laurentian Bank Completes Transactions with NBC and Fairstone Bank. - Laurentian Bank",
@@ -42,12 +48,6 @@
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
           "published": "Sat, 31 Oct 2026 01:25:00 GMT",
           "source": "Kalkine Media"
-        },
-        {
-          "title": "At C$1.12 a share, Pan American Silver (PAAS) adds to its Galleon Gold stake. - Stock Titan",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOME5OWkp3RzlmbkFMNUpKMkJ0NnhRN1NOSVRVYTNfMnYzeXEwYmZ6ZUNWNThTSmFkTF9zV2ZGNDIta2QxSFhua1JtSmx4bUVJSFcweDNYVWl4bGRGSVpTQ0JlZ0FJWkk5RjlBZEFmbGRUd1hkWWc5cDNEUUlxMGlEVGhFdW02WjMwdVh1bl9qMzdwcGFPTWl3SHduREhMLTRZVnhJaERoeTJZeHMwc1ljVHEyUFNUS29lZVlhLQ?oc=5",
-          "published": "Wed, 04 Nov 2026 15:39:00 GMT",
-          "source": "Stock Titan"
         }
       ]
     },
