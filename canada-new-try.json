@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-05T02:59:05.345354+00:00",
-  "day": "2026-11-04",
+  "updated": "2026-11-05T20:29:04.072973+00:00",
+  "day": "2026-11-05",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.11,
-      "lastPriceDate": "2026-11-04",
-      "priceChangePct": -23.75,
+      "lastPrice": 4.18,
+      "lastPriceDate": "2026-11-05",
+      "priceChangePct": -22.45,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.04,
-      "lastPriceDate": "2026-11-04",
-      "priceChangePct": 0.75,
+      "lastPrice": 3.81,
+      "lastPriceDate": "2026-11-05",
+      "priceChangePct": -4.99,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.17,
-      "lastPriceDate": "2026-11-04",
-      "priceChangePct": -7.54,
+      "lastPrice": 4.12,
+      "lastPriceDate": "2026-11-05",
+      "priceChangePct": -8.65,
       "quoteStatus": "Available"
     },
     {
@@ -622,7 +622,7 @@
         }
       ],
       "lastPrice": 0.075,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": -16.67,
       "quoteStatus": "Available"
     },
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -944,7 +944,7 @@
         "Lotus Creek Exploration Inc."
       ],
       "latestDisclosure": "2026-10-28",
-      "candidateArticles": 2,
+      "candidateArticles": 3,
       "status": "Verified transactions found"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 24,
+      "candidateArticles": 29,
       "status": "Verified transactions found"
     },
     {
@@ -1052,6 +1052,28 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Pan American Silver: Early Warning News Release    Business Wire "
+    },
+    {
+      "id": "lead:2ce9af25d61a5c5b93",
+      "title": "Nov 04, 2026, 12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the ",
+      "date": "2026-11-04",
+      "url": "https://www.newswire.ca/news-releases/nican-announces-closing-of-non-brokered-private-placement-for-gross-proceeds-of-4-050-000-859449453.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:22247773e87a45bb1e",
+      "title": "Nov 04, 2026, 03:27 ET \n                          Samsung Electronics Acquires 10.16% Stake in TCL CSOT, Deepening Strategic Alignment and Business Collaboration\n                         \n                         TCL Technology and Samsung Electronics Co., Ltd",
+      "date": "2026-11-04",
+      "url": "https://www.newswire.ca/news-releases/samsung-electronics-acquires-10-16-stake-in-tcl-csot-deepening-strategic-alignment-and-business-collaboration-864158727.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     },
     {
       "id": "lead:0b235fe67a70fe4178",
@@ -1241,6 +1263,17 @@
       "summary": ""
     },
     {
+      "id": "lead:17aa71a24c03aa0480",
+      "title": "HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC. - Yahoo! Finance Canada",
+      "date": "2026-10-28",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUTJTM0NDQ1NGREh0akxVTlFaazBCb1U1anJCRThkVG1SYmE2ZmdZTGZoLUxBS2o2Rk13TDlNVE5yeFBBa0h0R3RtMWtBRkNlSkhzUXZ6enlQUjVqb1Q1d1RETGxkR2gwX2NkRXZTcDk1aEx5WGw2OEc3SjlrdDZNbFlrejV0ZldEeW40",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC.    Yahoo! Finance Canada "
+    },
+    {
       "id": "lead:0878642d78fdee2085",
       "title": "Oct 27, 2026, 06:30 ET \n                        BCE announces partnership with La Caisse, which will acquire 49.9% stake in Bell wireless tower infrastructure company\n                       \n                       BCE Inc. (NYSE: BCE) TSX: BCE), Canada's large",
       "date": "2026-10-27",
@@ -1329,6 +1362,17 @@
       "summary": ""
     },
     {
+      "id": "lead:a7cbc28272299eb20f",
+      "title": "Labrador Gold Announces Extension of Non-Brokered Private Placement - The Manila Times",
+      "date": "2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQY2FsV1VvYl9LY3cycGJibXkzdTZnZDdvZ3ZyUGpjaWJ1b0R4MWFMa3o1UFhTeU1uaVdybDN2cDU3ZlZaZENQdk9iYWdBbjdBQWdSVWZiUm5RVU1sSU50MGtwdHE3Z0hRRFV1c3hmUHlvQVFkT3VkbjJuN1VyV3hXbmxpRjJVV3ZUSnhmZUNreHQ5eWhBcnlRWUpSSTNsdkFuVTFzZ1BSdU1sbUtwcVJ3ZjQwbFlDTWN2dzNmZmtNYl83ZkpTNmpGUHFzS0FHS3JYRnd6RUR2amXSAd4BQVVfeXFMTUVxMkY0VkFoSzFyQU5feFIwazhSZDdjYnpDdUw5Mk5BRHI5UFdtaTBwdlBLWm5hTjg0UmNVZnJXNnhDODk3bDB4aTkwZGlBMkM0RHg5cFh1TDdWcmlEbExkM2R4ZHhjaFoxX3gtdHFsYV9yOUJfZ3ZGblhRZlU1Wms2RGRHSWphWEZlcVAzSXJiMWJ3NkN5aGYtZi1raXZ2OUpEUnJaRjc3d0JkbGdra2UzRVNJaW1jbFR1SFZWbURCdDVwZ2ZicEFVbEFtRHBtQ3hZdlhfMW5sYkUxZVNR",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    The Manila Times "
+    },
+    {
       "id": "lead:2384e281518235229e",
       "title": "Matachewan and McChip take near-20% stake in Labrador Gold through private placement - The Globe and Mail",
       "date": "2026-10-21",
@@ -1338,6 +1382,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
+    },
+    {
+      "id": "lead:dc38915edb3f62d701",
+      "title": "Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director - The Manila Times",
+      "date": "2026-10-20",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQRHEycTNUZ0xrTFpKbjJyb3luOGJmNHRLRVp3U3Rfa0dOZnZiaTZ2dEVDSWYwN1BvY1hFbU0xeG9PZ3RtdVg3VWtQM3NiUkJxeFVNbTdaTGxvOXdCUDJhMmJSYW1TSzFYVDNueUFxYzBCLUhPYVZqUmpXQTVWTnozUkhqUTFDcGNWS19zRF9mYllOMW9Vek1TVXYwcFdPREtxV2NkX3FsT2lzdVhvVER4Tm92bFBmYW9RSmMxZWhUaEM4MlRnT1VxTXRJYzYzS2VIYzA4VTA3SUJFb2Iya3NOdTZZZGU3T2xiNkJpLVpfaVNNNkFPMWhHZ0hDN0Z6YzJCcS1aaHNTNkgtQ0tibnRnS2xqbzlyVF9ZWENZeHNraXI5WkVzTm9HdVh2M3pJRXlXRTY0V2tB0gG7AkFVX3lxTFA1RjZVenJJazk1d1BPSUFXM2JLLXMzOWlHTGVtdkp0XzA4WUVyU055TGJlYklLcWhrVnQ2SWhBSFBYdVN6SDFfOFZONTdjNFo5WS1RbzF5VDFtYUxxSzVLOEFnVUJhVjNpblVuN2dtdVRTM2dUME1Jc3VHaEFoXzQwcF9mcFJJckVBMlRFTDdVbUlQeTNiZ2hzSTBQSmdyTXliZVY5X2l0bmJILXZyU3gzWmFVWUVKa0lKMHhicndUcHZNS0IwXzNuWV9zcm5WUXVhRVRZR01SQ0VnTm5GVThQZjZGOV9xLXFPcjhtVlg4UXc3Q3VkWVB3OHAxMkpZcDFobGRrZGRxTjdzbjhSRDJvaTZISTd2UHBubEVCdW9sXzVfdno1emp5dzdoOGZmeEY5TXo4b3FRNEo4TQ",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director    The Manila Times "
     },
     {
       "id": "lead:a8628e7f256418b2d3",
@@ -1472,6 +1527,17 @@
       "summary": ""
     },
     {
+      "id": "lead:a7c9e87b2f13a9f689",
+      "title": "Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million - The Manila Times",
+      "date": "2026-10-13",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZS1qMnVkcGN1T3VDY3pIejVlTHRRcFNaM3VJU0ZFYm1mOHEtSE5VN2FaSGR1VFRvWWhkZDRvbFZZWDRTVlFacDRYZnVyWDM4OHhqZTBBOXBLZ1g2SU9KUE1jOHRicTdjN2VBYnJPX0lhMncxdENzaF8wMVd6MFROZ1ZKa2VjQ25PQ0s3ZXJaNjhXQmF0N3FOcDJQWWtfVTlRNGl6QkdYRVc0ZFdacy0yaTZkZERtV3k4VDhaWnhKNFNrRWl4cmFSd0tubkhyUzFnNnlRMjVJRnhEMlVlYmJGNXdVbUNkeXItR0FhMmJ30gHzAUFVX3lxTE44RzBhLUoxaHVvYWFLQWQ3dGNWazJPNF94UnZWWjI4UG80ZWdDUk5ZbWxUd2hqUXNOZE44UGpDQkJYaXk2TFgtY3phZHVlaXJKLVlUMk9heThRbk1CYkFCQklqamwxVlFPN1pEb3g1WElTRXhyT0w4V2xWZmZZVjMxWmxwanpWZi1DSUJCMEF1SlBPTU9TVzB5ekM3c09wNmN1V3lkNmZscG5yODZlclBaNjNXWFdndXFQUmpRMzdNT0RMV3g1ZmYycUlydUZVcFloTnVna0hrVE5XN2gxQmpWUlNQWmVnSWtzdTY5clR6cnFTQQ",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
+    },
+    {
       "id": "lead:67d30980284cf1d3d8",
       "title": "Oct 09, 2026, 09:06 ET \n                          Rock Tech Lithium Closes Previously Announced Private Placement at C$6 Million\n                         \n                         /NOT FOR DISTRIBUTION TO UNITED STATES NEWSWIRE SERVICES OR FOR DISSEMINATION IN",
       "date": "2026-10-09",
@@ -1516,23 +1582,23 @@
       "summary": ""
     },
     {
-      "id": "lead:2ce9af25d61a5c5b93",
-      "title": "12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the closing of its",
+      "id": "lead:951f4f53e984683b60",
+      "title": "13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to announce the ",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/nican-announces-closing-of-non-brokered-private-placement-for-gross-proceeds-of-4-050-000-859449453.html",
+      "url": "https://www.newswire.ca/news-releases/etruscus-closes-200-000-flow-through-private-placement-846297084.html",
       "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
+      "type": "Potential / incomplete — verify status",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
     },
     {
-      "id": "lead:22247773e87a45bb1e",
-      "title": "03:27 ET \n                          Samsung Electronics Acquires 10.16% Stake in TCL CSOT, Deepening Strategic Alignment and Business Collaboration\n                         \n                         TCL Technology and Samsung Electronics Co., Ltd. (Samsung Ele",
+      "id": "lead:65019d0a6bf890c11e",
+      "title": "09:35 ET \n                        Minsud Announces Private Placement of Units\n                       \n                       Minsud Resources Corp. (TSXV: MSR) (\"Minsud\" or the \"Company\") is pleased to announce that it intends to complete, subject to the accep",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/samsung-electronics-acquires-10-16-stake-in-tcl-csot-deepening-strategic-alignment-and-business-collaboration-864158727.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
+      "url": "https://www.newswire.ca/news-releases/minsud-announces-private-placement-of-units-825368005.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -1612,8 +1678,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 3,
-      "relevant": 2
+      "items": 5,
+      "relevant": 4
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -1625,7 +1691,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 22
+      "relevant": 24
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1667,7 +1733,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 45,
+    "disclosureLeads": 51,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
