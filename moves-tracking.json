@@ -2,6 +2,26 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-05:India:BCSSL",
+      "day": "2026-11-05",
+      "market": "India",
+      "symbol": "BCSSL",
+      "company": "Bombay Coated N Specl S L",
+      "buyers": 2,
+      "investors": [
+        "SHRENI SHARES PVT",
+        "SURESH BACHUBHAI SHAH"
+      ],
+      "value": 108589000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 93.265,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-05T20:09:36.545014+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-04:India:SUPREMEENG",
       "day": "2026-11-04",
       "market": "India",
@@ -453,7 +473,7 @@
       "2026-11-02": 647.8,
       "2026-11-03": 657.0,
       "2026-11-04": 660.65,
-      "2026-11-05": 675.0
+      "2026-11-05": 674.4
     },
     "India:INDOTECH": {
       "2026-10-26": 2573.3,
@@ -528,7 +548,7 @@
       "2026-11-02": 1727.8,
       "2026-11-03": 1722.3,
       "2026-11-04": 1689.9,
-      "2026-11-05": 1699.2
+      "2026-11-05": 1700.1
     },
     "India:MOBIKWIK": {
       "2026-11-02": 225.85,
@@ -544,12 +564,12 @@
     "India:BLSPOLY": {
       "2026-11-03": 268.8,
       "2026-11-04": 255.94,
-      "2026-11-05": 251.65
+      "2026-11-05": 250.2
     },
     "India:SFCTECH": {
       "2026-11-03": 426.1,
       "2026-11-04": 406.75,
-      "2026-11-05": 410.65
+      "2026-11-05": 411.95
     },
     "India:AJMERA": {
       "2026-11-04": 139.75,
@@ -562,9 +582,12 @@
     "India:SUPREMEENG": {
       "2026-11-04": 4.38,
       "2026-11-05": 4.3
+    },
+    "India:BCSSL": {
+      "2026-11-05": 94.81
     }
   },
-  "updatedAt": "2026-11-05T09:43:08.454655+00:00",
+  "updatedAt": "2026-11-05T20:09:36.545014+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -581,9 +604,10 @@
     "India:SFCTECH": "SFCTECH.NS",
     "India:AJMERA": "AJMERA.NS",
     "India:MKJEWELS": "MKJEWELS.NS",
-    "India:SUPREMEENG": "SUPREMEENG.NS"
+    "India:SUPREMEENG": "SUPREMEENG.NS",
+    "India:BCSSL": "BCSSL.NS"
   },
-  "quotesUpdatedAt": "2026-11-05T09:43:12.263349+00:00",
+  "quotesUpdatedAt": "2026-11-05T20:09:43.727470+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:LAMOSAIC",

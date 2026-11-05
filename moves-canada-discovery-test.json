@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-05T09:43:07.145658+00:00",
+  "testedAt": "2026-11-05T20:09:34.595161+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -10,7 +10,7 @@
         {
           "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:05 GMT",
+          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
           "source": "TradingView"
         },
         {
@@ -38,16 +38,16 @@
           "source": "Lelezard"
         },
         {
+          "title": "Early Warning Press Release - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
+          "published": "Thu, 05 Nov 2026 12:10:05 GMT",
+          "source": "TradingView"
+        },
+        {
           "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
           "published": "Sat, 31 Oct 2026 01:25:00 GMT",
           "source": "Kalkine Media"
-        },
-        {
-          "title": "At C$1.12 a share, Pan American Silver (PAAS) adds to its Galleon Gold stake. - Stock Titan",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOME5OWkp3RzlmbkFMNUpKMkJ0NnhRN1NOSVRVYTNfMnYzeXEwYmZ6ZUNWNThTSmFkTF9zV2ZGNDIta2QxSFhua1JtSmx4bUVJSFcweDNYVWl4bGRGSVpTQ0JlZ0FJWkk5RjlBZEFmbGRUd1hkWWc5cDNEUUlxMGlEVGhFdW02WjMwdVh1bl9qMzdwcGFPTWl3SHduREhMLTRZVnhJaERoeTJZeHMwc1ljVHEyUFNUS29lZVlhLQ?oc=5",
-          "published": "Wed, 04 Nov 2026 15:39:00 GMT",
-          "source": "Stock Titan"
         }
       ]
     },
@@ -72,14 +72,8 @@
         {
           "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:05 GMT",
+          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
           "source": "TradingView"
-        },
-        {
-          "title": "Gordon Mining Completes Acquisition of the Tungsten Tail Project, Sierra County, New Mexico - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNdi1aN1NnZ1R1cU5QWVREYUlfTWRLQWFYU0hpNUFKVE9naVVrTzZEdjU3SzMzdnVBTnA4Mmt1cGRHSkFQemRKczVqOHlSemE4djZIWUhWVGh0WVV5TlZQbDFybnUzb0ZWcG1yNk9ycTVGbVR6dEZmaVJ6MU5kQ3M5YkFjNjg5Vl9kLWktZ2ZQbi1uRXVzZU9oSUw5ZEpVN1BPRVJuVVJpeDBfS20wNDFGQXBSc05wdUxCam96R2VzSUNVdFpKZEZXWjZ5VEpvdTJ5RlVvY0E1SS1ZZ1dlSndZMkJreGlOdGFOeWpWVGNxd2YwUVNXZ2llWElHamNNQ0U?oc=5",
-          "published": "Mon, 02 Nov 2026 23:23:06 GMT",
-          "source": "The Globe and Mail"
         },
         {
           "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
@@ -92,6 +86,12 @@
           "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOTkdUbmE0ZXh3X3RBWHMyVkRQT1NpMkxmbkV0NnJqZHB5V1pWeG95LU9kX2p6UWhRb202LXVZMGd4eWVTVklhWnpFYVRHNUpHUDNWUUl0cFpodVZzSWhPWHpDRHJZbnlmSExhQi1NaktpRGxMYzNxQk9pa2V2ODlLMFVDUzh0RUNaNWNhWFZfZk94Q0ZwX2RPaVhUd0xiUGFHOVNsdTdEZGYtWTZtby1jaXo3X3RPRTdnUDJwQXNnUncwd3lTTGJ6cW1sbEdzWDVYRThDQm9VM0w3cGp0TW5xb29PY0hqRTh6T255a1k2X0l1ME1EbGVDaGNYcnVXZUx4Nmhick54NkxsYVNwcDRWR2x0QWRiWTdUTDJNZ0FZaXJoZw?oc=5",
           "published": "Tue, 03 Nov 2026 12:30:00 GMT",
           "source": "GlobeNewswire"
+        },
+        {
+          "title": "Gordon Mining Completes Acquisition of the Tungsten Tail Project, Sierra County, New Mexico - TMX Newsfile",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOODRISXRMQkhNYm03NFZZVnFhcFA3b2huclBTTnctZGpscldkaTlxT3ZsUzhPRWRmVVlOR1pvMi13QW1rVnVzLWhUbVBEUmxRajRVbXBBWGhPTEtlYU0tSURxcGEzaER6VVpCdDV4M0FpMXZWZ25EWUUydzFlejlSUk9YWDVJM09kRjR6Z3otME1ScGstaU5IQ0J2RU1QYlhXazlvdHl1T0Y0QmFOVEhfbnQ1NEhzd0FrNWNicHU4OE5XZWs2MnA5S2JTNEJIUQ?oc=5",
+          "published": "Mon, 02 Nov 2026 22:24:00 GMT",
+          "source": "TMX Newsfile"
         }
       ]
     }
