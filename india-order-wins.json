@@ -1,10 +1,88 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T18:15:59.830155+00:00",
+  "updated": "2026-11-05T10:44:25.356437+00:00",
   "market": "India",
   "thresholdCr": 100,
   "policy": "Only documented awards qualify as verified. Exchange RSS order metadata may carry a reported value but must be checked against the attachment. Media headlines and non-final bids/LOIs never trigger alerts. Refresh delay and feed availability apply.",
   "orders": [
+    {
+      "id": "order:58eaeb79272ec2f3741215",
+      "company": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores",
+      "symbol": null,
+      "title": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores - NewsX",
+      "summary": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores NewsX",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T09:20:07+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": 5400.0,
+      "valueMinCr": 5400.0,
+      "valueMaxCr": 5400.0,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeE9GS3NtUHFkR0RjZFg0dnZFSTNWTTNvR1ZBZVlNQWVpM2FxV05LMVBrY2ZCdWUtVHlRQXlhQ3B0bkUtUXRBX0pzMEdnRzdQbmVaa1BHelZzaVlla3RUNEF6dm56ZkxjLTBHZjVQazZUOFQzRk5GQVQySmV6OWFvYU55cWZXdndkODVzM1VhWDYweEpPRXFJSU1XOUVuV25xQWxsd3kxRzhCS2RSOFp5OXp1QXd0elBBR0hvOGxGYnFWRFpOWEJnZXYzdURoLWhabl8wMF84R3jSAd4BQVVfeXFMT19EeGxRbkNTQTVMVU12WTFXa2NuSm1vbU1lRHhMdHdqOVR1UmRMVGZ0S0Q2NGVWd1F3VHh6WnNSQ19KRFJaSGZzR2FKNkhvX2MyZTlfRjNHQVZiRUU4RFlWU0haVkQ1cTRRVHNiUUYxdzZVSVdfeTBZaVN6bFV5VG1JQmJKTm5wUWREUi1aNGVJWHRraUVfblEyZ3ViN05fMmVPdHQxS3BUMFhBME9BTV9lZURfak45NnZYV3pOUFVFel9JM2JFNUt6VjJadzRwdDZyZUszY3Z6MGJKWkZB",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:6045421347907952c490f8",
+      "company": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr",
+      "symbol": null,
+      "title": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr - NewsX",
+      "summary": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr NewsX",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T07:33:07+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": 6.89,
+      "valueMinCr": 6.89,
+      "valueMaxCr": 6.89,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQelJBQXdCTVB2SW85Z3hENlZmWjJDY0w1VEtpalBEbDB5dWpXakQwV1Ixd214UEdHSXAza1NPWTZSQmduZ3RodWFPMGJtTUZBNmJxTWRxNDNxTGZJN2YtckVyNmNaX3dCYVRoU0E4Qm56T0lKeUdPSHJPMzR4ZV8tRmxpcEd3RE5iRFlDUDdFVjhKQk5SdkNRdFg4RS14cDRNTzFzbGpjSll6VG9uaUYyV0hjMW5IZEHSAbcBQVVfeXFMUHpSQUF3Qk1QdklvOWd4RDZWZloyQ2NMNVRLaWpQRGwweXVqV2pEMFdSMXdteFBHR0lwM2tTT1k2UkJnbmd0aHVhTzBibU1GQTZicU1kcTQzcUxmSTdmLXJFcjZjWl93QmFUaFNBOEJuek9JSnlHT0hyTzM0eGVfLUZsaXBHd0ROYkRZQ1A3RVY4SkJOUnZDUXRYOEUteHA0TU8xc2xqY0pZelRvbmlGMldIYzFuSGRB",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:c652b7b51aae774b853e8f",
+      "company": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables",
+      "symbol": null,
+      "title": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables - Business Standard",
+      "summary": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables Business Standard",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T05:41:56+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeFlKWXY5NUx3ZHc0aVdacE8zY2JMOF9WVGJQLUljRG9qQ0E3VXlibDFzTWJuOVhxME9JM25tYVRJTjBpdDg5TGdGbVJ6SDA0SnZyVmRvMzFpQWZKQWxMVmRsZEo2ZUtxRWxDVGNIZ3dhYXFIUndwQ0RvOU1rYmEwVVg3M0gtOGNHaGdzV3FJVmFGNXR6V0p1b3BNWjB5UmdmVVVDRVVZYkdxNEQxcTlfTC1PMVdXUlpYT1hhZUFYQzVuVHVzVDFFaXd5MEZ4QzhKb3pobDFpT1TSAd4BQVVfeXFMTkw2OTlaOVFMazVjY05FTERRX1NOSDFRckduTUNyN0tCSUF1UEtMakE1dklnaHh4ajBSR1J0MDFfajFBQnJkelpPYldyT0JMUVR2dWJZMmM2UHpwU2gtQXBMRXQwT1pseGkwSkVHUXJuNzJWRXZNWVRlUndfSXFiWW5mWXlTbVBOVmpLS2dMenFZc3RmZm5LQnkwWk9Qb3BwRWVOSUJHZUNmcEVCMjFibXM4Wi1QbU4tWWNCUVhDYVNIT2gyZjJHRmlTU2IwQld3QjBaYWxQR3RmVW9YOC13",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
     {
       "id": "order:27e339697f0d922bcb291e",
       "company": "B L Kashyap & Sons Ltd. secures a new order worth ₹ 495.86 crore (excl. GST) from Signature Global (India) Lim",
@@ -29,7 +107,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:43a2c61095e68862809d16",
@@ -39,7 +118,7 @@
       "summary": "Affordable Robotic & Automation zooms as its arm bags order worth Rs 51.8 crore Investment Guru India",
       "customer": null,
       "contractType": "Not independently classified",
-      "announcedAt": "2026-11-04T08:36:58+00:00",
+      "announcedAt": "2026-11-04T08:33:52+00:00",
       "announcementDate": "2026-11-04",
       "valueCr": 51.8,
       "valueMinCr": 51.8,
@@ -244,7 +323,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:eedd01f4f17df93a6b641f",
+      "company": "Aptech Limited",
+      "symbol": null,
+      "title": "Aptech Limited",
+      "summary": "APTECH LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2010_WebXMLFile_20261105_120514734.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:e8a71c91bd89b9f3a43415",
@@ -271,7 +377,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e309affe734c57076a41c8",
@@ -297,7 +403,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e15916baa28f7a0683a728",
@@ -323,7 +430,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e1530c93ba31b2569b0b13",
@@ -349,7 +457,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:dfeb855ad74f70de197272",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25888_WebXMLFile_20261105_144330808.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:dd929c3abb5f86e2cbe3db",
@@ -375,7 +510,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d78ca19051297859e8211f",
@@ -428,7 +564,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:c2cc919c6898870cd1ed5b",
@@ -458,6 +595,58 @@
       "notSeenInLatestScan": true
     },
     {
+      "id": "order:c1cf15319e8cd6065a6c40",
+      "company": "Affordable Robotic & Automation Limited",
+      "symbol": null,
+      "title": "Affordable Robotic & Automation Limited",
+      "summary": "AFFORDABLE ROBOTIC & AUTOMATION LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_22451_WebXMLFile_20261105_105333034.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:bca9c7f41e4c3336a02091",
+      "company": "Anondita Medicare Limited",
+      "symbol": null,
+      "title": "Anondita Medicare Limited",
+      "summary": "ANONDITA MEDICARE LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25013_WebXMLFile_20261105_105143798.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
       "id": "order:bb26d08a3e66c63c73acc7",
       "company": "Eppeltone Engineers Limited",
       "symbol": null,
@@ -482,7 +671,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ba68c15829a14c9825ab34",
@@ -509,7 +698,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b6ecfef17b163e55fccb0c",
@@ -536,7 +725,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b5ab5f161eca76ab0a4b0a",
@@ -590,7 +779,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b428df20990fcc0d070399",
@@ -616,7 +805,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b3e20df80bedf51659ce73",
@@ -642,7 +832,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ae04b2ea6f5af909f8e4ff",
@@ -750,7 +941,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:99e2642fbc80049a6d0990",
@@ -777,7 +968,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:999df21cca1b2a5bc70bf9",
@@ -831,7 +1022,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9682f98068a1552951d162",
@@ -885,7 +1076,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8dcda8ee5d93150449d825",
@@ -911,7 +1102,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:8db6ccdb8c4135564c957c",
+      "company": "Aptech Limited",
+      "symbol": null,
+      "title": "Aptech Limited",
+      "summary": "APTECH LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2010_WebXMLFile_20261105_120353862.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:855adc6e0e4f411b9de510",
@@ -937,7 +1155,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:829282363c47d840d394c1",
@@ -963,7 +1182,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:80a2e800851fdc82bfdc69",
@@ -1043,7 +1263,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:76e4dc7bbb329decdd6f64",
+      "company": "Lokesh Machines Limited",
+      "symbol": null,
+      "title": "Lokesh Machines Limited",
+      "summary": "Lokesh Machines Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/LOKESHMACH_05112026152441_sdOrder_Intimation.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:76768a64a4eb65d4bca7dc",
@@ -1097,7 +1344,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:71a401784186bbaadb0c0b",
@@ -1124,7 +1371,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:63cc5717d4c21284cec07a",
@@ -1150,7 +1397,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:6314a286cd4d5abc62078d",
@@ -1176,7 +1424,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:6288e6327dd74803966b6a",
+      "company": "ABS Marine Services Limited",
+      "symbol": null,
+      "title": "ABS Marine Services Limited",
+      "summary": "ABS Marine Services Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/ABSMARINE_05112026142840_IntimationunderReg30.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:6233a09eb1d494690691cd",
@@ -1203,7 +1478,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:5f9feb7cc84aeba44c6692",
@@ -1230,7 +1505,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:5860cf5052e68ac37679db",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/STLNETWORKS_05112026144119_BSENSE.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:53c2c46113929d46642db9",
@@ -1258,6 +1559,32 @@
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
       "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:52ad471e1617c2a98b125d",
+      "company": "Lokesh Machines Limited",
+      "symbol": null,
+      "title": "Lokesh Machines Limited",
+      "summary": "LOKESH MACHINES LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2401_WebXMLFile_20261105_152950518.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:4fe8786ad0ad935ff2c47d",
@@ -1311,7 +1638,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:490e732db3d7c84c980394",
@@ -1338,7 +1665,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:424c0e83fb76f298ac3675",
@@ -1365,7 +1692,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:3a18d0388896c0313f145b",
@@ -1392,7 +1719,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:38b48f8787b5168b0c0a70",
@@ -1446,7 +1773,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2c38848713df72f818cd34",
@@ -1472,7 +1799,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:28475a0195d7de3e70444d",
@@ -1499,7 +1827,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:250695be14b29c3c642f7a",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25888_WebXMLFile_20261105_144255984.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:242abb271a75921615968a",
@@ -1553,7 +1907,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:23106cfea72dfcfb17b090",
+      "company": "Innomet Advanced Materials Limited",
+      "symbol": null,
+      "title": "Innomet Advanced Materials Limited",
+      "summary": "INNOMET ADVANCED MATERIALS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_23290_WebXMLFile_20261105_152945832.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:22b66d38a5f9dc79d11d6e",
@@ -1580,7 +1960,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2042ec99dd905721912c19",
@@ -1606,7 +1986,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1ff1422726e069ce71fac7",
@@ -1632,7 +2013,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1f589f2ae38faebecee971",
@@ -1659,7 +2041,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1b4b823cb6ff822bb11bce",
@@ -1713,7 +2095,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:12183f2741b3e51df2f6c2",
+      "company": "Innomet Advanced Materials Limited",
+      "symbol": null,
+      "title": "Innomet Advanced Materials Limited",
+      "summary": "Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ( Listing Regulations ), we wish to inform you that Innomet Advanced Materials Limited has received a purchase order from FEDERAL-MOGUL GOETZE (INDIA) LTD., an Indian entity, on November 5, 2026, at 09:59 A.M. (IST).The total value of the said ",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/INNOMET_05112026151615_Innomet_PO_Intimation__05_11_2026sd.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:1114a7124221b873f23206",
@@ -1739,7 +2147,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:0906708c8453391672dbe8",
@@ -1876,7 +2285,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:38b48f8787b5168b0c0a70",
@@ -1987,7 +2396,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:eedd01f4f17df93a6b641f",
+      "company": "Aptech Limited",
+      "symbol": null,
+      "title": "Aptech Limited",
+      "summary": "APTECH LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2010_WebXMLFile_20261105_120514734.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:e8a71c91bd89b9f3a43415",
@@ -2014,7 +2450,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e309affe734c57076a41c8",
@@ -2040,7 +2476,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e15916baa28f7a0683a728",
@@ -2066,7 +2503,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e1530c93ba31b2569b0b13",
@@ -2092,7 +2530,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:dfeb855ad74f70de197272",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25888_WebXMLFile_20261105_144330808.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:dd929c3abb5f86e2cbe3db",
@@ -2118,7 +2583,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d78ca19051297859e8211f",
@@ -2171,7 +2637,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:c2cc919c6898870cd1ed5b",
@@ -2201,6 +2668,58 @@
       "notSeenInLatestScan": true
     },
     {
+      "id": "order:c1cf15319e8cd6065a6c40",
+      "company": "Affordable Robotic & Automation Limited",
+      "symbol": null,
+      "title": "Affordable Robotic & Automation Limited",
+      "summary": "AFFORDABLE ROBOTIC & AUTOMATION LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_22451_WebXMLFile_20261105_105333034.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:bca9c7f41e4c3336a02091",
+      "company": "Anondita Medicare Limited",
+      "symbol": null,
+      "title": "Anondita Medicare Limited",
+      "summary": "ANONDITA MEDICARE LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25013_WebXMLFile_20261105_105143798.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
       "id": "order:bb26d08a3e66c63c73acc7",
       "company": "Eppeltone Engineers Limited",
       "symbol": null,
@@ -2225,7 +2744,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ba68c15829a14c9825ab34",
@@ -2252,7 +2771,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b6ecfef17b163e55fccb0c",
@@ -2279,7 +2798,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b5ab5f161eca76ab0a4b0a",
@@ -2333,7 +2852,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b428df20990fcc0d070399",
@@ -2359,7 +2878,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b3e20df80bedf51659ce73",
@@ -2385,7 +2905,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ae04b2ea6f5af909f8e4ff",
@@ -2493,7 +3014,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:99e2642fbc80049a6d0990",
@@ -2520,7 +3041,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:999df21cca1b2a5bc70bf9",
@@ -2574,7 +3095,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9682f98068a1552951d162",
@@ -2628,7 +3149,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8dcda8ee5d93150449d825",
@@ -2654,7 +3175,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:8db6ccdb8c4135564c957c",
+      "company": "Aptech Limited",
+      "symbol": null,
+      "title": "Aptech Limited",
+      "summary": "APTECH LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2010_WebXMLFile_20261105_120353862.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:855adc6e0e4f411b9de510",
@@ -2680,7 +3228,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:829282363c47d840d394c1",
@@ -2706,7 +3255,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:80a2e800851fdc82bfdc69",
@@ -2786,7 +3336,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:76e4dc7bbb329decdd6f64",
+      "company": "Lokesh Machines Limited",
+      "symbol": null,
+      "title": "Lokesh Machines Limited",
+      "summary": "Lokesh Machines Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/LOKESHMACH_05112026152441_sdOrder_Intimation.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:76768a64a4eb65d4bca7dc",
@@ -2840,7 +3417,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:71a401784186bbaadb0c0b",
@@ -2867,7 +3444,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:63cc5717d4c21284cec07a",
@@ -2893,7 +3470,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:6314a286cd4d5abc62078d",
@@ -2919,7 +3497,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:6288e6327dd74803966b6a",
+      "company": "ABS Marine Services Limited",
+      "symbol": null,
+      "title": "ABS Marine Services Limited",
+      "summary": "ABS Marine Services Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/ABSMARINE_05112026142840_IntimationunderReg30.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:6233a09eb1d494690691cd",
@@ -2946,7 +3551,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:5f9feb7cc84aeba44c6692",
@@ -2973,7 +3578,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:5860cf5052e68ac37679db",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/STLNETWORKS_05112026144119_BSENSE.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:53c2c46113929d46642db9",
@@ -3001,6 +3632,32 @@
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
       "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:52ad471e1617c2a98b125d",
+      "company": "Lokesh Machines Limited",
+      "symbol": null,
+      "title": "Lokesh Machines Limited",
+      "summary": "LOKESH MACHINES LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_2401_WebXMLFile_20261105_152950518.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:4fe8786ad0ad935ff2c47d",
@@ -3054,7 +3711,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:490e732db3d7c84c980394",
@@ -3081,7 +3738,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:424c0e83fb76f298ac3675",
@@ -3108,7 +3765,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:3a18d0388896c0313f145b",
@@ -3135,7 +3792,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:38b48f8787b5168b0c0a70",
@@ -3189,7 +3846,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2c38848713df72f818cd34",
@@ -3215,7 +3872,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:28475a0195d7de3e70444d",
@@ -3242,7 +3900,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:250695be14b29c3c642f7a",
+      "company": "STL Networks Limited",
+      "symbol": null,
+      "title": "STL Networks Limited",
+      "summary": "STL Networks Limited has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_25888_WebXMLFile_20261105_144255984.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:242abb271a75921615968a",
@@ -3296,7 +3980,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:23106cfea72dfcfb17b090",
+      "company": "Innomet Advanced Materials Limited",
+      "symbol": null,
+      "title": "Innomet Advanced Materials Limited",
+      "summary": "INNOMET ADVANCED MATERIALS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts (Sub-para 4-Para B)",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_23290_WebXMLFile_20261105_152945832.xml",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:22b66d38a5f9dc79d11d6e",
@@ -3323,7 +4033,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2042ec99dd905721912c19",
@@ -3349,7 +4059,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1ff1422726e069ce71fac7",
@@ -3375,7 +4086,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1f589f2ae38faebecee971",
@@ -3402,7 +4114,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1b4b823cb6ff822bb11bce",
@@ -3456,7 +4168,33 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-04T10:46:26.566924+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:12183f2741b3e51df2f6c2",
+      "company": "Innomet Advanced Materials Limited",
+      "symbol": null,
+      "title": "Innomet Advanced Materials Limited",
+      "summary": "Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ( Listing Regulations ), we wish to inform you that Innomet Advanced Materials Limited has received a purchase order from FEDERAL-MOGUL GOETZE (INDIA) LTD., an Indian entity, on November 5, 2026, at 09:59 A.M. (IST).The total value of the said ",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": null,
+      "announcementDate": null,
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "NSE corporate announcements RSS",
+      "sourceUrl": "https://nsearchives.nseindia.com/corporate/INNOMET_05112026151615_Innomet_PO_Intimation__05_11_2026sd.pdf",
+      "sourceClass": "official-exchange",
+      "verified": false,
+      "status": "Exchange order announcement — attachment needs review",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
     },
     {
       "id": "order:1114a7124221b873f23206",
@@ -3482,7 +4220,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:0906708c8453391672dbe8",
@@ -3514,6 +4253,84 @@
   ],
   "researchLeads": [
     {
+      "id": "order:58eaeb79272ec2f3741215",
+      "company": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores",
+      "symbol": null,
+      "title": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores - NewsX",
+      "summary": "Rajesh Power secures landmark Rs 1,629 Crores Mega Order from DGVCL; Order book soars to Rs 5,400 crores NewsX",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T09:20:07+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": 5400.0,
+      "valueMinCr": 5400.0,
+      "valueMaxCr": 5400.0,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeE9GS3NtUHFkR0RjZFg0dnZFSTNWTTNvR1ZBZVlNQWVpM2FxV05LMVBrY2ZCdWUtVHlRQXlhQ3B0bkUtUXRBX0pzMEdnRzdQbmVaa1BHelZzaVlla3RUNEF6dm56ZkxjLTBHZjVQazZUOFQzRk5GQVQySmV6OWFvYU55cWZXdndkODVzM1VhWDYweEpPRXFJSU1XOUVuV25xQWxsd3kxRzhCS2RSOFp5OXp1QXd0elBBR0hvOGxGYnFWRFpOWEJnZXYzdURoLWhabl8wMF84R3jSAd4BQVVfeXFMT19EeGxRbkNTQTVMVU12WTFXa2NuSm1vbU1lRHhMdHdqOVR1UmRMVGZ0S0Q2NGVWd1F3VHh6WnNSQ19KRFJaSGZzR2FKNkhvX2MyZTlfRjNHQVZiRUU4RFlWU0haVkQ1cTRRVHNiUUYxdzZVSVdfeTBZaVN6bFV5VG1JQmJKTm5wUWREUi1aNGVJWHRraUVfblEyZ3ViN05fMmVPdHQxS3BUMFhBME9BTV9lZURfak45NnZYV3pOUFVFel9JM2JFNUt6VjJadzRwdDZyZUszY3Z6MGJKWkZB",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:6045421347907952c490f8",
+      "company": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr",
+      "symbol": null,
+      "title": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr - NewsX",
+      "summary": "Supreme Power Equipment Limited Secures Transformer Order Worth Rs 6.89 Cr NewsX",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T07:33:07+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": 6.89,
+      "valueMinCr": 6.89,
+      "valueMaxCr": 6.89,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQelJBQXdCTVB2SW85Z3hENlZmWjJDY0w1VEtpalBEbDB5dWpXakQwV1Ixd214UEdHSXAza1NPWTZSQmduZ3RodWFPMGJtTUZBNmJxTWRxNDNxTGZJN2YtckVyNmNaX3dCYVRoU0E4Qm56T0lKeUdPSHJPMzR4ZV8tRmxpcEd3RE5iRFlDUDdFVjhKQk5SdkNRdFg4RS14cDRNTzFzbGpjSll6VG9uaUYyV0hjMW5IZEHSAbcBQVVfeXFMUHpSQUF3Qk1QdklvOWd4RDZWZloyQ2NMNVRLaWpQRGwweXVqV2pEMFdSMXdteFBHR0lwM2tTT1k2UkJnbmd0aHVhTzBibU1GQTZicU1kcTQzcUxmSTdmLXJFcjZjWl93QmFUaFNBOEJuek9JSnlHT0hyTzM0eGVfLUZsaXBHd0ROYkRZQ1A3RVY4SkJOUnZDUXRYOEUteHA0TU8xc2xqY0pZelRvbmlGMldIYzFuSGRB",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
+      "id": "order:c652b7b51aae774b853e8f",
+      "company": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables",
+      "symbol": null,
+      "title": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables - Business Standard",
+      "summary": "Rajesh Power bags ₹1,628.74-crore order from DGVCL for underground cables Business Standard",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-05T05:41:56+00:00",
+      "announcementDate": "2026-11-05",
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeFlKWXY5NUx3ZHc0aVdacE8zY2JMOF9WVGJQLUljRG9qQ0E3VXlibDFzTWJuOVhxME9JM25tYVRJTjBpdDg5TGdGbVJ6SDA0SnZyVmRvMzFpQWZKQWxMVmRsZEo2ZUtxRWxDVGNIZ3dhYXFIUndwQ0RvOU1rYmEwVVg3M0gtOGNHaGdzV3FJVmFGNXR6V0p1b3BNWjB5UmdmVVVDRVVZYkdxNEQxcTlfTC1PMVdXUlpYT1hhZUFYQzVuVHVzVDFFaXd5MEZ4QzhKb3pobDFpT1TSAd4BQVVfeXFMTkw2OTlaOVFMazVjY05FTERRX1NOSDFRckduTUNyN0tCSUF1UEtMakE1dklnaHh4ajBSR1J0MDFfajFBQnJkelpPYldyT0JMUVR2dWJZMmM2UHpwU2gtQXBMRXQwT1pseGkwSkVHUXJuNzJWRXZNWVRlUndfSXFiWW5mWXlTbVBOVmpLS2dMenFZc3RmZm5LQnkwWk9Qb3BwRWVOSUJHZUNmcEVCMjFibXM4Wi1QbU4tWWNCUVhDYVNIT2gyZjJHRmlTU2IwQld3QjBaYWxQR3RmVW9YOC13",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-05T10:44:25.356437+00:00"
+    },
+    {
       "id": "order:27e339697f0d922bcb291e",
       "company": "B L Kashyap & Sons Ltd. secures a new order worth ₹ 495.86 crore (excl. GST) from Signature Global (India) Lim",
       "symbol": null,
@@ -3537,7 +4354,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00"
+      "firstSeenAt": "2026-11-04T18:15:59.830155+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:43a2c61095e68862809d16",
@@ -3547,7 +4365,7 @@
       "summary": "Affordable Robotic & Automation zooms as its arm bags order worth Rs 51.8 crore Investment Guru India",
       "customer": null,
       "contractType": "Not independently classified",
-      "announcedAt": "2026-11-04T08:36:58+00:00",
+      "announcedAt": "2026-11-04T08:33:52+00:00",
       "announcementDate": "2026-11-04",
       "valueCr": 51.8,
       "valueMinCr": 51.8,
@@ -3680,21 +4498,21 @@
       "name": "NSE corporate announcements RSS",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 2933,
-      "orderMentions": 41
+      "items": 1367,
+      "orderMentions": 12
     },
     {
       "name": "NSE announcements alternate",
       "url": "https://archives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 2933,
-      "orderMentions": 41
+      "items": 1367,
+      "orderMentions": 12
     },
     {
       "name": "BSE corporate announcements RSS",
       "url": "https://www.bseindia.com/data/xml/announcements.xml",
       "ok": true,
-      "items": 0,
+      "items": 8412,
       "orderMentions": 0
     },
     {
@@ -3708,26 +4526,26 @@
       "name": "News search: contract awards",
       "url": "https://news.google.com/rss/search?q=%28%22contract+awarded%22+OR+%22letter+of+award%22+OR+%22order+worth%22%29+BSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 9,
-      "orderMentions": 3
+      "items": 13,
+      "orderMentions": 6
     },
     {
       "name": "News search: company filings",
       "url": "https://news.google.com/rss/search?q=%22Bagging%2FReceiving+of+orders%2Fcontracts%22+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 2,
+      "items": 1,
       "orderMentions": 1
     }
   ],
   "status": {
-    "orders": 66,
+    "orders": 81,
     "verified": 2,
-    "exchangeNotices": 58,
-    "researchLeads": 6,
+    "exchangeNotices": 70,
+    "researchLeads": 9,
     "significantAlerts": 5,
     "sourcesAvailable": 6,
     "sourcesChecked": 6,
-    "latestAnnouncementDate": "2026-11-04"
+    "latestAnnouncementDate": "2026-11-05"
   },
   "sources": {
     "NSE": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",

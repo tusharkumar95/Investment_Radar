@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T18:15:59.735571+00:00",
+  "updated": "2026-11-05T10:44:25.254271+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-03",
-    "trades": 553,
-    "investors": 332
+    "latest": "2026-11-04",
+    "trades": 592,
+    "investors": 354
   },
   "featured": [
     {
@@ -1671,18 +1671,99 @@
       "id": "investor:14c9b58fbd296aff",
       "name": "HRTI PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 10,
-      "observedBuyDays": 10,
-      "observedSellDays": 10,
-      "buyValueCr": 527.88,
-      "sellValueCr": 421.44,
-      "netDisclosedValueCr": 106.44,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 9,
+      "observedTransactions": 15,
+      "observedBuyDays": 15,
+      "observedSellDays": 15,
+      "buyValueCr": 612.98,
+      "sellValueCr": 498.82,
+      "netDisclosedValueCr": 114.16,
+      "latestDisclosure": "2026-11-04",
+      "uniqueCompanies": 13,
       "repeatBuyCompanies": [
+        "RATNAVEER",
         "PCJEWELLER"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-04",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "TFCILTD",
+          "company": "Tourism Finance Corp",
+          "buyQty": 1278630,
+          "sellQty": 2354483,
+          "buyValueINR": 202522205.7,
+          "sellValueINR": 373326824.48,
+          "netShares": -1075853,
+          "netValueINR": -170804618.78,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "59a17e9767cfcd2e19"
+        },
+        {
+          "date": "2026-11-04",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "TECHNOCRAF",
+          "company": "Technocraft Ventures Ltd",
+          "buyQty": 403190,
+          "sellQty": 207726,
+          "buyValueINR": 218698319.8,
+          "sellValueINR": 111112637.4,
+          "netShares": 195464,
+          "netValueINR": 107585682.4,
+          "avgBuyPrice": 542.42,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "c92294b6a7702d3900"
+        },
+        {
+          "date": "2026-11-04",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "SHANTIGOLD",
+          "company": "Shanti Gold Internation L",
+          "buyQty": 404375,
+          "sellQty": 311645,
+          "buyValueINR": 107365606.25,
+          "sellValueINR": 83097022.8,
+          "netShares": 92730,
+          "netValueINR": 24268583.45,
+          "avgBuyPrice": 265.51,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "b77450bcc8df3270b9"
+        },
+        {
+          "date": "2026-11-04",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "RATNAVEER",
+          "company": "Ratnaveer Precision Eng L",
+          "buyQty": 632912,
+          "sellQty": 141056,
+          "buyValueINR": 241354662.08,
+          "sellValueINR": 53877749.76,
+          "netShares": 491856,
+          "netValueINR": 187476912.32,
+          "avgBuyPrice": 381.34,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "f3218de52411fed5ef"
+        },
+        {
+          "date": "2026-11-04",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "PASHUPATI",
+          "company": "Pashupati Cotspin Limited",
+          "buyQty": 574356,
+          "sellQty": 1001598,
+          "buyValueINR": 81035888.04,
+          "sellValueINR": 152403151.68,
+          "netShares": -427242,
+          "netValueINR": -71367263.64,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "f9f27e917bde779e8b"
+        },
         {
           "date": "2026-11-02",
           "name": "HRTI PRIVATE LIMITED",
@@ -1864,6 +1945,15 @@
           "sellDays": 1
         },
         {
+          "symbol": "RATNAVEER",
+          "company": "Ratnaveer Precision Eng L",
+          "buyValueCr": 47.51,
+          "sellValueCr": 16.84,
+          "netShares": 801003,
+          "buyDays": 2,
+          "sellDays": 2
+        },
+        {
           "symbol": "CARTRADE",
           "company": "Cartrade Tech Limited",
           "buyValueCr": 44.84,
@@ -1882,11 +1972,20 @@
           "sellDays": 1
         },
         {
-          "symbol": "RATNAVEER",
-          "company": "Ratnaveer Precision Eng L",
-          "buyValueCr": 23.37,
-          "sellValueCr": 11.45,
-          "netShares": 309147,
+          "symbol": "TECHNOCRAF",
+          "company": "Technocraft Ventures Ltd",
+          "buyValueCr": 21.87,
+          "sellValueCr": 11.11,
+          "netShares": 195464,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "TFCILTD",
+          "company": "Tourism Finance Corp",
+          "buyValueCr": 20.25,
+          "sellValueCr": 37.33,
+          "netShares": -1075853,
           "buyDays": 1,
           "sellDays": 1
         },
@@ -1896,6 +1995,24 @@
           "buyValueCr": 13.5,
           "sellValueCr": 10.5,
           "netShares": 133281,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "SHANTIGOLD",
+          "company": "Shanti Gold Internation L",
+          "buyValueCr": 10.74,
+          "sellValueCr": 8.31,
+          "netShares": 92730,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "PASHUPATI",
+          "company": "Pashupati Cotspin Limited",
+          "buyValueCr": 8.1,
+          "sellValueCr": 15.24,
+          "netShares": -427242,
           "buyDays": 1,
           "sellDays": 1
         },
@@ -2215,6 +2332,72 @@
         "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:e6150673b2dbce02",
+      "name": "CELLO PENS AND STATIONERY PRIVATE LIMITED",
+      "type": "Named investor / company",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 70.5,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 70.5,
+      "latestDisclosure": "2026-11-04",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-04",
+          "name": "CELLO PENS AND STATIONERY PRIVATE LIMITED",
+          "symbol": "AJMERA",
+          "company": "Ajmera Realty & Inf I Ltd",
+          "buyQty": 2500000,
+          "sellQty": 0,
+          "buyValueINR": 352500000.0,
+          "sellValueINR": 0,
+          "netShares": 2500000,
+          "netValueINR": 352500000.0,
+          "avgBuyPrice": 141.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "aa57edded79d18205d"
+        },
+        {
+          "date": "2026-11-04",
+          "name": "CELLO PENS AND STATIONERY PRIVATE LIMITED",
+          "symbol": "AJMERA",
+          "company": "Ajmera Realty & Inf I Ltd",
+          "buyQty": 2500000,
+          "sellQty": 0,
+          "buyValueINR": 352500000.0,
+          "sellValueINR": 0,
+          "netShares": 2500000,
+          "netValueINR": 352500000.0,
+          "avgBuyPrice": 141.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "1006906258787603e9"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "AJMERA",
+          "company": "Ajmera Realty & Inf I Ltd",
+          "buyValueCr": 70.5,
+          "sellValueCr": 0.0,
+          "netShares": 5000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -4523,6 +4706,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:27c1a52f3b4c2962",
+      "name": "GOPANI JIGNESH GUNVANT",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 20.1,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 20.1,
+      "latestDisclosure": "2026-11-04",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-04",
+          "name": "GOPANI JIGNESH GUNVANT",
+          "symbol": "AJMERA",
+          "company": "Ajmera Realty & Inf I Ltd",
+          "buyQty": 1440000,
+          "sellQty": 0,
+          "buyValueINR": 200966400.0,
+          "sellValueINR": 0,
+          "netShares": 1440000,
+          "netValueINR": 200966400.0,
+          "avgBuyPrice": 139.56,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "c3f80d8af51fbcfb57"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "AJMERA",
+          "company": "Ajmera Realty & Inf I Ltd",
+          "buyValueCr": 20.1,
+          "sellValueCr": 0.0,
+          "netShares": 1440000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:c72e7b5125b91c88",
       "name": "SANJAY POPATLAL JAIN",
       "type": "Named investor / company",
@@ -4776,13 +5009,13 @@
       "id": "investor:54ee6370ce8397d3",
       "name": "PROGNOSIS SECURITIES PVT. LTD",
       "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 15,
+      "observedTransactions": 16,
       "observedBuyDays": 13,
-      "observedSellDays": 9,
+      "observedSellDays": 10,
       "buyValueCr": 41.77,
-      "sellValueCr": 28.39,
-      "netDisclosedValueCr": 13.38,
-      "latestDisclosure": "2026-11-03",
+      "sellValueCr": 29.16,
+      "netDisclosedValueCr": 12.61,
+      "latestDisclosure": "2026-11-04",
       "uniqueCompanies": 8,
       "repeatBuyCompanies": [
         "MOMSBELIEF",
@@ -4790,6 +5023,22 @@
         "MARSONS"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-04",
+          "name": "PROGNOSIS SECURITIES PVT. LTD",
+          "symbol": "FASCINATE",
+          "company": "Fascinate Textiles Ltd",
+          "buyQty": 0,
+          "sellQty": 72800,
+          "buyValueINR": 0,
+          "sellValueINR": 7713160.0,
+          "netShares": -72800,
+          "netValueINR": -7713160.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "95ac305862ca55e35e"
+        },
         {
           "date": "2026-11-03",
           "name": "PROGNOSIS SECURITIES PVT. LTD",
@@ -5090,10 +5339,10 @@
           "symbol": "FASCINATE",
           "company": "Fascinate Textiles Ltd",
           "buyValueCr": 0.45,
-          "sellValueCr": 1.11,
-          "netShares": -59200,
+          "sellValueCr": 1.88,
+          "netShares": -132000,
           "buyDays": 1,
-          "sellDays": 1
+          "sellDays": 2
         },
         {
           "symbol": "VNL",
@@ -5158,6 +5407,56 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:432c8fb7c47e7d67",
+      "name": "SAPAN ANIL SHAH HUF",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 1,
+      "buyValueCr": 12.2,
+      "sellValueCr": 0.22,
+      "netDisclosedValueCr": 11.98,
+      "latestDisclosure": "2026-11-04",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-04",
+          "name": "SAPAN ANIL SHAH HUF",
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyQty": 752461,
+          "sellQty": 13865,
+          "buyValueINR": 122034124.98,
+          "sellValueINR": 2247516.5,
+          "netShares": 738596,
+          "netValueINR": 119786608.48,
+          "avgBuyPrice": 162.18,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "de1ecc6f2b4379501a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyValueCr": 12.2,
+          "sellValueCr": 0.22,
+          "netShares": 738596,
+          "buyDays": 1,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -5301,181 +5600,6 @@
           "buyValueCr": 10.12,
           "sellValueCr": 0.0,
           "netShares": 618343,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:b1cc0340e233b33e",
-      "name": "HARA GLOBAL CAPITAL MASTER FUND I LTD",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 9.84,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 9.84,
-      "latestDisclosure": "2026-10-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-06",
-          "name": "HARA GLOBAL CAPITAL MASTER FUND I LTD",
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyQty": 431665,
-          "sellQty": 0,
-          "buyValueINR": 98359186.9,
-          "sellValueINR": 0,
-          "netShares": 431665,
-          "netValueINR": 98359186.9,
-          "avgBuyPrice": 227.86,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0beada701fa1cbbf"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyValueCr": 9.84,
-          "sellValueCr": 0.0,
-          "netShares": 431665,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:99a6f7c496b7a6db",
-      "name": "YASH HITESH PATEL",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 1,
-      "buyValueCr": 9.15,
-      "sellValueCr": 0.09,
-      "netDisclosedValueCr": 9.06,
-      "latestDisclosure": "2026-10-22",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-22",
-          "name": "YASH HITESH PATEL",
-          "symbol": "RAVITA",
-          "company": "Ravita Engineering Ser L",
-          "buyQty": 529200,
-          "sellQty": 0,
-          "buyValueINR": 59270400.0,
-          "sellValueINR": 0,
-          "netShares": 529200,
-          "netValueINR": 59270400.0,
-          "avgBuyPrice": 112.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "344805c2490820ab46"
-        },
-        {
-          "date": "2026-10-21",
-          "name": "YASH HITESH PATEL",
-          "symbol": "VIJAYPD",
-          "company": "Vijaypd Ceutical Limited",
-          "buyQty": 390000,
-          "sellQty": 10000,
-          "buyValueINR": 32214000.0,
-          "sellValueINR": 851900.0,
-          "netShares": 380000,
-          "netValueINR": 31362100.0,
-          "avgBuyPrice": 82.6,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "53b8b1a97bf6dcc742"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RAVITA",
-          "company": "Ravita Engineering Ser L",
-          "buyValueCr": 5.93,
-          "sellValueCr": 0.0,
-          "netShares": 529200,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "VIJAYPD",
-          "company": "Vijaypd Ceutical Limited",
-          "buyValueCr": 3.22,
-          "sellValueCr": 0.09,
-          "netShares": 380000,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:efb2fd4c6c0a60af",
-      "name": "AMIT ASHOK THAWANI",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 8.55,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 8.55,
-      "latestDisclosure": "2026-10-16",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-16",
-          "name": "AMIT ASHOK THAWANI",
-          "symbol": "ONWARDTEC",
-          "company": "Onward Technologies Ltd",
-          "buyQty": 200000,
-          "sellQty": 0,
-          "buyValueINR": 85480000.0,
-          "sellValueINR": 0,
-          "netShares": 200000,
-          "netValueINR": 85480000.0,
-          "avgBuyPrice": 427.4,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0a9c1359417b2f37c3"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "ONWARDTEC",
-          "company": "Onward Technologies Ltd",
-          "buyValueCr": 8.55,
-          "sellValueCr": 0.0,
-          "netShares": 200000,
           "buyDays": 1,
           "sellDays": 0
         }
