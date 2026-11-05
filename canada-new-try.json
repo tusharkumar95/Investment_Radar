@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-04T22:30:36.542382+00:00",
+  "updated": "2026-11-05T02:59:05.345354+00:00",
   "day": "2026-11-04",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 1.12,
-      "lastPriceDate": "2026-11-03",
+      "lastPriceDate": "2026-11-04",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 25,
+      "candidateArticles": 24,
       "status": "Verified transactions found"
     },
     {
@@ -1516,17 +1516,6 @@
       "summary": ""
     },
     {
-      "id": "lead:299c76aad0d3f968cd",
-      "title": "Sep 30, 2026, 07:55 ET \n                          ETRUSCUS INSIDER PARTICIPATION IN 1ST TRANCHE OF PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE:ERR) (the \"Company\" or \"Etruscus\") ann",
-      "date": "2026-09-30",
-      "url": "https://www.newswire.ca/news-releases/etruscus-insider-participation-in-1st-tranche-of-private-placement-803309133.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:2ce9af25d61a5c5b93",
       "title": "12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the closing of its",
       "date": null,
@@ -1593,7 +1582,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 5,
+      "items": 6,
       "relevant": 1
     },
     {
@@ -1636,7 +1625,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 23
+      "relevant": 22
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1678,7 +1667,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 46,
+    "disclosureLeads": 45,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,

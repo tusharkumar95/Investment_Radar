@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T22:30:28.941685+00:00",
+  "updated": "2026-11-05T02:58:57.718674+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -477,17 +477,6 @@
       "summary": ""
     },
     {
-      "id": "lead:299c76aad0d3f968cd",
-      "title": "Sep 30, 2026, 07:55 ET \n                          ETRUSCUS INSIDER PARTICIPATION IN 1ST TRANCHE OF PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE:ERR) (the \"Company\" or \"Etruscus\") ann",
-      "date": "2026-09-30",
-      "url": "https://www.newswire.ca/news-releases/etruscus-insider-participation-in-1st-tranche-of-private-placement-803309133.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:2ce9af25d61a5c5b93",
       "title": "12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the closing of its",
       "date": null,
@@ -554,7 +543,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 5,
+      "items": 6,
       "relevant": 1
     },
     {
@@ -597,7 +586,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 23
+      "relevant": 22
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -618,9 +607,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 46,
+    "leadCount": 45,
     "usFilingCount": 0,
-    "needsReview": 46
+    "needsReview": 45
   },
   "officialSources": [
     {
