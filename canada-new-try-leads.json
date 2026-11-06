@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T19:51:56.312327+00:00",
+  "updated": "2026-11-06T21:59:59.680867+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -24,6 +24,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:dd19c7861dc3cb15d9",
+      "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+      "date": "2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd.    The Globe and Mail "
     },
     {
       "id": "lead:49074401ff9ca1b1b1",
@@ -585,8 +596,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 3
+      "items": 8,
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -640,7 +651,7 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 5
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -673,9 +684,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 51,
+    "leadCount": 52,
     "usFilingCount": 0,
-    "needsReview": 51
+    "needsReview": 52
   },
   "officialSources": [
     {

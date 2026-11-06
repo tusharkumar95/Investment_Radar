@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-06T19:52:04.930992+00:00",
+  "updated": "2026-11-06T22:00:17.898212+00:00",
   "day": "2026-11-06",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.46,
+      "lastPrice": 4.41,
       "lastPriceDate": "2026-11-06",
-      "priceChangePct": -17.25,
+      "priceChangePct": -18.18,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.92,
+      "lastPrice": 3.94,
       "lastPriceDate": "2026-11-06",
-      "priceChangePct": -2.24,
+      "priceChangePct": -1.75,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.34,
+      "lastPrice": 4.31,
       "lastPriceDate": "2026-11-06",
-      "priceChangePct": -3.77,
+      "priceChangePct": -4.43,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 29,
+      "candidateArticles": 30,
       "status": "Verified transactions found"
     },
     {
@@ -1063,6 +1063,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:dd19c7861dc3cb15d9",
+      "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+      "date": "2026-11-04",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd.    The Globe and Mail "
     },
     {
       "id": "lead:49074401ff9ca1b1b1",
@@ -1624,8 +1635,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 3
+      "items": 8,
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1679,7 +1690,7 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 5
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -1733,7 +1744,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 51,
+    "disclosureLeads": 52,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
