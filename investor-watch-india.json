@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-05T18:19:36.678288+00:00",
+  "updated": "2026-11-06T10:43:10.882449+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-04",
-    "trades": 592,
-    "investors": 354
+    "latest": "2026-11-05",
+    "trades": 615,
+    "investors": 369
   },
   "featured": [
     {
@@ -2169,6 +2169,74 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:2ed9b965626fd706",
+      "name": "MONET SECURITIES PRIVATE LTD",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 91.68,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 91.68,
+      "latestDisclosure": "2026-11-05",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [
+        "RBA"
+      ],
+      "tradeRecords": [
+        {
+          "date": "2026-11-05",
+          "name": "MONET SECURITIES PRIVATE LTD",
+          "symbol": "RBA",
+          "company": "Restaurant Brand Asia Ltd",
+          "buyQty": 5985828,
+          "sellQty": 0,
+          "buyValueINR": 567576210.96,
+          "sellValueINR": 0,
+          "netShares": 5985828,
+          "netValueINR": 567576210.96,
+          "avgBuyPrice": 94.82,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "794d931b6aac00fb6e"
+        },
+        {
+          "date": "2026-11-03",
+          "name": "MONET SECURITIES PRIVATE LTD",
+          "symbol": "RBA",
+          "company": "Restaurant Brand Asia Ltd",
+          "buyQty": 4014172,
+          "sellQty": 0,
+          "buyValueINR": 349192822.28,
+          "sellValueINR": 0,
+          "netShares": 4014172,
+          "netValueINR": 349192822.28,
+          "avgBuyPrice": 86.99,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "f468f083d03139a89c"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "RBA",
+          "company": "Restaurant Brand Asia Ltd",
+          "buyValueCr": 91.68,
+          "sellValueCr": 0.0,
+          "netShares": 10000000,
+          "buyDays": 2,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": true,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:6692c509cb979f45",
       "name": "SETU SECURITIES PVT LTD",
       "type": "Financial institution (may intermediate trades)",
@@ -3807,56 +3875,6 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:2ed9b965626fd706",
-      "name": "MONET SECURITIES PRIVATE LTD",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 34.92,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 34.92,
-      "latestDisclosure": "2026-11-03",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-03",
-          "name": "MONET SECURITIES PRIVATE LTD",
-          "symbol": "RBA",
-          "company": "Restaurant Brand Asia Ltd",
-          "buyQty": 4014172,
-          "sellQty": 0,
-          "buyValueINR": 349192822.28,
-          "sellValueINR": 0,
-          "netShares": 4014172,
-          "netValueINR": 349192822.28,
-          "avgBuyPrice": 86.99,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "f468f083d03139a89c"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RBA",
-          "company": "Restaurant Brand Asia Ltd",
-          "buyValueCr": 34.92,
-          "sellValueCr": 0.0,
-          "netShares": 4014172,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:2a19f3b3759326ca",
       "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -4456,6 +4474,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:a46c54e621792130",
+      "name": "ARTHKUMBH VENTURES LLP",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 1,
+      "buyValueCr": 27.3,
+      "sellValueCr": 0.01,
+      "netDisclosedValueCr": 27.29,
+      "latestDisclosure": "2026-11-05",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-05",
+          "name": "ARTHKUMBH VENTURES LLP",
+          "symbol": "AGIIL",
+          "company": "Agi Infra Limited",
+          "buyQty": 1000000,
+          "sellQty": 252,
+          "buyValueINR": 273000000.0,
+          "sellValueINR": 67344.48,
+          "netShares": 999748,
+          "netValueINR": 272932655.52,
+          "avgBuyPrice": 273.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "94f80e5c7925056869"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "AGIIL",
+          "company": "Agi Infra Limited",
+          "buyValueCr": 27.3,
+          "sellValueCr": 0.01,
+          "netShares": 999748,
+          "buyDays": 1,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:84c482750e79b3bb",
       "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
@@ -4693,6 +4761,56 @@
           "buyValueCr": 24.76,
           "sellValueCr": 0.0,
           "netShares": 1010948,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:9e1d871f8c0631cb",
+      "name": "RAVI AMIT JALAN",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 20.6,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 20.6,
+      "latestDisclosure": "2026-11-05",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-05",
+          "name": "RAVI AMIT JALAN",
+          "symbol": "AEROPLANE",
+          "company": "Amir Chand Jag Kum (E) L",
+          "buyQty": 850000,
+          "sellQty": 0,
+          "buyValueINR": 206023000.0,
+          "sellValueINR": 0,
+          "netShares": 850000,
+          "netValueINR": 206023000.0,
+          "avgBuyPrice": 242.38,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "af8f831c1484a6d5aa"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "AEROPLANE",
+          "company": "Amir Chand Jag Kum (E) L",
+          "buyValueCr": 20.6,
+          "sellValueCr": 0.0,
+          "netShares": 850000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5000,6 +5118,81 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:cf8d187861edc5ec",
+      "name": "SHRENI SHARES PVT",
+      "type": "Named investor / company",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 1,
+      "buyValueCr": 14.17,
+      "sellValueCr": 0.86,
+      "netDisclosedValueCr": 13.31,
+      "latestDisclosure": "2026-11-05",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-05",
+          "name": "SHRENI SHARES PVT",
+          "symbol": "MODIS",
+          "company": "Modis Navnirman Ltd",
+          "buyQty": 152592,
+          "sellQty": 20080,
+          "buyValueINR": 64991984.64,
+          "sellValueINR": 8615926.4,
+          "netShares": 132512,
+          "netValueINR": 56376058.24,
+          "avgBuyPrice": 425.92,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "bf62f7d027d93591c3"
+        },
+        {
+          "date": "2026-11-05",
+          "name": "SHRENI SHARES PVT",
+          "symbol": "BCSSL",
+          "company": "Bombay Coated N Specl S L",
+          "buyQty": 840000,
+          "sellQty": 0,
+          "buyValueINR": 76683600.0,
+          "sellValueINR": 0,
+          "netShares": 840000,
+          "netValueINR": 76683600.0,
+          "avgBuyPrice": 91.29,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "466efcc807cd265d91"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "BCSSL",
+          "company": "Bombay Coated N Specl S L",
+          "buyValueCr": 7.67,
+          "sellValueCr": 0.0,
+          "netShares": 840000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MODIS",
+          "company": "Modis Navnirman Ltd",
+          "buyValueCr": 6.5,
+          "sellValueCr": 0.86,
+          "netShares": 132512,
+          "buyDays": 1,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -5457,156 +5650,6 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:4becb324b2af53a8",
-      "name": "INTEGRATED DATA MANAGEMENT SERVICES PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 11.2,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 11.2,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-02",
-          "name": "INTEGRATED DATA MANAGEMENT SERVICES PRIVATE LIMITED",
-          "symbol": "NCLIND",
-          "company": "NCL Industries Limited",
-          "buyQty": 691055,
-          "sellQty": 0,
-          "buyValueINR": 111950910.0,
-          "sellValueINR": 0,
-          "netShares": 691055,
-          "netValueINR": 111950910.0,
-          "avgBuyPrice": 162.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "f6cdd8cc21d7a6013e"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "NCLIND",
-          "company": "NCL Industries Limited",
-          "buyValueCr": 11.2,
-          "sellValueCr": 0.0,
-          "netShares": 691055,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:c3476c042582a7de",
-      "name": "RAMESH SAWALRAM SARAOGI",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 10.81,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 10.81,
-      "latestDisclosure": "2026-10-27",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-27",
-          "name": "RAMESH SAWALRAM SARAOGI",
-          "symbol": "RAMBHAJO",
-          "company": "Advit Jewels Limited",
-          "buyQty": 325000,
-          "sellQty": 0,
-          "buyValueINR": 108134000.0,
-          "sellValueINR": 0,
-          "netShares": 325000,
-          "netValueINR": 108134000.0,
-          "avgBuyPrice": 332.72,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "7f064a8908fd1f86b0"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RAMBHAJO",
-          "company": "Advit Jewels Limited",
-          "buyValueCr": 10.81,
-          "sellValueCr": 0.0,
-          "netShares": 325000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:9ac2decbb80a5c99",
-      "name": "KALPANA MANGALA",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 10.12,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 10.12,
-      "latestDisclosure": "2026-11-03",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-03",
-          "name": "KALPANA MANGALA",
-          "symbol": "NELCAST",
-          "company": "Nelcast Limited",
-          "buyQty": 618343,
-          "sellQty": 0,
-          "buyValueINR": 101191831.95,
-          "sellValueINR": 0,
-          "netShares": 618343,
-          "netValueINR": 101191831.95,
-          "avgBuyPrice": 163.65,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0afe454ef4cbce9d95"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "NELCAST",
-          "company": "Nelcast Limited",
-          "buyValueCr": 10.12,
-          "sellValueCr": 0.0,
-          "netShares": 618343,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
