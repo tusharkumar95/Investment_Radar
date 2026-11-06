@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T17:41:51.737485+00:00",
+  "updated": "2026-11-06T22:25:10.059091+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-05",
-    "trades": 615,
-    "investors": 369
+    "latest": "2026-11-06",
+    "trades": 661,
+    "investors": 402
   },
   "featured": [
     {
@@ -1209,21 +1209,103 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:2f3bf71d33b2d061",
+      "name": "GOLDMAN SACHS BANK EUROPE SE - ODI",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 1,
+      "buyValueCr": 763.68,
+      "sellValueCr": 0.09,
+      "netDisclosedValueCr": 763.59,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "GOLDMAN SACHS BANK EUROPE SE - ODI",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 35518249,
+          "sellQty": 4380,
+          "buyValueINR": 7636778717.49,
+          "sellValueINR": 929041.8,
+          "netShares": 35513869,
+          "netValueINR": 7635849675.69,
+          "avgBuyPrice": 215.01,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "f3608f7006611e3dc3"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 763.68,
+          "sellValueCr": 0.09,
+          "netShares": 35513869,
+          "buyDays": 1,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:3417a57dc28b2e6a",
       "name": "ADITYA KUMAR HALWASIYA",
       "type": "Named investor / company",
-      "observedTransactions": 3,
-      "observedBuyDays": 2,
+      "observedTransactions": 5,
+      "observedBuyDays": 3,
       "observedSellDays": 0,
-      "buyValueCr": 248.51,
+      "buyValueCr": 514.11,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 248.51,
-      "latestDisclosure": "2026-10-21",
-      "uniqueCompanies": 1,
+      "netDisclosedValueCr": 514.11,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [
         "PCJEWELLER"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "ADITYA KUMAR HALWASIYA",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 8300000,
+          "sellQty": 0,
+          "buyValueINR": 1328000000.0,
+          "sellValueINR": 0,
+          "netShares": 8300000,
+          "netValueINR": 1328000000.0,
+          "avgBuyPrice": 160.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "9665937de11416d302"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "ADITYA KUMAR HALWASIYA",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 8300000,
+          "sellQty": 0,
+          "buyValueINR": 1328000000.0,
+          "sellValueINR": 0,
+          "netShares": 8300000,
+          "netValueINR": 1328000000.0,
+          "avgBuyPrice": 160.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "63164a742eaf884a17"
+        },
         {
           "date": "2026-10-21",
           "name": "ADITYA KUMAR HALWASIYA",
@@ -1274,6 +1356,15 @@
         }
       ],
       "companies": [
+        {
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyValueCr": 265.6,
+          "sellValueCr": 0.0,
+          "netShares": 16600000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
         {
           "symbol": "PCJEWELLER",
           "company": "PC Jeweller Ltd",
@@ -1368,6 +1459,72 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:5d1e00109c9028f1",
+      "name": "BANDHAN MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 234.54,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 234.54,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "BANDHAN MUTUAL FUND",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 855971,
+          "sellQty": 0,
+          "buyValueINR": 1172680270.0,
+          "sellValueINR": 0,
+          "netShares": 855971,
+          "netValueINR": 1172680270.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "593f59140594e65220"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "BANDHAN MUTUAL FUND",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 855971,
+          "sellQty": 0,
+          "buyValueINR": 1172680270.0,
+          "sellValueINR": 0,
+          "netShares": 855971,
+          "netValueINR": 1172680270.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "19560eef0e9de2cb17"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 234.54,
+          "sellValueCr": 0.0,
+          "netShares": 1711942,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:6810bed09e91715f",
       "name": "BOFA SECURITIES EUROPE SA",
       "type": "Financial institution (may intermediate trades)",
@@ -1430,6 +1587,72 @@
           "buyValueCr": 51.61,
           "sellValueCr": 0.0,
           "netShares": 1300000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:c444ec0dc8bfd9dd",
+      "name": "PARAM CAPITAL",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 199.95,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 199.95,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "PARAM CAPITAL",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 729729,
+          "sellQty": 0,
+          "buyValueINR": 999728730.0,
+          "sellValueINR": 0,
+          "netShares": 729729,
+          "netValueINR": 999728730.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "90039f52589135c5ec"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "PARAM CAPITAL",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 729729,
+          "sellQty": 0,
+          "buyValueINR": 999728730.0,
+          "sellValueINR": 0,
+          "netShares": 729729,
+          "netValueINR": 999728730.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "4ffbf08580f12b4c3b"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 199.95,
+          "sellValueCr": 0.0,
+          "netShares": 1459458,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -1562,6 +1785,56 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:e3c5b7567b3ed4cf",
+      "name": "NOMURA FUNDS IRELAND PLC NOMURA FUNDS IRELAND INDIA EQUITY FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 144.6,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 144.6,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "NOMURA FUNDS IRELAND PLC NOMURA FUNDS IRELAND INDIA EQUITY FUND",
+          "symbol": "JSWCEMENT",
+          "company": "JSW Cement Limited",
+          "buyQty": 12000000,
+          "sellQty": 0,
+          "buyValueINR": 1446000000.0,
+          "sellValueINR": 0,
+          "netShares": 12000000,
+          "netValueINR": 1446000000.0,
+          "avgBuyPrice": 120.5,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "c56be55b5dc323444d"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "JSWCEMENT",
+          "company": "JSW Cement Limited",
+          "buyValueCr": 144.6,
+          "sellValueCr": 0.0,
+          "netShares": 12000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -3098,6 +3371,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:cc5b2e70b7b80c6c",
+      "name": "SETU SECURITIES PRIVATE LIMITED",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 56.17,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 56.17,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "SETU SECURITIES PRIVATE LIMITED",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 410000,
+          "sellQty": 0,
+          "buyValueINR": 561700000.0,
+          "sellValueINR": 0,
+          "netShares": 410000,
+          "netValueINR": 561700000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "e1082e769c5c5d273f"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 56.17,
+          "sellValueCr": 0.0,
+          "netShares": 410000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:557588d6d604af25",
       "name": "ALLIANZ GLOBAL INVESTORS GMBH ACTING ON BEHALF OF ALLIANZ SOA FONDS",
       "type": "Named investor / company",
@@ -3925,6 +4248,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:a63dc07d20191700",
+      "name": "SUBHKAM VENTURES I PVT LTD",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 34.25,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 34.25,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "SUBHKAM VENTURES I PVT LTD",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 250000,
+          "sellQty": 0,
+          "buyValueINR": 342500000.0,
+          "sellValueINR": 0,
+          "netShares": 250000,
+          "netValueINR": 342500000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "165bf0591ec79bba6d"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 34.25,
+          "sellValueCr": 0.0,
+          "netShares": 250000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:a845d163545f54ae",
       "name": "L7 HITECH PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -4242,6 +4615,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:cfccafbccf943cee",
+      "name": "HELIOS MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 29.8,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 29.8,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "HELIOS MUTUAL FUND",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 217500,
+          "sellQty": 0,
+          "buyValueINR": 297975000.0,
+          "sellValueINR": 0,
+          "netShares": 217500,
+          "netValueINR": 297975000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "ffc4db197bb9bf49c4"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 29.8,
+          "sellValueCr": 0.0,
+          "netShares": 217500,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:17b7f7273493749a",
       "name": "MADANLAL LIMITED",
       "type": "Named investor / company",
@@ -4461,6 +4884,56 @@
           "buyValueCr": 28.17,
           "sellValueCr": 0.0,
           "netShares": 1150000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:928c46a23a240aff",
+      "name": "SANSHI FUND - I",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 27.41,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 27.41,
+      "latestDisclosure": "2026-11-06",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-06",
+          "name": "SANSHI FUND - I",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 200100,
+          "sellQty": 0,
+          "buyValueINR": 274137000.0,
+          "sellValueINR": 0,
+          "netShares": 200100,
+          "netValueINR": 274137000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "bcda135c2b9313a819"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 27.41,
+          "sellValueCr": 0.0,
+          "netShares": 200100,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -4724,293 +5197,43 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:c5c342380ad0e671",
-      "name": "MAHALAKSHMI ELECTRONICS PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 24.76,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 24.76,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-02",
-          "name": "MAHALAKSHMI ELECTRONICS PRIVATE LIMITED",
-          "symbol": "GOCOLORS",
-          "company": "Go Fashion India Ltd",
-          "buyQty": 1010948,
-          "sellQty": 0,
-          "buyValueINR": 247571055.72,
-          "sellValueINR": 0,
-          "netShares": 1010948,
-          "netValueINR": 247571055.72,
-          "avgBuyPrice": 244.89,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "b318000b4f7a464f37"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GOCOLORS",
-          "company": "Go Fashion India Ltd",
-          "buyValueCr": 24.76,
-          "sellValueCr": 0.0,
-          "netShares": 1010948,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:9e1d871f8c0631cb",
-      "name": "RAVI AMIT JALAN",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 20.6,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 20.6,
-      "latestDisclosure": "2026-11-05",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-05",
-          "name": "RAVI AMIT JALAN",
-          "symbol": "AEROPLANE",
-          "company": "Amir Chand Jag Kum (E) L",
-          "buyQty": 850000,
-          "sellQty": 0,
-          "buyValueINR": 206023000.0,
-          "sellValueINR": 0,
-          "netShares": 850000,
-          "netValueINR": 206023000.0,
-          "avgBuyPrice": 242.38,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "af8f831c1484a6d5aa"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "AEROPLANE",
-          "company": "Amir Chand Jag Kum (E) L",
-          "buyValueCr": 20.6,
-          "sellValueCr": 0.0,
-          "netShares": 850000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:27c1a52f3b4c2962",
-      "name": "GOPANI JIGNESH GUNVANT",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 20.1,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 20.1,
-      "latestDisclosure": "2026-11-04",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-04",
-          "name": "GOPANI JIGNESH GUNVANT",
-          "symbol": "AJMERA",
-          "company": "Ajmera Realty & Inf I Ltd",
-          "buyQty": 1440000,
-          "sellQty": 0,
-          "buyValueINR": 200966400.0,
-          "sellValueINR": 0,
-          "netShares": 1440000,
-          "netValueINR": 200966400.0,
-          "avgBuyPrice": 139.56,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "c3f80d8af51fbcfb57"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "AJMERA",
-          "company": "Ajmera Realty & Inf I Ltd",
-          "buyValueCr": 20.1,
-          "sellValueCr": 0.0,
-          "netShares": 1440000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:c72e7b5125b91c88",
-      "name": "SANJAY POPATLAL JAIN",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 18.43,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 18.43,
-      "latestDisclosure": "2026-11-03",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-03",
-          "name": "SANJAY POPATLAL JAIN",
-          "symbol": "SFCTECH",
-          "company": "SFC Environmental Tech L",
-          "buyQty": 500000,
-          "sellQty": 0,
-          "buyValueINR": 184285000.0,
-          "sellValueINR": 0,
-          "netShares": 500000,
-          "netValueINR": 184285000.0,
-          "avgBuyPrice": 368.57,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "dce4da9387bdc0d2a9"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SFCTECH",
-          "company": "SFC Environmental Tech L",
-          "buyValueCr": 18.43,
-          "sellValueCr": 0.0,
-          "netShares": 500000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:92e1988471227fea",
-      "name": "F3 ADVISORS PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 18.01,
-      "sellValueCr": 0.6,
-      "netDisclosedValueCr": 17.41,
-      "latestDisclosure": "2026-10-26",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-26",
-          "name": "F3 ADVISORS PRIVATE LIMITED",
-          "symbol": "INDOTECH",
-          "company": "Indo Tech Transformers Li",
-          "buyQty": 69300,
-          "sellQty": 2348,
-          "buyValueINR": 180071199.0,
-          "sellValueINR": 5999304.36,
-          "netShares": 66952,
-          "netValueINR": 174071894.64,
-          "avgBuyPrice": 2598.43,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "c2db0e6cf64bdf477d"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "INDOTECH",
-          "company": "Indo Tech Transformers Li",
-          "buyValueCr": 18.01,
-          "sellValueCr": 0.6,
-          "netShares": 66952,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:b6bc4758c261f2cc",
-      "name": "NEOMILE GROWTH FUND-SERIES I",
+      "id": "investor:46a20b77f5c3fb8d",
+      "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
       "type": "Institution / fund / investment entity (name-based)",
       "observedTransactions": 1,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 16.19,
+      "buyValueCr": 25.07,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 16.19,
-      "latestDisclosure": "2026-10-21",
+      "netDisclosedValueCr": 25.07,
+      "latestDisclosure": "2026-11-06",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-10-21",
-          "name": "NEOMILE GROWTH FUND-SERIES I",
-          "symbol": "JSIPL",
-          "company": "Jindal Supreme (India) L",
-          "buyQty": 1079995,
+          "date": "2026-11-06",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 183000,
           "sellQty": 0,
-          "buyValueINR": 161934450.3,
+          "buyValueINR": 250710000.0,
           "sellValueINR": 0,
-          "netShares": 1079995,
-          "netValueINR": 161934450.3,
-          "avgBuyPrice": 149.94,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "b3257f0cd813a86344"
+          "netShares": 183000,
+          "netValueINR": 250710000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "c6c58f21e4b492bc4a"
         }
       ],
       "companies": [
         {
-          "symbol": "JSIPL",
-          "company": "Jindal Supreme (India) L",
-          "buyValueCr": 16.19,
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 25.07,
           "sellValueCr": 0.0,
-          "netShares": 1079995,
+          "netShares": 183000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5024,93 +5247,43 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:39a586e8398d2b8e",
-      "name": "BANK OF INDIA MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 15.54,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 15.54,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-02",
-          "name": "BANK OF INDIA MUTUAL FUND",
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyQty": 690120,
-          "sellQty": 0,
-          "buyValueINR": 155366715.6,
-          "sellValueINR": 0,
-          "netShares": 690120,
-          "netValueINR": 155366715.6,
-          "avgBuyPrice": 225.13,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "55c2eb7fdb12c4ca60"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MOBIKWIK",
-          "company": "One Mobikwik Systems Ltd",
-          "buyValueCr": 15.54,
-          "sellValueCr": 0.0,
-          "netShares": 690120,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:d308d66366f76348",
-      "name": "AAKANKSHA SATYEN MAMTORA",
+      "id": "investor:fcd04cb69652367a",
+      "name": "OM PRAKASH BHAIYA",
       "type": "Named investor / company",
       "observedTransactions": 1,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 14.74,
+      "buyValueCr": 25.04,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 14.74,
-      "latestDisclosure": "2026-10-29",
+      "netDisclosedValueCr": 25.04,
+      "latestDisclosure": "2026-11-06",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-10-29",
-          "name": "AAKANKSHA SATYEN MAMTORA",
-          "symbol": "MUFIN",
-          "company": "Mufin Green Finance Ltd",
-          "buyQty": 1120000,
+          "date": "2026-11-06",
+          "name": "OM PRAKASH BHAIYA",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 1565000,
           "sellQty": 0,
-          "buyValueINR": 147380800.0,
+          "buyValueINR": 250400000.0,
           "sellValueINR": 0,
-          "netShares": 1120000,
-          "netValueINR": 147380800.0,
-          "avgBuyPrice": 131.59,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "79ffcec4ecda046fa2"
+          "netShares": 1565000,
+          "netValueINR": 250400000.0,
+          "avgBuyPrice": 160.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "023f26a832941e9a1a"
         }
       ],
       "companies": [
         {
-          "symbol": "MUFIN",
-          "company": "Mufin Green Finance Ltd",
-          "buyValueCr": 14.74,
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyValueCr": 25.04,
           "sellValueCr": 0.0,
-          "netShares": 1120000,
+          "netShares": 1565000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5124,475 +5297,43 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:cf8d187861edc5ec",
-      "name": "SHRENI SHARES PVT",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 1,
-      "buyValueCr": 14.17,
-      "sellValueCr": 0.86,
-      "netDisclosedValueCr": 13.31,
-      "latestDisclosure": "2026-11-05",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-05",
-          "name": "SHRENI SHARES PVT",
-          "symbol": "MODIS",
-          "company": "Modis Navnirman Ltd",
-          "buyQty": 152592,
-          "sellQty": 20080,
-          "buyValueINR": 64991984.64,
-          "sellValueINR": 8615926.4,
-          "netShares": 132512,
-          "netValueINR": 56376058.24,
-          "avgBuyPrice": 425.92,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "bf62f7d027d93591c3"
-        },
-        {
-          "date": "2026-11-05",
-          "name": "SHRENI SHARES PVT",
-          "symbol": "BCSSL",
-          "company": "Bombay Coated N Specl S L",
-          "buyQty": 840000,
-          "sellQty": 0,
-          "buyValueINR": 76683600.0,
-          "sellValueINR": 0,
-          "netShares": 840000,
-          "netValueINR": 76683600.0,
-          "avgBuyPrice": 91.29,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "466efcc807cd265d91"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "BCSSL",
-          "company": "Bombay Coated N Specl S L",
-          "buyValueCr": 7.67,
-          "sellValueCr": 0.0,
-          "netShares": 840000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "MODIS",
-          "company": "Modis Navnirman Ltd",
-          "buyValueCr": 6.5,
-          "sellValueCr": 0.86,
-          "netShares": 132512,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:54ee6370ce8397d3",
-      "name": "PROGNOSIS SECURITIES PVT. LTD",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 16,
-      "observedBuyDays": 13,
-      "observedSellDays": 10,
-      "buyValueCr": 41.77,
-      "sellValueCr": 29.16,
-      "netDisclosedValueCr": 12.61,
-      "latestDisclosure": "2026-11-04",
-      "uniqueCompanies": 8,
-      "repeatBuyCompanies": [
-        "MOMSBELIEF",
-        "VOLERCAR",
-        "MARSONS"
-      ],
-      "tradeRecords": [
-        {
-          "date": "2026-11-04",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "FASCINATE",
-          "company": "Fascinate Textiles Ltd",
-          "buyQty": 0,
-          "sellQty": 72800,
-          "buyValueINR": 0,
-          "sellValueINR": 7713160.0,
-          "netShares": -72800,
-          "netValueINR": -7713160.0,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "95ac305862ca55e35e"
-        },
-        {
-          "date": "2026-11-03",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "PAPADMALJI",
-          "company": "Papadmalji Agro Foods Ltd",
-          "buyQty": 131200,
-          "sellQty": 0,
-          "buyValueINR": 5115488.0,
-          "sellValueINR": 0,
-          "netShares": 131200,
-          "netValueINR": 5115488.0,
-          "avgBuyPrice": 38.99,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0c2fdd080bc6b878f3"
-        },
-        {
-          "date": "2026-11-03",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 78271,
-          "sellQty": 164991,
-          "buyValueINR": 20440471.65,
-          "sellValueINR": 41594231.1,
-          "netShares": -86720,
-          "netValueINR": -21153759.45,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5a19caba948947c902"
-        },
-        {
-          "date": "2026-11-03",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "KCK",
-          "company": "Kck Industries Limited",
-          "buyQty": 1150000,
-          "sellQty": 0,
-          "buyValueINR": 12949000.0,
-          "sellValueINR": 0,
-          "netShares": 1150000,
-          "netValueINR": 12949000.0,
-          "avgBuyPrice": 11.26,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "79e7975f23b254dc8e"
-        },
-        {
-          "date": "2026-11-03",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "FASCINATE",
-          "company": "Fascinate Textiles Ltd",
-          "buyQty": 40800,
-          "sellQty": 100000,
-          "buyValueINR": 4528800.0,
-          "sellValueINR": 11078000.0,
-          "netShares": -59200,
-          "netValueINR": -6549200.0,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "a75df683b723461fb5"
-        },
-        {
-          "date": "2026-10-30",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "ANNAPURNA",
-          "company": "Annapurna Swadisht Ltd",
-          "buyQty": 167387,
-          "sellQty": 30000,
-          "buyValueINR": 20628773.88,
-          "sellValueINR": 3332700.0,
-          "netShares": 137387,
-          "netValueINR": 17296073.88,
-          "avgBuyPrice": 123.24,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "a357af490019325588"
-        },
-        {
-          "date": "2026-10-28",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "VNL",
-          "company": "Vishal Nirmiti Limited",
-          "buyQty": 0,
-          "sellQty": 149505,
-          "buyValueINR": 0,
-          "sellValueINR": 13334350.95,
-          "netShares": -149505,
-          "netValueINR": -13334350.95,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6c763beac2fc9f5864"
-        },
-        {
-          "date": "2026-10-27",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "VOLERCAR",
-          "company": "Voler Car Limited",
-          "buyQty": 57600,
-          "sellQty": 0,
-          "buyValueINR": 16111872.0,
-          "sellValueINR": 0,
-          "netShares": 57600,
-          "netValueINR": 16111872.0,
-          "avgBuyPrice": 279.72,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "9769044a67f1554e96"
-        },
-        {
-          "date": "2026-10-22",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 10427,
-          "sellQty": 182530,
-          "buyValueINR": 2853035.74,
-          "sellValueINR": 48193395.9,
-          "netShares": -172103,
-          "netValueINR": -45340360.16,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "2e8eb7fccf4239e3ea"
-        },
-        {
-          "date": "2026-10-22",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MARSONS",
-          "company": "Marsons Limited",
-          "buyQty": 263812,
-          "sellQty": 928812,
-          "buyValueINR": 32248378.88,
-          "sellValueINR": 113482250.16,
-          "netShares": -665000,
-          "netValueINR": -81233871.28,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "ac8dbb6867e573f921"
-        },
-        {
-          "date": "2026-10-21",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "VOLERCAR",
-          "company": "Voler Car Limited",
-          "buyQty": 110400,
-          "sellQty": 0,
-          "buyValueINR": 33546144.0,
-          "sellValueINR": 0,
-          "netShares": 110400,
-          "netValueINR": 33546144.0,
-          "avgBuyPrice": 303.86,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6f6f3aed71aa088be2"
-        },
-        {
-          "date": "2026-10-21",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 142261,
-          "sellQty": 0,
-          "buyValueINR": 39665212.02,
-          "sellValueINR": 0,
-          "netShares": 142261,
-          "netValueINR": 39665212.02,
-          "avgBuyPrice": 278.82,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "715c68f12437fc81e9"
-        },
-        {
-          "date": "2026-10-21",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MARSONS",
-          "company": "Marsons Limited",
-          "buyQty": 1159322,
-          "sellQty": 200000,
-          "buyValueINR": 141657555.18,
-          "sellValueINR": 24166000.0,
-          "netShares": 959322,
-          "netValueINR": 117491555.18,
-          "avgBuyPrice": 122.19,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "ffeb9cb9f7f3b203d3"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 112101,
-          "sellQty": 10352,
-          "buyValueINR": 27412057.53,
-          "sellValueINR": 2578993.76,
-          "netShares": 101749,
-          "netValueINR": 24833063.77,
-          "avgBuyPrice": 244.53,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0c8644962ff55fb6"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 112101,
-          "sellQty": 10352,
-          "buyValueINR": 27412057.53,
-          "sellValueINR": 2578993.76,
-          "netShares": 101749,
-          "netValueINR": 24833063.77,
-          "avgBuyPrice": 244.53,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "87ac6e817e97f3c93c"
-        },
-        {
-          "date": "2026-10-13",
-          "name": "PROGNOSIS SECURITIES PVT. LTD",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 153900,
-          "sellQty": 108826,
-          "buyValueINR": 33102351.0,
-          "sellValueINR": 23519475.12,
-          "netShares": 45074,
-          "netValueINR": 9582875.88,
-          "avgBuyPrice": 215.09,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "4da94449b1c2e067"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MARSONS",
-          "company": "Marsons Limited",
-          "buyValueCr": 17.39,
-          "sellValueCr": 13.76,
-          "netShares": 294322,
-          "buyDays": 2,
-          "sellDays": 2
-        },
-        {
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyValueCr": 15.09,
-          "sellValueCr": 11.85,
-          "netShares": 132010,
-          "buyDays": 5,
-          "sellDays": 4
-        },
-        {
-          "symbol": "VOLERCAR",
-          "company": "Voler Car Limited",
-          "buyValueCr": 4.97,
-          "sellValueCr": 0.0,
-          "netShares": 168000,
-          "buyDays": 2,
-          "sellDays": 0
-        },
-        {
-          "symbol": "ANNAPURNA",
-          "company": "Annapurna Swadisht Ltd",
-          "buyValueCr": 2.06,
-          "sellValueCr": 0.33,
-          "netShares": 137387,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "KCK",
-          "company": "Kck Industries Limited",
-          "buyValueCr": 1.29,
-          "sellValueCr": 0.0,
-          "netShares": 1150000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "PAPADMALJI",
-          "company": "Papadmalji Agro Foods Ltd",
-          "buyValueCr": 0.51,
-          "sellValueCr": 0.0,
-          "netShares": 131200,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "FASCINATE",
-          "company": "Fascinate Textiles Ltd",
-          "buyValueCr": 0.45,
-          "sellValueCr": 1.88,
-          "netShares": -132000,
-          "buyDays": 1,
-          "sellDays": 2
-        },
-        {
-          "symbol": "VNL",
-          "company": "Vishal Nirmiti Limited",
-          "buyValueCr": 0.0,
-          "sellValueCr": 1.33,
-          "netShares": -149505,
-          "buyDays": 0,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": true,
-        "buyAndSellObserved": true,
-        "multipleCompanies": true,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:ac4d9ace1f66ea78",
-      "name": "TIME SQUARE INVESTMENTS PRIVATE LIMITED",
+      "id": "investor:15fb1e758e58f2f2",
+      "name": "PARESH N BHAGAT",
       "type": "Named investor / company",
       "observedTransactions": 1,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 12.25,
+      "buyValueCr": 25.04,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 12.25,
-      "latestDisclosure": "2026-10-27",
+      "netDisclosedValueCr": 25.04,
+      "latestDisclosure": "2026-11-06",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-10-27",
-          "name": "TIME SQUARE INVESTMENTS PRIVATE LIMITED",
-          "symbol": "SESHAPAPER",
-          "company": "Seshasaye Pap & Boards",
-          "buyQty": 570000,
+          "date": "2026-11-06",
+          "name": "PARESH N BHAGAT",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 1565000,
           "sellQty": 0,
-          "buyValueINR": 122544300.0,
+          "buyValueINR": 250400000.0,
           "sellValueINR": 0,
-          "netShares": 570000,
-          "netValueINR": 122544300.0,
-          "avgBuyPrice": 214.99,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "0484180eeeb49efaee"
+          "netShares": 1565000,
+          "netValueINR": 250400000.0,
+          "avgBuyPrice": 160.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "3fce8360f7a4df2ddc"
         }
       ],
       "companies": [
         {
-          "symbol": "SESHAPAPER",
-          "company": "Seshasaye Pap & Boards",
-          "buyValueCr": 12.25,
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyValueCr": 25.04,
           "sellValueCr": 0.0,
-          "netShares": 570000,
+          "netShares": 1565000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5606,50 +5347,50 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:432c8fb7c47e7d67",
-      "name": "SAPAN ANIL SHAH HUF",
+      "id": "investor:fe89a87752b475cf",
+      "name": "CARBON RESOURCES(P) LTD.",
       "type": "Named investor / company",
       "observedTransactions": 1,
       "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 12.2,
-      "sellValueCr": 0.22,
-      "netDisclosedValueCr": 11.98,
-      "latestDisclosure": "2026-11-04",
+      "observedSellDays": 0,
+      "buyValueCr": 25.04,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 25.04,
+      "latestDisclosure": "2026-11-06",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-11-04",
-          "name": "SAPAN ANIL SHAH HUF",
-          "symbol": "MKJEWELS",
-          "company": "MK Sons Fine Jewels Ltd",
-          "buyQty": 752461,
-          "sellQty": 13865,
-          "buyValueINR": 122034124.98,
-          "sellValueINR": 2247516.5,
-          "netShares": 738596,
-          "netValueINR": 119786608.48,
-          "avgBuyPrice": 162.18,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "de1ecc6f2b4379501a"
+          "date": "2026-11-06",
+          "name": "CARBON RESOURCES(P) LTD.",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 1565000,
+          "sellQty": 0,
+          "buyValueINR": 250400000.0,
+          "sellValueINR": 0,
+          "netShares": 1565000,
+          "netValueINR": 250400000.0,
+          "avgBuyPrice": 160.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "3dff91a82164b4a8af"
         }
       ],
       "companies": [
         {
-          "symbol": "MKJEWELS",
-          "company": "MK Sons Fine Jewels Ltd",
-          "buyValueCr": 12.2,
-          "sellValueCr": 0.22,
-          "netShares": 738596,
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyValueCr": 25.04,
+          "sellValueCr": 0.0,
+          "netShares": 1565000,
           "buyDays": 1,
-          "sellDays": 1
+          "sellDays": 0
         }
       ],
       "observations": {
         "repeatPurchases": false,
-        "buyAndSellObserved": true,
+        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
