@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-05T22:38:19.650949+00:00",
+  "updated": "2026-11-06T02:59:47.217261+00:00",
   "day": "2026-11-05",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 1.12,
-      "lastPriceDate": "2026-11-04",
+      "lastPriceDate": "2026-11-05",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 29,
+      "candidateArticles": 28,
       "status": "Verified transactions found"
     },
     {
@@ -1571,17 +1571,6 @@
       "summary": ""
     },
     {
-      "id": "lead:3cd965b435f386c70d",
-      "title": "Oct 01, 2026, 08:39 ET \n                        Seegnal Inc. Announces Extension of its Non-Brokered Private Placement\n                       \n                       Seegnal Inc. (TSXV: SEGN) (\"Seegnal\" or the \"Company\"), a global leader in SaaS clinical decis",
-      "date": "2026-10-01",
-      "url": "https://www.newswire.ca/news-releases/seegnal-inc-announces-extension-of-its-non-brokered-private-placement-884492608.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:951f4f53e984683b60",
       "title": "13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to announce the ",
       "date": null,
@@ -1678,8 +1667,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 5,
-      "relevant": 4
+      "items": 6,
+      "relevant": 5
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -1691,7 +1680,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 24
+      "relevant": 23
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1733,7 +1722,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 51,
+    "disclosureLeads": 50,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
