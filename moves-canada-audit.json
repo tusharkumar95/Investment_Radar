@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-06T09:37:22.932696+00:00",
-  "candidateCount": 15,
+  "updated": "2026-11-06T19:36:04.224504+00:00",
+  "candidateCount": 14,
   "needsReview": 13,
-  "possibleDuplicates": 2,
+  "possibleDuplicates": 1,
   "records": [
     {
       "headline": "Early Warning Press Release - TradingView",
@@ -132,20 +132,6 @@
       "discoveryUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZ3FScnEzR011SnU1U0lic1o3Nk5CMWE3UkhtbFNHRXhEaWJRRlktczNZLXpxUTNOd19NQ3VoQUoteldhbEk0bXhETndHVUNBNTJwUXFRNkE0OFZVbF8tMDVwa3R1cklpOFNtSkJfRkZuY0tGWDFjTHNGLWdrSE00aWRjVWNJbkFzeW5NZWVySVo5eERGcmVoNQ?oc=5",
       "reviewStatus": "needs_original_source_review",
       "possibleMatches": [],
-      "verified": false,
-      "note": "Headline matching is only a review hint, not transaction verification."
-    },
-    {
-      "headline": "PowerOne Capital Corp. Acquires Shares of Verdera Energy Corp. - Yahoo! Finance Canada",
-      "published": "Wed, 07 Oct 2026 13:10:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNS3ZLVDJXX0ZPNEVudFp5WFRUekI5SlA0Vk5oQ1ZVek4wdUxGMFAyRmJweElGUXE4RnhVeHVoQWdhR3ZlOEZRZE5MMjdaMUJ1TEc0RnNlM2V1aWpNbWl3QzA5UzZZOHUyZ2J5TFFEdDBuSS14eDFmbXllYmVuZ0MyUzBaaTU2Z3dId2tQNW5WYw?oc=5",
-      "reviewStatus": "possible_already_published",
-      "possibleMatches": [
-        {
-          "investor": "PowerOne Capital Corp. (joint actor of Pat DiCapo)",
-          "company": "Verdera Energy Corp."
-        }
-      ],
       "verified": false,
       "note": "Headline matching is only a review hint, not transaction verification."
     }

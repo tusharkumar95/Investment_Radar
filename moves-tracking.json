@@ -2,6 +2,75 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-06:India:V2RETAIL",
+      "day": "2026-11-06",
+      "market": "India",
+      "symbol": "V2RETAIL",
+      "company": "V2 Retail Limited",
+      "buyers": 6,
+      "investors": [
+        "ADITYA KUMAR HALWASIYA",
+        "CARBON RESOURCES(P) LTD.",
+        "JYOTIPRASAD TAPARIA",
+        "OM PRAKASH BHAIYA",
+        "PARESH N BHAGAT",
+        "RAJIV GOENKA"
+      ],
+      "value": 2580000000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 160.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-06T19:36:06.880705+00:00",
+      "firstBuyerCount": 6,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-06:India:HGSINDIALT",
+      "day": "2026-11-06",
+      "market": "India",
+      "symbol": "HGSINDIALT",
+      "company": "HGS (India) Limited",
+      "buyers": 2,
+      "investors": [
+        "ROHAN GUPTA",
+        "VIJIT GROWTH FUND"
+      ],
+      "value": 58212936.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 163.325,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-06T19:36:06.880705+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-06:India:ALIVUS",
+      "day": "2026-11-06",
+      "market": "India",
+      "symbol": "ALIVUS",
+      "company": "Alivus Life Sciences Ltd",
+      "buyers": 7,
+      "investors": [
+        "BANDHAN MUTUAL FUND",
+        "HELIOS MUTUAL FUND",
+        "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+        "PARAM CAPITAL",
+        "SANSHI FUND - I",
+        "SETU SECURITIES PRIVATE LIMITED",
+        "SUBHKAM VENTURES I PVT LTD"
+      ],
+      "value": 3899431000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 1370.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-06T19:36:06.880705+00:00",
+      "firstBuyerCount": 7,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-05:India:BCSSL",
       "day": "2026-11-05",
       "market": "India",
@@ -474,7 +543,7 @@
       "2026-11-03": 657.0,
       "2026-11-04": 660.65,
       "2026-11-05": 674.4,
-      "2026-11-06": 670.75
+      "2026-11-06": 670.05
     },
     "India:INDOTECH": {
       "2026-10-26": 2573.3,
@@ -539,7 +608,7 @@
       "2026-11-03": 1230.4,
       "2026-11-04": 1275.3,
       "2026-11-05": 1530.3,
-      "2026-11-06": 1473.7
+      "2026-11-06": 1472.4
     },
     "India:VNL": {
       "2026-10-30": 104.13,
@@ -557,7 +626,7 @@
       "2026-11-03": 1722.3,
       "2026-11-04": 1689.9,
       "2026-11-05": 1700.1,
-      "2026-11-06": 1679.0
+      "2026-11-06": 1682.2
     },
     "India:MOBIKWIK": {
       "2026-11-02": 225.85,
@@ -582,7 +651,7 @@
       "2026-11-03": 426.1,
       "2026-11-04": 406.75,
       "2026-11-05": 411.95,
-      "2026-11-06": 410.4
+      "2026-11-06": 413.15
     },
     "India:AJMERA": {
       "2026-11-04": 139.75,
@@ -602,9 +671,15 @@
     "India:BCSSL": {
       "2026-11-05": 94.81,
       "2026-11-06": 90.07
+    },
+    "India:ALIVUS": {
+      "2026-11-06": 1480.6
+    },
+    "India:V2RETAIL": {
+      "2026-11-06": 173.5
     }
   },
-  "updatedAt": "2026-11-06T09:37:24.892912+00:00",
+  "updatedAt": "2026-11-06T19:36:06.880705+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -622,11 +697,14 @@
     "India:AJMERA": "AJMERA.NS",
     "India:MKJEWELS": "MKJEWELS.NS",
     "India:SUPREMEENG": "SUPREMEENG.NS",
-    "India:BCSSL": "BCSSL.NS"
+    "India:BCSSL": "BCSSL.NS",
+    "India:ALIVUS": "ALIVUS.NS",
+    "India:V2RETAIL": "V2RETAIL.NS"
   },
-  "quotesUpdatedAt": "2026-11-06T09:37:31.932934+00:00",
+  "quotesUpdatedAt": "2026-11-06T19:36:11.225944+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
+    "India:HGSINDIALT",
     "India:LAMOSAIC",
     "India:RKFAL"
   ],
