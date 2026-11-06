@@ -1,8 +1,30 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T02:59:39.722316+00:00",
+  "updated": "2026-11-06T19:51:56.312327+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:951f4f53e984683b60",
+      "title": "Nov 05, 2026, 13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to",
+      "date": "2026-11-05",
+      "url": "https://www.newswire.ca/news-releases/etruscus-closes-200-000-flow-through-private-placement-846297084.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:65019d0a6bf890c11e",
+      "title": "Nov 05, 2026, 09:35 ET \n                        Minsud Announces Private Placement of Units\n                       \n                       Minsud Resources Corp. (TSXV: MSR) (\"Minsud\" or the \"Company\") is pleased to announce that it intends to complete, subjec",
+      "date": "2026-11-05",
+      "url": "https://www.newswire.ca/news-releases/minsud-announces-private-placement-of-units-825368005.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:49074401ff9ca1b1b1",
       "title": "Pan American Silver: Early Warning News Release - Business Wire",
@@ -279,6 +301,17 @@
       "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    Yahoo! Finance Canada "
     },
     {
+      "id": "lead:5e1d6c6e4b9d12a3cc",
+      "title": "Labrador Gold Extends Private Placement to Boost Exploration Funding - The Globe and Mail",
+      "date": "2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQR2pvOThiOXhjYVhGbm9idTNOU0RZOHhOSDh4TXIzQk90dmpHNXEzRGt2dXI3aVd1V2RBY0ZGY08zTHRQOGZ0QUJ2ZFo0UDZTSWdsbmpOVkl1N0d1WTlUVHVnbEpHR1RQS0NqWkJsTHowV0Ztb2RkTVFiN19XQkUwYjJiaVk5dnB5ZTVJLWVlcWYwODNiWC1SVGluenFtX0JJUTBVaThyVEQ5ZFV5SkQtQ1VOWV9ZVjFMRE5JZ0hsUEgwMnZOeTlDVmRDa3g3RzZ6TVhwWmE1V3UxdjZnbG5YRS12TFg3NmVjenc",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Extends Private Placement to Boost Exploration Funding    The Globe and Mail "
+    },
+    {
       "id": "lead:c306f78a418accaf9d",
       "title": "Oct 22, 2026, 06:00 ET \n                          H.I.G. Capital Acquires a Majority Stake in L4A to Support Continued Growth and Expansion\n                         \n                         H.I.G. Capital (\"H.I.G.\"), a leading global alternative investment fi",
       "date": "2026-10-22",
@@ -530,28 +563,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
-    },
-    {
-      "id": "lead:951f4f53e984683b60",
-      "title": "13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to announce the ",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/etruscus-closes-200-000-flow-through-private-placement-846297084.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:65019d0a6bf890c11e",
-      "title": "09:35 ET \n                        Minsud Announces Private Placement of Units\n                       \n                       Minsud Resources Corp. (TSXV: MSR) (\"Minsud\" or the \"Company\") is pleased to announce that it intends to complete, subject to the accep",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/minsud-announces-private-placement-of-units-825368005.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
@@ -628,8 +639,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 6,
-      "relevant": 5
+      "items": 7,
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -662,9 +673,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 50,
+    "leadCount": 51,
     "usFilingCount": 0,
-    "needsReview": 50
+    "needsReview": 51
   },
   "officialSources": [
     {

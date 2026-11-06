@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-06T02:59:47.217261+00:00",
-  "day": "2026-11-05",
+  "updated": "2026-11-06T19:52:04.930992+00:00",
+  "day": "2026-11-06",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.34,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": -19.48,
+      "lastPrice": 4.46,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": -17.25,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.79,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": -5.49,
+      "lastPrice": 3.92,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": -2.24,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.11,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": -8.87,
+      "lastPrice": 4.34,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": -3.77,
       "quoteStatus": "Available"
     },
     {
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.075,
+      "lastPrice": 0.08,
       "lastPriceDate": "2026-11-05",
-      "priceChangePct": -16.67,
+      "priceChangePct": -11.11,
       "quoteStatus": "Available"
     },
     {
@@ -665,9 +665,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.0525,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": 5.0,
       "quoteStatus": "Available"
     },
     {
@@ -709,9 +709,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.0525,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": 5.0,
       "quoteStatus": "Available"
     },
     {
@@ -797,9 +797,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.0525,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": 5.0,
       "quoteStatus": "Available"
     },
     {
@@ -841,9 +841,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-05",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.0525,
+      "lastPriceDate": "2026-11-06",
+      "priceChangePct": 5.0,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 28,
+      "candidateArticles": 29,
       "status": "Verified transactions found"
     },
     {
@@ -1042,6 +1042,28 @@
     }
   ],
   "leads": [
+    {
+      "id": "lead:951f4f53e984683b60",
+      "title": "Nov 05, 2026, 13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to",
+      "date": "2026-11-05",
+      "url": "https://www.newswire.ca/news-releases/etruscus-closes-200-000-flow-through-private-placement-846297084.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:65019d0a6bf890c11e",
+      "title": "Nov 05, 2026, 09:35 ET \n                        Minsud Announces Private Placement of Units\n                       \n                       Minsud Resources Corp. (TSXV: MSR) (\"Minsud\" or the \"Company\") is pleased to announce that it intends to complete, subjec",
+      "date": "2026-11-05",
+      "url": "https://www.newswire.ca/news-releases/minsud-announces-private-placement-of-units-825368005.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:49074401ff9ca1b1b1",
       "title": "Pan American Silver: Early Warning News Release - Business Wire",
@@ -1318,6 +1340,17 @@
       "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    Yahoo! Finance Canada "
     },
     {
+      "id": "lead:5e1d6c6e4b9d12a3cc",
+      "title": "Labrador Gold Extends Private Placement to Boost Exploration Funding - The Globe and Mail",
+      "date": "2026-10-23",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQR2pvOThiOXhjYVhGbm9idTNOU0RZOHhOSDh4TXIzQk90dmpHNXEzRGt2dXI3aVd1V2RBY0ZGY08zTHRQOGZ0QUJ2ZFo0UDZTSWdsbmpOVkl1N0d1WTlUVHVnbEpHR1RQS0NqWkJsTHowV0Ztb2RkTVFiN19XQkUwYjJiaVk5dnB5ZTVJLWVlcWYwODNiWC1SVGluenFtX0JJUTBVaThyVEQ5ZFV5SkQtQ1VOWV9ZVjFMRE5JZ0hsUEgwMnZOeTlDVmRDa3g3RzZ6TVhwWmE1V3UxdjZnbG5YRS12TFg3NmVjenc",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Extends Private Placement to Boost Exploration Funding    The Globe and Mail "
+    },
+    {
       "id": "lead:c306f78a418accaf9d",
       "title": "Oct 22, 2026, 06:00 ET \n                          H.I.G. Capital Acquires a Majority Stake in L4A to Support Continued Growth and Expansion\n                         \n                         H.I.G. Capital (\"H.I.G.\"), a leading global alternative investment fi",
       "date": "2026-10-22",
@@ -1569,28 +1602,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
-    },
-    {
-      "id": "lead:951f4f53e984683b60",
-      "title": "13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to announce the ",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/etruscus-closes-200-000-flow-through-private-placement-846297084.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:65019d0a6bf890c11e",
-      "title": "09:35 ET \n                        Minsud Announces Private Placement of Units\n                       \n                       Minsud Resources Corp. (TSXV: MSR) (\"Minsud\" or the \"Company\") is pleased to announce that it intends to complete, subject to the accep",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/minsud-announces-private-placement-of-units-825368005.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
@@ -1667,8 +1678,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 6,
-      "relevant": 5
+      "items": 7,
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -1722,7 +1733,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 50,
+    "disclosureLeads": 51,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
