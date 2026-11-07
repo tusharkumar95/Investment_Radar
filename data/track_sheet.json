@@ -1,7 +1,132 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-06T03:24:37.110Z",
+  "updatedAt": "2026-11-07T02:46:29.113Z",
   "cohorts": [
+    {
+      "date": "2026-11-06",
+      "markets": {
+        "Canada": {
+          "sourceUpdatedAt": "2026-11-06T18:13:59.593017+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "BHC.TO",
+              "name": "BAUSCH HEALTH COMPANIES INC",
+              "score": 86,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 11.55,
+              "recordedAt": "2026-11-06T18:13:59.593017+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "BTO.TO",
+              "name": "B2GOLD CORP.",
+              "score": 85,
+              "verdict": "STRONG BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 7.595,
+              "recordedAt": "2026-11-06T18:13:59.593017+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "APR-UN.TO",
+              "name": "AUTOMOTIVE PROPERTIES REIT",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Attractive",
+              "currency": "CAD",
+              "recordedPrice": 12.82,
+              "recordedAt": "2026-11-06T18:13:59.593017+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "DHT-UN.TO",
+              "name": "DRI HEALTHCARE TRUST",
+              "score": 81,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 19.35,
+              "recordedAt": "2026-11-06T18:13:59.593017+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "BNS.TO",
+              "name": "BANK OF NOVA SCOTIA",
+              "score": 80,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "CAD",
+              "recordedPrice": 129.98,
+              "recordedAt": "2026-11-06T18:13:59.593017+00:00"
+            }
+          ]
+        },
+        "India": {
+          "sourceUpdatedAt": "2026-11-06T18:16:23.279512+00:00",
+          "stocks": [
+            {
+              "rank": 1,
+              "ticker": "PNB.NS",
+              "name": "PUNJAB NATIONAL BANK",
+              "score": 83,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 126.55,
+              "recordedAt": "2026-11-06T18:16:23.279512+00:00"
+            },
+            {
+              "rank": 2,
+              "ticker": "SMCGLOBAL.NS",
+              "name": "SMC GLOBAL SECURITIES LTD",
+              "score": 83,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 93.79,
+              "recordedAt": "2026-11-06T18:16:23.279512+00:00"
+            },
+            {
+              "rank": 3,
+              "ticker": "MAHABANK.NS",
+              "name": "BANK OF MAHARASHTRA",
+              "score": 82,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 86.91,
+              "recordedAt": "2026-11-06T18:16:23.279512+00:00"
+            },
+            {
+              "rank": 4,
+              "ticker": "AUROPHARMA.NS",
+              "name": "AUROBINDO PHARMA LTD",
+              "score": 81,
+              "verdict": "BUY",
+              "priceZone": "Below Fair Value",
+              "currency": "INR",
+              "recordedPrice": 1800,
+              "recordedAt": "2026-11-06T18:16:23.279512+00:00"
+            },
+            {
+              "rank": 5,
+              "ticker": "UNIONBANK.NS",
+              "name": "UNION BANK OF INDIA",
+              "score": 80,
+              "verdict": "BUY",
+              "priceZone": "Exceptional",
+              "currency": "INR",
+              "recordedPrice": 187,
+              "recordedAt": "2026-11-06T18:16:23.279512+00:00"
+            }
+          ]
+        }
+      }
+    },
     {
       "date": "2026-11-05",
       "markets": {
@@ -634,35 +759,40 @@
       "2026-11-02": 11.25,
       "2026-11-03": 11.41,
       "2026-11-04": 11.67,
-      "2026-11-05": 11.19
+      "2026-11-05": 11.19,
+      "2026-11-06": 11.56
     },
     "Canada:BNS.TO": {
       "2026-10-30": 131.05,
       "2026-11-02": 131.61,
       "2026-11-03": 131.17,
       "2026-11-04": 134.5,
-      "2026-11-05": 128.57
+      "2026-11-05": 128.57,
+      "2026-11-06": 129.54
     },
     "Canada:CNQ.TO": {
       "2026-10-30": 78.42,
       "2026-11-02": 75.12,
       "2026-11-03": 74.97,
       "2026-11-04": 69.2,
-      "2026-11-05": 68.48
+      "2026-11-05": 68.48,
+      "2026-11-06": 68.5
     },
     "Canada:DHT-UN.TO": {
       "2026-10-30": 18.14,
       "2026-11-02": 18.33,
       "2026-11-03": 18.53,
       "2026-11-04": 18.75,
-      "2026-11-05": 18.77
+      "2026-11-05": 18.77,
+      "2026-11-06": 19.23
     },
     "Canada:WCP.TO": {
       "2026-10-30": 19.62,
       "2026-11-02": 18.34,
       "2026-11-03": 18.6,
       "2026-11-04": 17.48,
-      "2026-11-05": 16.7
+      "2026-11-05": 16.7,
+      "2026-11-06": 16.67
     },
     "India:CHENNPETRO.NS": {
       "2026-10-30": 1511.5,
@@ -697,47 +827,56 @@
       "2026-11-02": 186,
       "2026-11-03": 183.2,
       "2026-11-04": 183.89,
-      "2026-11-05": 188.0
+      "2026-11-05": 188
     },
     "Canada:MFC.TO": {
       "2026-11-02": 62.68,
       "2026-11-03": 62.8,
       "2026-11-04": 64.17,
-      "2026-11-05": 61.63
+      "2026-11-05": 61.63,
+      "2026-11-06": 61.0
     },
     "India:AUROPHARMA.NS": {
       "2026-11-02": 1683.8,
       "2026-11-03": 1694.5,
       "2026-11-04": 1705,
-      "2026-11-05": 1785.0
+      "2026-11-05": 1785
     },
     "India:SMCGLOBAL.NS": {
       "2026-11-02": 92.32,
       "2026-11-03": 90.45,
-      "2026-11-04": 93.39
+      "2026-11-04": 93.39,
+      "2026-11-05": 93.43
     },
     "Canada:PLZ-UN.TO": {
       "2026-11-03": 5.3,
       "2026-11-04": 5.28,
-      "2026-11-05": 5.31
+      "2026-11-05": 5.31,
+      "2026-11-06": 5.32
     },
     "Canada:TD.TO": {
       "2026-11-04": 178.93,
-      "2026-11-05": 172.55
+      "2026-11-05": 172.55,
+      "2026-11-06": 172.92
     },
     "Canada:BTO.TO": {
-      "2026-11-05": 7.4
+      "2026-11-05": 7.4,
+      "2026-11-06": 7.63
     },
     "Canada:QSR.TO": {
-      "2026-11-05": 109.89
+      "2026-11-05": 109.89,
+      "2026-11-06": 109.63
     },
     "India:GAIL.NS": {
       "2026-11-05": 185.99
     },
     "India:MAHABANK.NS": {
       "2026-11-05": 85.1
+    },
+    "Canada:APR-UN.TO": {
+      "2026-11-06": 12.86
     }
   },
-  "quotesUpdatedAt": "2026-11-06T03:24:53.470914+00:00",
+  "quotesUpdatedAt": "2026-11-07T02:46:43.478923+00:00",
   "quoteFailures": []
 }
