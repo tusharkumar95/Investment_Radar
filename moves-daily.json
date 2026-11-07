@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T20:30:40.207959+00:00",
+  "updated": "2026-11-07T01:02:10.375109+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-06",
@@ -2866,6 +2866,14 @@
           "source": "TradingView",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
           "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-05:1",
+          "day": "2026-11-05",
+          "headline": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc?oc=5",
+          "verification": "Unverified — open original filing before acting"
         }
       ],
       "alerts": [
@@ -4453,14 +4461,6 @@
       "canada": [],
       "canadaReported": [],
       "canadaLeads": [
-        {
-          "id": "lead:2026-11-04:1",
-          "day": "2026-11-04",
-          "headline": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
-          "source": "The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc?oc=5",
-          "verification": "Unverified — open original filing before acting"
-        },
         {
           "id": "lead:2026-11-04:2",
           "day": "2026-11-04",
@@ -9763,10 +9763,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-06T20:30:39.875Z"
+      "asOf": "2026-11-07T01:02:08.940Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-06T20:30:38.589728+00:00",
+    "canadaDiscoveryUpdated": "2026-11-07T01:02:08.228308+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
