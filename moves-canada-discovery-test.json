@@ -1,24 +1,12 @@
 {
-  "testedAt": "2026-11-07T01:02:08.227833+00:00",
+  "testedAt": "2026-11-07T09:00:44.340114+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 8,
+      "count": 6,
       "items": [
-        {
-          "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSVFhdDZqd0NuUUhXc1Bsb2dnbnZwa3BBSmh6VjJLU29kQlF6d1puR0hZNzZURllZX0NYSlFmZHJVTTRtRU1vakpkdmNGWVhOTkFYMWlVbGNrUDBhTlJRSFEyNUZWcWNzMzFUbE5rSUtpdUxSM1hteVNmR0lVaXJyM2R2U3ZRYTlpUUozbnhSVXpoaDFNVVQ0Z3NkTlprNDlGYUE?oc=5",
-          "published": "Sat, 31 Oct 2026 00:22:00 GMT",
-          "source": "Yahoo Finance"
-        },
         {
           "title": "Laurentian Bank Completes Transactions with NBC and Fairstone Bank. - Laurentian Bank",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWHQ2WWJjNXB4cHA1NE9TX2x5N0R0alltMTdVdzFCaUhjbkt4R1YwYXRoQ3A1Mm93UnByVkNxeUxzVWNOeHAyMDVYU3laYlQ4c1htU255b1J5TE1UNGp1dElxWWJUVkQ4VVZma0pCUHBRQWlXSzZnYms3YUhlRk1JSFQ1dEVRMklBcU9ERG5wbXZFX1pCREtNQUhtTmI3R0Z4el94UXZ4bzM2SUFp?oc=5",
@@ -32,22 +20,22 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "Pan American Silver: Early Warning News Release - Business Wire",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR?oc=5",
-          "published": "Wed, 04 Nov 2026 01:45:00 GMT",
-          "source": "Business Wire"
-        },
-        {
           "title": "Early Warning Press Release - TradingView",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
           "published": "Thu, 05 Nov 2026 12:10:05 GMT",
           "source": "TradingView"
         },
         {
-          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
-          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
-          "source": "Kalkine Media"
+          "title": "Pan American Silver: Early Warning News Release - Business Wire",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR?oc=5",
+          "published": "Wed, 04 Nov 2026 01:45:00 GMT",
+          "source": "Business Wire"
+        },
+        {
+          "title": "World Copper Holdings Announces Acquisition of New Buggy Project; Closing of First Tranche of Non-Brokered Private Placement; Shares for Debt Settlement - TheNewswire",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOWTkycGU4MmgxYjdyTGg1SVhfQzNYUEJjNjBFbk1iUHNDQlNnMVFvWlRSNTRmQ05VTTg3eHdjeHhzbEt1V1JCZzdKOFRLX095eEtOVjlxaTZNRm9ObVNBOWhKR0dhTVhpZktPbnBfb3RWNDBfUkhZTWtxc2VVazdWUVl2SzFLUHg2VGNkYmNYT1FLVXhDbUlscmp1OExMTnZsQzB5Qk5xRjktSk5scVppSmZtYV91em5tb05ORzVQT1FRVjEwcml0aDlpZjMzM3lTa3ctUlhYZWthSVV0bXFhb3h1MkE4Z29fdkdXZ3M0aEN5U1ZzUlo2ODl2bE9jQzVtdE02azNldmpKd1ZOV3lsb1MwM1FhXzh6TTlmSGJidWN1R3VoZjRHOWdaMEg3Z3NVZHc?oc=5",
+          "published": "Wed, 04 Nov 2026 23:53:49 GMT",
+          "source": "TheNewswire"
         },
         {
           "title": "At C$1.12 a share, Pan American Silver (PAAS) adds to its Galleon Gold stake. - Stock Titan",
@@ -60,33 +48,14 @@
     {
       "query": "\"early warning\" \"acquiror\" \"acquired\" TSX when:7d",
       "ok": true,
-      "count": 1,
-      "items": [
-        {
-          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
-          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
-          "source": "Kalkine Media"
-        }
-      ]
+      "count": 0,
+      "items": []
     },
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 3,
+      "count": 1,
       "items": [
-        {
-          "title": "Amended Early Warning Press Release - Jeremy Gillis Announces Acquisition of Common Shares of Northern Lights Resources Corp. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPb2ZkdFBJVDRQeFlUTnVJek9nOHhnZFdGc185RDZZMUsxTDhsRF8yME1sUnA5T1R4YjdWLTlXaVRJallDZzhjcGgydWFtYk82cHBKVGdBZUQybno1M3E2bXQ1dTkxTTR5cHNCTUtidmdHLXlsZDlwcldCYmFPUDRsalRFek0xMTNsM1RCZ29CR3J2WHAwOWl4a1lEcDRQM0ZVcDZiU1N6V3Q2RWs1eW9DUll5VWdPbkpfOVY3RGVVdnRGbElXMkpzMmZveGtDdlZDc3g3Slg3end3YVMzbTJjelMwQ0UwbDhETG9wNzNzZU40TjB2UWNlNzdQOHluWDVEUTRlOVd2SF92R0c3THRGS2gzVjZJQzhpM3V0amlpVkFLQ3ls?oc=5",
-          "published": "Sat, 31 Oct 2026 01:26:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR) - Kalkine Media",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdGNaSE1vcHZpbFk4OW4zNDlFdHc5ZWVYd2hoemVqS1BhZmpsWnJ5LVhrdmtZaW5PU1NlcW1Dd2hwOEtxVHVneGxvaGZyZUtYckJZTVJrMUNGSTQ5a0RsY0tnZXp2WjRXWktwSGhtMjJ0QjNwd0ljWmNENzV1V2xmM3FvYmQ0MHdyMnpESXZPazFjSmJyV08zbEtMMFhvSzVvSmFPNnNweUpHRFlaZHJGRXpXa3phZ3F5ZnV3Zy1hbzlpaFZ1aGxRVmt1Q2VDTHhJb1BubTVITkJaN0pyN3JkNjB3?oc=5",
-          "published": "Sat, 31 Oct 2026 01:25:00 GMT",
-          "source": "Kalkine Media"
-        },
         {
           "title": "Foremost Announces Formation of GR and Blackwing Joint - GlobeNewswire",
           "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOTkdUbmE0ZXh3X3RBWHMyVkRQT1NpMkxmbkV0NnJqZHB5V1pWeG95LU9kX2p6UWhRb202LXVZMGd4eWVTVklhWnpFYVRHNUpHUDNWUUl0cFpodVZzSWhPWHpDRHJZbnlmSExhQi1NaktpRGxMYzNxQk9pa2V2ODlLMFVDUzh0RUNaNWNhWFZfZk94Q0ZwX2RPaVhUd0xiUGFHOVNsdTdEZGYtWTZtby1jaXo3X3RPRTdnUDJwQXNnUncwd3lTTGJ6cW1sbEdzWDVYRThDQm9VM0w3cGp0TW5xb29PY0hqRTh6T255a1k2X0l1ME1EbGVDaGNYcnVXZUx4Nmhick54NkxsYVNwcDRWR2x0QWRiWTdUTDJNZ0FZaXJoZw?oc=5",
