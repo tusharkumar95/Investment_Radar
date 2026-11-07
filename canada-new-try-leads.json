@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T21:59:59.680867+00:00",
+  "updated": "2026-11-07T02:28:54.835665+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:dd19c7861dc3cb15d9",
+      "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
+      "date": "2026-11-05",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd.    The Globe and Mail "
+    },
     {
       "id": "lead:951f4f53e984683b60",
       "title": "Nov 05, 2026, 13:10 ET \n                          ETRUSCUS CLOSES $200,000 FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Etruscus Resources Corp. (CSE: ETR) (OTC: ETRUF) (FSE: ERR) (the \"Company\" or \"Etruscus\") is pleased to",
@@ -24,17 +35,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
-    },
-    {
-      "id": "lead:dd19c7861dc3cb15d9",
-      "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
-      "date": "2026-11-04",
-      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc",
-      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd.    The Globe and Mail "
     },
     {
       "id": "lead:49074401ff9ca1b1b1",
@@ -574,6 +574,28 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:e0aa0c59358a2e8222",
+      "title": "19:49 ET \n                          ZYUS Life Sciences Announces Closing of Second Tranche of Non-Brokered Unit Offering Private Placement\n                         \n                         ZYUS Life Sciences Corporation (\"ZYUS\" or the \"Company\") (TSXV: ZYUS),",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/zyus-life-sciences-announces-closing-of-second-tranche-of-non-brokered-unit-offering-private-placement-811294698.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d5c773866e174583f5",
+      "title": "17:00 ET \n                        EARLY WARNING REPORT REGARDING THE AMENDMENT AND RESTATEMENT OF MARGIN LOAN AGREEMENTS SECURED BY SHARES OF TRIPLE FLAG PRECIOUS METALS CORP. BY ELLIOTT INVESTMENT MANAGEMENT L.P.\n                       \n                      ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/early-warning-report-regarding-the-amendment-and-restatement-of-margin-loan-agreements-secured-by-shares-of-triple-flag-precious-metals-corp-by-elliott-investment-management-l-p--835113589.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
@@ -596,8 +618,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 8,
-      "relevant": 5
+      "items": 7,
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -657,13 +679,13 @@
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 7
+      "relevant": 8
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 23
+      "relevant": 24
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -684,9 +706,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 52,
+    "leadCount": 54,
     "usFilingCount": 0,
-    "needsReview": 52
+    "needsReview": 54
   },
   "officialSources": [
     {
