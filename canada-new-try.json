@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-07T02:29:03.492815+00:00",
-  "day": "2026-11-06",
+  "updated": "2026-11-09T22:53:22.947310+00:00",
+  "day": "2026-11-09",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -426,8 +426,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 5.03
         },
         {
           "offset": 10,
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.41,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": -18.18,
+      "lastPrice": 5.03,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": -6.68,
       "quoteStatus": "Available"
     },
     {
@@ -470,8 +470,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 4.37
         },
         {
           "offset": 10,
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.94,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": -1.75,
+      "lastPrice": 4.37,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": 8.98,
       "quoteStatus": "Available"
     },
     {
@@ -514,8 +514,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 4.25
         },
         {
           "offset": 10,
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.31,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": -4.43,
+      "lastPrice": 4.25,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": -5.76,
       "quoteStatus": "Available"
     },
     {
@@ -602,8 +602,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 0.085
         },
         {
           "offset": 10,
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.08,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": -11.11,
+      "lastPrice": 0.085,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": -5.56,
       "quoteStatus": "Available"
     },
     {
@@ -646,8 +646,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 0.05
         },
         {
           "offset": 10,
@@ -665,9 +665,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.0525,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": 5.0,
+      "lastPrice": 0.05,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
@@ -690,8 +690,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 0.05
         },
         {
           "offset": 10,
@@ -709,9 +709,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.0525,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": 5.0,
+      "lastPrice": 0.05,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
@@ -734,8 +734,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 1.1
         },
         {
           "offset": 10,
@@ -753,9 +753,9 @@
           "price": null
         }
       ],
-      "lastPrice": 1.12,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": 0.0,
+      "lastPrice": 1.1,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": -1.79,
       "quoteStatus": "Available"
     },
     {
@@ -778,8 +778,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 0.05
         },
         {
           "offset": 10,
@@ -797,9 +797,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.0525,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": 5.0,
+      "lastPrice": 0.05,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
@@ -822,8 +822,8 @@
         },
         {
           "offset": 5,
-          "day": null,
-          "price": null
+          "day": "2026-11-09",
+          "price": 0.05
         },
         {
           "offset": 10,
@@ -841,9 +841,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.0525,
-      "lastPriceDate": "2026-11-06",
-      "priceChangePct": 5.0,
+      "lastPrice": 0.05,
+      "lastPriceDate": "2026-11-09",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
@@ -900,7 +900,7 @@
         "Labrador Gold Corp."
       ],
       "latestDisclosure": "2026-10-26",
-      "candidateArticles": 4,
+      "candidateArticles": 5,
       "status": "Verified transactions found"
     },
     {
@@ -911,7 +911,7 @@
         "Labrador Gold Corp."
       ],
       "latestDisclosure": "2026-10-26",
-      "candidateArticles": 4,
+      "candidateArticles": 5,
       "status": "Verified transactions found"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 32,
+      "candidateArticles": 35,
       "status": "Verified transactions found"
     },
     {
@@ -1042,6 +1042,39 @@
     }
   ],
   "leads": [
+    {
+      "id": "lead:d69481e6f3c6778e0d",
+      "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
+      "date": "2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZmZnT1l1WHFoRnVObDJ5a3ZNS0w0b1RWN0JEaWtySXU4X1RhY294ZzhidDhyTVdSN2N5Vmp4VWdaTDJxUGJzRFJHV1l6SFAxN01fbHA5V0RRSjY1UXI4SnloU2dZUEQtczVOSXhsNmZtT3htcFJrb0RELVk0QW1Ta0xlOEVGa0NQbWxybU1zbDlDSmNBSmNzb3RRcHp6SzdFbEoyZ2JTWG5RYUM0Z1I3NExCMmYyQkJzaFhLOWhNSUtyNFVqZkp5emI1R2ZGdXc0STNOR3E5UEtjbUdrYXlkTGxnVzlLQkNzM2gtbzlpNXpyNWRLbmc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc.    The Globe and Mail "
+    },
+    {
+      "id": "lead:e0aa0c59358a2e8222",
+      "title": "Nov 06, 2026, 19:49 ET \n                          ZYUS Life Sciences Announces Closing of Second Tranche of Non-Brokered Unit Offering Private Placement\n                         \n                         ZYUS Life Sciences Corporation (\"ZYUS\" or the \"Company\")",
+      "date": "2026-11-06",
+      "url": "https://www.newswire.ca/news-releases/zyus-life-sciences-announces-closing-of-second-tranche-of-non-brokered-unit-offering-private-placement-811294698.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:d5c773866e174583f5",
+      "title": "Nov 06, 2026, 17:00 ET \n                        EARLY WARNING REPORT REGARDING THE AMENDMENT AND RESTATEMENT OF MARGIN LOAN AGREEMENTS SECURED BY SHARES OF TRIPLE FLAG PRECIOUS METALS CORP. BY ELLIOTT INVESTMENT MANAGEMENT L.P.\n                       \n        ",
+      "date": "2026-11-06",
+      "url": "https://www.newswire.ca/news-releases/early-warning-report-regarding-the-amendment-and-restatement-of-margin-loan-agreements-secured-by-shares-of-triple-flag-precious-metals-corp-by-elliott-investment-management-l-p--835113589.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:dd19c7861dc3cb15d9",
       "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
@@ -1186,17 +1219,6 @@
       "summary": " Jeremy Gillis Updates Early Warning Report Revealing 11.75% Stake in Northern Lights Resources Corp. (NLR)    Kalkine Media "
     },
     {
-      "id": "lead:23bdde1cb3c5225045",
-      "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - PR Newswire Canada",
-      "date": "2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSzU3SEtONlMtRm9PTDZkZDA1OS0wR1dmZ09uTm8waUVqd0F3eWRkckNITUpGeTdTbUJLQzh0dkpXWFdzU0ZBOW5ZYnlvbXpXM0t4cDJMZkNrd0EzVDlGRkFhaUV0REFYeEtuTVYyNS1yOGxRR3VMMHFFZ09DY1RwV3d0X0JRLUhaWW01cXlES2h0M1VldTAwNlpUSzloQkxuVWI5VmdDSHBfNFdlcGFFOElSb1ZqTnFtMERwZ1pyRWZ3R2s2R0hEUV9EOC1Wcnlw",
-      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY    PR Newswire Canada "
-    },
-    {
       "id": "lead:9f2a6e8a9322283e28",
       "title": "Oct 30, 2026, 19:32 ET \n                        Western announces option grant to increase previously announced $50 million private placement to up to $57.5 Million\n                       \n                       The Western Investment Company of Canada Limited",
       "date": "2026-10-30",
@@ -1239,6 +1261,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:23bdde1cb3c5225045",
+      "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - PR Newswire Canada",
+      "date": "2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSzU3SEtONlMtRm9PTDZkZDA1OS0wR1dmZ09uTm8waUVqd0F3eWRkckNITUpGeTdTbUJLQzh0dkpXWFdzU0ZBOW5ZYnlvbXpXM0t4cDJMZkNrd0EzVDlGRkFhaUV0REFYeEtuTVYyNS1yOGxRR3VMMHFFZ09DY1RwV3d0X0JRLUhaWW01cXlES2h0M1VldTAwNlpUSzloQkxuVWI5VmdDSHBfNFdlcGFFOElSb1ZqTnFtMERwZ1pyRWZ3R2s2R0hEUV9EOC1Wcnlw",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY    PR Newswire Canada "
     },
     {
       "id": "lead:32d05f500895b8f16a",
@@ -1327,6 +1360,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    The Globe and Mail "
+    },
+    {
+      "id": "lead:4831c4f0b9131ab47f",
+      "title": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - The Manila Times",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNdXl4T0U0Tm0yNS04bGd6S1NPN3JBdkZvUUp3cmNfdV9heXg1emZTN0RQcjE4eExVeG9rNWRITmFvRVpCOXhvUTBYSHFxU3IwQzNKbVRSYmNwZDF5Nm1IQktaY3BFM1B3djg2ZElqeWtZSU94N3c0M2JxR0w5azRRaHNYMTVpaHU4QWxQdDRnOU1zZ2hJaEpXbTdVMXFHa3IwM3dibWhRWm1RR21GS19pa2hrSldTM01kbzM1MWJPdXRQNlNCZUtpRTlFaXVYaTJWNjRJYUdqeVN2OTBodnoxZmxuN1RxeTRWVC1OSGpKdFhrXzNnWDVF0gH8AUFVX3lxTE5ScnRRQWlvb3ltOUxmX0xrQ29HMzhodG84Q3BSQjRwUGY0V1IxbUdvY2t3c0o0X2xMTkJxUmFGU2NXZDBJRVhES09kSGFlenVncGltajVycUwxLWhQUnBWVTg0dGNiTmN5WU5jVUxuWlNVT3hzc19VeUR6OEFDdjRvNmU0S2t0Z0lBa0w4a0FpamtFb1FoYkQyNUdDV2o3NVYwME15djRyLThMZ2hEbWFOOE1sdnRKYThBem5sWGs3aWVkNjZpcnVBVGFxeUxxeWZjcUhWN18xU1RfLWpMeUxhWU45NDlaWU4xeVE3NHJDQ0V4Nm9icW4xZUFCcg",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    The Manila Times "
     },
     {
       "id": "lead:3fee9d68a86eb388e3",
@@ -1560,6 +1604,17 @@
       "summary": ""
     },
     {
+      "id": "lead:57742d5e8d6eb3ef25",
+      "title": "Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand - The Globe and Mail",
+      "date": "2026-10-14",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcmNhZXgwSU82em82aXdEc1dXSEJld2ZOSFExbEJ1bU8zYnI1UHdvSVM1WEFZc2owUm9ncFg1dUp5ek05dHVXSDNzUjV1bFI2ODdmbTJjNFBSVTRMakhJMTV1RHQ4WDYxRnNMVzd6OVBfMkVIR0I0ZjVDZUhGa3J6cE1EREdCbFFxREg1SGxyQ2I0ejJSeUllMFJ1emZpdEZRN2JNUks5STlLR2RUc3BLQ1l6QmwxbEJmR2lzOE9OajBMUGRzWXp5U09IbFJiSXdaY2NtRlNZdzUxbmJSZndpZDFfb2haOUtRbVU2MTJmYWNQM29sSk1V",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand    The Globe and Mail "
+    },
+    {
       "id": "lead:b35fccfd806b8671a6",
       "title": "Oct 13, 2026, 13:44 ET \n                          NICKEL CREEK PLATINUM ANNOUNCES NON-BROKERED PRIVATE PLACEMENT\n                         \n                         Nickel Creek Platinum Corp. (TSXV: NCP) (\"Nickel Creek\" or the \"Company\") is pleased to announce",
       "date": "2026-10-13",
@@ -1615,23 +1670,12 @@
       "summary": ""
     },
     {
-      "id": "lead:e0aa0c59358a2e8222",
-      "title": "19:49 ET \n                          ZYUS Life Sciences Announces Closing of Second Tranche of Non-Brokered Unit Offering Private Placement\n                         \n                         ZYUS Life Sciences Corporation (\"ZYUS\" or the \"Company\") (TSXV: ZYUS),",
+      "id": "lead:e0cbfb39f5fd37be0b",
+      "title": "07:00 ET \n                        Vesalius Longevity Labs Closes Strategic Financing of US$6.5 Million, Led by Investor Group Organized by Harvey Spevak\n                       \n                       Vesalius Longevity Labs Inc. (formerly Sweet Earth Holdings ",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/zyus-life-sciences-announces-closing-of-second-tranche-of-non-brokered-unit-offering-private-placement-811294698.html",
+      "url": "https://www.newswire.ca/news-releases/vesalius-longevity-labs-closes-strategic-financing-of-us-6-5-million-led-by-investor-group-organized-by-harvey-spevak-849171266.html",
       "discoveredVia": "Canada NewsWire / Private placements",
       "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:d5c773866e174583f5",
-      "title": "17:00 ET \n                        EARLY WARNING REPORT REGARDING THE AMENDMENT AND RESTATEMENT OF MARGIN LOAN AGREEMENTS SECURED BY SHARES OF TRIPLE FLAG PRECIOUS METALS CORP. BY ELLIOTT INVESTMENT MANAGEMENT L.P.\n                       \n                      ",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/early-warning-report-regarding-the-amendment-and-restatement-of-margin-loan-agreements-secured-by-shares-of-triple-flag-precious-metals-corp-by-elliott-investment-management-l-p--835113589.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -1657,7 +1701,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
+      "items": 5,
       "relevant": 4
     },
     {
@@ -1681,7 +1725,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 6,
+      "items": 4,
       "relevant": 1
     },
     {
@@ -1712,7 +1756,7 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 5
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -1724,7 +1768,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 24
+      "relevant": 25
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1766,7 +1810,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 54,
+    "disclosureLeads": 58,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
