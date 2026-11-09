@@ -1,10 +1,36 @@
 {
   "schema": 1,
-  "updated": "2026-11-09T11:21:07.897029+00:00",
+  "updated": "2026-11-09T21:32:10.544419+00:00",
   "market": "India",
   "thresholdCr": 100,
   "policy": "Only documented awards qualify as verified. Exchange RSS order metadata may carry a reported value but must be checked against the attachment. Media headlines and non-final bids/LOIs never trigger alerts. Refresh delay and feed availability apply.",
   "orders": [
+    {
+      "id": "order:9a4ded692ca7cb4010640e",
+      "company": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology",
+      "symbol": null,
+      "title": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology - EquityBulls",
+      "summary": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology EquityBulls",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-09T10:37:03+00:00",
+      "announcementDate": "2026-11-09",
+      "valueCr": 19.0,
+      "valueMinCr": 19.0,
+      "valueMaxCr": 19.0,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWE5JaGxtMzRZQ005ZVhBMzNMbldEWU80UFF6dnVsVlFtTUhqdWZ5bjBBaldpMVpWLXNfMnQycXpRZ09nbzNnaHIzaWZHRFRXYmRCbU9RRzByNzVlNnNGUzhlUVZGcUpSNzVVbERZV0dPTFNkVWg4dFo5aXFWcThYTlc1OFF2QlNBNmxjWFBJTDNicXpvTnExQUdLSG9XQmtNbVhZdzUtWWJROERlUG50MnNDQ0t5RUw4Z3NSWg",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-09T21:32:10.544419+00:00"
+    },
     {
       "id": "order:44a33111ef65473ddd511f",
       "company": "RMC Switchgears: Bagging/Receiving of orders/contracts",
@@ -56,7 +82,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:d3960bfe823e64c85a2d10",
@@ -82,7 +109,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:58eaeb79272ec2f3741215",
@@ -567,7 +595,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ec690e1c856c10e32cccf2",
@@ -890,7 +919,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d90b04a087093c0b23c3ce",
@@ -997,7 +1027,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:cab2668a4e97b2e846706f",
@@ -1104,7 +1135,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:c2cc919c6898870cd1ed5b",
@@ -1292,7 +1324,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b8e026d7badfbe84b7100c",
@@ -1534,7 +1567,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9fb95b0468142255469786",
@@ -1992,7 +2026,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8a2c9b69ff9c7e351866cd",
@@ -2342,7 +2377,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:75a6dc507c9ecae519ebd8",
@@ -2530,7 +2566,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:6d2a724b18dbfd34cb027e",
@@ -3150,7 +3187,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:42c3524cd28255bcc02cd5",
@@ -3338,7 +3376,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:38b48f8787b5168b0c0a70",
@@ -3931,7 +3970,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1683a45bcf0d372273c954",
@@ -4200,7 +4240,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:077d81df8071508262e9db",
@@ -4691,7 +4732,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ec690e1c856c10e32cccf2",
@@ -5014,7 +5056,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d90b04a087093c0b23c3ce",
@@ -5121,7 +5164,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:cab2668a4e97b2e846706f",
@@ -5228,7 +5272,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:c2cc919c6898870cd1ed5b",
@@ -5416,7 +5461,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b8e026d7badfbe84b7100c",
@@ -5658,7 +5704,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9fb95b0468142255469786",
@@ -6116,7 +6163,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8a2c9b69ff9c7e351866cd",
@@ -6466,7 +6514,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:75a6dc507c9ecae519ebd8",
@@ -6654,7 +6703,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:6d2a724b18dbfd34cb027e",
@@ -7274,7 +7324,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:42c3524cd28255bcc02cd5",
@@ -7462,7 +7513,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:38b48f8787b5168b0c0a70",
@@ -8055,7 +8107,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1683a45bcf0d372273c954",
@@ -8324,7 +8377,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:077d81df8071508262e9db",
@@ -8437,6 +8491,32 @@
   ],
   "researchLeads": [
     {
+      "id": "order:9a4ded692ca7cb4010640e",
+      "company": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology",
+      "symbol": null,
+      "title": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology - EquityBulls",
+      "summary": "ARAPL Secures ₹19 Crore Order for Its NextGeneration AGV-Based Automated Car Parking Technology EquityBulls",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-09T10:37:03+00:00",
+      "announcementDate": "2026-11-09",
+      "valueCr": 19.0,
+      "valueMinCr": 19.0,
+      "valueMaxCr": 19.0,
+      "currency": "INR",
+      "valueStatus": "Exchange feed text; original attachment not yet reviewed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWE5JaGxtMzRZQ005ZVhBMzNMbldEWU80UFF6dnVsVlFtTUhqdWZ5bjBBaldpMVpWLXNfMnQycXpRZ09nbzNnaHIzaWZHRFRXYmRCbU9RRzByNzVlNnNGUzhlUVZGcUpSNzVVbERZV0dPTFNkVWg4dFo5aXFWcThYTlc1OFF2QlNBNmxjWFBJTDNicXpvTnExQUdLSG9XQmtNbVhZdzUtWWJROERlUG50MnNDQ0t5RUw4Z3NSWg",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-09T21:32:10.544419+00:00"
+    },
+    {
       "id": "order:44a33111ef65473ddd511f",
       "company": "RMC Switchgears: Bagging/Receiving of orders/contracts",
       "symbol": null,
@@ -8487,7 +8567,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:d3960bfe823e64c85a2d10",
@@ -8513,7 +8594,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00"
+      "firstSeenAt": "2026-11-09T11:21:07.897029+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:58eaeb79272ec2f3741215",
@@ -8818,22 +8900,22 @@
       "name": "NSE corporate announcements RSS",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 543,
-      "orderMentions": 9
+      "items": 2,
+      "orderMentions": 0
     },
     {
       "name": "NSE announcements alternate",
       "url": "https://archives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 545,
-      "orderMentions": 9
+      "items": 2,
+      "orderMentions": 0
     },
     {
       "name": "BSE corporate announcements RSS",
       "url": "https://www.bseindia.com/data/xml/announcements.xml",
       "ok": true,
-      "items": 10512,
-      "orderMentions": 4
+      "items": 7,
+      "orderMentions": 0
     },
     {
       "name": "News search: order awards",
@@ -8846,7 +8928,7 @@
       "name": "News search: contract awards",
       "url": "https://news.google.com/rss/search?q=%28%22contract+awarded%22+OR+%22letter+of+award%22+OR+%22order+worth%22%29+BSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 5,
+      "items": 8,
       "orderMentions": 1
     },
     {
@@ -8858,14 +8940,14 @@
     }
   ],
   "status": {
-    "orders": 160,
+    "orders": 161,
     "verified": 2,
     "exchangeNotices": 144,
-    "researchLeads": 14,
+    "researchLeads": 15,
     "significantAlerts": 7,
     "sourcesAvailable": 6,
     "sourcesChecked": 6,
-    "latestAnnouncementDate": "2026-11-07"
+    "latestAnnouncementDate": "2026-11-09"
   },
   "sources": {
     "NSE": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
