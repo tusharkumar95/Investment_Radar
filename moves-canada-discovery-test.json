@@ -1,29 +1,17 @@
 {
-  "testedAt": "2026-11-07T09:00:44.340114+00:00",
+  "testedAt": "2026-11-09T22:34:32.314850+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 4,
       "items": [
         {
-          "title": "Laurentian Bank Completes Transactions with NBC and Fairstone Bank. - Laurentian Bank",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWHQ2WWJjNXB4cHA1NE9TX2x5N0R0alltMTdVdzFCaUhjbkt4R1YwYXRoQ3A1Mm93UnByVkNxeUxzVWNOeHAyMDVYU3laYlQ4c1htU255b1J5TE1UNGp1dElxWWJUVkQ4VVZma0pCUHBRQWlXSzZnYms3YUhlRk1JSFQ1dEVRMklBcU9ERG5wbXZFX1pCREtNQUhtTmI3R0Z4el94UXZ4bzM2SUFp?oc=5",
-          "published": "Mon, 02 Nov 2026 19:41:12 GMT",
-          "source": "Laurentian Bank"
-        },
-        {
-          "title": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRERWVmpaaDdCbDRkWUpybVdibTIxM2p5aTgxOEVMV0N3cDZ4dzVBZjFPc25zZkRydWRpRDZ2SDd5T2NleVAtODlOQVhWdmRZY1RXMGNHWGFjUUZGMElXdW5JeWNWcUNIeHZ1SVlfa0ZRSU1yOTNqYURGaTVzOVo1TjdENkFscHhLLUp4OXdQLVowQkY5SG1Tb1NwYTd0YnNhSTVCaGRXSlZmVDVIWVVuSFR5eVZJVUZzbmhfMVlDQWpOczBvZ01zeFJ4TGFWZjhzVU5aUVFCTWMwYmdGQWJueTBPSk0yVDhUUHBNdmxsMDMxTmlodXl1ZXp0VHVRMVl0c3dXTy0xbHZPTnE2UWlsbUdieThtS1d1bnl0dlJzaXBEbXRLZHFwWERacGFPSG1BNWpyME5RWkI2cnR2UWVqa1JfLVdpSzlnOXc?oc=5",
-          "published": "Thu, 05 Nov 2026 00:23:56 GMT",
+          "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZmZnT1l1WHFoRnVObDJ5a3ZNS0w0b1RWN0JEaWtySXU4X1RhY294ZzhidDhyTVdSN2N5Vmp4VWdaTDJxUGJzRFJHV1l6SFAxN01fbHA5V0RRSjY1UXI4SnloU2dZUEQtczVOSXhsNmZtT3htcFJrb0RELVk0QW1Ta0xlOEVGa0NQbWxybU1zbDlDSmNBSmNzb3RRcHp6SzdFbEoyZ2JTWG5RYUM0Z1I3NExCMmYyQkJzaFhLOWhNSUtyNFVqZkp5emI1R2ZGdXc0STNOR3E5UEtjbUdrYXlkTGxnVzlLQkNzM2gtbzlpNXpyNWRLbmc?oc=5",
+          "published": "Mon, 09 Nov 2026 14:52:59 GMT",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": "Early Warning Press Release - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
-          "published": "Thu, 05 Nov 2026 12:10:05 GMT",
-          "source": "TradingView"
         },
         {
           "title": "Pan American Silver: Early Warning News Release - Business Wire",
@@ -32,10 +20,10 @@
           "source": "Business Wire"
         },
         {
-          "title": "World Copper Holdings Announces Acquisition of New Buggy Project; Closing of First Tranche of Non-Brokered Private Placement; Shares for Debt Settlement - TheNewswire",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOWTkycGU4MmgxYjdyTGg1SVhfQzNYUEJjNjBFbk1iUHNDQlNnMVFvWlRSNTRmQ05VTTg3eHdjeHhzbEt1V1JCZzdKOFRLX095eEtOVjlxaTZNRm9ObVNBOWhKR0dhTVhpZktPbnBfb3RWNDBfUkhZTWtxc2VVazdWUVl2SzFLUHg2VGNkYmNYT1FLVXhDbUlscmp1OExMTnZsQzB5Qk5xRjktSk5scVppSmZtYV91em5tb05ORzVQT1FRVjEwcml0aDlpZjMzM3lTa3ctUlhYZWthSVV0bXFhb3h1MkE4Z29fdkdXZ3M0aEN5U1ZzUlo2ODl2bE9jQzVtdE02azNldmpKd1ZOV3lsb1MwM1FhXzh6TTlmSGJidWN1R3VoZjRHOWdaMEg3Z3NVZHc?oc=5",
-          "published": "Wed, 04 Nov 2026 23:53:49 GMT",
-          "source": "TheNewswire"
+          "title": "Nearly a third of GGL Resources is now held by Strategic Metals. - Stock Titan",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU3FoNWMyZU5PbUNlMlBJc05MZm9QWEJyeEhyQW1PckY3NzVQb01iZ3RRRjE0bGQyS00tZXRMWmhkdWMtWmZhWXpQcWRWa3pzRHFnSXFPTlVKS2pKekFnZTlxekx3RWFHZjRZSTNwN0ZZd0pNSkpWSllmVllwQUkzQS03d1BQRTMtdUpIVG50V0lydzE4QWFiVV9KdmxSVmx4eWhVUHJiZHBGRndYOHVMMDA0VUhWejlONFFjbnN5SGg?oc=5",
+          "published": "Thu, 05 Nov 2026 10:00:00 GMT",
+          "source": "Stock Titan"
         },
         {
           "title": "At C$1.12 a share, Pan American Silver (PAAS) adds to its Galleon Gold stake. - Stock Titan",
@@ -54,12 +42,18 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "title": "Foremost Announces Formation of GR and Blackwing Joint - GlobeNewswire",
           "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOTkdUbmE0ZXh3X3RBWHMyVkRQT1NpMkxmbkV0NnJqZHB5V1pWeG95LU9kX2p6UWhRb202LXVZMGd4eWVTVklhWnpFYVRHNUpHUDNWUUl0cFpodVZzSWhPWHpDRHJZbnlmSExhQi1NaktpRGxMYzNxQk9pa2V2ODlLMFVDUzh0RUNaNWNhWFZfZk94Q0ZwX2RPaVhUd0xiUGFHOVNsdTdEZGYtWTZtby1jaXo3X3RPRTdnUDJwQXNnUncwd3lTTGJ6cW1sbEdzWDVYRThDQm9VM0w3cGp0TW5xb29PY0hqRTh6T255a1k2X0l1ME1EbGVDaGNYcnVXZUx4Nmhick54NkxsYVNwcDRWR2x0QWRiWTdUTDJNZ0FZaXJoZw?oc=5",
           "published": "Tue, 03 Nov 2026 12:30:00 GMT",
+          "source": "GlobeNewswire"
+        },
+        {
+          "title": "Vireo Growth Inc. Completes Acquisition of FLUENT Corp. - GlobeNewswire",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRDFDcGRtckhsbVNmdXhVTFlBZlRZSkhXY3g5XzdkNW5fblFHRW5TbHdvOWk4ZVEtUnFOSGlKcU1Zd01VZHFEZHBVcmdHNVN4dnRxYzVRNkFPT04yRW85cVBwMWs4V0xNMFBuTmcwQlFoNF83elNhZEtJbGpPdXVndkxoWmR1OWtUSlozS1ZqNGd5a0pGLTVSYU1QWE9UY0lUR2tOaFdnTjNMYVRTV1B5NmN6TV9VWmVTTkRkYzJhSlF2LTg?oc=5",
+          "published": "Mon, 09 Nov 2026 13:30:34 GMT",
           "source": "GlobeNewswire"
         }
       ]
