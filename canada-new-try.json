@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-10T20:16:51.871537+00:00",
+  "updated": "2026-11-10T22:15:25.224011+00:00",
   "day": "2026-11-10",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.9,
+      "lastPrice": 4.84,
       "lastPriceDate": "2026-11-10",
-      "priceChangePct": -9.09,
+      "priceChangePct": -10.2,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.33,
+      "lastPrice": 4.32,
       "lastPriceDate": "2026-11-10",
-      "priceChangePct": 7.98,
+      "priceChangePct": 7.73,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.15,
+      "lastPrice": 4.25,
       "lastPriceDate": "2026-11-10",
-      "priceChangePct": -7.98,
+      "priceChangePct": -5.76,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 37,
+      "candidateArticles": 38,
       "status": "Verified transactions found"
     },
     {
@@ -1703,6 +1703,17 @@
       "summary": ""
     },
     {
+      "id": "lead:710332b074249d62bd",
+      "title": "17:12 ET \n                          FIELDS OF GOLD ANNOUNCES NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") announces that it will offer (the \"Offering\") u",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/fields-of-gold-announces-non-brokered-flow-through-private-placement-838107280.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:19b5d98b7eb55190df",
       "title": "11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-Over Bid...",
       "date": null,
@@ -1789,19 +1800,19 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 9
+      "relevant": 8
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 25
+      "relevant": 26
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1843,7 +1854,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 61,
+    "disclosureLeads": 62,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,

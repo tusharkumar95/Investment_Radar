@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-10T20:16:42.703401+00:00",
+  "updated": "2026-11-10T22:15:16.707697+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -664,6 +664,17 @@
       "summary": ""
     },
     {
+      "id": "lead:710332b074249d62bd",
+      "title": "17:12 ET \n                          FIELDS OF GOLD ANNOUNCES NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") announces that it will offer (the \"Offering\") u",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/fields-of-gold-announces-non-brokered-flow-through-private-placement-838107280.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:19b5d98b7eb55190df",
       "title": "11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-Over Bid...",
       "date": null,
@@ -750,19 +761,19 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 9
+      "relevant": 8
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 25
+      "relevant": 26
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -783,9 +794,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 61,
+    "leadCount": 62,
     "usFilingCount": 0,
-    "needsReview": 61
+    "needsReview": 62
   },
   "officialSources": [
     {
