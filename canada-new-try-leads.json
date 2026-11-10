@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-10T00:38:51.307575+00:00",
+  "updated": "2026-11-10T04:26:28.915278+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -662,8 +662,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 4
+      "items": 4,
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -717,7 +717,7 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Acquisitions",

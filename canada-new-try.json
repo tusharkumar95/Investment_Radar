@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-10T00:39:00.150622+00:00",
+  "updated": "2026-11-10T04:26:36.868604+00:00",
   "day": "2026-11-09",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -1701,8 +1701,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 4
+      "items": 4,
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1756,7 +1756,7 @@
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
       "items": 7,
-      "relevant": 6
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Acquisitions",
