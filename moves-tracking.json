@@ -670,7 +670,8 @@
       "2026-11-03": 21.85,
       "2026-11-04": 21.85,
       "2026-11-05": 22.0,
-      "2026-11-06": 21.5
+      "2026-11-06": 21.5,
+      "2026-11-09": 22.0
     },
     "India:BLSPOLY": {
       "2026-11-03": 268.8,
@@ -718,7 +719,7 @@
       "2026-11-09": 168.89
     }
   },
-  "updatedAt": "2026-11-10T03:42:23.650997+00:00",
+  "updatedAt": "2026-11-10T10:11:22.747246+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -740,7 +741,7 @@
     "India:ALIVUS": "ALIVUS.NS",
     "India:V2RETAIL": "V2RETAIL.NS"
   },
-  "quotesUpdatedAt": "2026-11-10T03:42:28.634014+00:00",
+  "quotesUpdatedAt": "2026-11-10T10:11:27.126158+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:HGSINDIALT",
