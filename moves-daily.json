@@ -1,8 +1,9 @@
 {
   "schema": 1,
-  "updated": "2026-11-10T10:11:22.747246+00:00",
+  "updated": "2026-11-10T19:53:24.625716+00:00",
   "retentionDays": 7,
   "dates": [
+    "2026-11-10",
     "2026-11-09",
     "2026-11-06",
     "2026-11-05",
@@ -10,6 +11,31 @@
     "2026-11-03"
   ],
   "days": [
+    {
+      "date": "2026-11-10",
+      "india": [],
+      "canada": [],
+      "canadaReported": [],
+      "canadaLeads": [
+        {
+          "id": "lead:2026-11-10:0",
+          "day": "2026-11-10",
+          "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdnlyNVh6cXAzUGNYRmIwWC02c2ZBcHlsc1NsTXFiLVNYeGdDZDlJWXl6TFV4VklFMlpoT0dCY3ZtTGFZZ1RFOGxkQUZWOUZHVGo4RDEzeEU4elRJQnM3TUxLYXRtOTNEaU1LOUdDRnF0X1BjR0lfczdLYlE3c00zOGtRaWdySDJBUE42dnRlT0NMZ2JWSFMzX0g2NHEya3d3VHRmZzJnM3VzX0htaFUyaWdCMTBCd21qSVptNGJ4NGZVSVR6T3FiNTUwUjEzT3gtSnpSQl9VLWthYWcwNkdSR0xzQWE2VWpHTUk5em9qRGtxZkpOQ05uTzFWTHR2NTBFMUo4?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-10:1",
+          "day": "2026-11-10",
+          "headline": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
+          "source": "GlobeNewswire",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        }
+      ],
+      "alerts": []
+    },
     {
       "date": "2026-11-09",
       "india": [
@@ -815,7 +841,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-09:0",
+          "id": "lead:2026-11-09:2",
           "day": "2026-11-09",
           "headline": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -3691,7 +3717,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-05:1",
+          "id": "lead:2026-11-05:3",
           "day": "2026-11-05",
           "headline": "Early Warning Press Release - TradingView",
           "source": "TradingView",
@@ -3699,7 +3725,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-11-05:2",
+          "id": "lead:2026-11-05:4",
           "day": "2026-11-05",
           "headline": "Early Warning News Release - Katharine Allen Adams, Gustavo J. Koch and Robert W. Neill Announce Acquisition of Common Shares of Monteoro Minerals Ltd. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -5293,7 +5319,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-04:3",
+          "id": "lead:2026-11-04:5",
           "day": "2026-11-04",
           "headline": "Pan American Silver: Early Warning News Release - Business Wire",
           "source": "Business Wire",
@@ -7599,10 +7625,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-10T10:11:22.153Z"
+      "asOf": "2026-11-10T19:53:23.595Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-10T10:11:20.995326+00:00",
+    "canadaDiscoveryUpdated": "2026-11-10T19:53:22.800241+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

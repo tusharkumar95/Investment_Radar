@@ -1,9 +1,27 @@
 {
-  "updated": "2026-11-10T10:11:21.020779+00:00",
-  "candidateCount": 15,
-  "needsReview": 14,
+  "updated": "2026-11-10T19:53:22.823939+00:00",
+  "candidateCount": 17,
+  "needsReview": 16,
   "possibleDuplicates": 1,
   "records": [
+    {
+      "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
+      "published": "Tue, 10 Nov 2026 18:27:41 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdnlyNVh6cXAzUGNYRmIwWC02c2ZBcHlsc1NsTXFiLVNYeGdDZDlJWXl6TFV4VklFMlpoT0dCY3ZtTGFZZ1RFOGxkQUZWOUZHVGo4RDEzeEU4elRJQnM3TUxLYXRtOTNEaU1LOUdDRnF0X1BjR0lfczdLYlE3c00zOGtRaWdySDJBUE42dnRlT0NMZ2JWSFMzX0g2NHEya3d3VHRmZzJnM3VzX0htaFUyaWdCMTBCd21qSVptNGJ4NGZVSVR6T3FiNTUwUjEzT3gtSnpSQl9VLWthYWcwNkdSR0xzQWE2VWpHTUk5em9qRGtxZkpOQ05uTzFWTHR2NTBFMUo4?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
+      "headline": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
+      "published": "Tue, 10 Nov 2026 12:00:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
     {
       "headline": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
       "published": "Mon, 09 Nov 2026 14:52:59 GMT",
