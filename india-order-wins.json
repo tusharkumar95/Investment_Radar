@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-10T11:00:33.669409+00:00",
+  "updated": "2026-11-10T18:37:44.221130+00:00",
   "market": "India",
   "thresholdCr": 100,
   "policy": "Only documented awards qualify as verified. Exchange RSS order metadata may carry a reported value but must be checked against the attachment. Media headlines and non-final bids/LOIs never trigger alerts. Refresh delay and feed availability apply.",
@@ -731,7 +731,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e309affe734c57076a41c8",
@@ -2134,7 +2135,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:855adc6e0e4f411b9de510",
@@ -3672,7 +3674,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:28475a0195d7de3e70444d",
@@ -3860,7 +3863,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:23106cfea72dfcfb17b090",
@@ -3967,7 +3971,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2042ec99dd905721912c19",
@@ -4128,7 +4133,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1683a45bcf0d372273c954",
@@ -5024,7 +5030,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e309affe734c57076a41c8",
@@ -6427,7 +6434,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:855adc6e0e4f411b9de510",
@@ -7965,7 +7973,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:28475a0195d7de3e70444d",
@@ -8153,7 +8162,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:23106cfea72dfcfb17b090",
@@ -8260,7 +8270,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2042ec99dd905721912c19",
@@ -8421,7 +8432,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00"
+      "firstSeenAt": "2026-11-10T11:00:33.669409+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:1683a45bcf0d372273c954",
@@ -9214,28 +9226,28 @@
       "name": "NSE corporate announcements RSS",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 469,
-      "orderMentions": 5
+      "items": 0,
+      "orderMentions": 0
     },
     {
       "name": "NSE announcements alternate",
       "url": "https://archives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 469,
-      "orderMentions": 5
+      "items": 0,
+      "orderMentions": 0
     },
     {
       "name": "BSE corporate announcements RSS",
       "url": "https://www.bseindia.com/data/xml/announcements.xml",
       "ok": true,
-      "items": 1731,
-      "orderMentions": 1
+      "items": 0,
+      "orderMentions": 0
     },
     {
       "name": "News search: order awards",
       "url": "https://news.google.com/rss/search?q=%28%22wins+orders%22+OR+%22secured+order%22+OR+%22order+received%22%29+NSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 1,
+      "items": 2,
       "orderMentions": 0
     },
     {
