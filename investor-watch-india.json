@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-09T21:32:10.434733+00:00",
+  "updated": "2026-11-10T11:00:33.493414+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-06",
-    "trades": 661,
-    "investors": 402
+    "latest": "2026-11-09",
+    "trades": 681,
+    "investors": 413
   },
   "featured": [
     {
@@ -1384,6 +1384,72 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:d8aaa72f6f3d06b8",
+      "name": "JASUB PROPERTY HOLDINGS LLP",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 258.0,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 258.0,
+      "latestDisclosure": "2026-11-09",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-09",
+          "name": "JASUB PROPERTY HOLDINGS LLP",
+          "symbol": "COHANCE",
+          "company": "Cohance Lifesciences Ltd",
+          "buyQty": 3000000,
+          "sellQty": 0,
+          "buyValueINR": 1290000000.0,
+          "sellValueINR": 0,
+          "netShares": 3000000,
+          "netValueINR": 1290000000.0,
+          "avgBuyPrice": 430.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "4ebfdf6a8e58922c0a"
+        },
+        {
+          "date": "2026-11-09",
+          "name": "JASUB PROPERTY HOLDINGS LLP",
+          "symbol": "COHANCE",
+          "company": "Cohance Lifesciences Ltd",
+          "buyQty": 3000000,
+          "sellQty": 0,
+          "buyValueINR": 1290000000.0,
+          "sellValueINR": 0,
+          "netShares": 3000000,
+          "netValueINR": 1290000000.0,
+          "avgBuyPrice": 430.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "59c377f8fb17cbf5e2"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "COHANCE",
+          "company": "Cohance Lifesciences Ltd",
+          "buyValueCr": 258.0,
+          "sellValueCr": 0.0,
+          "netShares": 6000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:e412b66fef586588",
       "name": "GHISALLO MASTER FUND LP",
       "type": "Institution / fund / investment entity (name-based)",
@@ -1669,16 +1735,32 @@
       "id": "investor:572f1466d17bafa8",
       "name": "GOLDMAN SACHS BANK EUROPE SE",
       "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 1,
+      "observedTransactions": 2,
       "observedBuyDays": 1,
-      "observedSellDays": 0,
+      "observedSellDays": 1,
       "buyValueCr": 190.59,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 190.59,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
+      "sellValueCr": 4.67,
+      "netDisclosedValueCr": 185.92,
+      "latestDisclosure": "2026-11-09",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-09",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyQty": 0,
+          "sellQty": 304300,
+          "buyValueINR": 0,
+          "sellValueINR": 46713093.0,
+          "netShares": -304300,
+          "netValueINR": -46713093.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "655d1f91c19a3c9923"
+        },
         {
           "date": "2026-10-30",
           "name": "GOLDMAN SACHS BANK EUROPE SE",
@@ -1705,11 +1787,20 @@
           "netShares": 10550000,
           "buyDays": 1,
           "sellDays": 0
+        },
+        {
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyValueCr": 0.0,
+          "sellValueCr": 4.67,
+          "netShares": -304300,
+          "buyDays": 0,
+          "sellDays": 1
         }
       ],
       "observations": {
         "repeatPurchases": false,
-        "buyAndSellObserved": false,
+        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -4301,19 +4392,35 @@
       "id": "investor:a845d163545f54ae",
       "name": "L7 HITECH PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 13,
-      "observedBuyDays": 8,
-      "observedSellDays": 8,
-      "buyValueCr": 39.35,
-      "sellValueCr": 5.48,
-      "netDisclosedValueCr": 33.87,
-      "latestDisclosure": "2026-11-03",
-      "uniqueCompanies": 9,
+      "observedTransactions": 14,
+      "observedBuyDays": 9,
+      "observedSellDays": 9,
+      "buyValueCr": 39.55,
+      "sellValueCr": 5.81,
+      "netDisclosedValueCr": 33.74,
+      "latestDisclosure": "2026-11-09",
+      "uniqueCompanies": 10,
       "repeatBuyCompanies": [
         "EVENTIONS",
         "MOMSBELIEF"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-09",
+          "name": "L7 HITECH PRIVATE LIMITED",
+          "symbol": "JAIPURKURT",
+          "company": "Nandani Creation Limited",
+          "buyQty": 62800,
+          "sellQty": 108131,
+          "buyValueINR": 1990132.0,
+          "sellValueINR": 3216897.25,
+          "netShares": -45331,
+          "netValueINR": -1226765.25,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6f2ae9f1e5aa1115d6"
+        },
         {
           "date": "2026-11-03",
           "name": "L7 HITECH PRIVATE LIMITED",
@@ -4559,6 +4666,15 @@
           "netShares": 211200,
           "buyDays": 3,
           "sellDays": 2
+        },
+        {
+          "symbol": "JAIPURKURT",
+          "company": "Nandani Creation Limited",
+          "buyValueCr": 0.2,
+          "sellValueCr": 0.32,
+          "netShares": -45331,
+          "buyDays": 1,
+          "sellDays": 1
         },
         {
           "symbol": "MOS",
@@ -5325,56 +5441,6 @@
           "source": "NSE Block Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
           "dealId": "3fce8360f7a4df2ddc"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyValueCr": 25.04,
-          "sellValueCr": 0.0,
-          "netShares": 1565000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:fe89a87752b475cf",
-      "name": "CARBON RESOURCES(P) LTD.",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.04,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.04,
-      "latestDisclosure": "2026-11-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-06",
-          "name": "CARBON RESOURCES(P) LTD.",
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyQty": 1565000,
-          "sellQty": 0,
-          "buyValueINR": 250400000.0,
-          "sellValueINR": 0,
-          "netShares": 1565000,
-          "netValueINR": 250400000.0,
-          "avgBuyPrice": 160.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "3dff91a82164b4a8af"
         }
       ],
       "companies": [
