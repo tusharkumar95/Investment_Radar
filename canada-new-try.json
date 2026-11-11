@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-10T22:15:25.224011+00:00",
+  "updated": "2026-11-11T02:27:01.456106+00:00",
   "day": "2026-11-10",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-09",
+      "lastPriceDate": "2026-11-10",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-09",
+      "lastPriceDate": "2026-11-10",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-09",
+      "lastPriceDate": "2026-11-10",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-09",
+      "lastPriceDate": "2026-11-10",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -1063,6 +1063,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp.    The Globe and Mail "
+    },
+    {
+      "id": "lead:aebf5015a7d722c93b",
+      "title": "NVRO Metals Limited Closes C$35 Million Private Placement - GlobeNewswire",
+      "date": "2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQRWRGa0p5bU1tcFJRcDl0azZ0QW1SdVY3Vy0tNlhZQWtFTklqZlhfeGRjWk9uRnVUdVFtdnZaTGdteExZbE5YNElRTmZQaUVxbl9nVTNzNXlHdzEwRURIZWNrcmY2OHJhT0hWZmloOVFSNXFTRmdESUlTUU9YQXhQV05GQm9ieGI3T0Jxdy1YTkZ2bmJsVzk0V0VpOTVwOGhLYi1YS0t0dEppOUFxb0VfNWtHOVNYX2hXaUcyelQzRUFSbUVLRVRWZFRKY2FzamtYMFRBQzU3cEhNSGpxQV9aVHdSRWx0ZFZpcmhUZU5oeXpzWmxNMUpBcTJ0b2tleVdCTWVpejQtUW5tTHY4dUoyWWlpWWFYSWs5a2VqNVJVaHV3TDZYWmcwZA",
+      "discoveredVia": "Google News discovery — \"institutional investor\" \"shares\" \"private placement\" \"closed\" TSXV wh",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " NVRO Metals Limited Closes C$35 Million Private Placement    GlobeNewswire "
     },
     {
       "id": "lead:e0cbfb39f5fd37be0b",
@@ -1681,28 +1692,6 @@
       "summary": ""
     },
     {
-      "id": "lead:c61eed89059ad34f95",
-      "title": "Oct 06, 2026, 06:00 ET \n                          Bullfrog Closes Non-Brokered Private Placement\n                         \n                         Bullfrog Gold Corporation (\"Bullfrog\" or the \"Company\") (TSXV: FROG) (OTCQB: BFROF), is pleased to announce that",
-      "date": "2026-10-06",
-      "url": "https://www.newswire.ca/news-releases/bullfrog-closes-non-brokered-private-placement-802180360.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:8fe55935e0c6dbde94",
-      "title": "Oct 06, 2026, 13:50 ET \n                        Fox Creek Energy Announces $2,000,000 Private Placement and Closing of First Tranche\n                       \n                       Fox Creek Energy Ltd. (the \"Company\" or \"Fox Creek Energy\" or \"FCE\") is pleased ",
-      "date": "2026-10-06",
-      "url": "https://www.newswire.ca/news-releases/fox-creek-energy-announces-2-000-000-private-placement-and-closing-of-first-tranche-898432347.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:710332b074249d62bd",
       "title": "17:12 ET \n                          FIELDS OF GOLD ANNOUNCES NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") announces that it will offer (the \"Offering\") u",
       "date": null,
@@ -1714,12 +1703,34 @@
       "summary": ""
     },
     {
+      "id": "lead:6067f39e90d44eff37",
+      "title": "17:54 ET \n                          Varvara Development Group Completes First Tranche of US$35 Million Private Placement and Strengthens Management Team\n                         \n                         Varvara Development Group Ltd. (formerly, O Rei Resource",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/varvara-development-group-completes-first-tranche-of-us-35-million-private-placement-and-strengthens-management-team-876741356.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:19b5d98b7eb55190df",
       "title": "11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-Over Bid...",
       "date": null,
       "url": "https://www.newswire.ca/news-releases/early-warning-news-release-801058687.html",
       "discoveredVia": "Canada NewsWire / Acquisitions",
       "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:11b900ac723d992a54",
+      "title": "19:22 ET \n                        CUSTOM HEALTH ANNOUNCES OVERNIGHT MARKETED PUBLIC OFFERING OF UNITS AND CONCURRENT PRIVATE PLACEMENT\n                       \n                       Custom Health Holdings Inc. (TSX: CHLT) (\"Custom Health\" or the \"Company\"), a ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/custom-health-announces-overnight-marketed-public-offering-of-units-and-concurrent-private-placement-888204075.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -1745,7 +1756,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 5,
       "relevant": 5
     },
     {
@@ -1763,8 +1774,8 @@
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
       "ok": true,
-      "items": 1,
-      "relevant": 0
+      "items": 2,
+      "relevant": 1
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
@@ -1799,7 +1810,7 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 7,
+      "items": 8,
       "relevant": 7
     },
     {
@@ -1854,7 +1865,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 62,
+    "disclosureLeads": 63,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
