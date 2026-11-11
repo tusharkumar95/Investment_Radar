@@ -2,6 +2,66 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-11:India:NECCLTD",
+      "day": "2026-11-11",
+      "market": "India",
+      "symbol": "NECCLTD",
+      "company": "North East Carry Corp Ltd",
+      "buyers": 2,
+      "investors": [
+        "ANKITA VISHAL SHAH",
+        "RATHOD MANOJ CHHAGANLAL HUF"
+      ],
+      "value": 23850851.04,
+      "currency": "INR",
+      "disclosedAvgPrice": 22.77,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-11T19:46:06.668279+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-11:India:MAXENGS",
+      "day": "2026-11-11",
+      "market": "India",
+      "symbol": "MAXENGS",
+      "company": "Maxwell Engineering Sol L",
+      "buyers": 2,
+      "investors": [
+        "KEDIA SHARES & STOCKS BROKERS",
+        "NEO APEX SHARE BROKING SERVICES LLP"
+      ],
+      "value": 72711752.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 300.26,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-11T19:46:06.668279+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-11:India:CPPLUS",
+      "day": "2026-11-11",
+      "market": "India",
+      "symbol": "CPPLUS",
+      "company": "Aditya Infotech Limited",
+      "buyers": 2,
+      "investors": [
+        "KOTAK MAHINDRA MUTUAL FUND",
+        "MOTILAL OSWAL MUTUAL FUND"
+      ],
+      "value": 5816542680.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 4140.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-11T19:46:06.668279+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-09:India:VPFL",
       "day": "2026-11-09",
       "market": "India",
@@ -735,9 +795,15 @@
       "2026-11-06": 173.5,
       "2026-11-09": 168.89,
       "2026-11-11": 181.58
+    },
+    "India:CPPLUS": {
+      "2026-11-11": 4212.7998
+    },
+    "India:NECCLTD": {
+      "2026-11-11": 22.62
     }
   },
-  "updatedAt": "2026-11-11T09:41:40.258872+00:00",
+  "updatedAt": "2026-11-11T19:46:06.668279+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -757,13 +823,16 @@
     "India:SUPREMEENG": "SUPREMEENG.NS",
     "India:BCSSL": "BCSSL.NS",
     "India:ALIVUS": "ALIVUS.NS",
-    "India:V2RETAIL": "V2RETAIL.NS"
+    "India:V2RETAIL": "V2RETAIL.NS",
+    "India:CPPLUS": "CPPLUS.NS",
+    "India:NECCLTD": "NECCLTD.NS"
   },
-  "quotesUpdatedAt": "2026-11-11T09:41:44.267089+00:00",
+  "quotesUpdatedAt": "2026-11-11T19:46:13.215542+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:HGSINDIALT",
     "India:LAMOSAIC",
+    "India:MAXENGS",
     "India:RKFAL",
     "India:VPFL"
   ],
