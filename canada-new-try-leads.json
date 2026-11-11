@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-11T02:26:53.524716+00:00",
+  "updated": "2026-11-11T20:00:55.065687+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -35,6 +35,50 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " NVRO Metals Limited Closes C$35 Million Private Placement    GlobeNewswire "
+    },
+    {
+      "id": "lead:710332b074249d62bd",
+      "title": "Nov 10, 2026, 17:12 ET \n                          FIELDS OF GOLD ANNOUNCES NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") announces that it will offer (the",
+      "date": "2026-11-10",
+      "url": "https://www.newswire.ca/news-releases/fields-of-gold-announces-non-brokered-flow-through-private-placement-838107280.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:6067f39e90d44eff37",
+      "title": "Nov 10, 2026, 17:54 ET \n                          Varvara Development Group Completes First Tranche of US$35 Million Private Placement and Strengthens Management Team\n                         \n                         Varvara Development Group Ltd. (formerly, ",
+      "date": "2026-11-10",
+      "url": "https://www.newswire.ca/news-releases/varvara-development-group-completes-first-tranche-of-us-35-million-private-placement-and-strengthens-management-team-876741356.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:19b5d98b7eb55190df",
+      "title": "Nov 10, 2026, 11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-",
+      "date": "2026-11-10",
+      "url": "https://www.newswire.ca/news-releases/early-warning-news-release-801058687.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:11b900ac723d992a54",
+      "title": "Nov 10, 2026, 19:22 ET \n                        CUSTOM HEALTH ANNOUNCES OVERNIGHT MARKETED PUBLIC OFFERING OF UNITS AND CONCURRENT PRIVATE PLACEMENT\n                       \n                       Custom Health Holdings Inc. (TSX: CHLT) (\"Custom Health\" or the ",
+      "date": "2026-11-10",
+      "url": "https://www.newswire.ca/news-releases/custom-health-announces-overnight-marketed-public-offering-of-units-and-concurrent-private-placement-888204075.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     },
     {
       "id": "lead:e0cbfb39f5fd37be0b",
@@ -651,50 +695,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
-    },
-    {
-      "id": "lead:710332b074249d62bd",
-      "title": "17:12 ET \n                          FIELDS OF GOLD ANNOUNCES NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") announces that it will offer (the \"Offering\") u",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/fields-of-gold-announces-non-brokered-flow-through-private-placement-838107280.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:6067f39e90d44eff37",
-      "title": "17:54 ET \n                          Varvara Development Group Completes First Tranche of US$35 Million Private Placement and Strengthens Management Team\n                         \n                         Varvara Development Group Ltd. (formerly, O Rei Resource",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/varvara-development-group-completes-first-tranche-of-us-35-million-private-placement-and-strengthens-management-team-876741356.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:19b5d98b7eb55190df",
-      "title": "11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-Over Bid...",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/early-warning-news-release-801058687.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:11b900ac723d992a54",
-      "title": "19:22 ET \n                        CUSTOM HEALTH ANNOUNCES OVERNIGHT MARKETED PUBLIC OFFERING OF UNITS AND CONCURRENT PRIVATE PLACEMENT\n                       \n                       Custom Health Holdings Inc. (TSX: CHLT) (\"Custom Health\" or the \"Company\"), a ",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/custom-health-announces-overnight-marketed-public-offering-of-units-and-concurrent-private-placement-888204075.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
@@ -717,7 +717,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
+      "items": 6,
       "relevant": 5
     },
     {
@@ -771,8 +771,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 8,
-      "relevant": 7
+      "items": 7,
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Acquisitions",
