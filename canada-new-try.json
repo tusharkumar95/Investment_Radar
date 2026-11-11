@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-11T20:01:02.841034+00:00",
+  "updated": "2026-11-11T23:24:18.099300+00:00",
   "day": "2026-11-11",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.97,
+      "lastPrice": 4.88,
       "lastPriceDate": "2026-11-11",
-      "priceChangePct": -7.79,
+      "priceChangePct": -9.46,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.29,
+      "lastPrice": 4.3,
       "lastPriceDate": "2026-11-11",
-      "priceChangePct": 6.98,
+      "priceChangePct": 7.23,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.4,
+      "lastPrice": 4.37,
       "lastPriceDate": "2026-11-11",
-      "priceChangePct": -2.44,
+      "priceChangePct": -3.1,
       "quoteStatus": "Available"
     },
     {
@@ -1810,8 +1810,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 7,
-      "relevant": 6
+      "items": 8,
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Acquisitions",
