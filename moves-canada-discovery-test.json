@@ -1,23 +1,17 @@
 {
-  "testedAt": "2026-11-11T01:21:46.798370+00:00",
+  "testedAt": "2026-11-11T09:41:38.508318+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 4,
+      "count": 3,
       "items": [
         {
           "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZmZnT1l1WHFoRnVObDJ5a3ZNS0w0b1RWN0JEaWtySXU4X1RhY294ZzhidDhyTVdSN2N5Vmp4VWdaTDJxUGJzRFJHV1l6SFAxN01fbHA5V0RRSjY1UXI4SnloU2dZUEQtczVOSXhsNmZtT3htcFJrb0RELVk0QW1Ta0xlOEVGa0NQbWxybU1zbDlDSmNBSmNzb3RRcHp6SzdFbEoyZ2JTWG5RYUM0Z1I3NExCMmYyQkJzaFhLOWhNSUtyNFVqZkp5emI1R2ZGdXc0STNOR3E5UEtjbUdrYXlkTGxnVzlLQkNzM2gtbzlpNXpyNWRLbmc?oc=5",
           "published": "Mon, 09 Nov 2026 14:52:59 GMT",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": "Pan American Silver: Early Warning News Release - Business Wire",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR?oc=5",
-          "published": "Wed, 04 Nov 2026 01:45:00 GMT",
-          "source": "Business Wire"
         },
         {
           "title": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
