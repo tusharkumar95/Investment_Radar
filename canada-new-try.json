@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-12T20:40:15.801447+00:00",
+  "updated": "2026-11-12T22:40:12.939713+00:00",
   "day": "2026-11-12",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -432,7 +432,7 @@
         {
           "offset": 10,
           "day": "2026-11-12",
-          "price": 4.5
+          "price": 4.46
         },
         {
           "offset": 15,
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.5,
+      "lastPrice": 4.46,
       "lastPriceDate": "2026-11-12",
-      "priceChangePct": -16.51,
+      "priceChangePct": -17.25,
       "quoteStatus": "Available"
     },
     {
@@ -476,7 +476,7 @@
         {
           "offset": 10,
           "day": "2026-11-12",
-          "price": 4.115
+          "price": 4.04
         },
         {
           "offset": 15,
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.115,
+      "lastPrice": 4.04,
       "lastPriceDate": "2026-11-12",
-      "priceChangePct": 2.62,
+      "priceChangePct": 0.75,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 38,
+      "candidateArticles": 39,
       "status": "Verified transactions found"
     },
     {
@@ -1756,6 +1756,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:2bfaa9f52255b01b11",
+      "title": "16:15 ET \n                        Coast Copper Announces Non-Brokered Private Placement Financing for Proceeds of up to $1M\n                       \n                       Coast Copper Corp. (\"Coast Copper\" or the \"Company\"; (TSXV: COCO) is pleased to announce ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/coast-copper-announces-non-brokered-private-placement-financing-for-proceeds-of-up-to-1m-816736725.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
@@ -1826,7 +1837,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 0,
+      "items": 2,
       "relevant": 0
     },
     {
@@ -1845,7 +1856,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 26
+      "relevant": 27
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1887,7 +1898,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 65,
+    "disclosureLeads": 66,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
