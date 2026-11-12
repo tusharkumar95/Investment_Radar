@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-11T18:07:41.945913+00:00",
+  "updated": "2026-11-12T10:55:27.721113+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-09",
-    "trades": 681,
-    "investors": 413
+    "latest": "2026-11-11",
+    "trades": 708,
+    "investors": 423
   },
   "featured": [
     {
@@ -1259,6 +1259,72 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:d9d298b68e12f38f",
+      "name": "MOTILAL OSWAL MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 697.98,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 697.98,
+      "latestDisclosure": "2026-11-11",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-11",
+          "name": "MOTILAL OSWAL MUTUAL FUND",
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyQty": 842977,
+          "sellQty": 0,
+          "buyValueINR": 3489924780.0,
+          "sellValueINR": 0,
+          "netShares": 842977,
+          "netValueINR": 3489924780.0,
+          "avgBuyPrice": 4140.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "763036847382eb9279"
+        },
+        {
+          "date": "2026-11-11",
+          "name": "MOTILAL OSWAL MUTUAL FUND",
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyQty": 842977,
+          "sellQty": 0,
+          "buyValueINR": 3489924780.0,
+          "sellValueINR": 0,
+          "netShares": 842977,
+          "netValueINR": 3489924780.0,
+          "avgBuyPrice": 4140.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "cb1660569e3a3fbeb0"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyValueCr": 697.98,
+          "sellValueCr": 0.0,
+          "netShares": 1685954,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:3417a57dc28b2e6a",
       "name": "ADITYA KUMAR HALWASIYA",
       "type": "Named investor / company",
@@ -1387,16 +1453,50 @@
       "id": "investor:d8aaa72f6f3d06b8",
       "name": "JASUB PROPERTY HOLDINGS LLP",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
+      "observedTransactions": 4,
+      "observedBuyDays": 2,
       "observedSellDays": 0,
-      "buyValueCr": 258.0,
+      "buyValueCr": 446.79,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 258.0,
-      "latestDisclosure": "2026-11-09",
+      "netDisclosedValueCr": 446.79,
+      "latestDisclosure": "2026-11-11",
       "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
+      "repeatBuyCompanies": [
+        "COHANCE"
+      ],
       "tradeRecords": [
+        {
+          "date": "2026-11-11",
+          "name": "JASUB PROPERTY HOLDINGS LLP",
+          "symbol": "COHANCE",
+          "company": "Cohance Lifesciences Ltd",
+          "buyQty": 2100000,
+          "sellQty": 0,
+          "buyValueINR": 943950000.0,
+          "sellValueINR": 0,
+          "netShares": 2100000,
+          "netValueINR": 943950000.0,
+          "avgBuyPrice": 449.5,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "0ced011fead2f3d3c5"
+        },
+        {
+          "date": "2026-11-11",
+          "name": "JASUB PROPERTY HOLDINGS LLP",
+          "symbol": "COHANCE",
+          "company": "Cohance Lifesciences Ltd",
+          "buyQty": 2100000,
+          "sellQty": 0,
+          "buyValueINR": 943950000.0,
+          "sellValueINR": 0,
+          "netShares": 2100000,
+          "netValueINR": 943950000.0,
+          "avgBuyPrice": 449.5,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "392bb063d84304eb2d"
+        },
         {
           "date": "2026-11-09",
           "name": "JASUB PROPERTY HOLDINGS LLP",
@@ -1434,15 +1534,15 @@
         {
           "symbol": "COHANCE",
           "company": "Cohance Lifesciences Ltd",
-          "buyValueCr": 258.0,
+          "buyValueCr": 446.79,
           "sellValueCr": 0.0,
-          "netShares": 6000000,
-          "buyDays": 1,
+          "netShares": 10200000,
+          "buyDays": 2,
           "sellDays": 0
         }
       ],
       "observations": {
-        "repeatPurchases": false,
+        "repeatPurchases": true,
         "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
@@ -1578,6 +1678,56 @@
           "buyValueCr": 234.54,
           "sellValueCr": 0.0,
           "netShares": 1711942,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:5601a5588f04c711",
+      "name": "KOTAK MAHINDRA MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 232.66,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 232.66,
+      "latestDisclosure": "2026-11-11",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-11",
+          "name": "KOTAK MAHINDRA MUTUAL FUND",
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyQty": 561985,
+          "sellQty": 0,
+          "buyValueINR": 2326617900.0,
+          "sellValueINR": 0,
+          "netShares": 561985,
+          "netValueINR": 2326617900.0,
+          "avgBuyPrice": 4140.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "51e2600407c12ee9a9"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyValueCr": 232.66,
+          "sellValueCr": 0.0,
+          "netShares": 561985,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -1982,72 +2132,38 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:9e37f0f8a07396f1",
-      "name": "CATAMARAN VENTURES LLP",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 119.0,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 119.0,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "CATAMARAN VENTURES LLP",
-          "symbol": "BONFIG",
-          "company": "Bonfiglioli Trans Limited",
-          "buyQty": 2134318,
-          "sellQty": 0,
-          "buyValueINR": 1189990870.96,
-          "sellValueINR": 0,
-          "netShares": 2134318,
-          "netValueINR": 1189990870.96,
-          "avgBuyPrice": 557.55,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "1ba1f7ff32319984d7"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "BONFIG",
-          "company": "Bonfiglioli Trans Limited",
-          "buyValueCr": 119.0,
-          "sellValueCr": 0.0,
-          "netShares": 2134318,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:14c9b58fbd296aff",
       "name": "HRTI PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 15,
-      "observedBuyDays": 15,
-      "observedSellDays": 15,
-      "buyValueCr": 612.98,
-      "sellValueCr": 498.82,
-      "netDisclosedValueCr": 114.16,
-      "latestDisclosure": "2026-11-04",
-      "uniqueCompanies": 13,
+      "observedTransactions": 16,
+      "observedBuyDays": 16,
+      "observedSellDays": 16,
+      "buyValueCr": 647.82,
+      "sellValueCr": 519.13,
+      "netDisclosedValueCr": 128.69,
+      "latestDisclosure": "2026-11-11",
+      "uniqueCompanies": 14,
       "repeatBuyCompanies": [
         "RATNAVEER",
         "PCJEWELLER"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-11",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyQty": 1948403,
+          "sellQty": 1135001,
+          "buyValueINR": 348432908.49,
+          "sellValueINR": 203119778.96,
+          "netShares": 813402,
+          "netValueINR": 145313129.53,
+          "avgBuyPrice": 178.83,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "0209ab9b1119321ac7"
+        },
         {
           "date": "2026-11-04",
           "name": "HRTI PRIVATE LIMITED",
@@ -2327,6 +2443,15 @@
           "sellDays": 1
         },
         {
+          "symbol": "V2RETAIL",
+          "company": "V2 Retail Limited",
+          "buyValueCr": 34.84,
+          "sellValueCr": 20.31,
+          "netShares": 813402,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
           "symbol": "SSWL",
           "company": "Steel Strips Wheels Limit",
           "buyValueCr": 30.84,
@@ -2412,6 +2537,56 @@
         "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:9e37f0f8a07396f1",
+      "name": "CATAMARAN VENTURES LLP",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 119.0,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 119.0,
+      "latestDisclosure": "2026-10-23",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-10-23",
+          "name": "CATAMARAN VENTURES LLP",
+          "symbol": "BONFIG",
+          "company": "Bonfiglioli Trans Limited",
+          "buyQty": 2134318,
+          "sellQty": 0,
+          "buyValueINR": 1189990870.96,
+          "sellValueINR": 0,
+          "netShares": 2134318,
+          "netValueINR": 1189990870.96,
+          "avgBuyPrice": 557.55,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "1ba1f7ff32319984d7"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "BONFIG",
+          "company": "Bonfiglioli Trans Limited",
+          "buyValueCr": 119.0,
+          "sellValueCr": 0.0,
+          "netShares": 2134318,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -4289,6 +4464,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:6191a5c8f8cb2de1",
+      "name": "FIRST SENTIER INVESTORS ICVC - SI INDIAN SUBCONTINENT ALL CAP FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 36.62,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 36.62,
+      "latestDisclosure": "2026-11-11",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-11",
+          "name": "FIRST SENTIER INVESTORS ICVC - SI INDIAN SUBCONTINENT ALL CAP FUND",
+          "symbol": "SOLARA",
+          "company": "Solara Active Pha Sci Ltd",
+          "buyQty": 551618,
+          "sellQty": 0,
+          "buyValueINR": 366186093.12,
+          "sellValueINR": 0,
+          "netShares": 551618,
+          "netValueINR": 366186093.12,
+          "avgBuyPrice": 663.84,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "3c0e77f2843af09c87"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SOLARA",
+          "company": "Solara Active Pha Sci Ltd",
+          "buyValueCr": 36.62,
+          "sellValueCr": 0.0,
+          "netShares": 551618,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:2a19f3b3759326ca",
       "name": "MATRUCHHAYA MERCANTILE PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -5300,156 +5525,6 @@
           "buyValueCr": 25.68,
           "sellValueCr": 0.0,
           "netShares": 602572,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:46a20b77f5c3fb8d",
-      "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.07,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.07,
-      "latestDisclosure": "2026-11-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-06",
-          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyQty": 183000,
-          "sellQty": 0,
-          "buyValueINR": 250710000.0,
-          "sellValueINR": 0,
-          "netShares": 183000,
-          "netValueINR": 250710000.0,
-          "avgBuyPrice": 1370.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "c6c58f21e4b492bc4a"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyValueCr": 25.07,
-          "sellValueCr": 0.0,
-          "netShares": 183000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:fcd04cb69652367a",
-      "name": "OM PRAKASH BHAIYA",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.04,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.04,
-      "latestDisclosure": "2026-11-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-06",
-          "name": "OM PRAKASH BHAIYA",
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyQty": 1565000,
-          "sellQty": 0,
-          "buyValueINR": 250400000.0,
-          "sellValueINR": 0,
-          "netShares": 1565000,
-          "netValueINR": 250400000.0,
-          "avgBuyPrice": 160.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "023f26a832941e9a1a"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyValueCr": 25.04,
-          "sellValueCr": 0.0,
-          "netShares": 1565000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:15fb1e758e58f2f2",
-      "name": "PARESH N BHAGAT",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.04,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.04,
-      "latestDisclosure": "2026-11-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-06",
-          "name": "PARESH N BHAGAT",
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyQty": 1565000,
-          "sellQty": 0,
-          "buyValueINR": 250400000.0,
-          "sellValueINR": 0,
-          "netShares": 1565000,
-          "netValueINR": 250400000.0,
-          "avgBuyPrice": 160.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "3fce8360f7a4df2ddc"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "V2RETAIL",
-          "company": "V2 Retail Limited",
-          "buyValueCr": 25.04,
-          "sellValueCr": 0.0,
-          "netShares": 1565000,
           "buyDays": 1,
           "sellDays": 0
         }
