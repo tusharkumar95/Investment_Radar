@@ -1,12 +1,18 @@
 {
-  "testedAt": "2026-11-12T10:01:45.183615+00:00",
+  "testedAt": "2026-11-12T20:11:46.733785+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "items": [
+        {
+          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtQQm9zMDI0SDYwSHRCbXp3ZllkUHJMM1JveUxuU2JpbDc5aDJ5NDdZajhzWk4yM3BzZm1ZN3FadXFmOFlGUTFjQS1PNDctbnlJekYyclJfMWNXdDNQU0dOTDBuQjJhcER5SVZ1N3BIZlZYQ3pvLVo0NUpzUEFTaFhxMXlPYmRUZTA3ZkxBLU1jckV0UDhDVE9WdW5LelNKYUJF?oc=5",
+          "published": "Tue, 10 Nov 2026 12:46:02 GMT",
+          "source": "Investing News Network"
+        },
         {
           "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZmZnT1l1WHFoRnVObDJ5a3ZNS0w0b1RWN0JEaWtySXU4X1RhY294ZzhidDhyTVdSN2N5Vmp4VWdaTDJxUGJzRFJHV1l6SFAxN01fbHA5V0RRSjY1UXI4SnloU2dZUEQtczVOSXhsNmZtT3htcFJrb0RELVk0QW1Ta0xlOEVGa0NQbWxybU1zbDlDSmNBSmNzb3RRcHp6SzdFbEoyZ2JTWG5RYUM0Z1I3NExCMmYyQkJzaFhLOWhNSUtyNFVqZkp5emI1R2ZGdXc0STNOR3E5UEtjbUdrYXlkTGxnVzlLQkNzM2gtbzlpNXpyNWRLbmc?oc=5",
@@ -14,9 +20,9 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "Early Warning Press Release - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
-          "published": "Thu, 05 Nov 2026 12:10:05 GMT",
+          "title": "PAUL ANTONY ANNOUNCES ACQUISITION OF AUTOCANADA SHARES - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXM5aDRRS2ZNSFBNakNGUWVEVklCdWVPZXkyYlJLb05SRTZNM3lzS0o2UzQ2c1pSNGxaWDBpSWJDaXRyVWdscWZNV2o4b2s1bUNlek9rbTZMS1RBNHROR2h3RjFCT3JrWGNKdGZFbW5jM3E3MDJPTmRNV0ZKZVBNRlE4UFEyU0x0NUs0Z09wMUNRaUJMby1LM09wbEFGSFJIYmdqMG12OFBwMk5oRVotUEF4TVFhdw?oc=5",
+          "published": "Thu, 12 Nov 2026 10:06:59 GMT",
           "source": "TradingView"
         },
         {
@@ -26,10 +32,10 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
-          "published": "Tue, 10 Nov 2026 12:00:00 GMT",
-          "source": "GlobeNewswire"
+          "title": "Red Metal Reports Mine Sampling at Farellon, Including 6.8% Copper on Level 7 and 6.05% Copper on Level 9 - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNemtqSVFKUG14WnlnbTVELThuaUJDV1Vib25CUUFhcExPV2J6VUlJQUpGZF9EUXBYMkl0aGpjUzd3M2U2OVE2SjhaclloNXJPX0JJbTFsbWYyLW1KcFVvd3VfcjVIaHpadDRzajl2c1VRcDRoeElpd2hodDZjeF9ISTJ6UUFPR0dWNVBEZGFIZVcwbDg1c2ZULXozUFM1c25UdlR1MWN1OGc0ODZmNkU4VWlKdENfaHBGVkFhQVI4U0g4dFdUY1hKZW5zUU9SMWt3b1p5QlBGYWlQb25GVUQxSjItbFNBUFFHQUdxN2ZLVEVnTTZxQTBkOQ?oc=5",
+          "published": "Thu, 12 Nov 2026 13:00:00 GMT",
+          "source": "TradingView"
         }
       ]
     },

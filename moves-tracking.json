@@ -2,6 +2,46 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-12:India:GREENASIA",
+      "day": "2026-11-12",
+      "market": "India",
+      "symbol": "GREENASIA",
+      "company": "Green Asia Impex Limited",
+      "buyers": 2,
+      "investors": [
+        "AIKYATA ADVISORY LLP",
+        "GENZ INVESTMENT ADVISORS PRIVATE LIMITED"
+      ],
+      "value": 32769984.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 82.56,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-12T20:11:49.049740+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-12:India:CONTROLPR",
+      "day": "2026-11-12",
+      "market": "India",
+      "symbol": "CONTROLPR",
+      "company": "Control Print Limited",
+      "buyers": 2,
+      "investors": [
+        "BASANT KABRA",
+        "SHIVA BASANT KABRA"
+      ],
+      "value": 134799165.06,
+      "currency": "INR",
+      "disclosedAvgPrice": 609.9,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-12T20:11:49.049740+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-11:India:NECCLTD",
       "day": "2026-11-11",
       "market": "India",
@@ -723,7 +763,7 @@
       "2026-11-06": 115.36,
       "2026-11-09": 121.83,
       "2026-11-11": 120.15,
-      "2026-11-12": 119.5
+      "2026-11-12": 119.42
     },
     "India:EDELALTS": {
       "2026-11-02": 1727.8,
@@ -801,7 +841,7 @@
       "2026-11-06": 90.07,
       "2026-11-09": 81.3,
       "2026-11-11": 83.92,
-      "2026-11-12": 81.69
+      "2026-11-12": 81.72
     },
     "India:ALIVUS": {
       "2026-11-06": 1480.6,
@@ -822,9 +862,12 @@
     "India:NECCLTD": {
       "2026-11-11": 22.62,
       "2026-11-12": 21.11
+    },
+    "India:CONTROLPR": {
+      "2026-11-12": 623.4
     }
   },
-  "updatedAt": "2026-11-12T10:01:47.354664+00:00",
+  "updatedAt": "2026-11-12T20:11:49.049740+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -846,11 +889,13 @@
     "India:ALIVUS": "ALIVUS.NS",
     "India:V2RETAIL": "V2RETAIL.NS",
     "India:CPPLUS": "CPPLUS.NS",
-    "India:NECCLTD": "NECCLTD.NS"
+    "India:NECCLTD": "NECCLTD.NS",
+    "India:CONTROLPR": "CONTROLPR.NS"
   },
-  "quotesUpdatedAt": "2026-11-12T10:01:51.616963+00:00",
+  "quotesUpdatedAt": "2026-11-12T20:11:58.705639+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
+    "India:GREENASIA",
     "India:HGSINDIALT",
     "India:LAMOSAIC",
     "India:MAXENGS",
