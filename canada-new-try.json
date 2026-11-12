@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-11T23:24:18.099300+00:00",
+  "updated": "2026-11-12T03:30:32.307712+00:00",
   "day": "2026-11-11",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -1756,7 +1756,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 5,
       "relevant": 5
     },
     {
@@ -1804,14 +1804,14 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 3,
+      "items": 2,
       "relevant": 0
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 8,
-      "relevant": 7
+      "items": 7,
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Acquisitions",
