@@ -1,17 +1,23 @@
 {
-  "testedAt": "2026-11-11T21:30:40.990925+00:00",
+  "testedAt": "2026-11-12T02:22:33.641714+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZmZnT1l1WHFoRnVObDJ5a3ZNS0w0b1RWN0JEaWtySXU4X1RhY294ZzhidDhyTVdSN2N5Vmp4VWdaTDJxUGJzRFJHV1l6SFAxN01fbHA5V0RRSjY1UXI4SnloU2dZUEQtczVOSXhsNmZtT3htcFJrb0RELVk0QW1Ta0xlOEVGa0NQbWxybU1zbDlDSmNBSmNzb3RRcHp6SzdFbEoyZ2JTWG5RYUM0Z1I3NExCMmYyQkJzaFhLOWhNSUtyNFVqZkp5emI1R2ZGdXc0STNOR3E5UEtjbUdrYXlkTGxnVzlLQkNzM2gtbzlpNXpyNWRLbmc?oc=5",
           "published": "Mon, 09 Nov 2026 14:52:59 GMT",
           "source": "The Globe and Mail"
+        },
+        {
+          "title": "Early Warning Press Release - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdRSzBkWFpDam9sYnZDUmkxQ1ZJVHRCREZBUlhaaEFSNTVjZEd6ZV9kZkNPOE94Um5ZY2hRd3RvOE83cDFvWVdHUnM4ZE9QZVZkTmFLUGktYzdEamhGT2IwNDZVdmUyejhxeEE1c0lVem8zMy1pZUNpalVJUF9vM19ZUzVyTGJWemQ4bUtxZnlfUUczMWc5eF92aV9GVS1fOHdYN2JB?oc=5",
+          "published": "Thu, 05 Nov 2026 12:10:05 GMT",
+          "source": "TradingView"
         },
         {
           "title": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
