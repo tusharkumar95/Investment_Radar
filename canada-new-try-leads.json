@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-12T03:30:24.861877+00:00",
+  "updated": "2026-11-12T20:40:08.041898+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -57,6 +57,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:3fb7599aba38ed586d",
+      "title": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
+      "date": "2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " René Goehrum Files Early Warning Report for Historical Ownership Positions    GlobeNewswire "
     },
     {
       "id": "lead:19b5d98b7eb55190df",
@@ -158,17 +169,6 @@
       "summary": ""
     },
     {
-      "id": "lead:49074401ff9ca1b1b1",
-      "title": "Pan American Silver: Early Warning News Release - Business Wire",
-      "date": "2026-11-04",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR",
-      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Pan American Silver: Early Warning News Release    Business Wire "
-    },
-    {
       "id": "lead:2ce9af25d61a5c5b93",
       "title": "Nov 04, 2026, 12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the ",
       "date": "2026-11-04",
@@ -235,6 +235,17 @@
       "summary": ""
     },
     {
+      "id": "lead:49074401ff9ca1b1b1",
+      "title": "Pan American Silver: Early Warning News Release - Business Wire",
+      "date": "2026-11-03",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Pan American Silver: Early Warning News Release    Business Wire "
+    },
+    {
       "id": "lead:1b2b2c1da3abf2e321",
       "title": "Subsea 7 S.A. Notification of major holding",
       "date": "2026-11-03",
@@ -288,6 +299,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:66c1e3b1cf1ea1162f",
+      "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - PR Newswire Canada",
+      "date": "2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSi1WVVdhbVNCZmZVU3VYVVVhLURHWHczZWF3ZkF4d3lRcjFxLVRfY0l2clNLZDFITWVaaXFIMS13WVliT2M0X3dKZGxDM0JRU2gyZGJDWlFNdHY0N3QyY1B5U2hqczhtX2NoWktUUzdNNnBjcTl3MDQ4czBUeXQxZzM0dDhDVWg5ZURBZXFZaXNqMVhoemI2aFNGMW5DWlVhakNBLVc3czI3ZkIyLW5RZlhWejdTejBqMUVOT3FpOUVJd3YtR2JJS0dyalducXVmaVp5RQ",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY    PR Newswire Canada "
     },
     {
       "id": "lead:53f1b55f3347469d61",
@@ -718,7 +740,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 5,
-      "relevant": 5
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -765,7 +787,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
+      "items": 0,
       "relevant": 0
     },
     {
@@ -805,9 +827,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 63,
+    "leadCount": 65,
     "usFilingCount": 0,
-    "needsReview": 63
+    "needsReview": 65
   },
   "officialSources": [
     {

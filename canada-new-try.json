@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-12T03:30:32.307712+00:00",
-  "day": "2026-11-11",
+  "updated": "2026-11-12T20:40:15.801447+00:00",
+  "day": "2026-11-12",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -431,8 +431,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 4.5
         },
         {
           "offset": 15,
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.88,
-      "lastPriceDate": "2026-11-11",
-      "priceChangePct": -9.46,
+      "lastPrice": 4.5,
+      "lastPriceDate": "2026-11-12",
+      "priceChangePct": -16.51,
       "quoteStatus": "Available"
     },
     {
@@ -475,8 +475,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 4.115
         },
         {
           "offset": 15,
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.3,
-      "lastPriceDate": "2026-11-11",
-      "priceChangePct": 7.23,
+      "lastPrice": 4.115,
+      "lastPriceDate": "2026-11-12",
+      "priceChangePct": 2.62,
       "quoteStatus": "Available"
     },
     {
@@ -519,8 +519,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 4.3
         },
         {
           "offset": 15,
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.37,
-      "lastPriceDate": "2026-11-11",
-      "priceChangePct": -3.1,
+      "lastPrice": 4.3,
+      "lastPriceDate": "2026-11-12",
+      "priceChangePct": -4.66,
       "quoteStatus": "Available"
     },
     {
@@ -607,8 +607,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 0.09
         },
         {
           "offset": 15,
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.085,
-      "lastPriceDate": "2026-11-11",
-      "priceChangePct": -5.56,
+      "lastPrice": 0.09,
+      "lastPriceDate": "2026-11-12",
+      "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
     {
@@ -651,8 +651,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 0.05
         },
         {
           "offset": 15,
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-11",
+      "lastPriceDate": "2026-11-12",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -695,8 +695,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 0.05
         },
         {
           "offset": 15,
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-11",
+      "lastPriceDate": "2026-11-12",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -739,8 +739,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 1.05
         },
         {
           "offset": 15,
@@ -753,9 +753,9 @@
           "price": null
         }
       ],
-      "lastPrice": 1.09,
-      "lastPriceDate": "2026-11-11",
-      "priceChangePct": -2.68,
+      "lastPrice": 1.05,
+      "lastPriceDate": "2026-11-12",
+      "priceChangePct": -6.25,
       "quoteStatus": "Available"
     },
     {
@@ -783,8 +783,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 0.05
         },
         {
           "offset": 15,
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-11",
+      "lastPriceDate": "2026-11-12",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -827,8 +827,8 @@
         },
         {
           "offset": 10,
-          "day": null,
-          "price": null
+          "day": "2026-11-12",
+          "price": 0.05
         },
         {
           "offset": 15,
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-11",
+      "lastPriceDate": "2026-11-12",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -1098,6 +1098,17 @@
       "summary": ""
     },
     {
+      "id": "lead:3fb7599aba38ed586d",
+      "title": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
+      "date": "2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " René Goehrum Files Early Warning Report for Historical Ownership Positions    GlobeNewswire "
+    },
+    {
       "id": "lead:19b5d98b7eb55190df",
       "title": "Nov 10, 2026, 11:49 ET \n                        EARLY WARNING NEWS RELEASE\n                       \n                       This press release is being issued pursuant to the requirements of National Instrument 62-103 – The Early Warning System and Related Take-",
       "date": "2026-11-10",
@@ -1197,17 +1208,6 @@
       "summary": ""
     },
     {
-      "id": "lead:49074401ff9ca1b1b1",
-      "title": "Pan American Silver: Early Warning News Release - Business Wire",
-      "date": "2026-11-04",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR",
-      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Pan American Silver: Early Warning News Release    Business Wire "
-    },
-    {
       "id": "lead:2ce9af25d61a5c5b93",
       "title": "Nov 04, 2026, 12:30 ET \n                          NiCAN Announces Closing of Non-Brokered Private Placement for Gross Proceeds of $4,050,000\n                         \n                         NiCAN Limited (\"NiCAN\" or the \"Company\") (TSXV: NICN) announces the ",
       "date": "2026-11-04",
@@ -1274,6 +1274,17 @@
       "summary": ""
     },
     {
+      "id": "lead:49074401ff9ca1b1b1",
+      "title": "Pan American Silver: Early Warning News Release - Business Wire",
+      "date": "2026-11-03",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFJLdXdCRExXN3FyN3ZPandlSHBWZFZGMTA2WnphUGdudm5CUS02R01jR3FxV3lJVGZkcXBVT2NHSGRIWVhONTRHTHhyby1BRUNrZVhZYWpPZWtPbU5pcmJ5SEdMNzZMOVI4UFZ1OXlUTlU4MUZTNm1uWU1CRmhLdlNaZUttbnk4SGhQcXRoazZNc2hYcWNSYUtZaWxHRTR2ZnNLWGRR",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Pan American Silver: Early Warning News Release    Business Wire "
+    },
+    {
       "id": "lead:1b2b2c1da3abf2e321",
       "title": "Subsea 7 S.A. Notification of major holding",
       "date": "2026-11-03",
@@ -1327,6 +1338,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:66c1e3b1cf1ea1162f",
+      "title": "BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY - PR Newswire Canada",
+      "date": "2026-10-30",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSi1WVVdhbVNCZmZVU3VYVVVhLURHWHczZWF3ZkF4d3lRcjFxLVRfY0l2clNLZDFITWVaaXFIMS13WVliT2M0X3dKZGxDM0JRU2gyZGJDWlFNdHY0N3QyY1B5U2hqczhtX2NoWktUUzdNNnBjcTl3MDQ4czBUeXQxZzM0dDhDVWg5ZURBZXFZaXNqMVhoemI2aFNGMW5DWlVhakNBLVc3czI3ZkIyLW5RZlhWejdTejBqMUVOT3FpOUVJd3YtR2JJS0dyalducXVmaVp5RQ",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " BANCO BTG ANNOUNCES FILING OF AMENDED EARLY WARNING REPORT RELATED TO MEREN ENERGY    PR Newswire Canada "
     },
     {
       "id": "lead:53f1b55f3347469d61",
@@ -1757,7 +1779,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 5,
-      "relevant": 5
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1804,7 +1826,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
+      "items": 0,
       "relevant": 0
     },
     {
@@ -1865,7 +1887,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 63,
+    "disclosureLeads": 65,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
