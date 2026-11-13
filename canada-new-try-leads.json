@@ -1,8 +1,30 @@
 {
   "schema": 1,
-  "updated": "2026-11-13T03:04:12.564210+00:00",
+  "updated": "2026-11-13T20:21:36.918615+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:7bc9945622476be2c6",
+      "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Quantisnow",
+      "date": "2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFRqbWRrUzl1WUZfelRlU1pvam1RclNNTnJWTVFkQmZjR1RIajBxcGVzUC1ranhpMXd5WWZTdVhZS3d0V3RrWDc2ak1OLWxaZ3I4bG8wU2JYX1hoNk5ZWDZjTkJhZlpGNWRMTmZEa0FJTnVlU2cySzlNNkk0OVpnTThlbll6YTQtenBQVC1Kb0dKNjRaU1R2b0FmTEhGeDBXdHlLVldwYXlkY2trd00w",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd.    Quantisnow "
+    },
+    {
+      "id": "lead:2bfaa9f52255b01b11",
+      "title": "Nov 12, 2026, 16:15 ET \n                        Coast Copper Announces Non-Brokered Private Placement Financing for Proceeds of up to $1M\n                       \n                       Coast Copper Corp. (\"Coast Copper\" or the \"Company\"; (TSXV: COCO) is please",
+      "date": "2026-11-12",
+      "url": "https://www.newswire.ca/news-releases/coast-copper-announces-non-brokered-private-placement-financing-for-proceeds-of-up-to-1m-816736725.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:bb527593efbe33f3b3",
       "title": "René Goehrum Files Early Warning Report for Historical Ownership Positions - Investing News Network",
@@ -719,12 +741,12 @@
       "summary": ""
     },
     {
-      "id": "lead:2bfaa9f52255b01b11",
-      "title": "16:15 ET \n                        Coast Copper Announces Non-Brokered Private Placement Financing for Proceeds of up to $1M\n                       \n                       Coast Copper Corp. (\"Coast Copper\" or the \"Company\"; (TSXV: COCO) is pleased to announce ",
+      "id": "lead:258e1f0d949848b597",
+      "title": "08:03 ET \n                        GBH INC. EXCHANGES INTEREST IN VERSABANK PURSUANT TO REORGANIZATION\n                       \n                       GBH Inc. (\"GBH\") announced today that it has acquired 8,058,698 shares of common stock of Versa Bancorp, a Dela",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/coast-copper-announces-non-brokered-private-placement-financing-for-proceeds-of-up-to-1m-816736725.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
+      "url": "https://www.newswire.ca/news-releases/gbh-inc-exchanges-interest-in-versabank-pursuant-to-reorganization-826951713.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -750,8 +772,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 4
+      "items": 7,
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -775,7 +797,7 @@
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
       "items": 4,
-      "relevant": 1
+      "relevant": 0
     },
     {
       "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
@@ -798,14 +820,14 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
+      "items": 1,
       "relevant": 0
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 7,
-      "relevant": 6
+      "items": 6,
+      "relevant": 5
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -838,9 +860,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 66,
+    "leadCount": 68,
     "usFilingCount": 0,
-    "needsReview": 66
+    "needsReview": 68
   },
   "officialSources": [
     {
