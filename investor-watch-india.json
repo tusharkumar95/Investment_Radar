@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-12T18:50:32.436379+00:00",
+  "updated": "2026-11-13T10:50:35.021217+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-11",
-    "trades": 708,
-    "investors": 423
+    "latest": "2026-11-12",
+    "trades": 733,
+    "investors": 436
   },
   "featured": [
     {
@@ -1543,6 +1543,72 @@
       ],
       "observations": {
         "repeatPurchases": true,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:91aae3096c726cca",
+      "name": "SANTOSH KUMAR AGRAWAL",
+      "type": "Named investor / company",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 402.4,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 402.4,
+      "latestDisclosure": "2026-11-12",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-12",
+          "name": "SANTOSH KUMAR AGRAWAL",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 4000000,
+          "sellQty": 0,
+          "buyValueINR": 2012000000.0,
+          "sellValueINR": 0,
+          "netShares": 4000000,
+          "netValueINR": 2012000000.0,
+          "avgBuyPrice": 503.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "41cb95eaf20ae39dbe"
+        },
+        {
+          "date": "2026-11-12",
+          "name": "SANTOSH KUMAR AGRAWAL",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 4000000,
+          "sellQty": 0,
+          "buyValueINR": 2012000000.0,
+          "sellValueINR": 0,
+          "netShares": 4000000,
+          "netValueINR": 2012000000.0,
+          "avgBuyPrice": 503.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "d412dc1fb137f10da7"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyValueCr": 402.4,
+          "sellValueCr": 0.0,
+          "netShares": 8000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
         "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
@@ -4614,6 +4680,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:587f7e58347799ba",
+      "name": "GROWVIA TRADE PRIVATE LIMITED",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 34.15,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 34.15,
+      "latestDisclosure": "2026-11-12",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-12",
+          "name": "GROWVIA TRADE PRIVATE LIMITED",
+          "symbol": "MANAKCOAT",
+          "company": "Man Coat Metal & Ind Ltd",
+          "buyQty": 2035835,
+          "sellQty": 0,
+          "buyValueINR": 341490962.9,
+          "sellValueINR": 0,
+          "netShares": 2035835,
+          "netValueINR": 341490962.9,
+          "avgBuyPrice": 167.74,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "80a810598fd5062ede"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MANAKCOAT",
+          "company": "Man Coat Metal & Ind Ltd",
+          "buyValueCr": 34.15,
+          "sellValueCr": 0.0,
+          "netShares": 2035835,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:a845d163545f54ae",
       "name": "L7 HITECH PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -5432,106 +5548,6 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:c5659e317ff667c0",
-      "name": "FROXY INTERNATIONAL LLP",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.75,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.75,
-      "latestDisclosure": "2026-10-12",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-12",
-          "name": "FROXY INTERNATIONAL LLP",
-          "symbol": "SBC",
-          "company": "SBC Exports Limited",
-          "buyQty": 4015393,
-          "sellQty": 0,
-          "buyValueINR": 257507153.09,
-          "sellValueINR": 0,
-          "netShares": 4015393,
-          "netValueINR": 257507153.09,
-          "avgBuyPrice": 64.13,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "3b73905d084fcb4f"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SBC",
-          "company": "SBC Exports Limited",
-          "buyValueCr": 25.75,
-          "sellValueCr": 0.0,
-          "netShares": 4015393,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:1c71fd6096d0b2be",
-      "name": "TRUST MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 25.68,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 25.68,
-      "latestDisclosure": "2026-11-03",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-03",
-          "name": "TRUST MUTUAL FUND",
-          "symbol": "SFCTECH",
-          "company": "SFC Environmental Tech L",
-          "buyQty": 602572,
-          "sellQty": 0,
-          "buyValueINR": 256755929.2,
-          "sellValueINR": 0,
-          "netShares": 602572,
-          "netValueINR": 256755929.2,
-          "avgBuyPrice": 426.1,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6576f9b2731accd4c3"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SFCTECH",
-          "company": "SFC Environmental Tech L",
-          "buyValueCr": 25.68,
-          "sellValueCr": 0.0,
-          "netShares": 602572,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
