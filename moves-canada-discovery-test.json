@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-13T19:54:46.849160+00:00",
+  "testedAt": "2026-11-13T20:57:41.326001+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -14,12 +14,6 @@
           "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtQQm9zMDI0SDYwSHRCbXp3ZllkUHJMM1JveUxuU2JpbDc5aDJ5NDdZajhzWk4yM3BzZm1ZN3FadXFmOFlGUTFjQS1PNDctbnlJekYyclJfMWNXdDNQU0dOTDBuQjJhcER5SVZ1N3BIZlZYQ3pvLVo0NUpzUEFTaFhxMXlPYmRUZTA3ZkxBLU1jckV0UDhDVE9WdW5LelNKYUJF?oc=5",
-          "published": "Tue, 10 Nov 2026 12:46:02 GMT",
-          "source": "Investing News Network"
-        },
-        {
           "title": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdnlyNVh6cXAzUGNYRmIwWC02c2ZBcHlsc1NsTXFiLVNYeGdDZDlJWXl6TFV4VklFMlpoT0dCY3ZtTGFZZ1RFOGxkQUZWOUZHVGo4RDEzeEU4elRJQnM3TUxLYXRtOTNEaU1LOUdDRnF0X1BjR0lfczdLYlE3c00zOGtRaWdySDJBUE42dnRlT0NMZ2JWSFMzX0g2NHEya3d3VHRmZzJnM3VzX0htaFUyaWdCMTBCd21qSVptNGJ4NGZVSVR6T3FiNTUwUjEzT3gtSnpSQl9VLWthYWcwNkdSR0xzQWE2VWpHTUk5em9qRGtxZkpOQ05uTzFWTHR2NTBFMUo4?oc=5",
           "published": "Tue, 10 Nov 2026 18:27:41 GMT",
@@ -30,6 +24,12 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXM5aDRRS2ZNSFBNakNGUWVEVklCdWVPZXkyYlJLb05SRTZNM3lzS0o2UzQ2c1pSNGxaWDBpSWJDaXRyVWdscWZNV2o4b2s1bUNlek9rbTZMS1RBNHROR2h3RjFCT3JrWGNKdGZFbW5jM3E3MDJPTmRNV0ZKZVBNRlE4UFEyU0x0NUs0Z09wMUNRaUJMby1LM09wbEFGSFJIYmdqMG12OFBwMk5oRVotUEF4TVFhdw?oc=5",
           "published": "Thu, 12 Nov 2026 10:06:59 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - The Manila Times",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdmtZamV4SEdxSGJEQkpwaDhDM2hTdF9STmxzLU1Rb3NVLXRFdUNyazhadVlEWDB3ZEtGNUQxVkhhOF92VnI2VTFKd1JNM1A4bl95MG0xUkdlTDVTNUN3ZDNNZHZDeTJGRGpycG5VSjZ0VUxTSVp6SnpJSDJiSkQ1bUxGN3JNUlRDZWYyZmVYVWRadGVSSElQUFFZbUhfUnhYcUVtbmp1ZVJLelNLbzQ2aWVVeTR2blJ1X2MwUVp0VVh6NHlLWnltVFRRSUFQa1FINjBSMjE0Q3UyQV9oX0xMOEVB0gHnAUFVX3lxTFBfZUc5dHpCT0FNb3UzcVNiSC1tZG9FX2s3aTRqeW0tZTFxMjFlTnc4SEFGakZreUxiMDJ5dXhLTXdpWWY1RG9MT2kxT0ZHQnp2YWw1Zkc5U2R2RVJwZk5CWnFfdXlvNkxpMC02a2Jqalp4M2VVWldjZVFrX1lfMGFQeFd0cHNmcm0xSm5oMEdVYWF1RTZMeC1ObjJtU01VQjhfN0RERDRSWHlEUkZYVmtIVjkybS1YT0hrZ01jUUVOOXdkUFBXMUFFVTVTaE1ucnF1d2FpNkdVYy1vRGZCV0t3NHNsVFc5Yw?oc=5",
+          "published": "Tue, 10 Nov 2026 12:14:53 GMT",
+          "source": "The Manila Times"
         },
         {
           "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
