@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-13T20:21:44.849113+00:00",
+  "updated": "2026-11-13T22:28:47.652346+00:00",
   "day": "2026-11-13",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.31,
+      "lastPrice": 4.4,
       "lastPriceDate": "2026-11-13",
-      "priceChangePct": -20.04,
+      "priceChangePct": -18.37,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.9,
+      "lastPrice": 3.87,
       "lastPriceDate": "2026-11-13",
-      "priceChangePct": -2.74,
+      "priceChangePct": -3.49,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.3,
+      "lastPrice": 4.29,
       "lastPriceDate": "2026-11-13",
-      "priceChangePct": -4.66,
+      "priceChangePct": -4.88,
       "quoteStatus": "Available"
     },
     {
@@ -1811,8 +1811,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 5
+      "items": 6,
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-13T20:21:36.918615+00:00",
+  "updated": "2026-11-13T22:28:38.802346+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -772,8 +772,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 5
+      "items": 6,
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
