@@ -2,6 +2,68 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-13:India:MEESHO",
+      "day": "2026-11-13",
+      "market": "India",
+      "symbol": "MEESHO",
+      "company": "Meesho Limited",
+      "buyers": 24,
+      "investors": [
+        "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+        "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+        "BNP PARIBAS FINANCIAL MARKETS",
+        "EDELWEISS MUTUAL FUND",
+        "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
+        "FIAM SELECT EMERGING MARKETS EQUITY FUND LP",
+        "FIDELITY INVESTMENT TR FIDELITY SAI SUSTAINABLE EMERGING MARKETS EQUITY FD",
+        "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
+        "FIDELITY INVESTMENT TRUST FIDELITY SUSTAINABLE EMERGING MARKETS EQUITY FUND",
+        "FIDELITY RUTLAND SQUARE TRUST II STRATEGIC ADVISERS FID EMG MARKETS FUND",
+        "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
+        "FIDELITY SELECT EMERGING MARKETS EQUITY INSTITUTIONAL TRUST",
+        "GHISALLO MASTER FUND LP",
+        "GOLDMAN SACHS BANK EUROPE SE",
+        "GOVERNMENT OF SINGAPORE",
+        "HDFC MUTUAL FUND",
+        "MONETARY AUTHORITY OF SINGAPORE",
+        "MORGAN STANLEY ASIA SINGAPORE PTE",
+        "MOTILAL OSWAL MUTUAL FUND",
+        "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+        "SOCIETE GENERALE",
+        "TEXAS MUNICIPAL RETIREMENT SYSTEM",
+        "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH COLLECTIVE INVESTMENT FUND",
+        "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH FUND"
+      ],
+      "value": 18851700000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 246.75,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-13T19:54:49.011172+00:00",
+      "firstBuyerCount": 24,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-13:India:BLSPOLY",
+      "day": "2026-11-13",
+      "market": "India",
+      "symbol": "BLSPOLY",
+      "company": "BLS Polymers Limited",
+      "buyers": 2,
+      "investors": [
+        "HRTI PRIVATE LIMITED",
+        "IRAGE BROKING SERVICES LLP"
+      ],
+      "value": 148877227.2,
+      "currency": "INR",
+      "disclosedAvgPrice": 264.48,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-13T19:54:49.011172+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-12:India:GREENASIA",
       "day": "2026-11-12",
       "market": "India",
@@ -887,9 +949,12 @@
     "India:CONTROLPR": {
       "2026-11-12": 623.4,
       "2026-11-13": 608.75
+    },
+    "India:MEESHO": {
+      "2026-11-13": 257.07
     }
   },
-  "updatedAt": "2026-11-13T09:49:49.653614+00:00",
+  "updatedAt": "2026-11-13T19:54:49.011172+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -912,9 +977,10 @@
     "India:V2RETAIL": "V2RETAIL.NS",
     "India:CPPLUS": "CPPLUS.NS",
     "India:NECCLTD": "NECCLTD.NS",
-    "India:CONTROLPR": "CONTROLPR.NS"
+    "India:CONTROLPR": "CONTROLPR.NS",
+    "India:MEESHO": "MEESHO.NS"
   },
-  "quotesUpdatedAt": "2026-11-13T09:49:56.473053+00:00",
+  "quotesUpdatedAt": "2026-11-13T19:55:01.497777+00:00",
   "quoteFailures": [
     "India:EVENTIONS",
     "India:GREENASIA",

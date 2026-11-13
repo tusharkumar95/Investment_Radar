@@ -1,23 +1,17 @@
 {
-  "testedAt": "2026-11-13T09:49:47.995418+00:00",
+  "testedAt": "2026-11-13T19:54:46.849160+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "items": [
         {
           "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZUNUbDFsTlBVS29MdWpFQUJUMFNOZUFxX2JpcHJJX2x1M1EyNzdhb0lYYzNydmZHaTRlLU1MdU83Q3FkVWJmVllKaGIyVDh3STFTY1ZITlc4cHBWOXZaZGhqcVFKWHljQklpSTE3d3N0Z1UzZkw1UUx5cnhuMVdjbU5iRkFfRTBEcWUyaA?oc=5",
           "published": "Fri, 13 Nov 2026 00:16:00 GMT",
           "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - InvestorNews",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTXhKcWJZU1FNMHhFWlZFMlR1aTBuY3h0NjF2WEhjdkh4NHVNUWdTalZlWExXVnpXbml3cG1ac2RuUU1ReDZZaWx4bmpsaWRKR1daakNqQW9EdU5TYVI3QmJkeFdESWtrMFQ1SXFKNzd1em9UcHZuLVFUZ25QdG9yb2I0N1JJTG9YZDNOaWJVR2JZakVkblotMk42NXhIOU1qcnNZT2tOYUFCVmhaclpSUXkwQlY?oc=5",
-          "published": "Mon, 09 Nov 2026 13:01:05 GMT",
-          "source": "InvestorNews"
         },
         {
           "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - Investing News Network",
@@ -38,9 +32,9 @@
           "source": "TradingView"
         },
         {
-          "title": "Red Metal Reports Mine Sampling at Farellon, Including 6.8% Copper on Level 7 and 6.05% Copper on Level 9 - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNemtqSVFKUG14WnlnbTVELThuaUJDV1Vib25CUUFhcExPV2J6VUlJQUpGZF9EUXBYMkl0aGpjUzd3M2U2OVE2SjhaclloNXJPX0JJbTFsbWYyLW1KcFVvd3VfcjVIaHpadDRzajl2c1VRcDRoeElpd2hodDZjeF9ISTJ6UUFPR0dWNVBEZGFIZVcwbDg1c2ZULXozUFM1c25UdlR1MWN1OGc0ODZmNkU4VWlKdENfaHBGVkFhQVI4U0g4dFdUY1hKZW5zUU9SMWt3b1p5QlBGYWlQb25GVUQxSjItbFNBUFFHQUdxN2ZLVEVnTTZxQTBkOQ?oc=5",
-          "published": "Thu, 12 Nov 2026 13:00:00 GMT",
+          "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
+          "published": "Fri, 13 Nov 2026 11:45:00 GMT",
           "source": "TradingView"
         }
       ]
