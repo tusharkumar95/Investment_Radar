@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-14T16:39:57.540306+00:00",
+  "updated": "2026-11-14T20:57:30.505941+00:00",
   "market": "India",
   "thresholdCr": 100,
   "policy": "Only documented awards qualify as verified. Exchange RSS order metadata may carry a reported value but must be checked against the attachment. Media headlines and non-final bids/LOIs never trigger alerts. Refresh delay and feed availability apply.",
@@ -1136,7 +1136,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:dfc27b2f8fc963c11e091b",
@@ -1622,7 +1623,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:bdbc589da408243455d091",
@@ -2081,7 +2082,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ae04b2ea6f5af909f8e4ff",
@@ -2134,7 +2135,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ab1d0be612c7356b589566",
@@ -2215,7 +2217,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:a30dcc54bb9428dbfc152e",
@@ -2674,7 +2676,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9682f98068a1552951d162",
@@ -2728,7 +2730,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:95105ed25ac222760fd13a",
@@ -2863,7 +2865,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8dcda8ee5d93150449d825",
@@ -2944,7 +2946,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8d091ae69340e6dcf8c7ae",
@@ -4536,7 +4538,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:4d7dcce824d60091e0a9ee",
@@ -4698,7 +4701,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:42c3524cd28255bcc02cd5",
@@ -5048,7 +5051,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2e7447dd7087f427489fc5",
@@ -5885,7 +5889,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:12183f2741b3e51df2f6c2",
@@ -6184,7 +6188,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     }
   ],
   "verifiedOrders": [
@@ -6889,7 +6893,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:dfc27b2f8fc963c11e091b",
@@ -7375,7 +7380,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:bdbc589da408243455d091",
@@ -7834,7 +7839,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ae04b2ea6f5af909f8e4ff",
@@ -7887,7 +7892,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ab1d0be612c7356b589566",
@@ -7968,7 +7974,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:a30dcc54bb9428dbfc152e",
@@ -8427,7 +8433,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:9682f98068a1552951d162",
@@ -8481,7 +8487,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:95105ed25ac222760fd13a",
@@ -8616,7 +8622,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8dcda8ee5d93150449d825",
@@ -8697,7 +8703,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:8d091ae69340e6dcf8c7ae",
@@ -10289,7 +10295,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:4d7dcce824d60091e0a9ee",
@@ -10451,7 +10458,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:42c3524cd28255bcc02cd5",
@@ -10801,7 +10808,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00"
+      "firstSeenAt": "2026-11-14T16:39:57.540306+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:2e7447dd7087f427489fc5",
@@ -11638,7 +11646,7 @@
       "alertEligible": true,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:12183f2741b3e51df2f6c2",
@@ -12134,43 +12142,40 @@
       "name": "NSE corporate announcements RSS",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 1370,
-      "orderMentions": 13
+      "items": 9,
+      "orderMentions": 0
     },
     {
       "name": "NSE announcements alternate",
       "url": "https://archives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 1370,
-      "orderMentions": 13
+      "items": 22,
+      "orderMentions": 0
     },
     {
       "name": "BSE corporate announcements RSS",
       "url": "https://www.bseindia.com/data/xml/announcements.xml",
       "ok": true,
-      "items": 0,
+      "items": 32,
       "orderMentions": 0
     },
     {
       "name": "News search: order awards",
       "url": "https://news.google.com/rss/search?q=%28%22wins+orders%22+OR+%22secured+order%22+OR+%22order+received%22%29+NSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-      "ok": true,
-      "items": 0,
-      "orderMentions": 0
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "News search: contract awards",
       "url": "https://news.google.com/rss/search?q=%28%22contract+awarded%22+OR+%22letter+of+award%22+OR+%22order+worth%22%29+BSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-      "ok": true,
-      "items": 0,
-      "orderMentions": 0
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "News search: company filings",
       "url": "https://news.google.com/rss/search?q=%22Bagging%2FReceiving+of+orders%2Fcontracts%22+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
-      "ok": true,
-      "items": 1,
-      "orderMentions": 0
+      "ok": false,
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "status": {
@@ -12179,7 +12184,7 @@
     "exchangeNotices": 202,
     "researchLeads": 16,
     "significantAlerts": 9,
-    "sourcesAvailable": 6,
+    "sourcesAvailable": 3,
     "sourcesChecked": 6,
     "latestAnnouncementDate": "2026-11-11"
   },
