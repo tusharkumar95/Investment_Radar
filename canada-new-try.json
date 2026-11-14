@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-13T22:28:47.652346+00:00",
+  "updated": "2026-11-14T02:50:21.667420+00:00",
   "day": "2026-11-13",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -622,7 +622,7 @@
         }
       ],
       "lastPrice": 0.09,
-      "lastPriceDate": "2026-11-12",
+      "lastPriceDate": "2026-11-13",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 1.05,
-      "lastPriceDate": "2026-11-12",
+      "lastPriceDate": "2026-11-13",
       "priceChangePct": -6.25,
       "quoteStatus": "Available"
     },
@@ -1043,6 +1043,17 @@
   ],
   "leads": [
     {
+      "id": "lead:e5b97f2e9a8697d0ae",
+      "title": "Ocean Power Technologies Announces Pricing of $3.0 Million Public Offering",
+      "date": "2026-11-13",
+      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402563/9069/en/ocean-power-technologies-announces-pricing-of-3-0-million-public-offering.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MONROE TOWNSHIP, N.J., Nov.  13, 2026  (GLOBE NEWSWIRE) -- Ocean Power Technologies, Inc. (“OPT” or the “Company”) (NYSE American: OPTT), a leader in intelligent maritime solutions and services, today announced the pricing of its previously announced public offering of 6,000,000 shares of common st"
+    },
+    {
       "id": "lead:7bc9945622476be2c6",
       "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Quantisnow",
       "date": "2026-11-13",
@@ -1054,6 +1065,28 @@
       "summary": " Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd.    Quantisnow "
     },
     {
+      "id": "lead:f670654a77732bcb6e",
+      "title": "InspireMD Announces Proposed Public Offering",
+      "date": "2026-11-12",
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402241/0/en/inspiremd-announces-proposed-public-offering.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MIAMI, Nov.  12, 2026  (GLOBE NEWSWIRE) -- InspireMD, Inc. (Nasdaq: NSPR) (“InspireMD” or the “Company”), developer of the CGuard ®  Prime carotid stent system for the prevention of stroke, today announced that it has commenced a proposed public offering of (i) shares of its common stock, (ii) in l"
+    },
+    {
+      "id": "lead:4ad3165f7da356d119",
+      "title": "CMG Announces Renewal of Normal Course Issuer Bid and Automatic Share Purchase Plan",
+      "date": "2026-11-12",
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402300/0/en/cmg-announces-renewal-of-normal-course-issuer-bid-and-automatic-share-purchase-plan.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " CALGARY, Alberta, Nov.  12, 2026  (GLOBE NEWSWIRE) -- Computer Modelling Group Ltd. (“CMG” or the “Company”) (TSX: CMG) today announced that the Toronto Stock Exchange (“TSX”) has accepted a notice (the “Notice”) filed by the Company to renew a Normal Course Issuer Bid (“NCIB”) for its common share"
+    },
+    {
       "id": "lead:2bfaa9f52255b01b11",
       "title": "Nov 12, 2026, 16:15 ET \n                        Coast Copper Announces Non-Brokered Private Placement Financing for Proceeds of up to $1M\n                       \n                       Coast Copper Corp. (\"Coast Copper\" or the \"Company\"; (TSXV: COCO) is please",
       "date": "2026-11-12",
@@ -1063,6 +1096,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:8e06626601067089d2",
+      "title": "iRhythm Announces Approval of $200 Million Share Repurchase Program",
+      "date": "2026-11-11",
+      "url": "https://www.globenewswire.com/news-release/2026/11/11/3401127/0/en/irhythm-announces-approval-of-200-million-share-repurchase-program.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " SAN FRANCISCO, Nov.  11, 2026  (GLOBE NEWSWIRE) -- iRhythm Holdings, Inc. (Nasdaq: IRTC), a leading digital health care company with a mission to create trusted solutions that detect, predict, and prevent disease, today announced that on November 10, 2026, its Board of Directors approved a share re"
     },
     {
       "id": "lead:bb527593efbe33f3b3",
@@ -1767,52 +1811,33 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
-    },
-    {
-      "id": "lead:67d30980284cf1d3d8",
-      "title": "Oct 09, 2026, 09:06 ET \n                          Rock Tech Lithium Closes Previously Announced Private Placement at C$6 Million\n                         \n                         /NOT FOR DISTRIBUTION TO UNITED STATES NEWSWIRE SERVICES OR FOR DISSEMINATION IN",
-      "date": "2026-10-09",
-      "url": "https://www.newswire.ca/news-releases/rock-tech-lithium-closes-previously-announced-private-placement-at-c-6-million-859942897.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:258e1f0d949848b597",
-      "title": "08:03 ET \n                        GBH INC. EXCHANGES INTEREST IN VERSABANK PURSUANT TO REORGANIZATION\n                       \n                       GBH Inc. (\"GBH\") announced today that it has acquired 8,058,698 shares of common stock of Versa Bancorp, a Dela",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/gbh-inc-exchanges-interest-in-versabank-pursuant-to-reorganization-826951713.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 4
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
-      "relevant": 4
+      "items": 7,
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1865,20 +1890,18 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 6,
-      "relevant": 5
+      "items": 5,
+      "relevant": 4
     },
     {
       "name": "Canada NewsWire / Acquisitions",
-      "ok": true,
-      "items": 100,
-      "relevant": 8
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "Canada NewsWire / Private placements",
-      "ok": true,
-      "items": 100,
-      "relevant": 27
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1920,9 +1943,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 68,
+    "disclosureLeads": 70,
     "usFilingNotices": 0,
-    "sourcesOnline": 12,
+    "sourcesOnline": 13,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
