@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-13T18:29:07.234726+00:00",
+  "updated": "2026-11-14T10:10:42.333545+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-12",
-    "trades": 733,
-    "investors": 436
+    "latest": "2026-11-13",
+    "trades": 780,
+    "investors": 461
   },
   "featured": [
     {
@@ -159,16 +159,32 @@
       "id": "investor:a202d3e30bc4ea9c",
       "name": "HDFC MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
+      "observedTransactions": 3,
+      "observedBuyDays": 3,
       "observedSellDays": 0,
-      "buyValueCr": 253.15,
+      "buyValueCr": 287.94,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 253.15,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 2,
+      "netDisclosedValueCr": 287.94,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 3,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "HDFC MUTUAL FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 1410000,
+          "sellQty": 0,
+          "buyValueINR": 347917500.0,
+          "sellValueINR": 0,
+          "netShares": 1410000,
+          "netValueINR": 347917500.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "1d56a5132907df36f2"
+        },
         {
           "date": "2026-11-02",
           "name": "HDFC MUTUAL FUND",
@@ -220,12 +236,21 @@
           "netShares": 1000000,
           "buyDays": 1,
           "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 34.79,
+          "sellValueCr": 0.0,
+          "netShares": 1410000,
+          "buyDays": 1,
+          "sellDays": 0
         }
       ],
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
@@ -775,16 +800,32 @@
       "id": "investor:3bd3ea7127987d39",
       "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
       "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
       "observedSellDays": 0,
-      "buyValueCr": 238.28,
+      "buyValueCr": 483.15,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 238.28,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
+      "netDisclosedValueCr": 483.15,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 9924000,
+          "sellQty": 0,
+          "buyValueINR": 2448747000.0,
+          "sellValueINR": 0,
+          "netShares": 9924000,
+          "netValueINR": 2448747000.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "a3bf0ec354348245a1"
+        },
         {
           "date": "2026-10-30",
           "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
@@ -803,6 +844,15 @@
         }
       ],
       "companies": [
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 244.87,
+          "sellValueCr": 0.0,
+          "netShares": 9924000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
         {
           "symbol": "SWIGGY",
           "company": "Swiggy Limited",
@@ -826,6 +876,147 @@
     }
   ],
   "discovered": [
+    {
+      "id": "investor:fdba9827590e864d",
+      "name": "SOCIETE GENERALE",
+      "type": "Named investor / company",
+      "observedTransactions": 5,
+      "observedBuyDays": 4,
+      "observedSellDays": 0,
+      "buyValueCr": 1481.78,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 1481.78,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 4,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "SOCIETE GENERALE",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 14778000,
+          "sellQty": 0,
+          "buyValueINR": 3646471500.0,
+          "sellValueINR": 0,
+          "netShares": 14778000,
+          "netValueINR": 3646471500.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "cad4894cc5b9f24beb"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "SOCIETE GENERALE",
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyQty": 23740000,
+          "sellQty": 0,
+          "buyValueINR": 4288631000.0,
+          "sellValueINR": 0,
+          "netShares": 23740000,
+          "netValueINR": 4288631000.0,
+          "avgBuyPrice": 180.65,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "9d72315b4a1e89fe5e"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "SOCIETE GENERALE",
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyQty": 23740000,
+          "sellQty": 0,
+          "buyValueINR": 4288631000.0,
+          "sellValueINR": 0,
+          "netShares": 23740000,
+          "netValueINR": 4288631000.0,
+          "avgBuyPrice": 180.65,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "6a1ff11d6fb92899aa"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "SOCIETE GENERALE",
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyQty": 47506626,
+          "sellQty": 0,
+          "buyValueINR": 2030908261.5,
+          "sellValueINR": 0,
+          "netShares": 47506626,
+          "netValueINR": 2030908261.5,
+          "avgBuyPrice": 42.75,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "5a7e919cd1adf1a042"
+        },
+        {
+          "date": "2026-10-29",
+          "name": "SOCIETE GENERALE",
+          "symbol": "BSOFT",
+          "company": "BIRLASOFT LIMITED",
+          "buyQty": 1647762,
+          "sellQty": 0,
+          "buyValueINR": 563172096.36,
+          "sellValueINR": 0,
+          "netShares": 1647762,
+          "netValueINR": 563172096.36,
+          "avgBuyPrice": 341.78,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "1324680ce552827199"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyValueCr": 857.73,
+          "sellValueCr": 0.0,
+          "netShares": 47480000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 364.65,
+          "sellValueCr": 0.0,
+          "netShares": 14778000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyValueCr": 203.09,
+          "sellValueCr": 0.0,
+          "netShares": 47506626,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "BSOFT",
+          "company": "BIRLASOFT LIMITED",
+          "buyValueCr": 56.32,
+          "sellValueCr": 0.0,
+          "netShares": 1647762,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
     {
       "id": "investor:521c481da546bb85",
       "name": "PI OPPORTUNITIES AIF V LLP",
@@ -993,109 +1184,84 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:fdba9827590e864d",
-      "name": "SOCIETE GENERALE",
-      "type": "Named investor / company",
-      "observedTransactions": 4,
-      "observedBuyDays": 3,
+      "id": "investor:d9d298b68e12f38f",
+      "name": "MOTILAL OSWAL MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 3,
+      "observedBuyDays": 2,
       "observedSellDays": 0,
-      "buyValueCr": 1117.13,
+      "buyValueCr": 827.53,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 1117.13,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 3,
+      "netDisclosedValueCr": 827.53,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-10-30",
-          "name": "SOCIETE GENERALE",
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyQty": 23740000,
+          "date": "2026-11-13",
+          "name": "MOTILAL OSWAL MUTUAL FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 5250000,
           "sellQty": 0,
-          "buyValueINR": 4288631000.0,
+          "buyValueINR": 1295437500.0,
           "sellValueINR": 0,
-          "netShares": 23740000,
-          "netValueINR": 4288631000.0,
-          "avgBuyPrice": 180.65,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "9d72315b4a1e89fe5e"
-        },
-        {
-          "date": "2026-10-30",
-          "name": "SOCIETE GENERALE",
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyQty": 23740000,
-          "sellQty": 0,
-          "buyValueINR": 4288631000.0,
-          "sellValueINR": 0,
-          "netShares": 23740000,
-          "netValueINR": 4288631000.0,
-          "avgBuyPrice": 180.65,
+          "netShares": 5250000,
+          "netValueINR": 1295437500.0,
+          "avgBuyPrice": 246.75,
           "source": "NSE Block Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "6a1ff11d6fb92899aa"
+          "dealId": "85d387813d7dbb3df4"
         },
         {
-          "date": "2026-10-30",
-          "name": "SOCIETE GENERALE",
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyQty": 47506626,
+          "date": "2026-11-11",
+          "name": "MOTILAL OSWAL MUTUAL FUND",
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyQty": 842977,
           "sellQty": 0,
-          "buyValueINR": 2030908261.5,
+          "buyValueINR": 3489924780.0,
           "sellValueINR": 0,
-          "netShares": 47506626,
-          "netValueINR": 2030908261.5,
-          "avgBuyPrice": 42.75,
+          "netShares": 842977,
+          "netValueINR": 3489924780.0,
+          "avgBuyPrice": 4140.0,
           "source": "NSE Bulk Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5a7e919cd1adf1a042"
+          "dealId": "763036847382eb9279"
         },
         {
-          "date": "2026-10-29",
-          "name": "SOCIETE GENERALE",
-          "symbol": "BSOFT",
-          "company": "BIRLASOFT LIMITED",
-          "buyQty": 1647762,
+          "date": "2026-11-11",
+          "name": "MOTILAL OSWAL MUTUAL FUND",
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyQty": 842977,
           "sellQty": 0,
-          "buyValueINR": 563172096.36,
+          "buyValueINR": 3489924780.0,
           "sellValueINR": 0,
-          "netShares": 1647762,
-          "netValueINR": 563172096.36,
-          "avgBuyPrice": 341.78,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "1324680ce552827199"
+          "netShares": 842977,
+          "netValueINR": 3489924780.0,
+          "avgBuyPrice": 4140.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "cb1660569e3a3fbeb0"
         }
       ],
       "companies": [
         {
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyValueCr": 857.73,
+          "symbol": "CPPLUS",
+          "company": "Aditya Infotech Limited",
+          "buyValueCr": 697.98,
           "sellValueCr": 0.0,
-          "netShares": 47480000,
+          "netShares": 1685954,
           "buyDays": 1,
           "sellDays": 0
         },
         {
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyValueCr": 203.09,
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 129.54,
           "sellValueCr": 0.0,
-          "netShares": 47506626,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "BSOFT",
-          "company": "BIRLASOFT LIMITED",
-          "buyValueCr": 56.32,
-          "sellValueCr": 0.0,
-          "netShares": 1647762,
+          "netShares": 5250000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -1103,7 +1269,7 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
-        "multipleCompanies": true,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -1253,72 +1419,6 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:d9d298b68e12f38f",
-      "name": "MOTILAL OSWAL MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 697.98,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 697.98,
-      "latestDisclosure": "2026-11-11",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-11",
-          "name": "MOTILAL OSWAL MUTUAL FUND",
-          "symbol": "CPPLUS",
-          "company": "Aditya Infotech Limited",
-          "buyQty": 842977,
-          "sellQty": 0,
-          "buyValueINR": 3489924780.0,
-          "sellValueINR": 0,
-          "netShares": 842977,
-          "netValueINR": 3489924780.0,
-          "avgBuyPrice": 4140.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "763036847382eb9279"
-        },
-        {
-          "date": "2026-11-11",
-          "name": "MOTILAL OSWAL MUTUAL FUND",
-          "symbol": "CPPLUS",
-          "company": "Aditya Infotech Limited",
-          "buyQty": 842977,
-          "sellQty": 0,
-          "buyValueINR": 3489924780.0,
-          "sellValueINR": 0,
-          "netShares": 842977,
-          "netValueINR": 3489924780.0,
-          "avgBuyPrice": 4140.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "cb1660569e3a3fbeb0"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "CPPLUS",
-          "company": "Aditya Infotech Limited",
-          "buyValueCr": 697.98,
-          "sellValueCr": 0.0,
-          "netShares": 1685954,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -1619,16 +1719,32 @@
       "id": "investor:e412b66fef586588",
       "name": "GHISALLO MASTER FUND LP",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
+      "observedTransactions": 3,
+      "observedBuyDays": 3,
       "observedSellDays": 0,
-      "buyValueCr": 237.63,
+      "buyValueCr": 322.39,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 237.63,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 2,
+      "netDisclosedValueCr": 322.39,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 3,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "GHISALLO MASTER FUND LP",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 3435000,
+          "sellQty": 0,
+          "buyValueINR": 847586250.0,
+          "sellValueINR": 0,
+          "netShares": 3435000,
+          "netValueINR": 847586250.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "a03b27979d555ecf19"
+        },
         {
           "date": "2026-10-30",
           "name": "GHISALLO MASTER FUND LP",
@@ -1673,6 +1789,15 @@
           "sellDays": 0
         },
         {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 84.76,
+          "sellValueCr": 0.0,
+          "netShares": 3435000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "SWIGGY",
           "company": "Swiggy Limited",
           "buyValueCr": 47.12,
@@ -1685,7 +1810,207 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:572f1466d17bafa8",
+      "name": "GOLDMAN SACHS BANK EUROPE SE",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 3,
+      "observedBuyDays": 2,
+      "observedSellDays": 1,
+      "buyValueCr": 280.06,
+      "sellValueCr": 4.67,
+      "netDisclosedValueCr": 275.39,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 3626000,
+          "sellQty": 0,
+          "buyValueINR": 894715500.0,
+          "sellValueINR": 0,
+          "netShares": 3626000,
+          "netValueINR": 894715500.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "dc6cc3cfee78fe2c0c"
+        },
+        {
+          "date": "2026-11-09",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyQty": 0,
+          "sellQty": 304300,
+          "buyValueINR": 0,
+          "sellValueINR": 46713093.0,
+          "netShares": -304300,
+          "netValueINR": -46713093.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "655d1f91c19a3c9923"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyQty": 10550000,
+          "sellQty": 0,
+          "buyValueINR": 1905857500.0,
+          "sellValueINR": 0,
+          "netShares": 10550000,
+          "netValueINR": 1905857500.0,
+          "avgBuyPrice": 180.65,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "8327b364f1f44c31df"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyValueCr": 190.59,
+          "sellValueCr": 0.0,
+          "netShares": 10550000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 89.47,
+          "sellValueCr": 0.0,
+          "netShares": 3626000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MKJEWELS",
+          "company": "MK Sons Fine Jewels Ltd",
+          "buyValueCr": 0.0,
+          "sellValueCr": 4.67,
+          "netShares": -304300,
+          "buyDays": 0,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:193ddc8f0eb17489",
+      "name": "BNP PARIBAS FINANCIAL MARKETS",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 3,
+      "observedBuyDays": 2,
+      "observedSellDays": 1,
+      "buyValueCr": 334.38,
+      "sellValueCr": 61.12,
+      "netDisclosedValueCr": 273.26,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "BNP PARIBAS FINANCIAL MARKETS",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 3817000,
+          "sellQty": 0,
+          "buyValueINR": 941844750.0,
+          "sellValueINR": 0,
+          "netShares": 3817000,
+          "netValueINR": 941844750.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "150d8ed89780e24b84"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "BNP PARIBAS FINANCIAL MARKETS",
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyQty": 56185380,
+          "sellQty": 0,
+          "buyValueINR": 2401924995.0,
+          "sellValueINR": 0,
+          "netShares": 56185380,
+          "netValueINR": 2401924995.0,
+          "avgBuyPrice": 42.75,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "00972df68f03d509c7"
+        },
+        {
+          "date": "2026-10-22",
+          "name": "BNP PARIBAS FINANCIAL MARKETS",
+          "symbol": "FUSIONCX",
+          "company": "Fusion CX Limited",
+          "buyQty": 0,
+          "sellQty": 2007211,
+          "buyValueINR": 0,
+          "sellValueINR": 611153181.91,
+          "netShares": -2007211,
+          "netValueINR": -611153181.91,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "1356180278293ec843"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyValueCr": 240.19,
+          "sellValueCr": 0.0,
+          "netShares": 56185380,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 94.18,
+          "sellValueCr": 0.0,
+          "netShares": 3817000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "FUSIONCX",
+          "company": "Fusion CX Limited",
+          "buyValueCr": 0.0,
+          "sellValueCr": 61.12,
+          "netShares": -2007211,
+          "buyDays": 0,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": true,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -1882,6 +2207,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:db1193eff00a0945",
+      "name": "FIDELITY RUTLAND SQUARE TRUST II STRATEGIC ADVISERS FID EMG MARKETS FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 209.14,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 209.14,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "FIDELITY RUTLAND SQUARE TRUST II STRATEGIC ADVISERS FID EMG MARKETS FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 8475900,
+          "sellQty": 0,
+          "buyValueINR": 2091428325.0,
+          "sellValueINR": 0,
+          "netShares": 8475900,
+          "netValueINR": 2091428325.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "b7d06bb8aff133c8e8"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 209.14,
+          "sellValueCr": 0.0,
+          "netShares": 8475900,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:c444ec0dc8bfd9dd",
       "name": "PARAM CAPITAL",
       "type": "Institution / fund / investment entity (name-based)",
@@ -1948,150 +2323,50 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:572f1466d17bafa8",
-      "name": "GOLDMAN SACHS BANK EUROPE SE",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 2,
+      "id": "investor:93c17e2e45f43dd7",
+      "name": "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
       "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 190.59,
-      "sellValueCr": 4.67,
-      "netDisclosedValueCr": 185.92,
-      "latestDisclosure": "2026-11-09",
-      "uniqueCompanies": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 187.78,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 187.78,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-11-09",
-          "name": "GOLDMAN SACHS BANK EUROPE SE",
-          "symbol": "MKJEWELS",
-          "company": "MK Sons Fine Jewels Ltd",
-          "buyQty": 0,
-          "sellQty": 304300,
-          "buyValueINR": 0,
-          "sellValueINR": 46713093.0,
-          "netShares": -304300,
-          "netValueINR": -46713093.0,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "655d1f91c19a3c9923"
-        },
-        {
-          "date": "2026-10-30",
-          "name": "GOLDMAN SACHS BANK EUROPE SE",
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyQty": 10550000,
+          "date": "2026-11-13",
+          "name": "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 7610300,
           "sellQty": 0,
-          "buyValueINR": 1905857500.0,
+          "buyValueINR": 1877841525.0,
           "sellValueINR": 0,
-          "netShares": 10550000,
-          "netValueINR": 1905857500.0,
-          "avgBuyPrice": 180.65,
+          "netShares": 7610300,
+          "netValueINR": 1877841525.0,
+          "avgBuyPrice": 246.75,
           "source": "NSE Block Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "8327b364f1f44c31df"
+          "dealId": "3196c489fdd433ab94"
         }
       ],
       "companies": [
         {
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyValueCr": 190.59,
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 187.78,
           "sellValueCr": 0.0,
-          "netShares": 10550000,
+          "netShares": 7610300,
           "buyDays": 1,
           "sellDays": 0
-        },
-        {
-          "symbol": "MKJEWELS",
-          "company": "MK Sons Fine Jewels Ltd",
-          "buyValueCr": 0.0,
-          "sellValueCr": 4.67,
-          "netShares": -304300,
-          "buyDays": 0,
-          "sellDays": 1
         }
       ],
       "observations": {
         "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:193ddc8f0eb17489",
-      "name": "BNP PARIBAS FINANCIAL MARKETS",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 240.19,
-      "sellValueCr": 61.12,
-      "netDisclosedValueCr": 179.07,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-30",
-          "name": "BNP PARIBAS FINANCIAL MARKETS",
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyQty": 56185380,
-          "sellQty": 0,
-          "buyValueINR": 2401924995.0,
-          "sellValueINR": 0,
-          "netShares": 56185380,
-          "netValueINR": 2401924995.0,
-          "avgBuyPrice": 42.75,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "00972df68f03d509c7"
-        },
-        {
-          "date": "2026-10-22",
-          "name": "BNP PARIBAS FINANCIAL MARKETS",
-          "symbol": "FUSIONCX",
-          "company": "Fusion CX Limited",
-          "buyQty": 0,
-          "sellQty": 2007211,
-          "buyValueINR": 0,
-          "sellValueINR": 611153181.91,
-          "netShares": -2007211,
-          "netValueINR": -611153181.91,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "1356180278293ec843"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyValueCr": 240.19,
-          "sellValueCr": 0.0,
-          "netShares": 56185380,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "FUSIONCX",
-          "company": "Fusion CX Limited",
-          "buyValueCr": 0.0,
-          "sellValueCr": 61.12,
-          "netShares": -2007211,
-          "buyDays": 0,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
+        "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -2201,19 +2476,35 @@
       "id": "investor:14c9b58fbd296aff",
       "name": "HRTI PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 16,
-      "observedBuyDays": 16,
-      "observedSellDays": 16,
-      "buyValueCr": 647.82,
-      "sellValueCr": 519.13,
-      "netDisclosedValueCr": 128.69,
-      "latestDisclosure": "2026-11-11",
-      "uniqueCompanies": 14,
+      "observedTransactions": 17,
+      "observedBuyDays": 17,
+      "observedSellDays": 17,
+      "buyValueCr": 680.65,
+      "sellValueCr": 542.5,
+      "netDisclosedValueCr": 138.15,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 15,
       "repeatBuyCompanies": [
         "RATNAVEER",
         "PCJEWELLER"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "BLSPOLY",
+          "company": "BLS Polymers Limited",
+          "buyQty": 1252333,
+          "sellQty": 899688,
+          "buyValueINR": 328249002.63,
+          "sellValueINR": 233657970.48,
+          "netShares": 352645,
+          "netValueINR": 94591032.15,
+          "avgBuyPrice": 262.11,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "c80b385edf21f5411e"
+        },
         {
           "date": "2026-11-11",
           "name": "HRTI PRIVATE LIMITED",
@@ -2518,6 +2809,15 @@
           "sellDays": 1
         },
         {
+          "symbol": "BLSPOLY",
+          "company": "BLS Polymers Limited",
+          "buyValueCr": 32.82,
+          "sellValueCr": 23.37,
+          "netShares": 352645,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
           "symbol": "SSWL",
           "company": "Steel Strips Wheels Limit",
           "buyValueCr": 30.84,
@@ -2603,6 +2903,81 @@
         "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:84c482750e79b3bb",
+      "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 130.59,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 130.59,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 4200000,
+          "sellQty": 0,
+          "buyValueINR": 1036350000.0,
+          "sellValueINR": 0,
+          "netShares": 4200000,
+          "netValueINR": 1036350000.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "b959561658cd766eff"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyQty": 1492270,
+          "sellQty": 0,
+          "buyValueINR": 269578575.5,
+          "sellValueINR": 0,
+          "netShares": 1492270,
+          "netValueINR": 269578575.5,
+          "avgBuyPrice": 180.65,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "399bb97535ca03be49"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 103.64,
+          "sellValueCr": 0.0,
+          "netShares": 4200000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyValueCr": 26.96,
+          "sellValueCr": 0.0,
+          "netShares": 1492270,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -2761,6 +3136,56 @@
           "buyValueCr": 100.45,
           "sellValueCr": 0.0,
           "netShares": 13289038,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:17bf4c25c010a096",
+      "name": "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 94.94,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 94.94,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 3847600,
+          "sellQty": 0,
+          "buyValueINR": 949395300.0,
+          "sellValueINR": 0,
+          "netShares": 3847600,
+          "netValueINR": 949395300.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "3a136fafb444c4e4c5"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 94.94,
+          "sellValueCr": 0.0,
+          "netShares": 3847600,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3342,6 +3767,81 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:cc5b2e70b7b80c6c",
+      "name": "SETU SECURITIES PRIVATE LIMITED",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 60.8,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 60.8,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "SETU SECURITIES PRIVATE LIMITED",
+          "symbol": "DCI",
+          "company": "DC Infotech and Comun Ltd",
+          "buyQty": 138910,
+          "sellQty": 0,
+          "buyValueINR": 46316761.3,
+          "sellValueINR": 0,
+          "netShares": 138910,
+          "netValueINR": 46316761.3,
+          "avgBuyPrice": 333.43,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "1d18eada141c60dc4b"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "SETU SECURITIES PRIVATE LIMITED",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 410000,
+          "sellQty": 0,
+          "buyValueINR": 561700000.0,
+          "sellValueINR": 0,
+          "netShares": 410000,
+          "netValueINR": 561700000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "e1082e769c5c5d273f"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 56.17,
+          "sellValueCr": 0.0,
+          "netShares": 410000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "DCI",
+          "company": "DC Infotech and Comun Ltd",
+          "buyValueCr": 4.63,
+          "sellValueCr": 0.0,
+          "netShares": 138910,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:2a55212dc62c1a46",
       "name": "ABHISHEK ASHVINBHAI KAMDAR HUF",
       "type": "Named investor / company",
@@ -3703,43 +4203,43 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:cc5b2e70b7b80c6c",
-      "name": "SETU SECURITIES PRIVATE LIMITED",
-      "type": "Financial institution (may intermediate trades)",
+      "id": "investor:32e8243900848366",
+      "name": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
+      "type": "Institution / fund / investment entity (name-based)",
       "observedTransactions": 1,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 56.17,
+      "buyValueCr": 56.67,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 56.17,
-      "latestDisclosure": "2026-11-06",
+      "netDisclosedValueCr": 56.67,
+      "latestDisclosure": "2026-11-13",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-11-06",
-          "name": "SETU SECURITIES PRIVATE LIMITED",
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyQty": 410000,
+          "date": "2026-11-13",
+          "name": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 2296700,
           "sellQty": 0,
-          "buyValueINR": 561700000.0,
+          "buyValueINR": 566710725.0,
           "sellValueINR": 0,
-          "netShares": 410000,
-          "netValueINR": 561700000.0,
-          "avgBuyPrice": 1370.0,
+          "netShares": 2296700,
+          "netValueINR": 566710725.0,
+          "avgBuyPrice": 246.75,
           "source": "NSE Block Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "e1082e769c5c5d273f"
+          "dealId": "7002d238cb8589edcc"
         }
       ],
       "companies": [
         {
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyValueCr": 56.17,
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 56.67,
           "sellValueCr": 0.0,
-          "netShares": 410000,
+          "netShares": 2296700,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3887,6 +4387,56 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:76720a4caf638bf3",
+      "name": "GOVERNMENT OF SINGAPORE",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 53.73,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 53.73,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "GOVERNMENT OF SINGAPORE",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 2177506,
+          "sellQty": 0,
+          "buyValueINR": 537299605.5,
+          "sellValueINR": 0,
+          "netShares": 2177506,
+          "netValueINR": 537299605.5,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "2cc78c0c202966b701"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 53.73,
+          "sellValueCr": 0.0,
+          "netShares": 2177506,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:0dd74bd8be4f35fc",
       "name": "POONAWALLA AVIATION PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -3924,6 +4474,81 @@
           "buyValueCr": 53.39,
           "sellValueCr": 0.0,
           "netShares": 601900,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:46a20b77f5c3fb8d",
+      "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 50.12,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 50.12,
+      "latestDisclosure": "2026-11-13",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-13",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 1015000,
+          "sellQty": 0,
+          "buyValueINR": 250451250.0,
+          "sellValueINR": 0,
+          "netShares": 1015000,
+          "netValueINR": 250451250.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "6af9225a8e0e96adfe"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 183000,
+          "sellQty": 0,
+          "buyValueINR": 250710000.0,
+          "sellValueINR": 0,
+          "netShares": 183000,
+          "netValueINR": 250710000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "c6c58f21e4b492bc4a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 25.07,
+          "sellValueCr": 0.0,
+          "netShares": 183000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 25.05,
+          "sellValueCr": 0.0,
+          "netShares": 1015000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5116,438 +5741,6 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:17b7f7273493749a",
-      "name": "MADANLAL LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 28.89,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 28.89,
-      "latestDisclosure": "2026-10-15",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-15",
-          "name": "MADANLAL LIMITED",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 600000,
-          "sellQty": 0,
-          "buyValueINR": 144444000.0,
-          "sellValueINR": 0,
-          "netShares": 600000,
-          "netValueINR": 144444000.0,
-          "avgBuyPrice": 240.74,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "891454731587944b"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "MADANLAL LIMITED",
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyQty": 600000,
-          "sellQty": 0,
-          "buyValueINR": 144444000.0,
-          "sellValueINR": 0,
-          "netShares": 600000,
-          "netValueINR": 144444000.0,
-          "avgBuyPrice": 240.74,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5ae08cbf8a33682d1e"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MOMSBELIEF",
-          "company": "Rays of Belief Limited",
-          "buyValueCr": 28.89,
-          "sellValueCr": 0.0,
-          "netShares": 1200000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:a0fb25178a1d042a",
-      "name": "CRABEL VINTRADE PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 4,
-      "observedBuyDays": 2,
-      "observedSellDays": 2,
-      "buyValueCr": 45.77,
-      "sellValueCr": 17.55,
-      "netDisclosedValueCr": 28.22,
-      "latestDisclosure": "2026-10-27",
-      "uniqueCompanies": 3,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-27",
-          "name": "CRABEL VINTRADE PRIVATE LIMITED",
-          "symbol": "SHIVAUM",
-          "company": "Shiv Aum Steels Limited",
-          "buyQty": 0,
-          "sellQty": 80000,
-          "buyValueINR": 0,
-          "sellValueINR": 43320000.0,
-          "netShares": -80000,
-          "netValueINR": -43320000.0,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "217f65f9537c159f68"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "CRABEL VINTRADE PRIVATE LIMITED",
-          "symbol": "RATNAVEER",
-          "company": "Ratnaveer Precision Eng L",
-          "buyQty": 600000,
-          "sellQty": 200000,
-          "buyValueINR": 196200000.0,
-          "sellValueINR": 66100000.0,
-          "netShares": 400000,
-          "netValueINR": 130100000.0,
-          "avgBuyPrice": 327.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "bfaf43e18310fc42"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "CRABEL VINTRADE PRIVATE LIMITED",
-          "symbol": "RATNAVEER",
-          "company": "Ratnaveer Precision Eng L",
-          "buyQty": 600000,
-          "sellQty": 200000,
-          "buyValueINR": 196200000.0,
-          "sellValueINR": 66100000.0,
-          "netShares": 400000,
-          "netValueINR": 130100000.0,
-          "avgBuyPrice": 327.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "33aaeb97be3acd124a"
-        },
-        {
-          "date": "2026-10-14",
-          "name": "CRABEL VINTRADE PRIVATE LIMITED",
-          "symbol": "COMSYN",
-          "company": "Commercial Syn Bags Ltd",
-          "buyQty": 250000,
-          "sellQty": 0,
-          "buyValueINR": 65250000.0,
-          "sellValueINR": 0,
-          "netShares": 250000,
-          "netValueINR": 65250000.0,
-          "avgBuyPrice": 261.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5e9ca3a9ee6410d9"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "RATNAVEER",
-          "company": "Ratnaveer Precision Eng L",
-          "buyValueCr": 39.24,
-          "sellValueCr": 13.22,
-          "netShares": 800000,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "COMSYN",
-          "company": "Commercial Syn Bags Ltd",
-          "buyValueCr": 6.53,
-          "sellValueCr": 0.0,
-          "netShares": 250000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "SHIVAUM",
-          "company": "Shiv Aum Steels Limited",
-          "buyValueCr": 0.0,
-          "sellValueCr": 4.33,
-          "netShares": -80000,
-          "buyDays": 0,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": true,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:f9f427883fdf58c5",
-      "name": "KRITAGYATA TRUST",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 28.17,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 28.17,
-      "latestDisclosure": "2026-10-09",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-09",
-          "name": "KRITAGYATA TRUST",
-          "symbol": "AWFIS",
-          "company": "Awfis Space Solutions Ltd",
-          "buyQty": 1150000,
-          "sellQty": 0,
-          "buyValueINR": 281715500.0,
-          "sellValueINR": 0,
-          "netShares": 1150000,
-          "netValueINR": 281715500.0,
-          "avgBuyPrice": 244.97,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "f03cc510b323455d"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "AWFIS",
-          "company": "Awfis Space Solutions Ltd",
-          "buyValueCr": 28.17,
-          "sellValueCr": 0.0,
-          "netShares": 1150000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:928c46a23a240aff",
-      "name": "SANSHI FUND - I",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 27.41,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 27.41,
-      "latestDisclosure": "2026-11-06",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-06",
-          "name": "SANSHI FUND - I",
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyQty": 200100,
-          "sellQty": 0,
-          "buyValueINR": 274137000.0,
-          "sellValueINR": 0,
-          "netShares": 200100,
-          "netValueINR": 274137000.0,
-          "avgBuyPrice": 1370.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "bcda135c2b9313a819"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyValueCr": 27.41,
-          "sellValueCr": 0.0,
-          "netShares": 200100,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:a46c54e621792130",
-      "name": "ARTHKUMBH VENTURES LLP",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 27.3,
-      "sellValueCr": 0.01,
-      "netDisclosedValueCr": 27.29,
-      "latestDisclosure": "2026-11-05",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-05",
-          "name": "ARTHKUMBH VENTURES LLP",
-          "symbol": "AGIIL",
-          "company": "Agi Infra Limited",
-          "buyQty": 1000000,
-          "sellQty": 252,
-          "buyValueINR": 273000000.0,
-          "sellValueINR": 67344.48,
-          "netShares": 999748,
-          "netValueINR": 272932655.52,
-          "avgBuyPrice": 273.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "94f80e5c7925056869"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "AGIIL",
-          "company": "Agi Infra Limited",
-          "buyValueCr": 27.3,
-          "sellValueCr": 0.01,
-          "netShares": 999748,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:84c482750e79b3bb",
-      "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 26.96,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 26.96,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-30",
-          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyQty": 1492270,
-          "sellQty": 0,
-          "buyValueINR": 269578575.5,
-          "sellValueINR": 0,
-          "netShares": 1492270,
-          "netValueINR": 269578575.5,
-          "avgBuyPrice": 180.65,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "399bb97535ca03be49"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyValueCr": 26.96,
-          "sellValueCr": 0.0,
-          "netShares": 1492270,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:3aab1fef70b31faf",
-      "name": "SHRIPAL V VORA HUF",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 1,
-      "buyValueCr": 33.56,
-      "sellValueCr": 7.27,
-      "netDisclosedValueCr": 26.29,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "SHRIPAL V VORA HUF",
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyQty": 292516,
-          "sellQty": 67516,
-          "buyValueINR": 335594831.32,
-          "sellValueINR": 72683674.64,
-          "netShares": 225000,
-          "netValueINR": 262911156.68,
-          "avgBuyPrice": 1147.27,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "d604001a0ebb50209b"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyValueCr": 33.56,
-          "sellValueCr": 7.27,
-          "netShares": 225000,
-          "buyDays": 1,
-          "sellDays": 1
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
