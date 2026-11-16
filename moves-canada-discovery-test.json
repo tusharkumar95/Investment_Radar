@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-16T22:23:21.932484+00:00",
+  "testedAt": "2026-11-16T23:28:36.865967+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "items": [
         {
           "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
@@ -14,9 +14,9 @@
           "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "PAUL ANTONY ANNOUNCES ACQUISITION OF AUTOCANADA SHARES - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXM5aDRRS2ZNSFBNakNGUWVEVklCdWVPZXkyYlJLb05SRTZNM3lzS0o2UzQ2c1pSNGxaWDBpSWJDaXRyVWdscWZNV2o4b2s1bUNlek9rbTZMS1RBNHROR2h3RjFCT3JrWGNKdGZFbW5jM3E3MDJPTmRNV0ZKZVBNRlE4UFEyU0x0NUs0Z09wMUNRaUJMby1LM09wbEFGSFJIYmdqMG12OFBwMk5oRVotUEF4TVFhdw?oc=5",
-          "published": "Thu, 12 Nov 2026 10:06:59 GMT",
+          "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
+          "published": "Fri, 13 Nov 2026 11:45:00 GMT",
           "source": "TradingView"
         },
         {
@@ -30,12 +30,6 @@
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
           "published": "Tue, 10 Nov 2026 12:00:00 GMT",
           "source": "GlobeNewswire"
-        },
-        {
-          "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
-          "published": "Fri, 13 Nov 2026 11:45:00 GMT",
-          "source": "TradingView"
         },
         {
           "title": "G2S2 CAPITAL INC. ANNOUNCES INCREASED INVESTMENT IN MORGUARD CORPORATION - Yahoo! Finance Canada",
@@ -53,28 +47,8 @@
     },
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
-      "ok": true,
-      "count": 3,
-      "items": [
-        {
-          "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
-          "published": "Mon, 16 Nov 2026 13:00:00 GMT",
-          "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "Latin Explore Announces Closing of Upsized Non-Brokered Private Placement for Gross Proceeds of $2.3 Million - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZHJMOXg2TlY0R3F3VXZZQlFKOGo4SHR5WFFMcDZya0EyQ0ZmSWswQlRFbmJwQ2ZUMU5NVzB5X3BLQnhtOE5WVXlnSVRORUtoX1dnSnRWSlA2elJzNFBNWVF4RWk0eUFMb1NfQ08wXzBGX2RkbHIyOHRJMmRzM25hTlByU2tlTmM1czNKbnpXdjBUUzBvUWpmMnRmZ01XWmdYMFNYQzNXZm5HTGk3V0o1UThZbnpxd1F5R0Q1U0dkSU92cEhucWVXMGMtYmR5bk02V1RTY3FiaURVQlpJRHpQMDRXb2VsQzhSOU1YXzVBaEdqQldlb1ZrdGR1WmE5d28?oc=5",
-          "published": "Mon, 16 Nov 2026 10:00:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
-          "published": "Tue, 10 Nov 2026 12:00:00 GMT",
-          "source": "GlobeNewswire"
-        }
-      ]
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     }
   ]
 }

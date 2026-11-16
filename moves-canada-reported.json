@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T22:23:22.558352+00:00",
+  "updated": "2026-11-16T23:28:37.892687+00:00",
   "source": "Market Clerk",
   "attributionUrl": "https://marketclerk.com",
   "license": "CC BY 4.0 — attribute and link back",
@@ -9,7 +9,7 @@
     "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
     "count": 0,
     "error": null,
-    "asOf": "2026-11-16T22:23:22.641Z"
+    "asOf": "2026-11-16T23:28:38.140Z"
   },
   "records": []
 }
