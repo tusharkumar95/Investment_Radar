@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-14T02:50:21.667420+00:00",
-  "day": "2026-11-13",
+  "updated": "2026-11-16T22:45:31.387593+00:00",
+  "day": "2026-11-16",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.4,
-      "lastPriceDate": "2026-11-13",
-      "priceChangePct": -18.37,
+      "lastPrice": 4.42,
+      "lastPriceDate": "2026-11-16",
+      "priceChangePct": -18.0,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.87,
-      "lastPriceDate": "2026-11-13",
-      "priceChangePct": -3.49,
+      "lastPrice": 3.61,
+      "lastPriceDate": "2026-11-16",
+      "priceChangePct": -9.98,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.29,
-      "lastPriceDate": "2026-11-13",
-      "priceChangePct": -4.88,
+      "lastPrice": 4.17,
+      "lastPriceDate": "2026-11-16",
+      "priceChangePct": -7.54,
       "quoteStatus": "Available"
     },
     {
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.09,
-      "lastPriceDate": "2026-11-13",
-      "priceChangePct": 0.0,
+      "lastPrice": 0.01,
+      "lastPriceDate": "2026-11-16",
+      "priceChangePct": -88.89,
       "quoteStatus": "Available"
     },
     {
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-13",
+      "lastPriceDate": "2026-11-16",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-13",
+      "lastPriceDate": "2026-11-16",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-13",
+      "lastPriceDate": "2026-11-16",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-13",
+      "lastPriceDate": "2026-11-16",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 40,
+      "candidateArticles": 41,
       "status": "Verified transactions found"
     },
     {
@@ -1043,17 +1043,6 @@
   ],
   "leads": [
     {
-      "id": "lead:e5b97f2e9a8697d0ae",
-      "title": "Ocean Power Technologies Announces Pricing of $3.0 Million Public Offering",
-      "date": "2026-11-13",
-      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402563/9069/en/ocean-power-technologies-announces-pricing-of-3-0-million-public-offering.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " MONROE TOWNSHIP, N.J., Nov.  13, 2026  (GLOBE NEWSWIRE) -- Ocean Power Technologies, Inc. (“OPT” or the “Company”) (NYSE American: OPTT), a leader in intelligent maritime solutions and services, today announced the pricing of its previously announced public offering of 6,000,000 shares of common st"
-    },
-    {
       "id": "lead:7bc9945622476be2c6",
       "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Quantisnow",
       "date": "2026-11-13",
@@ -1065,26 +1054,15 @@
       "summary": " Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd.    Quantisnow "
     },
     {
-      "id": "lead:f670654a77732bcb6e",
-      "title": "InspireMD Announces Proposed Public Offering",
-      "date": "2026-11-12",
-      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402241/0/en/inspiremd-announces-proposed-public-offering.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
+      "id": "lead:258e1f0d949848b597",
+      "title": "Nov 13, 2026, 08:03 ET \n                        GBH INC. EXCHANGES INTEREST IN VERSABANK PURSUANT TO REORGANIZATION\n                       \n                       GBH Inc. (\"GBH\") announced today that it has acquired 8,058,698 shares of common stock of Versa B",
+      "date": "2026-11-13",
+      "url": "https://www.newswire.ca/news-releases/gbh-inc-exchanges-interest-in-versabank-pursuant-to-reorganization-826951713.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
-      "summary": " MIAMI, Nov.  12, 2026  (GLOBE NEWSWIRE) -- InspireMD, Inc. (Nasdaq: NSPR) (“InspireMD” or the “Company”), developer of the CGuard ®  Prime carotid stent system for the prevention of stroke, today announced that it has commenced a proposed public offering of (i) shares of its common stock, (ii) in l"
-    },
-    {
-      "id": "lead:4ad3165f7da356d119",
-      "title": "CMG Announces Renewal of Normal Course Issuer Bid and Automatic Share Purchase Plan",
-      "date": "2026-11-12",
-      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402300/0/en/cmg-announces-renewal-of-normal-course-issuer-bid-and-automatic-share-purchase-plan.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " CALGARY, Alberta, Nov.  12, 2026  (GLOBE NEWSWIRE) -- Computer Modelling Group Ltd. (“CMG” or the “Company”) (TSX: CMG) today announced that the Toronto Stock Exchange (“TSX”) has accepted a notice (the “Notice”) filed by the Company to renew a Normal Course Issuer Bid (“NCIB”) for its common share"
+      "summary": ""
     },
     {
       "id": "lead:2bfaa9f52255b01b11",
@@ -1098,15 +1076,15 @@
       "summary": ""
     },
     {
-      "id": "lead:8e06626601067089d2",
-      "title": "iRhythm Announces Approval of $200 Million Share Repurchase Program",
-      "date": "2026-11-11",
-      "url": "https://www.globenewswire.com/news-release/2026/11/11/3401127/0/en/irhythm-announces-approval-of-200-million-share-repurchase-program.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
+      "id": "lead:d57da287f8be52515e",
+      "title": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - TradingView",
+      "date": "2026-11-10",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaHpJeWttVXJQazRnbUtERVJUUWd5OTU3WHk2VDhYbHVXWXdDcENmdTNBeXNsQ1ZtU3lZbjVfYVQ4MnBhUFNaTm14MFFXMXdDaExpQjZCSHNuN0pSV2FNMThWQmJpYVotbnA3MGo2QWdIbmpOWmlkbjM0dWJheE84RjlEdGdMTlZZX1V5Uk41bmJQMmVmdlFsa291akRnM1BPTERzNmdpeUtEVVhWSy1CN2xJN3hWbWpMVUlBTVBSS0xma0s0WGN4WlJPUzRxUXFKMjM5ZFp4cEthMDZ5OG9WNktoc2Jqbm5lcUt3",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
-      "summary": " SAN FRANCISCO, Nov.  11, 2026  (GLOBE NEWSWIRE) -- iRhythm Holdings, Inc. (Nasdaq: IRTC), a leading digital health care company with a mission to create trusted solutions that detect, predict, and prevent disease, today announced that on November 10, 2026, its Board of Directors approved a share re"
+      "summary": " PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp.    TradingView "
     },
     {
       "id": "lead:bb527593efbe33f3b3",
@@ -1217,6 +1195,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc.    The Globe and Mail "
+    },
+    {
+      "id": "lead:54b2aa72bfcaaec13b",
+      "title": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - InvestorNews",
+      "date": "2026-11-09",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTXhKcWJZU1FNMHhFWlZFMlR1aTBuY3h0NjF2WEhjdkh4NHVNUWdTalZlWExXVnpXbml3cG1ac2RuUU1ReDZZaWx4bmpsaWRKR1daakNqQW9EdU5TYVI3QmJkeFdESWtrMFQ1SXFKNzd1em9UcHZuLVFUZ25QdG9yb2I0N1JJTG9YZDNOaWJVR2JZakVkblotMk42NXhIOU1qcnNZT2tOYUFCVmhaclpSUXkwQlY",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc.    InvestorNews "
     },
     {
       "id": "lead:e0aa0c59358a2e8222",
@@ -1549,6 +1538,17 @@
       "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    The Manila Times "
     },
     {
+      "id": "lead:403bc789c6dc13261a",
+      "title": "Labrador Gold Closes $5.76M Non-Brokered Private Placement - Yahoo! Finance Canada",
+      "date": "2026-10-26",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZVZZRzZSbmxFVTg3V1pOTnhCcTR6a2FDcWRqNzVVRlRZMkdMNUZScTNFbi1oQ3VtZnlORlUyUl94Z2ZtWVRIaXVEaW9vcl9wNWM2R0FjeTNwVEcyYlZnLVFGZ0s0SEkxdy1pSzlfanNLZzRMTjV2dHYtZ3N3T2p6SA",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Closes $5.76M Non-Brokered Private Placement    Yahoo! Finance Canada "
+    },
+    {
       "id": "lead:3fee9d68a86eb388e3",
       "title": "Oct 26, 2026, 23:21 ET \n                          DEFENSE METALS ANNOUNCES SECOND AND FINAL TRANCHE CLOSING OF PRIVATE PLACEMENT\n                         \n                         Defense Metals Corp. (TSXV: DEFN) (OTCQB: DFMTF) (\"Defense Metals\" or the \"Compa",
       "date": "2026-10-26",
@@ -1646,6 +1646,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
+    },
+    {
+      "id": "lead:2091c46bfc42172f1b",
+      "title": "Labrador Gold Announces Extension of Non-Brokered Private Placement - GlobeNewswire",
+      "date": "2026-10-21",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTkhKQUJFNWxiLTRITkVVT3ROLXFJWDlvaEQweGFDV0c0aDEtV0lGNXo3NHZfQlhTZlE0TkQ1a1BhSGY3Z2I4SlZ5MFJEUVBLc2VwQ3V6d3VNTUt1TVNtVnF2Q2lSQjFfS1FLNGlGUmNuYXd2QXl2QTNFd2hUNjZPXzdzaHBLd0M4cld4cW0yUllmMGVoODQyNVQtVXhlLXAwVVRDR0ZRbEhCdURlTHRxNWxSck8zTzRqeWt1ZU9uejFzUEYzOF9WQ1dHaGZZSUdoc1RLV3hB",
+      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    GlobeNewswire "
     },
     {
       "id": "lead:dc38915edb3f62d701",
@@ -1811,50 +1822,56 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
+    },
+    {
+      "id": "lead:1a60e97a4c46083570",
+      "title": "08:00 ET \n                        ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION\n                       \n                       On November 13, 2026, Alpayana S.A.C. (\"Alpayana\") purchased 492,500 common shares (the \"Galantas Shares\") of G",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/alpayana-s-a-c-acquires-common-shares-of-galantas-gold-corporation-842419452.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": true,
-      "items": 20,
-      "relevant": 4
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": true,
-      "items": 20,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": true,
-      "items": 20,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
+      "items": 5,
       "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
       "ok": true,
-      "items": 2,
+      "items": 1,
       "relevant": 1
     },
     {
@@ -1877,9 +1894,8 @@
     },
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
@@ -1895,13 +1911,15 @@
     },
     {
       "name": "Canada NewsWire / Acquisitions",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 100,
+      "relevant": 9
     },
     {
       "name": "Canada NewsWire / Private placements",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 100,
+      "relevant": 26
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1943,9 +1961,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 70,
+    "disclosureLeads": 72,
     "usFilingNotices": 0,
-    "sourcesOnline": 13,
+    "sourcesOnline": 9,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
