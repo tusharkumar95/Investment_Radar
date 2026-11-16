@@ -2,6 +2,66 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-16:India:STYLEBAAZA",
+      "day": "2026-11-16",
+      "market": "India",
+      "symbol": "STYLEBAAZA",
+      "company": "Baazar Style Retail Ltd",
+      "buyers": 2,
+      "investors": [
+        "HRTI PRIVATE LIMITED",
+        "I K AGENCIES PVT LTD"
+      ],
+      "value": 305212863.5,
+      "currency": "INR",
+      "disclosedAvgPrice": 476.865,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-16T22:23:23.843824+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-16:India:IEML-RE1",
+      "day": "2026-11-16",
+      "market": "India",
+      "symbol": "IEML-RE1",
+      "company": "Indian Emulsifiers Ltd",
+      "buyers": 2,
+      "investors": [
+        "DASHRATH DHAKALU GOTARANE",
+        "YASH DASHARATH GOTARANE"
+      ],
+      "value": 11804100.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 9.26,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-16T22:23:23.843824+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-16:India:ENCOMPAS",
+      "day": "2026-11-16",
+      "market": "India",
+      "symbol": "ENCOMPAS",
+      "company": "Encompass Design India L",
+      "buyers": 2,
+      "investors": [
+        "BIRCHWOOD MULTI STGY FND OPENENDED PCC LTD - BIRCHWOOD GLOBAL ALPHA FUND",
+        "MINERVA VENTURES FUND"
+      ],
+      "value": 50132560.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 234.315,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-16T22:23:23.843824+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-13:India:MEESHO",
       "day": "2026-11-13",
       "market": "India",
@@ -729,7 +789,7 @@
       "2026-11-09": 700.2,
       "2026-11-11": 716.0,
       "2026-11-12": 722.35,
-      "2026-11-13": 794.55
+      "2026-11-13": 794.5
     },
     "India:INDOTECH": {
       "2026-10-26": 2573.3,
@@ -818,7 +878,7 @@
       "2026-11-09": 1513.1,
       "2026-11-11": 1529.0,
       "2026-11-12": 1521.7,
-      "2026-11-13": 1544.1
+      "2026-11-13": 1538.5
     },
     "India:VNL": {
       "2026-10-30": 104.13,
@@ -833,7 +893,7 @@
       "2026-11-09": 121.83,
       "2026-11-11": 120.15,
       "2026-11-12": 119.42,
-      "2026-11-13": 120.5
+      "2026-11-13": 120.77
     },
     "India:EDELALTS": {
       "2026-11-02": 1727.8,
@@ -886,7 +946,7 @@
       "2026-11-09": 409.3,
       "2026-11-11": 427.85,
       "2026-11-12": 461.3,
-      "2026-11-13": 482.0
+      "2026-11-13": 480.6
     },
     "India:AJMERA": {
       "2026-11-04": 139.75,
@@ -921,7 +981,7 @@
       "2026-11-09": 81.3,
       "2026-11-11": 83.92,
       "2026-11-12": 81.72,
-      "2026-11-13": 81.0
+      "2026-11-13": 81.08
     },
     "India:ALIVUS": {
       "2026-11-06": 1480.6,
@@ -953,9 +1013,12 @@
     },
     "India:MEESHO": {
       "2026-11-13": 257.07
+    },
+    "India:STYLEBAAZA": {
+      "2026-11-16": 511.7
     }
   },
-  "updatedAt": "2026-11-14T09:13:28.069421+00:00",
+  "updatedAt": "2026-11-16T22:23:23.843824+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -979,13 +1042,16 @@
     "India:CPPLUS": "CPPLUS.NS",
     "India:NECCLTD": "NECCLTD.NS",
     "India:CONTROLPR": "CONTROLPR.NS",
-    "India:MEESHO": "MEESHO.NS"
+    "India:MEESHO": "MEESHO.NS",
+    "India:STYLEBAAZA": "STYLEBAAZA.NS"
   },
-  "quotesUpdatedAt": "2026-11-14T09:13:37.325195+00:00",
+  "quotesUpdatedAt": "2026-11-16T22:23:31.098678+00:00",
   "quoteFailures": [
+    "India:ENCOMPAS",
     "India:EVENTIONS",
     "India:GREENASIA",
     "India:HGSINDIALT",
+    "India:IEML-RE1",
     "India:LAMOSAIC",
     "India:MAXENGS",
     "India:RKFAL",

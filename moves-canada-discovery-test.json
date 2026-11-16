@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-14T09:13:25.577835+00:00",
+  "testedAt": "2026-11-16T22:23:21.932484+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "items": [
         {
           "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
@@ -14,28 +14,34 @@
           "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtQQm9zMDI0SDYwSHRCbXp3ZllkUHJMM1JveUxuU2JpbDc5aDJ5NDdZajhzWk4yM3BzZm1ZN3FadXFmOFlGUTFjQS1PNDctbnlJekYyclJfMWNXdDNQU0dOTDBuQjJhcER5SVZ1N3BIZlZYQ3pvLVo0NUpzUEFTaFhxMXlPYmRUZTA3ZkxBLU1jckV0UDhDVE9WdW5LelNKYUJF?oc=5",
-          "published": "Tue, 10 Nov 2026 12:46:02 GMT",
-          "source": "Investing News Network"
-        },
-        {
-          "title": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdnlyNVh6cXAzUGNYRmIwWC02c2ZBcHlsc1NsTXFiLVNYeGdDZDlJWXl6TFV4VklFMlpoT0dCY3ZtTGFZZ1RFOGxkQUZWOUZHVGo4RDEzeEU4elRJQnM3TUxLYXRtOTNEaU1LOUdDRnF0X1BjR0lfczdLYlE3c00zOGtRaWdySDJBUE42dnRlT0NMZ2JWSFMzX0g2NHEya3d3VHRmZzJnM3VzX0htaFUyaWdCMTBCd21qSVptNGJ4NGZVSVR6T3FiNTUwUjEzT3gtSnpSQl9VLWthYWcwNkdSR0xzQWE2VWpHTUk5em9qRGtxZkpOQ05uTzFWTHR2NTBFMUo4?oc=5",
-          "published": "Tue, 10 Nov 2026 18:27:41 GMT",
-          "source": "The Globe and Mail"
-        },
-        {
           "title": "PAUL ANTONY ANNOUNCES ACQUISITION OF AUTOCANADA SHARES - TradingView",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXM5aDRRS2ZNSFBNakNGUWVEVklCdWVPZXkyYlJLb05SRTZNM3lzS0o2UzQ2c1pSNGxaWDBpSWJDaXRyVWdscWZNV2o4b2s1bUNlek9rbTZMS1RBNHROR2h3RjFCT3JrWGNKdGZFbW5jM3E3MDJPTmRNV0ZKZVBNRlE4UFEyU0x0NUs0Z09wMUNRaUJMby1LM09wbEFGSFJIYmdqMG12OFBwMk5oRVotUEF4TVFhdw?oc=5",
           "published": "Thu, 12 Nov 2026 10:06:59 GMT",
           "source": "TradingView"
         },
         {
+          "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
+          "published": "Mon, 16 Nov 2026 13:00:00 GMT",
+          "source": "Yahoo! Finance Canada"
+        },
+        {
+          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
+          "published": "Tue, 10 Nov 2026 12:00:00 GMT",
+          "source": "GlobeNewswire"
+        },
+        {
           "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
           "published": "Fri, 13 Nov 2026 11:45:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "G2S2 CAPITAL INC. ANNOUNCES INCREASED INVESTMENT IN MORGUARD CORPORATION - Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeVlKdHJxMGotRkJMalBsM1NYb01JdUw0ZlVVNFZkV2o0RmIxTW1qVGV3RGxpNklCOFMwME54b2ppU1pqTnNaM1pVX0pQc1ZoX3NqaDNmN25xclhoVmdzbUdlTWk0dHNTXzlhblV2RWdSYXNHNS1GVmZMU18xUFJhQjduT0NZZ2oybWNkOXJn?oc=5",
+          "published": "Fri, 13 Nov 2026 13:03:00 GMT",
+          "source": "Yahoo! Finance Canada"
         }
       ]
     },
@@ -48,18 +54,24 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 2,
+      "count": 3,
       "items": [
+        {
+          "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
+          "published": "Mon, 16 Nov 2026 13:00:00 GMT",
+          "source": "Yahoo! Finance Canada"
+        },
+        {
+          "title": "Latin Explore Announces Closing of Upsized Non-Brokered Private Placement for Gross Proceeds of $2.3 Million - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZHJMOXg2TlY0R3F3VXZZQlFKOGo4SHR5WFFMcDZya0EyQ0ZmSWswQlRFbmJwQ2ZUMU5NVzB5X3BLQnhtOE5WVXlnSVRORUtoX1dnSnRWSlA2elJzNFBNWVF4RWk0eUFMb1NfQ08wXzBGX2RkbHIyOHRJMmRzM25hTlByU2tlTmM1czNKbnpXdjBUUzBvUWpmMnRmZ01XWmdYMFNYQzNXZm5HTGk3V0o1UThZbnpxd1F5R0Q1U0dkSU92cEhucWVXMGMtYmR5bk02V1RTY3FiaURVQlpJRHpQMDRXb2VsQzhSOU1YXzVBaEdqQldlb1ZrdGR1WmE5d28?oc=5",
+          "published": "Mon, 16 Nov 2026 10:00:00 GMT",
+          "source": "TradingView"
+        },
         {
           "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
           "published": "Tue, 10 Nov 2026 12:00:00 GMT",
-          "source": "GlobeNewswire"
-        },
-        {
-          "title": "Vireo Growth Inc. Completes Acquisition of FLUENT Corp. - GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRDFDcGRtckhsbVNmdXhVTFlBZlRZSkhXY3g5XzdkNW5fblFHRW5TbHdvOWk4ZVEtUnFOSGlKcU1Zd01VZHFEZHBVcmdHNVN4dnRxYzVRNkFPT04yRW85cVBwMWs4V0xNMFBuTmcwQlFoNF83elNhZEtJbGpPdXVndkxoWmR1OWtUSlozS1ZqNGd5a0pGLTVSYU1QWE9UY0lUR2tOaFdnTjNMYVRTV1B5NmN6TV9VWmVTTkRkYzJhSlF2LTg?oc=5",
-          "published": "Mon, 09 Nov 2026 13:30:34 GMT",
           "source": "GlobeNewswire"
         }
       ]
