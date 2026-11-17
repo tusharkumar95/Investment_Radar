@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-16T20:56:48.707852+00:00",
+  "updated": "2026-11-17T11:41:50.360568+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-13",
-    "trades": 780,
-    "investors": 461
+    "latest": "2026-11-16",
+    "trades": 804,
+    "investors": 474
   },
   "featured": [
     {
@@ -2423,72 +2423,55 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:e26fbfbafbc70062",
-      "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 139.32,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 139.32,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-30",
-          "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyQty": 32588537,
-          "sellQty": 0,
-          "buyValueINR": 1393159956.75,
-          "sellValueINR": 0,
-          "netShares": 32588537,
-          "netValueINR": 1393159956.75,
-          "avgBuyPrice": 42.75,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6f885af0d779e21af8"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyValueCr": 139.32,
-          "sellValueCr": 0.0,
-          "netShares": 32588537,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:14c9b58fbd296aff",
       "name": "HRTI PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 17,
-      "observedBuyDays": 17,
-      "observedSellDays": 17,
-      "buyValueCr": 680.65,
-      "sellValueCr": 542.5,
-      "netDisclosedValueCr": 138.15,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 15,
+      "observedTransactions": 19,
+      "observedBuyDays": 19,
+      "observedSellDays": 19,
+      "buyValueCr": 710.62,
+      "sellValueCr": 568.22,
+      "netDisclosedValueCr": 142.4,
+      "latestDisclosure": "2026-11-16",
+      "uniqueCompanies": 16,
       "repeatBuyCompanies": [
+        "BLSPOLY",
         "RATNAVEER",
         "PCJEWELLER"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-16",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "STYLEBAAZA",
+          "company": "Baazar Style Retail Ltd",
+          "buyQty": 468533,
+          "sellQty": 345367,
+          "buyValueINR": 230635369.25,
+          "sellValueINR": 170183042.92,
+          "netShares": 123166,
+          "netValueINR": 60452326.33,
+          "avgBuyPrice": 492.25,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "ed732a107d042d6a5a"
+        },
+        {
+          "date": "2026-11-16",
+          "name": "HRTI PRIVATE LIMITED",
+          "symbol": "BLSPOLY",
+          "company": "BLS Polymers Limited",
+          "buyQty": 257091,
+          "sellQty": 325175,
+          "buyValueINR": 69116344.44,
+          "sellValueINR": 87052599.25,
+          "netShares": -68084,
+          "netValueINR": -17936254.81,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "d7fb9dcce8fcc1f37f"
+        },
         {
           "date": "2026-11-13",
           "name": "HRTI PRIVATE LIMITED",
@@ -2800,6 +2783,15 @@
           "sellDays": 1
         },
         {
+          "symbol": "BLSPOLY",
+          "company": "BLS Polymers Limited",
+          "buyValueCr": 39.74,
+          "sellValueCr": 32.07,
+          "netShares": 284561,
+          "buyDays": 2,
+          "sellDays": 2
+        },
+        {
           "symbol": "V2RETAIL",
           "company": "V2 Retail Limited",
           "buyValueCr": 34.84,
@@ -2809,20 +2801,20 @@
           "sellDays": 1
         },
         {
-          "symbol": "BLSPOLY",
-          "company": "BLS Polymers Limited",
-          "buyValueCr": 32.82,
-          "sellValueCr": 23.37,
-          "netShares": 352645,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
           "symbol": "SSWL",
           "company": "Steel Strips Wheels Limit",
           "buyValueCr": 30.84,
           "sellValueCr": 44.49,
           "netShares": -258758,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "STYLEBAAZA",
+          "company": "Baazar Style Retail Ltd",
+          "buyValueCr": 23.06,
+          "sellValueCr": 17.02,
+          "netShares": 123166,
           "buyDays": 1,
           "sellDays": 1
         },
@@ -2903,6 +2895,56 @@
         "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:e26fbfbafbc70062",
+      "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 139.32,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 139.32,
+      "latestDisclosure": "2026-10-30",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-10-30",
+          "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyQty": 32588537,
+          "sellQty": 0,
+          "buyValueINR": 1393159956.75,
+          "sellValueINR": 0,
+          "netShares": 32588537,
+          "netValueINR": 1393159956.75,
+          "avgBuyPrice": 42.75,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6f885af0d779e21af8"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyValueCr": 139.32,
+          "sellValueCr": 0.0,
+          "netShares": 32588537,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
