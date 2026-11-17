@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-17T21:08:46.228677+00:00",
+  "updated": "2026-11-17T22:35:14.039209+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-17",
@@ -3272,7 +3272,16 @@
       ],
       "canada": [],
       "canadaReported": [],
-      "canadaLeads": [],
+      "canadaLeads": [
+        {
+          "id": "lead:2026-11-17:0",
+          "day": "2026-11-17",
+          "headline": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - StreetInsider",
+          "source": "StreetInsider",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOWUg3clJRdjZFbWEyNlNXRmRRR2tFT050YWtaNUxNdUNoQmpFUjc1VXNJaWRFWGdZWDdvSWM3MlFFRU1MODBwb041WTJCdjU0ZTk2SFg1SkJuVjNNRTh3TmNkcUlwUEYzdFlCbk1fNDkyR292ZjFxRzM3Z2ZVQTVIWnBqVXVPZVpmVUJPeHZ5STRLR0NNRVpwMElsbUhvYk1TSmxZODkxZUNTNy0xZTB1czRXYm1xOU5IZXBxNF93a1dScWcxcmlJQk9rbnQzR1lPQURieFY2Y2hHSXZya0ptTnZnLTl5bGtYS19MRUVzeDVicG5kenRZY2RVZEZNVUpHOVN5VmtvRXlwZmNNQTNudVFjano?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        }
+      ],
       "alerts": [
         {
           "id": "2026-11-17:India:HAPPYFORGE",
@@ -4341,7 +4350,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-16:0",
+          "id": "lead:2026-11-16:1",
           "day": "2026-11-16",
           "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
           "source": "TradingView",
@@ -6288,7 +6297,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-13:1",
+          "id": "lead:2026-11-13:2",
           "day": "2026-11-13",
           "headline": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
           "source": "Yahoo! Finance Canada",
@@ -8535,7 +8544,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-10:2",
+          "id": "lead:2026-11-10:3",
           "day": "2026-11-10",
           "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -8543,7 +8552,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-11-10:3",
+          "id": "lead:2026-11-10:4",
           "day": "2026-11-10",
           "headline": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
           "source": "GlobeNewswire",
@@ -8941,10 +8950,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-17T21:08:45.367Z"
+      "asOf": "2026-11-17T22:35:13.346Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-17T21:08:44.221459+00:00",
+    "canadaDiscoveryUpdated": "2026-11-17T22:35:12.673986+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
