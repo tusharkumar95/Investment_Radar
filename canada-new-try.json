@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-17T00:43:26.173934+00:00",
+  "updated": "2026-11-17T04:54:55.487446+00:00",
   "day": "2026-11-16",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 1.05,
-      "lastPriceDate": "2026-11-13",
+      "lastPriceDate": "2026-11-16",
       "priceChangePct": -6.25,
       "quoteStatus": "Available"
     },
@@ -1043,6 +1043,28 @@
   ],
   "leads": [
     {
+      "id": "lead:fb3d7359524c84eef2",
+      "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Yahoo! Finance Canada",
+      "date": "2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPa3V2YXJrR0lqdEtZaXZCcWlFYjg3T2VyUHlCcV9CSnZNbGh1NTUyX2RyckFBRkNaT0NoVVItUU9uVVZRV3hCWHBKa2xjbDlXaUJacU91MFliRG5zNHhlX2hIR0NPQlRQaEowQjlTb2tMMHF0TWktTlp6OFlZZW5FWEtwUUJPVHVnVTFV",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Yahoo! Finance Canada "
+    },
+    {
+      "id": "lead:8fd995dfd9c0f38238",
+      "title": "Northern Discovery Metals Announces Closing of First Tranche of Private Placement",
+      "date": "2026-11-16",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3404224/0/en/northern-discovery-metals-announces-closing-of-first-tranche-of-private-placement.html",
+      "discoveredVia": "GlobeNewswire / Public Companies",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " CALGARY, Alberta, Nov.  16, 2026  (GLOBE NEWSWIRE) --  Northern Discovery Metals Inc. (CSE: NOR) (FSE: M1V0)  (“ Northern Discovery ” or the “ Company ”) is pleased to announce that further to its news release dated October 19, 2026, it has closed the first tranche (the “ First Tranche ”) of its no"
+    },
+    {
       "id": "lead:0a6886e8509bcba5a4",
       "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
       "date": "2026-11-16",
@@ -1052,6 +1074,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    TradingView "
+    },
+    {
+      "id": "lead:e5b97f2e9a8697d0ae",
+      "title": "Ocean Power Technologies Announces Pricing of $3.0 Million Public Offering",
+      "date": "2026-11-13",
+      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402563/9069/en/ocean-power-technologies-announces-pricing-of-3-0-million-public-offering.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MONROE TOWNSHIP, N.J., Nov.  13, 2026  (GLOBE NEWSWIRE) -- Ocean Power Technologies, Inc. (“OPT” or the “Company”) (NYSE American: OPTT), a leader in intelligent maritime solutions and services, today announced the pricing of its previously announced public offering of 6,000,000 shares of common st"
     },
     {
       "id": "lead:7bc9945622476be2c6",
@@ -1074,6 +1107,28 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:f670654a77732bcb6e",
+      "title": "InspireMD Announces Proposed Public Offering",
+      "date": "2026-11-12",
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402241/0/en/inspiremd-announces-proposed-public-offering.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MIAMI, Nov.  12, 2026  (GLOBE NEWSWIRE) -- InspireMD, Inc. (Nasdaq: NSPR) (“InspireMD” or the “Company”), developer of the CGuard ®  Prime carotid stent system for the prevention of stroke, today announced that it has commenced a proposed public offering of (i) shares of its common stock, (ii) in l"
+    },
+    {
+      "id": "lead:4ad3165f7da356d119",
+      "title": "CMG Announces Renewal of Normal Course Issuer Bid and Automatic Share Purchase Plan",
+      "date": "2026-11-12",
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402300/0/en/cmg-announces-renewal-of-normal-course-issuer-bid-and-automatic-share-purchase-plan.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " CALGARY, Alberta, Nov.  12, 2026  (GLOBE NEWSWIRE) -- Computer Modelling Group Ltd. (“CMG” or the “Company”) (TSX: CMG) today announced that the Toronto Stock Exchange (“TSX”) has accepted a notice (the “Notice”) filed by the Company to renew a Normal Course Issuer Bid (“NCIB”) for its common share"
     },
     {
       "id": "lead:2bfaa9f52255b01b11",
@@ -1833,51 +1888,32 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
-    },
-    {
-      "id": "lead:c46145e6f5f8823b2e",
-      "title": "18:32 ET \n                        PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.\n                       \n                       RIVI Opportunity Fund LP (\"RIVI\"), a limited partnership managed by RIVI Capital LLC, today announced that on Nov",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/press-release-for-early-warning-report-regarding-ppx-mining-corp--861214268.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:1a60e97a4c46083570",
-      "title": "08:00 ET \n                        ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION\n                       \n                       On November 13, 2026, Alpayana S.A.C. (\"Alpayana\") purchased 492,500 common shares (the \"Galantas Shares\") of G",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/alpayana-s-a-c-acquires-common-shares-of-galantas-gold-corporation-842419452.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 3
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 1
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 5,
       "relevant": 5
     },
     {
@@ -1900,14 +1936,14 @@
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
-      "ok": true,
-      "items": 4,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
@@ -1929,20 +1965,19 @@
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 4,
+      "relevant": 3
     },
     {
       "name": "Canada NewsWire / Acquisitions",
-      "ok": true,
-      "items": 100,
-      "relevant": 9
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "Canada NewsWire / Private placements",
-      "ok": true,
-      "items": 100,
-      "relevant": 26
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1984,9 +2019,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 74,
+    "disclosureLeads": 77,
     "usFilingNotices": 0,
-    "sourcesOnline": 10,
+    "sourcesOnline": 12,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
