@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-16T23:28:39.745846+00:00",
+  "updated": "2026-11-17T04:03:53.441375+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-16",
@@ -968,7 +968,16 @@
       ],
       "canada": [],
       "canadaReported": [],
-      "canadaLeads": [],
+      "canadaLeads": [
+        {
+          "id": "lead:2026-11-16:0",
+          "day": "2026-11-16",
+          "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
+          "source": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUFDMlNtTXpFTllXR085QTFmdDZpOHh5YU11ZEhqOWpFOUxPdVN6TzhFTXlfZDgyOGFZMzBuM21DRG82Y2hsbno3RFBENEFLTERYQU9IWlN1bUU0N25JWnBZVGlOR1hDR1Z4UmlUc19mS24wcTJsU0hkeVhRZEplaW9FQUFrbG1QcHlDMzB6R2lKeUlfbkZEdXVmSDVUbVZYMUdpaV9PLS1XX0FBdlNhVVBZYXJnbHFUU3U1T29UTXFBZms?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        }
+      ],
       "alerts": [
         {
           "id": "2026-11-16:India:STYLEBAAZA",
@@ -2908,7 +2917,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-13:0",
+          "id": "lead:2026-11-13:1",
           "day": "2026-11-13",
           "headline": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
           "source": "Yahoo! Finance Canada",
@@ -5155,7 +5164,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-10:1",
+          "id": "lead:2026-11-10:2",
           "day": "2026-11-10",
           "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -5163,7 +5172,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-11-10:2",
+          "id": "lead:2026-11-10:3",
           "day": "2026-11-10",
           "headline": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
           "source": "GlobeNewswire",
@@ -5978,7 +5987,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-09:3",
+          "id": "lead:2026-11-09:4",
           "day": "2026-11-09",
           "headline": "Greenland Mines Ltd Provides Early Warning Disclosure Regarding AnorTech Inc. - InvestorNews",
           "source": "InvestorNews",
@@ -6305,10 +6314,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-16T23:28:38.140Z"
+      "asOf": "2026-11-17T04:03:48.815Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-16T23:28:36.866437+00:00",
+    "canadaDiscoveryUpdated": "2026-11-17T04:03:47.561820+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

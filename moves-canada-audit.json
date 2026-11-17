@@ -1,9 +1,18 @@
 {
-  "updated": "2026-11-16T23:28:36.893307+00:00",
-  "candidateCount": 16,
-  "needsReview": 15,
+  "updated": "2026-11-17T04:03:47.585951+00:00",
+  "candidateCount": 17,
+  "needsReview": 16,
   "possibleDuplicates": 1,
   "records": [
+    {
+      "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
+      "published": "Mon, 16 Nov 2026 23:32:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUFDMlNtTXpFTllXR085QTFmdDZpOHh5YU11ZEhqOWpFOUxPdVN6TzhFTXlfZDgyOGFZMzBuM21DRG82Y2hsbno3RFBENEFLTERYQU9IWlN1bUU0N25JWnBZVGlOR1hDR1Z4UmlUc19mS24wcTJsU0hkeVhRZEplaW9FQUFrbG1QcHlDMzB6R2lKeUlfbkZEdXVmSDVUbVZYMUdpaV9PLS1XX0FBdlNhVVBZYXJnbHFUU3U1T29UTXFBZms?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
     {
       "headline": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
       "published": "Fri, 13 Nov 2026 00:16:00 GMT",

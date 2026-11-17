@@ -1,12 +1,13 @@
 {
-  "updated": "2026-11-16T23:28:36.940477+00:00",
+  "updated": "2026-11-17T04:03:47.626781+00:00",
   "source": "Original Canada NewsWire",
   "status": {
     "listing": "https://www.newswire.ca/news-releases/financial-services-latest-news/acquisitions-mergers-and-takeovers-list/?page=1&pagesize=100",
     "ok": true,
-    "candidates": 5,
+    "candidates": 6,
     "parsed": 0,
     "errors": [
+      "HTTP Error 403: Forbidden",
       "HTTP Error 403: Forbidden",
       "HTTP Error 403: Forbidden",
       "HTTP Error 403: Forbidden",
