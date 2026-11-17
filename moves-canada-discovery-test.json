@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-17T10:55:48.058351+00:00",
+  "testedAt": "2026-11-17T21:08:44.220805+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "items": [
         {
           "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
@@ -20,15 +20,15 @@
           "source": "TradingView"
         },
         {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
-          "published": "Tue, 10 Nov 2026 12:00:00 GMT",
-          "source": "GlobeNewswire"
+          "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUZiczBRSU90WThnbnRFOEh4QlJoZWIyLUFrY2FrRHZ5RTVJRzlDZFJfOUVCN0ZZc19yYndiZ0RURlByZ1B6R0dUa0wxSEtIREVzYUxnblo4T2hSSXRVamVwcmtaQUlqODRueW83OVVNalVQRjRnLWNidTRvdElmdF8zNDBXQkhVNHc?oc=5",
+          "published": "Mon, 16 Nov 2026 13:00:00 GMT",
+          "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "PAUL ANTONY ANNOUNCES ACQUISITION OF AUTOCANADA SHARES - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXM5aDRRS2ZNSFBNakNGUWVEVklCdWVPZXkyYlJLb05SRTZNM3lzS0o2UzQ2c1pSNGxaWDBpSWJDaXRyVWdscWZNV2o4b2s1bUNlek9rbTZMS1RBNHROR2h3RjFCT3JrWGNKdGZFbW5jM3E3MDJPTmRNV0ZKZVBNRlE4UFEyU0x0NUs0Z09wMUNRaUJMby1LM09wbEFGSFJIYmdqMG12OFBwMk5oRVotUEF4TVFhdw?oc=5",
-          "published": "Thu, 12 Nov 2026 10:06:59 GMT",
+          "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
+          "published": "Fri, 13 Nov 2026 11:45:00 GMT",
           "source": "TradingView"
         },
         {
@@ -38,10 +38,16 @@
           "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "VersaBank and Versa Bancorp Announce Completion of Reorganization - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
-          "published": "Fri, 13 Nov 2026 11:45:00 GMT",
+          "title": "Argentina Metals Announces Closing of First Tranche of Private Placement - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU015cWtaMmhsaGptdlAtMmtUSmNmMUJCRWFvOXItVFVDSzNIdTdZbXVzdXZsaUdCYnZYZzN4aWtIcEx3cE5nZDRHaEFudzEzeUE3Q2NEaUNqVXJuSllJMWdzZ3plLTRkODJicjl5NUlwNW1BaE9JQVNUU3VPTGVVQ2puaWwwSC1IcWtKTXhZN0lWdXhtSVNiSnpPRTJQaFpwMXp5LUdZbDJsRktWQ3lBV0dvbjhZYjV5VTZmNHNodU43LXhtS29pVWQ0eVhINVBw?oc=5",
+          "published": "Thu, 12 Nov 2026 23:04:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "NEMESIA SARL ANNOUNCES ACQUISITION OF SHARES OF VALIENTE RESOURCES INC. - Yahoo Finance Singapore",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcDV4U28xV2t5azRrOFBPMEs4Unk0bldfamhzUnNfbnpOcDl6d2pLOFZBZkp4akFZLXhPTHdMeTJJSG5MQmNEeUNSOHZidEZUQmYzZG9CX1Y5b19jczR6Tm5STW80NzBZcjR6aWhISkFYRGlIeVFkTTZHWG16c25xTDdyMkZ5c0NseUtFVVg4T1p1YTBO?oc=5",
+          "published": "Tue, 17 Nov 2026 18:09:00 GMT",
+          "source": "Yahoo Finance Singapore"
         }
       ]
     },
@@ -54,7 +60,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 3,
+      "count": 2,
       "items": [
         {
           "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
@@ -67,12 +73,6 @@
           "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZHJMOXg2TlY0R3F3VXZZQlFKOGo4SHR5WFFMcDZya0EyQ0ZmSWswQlRFbmJwQ2ZUMU5NVzB5X3BLQnhtOE5WVXlnSVRORUtoX1dnSnRWSlA2elJzNFBNWVF4RWk0eUFMb1NfQ08wXzBGX2RkbHIyOHRJMmRzM25hTlByU2tlTmM1czNKbnpXdjBUUzBvUWpmMnRmZ01XWmdYMFNYQzNXZm5HTGk3V0o1UThZbnpxd1F5R0Q1U0dkSU92cEhucWVXMGMtYmR5bk02V1RTY3FiaURVQlpJRHpQMDRXb2VsQzhSOU1YXzVBaEdqQldlb1ZrdGR1WmE5d28?oc=5",
           "published": "Mon, 16 Nov 2026 10:00:00 GMT",
           "source": "TradingView"
-        },
-        {
-          "title": "Ren\u00e9 Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
-          "published": "Tue, 10 Nov 2026 12:00:00 GMT",
-          "source": "GlobeNewswire"
         }
       ]
     }

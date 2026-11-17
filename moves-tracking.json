@@ -2,6 +2,124 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-17:India:HAPPYFORGE",
+      "day": "2026-11-17",
+      "market": "India",
+      "symbol": "HAPPYFORGE",
+      "company": "Happy Forgings Limited",
+      "buyers": 7,
+      "investors": [
+        "AMPERSAND GROWTH OPPORTUNITIES FUND SCHEME - I",
+        "AXIS MUTUAL FUND",
+        "BNP PARIBAS ARBITRAGE - ODI",
+        "DENDANA INVESTMENTS MAURITIUS LIMITED",
+        "EDELWEISS MUTUAL FUND",
+        "FIDELITY FUNDS - INDIA FOCUS FUND",
+        "FIDELITY INDIA FUND"
+      ],
+      "value": 3012696810.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 1845.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-17T21:08:46.228677+00:00",
+      "firstBuyerCount": 7,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-17:India:GROWW",
+      "day": "2026-11-17",
+      "market": "India",
+      "symbol": "GROWW",
+      "company": "Billionbrains Garage Vn L",
+      "buyers": 33,
+      "investors": [
+        "BLACKROCK EMERGING MARKETS EX-CHINA FUND OF BLACKROCK FUNDS",
+        "BLACKROCK EMERGING MARKETS FUND INC",
+        "BLACKROCK GLOBAL FUNDS - EMERGING MARKETS EX-CHINA FUND",
+        "BLACKROCK GLOBAL FUNDS - EMERGING MARKETS SUSTAINABLE EQUITY FUND",
+        "BLACKROCK GLOBAL FUNDS EMERGING MARKETS EQUITY INCOME FUND",
+        "BLACKROCK GLOBAL FUNDS EMERGING MARKETS FUND",
+        "BLACKROCK GLOBAL FUNDS INDIA FUND",
+        "BNP PARIBAS ARBITRAGE",
+        "FIDELITY CONTRAFUND FIDELITY ADVISOR NEW INSIGHTS FUND",
+        "FIDELITY CONTRAFUND: FIDELITY SERIES OPPORTUNISTIC INSIGHTS FUND",
+        "FIDELITY GLOBAL GROWTH AND VALUE INVESTMENT TRUST",
+        "FIDELITY INSIGHTS INVESTMENT TRUST",
+        "GHISALLO MASTER FUND LP",
+        "HDFC STANDARD LIFE INSURANCE CO LTD",
+        "KOTAK MAHINDRA MUTUAL FUND",
+        "MERRILL LYNCH EMERGING MARKETS FUND",
+        "MORGAN STANLEY ASIA SINGAPORE PTE",
+        "NATIONAL PENSION SYSTEM (NPS) TRUST",
+        "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+        "PACE INTERNATIONAL EMERGING MARKETS EQUITY INVESTMENTS",
+        "RBC ASIA PACIFIC EX-JAPAN EQUITY FUND",
+        "REDWHEEL FUNDS REDWHEEL EMERGING MARKETS EX CHINA FUND",
+        "RETAIL EMPLOYEES SUPERANNUATION PTY. LIMITED AS TRUSTEE FOR RETAIL EMPLOYEES SUPERANNUATION TRUST",
+        "RWC EMERGING MARKETS EQUITY MASTER FUND LIMITED",
+        "RWC FUNDS-RWC GLOBAL EMERGING MARKETS FUND",
+        "RWC GLOBAL EMERGING EQUITY FUND",
+        "SOCIETE GENERALE",
+        "SUSQUEHANNA PACIFIC PTY LTD",
+        "TATA MUTUAL FUND",
+        "TEACHERS' RETIREMENT SYSTEM OF THE STATE OF ILLINOIS RWC ASSET ADVISORS (US) LLC",
+        "TM RWC GLOBAL EMERGING MARKETS FUND",
+        "VARIABLE INSURANCE PRODUCTS FUND II CONTRAFUND PORTFOLIO",
+        "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND"
+      ],
+      "value": 19053000000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 219.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-17T21:08:46.228677+00:00",
+      "firstBuyerCount": 33,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-17:India:GREENASIA",
+      "day": "2026-11-17",
+      "market": "India",
+      "symbol": "GREENASIA",
+      "company": "Green Asia Impex Limited",
+      "buyers": 2,
+      "investors": [
+        "AIKYATA ADVISORY LLP",
+        "GENZ INVESTMENT ADVISORS PRIVATE LIMITED"
+      ],
+      "value": 49309056.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 78.84,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-17T21:08:46.228677+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-17:India:ALKEM",
+      "day": "2026-11-17",
+      "market": "India",
+      "symbol": "ALKEM",
+      "company": "Alkem Laboratories Ltd.",
+      "buyers": 4,
+      "investors": [
+        "DSP MUTUAL FUND",
+        "HDFC MUTUAL FUND",
+        "ICICI PRUDENTIAL MUTUAL FUND",
+        "NIPPON INDIA MUTUAL FUND"
+      ],
+      "value": 3019016250.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 5050.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-17T21:08:46.228677+00:00",
+      "firstBuyerCount": 4,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-16:India:STYLEBAAZA",
       "day": "2026-11-16",
       "market": "India",
@@ -1062,9 +1180,18 @@
     "India:STYLEBAAZA": {
       "2026-11-16": 511.7,
       "2026-11-17": 520.75
+    },
+    "India:ALKEM": {
+      "2026-11-17": 5175.0
+    },
+    "India:GROWW": {
+      "2026-11-17": 227.53
+    },
+    "India:HAPPYFORGE": {
+      "2026-11-17": 1875.1
     }
   },
-  "updatedAt": "2026-11-17T10:55:49.676951+00:00",
+  "updatedAt": "2026-11-17T21:08:46.228677+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -1089,9 +1216,12 @@
     "India:NECCLTD": "NECCLTD.NS",
     "India:CONTROLPR": "CONTROLPR.NS",
     "India:MEESHO": "MEESHO.NS",
-    "India:STYLEBAAZA": "STYLEBAAZA.NS"
+    "India:STYLEBAAZA": "STYLEBAAZA.NS",
+    "India:ALKEM": "ALKEM.NS",
+    "India:GROWW": "GROWW.NS",
+    "India:HAPPYFORGE": "HAPPYFORGE.NS"
   },
-  "quotesUpdatedAt": "2026-11-17T10:55:56.079369+00:00",
+  "quotesUpdatedAt": "2026-11-17T21:08:53.781571+00:00",
   "quoteFailures": [
     "India:ENCOMPAS",
     "India:EVENTIONS",
