@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-17T04:54:55.487446+00:00",
-  "day": "2026-11-16",
+  "updated": "2026-11-17T21:31:32.222627+00:00",
+  "day": "2026-11-17",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -436,8 +436,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 4.31
         },
         {
           "offset": 30,
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.42,
-      "lastPriceDate": "2026-11-16",
-      "priceChangePct": -18.0,
+      "lastPrice": 4.31,
+      "lastPriceDate": "2026-11-17",
+      "priceChangePct": -20.04,
       "quoteStatus": "Available"
     },
     {
@@ -480,8 +480,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 3.37
         },
         {
           "offset": 30,
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.61,
-      "lastPriceDate": "2026-11-16",
-      "priceChangePct": -9.98,
+      "lastPrice": 3.37,
+      "lastPriceDate": "2026-11-17",
+      "priceChangePct": -15.96,
       "quoteStatus": "Available"
     },
     {
@@ -524,8 +524,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 4.26
         },
         {
           "offset": 30,
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.17,
-      "lastPriceDate": "2026-11-16",
-      "priceChangePct": -7.54,
+      "lastPrice": 4.26,
+      "lastPriceDate": "2026-11-17",
+      "priceChangePct": -5.54,
       "quoteStatus": "Available"
     },
     {
@@ -612,8 +612,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.01
         },
         {
           "offset": 30,
@@ -622,7 +622,7 @@
         }
       ],
       "lastPrice": 0.01,
-      "lastPriceDate": "2026-11-16",
+      "lastPriceDate": "2026-11-17",
       "priceChangePct": -88.89,
       "quoteStatus": "Available"
     },
@@ -656,8 +656,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.05
         },
         {
           "offset": 30,
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-16",
+      "lastPriceDate": "2026-11-17",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -700,8 +700,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.05
         },
         {
           "offset": 30,
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-16",
+      "lastPriceDate": "2026-11-17",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -744,8 +744,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.94
         },
         {
           "offset": 30,
@@ -753,9 +753,9 @@
           "price": null
         }
       ],
-      "lastPrice": 1.05,
-      "lastPriceDate": "2026-11-16",
-      "priceChangePct": -6.25,
+      "lastPrice": 0.94,
+      "lastPriceDate": "2026-11-17",
+      "priceChangePct": -16.07,
       "quoteStatus": "Available"
     },
     {
@@ -788,8 +788,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.05
         },
         {
           "offset": 30,
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-16",
+      "lastPriceDate": "2026-11-17",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -832,8 +832,8 @@
         },
         {
           "offset": 15,
-          "day": null,
-          "price": null
+          "day": "2026-11-17",
+          "price": 0.05
         },
         {
           "offset": 30,
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.05,
-      "lastPriceDate": "2026-11-16",
+      "lastPriceDate": "2026-11-17",
       "priceChangePct": 0.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 41,
+      "candidateArticles": 44,
       "status": "Verified transactions found"
     },
     {
@@ -1054,6 +1054,17 @@
       "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Yahoo! Finance Canada "
     },
     {
+      "id": "lead:c46145e6f5f8823b2e",
+      "title": "Nov 16, 2026, 18:32 ET \n                        PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.\n                       \n                       RIVI Opportunity Fund LP (\"RIVI\"), a limited partnership managed by RIVI Capital LLC, today announc",
+      "date": "2026-11-16",
+      "url": "https://www.newswire.ca/news-releases/press-release-for-early-warning-report-regarding-ppx-mining-corp--861214268.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:8fd995dfd9c0f38238",
       "title": "Northern Discovery Metals Announces Closing of First Tranche of Private Placement",
       "date": "2026-11-16",
@@ -1065,6 +1076,17 @@
       "summary": " CALGARY, Alberta, Nov.  16, 2026  (GLOBE NEWSWIRE) --  Northern Discovery Metals Inc. (CSE: NOR) (FSE: M1V0)  (“ Northern Discovery ” or the “ Company ”) is pleased to announce that further to its news release dated October 19, 2026, it has closed the first tranche (the “ First Tranche ”) of its no"
     },
     {
+      "id": "lead:1a60e97a4c46083570",
+      "title": "Nov 16, 2026, 08:00 ET \n                        ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION\n                       \n                       On November 13, 2026, Alpayana S.A.C. (\"Alpayana\") purchased 492,500 common shares (the \"Galantas",
+      "date": "2026-11-16",
+      "url": "https://www.newswire.ca/news-releases/alpayana-s-a-c-acquires-common-shares-of-galantas-gold-corporation-842419452.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:0a6886e8509bcba5a4",
       "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
       "date": "2026-11-16",
@@ -1074,17 +1096,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    TradingView "
-    },
-    {
-      "id": "lead:e5b97f2e9a8697d0ae",
-      "title": "Ocean Power Technologies Announces Pricing of $3.0 Million Public Offering",
-      "date": "2026-11-13",
-      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402563/9069/en/ocean-power-technologies-announces-pricing-of-3-0-million-public-offering.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " MONROE TOWNSHIP, N.J., Nov.  13, 2026  (GLOBE NEWSWIRE) -- Ocean Power Technologies, Inc. (“OPT” or the “Company”) (NYSE American: OPTT), a leader in intelligent maritime solutions and services, today announced the pricing of its previously announced public offering of 6,000,000 shares of common st"
     },
     {
       "id": "lead:7bc9945622476be2c6",
@@ -1107,28 +1118,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
-    },
-    {
-      "id": "lead:f670654a77732bcb6e",
-      "title": "InspireMD Announces Proposed Public Offering",
-      "date": "2026-11-12",
-      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402241/0/en/inspiremd-announces-proposed-public-offering.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " MIAMI, Nov.  12, 2026  (GLOBE NEWSWIRE) -- InspireMD, Inc. (Nasdaq: NSPR) (“InspireMD” or the “Company”), developer of the CGuard ®  Prime carotid stent system for the prevention of stroke, today announced that it has commenced a proposed public offering of (i) shares of its common stock, (ii) in l"
-    },
-    {
-      "id": "lead:4ad3165f7da356d119",
-      "title": "CMG Announces Renewal of Normal Course Issuer Bid and Automatic Share Purchase Plan",
-      "date": "2026-11-12",
-      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402300/0/en/cmg-announces-renewal-of-normal-course-issuer-bid-and-automatic-share-purchase-plan.html",
-      "discoveredVia": "GlobeNewswire / Major Shareholders",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " CALGARY, Alberta, Nov.  12, 2026  (GLOBE NEWSWIRE) -- Computer Modelling Group Ltd. (“CMG” or the “Company”) (TSX: CMG) today announced that the Toronto Stock Exchange (“TSX”) has accepted a notice (the “Notice”) filed by the Company to renew a Normal Course Issuer Bid (“NCIB”) for its common share"
     },
     {
       "id": "lead:2bfaa9f52255b01b11",
@@ -1888,39 +1877,57 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
+    },
+    {
+      "id": "lead:b4a54c8700a054ac79",
+      "title": "08:02 ET \n                          Agrion Announces $800,000 Non-Brokered Private Placement and Debt Settlement\n                         \n                         Agrion International Limited (\"Agrion\" or the \"Company\") (CSE: AGRI) (OTC: EWGFF) (FSE: 6BC0) is",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/agrion-announces-800-000-non-brokered-private-placement-and-debt-settlement-882832042.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:608a914e9699b29d36",
+      "title": "16:20 ET \n                          FIELDS OF GOLD COMPLETES FIRST TRANCHE OF NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") (CSE: FOG) announces that has ",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/fields-of-gold-completes-first-tranche-of-non-brokered-flow-through-private-placement-889958646.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": true,
-      "items": 20,
-      "relevant": 3
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": true,
-      "items": 20,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": true,
-      "items": 20,
-      "relevant": 1
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 5,
-      "relevant": 5
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
@@ -1936,8 +1943,9 @@
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 5,
+      "relevant": 0
     },
     {
       "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
@@ -1971,13 +1979,15 @@
     },
     {
       "name": "Canada NewsWire / Acquisitions",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 100,
+      "relevant": 8
     },
     {
       "name": "Canada NewsWire / Private placements",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 100,
+      "relevant": 28
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -2019,9 +2029,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 77,
+    "disclosureLeads": 78,
     "usFilingNotices": 0,
-    "sourcesOnline": 12,
+    "sourcesOnline": 11,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
