@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-16T22:45:22.500447+00:00",
+  "updated": "2026-11-17T00:43:17.615391+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:0a6886e8509bcba5a4",
+      "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
+      "date": "2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUFDMlNtTXpFTllXR085QTFmdDZpOHh5YU11ZEhqOWpFOUxPdVN6TzhFTXlfZDgyOGFZMzBuM21DRG82Y2hsbno3RFBENEFLTERYQU9IWlN1bUU0N25JWnBZVGlOR1hDR1Z4UmlUc19mS24wcTJsU0hkeVhRZEplaW9FQUFrbG1QcHlDMzB6R2lKeUlfbkZEdXVmSDVUbVZYMUdpaV9PLS1XX0FBdlNhVVBZYXJnbHFUU3U1T29UTXFBZms",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    TradingView "
+    },
     {
       "id": "lead:7bc9945622476be2c6",
       "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Quantisnow",
@@ -785,6 +796,17 @@
       "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
     },
     {
+      "id": "lead:c46145e6f5f8823b2e",
+      "title": "18:32 ET \n                        PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.\n                       \n                       RIVI Opportunity Fund LP (\"RIVI\"), a limited partnership managed by RIVI Capital LLC, today announced that on Nov",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/press-release-for-early-warning-report-regarding-ppx-mining-corp--861214268.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
       "id": "lead:1a60e97a4c46083570",
       "title": "08:00 ET \n                        ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION\n                       \n                       On November 13, 2026, Alpayana S.A.C. (\"Alpayana\") purchased 492,500 common shares (the \"Galantas Shares\") of G",
       "date": null,
@@ -816,18 +838,20 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
+      "items": 6,
       "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
@@ -843,9 +867,8 @@
     },
     {
       "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
@@ -855,8 +878,9 @@
     },
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
@@ -866,9 +890,8 @@
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "ok": true,
-      "items": 5,
-      "relevant": 4
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -900,10 +923,10 @@
   ],
   "status": {
     "sources": 18,
-    "available": 9,
-    "leadCount": 72,
+    "available": 10,
+    "leadCount": 74,
     "usFilingCount": 0,
-    "needsReview": 72
+    "needsReview": 74
   },
   "officialSources": [
     {
