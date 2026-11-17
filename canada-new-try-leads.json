@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-17T21:31:23.261416+00:00",
+  "updated": "2026-11-17T23:48:22.793856+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -883,12 +883,13 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 5,
-      "relevant": 4
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
@@ -968,7 +969,7 @@
   ],
   "status": {
     "sources": 18,
-    "available": 11,
+    "available": 12,
     "leadCount": 78,
     "usFilingCount": 0,
     "needsReview": 78
