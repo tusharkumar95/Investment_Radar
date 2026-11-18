@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-18T21:07:30.518195+00:00",
+  "updated": "2026-11-18T23:20:40.814237+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -871,6 +871,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand    The Globe and Mail "
+    },
+    {
+      "id": "lead:f9e7b32ccf0fcc4f5e",
+      "title": "17:54 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to issue $500 mill",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/definity-financial-corporation-announces-500-million-private-placement-of-notes-863107679.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
@@ -893,7 +904,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
+      "items": 6,
       "relevant": 6
     },
     {
@@ -941,7 +952,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
+      "items": 1,
       "relevant": 1
     },
     {
@@ -960,7 +971,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 27
+      "relevant": 28
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -981,9 +992,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 79,
+    "leadCount": 80,
     "usFilingCount": 0,
-    "needsReview": 79
+    "needsReview": 80
   },
   "officialSources": [
     {
