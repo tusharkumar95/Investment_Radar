@@ -1,14 +1,13 @@
 {
   "schema": 1,
-  "updated": "2026-11-18T03:00:38.712159+00:00",
+  "updated": "2026-11-18T10:27:38.270303+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-17",
     "2026-11-16",
     "2026-11-13",
     "2026-11-12",
-    "2026-11-11",
-    "2026-11-10"
+    "2026-11-11"
   ],
   "days": [
     {
@@ -8536,31 +8535,6 @@
           "status": "Multiple buyers disclosed; not an investment recommendation"
         }
       ]
-    },
-    {
-      "date": "2026-11-10",
-      "india": [],
-      "canada": [],
-      "canadaReported": [],
-      "canadaLeads": [
-        {
-          "id": "lead:2026-11-10:3",
-          "day": "2026-11-10",
-          "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp. - The Globe and Mail",
-          "source": "The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdnlyNVh6cXAzUGNYRmIwWC02c2ZBcHlsc1NsTXFiLVNYeGdDZDlJWXl6TFV4VklFMlpoT0dCY3ZtTGFZZ1RFOGxkQUZWOUZHVGo4RDEzeEU4elRJQnM3TUxLYXRtOTNEaU1LOUdDRnF0X1BjR0lfczdLYlE3c00zOGtRaWdySDJBUE42dnRlT0NMZ2JWSFMzX0g2NHEya3d3VHRmZzJnM3VzX0htaFUyaWdCMTBCd21qSVptNGJ4NGZVSVR6T3FiNTUwUjEzT3gtSnpSQl9VLWthYWcwNkdSR0xzQWE2VWpHTUk5em9qRGtxZkpOQ05uTzFWTHR2NTBFMUo4?oc=5",
-          "verification": "Unverified — open original filing before acting"
-        },
-        {
-          "id": "lead:2026-11-10:4",
-          "day": "2026-11-10",
-          "headline": "René Goehrum Files Early Warning Report for Historical Ownership Positions - GlobeNewswire",
-          "source": "GlobeNewswire",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZERMZE9BS05ncDV0dGpvOUpsdF8zbS1rZkZkVnNuMVRLS1N6cHdfSnQzbWpKX0dEZURCbHB5cV81UngzT0VRc0R1djVUQzRLNTlCNlp6TENyTlF0QlFGZnNkdVMxeW0wMHpzWXJ4UHlmdTNxNzVab3pUQVVoMHR2OEJRYVNmWEszcHE4S1RtTnp1eTRsbEVodkdRUWZtVUhSYmxsZUlMQ2VGVFBwS2hHZ0h5ZFF6dmtjTUZub3lhVHRIbFAzdW9rRUZiaEtudjUxQ0NiQ01pWWJWQXlUNE5OeVdjVzlXUQ?oc=5",
-          "verification": "Unverified — open original filing before acting"
-        }
-      ],
-      "alerts": []
     }
   ],
   "alerts": [
@@ -8950,10 +8924,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-18T03:00:38.274Z"
+      "asOf": "2026-11-18T10:27:37.239Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-18T03:00:37.073562+00:00",
+    "canadaDiscoveryUpdated": "2026-11-18T10:27:36.033026+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
