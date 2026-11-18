@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-18T10:27:36.032525+00:00",
+  "testedAt": "2026-11-18T20:45:35.228054+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
@@ -20,9 +20,33 @@
           "source": "Yahoo! Finance Canada"
         },
         {
+          "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc?oc=5",
+          "published": "Tue, 17 Nov 2026 02:50:42 GMT",
+          "source": "Investing News Network"
+        },
+        {
           "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUFDMlNtTXpFTllXR085QTFmdDZpOHh5YU11ZEhqOWpFOUxPdVN6TzhFTXlfZDgyOGFZMzBuM21DRG82Y2hsbno3RFBENEFLTERYQU9IWlN1bUU0N25JWnBZVGlOR1hDR1Z4UmlUc19mS24wcTJsU0hkeVhRZEplaW9FQUFrbG1QcHlDMzB6R2lKeUlfbkZEdXVmSDVUbVZYMUdpaV9PLS1XX0FBdlNhVVBZYXJnbHFUU3U1T29UTXFBZms?oc=5",
           "published": "Mon, 16 Nov 2026 23:32:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
+          "published": "Wed, 18 Nov 2026 18:32:20 GMT",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZk5rcFVyY0N5clowVUFUajFyUHhMOVZqM0Z0YTItUVBWemR0cHNscGRJOVBvOTdyQ29UYjd2RXhxWVpERl8xM0V6N1BTTVVicHlfRWhDbDNtX2FvWC1sUHplOHpfd0tqYTB2UzBscUtXcloxZjBJemFBSGNrcmNNNm9jTnowNnVrN1Jlc0VYcXVUcDBhb2NwWXFKN3EyckxjWkJrOFloNHk1TE9PSTFaQ0Rwc3ZxOHZWUk9XUk9kRnBicXJWNHpyVzZLa0E?oc=5",
+          "published": "Wed, 18 Nov 2026 18:11:00 GMT",
           "source": "TradingView"
         },
         {
@@ -30,24 +54,6 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTGhNTk9QY1J6ZGkwRlJMcXNmVnZWa01MbHc3T2YyTzBXMUloV3dRdzE3TzBqQ2s3QzFqY0NYRm9zSXBfb0ZBLUlXUHVBU0R3MEZwak5DT3h6Rk96T25taG95eEJwRk9GcmZQN0RyN3VWdHRWcEhmOUNOZWdXY2QtdVhhSUh0aWh6NTBpSWs4UnRtTEZRNjRVNTZpdE10UG9fSXZEVnZoaWhfTUs5SnQyTVJuelpEZ2NtczROdUYxNXQzS3otQkFN?oc=5",
           "published": "Fri, 13 Nov 2026 11:45:00 GMT",
           "source": "TradingView"
-        },
-        {
-          "title": "NEMESIA SARL ANNOUNCES ACQUISITION OF SHARES OF VALIENTE RESOURCES INC. - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVWRYMVJvVFk2U2gxYkpld1lpazJlTzVlZ01ObDdSOXlaU1RkQ0N3QTNUTHpGa3U0RmktelV4VDRtYldHTVFObFJZeWwyVHZWUW1GN1lxLU55THZpV2s1Z0pKak5Pa0FDcVFyS1I5Qm1HYkNOS0haWlo1eTFudjhPRzdHTE5MajFGa1l1RTV5N0VNaUlY?oc=5",
-          "published": "Tue, 17 Nov 2026 18:09:00 GMT",
-          "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "G2S2 CAPITAL INC. ANNOUNCES INCREASED INVESTMENT IN MORGUARD CORPORATION - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeVlKdHJxMGotRkJMalBsM1NYb01JdUw0ZlVVNFZkV2o0RmIxTW1qVGV3RGxpNklCOFMwME54b2ppU1pqTnNaM1pVX0pQc1ZoX3NqaDNmN25xclhoVmdzbUdlTWk0dHNTXzlhblV2RWdSYXNHNS1GVmZMU18xUFJhQjduT0NZZ2oybWNkOXJn?oc=5",
-          "published": "Fri, 13 Nov 2026 13:03:00 GMT",
-          "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "NEMESIA SARL ANNOUNCES ACQUISITION OF SHARES OF VALIENTE RESOURCES INC. - Yahoo Finance Singapore",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcDV4U28xV2t5azRrOFBPMEs4Unk0bldfamhzUnNfbnpOcDl6d2pLOFZBZkp4akFZLXhPTHdMeTJJSG5MQmNEeUNSOHZidEZUQmYzZG9CX1Y5b19jczR6Tm5STW80NzBZcjR6aWhISkFYRGlIeVFkTTZHWG16c25xTDdyMkZ5c0NseUtFVVg4T1p1YTBO?oc=5",
-          "published": "Tue, 17 Nov 2026 18:09:00 GMT",
-          "source": "Yahoo Finance Singapore"
         }
       ]
     },
@@ -60,13 +66,31 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 2,
+      "count": 5,
       "items": [
         {
           "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUZiczBRSU90WThnbnRFOEh4QlJoZWIyLUFrY2FrRHZ5RTVJRzlDZFJfOUVCN0ZZc19yYndiZ0RURlByZ1B6R0dUa0wxSEtIREVzYUxnblo4T2hSSXRVamVwcmtaQUlqODRueW83OVVNalVQRjRnLWNidTRvdElmdF8zNDBXQkhVNHc?oc=5",
           "published": "Mon, 16 Nov 2026 13:00:00 GMT",
           "source": "Yahoo! Finance Canada"
+        },
+        {
+          "title": "Eric Sprott Announces Changes to His Holdings in Metalsource Mining Inc. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
+          "published": "Wed, 18 Nov 2026 13:21:29 GMT",
+          "source": "Investing News Network"
+        },
+        {
+          "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTC1DTHFPY2t4cURqakhwOXZtLVpFVHFMM3ZGOW9YckJSNmlya3pqdW8yZGlIQ2NmMUI3VU9TODVpS3g2bV8wS01DQTJWdnF5S2Y4ZEFxNjJNY1Z0d3Zac2V6WldTYXk5TmJ3emhZcEJlV3ZFbWJsVHR1Z0V3aE1HNkktRVU5U1IzUjZ0VXR5a3g1amxMc2hhR3BMd01SVkktNmk3NC1IUzM5cjQ0UjFOdlFsUlFxUlB0ZUVCZmZVMDBSQVNOeVVyMEppNEU?oc=5",
+          "published": "Wed, 18 Nov 2026 18:09:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "SNAPS swapped a US$3.2 million loan for 12.8 million Novra shares. It now owns 29.5%. - Stock Titan",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN2dtNlJEeEcwQXVwNWhlMWdKVFA3ZDI3eXlHc0U2eExWa2JDUGlaWmRJaV9hS3hhOTZKanlpS0MwUDE2aXF0ZmVQRTlPR0U2SnkzejRzT2xjTkxGQ3Vadm51M1JucjdvM0F2Z1U3ZFZib2w0dVdyMTIzNFZoOTl3bEpsMElORzYtNzN5SWVFdUo4cU9GdHEtd0d6TkYxWDlhWTdic1VPRnNIMm9MVmRISkFnWUMtRDNYaFFuclB0OUJYdw?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "source": "Stock Titan"
         },
         {
           "title": "Latin Explore Announces Closing of Upsized Non-Brokered Private Placement for Gross Proceeds of $2.3 Million - TradingView",

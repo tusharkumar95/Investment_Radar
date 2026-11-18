@@ -2,6 +2,68 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-18:India:VINEETLAB",
+      "day": "2026-11-18",
+      "market": "India",
+      "symbol": "VINEETLAB",
+      "company": "Vineet Laboratories Ltd",
+      "buyers": 2,
+      "investors": [
+        "K L B SECURITIES PVT LTD",
+        "SURINDER KAUR"
+      ],
+      "value": 7639000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 38.195,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-18T20:45:36.987364+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-18:India:IEML-RE1",
+      "day": "2026-11-18",
+      "market": "India",
+      "symbol": "IEML-RE1",
+      "company": "Indian Emulsifiers Ltd",
+      "buyers": 2,
+      "investors": [
+        "NIRAJ UMESH JOSHI",
+        "RITESH NILKANTH NEMADE"
+      ],
+      "value": 5610150.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 9.05,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-18T20:45:36.987364+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-18:India:AZAD",
+      "day": "2026-11-18",
+      "market": "India",
+      "symbol": "AZAD",
+      "company": "Azad Engineering Limited",
+      "buyers": 4,
+      "investors": [
+        "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+        "VALUEQUEST FOUNDERS CONVICTION LVF",
+        "VALUEQUEST INDIA INFLEXION FUND",
+        "VQ FASTERCAP FUND"
+      ],
+      "value": 3703521168.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 2286.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-18T20:45:36.987364+00:00",
+      "firstBuyerCount": 4,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-17:India:HAPPYFORGE",
       "day": "2026-11-17",
       "market": "India",
@@ -1216,9 +1278,15 @@
     "India:HAPPYFORGE": {
       "2026-11-17": 1875.1,
       "2026-11-18": 1778.9
+    },
+    "India:AZAD": {
+      "2026-11-18": 2318.8999
+    },
+    "India:VINEETLAB": {
+      "2026-11-18": 38.39
     }
   },
-  "updatedAt": "2026-11-18T10:27:38.270303+00:00",
+  "updatedAt": "2026-11-18T20:45:36.987364+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -1246,9 +1314,11 @@
     "India:STYLEBAAZA": "STYLEBAAZA.NS",
     "India:ALKEM": "ALKEM.NS",
     "India:GROWW": "GROWW.NS",
-    "India:HAPPYFORGE": "HAPPYFORGE.NS"
+    "India:HAPPYFORGE": "HAPPYFORGE.NS",
+    "India:AZAD": "AZAD.NS",
+    "India:VINEETLAB": "VINEETLAB.NS"
   },
-  "quotesUpdatedAt": "2026-11-18T10:27:52.054645+00:00",
+  "quotesUpdatedAt": "2026-11-18T20:45:45.276394+00:00",
   "quoteFailures": [
     "India:ENCOMPAS",
     "India:EVENTIONS",
