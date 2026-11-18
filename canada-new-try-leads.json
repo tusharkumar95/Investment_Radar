@@ -1,8 +1,52 @@
 {
   "schema": 1,
-  "updated": "2026-11-18T03:58:44.709443+00:00",
+  "updated": "2026-11-18T21:07:30.518195+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:4a6981ce1ba1c07ff7",
+      "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+      "date": "2026-11-18",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc.    TradingView "
+    },
+    {
+      "id": "lead:dd31e62a97fbf3b146",
+      "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
+      "date": "2026-11-17",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Investing News Network "
+    },
+    {
+      "id": "lead:b4a54c8700a054ac79",
+      "title": "Nov 17, 2026, 08:02 ET \n                          Agrion Announces $800,000 Non-Brokered Private Placement and Debt Settlement\n                         \n                         Agrion International Limited (\"Agrion\" or the \"Company\") (CSE: AGRI) (OTC: EWGFF) ",
+      "date": "2026-11-17",
+      "url": "https://www.newswire.ca/news-releases/agrion-announces-800-000-non-brokered-private-placement-and-debt-settlement-882832042.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:608a914e9699b29d36",
+      "title": "Nov 17, 2026, 16:20 ET \n                          FIELDS OF GOLD COMPLETES FIRST TRANCHE OF NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") (CSE: FOG) annou",
+      "date": "2026-11-17",
+      "url": "https://www.newswire.ca/news-releases/fields-of-gold-completes-first-tranche-of-non-brokered-flow-through-private-placement-889958646.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:fb3d7359524c84eef2",
       "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Yahoo! Finance Canada",
@@ -244,6 +288,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:a381112eac7f08d6f4",
+      "title": "Rheinmetall Aktiengesellschaft (RHM) Manager Discloses Share Acquisition - TradingView",
+      "date": "2026-11-06",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSHVFYnJtV2QwbjN2MmEtRHhMNkVFNi00UjE5cUp3RXNGM1hBQTFZbm55VzdSX0lPYVo1am84eVhjZ012WndaNkZjQmRnOVl6SzlPenJSVUl5YjlQTE9JNVRodnZReE53UlRTQmVmMy1jWFV2WkFDMFdDdDBvbVM4NlMxOE1SckRoWUxDTWk0ZUE4MFFMbVZxV0htUUNUSlB2T1M2MGJHcERWS3QzLUs4aTB3LVFNcW1zemQwejlQTldQSEpkM3dkYWQ5eUk",
+      "discoveredVia": "Google News discovery — \"Brookfield\" \"share acquisition\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Rheinmetall Aktiengesellschaft (RHM) Manager Discloses Share Acquisition    TradingView "
     },
     {
       "id": "lead:dd19c7861dc3cb15d9",
@@ -816,28 +871,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand    The Globe and Mail "
-    },
-    {
-      "id": "lead:b4a54c8700a054ac79",
-      "title": "08:02 ET \n                          Agrion Announces $800,000 Non-Brokered Private Placement and Debt Settlement\n                         \n                         Agrion International Limited (\"Agrion\" or the \"Company\") (CSE: AGRI) (OTC: EWGFF) (FSE: 6BC0) is",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/agrion-announces-800-000-non-brokered-private-placement-and-debt-settlement-882832042.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:608a914e9699b29d36",
-      "title": "16:20 ET \n                          FIELDS OF GOLD COMPLETES FIRST TRANCHE OF NON-BROKERED FLOW-THROUGH PRIVATE PLACEMENT\n                         \n                         Fields of Gold Corp. (\"Fields of Gold\" or the \"Company\") (CSE: FOG) announces that has ",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/fields-of-gold-completes-first-tranche-of-non-brokered-flow-through-private-placement-889958646.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
@@ -860,8 +893,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 4
+      "items": 7,
+      "relevant": 6
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -884,7 +917,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 5,
+      "items": 4,
       "relevant": 0
     },
     {
@@ -902,20 +935,20 @@
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
       "ok": true,
-      "items": 0,
+      "items": 3,
       "relevant": 0
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 1,
-      "relevant": 0
+      "items": 2,
+      "relevant": 1
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 4,
-      "relevant": 3
+      "items": 3,
+      "relevant": 2
     },
     {
       "name": "Canada NewsWire / Acquisitions",
@@ -948,9 +981,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 76,
+    "leadCount": 79,
     "usFilingCount": 0,
-    "needsReview": 76
+    "needsReview": 79
   },
   "officialSources": [
     {
