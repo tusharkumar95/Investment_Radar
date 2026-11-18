@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-17T22:35:14.039209+00:00",
+  "updated": "2026-11-18T03:00:38.712159+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-17",
@@ -3276,9 +3276,9 @@
         {
           "id": "lead:2026-11-17:0",
           "day": "2026-11-17",
-          "headline": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - StreetInsider",
-          "source": "StreetInsider",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOWUg3clJRdjZFbWEyNlNXRmRRR2tFT050YWtaNUxNdUNoQmpFUjc1VXNJaWRFWGdZWDdvSWM3MlFFRU1MODBwb041WTJCdjU0ZTk2SFg1SkJuVjNNRTh3TmNkcUlwUEYzdFlCbk1fNDkyR292ZjFxRzM3Z2ZVQTVIWnBqVXVPZVpmVUJPeHZ5STRLR0NNRVpwMElsbUhvYk1TSmxZODkxZUNTNy0xZTB1czRXYm1xOU5IZXBxNF93a1dScWcxcmlJQk9rbnQzR1lPQURieFY2Y2hHSXZya0ptTnZnLTl5bGtYS19MRUVzeDVicG5kenRZY2RVZEZNVUpHOVN5VmtvRXlwZmNNQTNudVFjano?oc=5",
+          "headline": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
           "verification": "Unverified — open original filing before acting"
         }
       ],
@@ -8950,10 +8950,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-17T22:35:13.346Z"
+      "asOf": "2026-11-18T03:00:38.274Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-17T22:35:12.673986+00:00",
+    "canadaDiscoveryUpdated": "2026-11-18T03:00:37.073562+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

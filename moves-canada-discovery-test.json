@@ -1,23 +1,23 @@
 {
-  "testedAt": "2026-11-17T22:35:12.673370+00:00",
+  "testedAt": "2026-11-18T03:00:37.073062+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "items": [
+        {
+          "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
+          "published": "Tue, 17 Nov 2026 22:42:13 GMT",
+          "source": "The Globe and Mail"
+        },
         {
           "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZUNUbDFsTlBVS29MdWpFQUJUMFNOZUFxX2JpcHJJX2x1M1EyNzdhb0lYYzNydmZHaTRlLU1MdU83Q3FkVWJmVllKaGIyVDh3STFTY1ZITlc4cHBWOXZaZGhqcVFKWHljQklpSTE3d3N0Z1UzZkw1UUx5cnhuMVdjbU5iRkFfRTBEcWUyaA?oc=5",
           "published": "Fri, 13 Nov 2026 00:16:00 GMT",
           "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - StreetInsider",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOWUg3clJRdjZFbWEyNlNXRmRRR2tFT050YWtaNUxNdUNoQmpFUjc1VXNJaWRFWGdZWDdvSWM3MlFFRU1MODBwb041WTJCdjU0ZTk2SFg1SkJuVjNNRTh3TmNkcUlwUEYzdFlCbk1fNDkyR292ZjFxRzM3Z2ZVQTVIWnBqVXVPZVpmVUJPeHZ5STRLR0NNRVpwMElsbUhvYk1TSmxZODkxZUNTNy0xZTB1czRXYm1xOU5IZXBxNF93a1dScWcxcmlJQk9rbnQzR1lPQURieFY2Y2hHSXZya0ptTnZnLTl5bGtYS19MRUVzeDVicG5kenRZY2RVZEZNVUpHOVN5VmtvRXlwZmNNQTNudVFjano?oc=5",
-          "published": "Tue, 17 Nov 2026 22:15:38 GMT",
-          "source": "StreetInsider"
         },
         {
           "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
@@ -36,12 +36,6 @@
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeVlKdHJxMGotRkJMalBsM1NYb01JdUw0ZlVVNFZkV2o0RmIxTW1qVGV3RGxpNklCOFMwME54b2ppU1pqTnNaM1pVX0pQc1ZoX3NqaDNmN25xclhoVmdzbUdlTWk0dHNTXzlhblV2RWdSYXNHNS1GVmZMU18xUFJhQjduT0NZZ2oybWNkOXJn?oc=5",
           "published": "Fri, 13 Nov 2026 13:03:00 GMT",
           "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "Argentina Metals Announces Closing of First Tranche of Private Placement - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU015cWtaMmhsaGptdlAtMmtUSmNmMUJCRWFvOXItVFVDSzNIdTdZbXVzdXZsaUdCYnZYZzN4aWtIcEx3cE5nZDRHaEFudzEzeUE3Q2NEaUNqVXJuSllJMWdzZ3plLTRkODJicjl5NUlwNW1BaE9JQVNUU3VPTGVVQ2puaWwwSC1IcWtKTXhZN0lWdXhtSVNiSnpPRTJQaFpwMXp5LUdZbDJsRktWQ3lBV0dvbjhZYjV5VTZmNHNodU43LXhtS29pVWQ0eVhINVBw?oc=5",
-          "published": "Thu, 12 Nov 2026 23:04:00 GMT",
-          "source": "TradingView"
         },
         {
           "title": "NEMESIA SARL ANNOUNCES ACQUISITION OF SHARES OF VALIENTE RESOURCES INC. - Yahoo Finance Singapore",
