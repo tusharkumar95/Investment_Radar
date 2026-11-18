@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-17T23:48:31.081416+00:00",
+  "updated": "2026-11-18T03:58:52.912121+00:00",
   "day": "2026-11-17",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 44,
+      "candidateArticles": 42,
       "status": "Verified transactions found"
     },
     {
@@ -1857,28 +1857,6 @@
       "summary": " Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand    The Globe and Mail "
     },
     {
-      "id": "lead:b35fccfd806b8671a6",
-      "title": "Oct 13, 2026, 13:44 ET \n                          NICKEL CREEK PLATINUM ANNOUNCES NON-BROKERED PRIVATE PLACEMENT\n                         \n                         Nickel Creek Platinum Corp. (TSXV: NCP) (\"Nickel Creek\" or the \"Company\") is pleased to announce",
-      "date": "2026-10-13",
-      "url": "https://www.newswire.ca/news-releases/nickel-creek-platinum-announces-non-brokered-private-placement-812552714.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:a7c9e87b2f13a9f689",
-      "title": "Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million - The Manila Times",
-      "date": "2026-10-13",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZS1qMnVkcGN1T3VDY3pIejVlTHRRcFNaM3VJU0ZFYm1mOHEtSE5VN2FaSGR1VFRvWWhkZDRvbFZZWDRTVlFacDRYZnVyWDM4OHhqZTBBOXBLZ1g2SU9KUE1jOHRicTdjN2VBYnJPX0lhMncxdENzaF8wMVd6MFROZ1ZKa2VjQ25PQ0s3ZXJaNjhXQmF0N3FOcDJQWWtfVTlRNGl6QkdYRVc0ZFdacy0yaTZkZERtV3k4VDhaWnhKNFNrRWl4cmFSd0tubkhyUzFnNnlRMjVJRnhEMlVlYmJGNXdVbUNkeXItR0FhMmJ30gHzAUFVX3lxTE44RzBhLUoxaHVvYWFLQWQ3dGNWazJPNF94UnZWWjI4UG80ZWdDUk5ZbWxUd2hqUXNOZE44UGpDQkJYaXk2TFgtY3phZHVlaXJKLVlUMk9heThRbk1CYkFCQklqamwxVlFPN1pEb3g1WElTRXhyT0w4V2xWZmZZVjMxWmxwanpWZi1DSUJCMEF1SlBPTU9TVzB5ekM3c09wNmN1V3lkNmZscG5yODZlclBaNjNXWFdndXFQUmpRMzdNT0RMV3g1ZmYycUlydUZVcFloTnVna0hrVE5XN2gxQmpWUlNQWmVnSWtzdTY5clR6cnFTQQ",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Announces Upsize of Non-Brokered Private Placement to up to $7 Million    The Manila Times "
-    },
-    {
       "id": "lead:b4a54c8700a054ac79",
       "title": "08:02 ET \n                          Agrion Announces $800,000 Non-Brokered Private Placement and Debt Settlement\n                         \n                         Agrion International Limited (\"Agrion\" or the \"Company\") (CSE: AGRI) (OTC: EWGFF) (FSE: 6BC0) is",
       "date": null,
@@ -1922,7 +1900,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 5,
-      "relevant": 5
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1988,7 +1966,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 28
+      "relevant": 27
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -2030,7 +2008,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 78,
+    "disclosureLeads": 76,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
