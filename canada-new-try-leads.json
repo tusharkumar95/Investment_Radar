@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-19T03:55:23.682427+00:00",
+  "updated": "2026-11-19T21:12:24.658286+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:9ef0efa1977931cfb2",
+      "title": "Nov 18, 2026, 19:39 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to i",
+      "date": "2026-11-18",
+      "url": "https://www.newswire.ca/news-releases/definity-financial-corporation-announces-500-million-private-placement-of-notes-850689127.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:4a6981ce1ba1c07ff7",
       "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
@@ -862,12 +873,12 @@
       "summary": ""
     },
     {
-      "id": "lead:9ef0efa1977931cfb2",
-      "title": "19:39 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to issue $500 mill",
+      "id": "lead:6ed44d7b8b153fb03b",
+      "title": "14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for healthcare profe",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/definity-financial-corporation-announces-500-million-private-placement-of-notes-850689127.html",
+      "url": "https://www.newswire.ca/news-releases/kda-group-announces-closing-of-private-placement-829092516.html",
       "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
+      "type": "Possible capital investment — review source",
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
@@ -893,8 +904,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 6
+      "items": 6,
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -947,7 +958,7 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 3,
+      "items": 2,
       "relevant": 2
     },
     {
@@ -960,7 +971,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 28
+      "relevant": 29
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -981,9 +992,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 79,
+    "leadCount": 80,
     "usFilingCount": 0,
-    "needsReview": 79
+    "needsReview": 80
   },
   "officialSources": [
     {
