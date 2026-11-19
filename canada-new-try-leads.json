@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-19T21:12:24.658286+00:00",
+  "updated": "2026-11-19T23:28:24.071513+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -958,8 +958,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 2,
-      "relevant": 2
+      "items": 1,
+      "relevant": 1
     },
     {
       "name": "Canada NewsWire / Acquisitions",

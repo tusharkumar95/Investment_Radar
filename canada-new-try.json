@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-19T21:12:33.478494+00:00",
+  "updated": "2026-11-19T23:28:33.702107+00:00",
   "day": "2026-11-19",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -1997,8 +1997,8 @@
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 2,
-      "relevant": 2
+      "items": 1,
+      "relevant": 1
     },
     {
       "name": "Canada NewsWire / Acquisitions",
