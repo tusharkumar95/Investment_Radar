@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-18T23:20:40.814237+00:00",
+  "updated": "2026-11-19T03:55:23.682427+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -862,21 +862,10 @@
       "summary": ""
     },
     {
-      "id": "lead:57742d5e8d6eb3ef25",
-      "title": "Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand - The Globe and Mail",
-      "date": "2026-10-14",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcmNhZXgwSU82em82aXdEc1dXSEJld2ZOSFExbEJ1bU8zYnI1UHdvSVM1WEFZc2owUm9ncFg1dUp5ek05dHVXSDNzUjV1bFI2ODdmbTJjNFBSVTRMakhJMTV1RHQ4WDYxRnNMVzd6OVBfMkVIR0I0ZjVDZUhGa3J6cE1EREdCbFFxREg1SGxyQ2I0ejJSeUllMFJ1emZpdEZRN2JNUks5STlLR2RUc3BLQ1l6QmwxbEJmR2lzOE9OajBMUGRzWXp5U09IbFJiSXdaY2NtRlNZdzUxbmJSZndpZDFfb2haOUtRbVU2MTJmYWNQM29sSk1V",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Upsizes Private Placement to $7 Million on Strong Investor Demand    The Globe and Mail "
-    },
-    {
-      "id": "lead:f9e7b32ccf0fcc4f5e",
-      "title": "17:54 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to issue $500 mill",
+      "id": "lead:9ef0efa1977931cfb2",
+      "title": "19:39 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to issue $500 mill",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/definity-financial-corporation-announces-500-million-private-placement-of-notes-863107679.html",
+      "url": "https://www.newswire.ca/news-releases/definity-financial-corporation-announces-500-million-private-placement-of-notes-850689127.html",
       "discoveredVia": "Canada NewsWire / Private placements",
       "type": "Potential / incomplete — verify status",
       "reviewStatus": "Needs source verification",
@@ -904,7 +893,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 7,
       "relevant": 6
     },
     {
@@ -952,7 +941,7 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 1,
+      "items": 2,
       "relevant": 1
     },
     {
@@ -992,9 +981,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 80,
+    "leadCount": 79,
     "usFilingCount": 0,
-    "needsReview": 80
+    "needsReview": 79
   },
   "officialSources": [
     {
