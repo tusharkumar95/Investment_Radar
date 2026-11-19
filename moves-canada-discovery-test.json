@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-18T22:15:44.417827+00:00",
+  "testedAt": "2026-11-19T02:42:53.626863+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -10,7 +10,7 @@
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
-          "published": "Tue, 17 Nov 2026 22:42:13 GMT",
+          "published": "Tue, 17 Nov 2026 22:50:13 GMT",
           "source": "The Globe and Mail"
         },
         {
@@ -66,7 +66,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "items": [
         {
           "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
@@ -77,7 +77,7 @@
         {
           "title": "Eric Sprott Announces Changes to His Holdings in Metalsource Mining Inc. - Investing News Network",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
-          "published": "Wed, 18 Nov 2026 13:21:29 GMT",
+          "published": "Thu, 19 Nov 2026 01:17:03 GMT",
           "source": "Investing News Network"
         },
         {
@@ -85,6 +85,12 @@
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTC1DTHFPY2t4cURqakhwOXZtLVpFVHFMM3ZGOW9YckJSNmlya3pqdW8yZGlIQ2NmMUI3VU9TODVpS3g2bV8wS01DQTJWdnF5S2Y4ZEFxNjJNY1Z0d3Zac2V6WldTYXk5TmJ3emhZcEJlV3ZFbWJsVHR1Z0V3aE1HNkktRVU5U1IzUjZ0VXR5a3g1amxMc2hhR3BMd01SVkktNmk3NC1IUzM5cjQ0UjFOdlFsUlFxUlB0ZUVCZmZVMDBSQVNOeVVyMEppNEU?oc=5",
           "published": "Wed, 18 Nov 2026 18:09:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Mining Stock Metalsource Mining (CSE: MSM) Receives $1.38 Million from Sprott as Ownership Hits 19.9%, Proceeds Target Larger Stepouts at North Carolina Silver Hill System - Investorideas.com",
+          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOM2dNSVk0RzlrTjB6Q0hLUzNkOUZkRGpMLUFKU1ZRRWw2V240am1CU21MUm96Nl9GZnZiTDk5bTRRVnk3MnpwNHYwVVNRcERMVENlNDVCQ3FLdEo5X3drNFhHckVLN29XVUltSG43RFo4eWNuNFRyNEloUnVZTTFPSkxhNjZCVWRZUlZ0S0I2NzBuQkxlSVNYanBXT3Iyc0Rwbm1OTnNnUXBQT1R6T091T3UyYXNKZF9sN2hUNGxqUlBjWXhIV0dkWnNDR1VSdHN5bWtfOEFkSGc3M2dkRGFmRXZIS0tKZXgtQzBfelVVYnE4bFRVeVFZUEU5LUktWDUtWXNpQzFzdTBTTFFVRjBrWTN5T0hpM2FsVVZfWXhJekpWUjFyd09jd3VOWjM5cm9DVUQzMTA3V3RLNFBHandybFFNNlg?oc=5",
+          "published": "Wed, 18 Nov 2026 17:10:00 GMT",
+          "source": "Investorideas.com"
         },
         {
           "title": "SNAPS swapped a US$3.2 million loan for 12.8 million Novra shares. It now owns 29.5%. - Stock Titan",
