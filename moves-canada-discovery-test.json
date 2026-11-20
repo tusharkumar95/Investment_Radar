@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-20T02:28:42.718567+00:00",
+  "testedAt": "2026-11-20T10:15:54.149861+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -26,16 +26,16 @@
           "source": "TradingView"
         },
         {
-          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
-          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
-          "source": "TradingView"
-        },
-        {
           "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
           "published": "Wed, 18 Nov 2026 18:32:20 GMT",
           "source": "The Globe and Mail"
+        },
+        {
+          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "source": "TradingView"
         },
         {
           "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
