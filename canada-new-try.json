@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-19T23:28:33.702107+00:00",
+  "updated": "2026-11-20T03:48:26.909000+00:00",
   "day": "2026-11-19",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 42,
+      "candidateArticles": 41,
       "status": "Verified transactions found"
     },
     {
@@ -1901,17 +1901,6 @@
       "summary": ""
     },
     {
-      "id": "lead:dbf8627cf87f89b931",
-      "title": "Oct 15, 2026, 07:00 ET \n                        TERRAVEST ANNOUNCES AUTOMATIC PURCHASE PLAN FOR COMMON SHARES\n                       \n                       TerraVest Industries Inc. (\"TerraVest\" or the \"Corporation\") (TSX: TVK) announced today that, in connec",
-      "date": "2026-10-15",
-      "url": "https://www.newswire.ca/news-releases/terravest-announces-automatic-purchase-plan-for-common-shares-803308264.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:6ed44d7b8b153fb03b",
       "title": "14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for healthcare profe",
       "date": null,
@@ -1943,7 +1932,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 5,
       "relevant": 5
     },
     {
@@ -2004,13 +1993,13 @@
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 8
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 29
+      "relevant": 28
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -2052,7 +2041,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 80,
+    "disclosureLeads": 79,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
