@@ -1,23 +1,17 @@
 {
-  "testedAt": "2026-11-19T22:24:05.138245+00:00",
+  "testedAt": "2026-11-20T02:28:42.718567+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 8,
+      "count": 7,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
           "published": "Tue, 17 Nov 2026 22:42:13 GMT",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": "Kopernik Global Investors, LLC Files Early Warning Report in Respect of Northern Dynasty Minerals Ltd. - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZUNUbDFsTlBVS29MdWpFQUJUMFNOZUFxX2JpcHJJX2x1M1EyNzdhb0lYYzNydmZHaTRlLU1MdU83Q3FkVWJmVllKaGIyVDh3STFTY1ZITlc4cHBWOXZaZGhqcVFKWHljQklpSTE3d3N0Z1UzZkw1UUx5cnhuMVdjbU5iRkFfRTBEcWUyaA?oc=5",
-          "published": "Fri, 13 Nov 2026 00:16:00 GMT",
-          "source": "Yahoo! Finance Canada"
         },
         {
           "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
@@ -70,7 +64,7 @@
       "items": [
         {
           "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUZiczBRSU90WThnbnRFOEh4QlJoZWIyLUFrY2FrRHZ5RTVJRzlDZFJfOUVCN0ZZc19yYndiZ0RURlByZ1B6R0dUa0wxSEtIREVzYUxnblo4T2hSSXRVamVwcmtaQUlqODRueW83OVVNalVQRjRnLWNidTRvdElmdF8zNDBXQkhVNHc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
           "published": "Mon, 16 Nov 2026 13:00:00 GMT",
           "source": "Yahoo! Finance Canada"
         },
