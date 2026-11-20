@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T03:48:18.890303+00:00",
+  "updated": "2026-11-20T20:56:24.156639+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:6ed44d7b8b153fb03b",
+      "title": "Nov 19, 2026, 14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for he",
+      "date": "2026-11-19",
+      "url": "https://www.newswire.ca/news-releases/kda-group-announces-closing-of-private-placement-829092516.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:9ef0efa1977931cfb2",
       "title": "Nov 18, 2026, 19:39 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to i",
@@ -862,10 +873,10 @@
       "summary": ""
     },
     {
-      "id": "lead:6ed44d7b8b153fb03b",
-      "title": "14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for healthcare profe",
+      "id": "lead:7a9337de08c336dd05",
+      "title": "06:49 ET \n                        Euromax Announces Closing of Non-Brokered Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today that, further to its news release dat",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/kda-group-announces-closing-of-private-placement-829092516.html",
+      "url": "https://www.newswire.ca/news-releases/euromax-announces-closing-of-non-brokered-private-placement-810584131.html",
       "discoveredVia": "Canada NewsWire / Private placements",
       "type": "Possible capital investment — review source",
       "reviewStatus": "Needs source verification",
@@ -893,7 +904,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
+      "items": 7,
       "relevant": 5
     },
     {
@@ -941,26 +952,26 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
-      "relevant": 1
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 1,
-      "relevant": 1
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 7
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 28
+      "relevant": 29
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -981,9 +992,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 79,
+    "leadCount": 80,
     "usFilingCount": 0,
-    "needsReview": 79
+    "needsReview": 80
   },
   "officialSources": [
     {

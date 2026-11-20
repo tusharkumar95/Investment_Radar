@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-20T03:48:26.909000+00:00",
-  "day": "2026-11-19",
+  "updated": "2026-11-20T20:56:32.899929+00:00",
+  "day": "2026-11-20",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.88,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -28.01,
+      "lastPrice": 3.58,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -33.58,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.11,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -22.44,
+      "lastPrice": 2.985,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -25.56,
       "quoteStatus": "Available"
     },
     {
@@ -534,7 +534,7 @@
         }
       ],
       "lastPrice": 4.2,
-      "lastPriceDate": "2026-11-19",
+      "lastPriceDate": "2026-11-20",
       "priceChangePct": -6.87,
       "quoteStatus": "Available"
     },
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.01,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -88.89,
+      "lastPrice": 0.005,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -94.44,
       "quoteStatus": "Available"
     },
     {
@@ -665,9 +665,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.045,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -10.0,
+      "lastPrice": 0.04,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
     {
@@ -709,9 +709,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.045,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -10.0,
+      "lastPrice": 0.04,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
     {
@@ -753,9 +753,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.7,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -37.5,
+      "lastPrice": 0.55,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -50.89,
       "quoteStatus": "Available"
     },
     {
@@ -797,9 +797,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.045,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -10.0,
+      "lastPrice": 0.04,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
     {
@@ -841,9 +841,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.045,
-      "lastPriceDate": "2026-11-19",
-      "priceChangePct": -10.0,
+      "lastPrice": 0.04,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 41,
+      "candidateArticles": 42,
       "status": "Verified transactions found"
     },
     {
@@ -1042,6 +1042,17 @@
     }
   ],
   "leads": [
+    {
+      "id": "lead:6ed44d7b8b153fb03b",
+      "title": "Nov 19, 2026, 14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for he",
+      "date": "2026-11-19",
+      "url": "https://www.newswire.ca/news-releases/kda-group-announces-closing-of-private-placement-829092516.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:9ef0efa1977931cfb2",
       "title": "Nov 18, 2026, 19:39 ET \n                          DEFINITY FINANCIAL CORPORATION ANNOUNCES $500 MILLION PRIVATE PLACEMENT OF NOTES\n                         \n                         Definity Financial Corporation (TSX: DFY) announced today that it intends to i",
@@ -1901,10 +1912,10 @@
       "summary": ""
     },
     {
-      "id": "lead:6ed44d7b8b153fb03b",
-      "title": "14:00 ET \n                          KDA GROUP ANNOUNCES CLOSING OF PRIVATE PLACEMENT\n                         \n                         KDA Group Inc. (TSXV: KDA) (\"KDA\" or the \"Corporation\"), a leader in innovative technological solutions for healthcare profe",
+      "id": "lead:7a9337de08c336dd05",
+      "title": "06:49 ET \n                        Euromax Announces Closing of Non-Brokered Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today that, further to its news release dat",
       "date": null,
-      "url": "https://www.newswire.ca/news-releases/kda-group-announces-closing-of-private-placement-829092516.html",
+      "url": "https://www.newswire.ca/news-releases/euromax-announces-closing-of-non-brokered-private-placement-810584131.html",
       "discoveredVia": "Canada NewsWire / Private placements",
       "type": "Possible capital investment — review source",
       "reviewStatus": "Needs source verification",
@@ -1932,7 +1943,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
+      "items": 7,
       "relevant": 5
     },
     {
@@ -1980,26 +1991,26 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 2,
-      "relevant": 1
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
       "ok": true,
-      "items": 1,
-      "relevant": 1
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 7
+      "relevant": 6
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 28
+      "relevant": 29
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -2041,7 +2052,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 79,
+    "disclosureLeads": 80,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
