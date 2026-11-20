@@ -2,6 +2,46 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-20:India:VALUE360",
+      "day": "2026-11-20",
+      "market": "India",
+      "symbol": "VALUE360",
+      "company": "Value 360 Communication L",
+      "buyers": 2,
+      "investors": [
+        "3 SIGMA GLOBAL FUND",
+        "PRAFULL RAI"
+      ],
+      "value": 17620224.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 87.915,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-20T20:35:58.975902+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-20:India:GALLANTT",
+      "day": "2026-11-20",
+      "market": "India",
+      "symbol": "GALLANTT",
+      "company": "Gallantt Ispat Limited",
+      "buyers": 2,
+      "investors": [
+        "SHREE SURABHI FLOUR MILLS PRIVATE LIMITED",
+        "SURYALAXMI INFRACON PRIVATE LIMITED"
+      ],
+      "value": 843677727.72,
+      "currency": "INR",
+      "disclosedAvgPrice": 523.705,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-20T20:35:58.975902+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-18:India:VINEETLAB",
       "day": "2026-11-18",
       "market": "India",
@@ -1342,9 +1382,12 @@
       "2026-11-18": 38.39,
       "2026-11-19": 38.55,
       "2026-11-20": 40.06
+    },
+    "India:GALLANTT": {
+      "2026-11-20": 538.1
     }
   },
-  "updatedAt": "2026-11-20T10:15:55.914670+00:00",
+  "updatedAt": "2026-11-20T20:35:58.975902+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -1374,9 +1417,10 @@
     "India:GROWW": "GROWW.NS",
     "India:HAPPYFORGE": "HAPPYFORGE.NS",
     "India:AZAD": "AZAD.NS",
-    "India:VINEETLAB": "VINEETLAB.NS"
+    "India:VINEETLAB": "VINEETLAB.NS",
+    "India:GALLANTT": "GALLANTT.NS"
   },
-  "quotesUpdatedAt": "2026-11-20T10:16:03.196345+00:00",
+  "quotesUpdatedAt": "2026-11-20T20:36:15.891469+00:00",
   "quoteFailures": [
     "India:ENCOMPAS",
     "India:EVENTIONS",
@@ -1386,6 +1430,7 @@
     "India:LAMOSAIC",
     "India:MAXENGS",
     "India:RKFAL",
+    "India:VALUE360",
     "India:VPFL"
   ],
   "quoteSource": "Yahoo Finance via yfinance; unadjusted daily closes, possibly delayed"
