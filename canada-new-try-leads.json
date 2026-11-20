@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T20:56:24.156639+00:00",
+  "updated": "2026-11-20T23:01:35.104784+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -909,15 +909,13 @@
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
@@ -928,7 +926,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 4,
+      "items": 5,
       "relevant": 0
     },
     {
@@ -939,15 +937,13 @@
     },
     {
       "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
-      "ok": true,
-      "items": 3,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
@@ -991,7 +987,7 @@
   ],
   "status": {
     "sources": 18,
-    "available": 12,
+    "available": 8,
     "leadCount": 80,
     "usFilingCount": 0,
     "needsReview": 80

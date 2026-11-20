@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-20T20:56:32.899929+00:00",
+  "updated": "2026-11-20T23:01:43.745039+00:00",
   "day": "2026-11-20",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.58,
+      "lastPrice": 3.57,
       "lastPriceDate": "2026-11-20",
-      "priceChangePct": -33.58,
+      "priceChangePct": -33.77,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 2.985,
+      "lastPrice": 2.98,
       "lastPriceDate": "2026-11-20",
-      "priceChangePct": -25.56,
+      "priceChangePct": -25.69,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.2,
+      "lastPrice": 4.23,
       "lastPriceDate": "2026-11-20",
-      "priceChangePct": -6.87,
+      "priceChangePct": -6.21,
       "quoteStatus": "Available"
     },
     {
@@ -1948,15 +1948,13 @@
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
@@ -1967,7 +1965,7 @@
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 4,
+      "items": 5,
       "relevant": 0
     },
     {
@@ -1978,15 +1976,13 @@
     },
     {
       "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
-      "ok": true,
-      "items": 3,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
@@ -2054,7 +2050,7 @@
     "quoteErrors": [],
     "disclosureLeads": 80,
     "usFilingNotices": 0,
-    "sourcesOnline": 12,
+    "sourcesOnline": 8,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
