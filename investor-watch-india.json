@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-19T19:38:19.651637+00:00",
+  "updated": "2026-11-20T11:24:17.023016+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-18",
-    "trades": 915,
-    "investors": 546
+    "latest": "2026-11-19",
+    "trades": 947,
+    "investors": 562
   },
   "featured": [
     {
@@ -1061,6 +1061,72 @@
     }
   ],
   "discovered": [
+    {
+      "id": "investor:ea3321c390032ed6",
+      "name": "FIH MAURITIUS INVESTMENTS LTD",
+      "type": "Named investor / company",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 3080.0,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 3080.0,
+      "latestDisclosure": "2026-11-19",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-19",
+          "name": "FIH MAURITIUS INVESTMENTS LTD",
+          "symbol": "IIFLCAPS",
+          "company": "IIFL CAPITAL SERVICES LTD",
+          "buyQty": 44000000,
+          "sellQty": 0,
+          "buyValueINR": 15400000000.0,
+          "sellValueINR": 0,
+          "netShares": 44000000,
+          "netValueINR": 15400000000.0,
+          "avgBuyPrice": 350.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "4a5902007b82f0378b"
+        },
+        {
+          "date": "2026-11-19",
+          "name": "FIH MAURITIUS INVESTMENTS LTD",
+          "symbol": "IIFLCAPS",
+          "company": "IIFL CAPITAL SERVICES LTD",
+          "buyQty": 44000000,
+          "sellQty": 0,
+          "buyValueINR": 15400000000.0,
+          "sellValueINR": 0,
+          "netShares": 44000000,
+          "netValueINR": 15400000000.0,
+          "avgBuyPrice": 350.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "6db1b780aa1b9b553a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "IIFLCAPS",
+          "company": "IIFL CAPITAL SERVICES LTD",
+          "buyValueCr": 3080.0,
+          "sellValueCr": 0.0,
+          "netShares": 88000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
     {
       "id": "investor:fdba9827590e864d",
       "name": "SOCIETE GENERALE",
@@ -5423,56 +5489,6 @@
           "buyValueCr": 52.56,
           "sellValueCr": 0.0,
           "netShares": 2399973,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:83653c83131cd478",
-      "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 50.37,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 50.37,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 2300000,
-          "sellQty": 0,
-          "buyValueINR": 503700000.0,
-          "sellValueINR": 0,
-          "netShares": 2300000,
-          "netValueINR": 503700000.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "557e7bb2e4578e7a54"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 50.37,
-          "sellValueCr": 0.0,
-          "netShares": 2300000,
           "buyDays": 1,
           "sellDays": 0
         }
