@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T23:01:35.104784+00:00",
+  "updated": "2026-11-21T03:39:49.797126+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -851,28 +851,6 @@
       "summary": ""
     },
     {
-      "id": "lead:eea9472d1d79aa0c0c",
-      "title": "Oct 16, 2026, 18:00 ET \n                          DEFENSE METALS ANNOUNCES FIRST TRANCHE CLOSING OF PRIVATE PLACEMENT FOR GROSS PROCEEDS OF C$3.65 MILLION\n                         \n                         Defense Metals Corp. (TSXV: DEFN) (OTCQB: DFMTF) (\"Def",
-      "date": "2026-10-16",
-      "url": "https://www.newswire.ca/news-releases/defense-metals-announces-first-tranche-closing-of-private-placement-for-gross-proceeds-of-c-3-65-million-806309341.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:820dda76afecb824a2",
-      "title": "Oct 16, 2026, 02:00 ET \n                        NIPPON EXPRESS HOLDINGS Acquires All Shares of Metro Supply Chain Group\n                       \n                       NIPPON EXPRESS HOLDINGS, INC. (\"NX Group\") acquired all shares of Metro Supply Chain Group In",
-      "date": "2026-10-16",
-      "url": "https://www.newswire.ca/news-releases/nippon-express-holdings-acquires-all-shares-of-metro-supply-chain-group-801766805.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:7a9337de08c336dd05",
       "title": "06:49 ET \n                        Euromax Announces Closing of Non-Brokered Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today that, further to its news release dat",
       "date": null,
@@ -909,13 +887,15 @@
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"share acquisition\" \"acquiror\" site:newsfilecorp.com wh",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
@@ -937,13 +917,15 @@
     },
     {
       "name": "News search: \"Fairfax\" \"acquires shares\" \"TSX\" when:30d",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"Altius\" \"acquired shares\" when:30d",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 2,
+      "relevant": 0
     },
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
@@ -967,7 +949,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 29
+      "relevant": 28
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -987,10 +969,10 @@
   ],
   "status": {
     "sources": 18,
-    "available": 8,
-    "leadCount": 80,
+    "available": 12,
+    "leadCount": 78,
     "usFilingCount": 0,
-    "needsReview": 80
+    "needsReview": 78
   },
   "officialSources": [
     {
