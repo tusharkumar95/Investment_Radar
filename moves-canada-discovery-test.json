@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-21T02:39:58.240782+00:00",
+  "testedAt": "2026-11-21T10:00:54.563405+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
@@ -24,6 +24,12 @@
           "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOU0lqdk1mTWREZkVzU0l1VHBFTW1LN3d0SkY4SG55R0xuWHNzYjdtVjZQM2x4ekJkOHljN2tNLW9VN0V1VnA2NXNiaHpaRzFNVXlINVF5TlN2cEVGMll4Qk5ValZGYXR0c0dqMENBVjllMEFLR0VkUmhfZzBaVV9VN054SHJ5OHBCZVBKaC1IOV9fd3Fqb1pRWWg2S192NWRQTDQ4RkpaeVdHWTNydjlsUmQxT3lON0tTSHhkRVdyaEp3MzR1aHU0VnpGcTFHTGVqS0prdHhDVjNfeW51TW1vbnZFVjRhMjd6d0ltRU5XZW5pdTNFMXpfMS02NldoYTkteXN5ZWhWcjBpNHp1YlV4Z29R?oc=5",
           "published": "Sat, 21 Nov 2026 00:30:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "Press Release - Mining.com",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZTWRROGNmUG9YeS1qdXJ6ekI2d25iZ3hUWTUwZ3pJWkhGLW9ZdjFqdmNhbVRxT1hvM2ZaRlN4WGRIWDkyZkhXYjY5SDBfVVdTX0JKaUx3c09QenZielhzelFLVVZRbjEyYUpSUmsxVS1SZw?oc=5",
+          "published": "Tue, 17 Nov 2026 18:35:22 GMT",
+          "source": "Mining.com"
         },
         {
           "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
@@ -60,7 +66,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -97,12 +103,6 @@
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
           "published": "Thu, 19 Nov 2026 01:17:03 GMT",
           "source": "Investing News Network"
-        },
-        {
-          "title": "SNAPS swapped a US$3.2 million loan for 12.8 million Novra shares. It now owns 29.5%. - Stock Titan",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN2dtNlJEeEcwQXVwNWhlMWdKVFA3ZDI3eXlHc0U2eExWa2JDUGlaWmRJaV9hS3hhOTZKanlpS0MwUDE2aXF0ZmVQRTlPR0U2SnkzejRzT2xjTkxGQ3Vadm51M1JucjdvM0F2Z1U3ZFZib2w0dVdyMTIzNFZoOTl3bEpsMElORzYtNzN5SWVFdUo4cU9GdHEtd0d6TkYxWDlhWTdic1VPRnNIMm9MVmRISkFnWUMtRDNYaFFuclB0OUJYdw?oc=5",
-          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
-          "source": "Stock Titan"
         }
       ]
     }
