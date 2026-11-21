@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-20T21:55:54.346186+00:00",
+  "testedAt": "2026-11-21T02:39:58.240782+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 5,
+      "count": 7,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
@@ -14,15 +14,21 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPa3V2YXJrR0lqdEtZaXZCcWlFYjg3T2VyUHlCcV9CSnZNbGh1NTUyX2RyckFBRkNaT0NoVVItUU9uVVZRV3hCWHBKa2xjbDlXaUJacU91MFliRG5zNHhlX2hIR0NPQlRQaEowQjlTb2tMMHF0TWktTlp6OFlZZW5FWEtwUUJPVHVnVTFV?oc=5",
-          "published": "Mon, 16 Nov 2026 23:32:00 GMT",
-          "source": "Yahoo! Finance Canada"
+          "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc?oc=5",
+          "published": "Tue, 17 Nov 2026 02:50:42 GMT",
+          "source": "Investing News Network"
         },
         {
-          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
-          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOU0lqdk1mTWREZkVzU0l1VHBFTW1LN3d0SkY4SG55R0xuWHNzYjdtVjZQM2x4ekJkOHljN2tNLW9VN0V1VnA2NXNiaHpaRzFNVXlINVF5TlN2cEVGMll4Qk5ValZGYXR0c0dqMENBVjllMEFLR0VkUmhfZzBaVV9VN054SHJ5OHBCZVBKaC1IOV9fd3Fqb1pRWWg2S192NWRQTDQ4RkpaeVdHWTNydjlsUmQxT3lON0tTSHhkRVdyaEp3MzR1aHU0VnpGcTFHTGVqS0prdHhDVjNfeW51TW1vbnZFVjRhMjd6d0ltRU5XZW5pdTNFMXpfMS02NldoYTkteXN5ZWhWcjBpNHp1YlV4Z29R?oc=5",
+          "published": "Sat, 21 Nov 2026 00:30:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdUFDMlNtTXpFTllXR085QTFmdDZpOHh5YU11ZEhqOWpFOUxPdVN6TzhFTXlfZDgyOGFZMzBuM21DRG82Y2hsbno3RFBENEFLTERYQU9IWlN1bUU0N25JWnBZVGlOR1hDR1Z4UmlUc19mS24wcTJsU0hkeVhRZEplaW9FQUFrbG1QcHlDMzB6R2lKeUlfbkZEdXVmSDVUbVZYMUdpaV9PLS1XX0FBdlNhVVBZYXJnbHFUU3U1T29UTXFBZms?oc=5",
+          "published": "Mon, 16 Nov 2026 23:32:00 GMT",
           "source": "TradingView"
         },
         {
@@ -30,6 +36,12 @@
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
           "published": "Wed, 18 Nov 2026 18:32:20 GMT",
           "source": "The Globe and Mail"
+        },
+        {
+          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "source": "TradingView"
         },
         {
           "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
@@ -48,8 +60,14 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "items": [
+        {
+          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
+          "published": "Sat, 21 Nov 2026 01:38:59 GMT",
+          "source": "Investing News Network"
+        },
         {
           "title": "ALPAYANA S.A.C. ACQUIRES COMMON SHARES OF GALANTAS GOLD CORPORATION - Yahoo! Finance Canada",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcVp5OURyMW9xVXlsOWlSR01pNXZpSV9oSXR3cGcwa0NCYktwVWhFOWNud2l1OWNLRk9qQ0Z1b2F5X2hqX0tSSm51TnI5Q05hVTd5ZGRLZlpDZS1iVGRXdXk4dERlcDNKN08wSkNvQXJLRXEwVkoyX3MwUEFGYzdNRldxQkVwSFRnZ2c?oc=5",
@@ -57,10 +75,10 @@
           "source": "Yahoo! Finance Canada"
         },
         {
-          "title": "Eric Sprott Announces Changes to His Holdings in Metalsource Mining Inc. - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
-          "published": "Thu, 19 Nov 2026 01:17:03 GMT",
-          "source": "Investing News Network"
+          "title": "avenir announces additional investment in grid metals corp. - Fidelity Investments",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWJlT0hsR3R3ejRVd2F3RWI3ejkxQjM3cDQyWDhmaGgxSUtNVnFWRWk2WlUtcjFWUllBcXRMU1NHZGt6QmdzRm1KbnRKLVpLMVFlZ2ppenZtclY0UExyeDNGX0pCN1pfRE1VZFI3LW92VnpsSkgtZGJtMGNDOGZGdHRfckZIMkExYkdLRnZSd3NuNk1zaFZhTnI3bnQyYzNT?oc=5",
+          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
+          "source": "Fidelity Investments"
         },
         {
           "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
@@ -75,16 +93,16 @@
           "source": "Investorideas.com"
         },
         {
+          "title": "Eric Sprott Announces Changes to His Holdings in Metalsource Mining Inc. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
+          "published": "Thu, 19 Nov 2026 01:17:03 GMT",
+          "source": "Investing News Network"
+        },
+        {
           "title": "SNAPS swapped a US$3.2 million loan for 12.8 million Novra shares. It now owns 29.5%. - Stock Titan",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN2dtNlJEeEcwQXVwNWhlMWdKVFA3ZDI3eXlHc0U2eExWa2JDUGlaWmRJaV9hS3hhOTZKanlpS0MwUDE2aXF0ZmVQRTlPR0U2SnkzejRzT2xjTkxGQ3Vadm51M1JucjdvM0F2Z1U3ZFZib2w0dVdyMTIzNFZoOTl3bEpsMElORzYtNzN5SWVFdUo4cU9GdHEtd0d6TkYxWDlhWTdic1VPRnNIMm9MVmRISkFnWUMtRDNYaFFuclB0OUJYdw?oc=5",
           "published": "Wed, 18 Nov 2026 18:54:00 GMT",
           "source": "Stock Titan"
-        },
-        {
-          "title": "Latin Explore Announces Closing of Upsized Non-Brokered Private Placement for Gross Proceeds of $2.3 Million - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZHJMOXg2TlY0R3F3VXZZQlFKOGo4SHR5WFFMcDZya0EyQ0ZmSWswQlRFbmJwQ2ZUMU5NVzB5X3BLQnhtOE5WVXlnSVRORUtoX1dnSnRWSlA2elJzNFBNWVF4RWk0eUFMb1NfQ08wXzBGX2RkbHIyOHRJMmRzM25hTlByU2tlTmM1czNKbnpXdjBUUzBvUWpmMnRmZ01XWmdYMFNYQzNXZm5HTGk3V0o1UThZbnpxd1F5R0Q1U0dkSU92cEhucWVXMGMtYmR5bk02V1RTY3FiaURVQlpJRHpQMDRXb2VsQzhSOU1YXzVBaEdqQldlb1ZrdGR1WmE5d28?oc=5",
-          "published": "Mon, 16 Nov 2026 10:00:00 GMT",
-          "source": "TradingView"
         }
       ]
     }

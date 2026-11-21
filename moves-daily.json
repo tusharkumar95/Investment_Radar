@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T21:55:56.962403+00:00",
+  "updated": "2026-11-21T02:39:59.709411+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-20",
@@ -6913,6 +6913,14 @@
           "source": "The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
           "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-17:2",
+          "day": "2026-11-17",
+          "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
+          "source": "Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc?oc=5",
+          "verification": "Unverified — open original filing before acting"
         }
       ],
       "alerts": [
@@ -7981,16 +7989,7 @@
       ],
       "canada": [],
       "canadaReported": [],
-      "canadaLeads": [
-        {
-          "id": "lead:2026-11-16:2",
-          "day": "2026-11-16",
-          "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Yahoo! Finance Canada",
-          "source": "Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPa3V2YXJrR0lqdEtZaXZCcWlFYjg3T2VyUHlCcV9CSnZNbGh1NTUyX2RyckFBRkNaT0NoVVItUU9uVVZRV3hCWHBKa2xjbDlXaUJacU91MFliRG5zNHhlX2hIR0NPQlRQaEowQjlTb2tMMHF0TWktTlp6OFlZZW5FWEtwUUJPVHVnVTFV?oc=5",
-          "verification": "Unverified — open original filing before acting"
-        }
-      ],
+      "canadaLeads": [],
       "alerts": [
         {
           "id": "2026-11-16:India:STYLEBAAZA",
@@ -10387,10 +10386,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-20T21:55:55.714Z"
+      "asOf": "2026-11-21T02:39:58.939Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-20T21:55:54.346773+00:00",
+    "canadaDiscoveryUpdated": "2026-11-21T02:39:58.241741+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }
