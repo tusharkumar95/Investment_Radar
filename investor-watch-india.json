@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T19:12:04.285398+00:00",
+  "updated": "2026-11-21T10:53:40.466183+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-19",
-    "trades": 947,
-    "investors": 562
+    "latest": "2026-11-20",
+    "trades": 973,
+    "investors": 574
   },
   "featured": [
     {
@@ -1463,18 +1463,34 @@
       "id": "investor:dd10dd67e238433a",
       "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
       "type": "Named investor / company",
-      "observedTransactions": 5,
-      "observedBuyDays": 3,
+      "observedTransactions": 6,
+      "observedBuyDays": 4,
       "observedSellDays": 0,
-      "buyValueCr": 958.77,
+      "buyValueCr": 1014.38,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 958.77,
-      "latestDisclosure": "2026-11-17",
+      "netDisclosedValueCr": 1014.38,
+      "latestDisclosure": "2026-11-20",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [
         "GALLANTT"
       ],
       "tradeRecords": [
+        {
+          "date": "2026-11-20",
+          "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 1060292,
+          "sellQty": 0,
+          "buyValueINR": 556027727.72,
+          "sellValueINR": 0,
+          "netShares": 1060292,
+          "netValueINR": 556027727.72,
+          "avgBuyPrice": 524.41,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "56ce0fbef724328ca6"
+        },
         {
           "date": "2026-11-17",
           "name": "SURYALAXMI INFRACON PRIVATE LIMITED",
@@ -1560,10 +1576,10 @@
         {
           "symbol": "GALLANTT",
           "company": "Gallantt Ispat Limited",
-          "buyValueCr": 958.77,
+          "buyValueCr": 1014.38,
           "sellValueCr": 0.0,
-          "netShares": 18303950,
-          "buyDays": 3,
+          "netShares": 19364242,
+          "buyDays": 4,
           "sellDays": 0
         }
       ],
