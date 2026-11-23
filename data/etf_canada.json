@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-11-20T20:25:14.551394+00:00",
+  "updatedAt": "2026-11-23T23:57:21.172904+00:00",
   "count": 28,
   "etfs": [
     {
@@ -9,12 +9,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 53.33,
+      "price": 54.5,
       "aum": 36402282496.0,
       "expenseRatio": null,
       "yield": 1.9800000000000002,
-      "threeYearReturn": 22.8204,
-      "fiveYearReturn": 12.936069999999999,
+      "threeYearReturn": 21.09155,
+      "fiveYearReturn": 12.1538095,
       "beta3Y": 1.0,
       "inception": 982281600,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -123,12 +123,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 176.91,
+      "price": 184.72,
       "aum": 35908136960.0,
       "expenseRatio": null,
       "yield": 0.86,
-      "threeYearReturn": 20.416790000000002,
-      "fiveYearReturn": 13.34758,
+      "threeYearReturn": 17.90651,
+      "fiveYearReturn": 12.05713,
       "beta3Y": 1.0,
       "inception": 1351814400,
       "issuer": "Vanguard Investments Canada Inc",
@@ -192,12 +192,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 48.39,
+      "price": 49.77,
       "aum": 24192679936.0,
       "expenseRatio": null,
       "yield": 2.3800000000000003,
-      "threeYearReturn": 16.92902,
-      "fiveYearReturn": 9.9619396,
+      "threeYearReturn": 15.207799999999999,
+      "fiveYearReturn": 9.16188,
       "beta3Y": 1.0,
       "inception": 1365552000,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -306,12 +306,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 50.49,
+      "price": 51.6,
       "aum": 23204638720.0,
       "expenseRatio": null,
       "yield": 2.11,
-      "threeYearReturn": 22.390729,
-      "fiveYearReturn": 12.752279999999999,
+      "threeYearReturn": 20.776291,
+      "fiveYearReturn": 12.000129,
       "beta3Y": 0.95,
       "inception": 938476800,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -416,111 +416,111 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 44.68,
+      "price": 45.72,
       "aum": 18643988480.0,
       "expenseRatio": null,
       "yield": 2.02,
-      "threeYearReturn": 22.819571,
-      "fiveYearReturn": 12.95539,
+      "threeYearReturn": 21.05281,
+      "fiveYearReturn": 12.14413,
       "beta3Y": 1.0,
       "inception": 1243555200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
           "symbol": "RY",
-          "weight": 7.6161900000000005,
+          "weight": 7.6799995999999995,
           "ticker": "Royal Bank of Canada"
         },
         {
-          "symbol": "SHOP",
-          "weight": 5.73397,
-          "ticker": "Shopify Inc."
-        },
-        {
           "symbol": "TD",
-          "weight": 5.57878,
+          "weight": 5.64175,
           "ticker": "The Toronto-Dominion Bank"
         },
         {
+          "symbol": "SHOP",
+          "weight": 5.61348,
+          "ticker": "Shopify Inc."
+        },
+        {
           "symbol": "BMO.TO",
-          "weight": 3.24741,
+          "weight": 3.26251,
           "ticker": "Bank of Montreal"
         },
         {
-          "symbol": "BNS.TO",
-          "weight": 3.1148,
-          "ticker": "The Bank of Nova Scotia"
-        },
-        {
           "symbol": "CNQ.TO",
-          "weight": 3.03903,
+          "weight": 3.12185,
           "ticker": "Canadian Natural Resources Limited"
         },
         {
+          "symbol": "BNS.TO",
+          "weight": 3.1159699,
+          "ticker": "The Bank of Nova Scotia"
+        },
+        {
           "symbol": "ENB.TO",
-          "weight": 2.89852,
+          "weight": 2.9393699,
           "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CM.TO",
-          "weight": 2.84802,
+          "weight": 2.8593800999999996,
           "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
-          "symbol": "AEM.TO",
-          "weight": 2.58128,
-          "ticker": "Agnico Eagle Mines Limited"
+          "symbol": "SU.TO",
+          "weight": 2.552,
+          "ticker": "Suncor Energy Inc."
         },
         {
-          "symbol": "SU.TO",
-          "weight": 2.5072802000000003,
-          "ticker": "Suncor Energy Inc."
+          "symbol": "AEM.TO",
+          "weight": 2.42326,
+          "ticker": "Agnico Eagle Mines Limited"
         }
       ],
       "sectors": [
         {
           "sector": "Financial Services",
-          "weight": 34.31
+          "weight": 34.54
         },
         {
           "sector": "Energy",
-          "weight": 17.32
+          "weight": 17.54
         },
         {
           "sector": "Basic Materials",
-          "weight": 16.98
+          "weight": 16.04
         },
         {
           "sector": "Industrials",
-          "weight": 9.86
+          "weight": 10.19
         },
         {
           "sector": "Technology",
-          "weight": 9.18
+          "weight": 9.04
         },
         {
           "sector": "Consumer Cyclical",
-          "weight": 3.52
+          "weight": 3.59
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 2.99
+          "weight": 3.05
         },
         {
           "sector": "Utilities",
-          "weight": 2.91
+          "weight": 2.99
         },
         {
           "sector": "Communication Services",
-          "weight": 1.42
+          "weight": 1.48
         },
         {
           "sector": "Real Estate",
-          "weight": 1.32
+          "weight": 1.36
         },
         {
           "sector": "Healthcare",
-          "weight": 0.17
+          "weight": 0.18
         }
       ]
     },
@@ -530,12 +530,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 67.7,
+      "price": 69.29,
       "aum": 18028640256.0,
       "expenseRatio": null,
       "yield": 2.0299999,
-      "threeYearReturn": 22.72859,
-      "fiveYearReturn": 13.059829,
+      "threeYearReturn": 20.912239,
+      "fiveYearReturn": 12.21683,
       "beta3Y": 0.99,
       "inception": 1375401600,
       "issuer": "Vanguard Investments Canada Inc",
@@ -644,12 +644,12 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 13.555,
+      "price": 13.56,
       "aum": 13241412608.0,
       "expenseRatio": null,
       "yield": 3.45,
-      "threeYearReturn": 4.1354500000000005,
-      "fiveYearReturn": 0.76242,
+      "threeYearReturn": 4.1335903,
+      "fiveYearReturn": 0.76993,
       "beta3Y": 1.0,
       "inception": 1263859200,
       "issuer": "BMO Asset Management Inc",
@@ -693,12 +693,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 45.36,
+      "price": 46.93,
       "aum": 11423739904.0,
       "expenseRatio": null,
       "yield": 2.2800000000000002,
-      "threeYearReturn": 17.968291,
-      "fiveYearReturn": 10.45974,
+      "threeYearReturn": 16.04909,
+      "fiveYearReturn": 9.55641,
       "beta3Y": 1.15,
       "inception": 1448928000,
       "issuer": "Vanguard Investments Canada Inc",
@@ -807,12 +807,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 27.68,
+      "price": 27.72,
       "aum": 10954761216.0,
       "expenseRatio": null,
       "yield": 3.52,
-      "threeYearReturn": 4.0848700000000004,
-      "fiveYearReturn": 0.74483003,
+      "threeYearReturn": 4.1844399999999995,
+      "fiveYearReturn": 0.76779,
       "beta3Y": 1.0,
       "inception": 974678400,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -856,12 +856,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 73.37,
+      "price": 74.05,
       "aum": 9454489600.0,
       "expenseRatio": null,
       "yield": 2.9899999999999998,
-      "threeYearReturn": 27.542137999999998,
-      "fiveYearReturn": 16.866880000000002,
+      "threeYearReturn": 26.38819,
+      "fiveYearReturn": 16.40823,
       "beta3Y": 0.77,
       "inception": 1351814400,
       "issuer": "Vanguard Investments Canada Inc",
@@ -966,12 +966,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 22.57,
+      "price": 22.605,
       "aum": 7772672000.0,
       "expenseRatio": null,
       "yield": 3.4299999999999997,
-      "threeYearReturn": 3.9617,
-      "fiveYearReturn": 0.65637,
+      "threeYearReturn": 4.02161,
+      "fiveYearReturn": 0.6904399999999999,
       "beta3Y": 1.0,
       "inception": 1322611200,
       "issuer": "Vanguard Investments Canada Inc",
@@ -1015,12 +1015,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 44.79,
+      "price": 45.13,
       "aum": 6782312960.0,
       "expenseRatio": null,
       "yield": 2.97,
-      "threeYearReturn": 27.18803,
-      "fiveYearReturn": 18.3446,
+      "threeYearReturn": 26.497801999999997,
+      "fiveYearReturn": 18.122691,
       "beta3Y": 0.56,
       "inception": 1496793600,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1109,95 +1109,95 @@
       "market": "Canada",
       "category": "BMO Investments Inc.",
       "currency": "CAD",
-      "price": 62.39,
+      "price": 62.87,
       "aum": 6080671232.0,
       "expenseRatio": null,
       "yield": 1.82,
-      "threeYearReturn": 17.907790000000002,
-      "fiveYearReturn": 11.781120000000001,
+      "threeYearReturn": 17.48282,
+      "fiveYearReturn": 11.59418,
       "beta3Y": 0.55,
       "inception": 1319155200,
       "issuer": "BMO Investments Inc.",
       "holdings": [
         {
-          "symbol": "GWO.TO",
-          "weight": 4.44802,
-          "ticker": "Great-West Lifeco Inc."
-        },
-        {
           "symbol": "FTS.TO",
-          "weight": 4.35016,
+          "weight": 4.46782,
           "ticker": "Fortis Inc."
         },
         {
+          "symbol": "GWO.TO",
+          "weight": 4.3355998,
+          "ticker": "Great-West Lifeco Inc."
+        },
+        {
           "symbol": "L.TO",
-          "weight": 4.220079999999999,
+          "weight": 4.2146303000000005,
           "ticker": "Loblaw Companies Limited"
         },
         {
           "symbol": "QBR-B.TO",
-          "weight": 3.9757800000000003,
+          "weight": 4.0218502,
           "ticker": "Quebecor Inc."
         },
         {
           "symbol": "H.TO",
-          "weight": 3.68338,
+          "weight": 3.7741102,
           "ticker": "Hydro One Limited"
         },
         {
           "symbol": "EMP-A.TO",
-          "weight": 3.61273,
+          "weight": 3.6084699999999996,
           "ticker": "Empire Company Limited"
         },
         {
-          "symbol": "MRU.TO",
-          "weight": 3.39675,
-          "ticker": "Metro Inc."
-        },
-        {
           "symbol": "EMA.TO",
-          "weight": 3.32003,
+          "weight": 3.4063301999999998,
           "ticker": "Emera Incorporated"
         },
         {
+          "symbol": "MRU.TO",
+          "weight": 3.39821,
+          "ticker": "Metro Inc."
+        },
+        {
           "symbol": "X.TO",
-          "weight": 3.28419,
+          "weight": 3.3468400000000003,
           "ticker": "TMX Group Limited"
         },
         {
           "symbol": "CCL.B",
-          "weight": 3.2697402,
+          "weight": 3.2907100000000002,
           "ticker": "CCL.B"
         }
       ],
       "sectors": [
         {
           "sector": "Financial Services",
-          "weight": 27.21
+          "weight": 26.94
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 18.16
+          "weight": 18.09
         },
         {
           "sector": "Utilities",
-          "weight": 16.44
+          "weight": 16.69
         },
         {
           "sector": "Consumer Cyclical",
-          "weight": 8.82
+          "weight": 8.86
         },
         {
           "sector": "Industrials",
-          "weight": 8.49
+          "weight": 8.82
         },
         {
           "sector": "Communication Services",
-          "weight": 8.32
+          "weight": 8.44
         },
         {
           "sector": "Basic Materials",
-          "weight": 5.61
+          "weight": 5.21
         },
         {
           "sector": "Real Estate",
@@ -1205,11 +1205,11 @@
         },
         {
           "sector": "Energy",
-          "weight": 1.78
+          "weight": 1.77
         },
         {
           "sector": "Technology",
-          "weight": 1.39
+          "weight": 1.4
         }
       ]
     },
@@ -1219,12 +1219,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 60.85,
+      "price": 64.55,
       "aum": 5694184960.0,
       "expenseRatio": null,
       "yield": 0.22999999999999998,
-      "threeYearReturn": 17.960471,
-      "fiveYearReturn": 9.15016,
+      "threeYearReturn": 14.406571000000001,
+      "fiveYearReturn": 7.273640500000001,
       "beta3Y": 1.27,
       "inception": 1304380800,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1329,12 +1329,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 39.04,
+      "price": 39.22,
       "aum": 4484783616.0,
       "expenseRatio": null,
       "yield": 3.36,
-      "threeYearReturn": 23.78092,
-      "fiveYearReturn": 14.845291,
+      "threeYearReturn": 23.176289999999998,
+      "fiveYearReturn": 14.66426,
       "beta3Y": 0.68,
       "inception": 1302566400,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1443,12 +1443,12 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 43.63,
+      "price": 46.27,
       "aum": 4399013376.0,
       "expenseRatio": null,
       "yield": 1.68,
-      "threeYearReturn": 14.15005,
-      "fiveYearReturn": 6.10014,
+      "threeYearReturn": 11.47301,
+      "fiveYearReturn": 4.8189703,
       "beta3Y": 0.65,
       "inception": 1322611200,
       "issuer": "Vanguard Investments Canada Inc",
@@ -1512,12 +1512,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 45.23,
+      "price": 45.51,
       "aum": 1249887360.0,
       "expenseRatio": null,
       "yield": 2.96,
-      "threeYearReturn": 20.534,
-      "fiveYearReturn": 11.376840000000001,
+      "threeYearReturn": 19.74054,
+      "fiveYearReturn": 11.057369999999999,
       "beta3Y": 0.72,
       "inception": 1157673600,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1626,8 +1626,8 @@
       "aum": 999011520.0,
       "expenseRatio": null,
       "yield": 4.65,
-      "threeYearReturn": 7.12459,
-      "fiveYearReturn": -0.73126,
+      "threeYearReturn": 6.80116,
+      "fiveYearReturn": -0.86741,
       "beta3Y": 0.9,
       "inception": 1034812800,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1696,12 +1696,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 60.75,
+      "price": 61.34,
       "aum": 390092288.0,
       "expenseRatio": null,
       "yield": 2.0399998999999998,
-      "threeYearReturn": 20.18195,
-      "fiveYearReturn": 13.2964,
+      "threeYearReturn": 19.183629999999997,
+      "fiveYearReturn": 12.802240000000001,
       "beta3Y": 0.68,
       "inception": 1343088000,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -1802,12 +1802,12 @@
       "market": "Canada",
       "category": "Global X Investments Canada Inc.",
       "currency": "CAD",
-      "price": 33.88,
+      "price": 35.34,
       "aum": 169273616.0,
       "expenseRatio": null,
       "yield": null,
-      "threeYearReturn": 1.52929,
-      "fiveYearReturn": 6.13702,
+      "threeYearReturn": -1.6204900000000002,
+      "fiveYearReturn": 5.2842397,
       "beta3Y": 0.0,
       "inception": 1557878400,
       "issuer": "Global X Investments Canada Inc.",
@@ -1878,12 +1878,12 @@
       "market": "Canada",
       "category": "Harvest Portfolios Group Inc.",
       "currency": "CAD",
-      "price": 7.81,
+      "price": 7.98,
       "aum": 16856156.0,
       "expenseRatio": null,
       "yield": 0.0,
-      "threeYearReturn": -2.57301,
-      "fiveYearReturn": -12.597180999999999,
+      "threeYearReturn": -5.5525098,
+      "fiveYearReturn": -14.060030000000001,
       "beta3Y": 0.89,
       "inception": 1610323200,
       "issuer": "Harvest Portfolios Group Inc.",
@@ -1959,111 +1959,111 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 109.12,
+      "price": 114.07,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.7900001,
-      "threeYearReturn": 20.39933,
-      "fiveYearReturn": 13.337679,
+      "threeYearReturn": 17.91875,
+      "fiveYearReturn": 12.04698,
       "beta3Y": 0.99,
       "inception": 1352851200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
           "symbol": "NVDA",
-          "weight": 8.039790400000001,
+          "weight": 7.77441,
           "ticker": "NVIDIA Corporation"
         },
         {
           "symbol": "AAPL",
-          "weight": 7.51396,
+          "weight": 7.727449999999999,
           "ticker": "Apple Inc."
         },
         {
           "symbol": "MSFT",
-          "weight": 5.92359,
+          "weight": 5.9309103,
           "ticker": "Microsoft Corporation"
         },
         {
           "symbol": "AMZN",
-          "weight": 3.8554699999999995,
+          "weight": 3.7036100000000003,
           "ticker": "Amazon.com, Inc."
         },
         {
           "symbol": "GOOGL",
-          "weight": 2.9384,
+          "weight": 2.86254,
           "ticker": "Alphabet Inc."
         },
         {
           "symbol": "AVGO",
-          "weight": 2.40673,
+          "weight": 2.32918,
           "ticker": "Broadcom Inc."
         },
         {
           "symbol": "GOOG",
-          "weight": 2.35566,
+          "weight": 2.2951099999999998,
           "ticker": "Alphabet Inc."
         },
         {
           "symbol": "META",
-          "weight": 2.3012,
+          "weight": 2.15918,
           "ticker": "Meta Platforms, Inc."
         },
         {
           "symbol": "TSLA",
-          "weight": 1.62719,
+          "weight": 1.5982099,
           "ticker": "Tesla, Inc."
         },
         {
-          "symbol": "MU",
-          "weight": 1.54196,
-          "ticker": "Micron Technology, Inc."
+          "symbol": "LLY",
+          "weight": 1.5502099999999999,
+          "ticker": "Eli Lilly and Company"
         }
       ],
       "sectors": [
         {
           "sector": "Technology",
-          "weight": 39.03
+          "weight": 38.69
         },
         {
           "sector": "Financial Services",
-          "weight": 11.66
+          "weight": 11.85
         },
         {
           "sector": "Healthcare",
-          "weight": 9.69
+          "weight": 9.87
         },
         {
           "sector": "Communication Services",
-          "weight": 9.4
+          "weight": 9.15
         },
         {
           "sector": "Consumer Cyclical",
-          "weight": 9.16
+          "weight": 9.03
         },
         {
           "sector": "Industrials",
-          "weight": 7.49
+          "weight": 7.43
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 4.63
+          "weight": 4.77
         },
         {
           "sector": "Energy",
-          "weight": 3.72
+          "weight": 3.86
         },
         {
           "sector": "Utilities",
-          "weight": 1.98
+          "weight": 2.03
         },
         {
           "sector": "Real Estate",
-          "weight": 1.72
+          "weight": 1.77
         },
         {
           "sector": "Basic Materials",
-          "weight": 1.53
+          "weight": 1.54
         }
       ]
     },
@@ -2073,12 +2073,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 36.75,
+      "price": 39.45,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.72,
-      "threeYearReturn": 17.41085,
-      "fiveYearReturn": 7.713299999999999,
+      "threeYearReturn": 14.45171,
+      "fiveYearReturn": 6.28768,
       "beta3Y": 0.99,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -2182,12 +2182,12 @@
       "market": "Canada",
       "category": "TD Asset Management Inc",
       "currency": "CAD",
-      "price": 53.37,
+      "price": 57.19,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.06999999999999999,
-      "threeYearReturn": 23.057671,
-      "fiveYearReturn": 13.358598999999998,
+      "threeYearReturn": 19.218099,
+      "fiveYearReturn": 11.30136,
       "beta3Y": 1.56,
       "inception": 1648512000,
       "issuer": "TD Asset Management Inc",
@@ -2280,7 +2280,7 @@
       "market": "Canada",
       "category": "ETF",
       "currency": "CAD",
-      "price": 46.67,
+      "price": 48.51,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.0,
@@ -2298,111 +2298,111 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 67.11,
+      "price": 67.82,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.63,
-      "threeYearReturn": 16.02044,
-      "fiveYearReturn": 11.62858,
+      "threeYearReturn": 15.432989999999998,
+      "fiveYearReturn": 11.28788,
       "beta3Y": 0.2,
       "inception": 1363651200,
       "issuer": "BMO Asset Management Inc",
       "holdings": [
         {
-          "symbol": "COR",
-          "weight": 3.0678598,
-          "ticker": "Cencora, Inc."
-        },
-        {
           "symbol": "JNJ",
-          "weight": 2.97086,
+          "weight": 2.9905401,
           "ticker": "Johnson & Johnson"
         },
         {
+          "symbol": "COR",
+          "weight": 2.934,
+          "ticker": "Cencora, Inc."
+        },
+        {
           "symbol": "TDY",
-          "weight": 2.61167,
+          "weight": 2.5497400999999997,
           "ticker": "Teledyne Technologies Incorporated"
         },
         {
           "symbol": "CBOE",
-          "weight": 2.4089402,
+          "weight": 2.53001,
           "ticker": "Cboe Global Markets, Inc."
         },
         {
           "symbol": "CSCO",
-          "weight": 2.24092,
+          "weight": 2.1885801,
           "ticker": "Cisco Systems, Inc."
         },
         {
-          "symbol": "GLW",
-          "weight": 2.2044001,
-          "ticker": "Corning Incorporated"
-        },
-        {
-          "symbol": "MSI",
-          "weight": 2.1436800999999996,
-          "ticker": "Motorola Solutions, Inc."
-        },
-        {
           "symbol": "CME",
-          "weight": 2.13976,
+          "weight": 2.17527,
           "ticker": "CME Group Inc."
         },
         {
+          "symbol": "MSI",
+          "weight": 2.17317,
+          "ticker": "Motorola Solutions, Inc."
+        },
+        {
           "symbol": "ED",
-          "weight": 2.0744199,
+          "weight": 2.11196,
           "ticker": "Consolidated Edison, Inc."
         },
         {
           "symbol": "IBM",
-          "weight": 2.0676300000000003,
+          "weight": 2.0507299999999997,
           "ticker": "International Business Machines Corporation"
+        },
+        {
+          "symbol": "NOC",
+          "weight": 2.0487102,
+          "ticker": "Northrop Grumman Corporation"
         }
       ],
       "sectors": [
         {
           "sector": "Healthcare",
-          "weight": 20.71
+          "weight": 20.4
         },
         {
           "sector": "Utilities",
-          "weight": 18.7
+          "weight": 18.87
         },
         {
           "sector": "Technology",
-          "weight": 17.45
+          "weight": 17.28
         },
         {
           "sector": "Financial Services",
-          "weight": 11.69
+          "weight": 11.85
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 11.45
+          "weight": 11.56
         },
         {
           "sector": "Industrials",
-          "weight": 7.72
-        },
-        {
-          "sector": "Communication Services",
-          "weight": 3.75
-        },
-        {
-          "sector": "Consumer Cyclical",
-          "weight": 3.67
+          "weight": 7.94
         },
         {
           "sector": "Real Estate",
+          "weight": 3.68
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 3.63
+        },
+        {
+          "sector": "Communication Services",
           "weight": 3.63
         },
         {
           "sector": "Basic Materials",
-          "weight": 0.77
+          "weight": 0.7
         },
         {
           "sector": "Energy",
-          "weight": 0.46
+          "weight": 0.47
         }
       ]
     },
@@ -2412,12 +2412,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 72.86,
+      "price": 76.05,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.05,
-      "threeYearReturn": 20.057489,
-      "fiveYearReturn": 12.582740000000001,
+      "threeYearReturn": 17.56266,
+      "fiveYearReturn": 11.307730000000001,
       "beta3Y": 1.0,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
@@ -2526,12 +2526,12 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 54.04,
+      "price": 56.37,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.23000005,
-      "threeYearReturn": 18.871109999999998,
-      "fiveYearReturn": 11.41308,
+      "threeYearReturn": 16.32869,
+      "fiveYearReturn": 10.18717,
       "beta3Y": 0.97,
       "inception": 1571702400,
       "issuer": "BlackRock Asset Management Canada Ltd",
