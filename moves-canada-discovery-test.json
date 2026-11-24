@@ -1,23 +1,17 @@
 {
-  "testedAt": "2026-11-24T01:49:41.845119+00:00",
+  "testedAt": "2026-11-24T05:24:43.530300+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 9,
+      "count": 8,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
           "published": "Tue, 17 Nov 2026 22:50:13 GMT",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc?oc=5",
-          "published": "Tue, 17 Nov 2026 02:50:42 GMT",
-          "source": "Investing News Network"
         },
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - TradingView",
@@ -117,9 +111,9 @@
           "source": "TradingView"
         },
         {
-          "title": "Carlin Gold Announces Electrum Gold Elects to Exercise Option to Purchase Additional Units - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNaFV6WEdHQzJNSVdpcV8xTnZhUmlZalNTRVFkYzBVZEhVX2Y3Z1hjejBlWHlqd1hVWktrS0VLLUltXy1CQmU4WF9PbTdnOUkxT3NuZFUtdnJkSGZqeW1ySDlhQWNDd2NHMVpFQkhIVlJCaF9JSnNLUUN5c2JWajNBdmF6R282eU0wMlQ4X3psTG9zZTRpNWsxcHBCZzdTZnBLSkRsdUY3S2Fsa0xZV1o3RDIySlFpZDR1UFlHclUtRkhuTVMyNDRfdm0yZmZpY1I0c3RSbHF4TVVFNXRYV04yQTRSMklKVHpw?oc=5",
-          "published": "Thu, 19 Nov 2026 11:30:00 GMT",
+          "title": "TriStar Gold Outlines Next Steps at Castelo de Sonhos - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObTBwMkhnNjVpZ01TUnBTcXFVR1Rsdkt3S1hGdEhxTnZzU3FHYWxiTnhoX2pTeTFXdTVrM0V0V1hRUHNKRV8zTFRjZWg2YUNNUmZyS2plZzZsRHA1UGkxZjB1cXFlYWp1SElILW9LMG8zUjdqbG1BdEFDd25NQXJuZ20tVm5SWDljUE9xc1JlNFZQZzV0TUlNY0V4enNITVJmWmkxVnM5N0FabVg4ZmJqUFNxVXJiajA?oc=5",
+          "published": "Mon, 23 Nov 2026 12:00:00 GMT",
           "source": "TradingView"
         },
         {
