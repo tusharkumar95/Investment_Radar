@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-24T05:24:43.530300+00:00",
+  "testedAt": "2026-11-24T12:46:32.752128+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 8,
+      "count": 7,
       "items": [
         {
           "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
@@ -14,9 +14,15 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOU0lqdk1mTWREZkVzU0l1VHBFTW1LN3d0SkY4SG55R0xuWHNzYjdtVjZQM2x4ekJkOHljN2tNLW9VN0V1VnA2NXNiaHpaRzFNVXlINVF5TlN2cEVGMll4Qk5ValZGYXR0c0dqMENBVjllMEFLR0VkUmhfZzBaVV9VN054SHJ5OHBCZVBKaC1IOV9fd3Fqb1pRWWg2S192NWRQTDQ4RkpaeVdHWTNydjlsUmQxT3lON0tTSHhkRVdyaEp3MzR1aHU0VnpGcTFHTGVqS0prdHhDVjNfeW51TW1vbnZFVjRhMjd6d0ltRU5XZW5pdTNFMXpfMS02NldoYTkteXN5ZWhWcjBpNHp1YlV4Z29R?oc=5",
-          "published": "Sat, 21 Nov 2026 00:30:00 GMT",
+          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
+          "published": "Sat, 21 Nov 2026 01:38:59 GMT",
+          "source": "Investing News Network"
+        },
+        {
+          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
           "source": "TradingView"
         },
         {
@@ -26,28 +32,16 @@
           "source": "Mining.com"
         },
         {
-          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
-          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
-          "source": "TradingView"
-        },
-        {
           "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
           "published": "Wed, 18 Nov 2026 19:32:51 GMT",
           "source": "The Globe and Mail"
         },
         {
-          "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZk5rcFVyY0N5clowVUFUajFyUHhMOVZqM0Z0YTItUVBWemR0cHNscGRJOVBvOTdyQ29UYjd2RXhxWVpERl8xM0V6N1BTTVVicHlfRWhDbDNtX2FvWC1sUHplOHpfd0tqYTB2UzBscUtXcloxZjBJemFBSGNrcmNNNm9jTnowNnVrN1Jlc0VYcXVUcDBhb2NwWXFKN3EyckxjWkJrOFloNHk1TE9PSTFaQ0Rwc3ZxOHZWUk9XUk9kRnBicXJWNHpyVzZLa0E?oc=5",
-          "published": "Wed, 18 Nov 2026 18:11:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Torrent Gold Completes Acquisition of Sunrise Tungsten Project - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaTdRZzVYYXNwaXpFR0ZjaklwXzJyWTVJSDNYUUx5Q3h5cGUyUnQ2T1F5MzlUUDhMSmNqQi1BZ0JiZkpILWx4Wkx4RWtRR0E2OW1HcFFxejlFUVBCRlJDNWVYNDlERFFlUDlTeV9JMnk3TDU3c0tZcDRoSnNvOVJDdEx1U0Rfb2k5Znl4SWJjVUQtR0gySDg2MXZad1dtUDgyRFBZVUhMbVExam43ZXdKTy10Mm0wd3pnaVlNWjhSaW03RHc?oc=5",
-          "published": "Fri, 20 Nov 2026 10:00:00 GMT",
-          "source": "TradingView"
+          "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - StreetInsider",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmpITlp5ckVpa1k4VlcyMXFlaWNfWkZqVWl5MV9nZzlmOXV6NXVfaWkyTk1rZDJlZFpIdlA1VFI3ZXZHVmVfd2FHY3h0Sk5iMGprQXVfWXduN0FqR0xCSzJqTkNQQlJGWnptaklYeDd1WENHTVpZdlY3cWVDUnVEeTBhenI1T3h4bEJxVmdoY3VlMkFuTEQ3a0k0cEdNS2hOQ1hZZnU3RU95ak9OLVZ2RnZuamQzZW1iaEwweEJ5cw?oc=5",
+          "published": "Wed, 18 Nov 2026 19:12:23 GMT",
+          "source": "StreetInsider"
         },
         {
           "title": "Chicago Atlantic Amends Early Warning Report on Vireo Holdings - TipRanks",
@@ -75,9 +69,9 @@
           "source": "Investing News Network"
         },
         {
-          "title": "Torrent Gold Completes Acquisition of Sunrise Tungsten Project - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaTdRZzVYYXNwaXpFR0ZjaklwXzJyWTVJSDNYUUx5Q3h5cGUyUnQ2T1F5MzlUUDhMSmNqQi1BZ0JiZkpILWx4Wkx4RWtRR0E2OW1HcFFxejlFUVBCRlJDNWVYNDlERFFlUDlTeV9JMnk3TDU3c0tZcDRoSnNvOVJDdEx1U0Rfb2k5Znl4SWJjVUQtR0gySDg2MXZad1dtUDgyRFBZVUhMbVExam43ZXdKTy10Mm0wd3pnaVlNWjhSaW03RHc?oc=5",
-          "published": "Fri, 20 Nov 2026 10:00:00 GMT",
+          "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
+          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
           "source": "TradingView"
         },
         {
@@ -87,10 +81,10 @@
           "source": "Fidelity Investments"
         },
         {
-          "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
-          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
-          "source": "TradingView"
+          "title": "Mining Stock Metalsource Mining (CSE: MSM) Receives $1.38 Million from Sprott as Ownership Hits 19.9%, Proceeds Target Larger Stepouts at North Carolina Silver Hill System - Investorideas.com",
+          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOM2dNSVk0RzlrTjB6Q0hLUzNkOUZkRGpMLUFKU1ZRRWw2V240am1CU21MUm96Nl9GZnZiTDk5bTRRVnk3MnpwNHYwVVNRcERMVENlNDVCQ3FLdEo5X3drNFhHckVLN29XVUltSG43RFo4eWNuNFRyNEloUnVZTTFPSkxhNjZCVWRZUlZ0S0I2NzBuQkxlSVNYanBXT3Iyc0Rwbm1OTnNnUXBQT1R6T091T3UyYXNKZF9sN2hUNGxqUlBjWXhIV0dkWnNDR1VSdHN5bWtfOEFkSGc3M2dkRGFmRXZIS0tKZXgtQzBfelVVYnE4bFRVeVFZUEU5LUktWDUtWXNpQzFzdTBTTFFVRjBrWTN5T0hpM2FsVVZfWXhJekpWUjFyd09jd3VOWjM5cm9DVUQzMTA3V3RLNFBHandybFFNNlg?oc=5",
+          "published": "Wed, 18 Nov 2026 17:10:00 GMT",
+          "source": "Investorideas.com"
         },
         {
           "title": "Metalsource Mining Receives $1.38 Million from Eric Sprott Warrant Exercise as Silver Hill Gold-Silver Exploration Advances - Investing News Network",
@@ -117,9 +111,9 @@
           "source": "TradingView"
         },
         {
-          "title": "Orosur Mining Inc. Director Purchase of Shares - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSGxFbldTT2g4aWJobUtOVzViMnhXZE45Y2tkcDU2a1RUWU52TnBfVWVzUHcyQlhCZ2NDb2JEUU5LWl9vSnVmTUZ3WXU3eFlkLWtCWkJjdG96Z3JhSVdpcHlWS0M2cXRtZjVVMzNobVRGM3daaFV3VGVWQVVKMGFaTTJxVUJHNG9fVExMRmhSZEhqc0t2WWozaGswVzV0OHRZRXIwVEpWbHhBb3Ax?oc=5",
-          "published": "Fri, 20 Nov 2026 07:00:00 GMT",
+          "title": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
+          "published": "Mon, 23 Nov 2026 14:29:00 GMT",
           "source": "TradingView"
         }
       ]

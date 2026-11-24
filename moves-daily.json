@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T05:24:45.133044+00:00",
+  "updated": "2026-11-24T12:46:35.129353+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-23",
@@ -1184,6 +1184,14 @@
           "source": "TipRanks",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0h1QTVrUWxiWFVGNFB3LTJUZGJqWVdfVmZlUFg1RV9yZF91NGZmUEdjR1Y4YU05MkhyV1p6VXBYRXdrX0wzbGZWeHdfOC1rMVF0UjJuNF9WLUYtNEZFS0dHSTZ4dG9sLTFMakFkMjN4MWt1QVZXeUQxMnZtR3pOSUlfZktuV3VaWFpGbHNBdkUzaXMtMFRsOHJ0cmNNOUxveHVwakV0SEF6TjBDYWVxalB2OGk?oc=5",
           "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-23:1",
+          "day": "2026-11-23",
+          "headline": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
+          "source": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
+          "verification": "Unverified — open original filing before acting"
         }
       ],
       "alerts": [
@@ -1214,11 +1222,11 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-21:1",
+          "id": "lead:2026-11-21:2",
           "day": "2026-11-21",
-          "headline": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - TradingView",
-          "source": "TradingView",
-          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOU0lqdk1mTWREZkVzU0l1VHBFTW1LN3d0SkY4SG55R0xuWHNzYjdtVjZQM2x4ekJkOHljN2tNLW9VN0V1VnA2NXNiaHpaRzFNVXlINVF5TlN2cEVGMll4Qk5ValZGYXR0c0dqMENBVjllMEFLR0VkUmhfZzBaVV9VN054SHJ5OHBCZVBKaC1IOV9fd3Fqb1pRWWg2S192NWRQTDQ4RkpaeVdHWTNydjlsUmQxT3lON0tTSHhkRVdyaEp3MzR1aHU0VnpGcTFHTGVqS0prdHhDVjNfeW51TW1vbnZFVjRhMjd6d0ltRU5XZW5pdTNFMXpfMS02NldoYTkteXN5ZWhWcjBpNHp1YlV4Z29R?oc=5",
+          "headline": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
+          "source": "Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
           "verification": "Unverified — open original filing before acting"
         }
       ],
@@ -4793,7 +4801,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-18:2",
+          "id": "lead:2026-11-18:3",
           "day": "2026-11-18",
           "headline": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
           "source": "TradingView",
@@ -8120,7 +8128,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-17:3",
+          "id": "lead:2026-11-17:4",
           "day": "2026-11-17",
           "headline": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -8128,7 +8136,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-11-17:4",
+          "id": "lead:2026-11-17:5",
           "day": "2026-11-17",
           "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
           "source": "Investing News Network",
@@ -8546,10 +8554,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-24T05:24:44.372Z"
+      "asOf": "2026-11-24T12:46:33.934Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-24T05:24:43.531035+00:00",
+    "canadaDiscoveryUpdated": "2026-11-24T12:46:32.752783+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

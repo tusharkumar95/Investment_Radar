@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-24T05:24:43.559051+00:00",
-  "candidateCount": 18,
-  "needsReview": 17,
+  "updated": "2026-11-24T12:46:32.782281+00:00",
+  "candidateCount": 19,
+  "needsReview": 18,
   "possibleDuplicates": 1,
   "records": [
     {
@@ -14,9 +14,18 @@
       "note": "Headline matching is only a review hint, not transaction verification."
     },
     {
-      "headline": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - TradingView",
-      "published": "Sat, 21 Nov 2026 00:30:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOU0lqdk1mTWREZkVzU0l1VHBFTW1LN3d0SkY4SG55R0xuWHNzYjdtVjZQM2x4ekJkOHljN2tNLW9VN0V1VnA2NXNiaHpaRzFNVXlINVF5TlN2cEVGMll4Qk5ValZGYXR0c0dqMENBVjllMEFLR0VkUmhfZzBaVV9VN054SHJ5OHBCZVBKaC1IOV9fd3Fqb1pRWWg2S192NWRQTDQ4RkpaeVdHWTNydjlsUmQxT3lON0tTSHhkRVdyaEp3MzR1aHU0VnpGcTFHTGVqS0prdHhDVjNfeW51TW1vbnZFVjRhMjd6d0ltRU5XZW5pdTNFMXpfMS02NldoYTkteXN5ZWhWcjBpNHp1YlV4Z29R?oc=5",
+      "headline": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
+      "published": "Mon, 23 Nov 2026 14:29:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
+      "headline": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
+      "published": "Sat, 21 Nov 2026 01:38:59 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
       "reviewStatus": "needs_original_source_review",
       "possibleMatches": [],
       "verified": false,
