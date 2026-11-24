@@ -1,29 +1,17 @@
 {
-  "testedAt": "2026-11-24T22:38:42.686538+00:00",
+  "testedAt": "2026-11-24T23:36:37.515036+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "items": [
-        {
-          "title": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPSDc0Nmt6bC1zMTNWVWhhXzJWMVFEZ3BjZU9BZGZVaEtaZnh4VVlFWEZJSXFhUmhBeWpRdjFzQ2h6Vy11Zy1xdHBmTzlNaGpRWkYxQm9RT2lTWFdDVFZLNm5obnNkdnJGdkxoS1FyV1BkellMb2dnQl95UDc2X2dEM3gxNURseUxrWURWdzZnTWFZM3lfMUo5dENKSEhldjRGNDM0TG8xZEhRLW1TMUxBQWJGMlhPelFIZHNsS1phQVdaaVdiT2RVdWxsZ1RPaUQzendqSmdFdjV5T1ZzQ1poS0NxWTh5a0p1RmxfbzFES3o5REQ4bXBkQmdOeHRndmJ5eDFKY05OejVNbm9JX0hwbTBhNXpZRW4zZ2gtcTFST0Z4NXBTdC1yTExnVC1TTDlGV0w0SA?oc=5",
-          "published": "Tue, 17 Nov 2026 22:50:13 GMT",
-          "source": "The Globe and Mail"
-        },
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
           "published": "Sat, 21 Nov 2026 01:38:59 GMT",
           "source": "Investing News Network"
-        },
-        {
-          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
-          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
-          "source": "TradingView"
         },
         {
           "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
@@ -32,8 +20,26 @@
           "source": "The Globe and Mail"
         },
         {
+          "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
+          "published": "Wed, 18 Nov 2026 18:54:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Chicago Atlantic Files Amended Early Warning Report in Respect of Vireo Growth Inc. - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOanNkZUZFeVV1TzVIT29pcVVxa1FQdWl3NEp2NTk5c2F2VU52Y2M3bVM5MGNucDNDRWdMdWxsUUYzcVVPQ19hbUFLaW1MaVE3Wk5KTHltUm9UN0pZRGx0UFBybVBBMm8wSHdRNlY1azVUZ3ZDMzJpTWFKSXI5TXl5ZVNDc3QwVjdnRkc5RklwUmx2WVNOb0UyUS1ZZWYwclA2RVd3?oc=5",
+          "published": "Mon, 23 Nov 2026 15:22:00 GMT",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - StreetInsider",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmpITlp5ckVpa1k4VlcyMXFlaWNfWkZqVWl5MV9nZzlmOXV6NXVfaWkyTk1rZDJlZFpIdlA1VFI3ZXZHVmVfd2FHY3h0Sk5iMGprQXVfWXduN0FqR0xCSzJqTkNQQlJGWnptaklYeDd1WENHTVpZdlY3cWVDUnVEeTBhenI1T3h4bEJxVmdoY3VlMkFuTEQ3a0k0cEdNS2hOQ1hZZnU3RU95ak9OLVZ2RnZuamQzZW1iaEwweEJ5cw?oc=5",
+          "published": "Wed, 18 Nov 2026 19:12:23 GMT",
+          "source": "StreetInsider"
+        },
+        {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZ1lIZU9FYS1SdTlEa0J6NEc1U0M4WXgtakxIYlRsZGFhazZnNHhaa1ZjRU83bG55MW9mYjFBWnBWVV9qYmE4cVFoWDJEOHo1bGYxbFJGeFdhaFF0QnIyZ2RrSUhkdUFrLVZmMVc2azNsaVJPRGhzTlNocGFhbjlKX3IycEUzYkN2eTVpXzNkMHRYcVB3S0J0clN0SmpjQklZRy11b2tQanJTRklJUkktN3N5RWpvN2VYbDRtT2U0Vnh3dDQ4YUpfRmZkbWU4bzZzY0t4UEhoU19KLU9pZWlZRGJfMWZmNnZlT0FidTdOS3NldlRsRzctQTV0NGwxc3BJLWVGZzExdHB0R2tLOTVR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZndTVmNVaUdjRGxnelBYN09IaUUwMU04SlRPOXdOM0VkM2tyNEt0c1h5TERES3hPdEZuLXkwcXd2WVgxQVprdW5OSnEzU1QzX0V5WElCbjA5dXBrMy1HYkttVllmNmpwMFpka3ZJRWQxTzQtZXRPb3M5My12ejdKd3NCNlRBelZ4aFRsNkZwMzdCNTlWVnRrTjd4VnlyVzBPTFhDTHM5Z3ZRcFJLc2c3Nnpuc2h5WkZrNGFLSlNHQWxXNzVreDhTY25tRk5uSmUxWlpJTUIyUTVmRkZPbXU4eDFkc2o2dTR2dnl0S3MyTW0taWlNemZla0ZqNmgyZGU1RGNOMHlPUm9fRXpWbjNz?oc=5",
           "published": "Tue, 24 Nov 2026 21:45:00 GMT",
           "source": "TradingView"
         },
@@ -54,7 +60,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -96,6 +102,12 @@
           "title": "Northstar Gold Corp. Closes First Tranche of Flow-Through Financings - TradingView",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOT3VzaExURU5ObjNLRG5fSFQ5U0lsYlZrT1FvRWJHdVRVWWpvVWRzX1BqZ1JLQVhNZjNMbUhLcmRxaGE3dDZnVy15VkUyTkZ3S0h4dW9nQjlIWERuMHo4STNzQW1JU0pSQ3M5UW9nLXBSc2I3UGRydmlGaHotNTFsSnM1MkIyTjlydjBlUm9TOGZzUDdSRDNvbGY4a3JfeDBRWGhuazVaenBSU0xzX3htN2tIU3Nwd0JILUR0REJtcC1YTm1MXzlzUXNn?oc=5",
           "published": "Mon, 23 Nov 2026 12:30:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Greenheart Gold Announces Grant of Stock Options - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQakwtejFZaDFxTGRBd01Tam9QbFNNakJyWW1HcGc3aW9FMEdPMjZsaGVfUjZWMDBKSjgtb1FrRDZoT09XaFV4MlhOY3RiV1JGaWI3Zk14MGE3R091eVExU3ctZGtibEliblF5d2hEeXd0MVJtLUtpYXVQY2Vha0lhcmxNOHhRSlRLWnMxTFBSLU4zenRQQlVWT2JfaDREMllHZ0VOcGstdTlNVS0wNzR0dQ?oc=5",
+          "published": "Thu, 19 Nov 2026 21:37:00 GMT",
           "source": "TradingView"
         },
         {

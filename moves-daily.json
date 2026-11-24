@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T22:38:44.796216+00:00",
+  "updated": "2026-11-24T23:36:39.066496+00:00",
   "retentionDays": 7,
   "dates": [
     "2026-11-23",
@@ -1188,6 +1188,14 @@
         {
           "id": "lead:2026-11-23:1",
           "day": "2026-11-23",
+          "headline": "Chicago Atlantic Files Amended Early Warning Report in Respect of Vireo Growth Inc. - Yahoo Finance",
+          "source": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOanNkZUZFeVV1TzVIT29pcVVxa1FQdWl3NEp2NTk5c2F2VU52Y2M3bVM5MGNucDNDRWdMdWxsUUYzcVVPQ19hbUFLaW1MaVE3Wk5KTHltUm9UN0pZRGx0UFBybVBBMm8wSHdRNlY1azVUZ3ZDMzJpTWFKSXI5TXl5ZVNDc3QwVjdnRkc5RklwUmx2WVNOb0UyUS1ZZWYwclA2RVd3?oc=5",
+          "verification": "Unverified — open original filing before acting"
+        },
+        {
+          "id": "lead:2026-11-23:2",
+          "day": "2026-11-23",
           "headline": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
           "source": "TradingView",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
@@ -1222,7 +1230,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-21:2",
+          "id": "lead:2026-11-21:3",
           "day": "2026-11-21",
           "headline": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
           "source": "Investing News Network",
@@ -4801,7 +4809,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-18:3",
+          "id": "lead:2026-11-18:4",
           "day": "2026-11-18",
           "headline": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
           "source": "TradingView",
@@ -8128,7 +8136,7 @@
       "canadaReported": [],
       "canadaLeads": [
         {
-          "id": "lead:2026-11-17:4",
+          "id": "lead:2026-11-17:5",
           "day": "2026-11-17",
           "headline": "AJB Investment Fund II, LP Files Early Warning Report in Relation to Acquisition of Common Shares of Jewett-Cameron Trading Co Ltd. - The Globe and Mail",
           "source": "The Globe and Mail",
@@ -8136,7 +8144,7 @@
           "verification": "Unverified — open original filing before acting"
         },
         {
-          "id": "lead:2026-11-17:5",
+          "id": "lead:2026-11-17:6",
           "day": "2026-11-17",
           "headline": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
           "source": "Investing News Network",
@@ -8554,10 +8562,10 @@
       "url": "https://marketclerk.com/api/v1/insiders.json?country=CA&days=90&limit=200",
       "count": 0,
       "error": null,
-      "asOf": "2026-11-24T22:38:43.644Z"
+      "asOf": "2026-11-24T23:36:38.655Z"
     },
     "canadaReportedAttribution": "https://marketclerk.com",
-    "canadaDiscoveryUpdated": "2026-11-24T22:38:42.687059+00:00",
+    "canadaDiscoveryUpdated": "2026-11-24T23:36:37.515614+00:00",
     "lastSevenDays": "Includes disclosure days in the previous seven calendar days, not just the current refresh"
   }
 }

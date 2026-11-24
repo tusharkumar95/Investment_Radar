@@ -1,13 +1,22 @@
 {
-  "updated": "2026-11-24T22:38:42.710334+00:00",
-  "candidateCount": 19,
-  "needsReview": 18,
+  "updated": "2026-11-24T23:36:37.539609+00:00",
+  "candidateCount": 20,
+  "needsReview": 19,
   "possibleDuplicates": 1,
   "records": [
     {
       "headline": "Chicago Atlantic Amends Early Warning Report on Vireo Holdings - TipRanks",
       "published": "Mon, 23 Nov 2026 16:38:21 GMT",
       "discoveryUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0h1QTVrUWxiWFVGNFB3LTJUZGJqWVdfVmZlUFg1RV9yZF91NGZmUEdjR1Y4YU05MkhyV1p6VXBYRXdrX0wzbGZWeHdfOC1rMVF0UjJuNF9WLUYtNEZFS0dHSTZ4dG9sLTFMakFkMjN4MWt1QVZXeUQxMnZtR3pOSUlfZktuV3VaWFpGbHNBdkUzaXMtMFRsOHJ0cmNNOUxveHVwakV0SEF6TjBDYWVxalB2OGk?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
+    {
+      "headline": "Chicago Atlantic Files Amended Early Warning Report in Respect of Vireo Growth Inc. - Yahoo Finance",
+      "published": "Mon, 23 Nov 2026 15:22:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOanNkZUZFeVV1TzVIT29pcVVxa1FQdWl3NEp2NTk5c2F2VU52Y2M3bVM5MGNucDNDRWdMdWxsUUYzcVVPQ19hbUFLaW1MaVE3Wk5KTHltUm9UN0pZRGx0UFBybVBBMm8wSHdRNlY1azVUZ3ZDMzJpTWFKSXI5TXl5ZVNDc3QwVjdnRkc5RklwUmx2WVNOb0UyUS1ZZWYwclA2RVd3?oc=5",
       "reviewStatus": "needs_original_source_review",
       "possibleMatches": [],
       "verified": false,
