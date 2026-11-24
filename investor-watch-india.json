@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-23T12:17:01.170741+00:00",
+  "updated": "2026-11-24T00:09:09.693547+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-20",
-    "trades": 973,
-    "investors": 574
+    "latest": "2026-11-23",
+    "trades": 1002,
+    "investors": 588
   },
   "featured": [
     {
@@ -1926,6 +1926,106 @@
       ],
       "observations": {
         "repeatPurchases": true,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:477e5d11e7847bbe",
+      "name": "SOCIETE GENERALE - ODI",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 447.79,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 447.79,
+      "latestDisclosure": "2026-11-23",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-23",
+          "name": "SOCIETE GENERALE - ODI",
+          "symbol": "LENSKART",
+          "company": "Lenskart Solutions Ltd",
+          "buyQty": 6176351,
+          "sellQty": 0,
+          "buyValueINR": 4477854475.0,
+          "sellValueINR": 0,
+          "netShares": 6176351,
+          "netValueINR": 4477854475.0,
+          "avgBuyPrice": 725.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "6136414f6b64102a0b"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "LENSKART",
+          "company": "Lenskart Solutions Ltd",
+          "buyValueCr": 447.79,
+          "sellValueCr": 0.0,
+          "netShares": 6176351,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:d480caad4d9b007f",
+      "name": "GOLDMAN SACHS INVESTMENTS MAURITIUS I LIMITED",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 447.79,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 447.79,
+      "latestDisclosure": "2026-11-23",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-23",
+          "name": "GOLDMAN SACHS INVESTMENTS MAURITIUS I LIMITED",
+          "symbol": "LENSKART",
+          "company": "Lenskart Solutions Ltd",
+          "buyQty": 6176351,
+          "sellQty": 0,
+          "buyValueINR": 4477854475.0,
+          "sellValueINR": 0,
+          "netShares": 6176351,
+          "netValueINR": 4477854475.0,
+          "avgBuyPrice": 725.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "9e7f63f18b7b6e26d0"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "LENSKART",
+          "company": "Lenskart Solutions Ltd",
+          "buyValueCr": 447.79,
+          "sellValueCr": 0.0,
+          "netShares": 6176351,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
         "buyAndSellObserved": false,
         "multipleCompanies": false,
         "noObservedBuys": false
@@ -5405,106 +5505,6 @@
           "buyValueCr": 53.73,
           "sellValueCr": 0.0,
           "netShares": 2177506,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:0dd74bd8be4f35fc",
-      "name": "POONAWALLA AVIATION PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 53.39,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 53.39,
-      "latestDisclosure": "2026-10-28",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-28",
-          "name": "POONAWALLA AVIATION PRIVATE LIMITED",
-          "symbol": "STLTECH",
-          "company": "Sterlite Technologies Ltd",
-          "buyQty": 601900,
-          "sellQty": 0,
-          "buyValueINR": 533885300.0,
-          "sellValueINR": 0,
-          "netShares": 601900,
-          "netValueINR": 533885300.0,
-          "avgBuyPrice": 887.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "2c2008bd6f74678da8"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "STLTECH",
-          "company": "Sterlite Technologies Ltd",
-          "buyValueCr": 53.39,
-          "sellValueCr": 0.0,
-          "netShares": 601900,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:f26cee6137f73fd4",
-      "name": "BLACKROCK GLOBAL FUNDS EMERGING MARKETS FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 52.56,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 52.56,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "BLACKROCK GLOBAL FUNDS EMERGING MARKETS FUND",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 2399973,
-          "sellQty": 0,
-          "buyValueINR": 525594087.0,
-          "sellValueINR": 0,
-          "netShares": 2399973,
-          "netValueINR": 525594087.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "81905649c7c7a0abad"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 52.56,
-          "sellValueCr": 0.0,
-          "netShares": 2399973,
           "buyDays": 1,
           "sellDays": 0
         }
