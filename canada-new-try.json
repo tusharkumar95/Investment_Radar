@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-24T03:14:30.094339+00:00",
-  "day": "2026-11-23",
+  "updated": "2026-11-24T06:37:30.839406+00:00",
+  "day": "2026-11-24",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.16,
-      "lastPriceDate": "2026-11-23",
-      "priceChangePct": -7.76,
+      "lastPrice": 4.23,
+      "lastPriceDate": "2026-11-20",
+      "priceChangePct": -6.21,
       "quoteStatus": "Available"
     },
     {
@@ -1042,6 +1042,17 @@
     }
   ],
   "leads": [
+    {
+      "id": "lead:b896c35d68430a5a35",
+      "title": "Orosur Mining Inc. Director Purchase of Shares - TradingView",
+      "date": "2026-11-20",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSGxFbldTT2g4aWJobUtOVzViMnhXZE45Y2tkcDU2a1RUWU52TnBfVWVzUHcyQlhCZ2NDb2JEUU5LWl9vSnVmTUZ3WXU3eFlkLWtCWkJjdG96Z3JhSVdpcHlWS0M2cXRtZjVVMzNobVRGM3daaFV3VGVWQVVKMGFaTTJxVUJHNG9fVExMRmhSZEhqc0t2WWozaGswVzV0OHRZRXIwVEpWbHhBb3Ax",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Orosur Mining Inc. Director Purchase of Shares    TradingView "
+    },
     {
       "id": "lead:7a9337de08c336dd05",
       "title": "Nov 20, 2026, 06:49 ET \n                        Euromax Announces Closing of Non-Brokered Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today that, further to its ne",
@@ -1878,7 +1889,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 6,
-      "relevant": 4
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1986,7 +1997,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 74,
+    "disclosureLeads": 75,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,

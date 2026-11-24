@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T03:14:21.855180+00:00",
+  "updated": "2026-11-24T06:37:21.972552+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:b896c35d68430a5a35",
+      "title": "Orosur Mining Inc. Director Purchase of Shares - TradingView",
+      "date": "2026-11-20",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSGxFbldTT2g4aWJobUtOVzViMnhXZE45Y2tkcDU2a1RUWU52TnBfVWVzUHcyQlhCZ2NDb2JEUU5LWl9vSnVmTUZ3WXU3eFlkLWtCWkJjdG96Z3JhSVdpcHlWS0M2cXRtZjVVMzNobVRGM3daaFV3VGVWQVVKMGFaTTJxVUJHNG9fVExMRmhSZEhqc0t2WWozaGswVzV0OHRZRXIwVEpWbHhBb3Ax",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Orosur Mining Inc. Director Purchase of Shares    TradingView "
+    },
     {
       "id": "lead:7a9337de08c336dd05",
       "title": "Nov 20, 2026, 06:49 ET \n                        Euromax Announces Closing of Non-Brokered Private Placement\n                       \n                       Euromax Resources Ltd. (TSXV: EOX): (\"Euromax\" or the \"Company\"), announces today that, further to its ne",
@@ -839,7 +850,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 6,
-      "relevant": 4
+      "relevant": 5
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -926,9 +937,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 74,
+    "leadCount": 75,
     "usFilingCount": 0,
-    "needsReview": 74
+    "needsReview": 75
   },
   "officialSources": [
     {
