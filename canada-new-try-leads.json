@@ -1,8 +1,19 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T06:37:21.972552+00:00",
+  "updated": "2026-11-24T22:55:40.567348+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:613dc7b40808ad9ff6",
+      "title": "EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN - PR Newswire Canada",
+      "date": "2026-11-24",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMVVXbzFnaDRrZlNlcUlWS2x6U2FJb25TejJBbVYxclZmM214ZXJXVGFsc3MtNWVBbWJaaHRJc1lvcHNfVFoyUy1VWkRyaTJFX3hOeG5acmlucE9jWkZzU09yaGRmQjdXWDRic0kwMnRDU0ZpVU5WUEM5WVh1NTVqS0YySVM0ZkNFbkVnTWRWOGphT0tybkpwU0gxYTAzQQ",
+      "discoveredVia": "Google News discovery — \"early warning report\" \"completed\" site:newswire.ca when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN    PR Newswire Canada "
+    },
     {
       "id": "lead:b896c35d68430a5a35",
       "title": "Orosur Mining Inc. Director Purchase of Shares - TradingView",
@@ -827,6 +838,28 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:75b8d731b289109207",
+      "title": "08:16 ET \n                        EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN\n                       \n                       On November 23, 2026, in connection with an internal reorganization of Marny S.A., 93,145,000 common shares (the \"Shares\") of Anaergia",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/early-warning-news-release-of-ohad-epschtein-884835586.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:62a43be16286787617",
+      "title": "07:00 ET \n                          Horizon Petroleum Ltd. Announces Brokered Private Placement of Convertible Unsecured Debenture Units for Gross Proceeds of up to $10 Million\n                         \n                         Horizon Petroleum Ltd. (TSXV: HP",
+      "date": null,
+      "url": "https://www.newswire.ca/news-releases/horizon-petroleum-ltd-announces-brokered-private-placement-of-convertible-unsecured-debenture-units-for-gross-proceeds-of-up-to-10-million-881557609.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
     }
   ],
   "usFilings": [],
@@ -850,7 +883,7 @@
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
       "items": 6,
-      "relevant": 5
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -867,14 +900,14 @@
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
       "ok": true,
-      "items": 1,
-      "relevant": 1
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
       "ok": true,
-      "items": 5,
-      "relevant": 0
+      "items": 7,
+      "relevant": 1
     },
     {
       "name": "News search: \"Sprott\" \"acquired shares\" \"TSXV\" when:30d",
@@ -910,13 +943,13 @@
       "name": "Canada NewsWire / Acquisitions",
       "ok": true,
       "items": 100,
-      "relevant": 6
+      "relevant": 7
     },
     {
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 23
+      "relevant": 24
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -937,9 +970,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 75,
+    "leadCount": 78,
     "usFilingCount": 0,
-    "needsReview": 75
+    "needsReview": 78
   },
   "officialSources": [
     {
