@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-24T23:36:37.515036+00:00",
+  "testedAt": "2026-11-25T04:26:20.988707+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -14,22 +14,16 @@
           "source": "Investing News Network"
         },
         {
-          "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
-          "published": "Wed, 18 Nov 2026 19:32:51 GMT",
-          "source": "The Globe and Mail"
-        },
-        {
           "title": "SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc. - TradingView",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOVZmM1Q4QlQzZzllX0RIa0thczRGN2pjRmhCdUdDSzg3MVZDYkRPaW5XZ0dmRnhCdnBvVGZ4c0s1emFaR1N5RWJZeklhZnlVSFFwQXZNMTBveGF2cjZER2hBZ045c19FX1Z0Y09YeFpsWU1kNEtzbnVtRjVBUkdIX2JwU3NjbDVGaUVCaXdvWnJwOUttdmVPV1hsSTVsbU5rbVRYOVZkVzh2TlBpNEZZMnRlWDYzTXg2cDVsSWZYdFV3T0xlTHJldkZFQjF3eXgwOE1qOGlTRUs3TWJiaGNoMzl3?oc=5",
           "published": "Wed, 18 Nov 2026 18:54:00 GMT",
           "source": "TradingView"
         },
         {
-          "title": "Chicago Atlantic Files Amended Early Warning Report in Respect of Vireo Growth Inc. - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOanNkZUZFeVV1TzVIT29pcVVxa1FQdWl3NEp2NTk5c2F2VU52Y2M3bVM5MGNucDNDRWdMdWxsUUYzcVVPQ19hbUFLaW1MaVE3Wk5KTHltUm9UN0pZRGx0UFBybVBBMm8wSHdRNlY1azVUZ3ZDMzJpTWFKSXI5TXl5ZVNDc3QwVjdnRkc5RklwUmx2WVNOb0UyUS1ZZWYwclA2RVd3?oc=5",
-          "published": "Mon, 23 Nov 2026 15:22:00 GMT",
-          "source": "Yahoo Finance"
+          "title": "Nick Brusatore Announces Acquisition of Shares in Affinor Growers Inc - The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVHN5eWN6Um5LRXNJZUgtZGFCZU9yWnp0eWZmc2duOFVEakVOTDhMdnlrbUtFQXZPOGxyeS1yelZOU0ZqMHhrT0RlMlh6V0JrdmlRWTMzbmRfNzY5THl6MTBIZzc0UEFxMk5SdW9PbjAzanVKc3d5WWFoQUhnWVhma0JVdm5YbW8tY1g5eDRENjZYT1JrdGRldk1NV3dQNTBaV3pBV1dYek5FVEliT05Ha01WVzBpaF93TDBEOXJBbk93VkpLUE1vQ1NFUE9IMm85RHhCR3g2dVJWcHEwR2xzS2VmX0E?oc=5",
+          "published": "Wed, 18 Nov 2026 19:32:51 GMT",
+          "source": "The Globe and Mail"
         },
         {
           "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - StreetInsider",
@@ -39,7 +33,7 @@
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZndTVmNVaUdjRGxnelBYN09IaUUwMU04SlRPOXdOM0VkM2tyNEt0c1h5TERES3hPdEZuLXkwcXd2WVgxQVprdW5OSnEzU1QzX0V5WElCbjA5dXBrMy1HYkttVllmNmpwMFpka3ZJRWQxTzQtZXRPb3M5My12ejdKd3NCNlRBelZ4aFRsNkZwMzdCNTlWVnRrTjd4VnlyVzBPTFhDTHM5Z3ZRcFJLc2c3Nnpuc2h5WkZrNGFLSlNHQWxXNzVreDhTY25tRk5uSmUxWlpJTUIyUTVmRkZPbXU4eDFkc2o2dTR2dnl0S3MyTW0taWlNemZla0ZqNmgyZGU1RGNOMHlPUm9fRXpWbjNz?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZ1lIZU9FYS1SdTlEa0J6NEc1U0M4WXgtakxIYlRsZGFhazZnNHhaa1ZjRU83bG55MW9mYjFBWnBWVV9qYmE4cVFoWDJEOHo1bGYxbFJGeFdhaFF0QnIyZ2RrSUhkdUFrLVZmMVc2azNsaVJPRGhzTlNocGFhbjlKX3IycEUzYkN2eTVpXzNkMHRYcVB3S0J0clN0SmpjQklZRy11b2tQanJTRklJUkktN3N5RWpvN2VYbDRtT2U0Vnh3dDQ4YUpfRmZkbWU4bzZzY0t4UEhoU19KLU9pZWlZRGJfMWZmNnZlT0FidTdOS3NldlRsRzctQTV0NGwxc3BJLWVGZzExdHB0R2tLOTVR?oc=5",
           "published": "Tue, 24 Nov 2026 21:45:00 GMT",
           "source": "TradingView"
         },
