@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-25T21:52:17.543969+00:00",
-  "candidateCount": 20,
-  "needsReview": 19,
+  "updated": "2026-11-25T23:15:09.191730+00:00",
+  "candidateCount": 19,
+  "needsReview": 18,
   "possibleDuplicates": 1,
   "records": [
     {
@@ -177,15 +177,6 @@
           "company": "Lotus Creek Exploration Inc."
         }
       ],
-      "verified": false,
-      "note": "Headline matching is only a review hint, not transaction verification."
-    },
-    {
-      "headline": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - The Globe and Mail",
-      "published": "Mon, 26 Oct 2026 21:59:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPOTNid3hBeEoxTWR2TlE3YzhuVi1rNWRMenZzTUItdmx0Z1BDVUg1cEkxSXpBUW5DR2t6MktFSUI4bTcwRUhidUF0cnp0aWpna0ZCLS1YbnJxUklQYjdYSTRNakg1YTR3aTYtOVFTQ056SXozWWxnWFBDcHpmeTNXWTd6N280OWFaSDRHdU1pTW40WFNMdmluVFRra3JYQWQ5V0psTi1uZFNLV0pmUkJWQnNQOC1hNHhpd0w5SHBJSmdMaWpGbEFzcEZrQnMzZEwxbFRMWGhlYzRFdVIyNXNxUHoyN1JUOWNQZnU1SVNJczRCemhlOEJJRi01SmpIOHkwcHZVb0M4NDNIZw?oc=5",
-      "reviewStatus": "needs_original_source_review",
-      "possibleMatches": [],
       "verified": false,
       "note": "Headline matching is only a review hint, not transaction verification."
     }

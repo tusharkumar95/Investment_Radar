@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-25T21:52:17.509451+00:00",
+  "testedAt": "2026-11-25T23:15:09.171150+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -18,12 +18,6 @@
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTkxaTDYzZXBianR1LThIUm1aSkJ0S3JvclZ3dmlHZUoydE1mZEtydkZ6TXdvdWxRZGZyZEhvQjVmWDZrSjdfTEdxVUdCMWtxTGoxV0Rxd0VNdUhfQ2diV2FwcDBCNVg2Z1dob1JLODFHcWVwZi1XNXlYcUpVOXFmTU5JdHBnMDBJdml4NG9hSlNNSmI1Q0NJUGU5VWZMSi0zOEtnV3dOakhyNEdmbzZ2eQ?oc=5",
           "published": "Fri, 20 Nov 2026 00:04:00 GMT",
           "source": "Yahoo Finance"
-        },
-        {
-          "title": "avenir announces additional investment in grid metals corp. - Fidelity Investments",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNb01pSmQxWnQzWmRram5nQlNuczZ1RVU1U2xxbmF4bFprZEwwNDFZanVkOUVubGV4bmdiWjBNbUdvMUZydW5BZUJYZXhZaTRMZUZab1VNcERVa1ktZ2kzRkZiLWg2STNJVHp5YWdQN3BiNW5YM0N6bFVDUy15NHZ1eGpfWVk1QnF5RHc?oc=5",
-          "published": "Fri, 20 Nov 2026 22:00:56 GMT",
-          "source": "Fidelity Investments"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
