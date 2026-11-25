@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T22:55:40.567348+00:00",
+  "updated": "2026-11-25T01:19:32.178036+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -796,50 +796,6 @@
       "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    GlobeNewswire "
     },
     {
-      "id": "lead:dc38915edb3f62d701",
-      "title": "Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director - The Manila Times",
-      "date": "2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQRHEycTNUZ0xrTFpKbjJyb3luOGJmNHRLRVp3U3Rfa0dOZnZiaTZ2dEVDSWYwN1BvY1hFbU0xeG9PZ3RtdVg3VWtQM3NiUkJxeFVNbTdaTGxvOXdCUDJhMmJSYW1TSzFYVDNueUFxYzBCLUhPYVZqUmpXQTVWTnozUkhqUTFDcGNWS19zRF9mYllOMW9Vek1TVXYwcFdPREtxV2NkX3FsT2lzdVhvVER4Tm92bFBmYW9RSmMxZWhUaEM4MlRnT1VxTXRJYzYzS2VIYzA4VTA3SUJFb2Iya3NOdTZZZGU3T2xiNkJpLVpfaVNNNkFPMWhHZ0hDN0Z6YzJCcS1aaHNTNkgtQ0tibnRnS2xqbzlyVF9ZWENZeHNraXI5WkVzTm9HdVh2M3pJRXlXRTY0V2tB0gG7AkFVX3lxTFA1RjZVenJJazk1d1BPSUFXM2JLLXMzOWlHTGVtdkp0XzA4WUVyU055TGJlYklLcWhrVnQ2SWhBSFBYdVN6SDFfOFZONTdjNFo5WS1RbzF5VDFtYUxxSzVLOEFnVUJhVjNpblVuN2dtdVRTM2dUME1Jc3VHaEFoXzQwcF9mcFJJckVBMlRFTDdVbUlQeTNiZ2hzSTBQSmdyTXliZVY5X2l0bmJILXZyU3gzWmFVWUVKa0lKMHhicndUcHZNS0IwXzNuWV9zcm5WUXVhRVRZR01SQ0VnTm5GVThQZjZGOV9xLXFPcjhtVlg4UXc3Q3VkWVB3OHAxMkpZcDFobGRrZGRxTjdzbjhSRDJvaTZISTd2UHBubEVCdW9sXzVfdno1emp5dzdoOGZmeEY5TXo4b3FRNEo4TQ",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director    The Manila Times "
-    },
-    {
-      "id": "lead:a8628e7f256418b2d3",
-      "title": "Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director - The Globe and Mail",
-      "date": "2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNWEwzYjBZSFVqQ2VOS056a1U0RExURHczMFRhdEpsOTF5RnpERURCdHpKQ3QxSWpVUzJkVjNXUGo1Q0tQb1BqY3NXRWVHZEU3aG5qZGtXYnZ2UGhVbnpkRUtCamMyeXVvOVpUN0FjTlJjcHVNZEVWVTVzV0VTRE5XRWsxR2hpMHZ1akU0UV9lZEFmRkhjbEoyQlFVV3E0bERMajJwWlRZallFRGNiakJUd05DblJjNGFOVDVVa0dDWUhWQlEwbnNtaGRXNU43ZWI2Z0xOXzBpa295NkhoeGlDSmtCMTlKVVVwQzBIYW1IVEs2YW4xcFBOTURMVXJrVEhic2kxUjV5cHBVa3pBS2pub0w4SFNjVGJrTHdWWlRfd1Q2aEZNXzhib2xOZDFHbl92WWxrUDVDWlpEakJRaWNrSEV1bDJmN28",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Closes $2.1 Million First Tranche of Non-Brokered Private Placement and Announces Appointment of Raymond D. Harari as Director    The Globe and Mail "
-    },
-    {
-      "id": "lead:128d46a31c56f3d6a6",
-      "title": "Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc. - Yahoo Finance",
-      "date": "2026-10-20",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT0RxaVZlMy1Odmo3d0x2ZHc4VVBkUHlPUjVSTkI1TWRldDlxZUM3QUVUQzE2OG03RDFVUzZrM3RqNl9weGdHdTdzUkRGSVIySmpqY1VmamkxTFNMM0ZvS2ZQRGhFOG1LOEhKcF90UXZYR2RxUGtxWVdjQjllcXY5N2ZFa0hFb1ZZYnFmdWFxWDRLdlJZSk9qYWxfaktPcGk0ekpjRGJrcU9VdFlPUm1HZFFGaw",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    Yahoo Finance "
-    },
-    {
-      "id": "lead:119135f2ba97af9446",
-      "title": "Oct 20, 2026, 07:00 ET \n                        NVRO Metals Announces Private Placement of up to C$35.0 Million supported by Strategic Investors\n                       \n                       NVRO Metals Limited (\"NVRO\" or the \"Company\") (TSXV: NVRO) (OTCQB: E",
-      "date": "2026-10-20",
-      "url": "https://www.newswire.ca/news-releases/nvro-metals-announces-private-placement-of-up-to-c-35-0-million-supported-by-strategic-investors-816258372.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
       "id": "lead:75b8d731b289109207",
       "title": "08:16 ET \n                        EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN\n                       \n                       On November 23, 2026, in connection with an internal reorganization of Marny S.A., 93,145,000 common shares (the \"Shares\") of Anaergia",
       "date": null,
@@ -882,7 +838,7 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
+      "items": 5,
       "relevant": 3
     },
     {
@@ -949,7 +905,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 24
+      "relevant": 23
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -970,9 +926,9 @@
   "status": {
     "sources": 18,
     "available": 12,
-    "leadCount": 78,
+    "leadCount": 74,
     "usFilingCount": 0,
-    "needsReview": 78
+    "needsReview": 74
   },
   "officialSources": [
     {
