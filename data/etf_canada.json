@@ -1,6 +1,6 @@
 {
   "market": "Canada",
-  "updatedAt": "2026-11-24T22:30:36.077908+00:00",
+  "updatedAt": "2026-11-25T21:44:55.429614+00:00",
   "count": 28,
   "etfs": [
     {
@@ -9,7 +9,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 54.34,
+      "price": 54.63,
       "aum": 36402282496.0,
       "expenseRatio": null,
       "yield": 1.9800000000000002,
@@ -123,7 +123,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 182.31,
+      "price": 181.3,
       "aum": 35908136960.0,
       "expenseRatio": null,
       "yield": 0.86,
@@ -192,7 +192,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 49.47,
+      "price": 49.35,
       "aum": 24192679936.0,
       "expenseRatio": null,
       "yield": 2.3800000000000003,
@@ -306,7 +306,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 51.44,
+      "price": 51.3,
       "aum": 23204638720.0,
       "expenseRatio": null,
       "yield": 2.11,
@@ -416,7 +416,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 45.48,
+      "price": 45.83,
       "aum": 18643988480.0,
       "expenseRatio": null,
       "yield": 2.02,
@@ -428,59 +428,59 @@
       "holdings": [
         {
           "symbol": "RY",
-          "weight": 7.6799995999999995,
+          "weight": 7.713880400000001,
           "ticker": "Royal Bank of Canada"
         },
         {
           "symbol": "TD",
-          "weight": 5.64175,
+          "weight": 5.6585398,
           "ticker": "The Toronto-Dominion Bank"
         },
         {
           "symbol": "SHOP",
-          "weight": 5.61348,
+          "weight": 5.58152,
           "ticker": "Shopify Inc."
         },
         {
           "symbol": "BMO.TO",
-          "weight": 3.26251,
+          "weight": 3.2781,
           "ticker": "Bank of Montreal"
         },
         {
-          "symbol": "CNQ.TO",
-          "weight": 3.12185,
-          "ticker": "Canadian Natural Resources Limited"
-        },
-        {
           "symbol": "BNS.TO",
-          "weight": 3.1159699,
+          "weight": 3.11973,
           "ticker": "The Bank of Nova Scotia"
         },
         {
+          "symbol": "CNQ.TO",
+          "weight": 3.1117799,
+          "ticker": "Canadian Natural Resources Limited"
+        },
+        {
           "symbol": "ENB.TO",
-          "weight": 2.9393699,
+          "weight": 2.9386400999999998,
           "ticker": "Enbridge Inc."
         },
         {
           "symbol": "CM.TO",
-          "weight": 2.8593800999999996,
+          "weight": 2.8884001,
           "ticker": "Canadian Imperial Bank of Commerce"
         },
         {
           "symbol": "SU.TO",
-          "weight": 2.552,
+          "weight": 2.54629,
           "ticker": "Suncor Energy Inc."
         },
         {
           "symbol": "AEM.TO",
-          "weight": 2.42326,
+          "weight": 2.44326,
           "ticker": "Agnico Eagle Mines Limited"
         }
       ],
       "sectors": [
         {
           "sector": "Financial Services",
-          "weight": 34.54
+          "weight": 34.67
         },
         {
           "sector": "Energy",
@@ -488,19 +488,19 @@
         },
         {
           "sector": "Basic Materials",
-          "weight": 16.04
+          "weight": 16.09
         },
         {
           "sector": "Industrials",
-          "weight": 10.19
+          "weight": 10.2
         },
         {
           "sector": "Technology",
-          "weight": 9.04
+          "weight": 8.94
         },
         {
           "sector": "Consumer Cyclical",
-          "weight": 3.59
+          "weight": 3.55
         },
         {
           "sector": "Consumer Defensive",
@@ -508,19 +508,19 @@
         },
         {
           "sector": "Utilities",
-          "weight": 2.99
+          "weight": 2.97
         },
         {
           "sector": "Communication Services",
-          "weight": 1.48
+          "weight": 1.47
         },
         {
           "sector": "Real Estate",
-          "weight": 1.36
+          "weight": 1.35
         },
         {
           "sector": "Healthcare",
-          "weight": 0.18
+          "weight": 0.17
         }
       ]
     },
@@ -530,7 +530,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 69.0,
+      "price": 69.47,
       "aum": 18028640256.0,
       "expenseRatio": null,
       "yield": 2.0299999,
@@ -644,7 +644,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 13.58,
+      "price": 13.575,
       "aum": 13241412608.0,
       "expenseRatio": null,
       "yield": 3.45,
@@ -693,7 +693,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 46.46,
+      "price": 46.27,
       "aum": 11423739904.0,
       "expenseRatio": null,
       "yield": 2.2800000000000002,
@@ -807,7 +807,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 27.69,
+      "price": 27.66,
       "aum": 10954761216.0,
       "expenseRatio": null,
       "yield": 3.52,
@@ -856,7 +856,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 74.14,
+      "price": 74.16,
       "aum": 9454489600.0,
       "expenseRatio": null,
       "yield": 2.9899999999999998,
@@ -966,7 +966,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 22.58,
+      "price": 22.61,
       "aum": 7772672000.0,
       "expenseRatio": null,
       "yield": 3.4299999999999997,
@@ -1015,7 +1015,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 45.28,
+      "price": 45.35,
       "aum": 6782312960.0,
       "expenseRatio": null,
       "yield": 2.97,
@@ -1109,7 +1109,7 @@
       "market": "Canada",
       "category": "BMO Investments Inc.",
       "currency": "CAD",
-      "price": 63.195,
+      "price": 63.18,
       "aum": 6080671232.0,
       "expenseRatio": null,
       "yield": 1.82,
@@ -1121,59 +1121,59 @@
       "holdings": [
         {
           "symbol": "FTS.TO",
-          "weight": 4.46782,
+          "weight": 4.4271797,
           "ticker": "Fortis Inc."
         },
         {
           "symbol": "GWO.TO",
-          "weight": 4.3355998,
+          "weight": 4.3754,
           "ticker": "Great-West Lifeco Inc."
         },
         {
           "symbol": "L.TO",
-          "weight": 4.2146303000000005,
+          "weight": 4.21905,
           "ticker": "Loblaw Companies Limited"
         },
         {
           "symbol": "QBR-B.TO",
-          "weight": 4.0218502,
+          "weight": 4.07895,
           "ticker": "Quebecor Inc."
         },
         {
           "symbol": "H.TO",
-          "weight": 3.7741102,
+          "weight": 3.7629798,
           "ticker": "Hydro One Limited"
         },
         {
           "symbol": "EMP-A.TO",
-          "weight": 3.6084699999999996,
+          "weight": 3.5920199999999998,
           "ticker": "Empire Company Limited"
         },
         {
-          "symbol": "EMA.TO",
-          "weight": 3.4063301999999998,
-          "ticker": "Emera Incorporated"
-        },
-        {
           "symbol": "MRU.TO",
-          "weight": 3.39821,
+          "weight": 3.3954199999999997,
           "ticker": "Metro Inc."
         },
         {
+          "symbol": "EMA.TO",
+          "weight": 3.3925902,
+          "ticker": "Emera Incorporated"
+        },
+        {
           "symbol": "X.TO",
-          "weight": 3.3468400000000003,
+          "weight": 3.3626101999999998,
           "ticker": "TMX Group Limited"
         },
         {
           "symbol": "CCL.B",
-          "weight": 3.2907100000000002,
+          "weight": 3.23089,
           "ticker": "CCL.B"
         }
       ],
       "sectors": [
         {
           "sector": "Financial Services",
-          "weight": 26.94
+          "weight": 27.05
         },
         {
           "sector": "Consumer Defensive",
@@ -1181,27 +1181,27 @@
         },
         {
           "sector": "Utilities",
-          "weight": 16.69
-        },
-        {
-          "sector": "Consumer Cyclical",
-          "weight": 8.86
+          "weight": 16.62
         },
         {
           "sector": "Industrials",
-          "weight": 8.82
+          "weight": 8.81
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "weight": 8.78
         },
         {
           "sector": "Communication Services",
-          "weight": 8.44
+          "weight": 8.47
         },
         {
           "sector": "Basic Materials",
-          "weight": 5.21
+          "weight": 5.24
         },
         {
           "sector": "Real Estate",
-          "weight": 3.76
+          "weight": 3.75
         },
         {
           "sector": "Energy",
@@ -1209,7 +1209,7 @@
         },
         {
           "sector": "Technology",
-          "weight": 1.4
+          "weight": 1.42
         }
       ]
     },
@@ -1219,7 +1219,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 63.39,
+      "price": 63.01,
       "aum": 5694184960.0,
       "expenseRatio": null,
       "yield": 0.22999999999999998,
@@ -1329,7 +1329,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 39.43,
+      "price": 39.415,
       "aum": 4484783616.0,
       "expenseRatio": null,
       "yield": 3.36,
@@ -1443,7 +1443,7 @@
       "market": "Canada",
       "category": "Vanguard Investments Canada Inc",
       "currency": "CAD",
-      "price": 45.34,
+      "price": 45.08,
       "aum": 4399013376.0,
       "expenseRatio": null,
       "yield": 1.68,
@@ -1512,7 +1512,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 46.0,
+      "price": 46.17,
       "aum": 1249887360.0,
       "expenseRatio": null,
       "yield": 2.96,
@@ -1622,7 +1622,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 16.0,
+      "price": 16.04,
       "aum": 999011520.0,
       "expenseRatio": null,
       "yield": 4.65,
@@ -1696,7 +1696,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 61.57,
+      "price": 61.69,
       "aum": 390092288.0,
       "expenseRatio": null,
       "yield": 2.0399998999999998,
@@ -1802,7 +1802,7 @@
       "market": "Canada",
       "category": "Global X Investments Canada Inc.",
       "currency": "CAD",
-      "price": 34.6,
+      "price": 33.71,
       "aum": 169273616.0,
       "expenseRatio": null,
       "yield": null,
@@ -1883,7 +1883,7 @@
       "market": "Canada",
       "category": "Harvest Portfolios Group Inc.",
       "currency": "CAD",
-      "price": 7.82,
+      "price": 7.91,
       "aum": 16856156.0,
       "expenseRatio": null,
       "yield": 0.0,
@@ -1969,7 +1969,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 112.67,
+      "price": 111.81,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.7900001,
@@ -1981,99 +1981,99 @@
       "holdings": [
         {
           "symbol": "NVDA",
-          "weight": 7.77441,
+          "weight": 7.9016,
           "ticker": "NVIDIA Corporation"
         },
         {
           "symbol": "AAPL",
-          "weight": 7.727449999999999,
+          "weight": 7.586460000000001,
           "ticker": "Apple Inc."
         },
         {
           "symbol": "MSFT",
-          "weight": 5.9309103,
+          "weight": 5.97809,
           "ticker": "Microsoft Corporation"
         },
         {
           "symbol": "AMZN",
-          "weight": 3.7036100000000003,
+          "weight": 3.6984302,
           "ticker": "Amazon.com, Inc."
         },
         {
           "symbol": "GOOGL",
-          "weight": 2.86254,
+          "weight": 2.81123,
           "ticker": "Alphabet Inc."
         },
         {
           "symbol": "AVGO",
-          "weight": 2.32918,
+          "weight": 2.36588,
           "ticker": "Broadcom Inc."
         },
         {
           "symbol": "GOOG",
-          "weight": 2.2951099999999998,
+          "weight": 2.25604,
           "ticker": "Alphabet Inc."
         },
         {
           "symbol": "META",
-          "weight": 2.15918,
+          "weight": 2.10308,
           "ticker": "Meta Platforms, Inc."
         },
         {
           "symbol": "TSLA",
-          "weight": 1.5982099,
+          "weight": 1.6691399999999998,
           "ticker": "Tesla, Inc."
         },
         {
           "symbol": "LLY",
-          "weight": 1.5502099999999999,
+          "weight": 1.5456701,
           "ticker": "Eli Lilly and Company"
         }
       ],
       "sectors": [
         {
           "sector": "Technology",
-          "weight": 38.69
+          "weight": 38.97
         },
         {
           "sector": "Financial Services",
-          "weight": 11.85
+          "weight": 11.79
         },
         {
           "sector": "Healthcare",
-          "weight": 9.87
-        },
-        {
-          "sector": "Communication Services",
-          "weight": 9.15
+          "weight": 9.8
         },
         {
           "sector": "Consumer Cyclical",
-          "weight": 9.03
+          "weight": 9.09
+        },
+        {
+          "sector": "Communication Services",
+          "weight": 8.96
         },
         {
           "sector": "Industrials",
-          "weight": 7.43
+          "weight": 7.5
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 4.77
+          "weight": 4.73
         },
         {
           "sector": "Energy",
-          "weight": 3.86
+          "weight": 3.85
         },
         {
           "sector": "Utilities",
-          "weight": 2.03
+          "weight": 2.02
         },
         {
           "sector": "Real Estate",
-          "weight": 1.77
+          "weight": 1.76
         },
         {
           "sector": "Basic Materials",
-          "weight": 1.54
+          "weight": 1.53
         }
       ]
     },
@@ -2083,7 +2083,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 38.41,
+      "price": 38.04,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.72,
@@ -2197,7 +2197,7 @@
       "market": "Canada",
       "category": "TD Asset Management Inc",
       "currency": "CAD",
-      "price": 55.78,
+      "price": 55.03,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.06999999999999999,
@@ -2295,7 +2295,7 @@
       "market": "Canada",
       "category": "ETF",
       "currency": "CAD",
-      "price": 46.55,
+      "price": 46.91,
       "aum": null,
       "expenseRatio": null,
       "yield": 0.0,
@@ -2313,7 +2313,7 @@
       "market": "Canada",
       "category": "BMO Asset Management Inc",
       "currency": "CAD",
-      "price": 67.87,
+      "price": 68.17,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.63,
@@ -2325,83 +2325,83 @@
       "holdings": [
         {
           "symbol": "JNJ",
-          "weight": 2.9905401,
+          "weight": 3.00914,
           "ticker": "Johnson & Johnson"
         },
         {
           "symbol": "COR",
-          "weight": 2.934,
+          "weight": 2.91582,
           "ticker": "Cencora, Inc."
         },
         {
           "symbol": "TDY",
-          "weight": 2.5497400999999997,
+          "weight": 2.62314,
           "ticker": "Teledyne Technologies Incorporated"
         },
         {
           "symbol": "CBOE",
-          "weight": 2.53001,
+          "weight": 2.48365,
           "ticker": "Cboe Global Markets, Inc."
         },
         {
           "symbol": "CSCO",
-          "weight": 2.1885801,
+          "weight": 2.25822,
           "ticker": "Cisco Systems, Inc."
         },
         {
           "symbol": "CME",
-          "weight": 2.17527,
+          "weight": 2.18501,
           "ticker": "CME Group Inc."
         },
         {
           "symbol": "MSI",
-          "weight": 2.17317,
+          "weight": 2.18329,
           "ticker": "Motorola Solutions, Inc."
         },
         {
           "symbol": "ED",
-          "weight": 2.11196,
+          "weight": 2.0993999999999997,
           "ticker": "Consolidated Edison, Inc."
         },
         {
-          "symbol": "IBM",
-          "weight": 2.0507299999999997,
-          "ticker": "International Business Machines Corporation"
+          "symbol": "NOC",
+          "weight": 2.0939200000000002,
+          "ticker": "Northrop Grumman Corporation"
         },
         {
-          "symbol": "NOC",
-          "weight": 2.0487102,
-          "ticker": "Northrop Grumman Corporation"
+          "symbol": "GLW",
+          "weight": 2.04634,
+          "ticker": "Corning Incorporated"
         }
       ],
       "sectors": [
         {
           "sector": "Healthcare",
-          "weight": 20.4
+          "weight": 20.3
         },
         {
           "sector": "Utilities",
-          "weight": 18.87
+          "weight": 18.79
         },
         {
           "sector": "Technology",
-          "weight": 17.28
+          "weight": 17.52
         },
         {
           "sector": "Financial Services",
-          "weight": 11.85
+          "weight": 11.81
         },
         {
           "sector": "Consumer Defensive",
-          "weight": 11.56
+          "weight": 11.43
         },
         {
           "sector": "Industrials",
-          "weight": 7.94
+          "weight": 8.1
         },
         {
           "sector": "Real Estate",
-          "weight": 3.68
+          "weight": 3.69
         },
         {
           "sector": "Consumer Cyclical",
@@ -2409,11 +2409,11 @@
         },
         {
           "sector": "Communication Services",
-          "weight": 3.63
+          "weight": 3.56
         },
         {
           "sector": "Basic Materials",
-          "weight": 0.7
+          "weight": 0.71
         },
         {
           "sector": "Energy",
@@ -2427,7 +2427,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 75.14,
+      "price": 74.74,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.05,
@@ -2541,7 +2541,7 @@
       "market": "Canada",
       "category": "BlackRock Asset Management Canada Ltd",
       "currency": "CAD",
-      "price": 55.72,
+      "price": 55.45,
       "aum": null,
       "expenseRatio": null,
       "yield": 1.23000005,
