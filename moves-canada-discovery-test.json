@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-25T04:26:20.988707+00:00",
+  "testedAt": "2026-11-25T11:32:28.054895+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -26,10 +26,10 @@
           "source": "The Globe and Mail"
         },
         {
-          "title": "Ben Hogervorst Announces Acquisition of Shares in Affinor Growers Inc - StreetInsider",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmpITlp5ckVpa1k4VlcyMXFlaWNfWkZqVWl5MV9nZzlmOXV6NXVfaWkyTk1rZDJlZFpIdlA1VFI3ZXZHVmVfd2FHY3h0Sk5iMGprQXVfWXduN0FqR0xCSzJqTkNQQlJGWnptaklYeDd1WENHTVpZdlY3cWVDUnVEeTBhenI1T3h4bEJxVmdoY3VlMkFuTEQ3a0k0cEdNS2hOQ1hZZnU3RU95ak9OLVZ2RnZuamQzZW1iaEwweEJ5cw?oc=5",
-          "published": "Wed, 18 Nov 2026 19:12:23 GMT",
-          "source": "StreetInsider"
+          "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
+          "published": "Wed, 25 Nov 2026 01:30:20 GMT",
+          "source": "Investing News Network"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
@@ -54,7 +54,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 10,
+      "count": 9,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -85,12 +85,6 @@
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkRwWkNxOTBoQk5vYUFnV1o2WmkwRVhMeDlGaUJnTGZ6NFdDZjZZOUxYejJMdUs3eGZGcDhmUzdfZnhaeGFiU3RsaF9yUU5GdHNidVB2SmVoYVZDLWx5VjBiYzN1ZVRSb1VSa3R5dU9OMzNoTUlzMHQ1ZElwTklTLVliN0JlTkFzTW5SaU1iaExhOW5lSjh0RWxvTC1ueEU?oc=5",
           "published": "Wed, 18 Nov 2026 19:22:21 GMT",
           "source": "Investing News Network"
-        },
-        {
-          "title": "Athena Gold Announces Upsize of Previously Announced Private Placement to $2 Million and Closing of the Offering - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPMUFLNXFQQVRJQ25zWEdIRTM3R2FCT09HSWtUMThPeDBuWU9UcDlIaGlXNDZXSlo0ejRlVG1XSUV3OWZUNlhybWJWZmxKMzZpMlo0N2prQm5mbUNGbk1iR3M2MXU2bnRFNFM5MzEyc3hkeFVUZTB4QkFJdlByM0Jva3FtX1R4T0hOcEROSUxxV09tdFliaXFzc2s0MXFQSUVDenpIWDcwZlZ3bmpYbUJkT0ZBVTdTdzhSeVJ2blFid3Y0VFNWeUJBTnNaMkNCNkQwN3d6aTdyelJiVXlHcERaYUZjaUYxRW9aUktFdFpaMkdXTGxIVnVtVEc4VHZPWVQ2SDVXQg?oc=5",
-          "published": "Mon, 23 Nov 2026 12:00:00 GMT",
-          "source": "TradingView"
         },
         {
           "title": "Northstar Gold Corp. Closes First Tranche of Flow-Through Financings - TradingView",
