@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-25T01:19:40.953859+00:00",
-  "day": "2026-11-24",
+  "updated": "2026-11-25T05:10:26.705603+00:00",
+  "day": "2026-11-25",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.12,
-      "lastPriceDate": "2026-11-24",
-      "priceChangePct": -8.65,
+      "lastPrice": 4.16,
+      "lastPriceDate": "2026-11-23",
+      "priceChangePct": -7.76,
       "quoteStatus": "Available"
     },
     {
@@ -621,9 +621,9 @@
           "price": null
         }
       ],
-      "lastPrice": 0.005,
+      "lastPrice": 0.01,
       "lastPriceDate": "2026-11-24",
-      "priceChangePct": -94.44,
+      "priceChangePct": -88.89,
       "quoteStatus": "Available"
     },
     {
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 38,
+      "candidateArticles": 39,
       "status": "Verified transactions found"
     },
     {
@@ -1042,6 +1042,50 @@
     }
   ],
   "leads": [
+    {
+      "id": "lead:4d140d55670b064f5c",
+      "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
+      "date": "2026-11-25",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement    Investing News Network "
+    },
+    {
+      "id": "lead:d1a7f7d3e6870be0d4",
+      "title": "Nov 24, 2026, 21:25 ET \n                          ZYUS Life Sciences Announces Closing of Third Tranche of Non-Brokered Unit Offering Private Placement, Grant of Stock Options and Amendment to Certain Secured Debt\n                         \n                    ",
+      "date": "2026-11-24",
+      "url": "https://www.newswire.ca/news-releases/zyus-life-sciences-announces-closing-of-third-tranche-of-non-brokered-unit-offering-private-placement-grant-of-stock-options-and-amendment-to-certain-secured-debt-868578127.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:75b8d731b289109207",
+      "title": "Nov 24, 2026, 08:16 ET \n                        EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN\n                       \n                       On November 23, 2026, in connection with an internal reorganization of Marny S.A., 93,145,000 common shares (the \"Shares",
+      "date": "2026-11-24",
+      "url": "https://www.newswire.ca/news-releases/early-warning-news-release-of-ohad-epschtein-884835586.html",
+      "discoveredVia": "Canada NewsWire / Acquisitions",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
+    {
+      "id": "lead:62a43be16286787617",
+      "title": "Nov 24, 2026, 07:00 ET \n                          Horizon Petroleum Ltd. Announces Brokered Private Placement of Convertible Unsecured Debenture Units for Gross Proceeds of up to $10 Million\n                         \n                         Horizon Petroleum ",
+      "date": "2026-11-24",
+      "url": "https://www.newswire.ca/news-releases/horizon-petroleum-ltd-announces-brokered-private-placement-of-convertible-unsecured-debenture-units-for-gross-proceeds-of-up-to-10-million-881557609.html",
+      "discoveredVia": "Canada NewsWire / Private placements",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": ""
+    },
     {
       "id": "lead:613dc7b40808ad9ff6",
       "title": "EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN - PR Newswire Canada",
@@ -1833,28 +1877,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    GlobeNewswire "
-    },
-    {
-      "id": "lead:75b8d731b289109207",
-      "title": "08:16 ET \n                        EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN\n                       \n                       On November 23, 2026, in connection with an internal reorganization of Marny S.A., 93,145,000 common shares (the \"Shares\") of Anaergia",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/early-warning-news-release-of-ohad-epschtein-884835586.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:62a43be16286787617",
-      "title": "07:00 ET \n                          Horizon Petroleum Ltd. Announces Brokered Private Placement of Convertible Unsecured Debenture Units for Gross Proceeds of up to $10 Million\n                         \n                         Horizon Petroleum Ltd. (TSXV: HP",
-      "date": null,
-      "url": "https://www.newswire.ca/news-releases/horizon-petroleum-ltd-announces-brokered-private-placement-of-convertible-unsecured-debenture-units-for-gross-proceeds-of-up-to-10-million-881557609.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
     }
   ],
   "usFilings": [],
@@ -1877,8 +1899,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 3
+      "items": 8,
+      "relevant": 4
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1944,7 +1966,7 @@
       "name": "Canada NewsWire / Private placements",
       "ok": true,
       "items": 100,
-      "relevant": 23
+      "relevant": 24
     },
     {
       "name": "SEC EDGAR SC 13D",
@@ -1986,7 +2008,7 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 74,
+    "disclosureLeads": 76,
     "usFilingNotices": 0,
     "sourcesOnline": 12,
     "sourcesChecked": 18,
