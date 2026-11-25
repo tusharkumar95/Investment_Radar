@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-25T12:40:37.607774+00:00",
+  "updated": "2026-11-25T21:59:41.264816+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-23",
-    "trades": 1002,
-    "investors": 588
+    "latest": "2026-11-25",
+    "trades": 1043,
+    "investors": 607
   },
   "featured": [
     {
@@ -159,16 +159,48 @@
       "id": "investor:a202d3e30bc4ea9c",
       "name": "HDFC MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 5,
-      "observedBuyDays": 4,
+      "observedTransactions": 7,
+      "observedBuyDays": 5,
       "observedSellDays": 1,
-      "buyValueCr": 337.94,
+      "buyValueCr": 1323.96,
       "sellValueCr": 43.01,
-      "netDisclosedValueCr": 294.93,
-      "latestDisclosure": "2026-11-18",
-      "uniqueCompanies": 5,
+      "netDisclosedValueCr": 1280.95,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 6,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "HDFC MUTUAL FUND",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 2863074,
+          "sellQty": 0,
+          "buyValueINR": 4180088040.0,
+          "sellValueINR": 0,
+          "netShares": 2863074,
+          "netValueINR": 4180088040.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6d4a3f52dfd14d0127"
+        },
+        {
+          "date": "2026-11-25",
+          "name": "HDFC MUTUAL FUND",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 3890471,
+          "sellQty": 0,
+          "buyValueINR": 5680087660.0,
+          "sellValueINR": 0,
+          "netShares": 3890471,
+          "netValueINR": 5680087660.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "e86040e7bdae785280"
+        },
         {
           "date": "2026-11-18",
           "name": "HDFC MUTUAL FUND",
@@ -252,6 +284,15 @@
       ],
       "companies": [
         {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 986.02,
+          "sellValueCr": 0.0,
+          "netShares": 6753545,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "EDELALTS",
           "company": "EAAA India Alternatives L",
           "buyValueCr": 135.42,
@@ -312,16 +353,32 @@
       "id": "investor:be281e359920b4fb",
       "name": "SBI MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 0,
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
       "observedSellDays": 1,
-      "buyValueCr": 0.0,
+      "buyValueCr": 50.0,
       "sellValueCr": 180.22,
-      "netDisclosedValueCr": -180.22,
-      "latestDisclosure": "2026-11-18",
-      "uniqueCompanies": 1,
+      "netDisclosedValueCr": -130.22,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "SBI MUTUAL FUND",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 342468,
+          "sellQty": 0,
+          "buyValueINR": 500003280.0,
+          "sellValueINR": 0,
+          "netShares": 342468,
+          "netValueINR": 500003280.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "45385d108a1926f41e"
+        },
         {
           "date": "2026-11-18",
           "name": "SBI MUTUAL FUND",
@@ -341,6 +398,15 @@
       ],
       "companies": [
         {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 50.0,
+          "sellValueCr": 0.0,
+          "netShares": 342468,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "NEOGEN",
           "company": "Neogen Chemicals Limited",
           "buyValueCr": 0.0,
@@ -352,9 +418,9 @@
       ],
       "observations": {
         "repeatPurchases": false,
-        "buyAndSellObserved": false,
+        "buyAndSellObserved": true,
         "multipleCompanies": false,
-        "noObservedBuys": true
+        "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
       "displayName": "SBI Mutual Fund",
@@ -907,16 +973,32 @@
       "id": "investor:0c90daf6e41dd5e2",
       "name": "SMALLCAP WORLD FUND INC",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
+      "observedTransactions": 2,
       "observedBuyDays": 1,
-      "observedSellDays": 0,
+      "observedSellDays": 1,
       "buyValueCr": 339.36,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 339.36,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
+      "sellValueCr": 433.56,
+      "netDisclosedValueCr": -94.2,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "SMALLCAP WORLD FUND INC",
+          "symbol": "APLAPOLLO",
+          "company": "Apl Apollo Tubes Ltd",
+          "buyQty": 0,
+          "sellQty": 3071937,
+          "buyValueINR": 0,
+          "sellValueINR": 4335639723.69,
+          "netShares": -3071937,
+          "netValueINR": -4335639723.69,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "9881abe31c2fb300f9"
+        },
         {
           "date": "2026-10-30",
           "name": "SMALLCAP WORLD FUND INC",
@@ -943,11 +1025,20 @@
           "netShares": 14140027,
           "buyDays": 1,
           "sellDays": 0
+        },
+        {
+          "symbol": "APLAPOLLO",
+          "company": "Apl Apollo Tubes Ltd",
+          "buyValueCr": 0.0,
+          "sellValueCr": 433.56,
+          "netShares": -3071937,
+          "buyDays": 0,
+          "sellDays": 1
         }
       ],
       "observations": {
         "repeatPurchases": false,
-        "buyAndSellObserved": false,
+        "buyAndSellObserved": true,
         "multipleCompanies": false,
         "noObservedBuys": false
       },
@@ -2393,16 +2484,32 @@
       "id": "investor:572f1466d17bafa8",
       "name": "GOLDMAN SACHS BANK EUROPE SE",
       "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 3,
-      "observedBuyDays": 2,
+      "observedTransactions": 4,
+      "observedBuyDays": 3,
       "observedSellDays": 1,
-      "buyValueCr": 280.06,
+      "buyValueCr": 305.06,
       "sellValueCr": 4.67,
-      "netDisclosedValueCr": 275.39,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 3,
+      "netDisclosedValueCr": 300.39,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 4,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 171233,
+          "sellQty": 0,
+          "buyValueINR": 250000180.0,
+          "sellValueINR": 0,
+          "netShares": 171233,
+          "netValueINR": 250000180.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "c9d52ad0e51ed3d8b2"
+        },
         {
           "date": "2026-11-13",
           "name": "GOLDMAN SACHS BANK EUROPE SE",
@@ -2472,6 +2579,15 @@
           "sellDays": 0
         },
         {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 25.0,
+          "sellValueCr": 0.0,
+          "netShares": 171233,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "MKJEWELS",
           "company": "MK Sons Fine Jewels Ltd",
           "buyValueCr": 0.0,
@@ -2484,6 +2600,156 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:46a20b77f5c3fb8d",
+      "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 5,
+      "observedBuyDays": 5,
+      "observedSellDays": 0,
+      "buyValueCr": 297.45,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 297.45,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 5,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 780810,
+          "sellQty": 0,
+          "buyValueINR": 1139982600.0,
+          "sellValueINR": 0,
+          "netShares": 780810,
+          "netValueINR": 1139982600.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "29c83f384def160694"
+        },
+        {
+          "date": "2026-11-18",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "AZAD",
+          "company": "Azad Engineering Limited",
+          "buyQty": 473088,
+          "sellQty": 0,
+          "buyValueINR": 1081479168.0,
+          "sellValueINR": 0,
+          "netShares": 473088,
+          "netValueINR": 1081479168.0,
+          "avgBuyPrice": 2286.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "103753a7265aca9cb4"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 1150000,
+          "sellQty": 0,
+          "buyValueINR": 251850000.0,
+          "sellValueINR": 0,
+          "netShares": 1150000,
+          "netValueINR": 251850000.0,
+          "avgBuyPrice": 219.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "48b4698c2f7d81525b"
+        },
+        {
+          "date": "2026-11-13",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 1015000,
+          "sellQty": 0,
+          "buyValueINR": 250451250.0,
+          "sellValueINR": 0,
+          "netShares": 1015000,
+          "netValueINR": 250451250.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "6af9225a8e0e96adfe"
+        },
+        {
+          "date": "2026-11-06",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyQty": 183000,
+          "sellQty": 0,
+          "buyValueINR": 250710000.0,
+          "sellValueINR": 0,
+          "netShares": 183000,
+          "netValueINR": 250710000.0,
+          "avgBuyPrice": 1370.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "c6c58f21e4b492bc4a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 114.0,
+          "sellValueCr": 0.0,
+          "netShares": 780810,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "AZAD",
+          "company": "Azad Engineering Limited",
+          "buyValueCr": 108.15,
+          "sellValueCr": 0.0,
+          "netShares": 473088,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 25.18,
+          "sellValueCr": 0.0,
+          "netShares": 1150000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "ALIVUS",
+          "company": "Alivus Life Sciences Ltd",
+          "buyValueCr": 25.07,
+          "sellValueCr": 0.0,
+          "netShares": 183000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 25.05,
+          "sellValueCr": 0.0,
+          "netShares": 1015000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
         "multipleCompanies": true,
         "noObservedBuys": false
       },
@@ -2892,131 +3158,6 @@
         "repeatPurchases": false,
         "buyAndSellObserved": false,
         "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:46a20b77f5c3fb8d",
-      "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 4,
-      "observedBuyDays": 4,
-      "observedSellDays": 0,
-      "buyValueCr": 183.45,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 183.45,
-      "latestDisclosure": "2026-11-18",
-      "uniqueCompanies": 4,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-18",
-          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-          "symbol": "AZAD",
-          "company": "Azad Engineering Limited",
-          "buyQty": 473088,
-          "sellQty": 0,
-          "buyValueINR": 1081479168.0,
-          "sellValueINR": 0,
-          "netShares": 473088,
-          "netValueINR": 1081479168.0,
-          "avgBuyPrice": 2286.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "103753a7265aca9cb4"
-        },
-        {
-          "date": "2026-11-17",
-          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 1150000,
-          "sellQty": 0,
-          "buyValueINR": 251850000.0,
-          "sellValueINR": 0,
-          "netShares": 1150000,
-          "netValueINR": 251850000.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "48b4698c2f7d81525b"
-        },
-        {
-          "date": "2026-11-13",
-          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyQty": 1015000,
-          "sellQty": 0,
-          "buyValueINR": 250451250.0,
-          "sellValueINR": 0,
-          "netShares": 1015000,
-          "netValueINR": 250451250.0,
-          "avgBuyPrice": 246.75,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "6af9225a8e0e96adfe"
-        },
-        {
-          "date": "2026-11-06",
-          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyQty": 183000,
-          "sellQty": 0,
-          "buyValueINR": 250710000.0,
-          "sellValueINR": 0,
-          "netShares": 183000,
-          "netValueINR": 250710000.0,
-          "avgBuyPrice": 1370.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "c6c58f21e4b492bc4a"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "AZAD",
-          "company": "Azad Engineering Limited",
-          "buyValueCr": 108.15,
-          "sellValueCr": 0.0,
-          "netShares": 473088,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 25.18,
-          "sellValueCr": 0.0,
-          "netShares": 1150000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyValueCr": 25.07,
-          "sellValueCr": 0.0,
-          "netShares": 183000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyValueCr": 25.05,
-          "sellValueCr": 0.0,
-          "netShares": 1015000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -4517,6 +4658,140 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:c4303474562931c9",
+      "name": "RAJESH BHASKARAN NAIR",
+      "type": "Named investor / company",
+      "observedTransactions": 3,
+      "observedBuyDays": 3,
+      "observedSellDays": 0,
+      "buyValueCr": 75.04,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 75.04,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [
+        "INDGN"
+      ],
+      "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 381700,
+          "sellQty": 0,
+          "buyValueINR": 250013500.0,
+          "sellValueINR": 0,
+          "netShares": 381700,
+          "netValueINR": 250013500.0,
+          "avgBuyPrice": 655.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "0177328ad9adb692eb"
+        },
+        {
+          "date": "2026-11-20",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 380750,
+          "sellQty": 0,
+          "buyValueINR": 250152750.0,
+          "sellValueINR": 0,
+          "netShares": 380750,
+          "netValueINR": 250152750.0,
+          "avgBuyPrice": 657.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "ec9e85576dbfb7577c"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 382000,
+          "sellQty": 0,
+          "buyValueINR": 250210000.0,
+          "sellValueINR": 0,
+          "netShares": 382000,
+          "netValueINR": 250210000.0,
+          "avgBuyPrice": 655.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "5cd7dd44eaaad2d52a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyValueCr": 75.04,
+          "sellValueCr": 0.0,
+          "netShares": 1144450,
+          "buyDays": 3,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": true,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:703146f852eaab95",
+      "name": "FAIRBRIDGE CAPITAL (MAURITIUS) LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 74.82,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 74.82,
+      "latestDisclosure": "2026-11-25",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-25",
+          "name": "FAIRBRIDGE CAPITAL (MAURITIUS) LIMITED",
+          "symbol": "THOMASCOOK",
+          "company": "Thomas Cook  (India)  Ltd",
+          "buyQty": 5300000,
+          "sellQty": 0,
+          "buyValueINR": 748201000.0,
+          "sellValueINR": 0,
+          "netShares": 5300000,
+          "netValueINR": 748201000.0,
+          "avgBuyPrice": 141.17,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "3002d3aca31431adf1"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "THOMASCOOK",
+          "company": "Thomas Cook  (India)  Ltd",
+          "buyValueCr": 74.82,
+          "sellValueCr": 0.0,
+          "netShares": 5300000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:e6150673b2dbce02",
       "name": "CELLO PENS AND STATIONERY PRIVATE LIMITED",
       "type": "Named investor / company",
@@ -5371,140 +5646,6 @@
           "buyValueCr": 55.73,
           "sellValueCr": 0.0,
           "netShares": 1755399,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:40b81cb66ca5a031",
-      "name": "ONIX RENEWABLE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 3,
-      "observedBuyDays": 2,
-      "observedSellDays": 0,
-      "buyValueCr": 54.22,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 54.22,
-      "latestDisclosure": "2026-10-15",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [
-        "MVKAGRO"
-      ],
-      "tradeRecords": [
-        {
-          "date": "2026-10-15",
-          "name": "ONIX RENEWABLE LIMITED",
-          "symbol": "MVKAGRO",
-          "company": "M.V.K. Agro Food Prod Ltd",
-          "buyQty": 689400,
-          "sellQty": 0,
-          "buyValueINR": 169289064.0,
-          "sellValueINR": 0,
-          "netShares": 689400,
-          "netValueINR": 169289064.0,
-          "avgBuyPrice": 245.56,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "2d991d413d1ab14a"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "ONIX RENEWABLE LIMITED",
-          "symbol": "MVKAGRO",
-          "company": "M.V.K. Agro Food Prod Ltd",
-          "buyQty": 689400,
-          "sellQty": 0,
-          "buyValueINR": 169289064.0,
-          "sellValueINR": 0,
-          "netShares": 689400,
-          "netValueINR": 169289064.0,
-          "avgBuyPrice": 245.56,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "8a8db34aef117fe8a6"
-        },
-        {
-          "date": "2026-10-13",
-          "name": "ONIX RENEWABLE LIMITED",
-          "symbol": "MVKAGRO",
-          "company": "M.V.K. Agro Food Prod Ltd",
-          "buyQty": 816300,
-          "sellQty": 0,
-          "buyValueINR": 203577057.0,
-          "sellValueINR": 0,
-          "netShares": 816300,
-          "netValueINR": 203577057.0,
-          "avgBuyPrice": 249.39,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "65c132971e6f2e23"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MVKAGRO",
-          "company": "M.V.K. Agro Food Prod Ltd",
-          "buyValueCr": 54.22,
-          "sellValueCr": 0.0,
-          "netShares": 2195100,
-          "buyDays": 2,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": true,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:76720a4caf638bf3",
-      "name": "GOVERNMENT OF SINGAPORE",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 53.73,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 53.73,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-13",
-          "name": "GOVERNMENT OF SINGAPORE",
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyQty": 2177506,
-          "sellQty": 0,
-          "buyValueINR": 537299605.5,
-          "sellValueINR": 0,
-          "netShares": 2177506,
-          "netValueINR": 537299605.5,
-          "avgBuyPrice": 246.75,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "2cc78c0c202966b701"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyValueCr": 53.73,
-          "sellValueCr": 0.0,
-          "netShares": 2177506,
           "buyDays": 1,
           "sellDays": 0
         }
