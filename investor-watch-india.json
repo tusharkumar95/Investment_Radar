@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-26T12:16:34.966917+00:00",
+  "updated": "2026-11-26T21:47:53.513604+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-25",
-    "trades": 1043,
-    "investors": 607
+    "latest": "2026-11-26",
+    "trades": 1124,
+    "investors": 647
   },
   "featured": [
     {
@@ -159,16 +159,34 @@
       "id": "investor:a202d3e30bc4ea9c",
       "name": "HDFC MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 7,
-      "observedBuyDays": 5,
+      "observedTransactions": 8,
+      "observedBuyDays": 6,
       "observedSellDays": 1,
-      "buyValueCr": 1323.96,
+      "buyValueCr": 1372.17,
       "sellValueCr": 43.01,
-      "netDisclosedValueCr": 1280.95,
-      "latestDisclosure": "2026-11-25",
+      "netDisclosedValueCr": 1329.16,
+      "latestDisclosure": "2026-11-26",
       "uniqueCompanies": 6,
-      "repeatBuyCompanies": [],
+      "repeatBuyCompanies": [
+        "ALKEM"
+      ],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "HDFC MUTUAL FUND",
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyQty": 95000,
+          "sellQty": 0,
+          "buyValueINR": 482125000.0,
+          "sellValueINR": 0,
+          "netShares": 95000,
+          "netValueINR": 482125000.0,
+          "avgBuyPrice": 5075.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "cf5e4c8e010b62d987"
+        },
         {
           "date": "2026-11-25",
           "name": "HDFC MUTUAL FUND",
@@ -313,10 +331,10 @@
         {
           "symbol": "ALKEM",
           "company": "Alkem Laboratories Ltd.",
-          "buyValueCr": 50.0,
+          "buyValueCr": 98.21,
           "sellValueCr": 0.0,
-          "netShares": 99010,
-          "buyDays": 1,
+          "netShares": 194010,
+          "buyDays": 2,
           "sellDays": 0
         },
         {
@@ -339,7 +357,7 @@
         }
       ],
       "observations": {
-        "repeatPurchases": false,
+        "repeatPurchases": true,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
         "noObservedBuys": false
@@ -353,16 +371,32 @@
       "id": "investor:be281e359920b4fb",
       "name": "SBI MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
+      "observedTransactions": 3,
+      "observedBuyDays": 2,
       "observedSellDays": 1,
-      "buyValueCr": 50.0,
+      "buyValueCr": 552.99,
       "sellValueCr": 180.22,
-      "netDisclosedValueCr": -130.22,
-      "latestDisclosure": "2026-11-25",
-      "uniqueCompanies": 2,
+      "netDisclosedValueCr": 372.77,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 3,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SBI MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 1440000,
+          "sellQty": 0,
+          "buyValueINR": 5029920000.0,
+          "sellValueINR": 0,
+          "netShares": 1440000,
+          "netValueINR": 5029920000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "2e3bca0042aec8998b"
+        },
         {
           "date": "2026-11-25",
           "name": "SBI MUTUAL FUND",
@@ -398,6 +432,15 @@
       ],
       "companies": [
         {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 502.99,
+          "sellValueCr": 0.0,
+          "netShares": 1440000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "MEDANTA",
           "company": "Global Health Limited",
           "buyValueCr": 50.0,
@@ -419,7 +462,7 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
@@ -431,16 +474,50 @@
       "id": "investor:8ee67866bf7cfd70",
       "name": "ICICI PRUDENTIAL MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
+      "observedTransactions": 4,
+      "observedBuyDays": 4,
       "observedSellDays": 0,
-      "buyValueCr": 240.03,
+      "buyValueCr": 887.3,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 240.03,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
+      "netDisclosedValueCr": 887.3,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [
+        "ALKEM"
+      ],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "ICICI PRUDENTIAL MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 1715000,
+          "sellQty": 0,
+          "buyValueINR": 5990495000.0,
+          "sellValueINR": 0,
+          "netShares": 1715000,
+          "netValueINR": 5990495000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "872f6f1ed0da93fb65"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "ICICI PRUDENTIAL MUTUAL FUND",
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyQty": 95000,
+          "sellQty": 0,
+          "buyValueINR": 482125000.0,
+          "sellValueINR": 0,
+          "netShares": 95000,
+          "netValueINR": 482125000.0,
+          "avgBuyPrice": 5075.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "2cdc981de6910d7465"
+        },
         {
           "date": "2026-11-17",
           "name": "ICICI PRUDENTIAL MUTUAL FUND",
@@ -476,6 +553,15 @@
       ],
       "companies": [
         {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 599.05,
+          "sellValueCr": 0.0,
+          "netShares": 1715000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "SAGILITY",
           "company": "SAGILITY LIMITED",
           "buyValueCr": 150.0,
@@ -487,17 +573,17 @@
         {
           "symbol": "ALKEM",
           "company": "Alkem Laboratories Ltd.",
-          "buyValueCr": 90.03,
+          "buyValueCr": 138.25,
           "sellValueCr": 0.0,
-          "netShares": 178285,
-          "buyDays": 1,
+          "netShares": 273285,
+          "buyDays": 2,
           "sellDays": 0
         }
       ],
       "observations": {
-        "repeatPurchases": false,
+        "repeatPurchases": true,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
@@ -509,16 +595,50 @@
       "id": "investor:3f6b32b2484141a4",
       "name": "NIPPON INDIA MUTUAL FUND",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
+      "observedTransactions": 4,
+      "observedBuyDays": 4,
       "observedSellDays": 0,
-      "buyValueCr": 130.92,
+      "buyValueCr": 318.85,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 130.92,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
+      "netDisclosedValueCr": 318.85,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [
+        "ALKEM"
+      ],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "NIPPON INDIA MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 400000,
+          "sellQty": 0,
+          "buyValueINR": 1397200000.0,
+          "sellValueINR": 0,
+          "netShares": 400000,
+          "netValueINR": 1397200000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "22b65895d4fed6578e"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "NIPPON INDIA MUTUAL FUND",
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyQty": 95000,
+          "sellQty": 0,
+          "buyValueINR": 482125000.0,
+          "sellValueINR": 0,
+          "netShares": 95000,
+          "netValueINR": 482125000.0,
+          "avgBuyPrice": 5075.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "f2cc1ac429d3a7c192"
+        },
         {
           "date": "2026-11-17",
           "name": "NIPPON INDIA MUTUAL FUND",
@@ -554,12 +674,21 @@
       ],
       "companies": [
         {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 139.72,
+          "sellValueCr": 0.0,
+          "netShares": 400000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "ALKEM",
           "company": "Alkem Laboratories Ltd.",
-          "buyValueCr": 80.93,
+          "buyValueCr": 129.15,
           "sellValueCr": 0.0,
-          "netShares": 160265,
-          "buyDays": 1,
+          "netShares": 255265,
+          "buyDays": 2,
           "sellDays": 0
         },
         {
@@ -573,9 +702,9 @@
         }
       ],
       "observations": {
-        "repeatPurchases": false,
+        "repeatPurchases": true,
         "buyAndSellObserved": false,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
@@ -973,16 +1102,32 @@
       "id": "investor:0c90daf6e41dd5e2",
       "name": "SMALLCAP WORLD FUND INC",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
+      "observedTransactions": 3,
       "observedBuyDays": 1,
-      "observedSellDays": 1,
+      "observedSellDays": 2,
       "buyValueCr": 339.36,
-      "sellValueCr": 433.56,
-      "netDisclosedValueCr": -94.2,
-      "latestDisclosure": "2026-11-25",
-      "uniqueCompanies": 2,
+      "sellValueCr": 770.61,
+      "netDisclosedValueCr": -431.25,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 3,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SMALLCAP WORLD FUND INC",
+          "symbol": "IIFL",
+          "company": "IIFL Finance Limited",
+          "buyQty": 0,
+          "sellQty": 5615936,
+          "buyValueINR": 0,
+          "sellValueINR": 3370460149.76,
+          "netShares": -5615936,
+          "netValueINR": -3370460149.76,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "660e9ba3854bb150d7"
+        },
         {
           "date": "2026-11-25",
           "name": "SMALLCAP WORLD FUND INC",
@@ -1027,6 +1172,15 @@
           "sellDays": 0
         },
         {
+          "symbol": "IIFL",
+          "company": "IIFL Finance Limited",
+          "buyValueCr": 0.0,
+          "sellValueCr": 337.05,
+          "netShares": -5615936,
+          "buyDays": 0,
+          "sellDays": 1
+        },
+        {
           "symbol": "APLAPOLLO",
           "company": "Apl Apollo Tubes Ltd",
           "buyValueCr": 0.0,
@@ -1039,7 +1193,7 @@
       "observations": {
         "repeatPurchases": false,
         "buyAndSellObserved": true,
-        "multipleCompanies": false,
+        "multipleCompanies": true,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy.",
@@ -1051,16 +1205,32 @@
       "id": "investor:3bd3ea7127987d39",
       "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
       "type": "Named investor / company",
-      "observedTransactions": 3,
-      "observedBuyDays": 3,
+      "observedTransactions": 4,
+      "observedBuyDays": 4,
       "observedSellDays": 0,
-      "buyValueCr": 548.85,
+      "buyValueCr": 576.8,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 548.85,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 3,
+      "netDisclosedValueCr": 576.8,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 4,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 80000,
+          "sellQty": 0,
+          "buyValueINR": 279440000.0,
+          "sellValueINR": 0,
+          "netShares": 80000,
+          "netValueINR": 279440000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "eaee9effb98a0f82cf"
+        },
         {
           "date": "2026-11-17",
           "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
@@ -1135,6 +1305,15 @@
           "buyValueCr": 65.7,
           "sellValueCr": 0.0,
           "netShares": 3000000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 27.94,
+          "sellValueCr": 0.0,
+          "netShares": 80000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -1222,16 +1401,32 @@
       "id": "investor:fdba9827590e864d",
       "name": "SOCIETE GENERALE",
       "type": "Named investor / company",
-      "observedTransactions": 6,
-      "observedBuyDays": 5,
+      "observedTransactions": 7,
+      "observedBuyDays": 6,
       "observedSellDays": 0,
-      "buyValueCr": 1719.4,
+      "buyValueCr": 1810.47,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 1719.4,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 5,
+      "netDisclosedValueCr": 1810.47,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 6,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SOCIETE GENERALE",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 260738,
+          "sellQty": 0,
+          "buyValueINR": 910757834.0,
+          "sellValueINR": 0,
+          "netShares": 260738,
+          "netValueINR": 910757834.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "00ee569cb0529c0306"
+        },
         {
           "date": "2026-11-17",
           "name": "SOCIETE GENERALE",
@@ -1363,6 +1558,15 @@
           "buyValueCr": 203.09,
           "sellValueCr": 0.0,
           "netShares": 47506626,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 91.08,
+          "sellValueCr": 0.0,
+          "netShares": 260738,
           "buyDays": 1,
           "sellDays": 0
         },
@@ -1899,6 +2103,238 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:83653c83131cd478",
+      "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
+      "type": "Named investor / company",
+      "observedTransactions": 3,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 642.08,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 642.08,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 847000,
+          "sellQty": 0,
+          "buyValueINR": 2958571000.0,
+          "sellValueINR": 0,
+          "netShares": 847000,
+          "netValueINR": 2958571000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "ee35e5e41b45367a29"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 847000,
+          "sellQty": 0,
+          "buyValueINR": 2958571000.0,
+          "sellValueINR": 0,
+          "netShares": 847000,
+          "netValueINR": 2958571000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "e5f3149fb0028a98cf"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "NATIONAL PENSION SYSTEM (NPS) TRUST",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 2300000,
+          "sellQty": 0,
+          "buyValueINR": 503700000.0,
+          "sellValueINR": 0,
+          "netShares": 2300000,
+          "netValueINR": 503700000.0,
+          "avgBuyPrice": 219.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "557e7bb2e4578e7a54"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 591.71,
+          "sellValueCr": 0.0,
+          "netShares": 1694000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 50.37,
+          "sellValueCr": 0.0,
+          "netShares": 2300000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:84c482750e79b3bb",
+      "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 5,
+      "observedBuyDays": 4,
+      "observedSellDays": 0,
+      "buyValueCr": 618.01,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 618.01,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 4,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 340000,
+          "sellQty": 0,
+          "buyValueINR": 1187620000.0,
+          "sellValueINR": 0,
+          "netShares": 340000,
+          "netValueINR": 1187620000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "a57e51b46d9ca47dd9"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "AMAGI",
+          "company": "Amagi Media Labs Limited",
+          "buyQty": 3327204,
+          "sellQty": 0,
+          "buyValueINR": 1843271016.0,
+          "sellValueINR": 0,
+          "netShares": 3327204,
+          "netValueINR": 1843271016.0,
+          "avgBuyPrice": 554.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "2a5877859bbdc33988"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "AMAGI",
+          "company": "Amagi Media Labs Limited",
+          "buyQty": 3327204,
+          "sellQty": 0,
+          "buyValueINR": 1843271016.0,
+          "sellValueINR": 0,
+          "netShares": 3327204,
+          "netValueINR": 1843271016.0,
+          "avgBuyPrice": 554.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "30359feb17fc5e05f3"
+        },
+        {
+          "date": "2026-11-13",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 4200000,
+          "sellQty": 0,
+          "buyValueINR": 1036350000.0,
+          "sellValueINR": 0,
+          "netShares": 4200000,
+          "netValueINR": 1036350000.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "b959561658cd766eff"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyQty": 1492270,
+          "sellQty": 0,
+          "buyValueINR": 269578575.5,
+          "sellValueINR": 0,
+          "netShares": 1492270,
+          "netValueINR": 269578575.5,
+          "avgBuyPrice": 180.65,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "399bb97535ca03be49"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "AMAGI",
+          "company": "Amagi Media Labs Limited",
+          "buyValueCr": 368.65,
+          "sellValueCr": 0.0,
+          "netShares": 6654408,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 118.76,
+          "sellValueCr": 0.0,
+          "netShares": 340000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 103.64,
+          "sellValueCr": 0.0,
+          "netShares": 4200000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SWIGGY",
+          "company": "Swiggy Limited",
+          "buyValueCr": 26.96,
+          "sellValueCr": 0.0,
+          "netShares": 1492270,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:3417a57dc28b2e6a",
       "name": "ADITYA KUMAR HALWASIYA",
       "type": "Named investor / company",
@@ -2224,85 +2660,35 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:91aae3096c726cca",
-      "name": "SANTOSH KUMAR AGRAWAL",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 402.4,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 402.4,
-      "latestDisclosure": "2026-11-12",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-12",
-          "name": "SANTOSH KUMAR AGRAWAL",
-          "symbol": "GALLANTT",
-          "company": "Gallantt Ispat Limited",
-          "buyQty": 4000000,
-          "sellQty": 0,
-          "buyValueINR": 2012000000.0,
-          "sellValueINR": 0,
-          "netShares": 4000000,
-          "netValueINR": 2012000000.0,
-          "avgBuyPrice": 503.0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "41cb95eaf20ae39dbe"
-        },
-        {
-          "date": "2026-11-12",
-          "name": "SANTOSH KUMAR AGRAWAL",
-          "symbol": "GALLANTT",
-          "company": "Gallantt Ispat Limited",
-          "buyQty": 4000000,
-          "sellQty": 0,
-          "buyValueINR": 2012000000.0,
-          "sellValueINR": 0,
-          "netShares": 4000000,
-          "netValueINR": 2012000000.0,
-          "avgBuyPrice": 503.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "d412dc1fb137f10da7"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GALLANTT",
-          "company": "Gallantt Ispat Limited",
-          "buyValueCr": 402.4,
-          "sellValueCr": 0.0,
-          "netShares": 8000000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:e412b66fef586588",
       "name": "GHISALLO MASTER FUND LP",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 4,
-      "observedBuyDays": 4,
+      "observedTransactions": 5,
+      "observedBuyDays": 5,
       "observedSellDays": 0,
-      "buyValueCr": 385.9,
+      "buyValueCr": 411.05,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 385.9,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 4,
+      "netDisclosedValueCr": 411.05,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 5,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "GHISALLO MASTER FUND LP",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 72000,
+          "sellQty": 0,
+          "buyValueINR": 251496000.0,
+          "sellValueINR": 0,
+          "netShares": 72000,
+          "netValueINR": 251496000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "a7dfa5dc6d0bfbdfac"
+        },
         {
           "date": "2026-11-17",
           "name": "GHISALLO MASTER FUND LP",
@@ -2404,6 +2790,15 @@
           "netShares": 2608392,
           "buyDays": 1,
           "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 25.15,
+          "sellValueCr": 0.0,
+          "netShares": 72000,
+          "buyDays": 1,
+          "sellDays": 0
         }
       ],
       "observations": {
@@ -2415,59 +2810,109 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:805dac83460c47bd",
-      "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
-      "type": "Institution / fund / investment entity (name-based)",
+      "id": "investor:91aae3096c726cca",
+      "name": "SANTOSH KUMAR AGRAWAL",
+      "type": "Named investor / company",
       "observedTransactions": 2,
       "observedBuyDays": 1,
       "observedSellDays": 0,
-      "buyValueCr": 319.9,
+      "buyValueCr": 402.4,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 319.9,
-      "latestDisclosure": "2026-11-17",
+      "netDisclosedValueCr": 402.4,
+      "latestDisclosure": "2026-11-12",
       "uniqueCompanies": 1,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-11-17",
-          "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
-          "symbol": "HAPPYFORGE",
-          "company": "Happy Forgings Limited",
-          "buyQty": 866928,
+          "date": "2026-11-12",
+          "name": "SANTOSH KUMAR AGRAWAL",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 4000000,
           "sellQty": 0,
-          "buyValueINR": 1599482160.0,
+          "buyValueINR": 2012000000.0,
           "sellValueINR": 0,
-          "netShares": 866928,
-          "netValueINR": 1599482160.0,
-          "avgBuyPrice": 1845.0,
+          "netShares": 4000000,
+          "netValueINR": 2012000000.0,
+          "avgBuyPrice": 503.0,
           "source": "NSE Bulk Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "72783c3a306c713eab"
+          "dealId": "41cb95eaf20ae39dbe"
         },
         {
-          "date": "2026-11-17",
-          "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
-          "symbol": "HAPPYFORGE",
-          "company": "Happy Forgings Limited",
-          "buyQty": 866928,
+          "date": "2026-11-12",
+          "name": "SANTOSH KUMAR AGRAWAL",
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyQty": 4000000,
           "sellQty": 0,
-          "buyValueINR": 1599482160.0,
+          "buyValueINR": 2012000000.0,
           "sellValueINR": 0,
-          "netShares": 866928,
-          "netValueINR": 1599482160.0,
-          "avgBuyPrice": 1845.0,
+          "netShares": 4000000,
+          "netValueINR": 2012000000.0,
+          "avgBuyPrice": 503.0,
           "source": "NSE Block Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "981aae9a820acb6bbb"
+          "dealId": "d412dc1fb137f10da7"
         }
       ],
       "companies": [
         {
-          "symbol": "HAPPYFORGE",
-          "company": "Happy Forgings Limited",
-          "buyValueCr": 319.9,
+          "symbol": "GALLANTT",
+          "company": "Gallantt Ispat Limited",
+          "buyValueCr": 402.4,
           "sellValueCr": 0.0,
-          "netShares": 1733856,
+          "netShares": 8000000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:0d20fc61eb9f2d0a",
+      "name": "MIRAE ASSET MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 349.3,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 349.3,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "MIRAE ASSET MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 1000000,
+          "sellQty": 0,
+          "buyValueINR": 3493000000.0,
+          "sellValueINR": 0,
+          "netShares": 1000000,
+          "netValueINR": 3493000000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "4f2b32e2dcf0b5066e"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 349.3,
+          "sellValueCr": 0.0,
+          "netShares": 1000000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -2484,16 +2929,32 @@
       "id": "investor:572f1466d17bafa8",
       "name": "GOLDMAN SACHS BANK EUROPE SE",
       "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 4,
-      "observedBuyDays": 3,
+      "observedTransactions": 5,
+      "observedBuyDays": 4,
       "observedSellDays": 1,
-      "buyValueCr": 305.06,
+      "buyValueCr": 330.21,
       "sellValueCr": 4.67,
-      "netDisclosedValueCr": 300.39,
-      "latestDisclosure": "2026-11-25",
-      "uniqueCompanies": 4,
+      "netDisclosedValueCr": 325.54,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 5,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "GOLDMAN SACHS BANK EUROPE SE",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 72000,
+          "sellQty": 0,
+          "buyValueINR": 251496000.0,
+          "sellValueINR": 0,
+          "netShares": 72000,
+          "netValueINR": 251496000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "279f5ea306d2e4edd3"
+        },
         {
           "date": "2026-11-25",
           "name": "GOLDMAN SACHS BANK EUROPE SE",
@@ -2579,6 +3040,15 @@
           "sellDays": 0
         },
         {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 25.15,
+          "sellValueCr": 0.0,
+          "netShares": 72000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "MEDANTA",
           "company": "Global Health Limited",
           "buyValueCr": 25.0,
@@ -2606,19 +3076,110 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:e541c68134e365b9",
+      "name": "DSP MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 325.44,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 325.44,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "DSP MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 700000,
+          "sellQty": 0,
+          "buyValueINR": 2445100000.0,
+          "sellValueINR": 0,
+          "netShares": 700000,
+          "netValueINR": 2445100000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "a9c3c8b9fd5f88f2a7"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "DSP MUTUAL FUND",
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyQty": 160265,
+          "sellQty": 0,
+          "buyValueINR": 809338250.0,
+          "sellValueINR": 0,
+          "netShares": 160265,
+          "netValueINR": 809338250.0,
+          "avgBuyPrice": 5050.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "d98b6ba8ebe9a0b889"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 244.51,
+          "sellValueCr": 0.0,
+          "netShares": 700000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyValueCr": 80.93,
+          "sellValueCr": 0.0,
+          "netShares": 160265,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:46a20b77f5c3fb8d",
       "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 5,
-      "observedBuyDays": 5,
+      "observedTransactions": 6,
+      "observedBuyDays": 6,
       "observedSellDays": 0,
-      "buyValueCr": 297.45,
+      "buyValueCr": 322.6,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 297.45,
-      "latestDisclosure": "2026-11-25",
-      "uniqueCompanies": 5,
+      "netDisclosedValueCr": 322.6,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 6,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 72000,
+          "sellQty": 0,
+          "buyValueINR": 251496000.0,
+          "sellValueINR": 0,
+          "netShares": 72000,
+          "netValueINR": 251496000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "1c0b4fc4fe6e8625a0"
+        },
         {
           "date": "2026-11-25",
           "name": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
@@ -2729,6 +3290,15 @@
           "sellDays": 0
         },
         {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 25.15,
+          "sellValueCr": 0.0,
+          "netShares": 72000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
           "symbol": "ALIVUS",
           "company": "Alivus Life Sciences Ltd",
           "buyValueCr": 25.07,
@@ -2751,6 +3321,72 @@
         "repeatPurchases": false,
         "buyAndSellObserved": false,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:805dac83460c47bd",
+      "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 319.9,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 319.9,
+      "latestDisclosure": "2026-11-17",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-17",
+          "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
+          "symbol": "HAPPYFORGE",
+          "company": "Happy Forgings Limited",
+          "buyQty": 866928,
+          "sellQty": 0,
+          "buyValueINR": 1599482160.0,
+          "sellValueINR": 0,
+          "netShares": 866928,
+          "netValueINR": 1599482160.0,
+          "avgBuyPrice": 1845.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "72783c3a306c713eab"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "FIDELITY FUNDS - INDIA FOCUS FUND",
+          "symbol": "HAPPYFORGE",
+          "company": "Happy Forgings Limited",
+          "buyQty": 866928,
+          "sellQty": 0,
+          "buyValueINR": 1599482160.0,
+          "sellValueINR": 0,
+          "netShares": 866928,
+          "netValueINR": 1599482160.0,
+          "avgBuyPrice": 1845.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "981aae9a820acb6bbb"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "HAPPYFORGE",
+          "company": "Happy Forgings Limited",
+          "buyValueCr": 319.9,
+          "sellValueCr": 0.0,
+          "netShares": 1733856,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -2851,6 +3487,56 @@
         "repeatPurchases": false,
         "buyAndSellObserved": true,
         "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:725e356bf98a196e",
+      "name": "UBS AG",
+      "type": "Named investor / company",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 259.22,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 259.22,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "UBS AG",
+          "symbol": "IIFL",
+          "company": "IIFL Finance Limited",
+          "buyQty": 4320402,
+          "sellQty": 0,
+          "buyValueINR": 2592241200.0,
+          "sellValueINR": 0,
+          "netShares": 4320402,
+          "netValueINR": 2592241200.0,
+          "avgBuyPrice": 600.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "7d0f82b0ac54fcda11"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "IIFL",
+          "company": "IIFL Finance Limited",
+          "buyValueCr": 259.22,
+          "sellValueCr": 0.0,
+          "netShares": 4320402,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -3113,6 +3799,81 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:d78b11caf1a9780d",
+      "name": "WHITEOAK CAPITAL MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 198.45,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 198.45,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "WHITEOAK CAPITAL MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 425000,
+          "sellQty": 0,
+          "buyValueINR": 1484525000.0,
+          "sellValueINR": 0,
+          "netShares": 425000,
+          "netValueINR": 1484525000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "39f105936c6b4bdcb7"
+        },
+        {
+          "date": "2026-11-25",
+          "name": "WHITEOAK CAPITAL MUTUAL FUND",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 342473,
+          "sellQty": 0,
+          "buyValueINR": 500010580.0,
+          "sellValueINR": 0,
+          "netShares": 342473,
+          "netValueINR": 500010580.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "2d56e8156258184e91"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 148.45,
+          "sellValueCr": 0.0,
+          "netShares": 425000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 50.0,
+          "sellValueCr": 0.0,
+          "netShares": 342473,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:93c17e2e45f43dd7",
       "name": "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
       "type": "Institution / fund / investment entity (name-based)",
@@ -3150,6 +3911,306 @@
           "buyValueCr": 187.78,
           "sellValueCr": 0.0,
           "netShares": 7610300,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:e26fbfbafbc70062",
+      "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 169.01,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 169.01,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 85000,
+          "sellQty": 0,
+          "buyValueINR": 296905000.0,
+          "sellValueINR": 0,
+          "netShares": 85000,
+          "netValueINR": 296905000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "3d1deb72933ca46f7a"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyQty": 32588537,
+          "sellQty": 0,
+          "buyValueINR": 1393159956.75,
+          "sellValueINR": 0,
+          "netShares": 32588537,
+          "netValueINR": 1393159956.75,
+          "avgBuyPrice": 42.75,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6f885af0d779e21af8"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SAGILITY",
+          "company": "SAGILITY LIMITED",
+          "buyValueCr": 139.32,
+          "sellValueCr": 0.0,
+          "netShares": 32588537,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 29.69,
+          "sellValueCr": 0.0,
+          "netShares": 85000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:1e48f96278291ff8",
+      "name": "SUNDARAM MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 167.66,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 167.66,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SUNDARAM MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 480000,
+          "sellQty": 0,
+          "buyValueINR": 1676640000.0,
+          "sellValueINR": 0,
+          "netShares": 480000,
+          "netValueINR": 1676640000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "b018a75455faf3daab"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 167.66,
+          "sellValueCr": 0.0,
+          "netShares": 480000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:dadf152ff30d71e6",
+      "name": "EDELWEISS MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 3,
+      "observedBuyDays": 3,
+      "observedSellDays": 0,
+      "buyValueCr": 154.84,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 154.84,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "EDELWEISS MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 300000,
+          "sellQty": 0,
+          "buyValueINR": 1047900000.0,
+          "sellValueINR": 0,
+          "netShares": 300000,
+          "netValueINR": 1047900000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "84b04e4b91faa20529"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "EDELWEISS MUTUAL FUND",
+          "symbol": "HAPPYFORGE",
+          "company": "Happy Forgings Limited",
+          "buyQty": 135502,
+          "sellQty": 0,
+          "buyValueINR": 250001190.0,
+          "sellValueINR": 0,
+          "netShares": 135502,
+          "netValueINR": 250001190.0,
+          "avgBuyPrice": 1845.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "1eb1f18d0c7598e452"
+        },
+        {
+          "date": "2026-11-13",
+          "name": "EDELWEISS MUTUAL FUND",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 1015000,
+          "sellQty": 0,
+          "buyValueINR": 250451250.0,
+          "sellValueINR": 0,
+          "netShares": 1015000,
+          "netValueINR": 250451250.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "4460b605e00cc55e10"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 104.79,
+          "sellValueCr": 0.0,
+          "netShares": 300000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 25.05,
+          "sellValueCr": 0.0,
+          "netShares": 1015000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "HAPPYFORGE",
+          "company": "Happy Forgings Limited",
+          "buyValueCr": 25.0,
+          "sellValueCr": 0.0,
+          "netShares": 135502,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:b6984a718691fe77",
+      "name": "HDFC STANDARD LIFE INSURANCE CO LTD",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 147.76,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 147.76,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "HDFC STANDARD LIFE INSURANCE CO LTD",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 260000,
+          "sellQty": 0,
+          "buyValueINR": 908180000.0,
+          "sellValueINR": 0,
+          "netShares": 260000,
+          "netValueINR": 908180000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "12bbcf80778242a35c"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "HDFC STANDARD LIFE INSURANCE CO LTD",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 2600000,
+          "sellQty": 0,
+          "buyValueINR": 569400000.0,
+          "sellValueINR": 0,
+          "netShares": 2600000,
+          "netValueINR": 569400000.0,
+          "avgBuyPrice": 219.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "29be94191a79acd90e"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 90.82,
+          "sellValueCr": 0.0,
+          "netShares": 260000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 56.94,
+          "sellValueCr": 0.0,
+          "netShares": 2600000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3213,43 +4274,68 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:e26fbfbafbc70062",
-      "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
+      "id": "investor:10eedcca293b4258",
+      "name": "BAJAJ LIFE INSURANCE LIMITED",
       "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
       "observedSellDays": 0,
-      "buyValueCr": 139.32,
+      "buyValueCr": 139.55,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 139.32,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
+      "netDisclosedValueCr": 139.55,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
       "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-10-30",
-          "name": "ICICI PRUDENTIAL LIFE INSURANCE COMPANY LIMITED",
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyQty": 32588537,
+          "date": "2026-11-26",
+          "name": "BAJAJ LIFE INSURANCE LIMITED",
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyQty": 73695,
           "sellQty": 0,
-          "buyValueINR": 1393159956.75,
+          "buyValueINR": 374002125.0,
           "sellValueINR": 0,
-          "netShares": 32588537,
-          "netValueINR": 1393159956.75,
-          "avgBuyPrice": 42.75,
+          "netShares": 73695,
+          "netValueINR": 374002125.0,
+          "avgBuyPrice": 5075.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "bd198f965b7ea4ed26"
+        },
+        {
+          "date": "2026-10-23",
+          "name": "BAJAJ LIFE INSURANCE LIMITED",
+          "symbol": "TONBO",
+          "company": "Tonbo Imaging India Ltd",
+          "buyQty": 900000,
+          "sellQty": 0,
+          "buyValueINR": 1021464000.0,
+          "sellValueINR": 0,
+          "netShares": 900000,
+          "netValueINR": 1021464000.0,
+          "avgBuyPrice": 1134.96,
           "source": "NSE Bulk Deals",
           "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6f885af0d779e21af8"
+          "dealId": "157976c702521ecd6f"
         }
       ],
       "companies": [
         {
-          "symbol": "SAGILITY",
-          "company": "SAGILITY LIMITED",
-          "buyValueCr": 139.32,
+          "symbol": "TONBO",
+          "company": "Tonbo Imaging India Ltd",
+          "buyValueCr": 102.15,
           "sellValueCr": 0.0,
-          "netShares": 32588537,
+          "netShares": 900000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "ALKEM",
+          "company": "Alkem Laboratories Ltd.",
+          "buyValueCr": 37.4,
+          "sellValueCr": 0.0,
+          "netShares": 73695,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3756,81 +4842,6 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:84c482750e79b3bb",
-      "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 0,
-      "buyValueCr": 130.59,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 130.59,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-13",
-          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyQty": 4200000,
-          "sellQty": 0,
-          "buyValueINR": 1036350000.0,
-          "sellValueINR": 0,
-          "netShares": 4200000,
-          "netValueINR": 1036350000.0,
-          "avgBuyPrice": 246.75,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "b959561658cd766eff"
-        },
-        {
-          "date": "2026-10-30",
-          "name": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyQty": 1492270,
-          "sellQty": 0,
-          "buyValueINR": 269578575.5,
-          "sellValueINR": 0,
-          "netShares": 1492270,
-          "netValueINR": 269578575.5,
-          "avgBuyPrice": 180.65,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "399bb97535ca03be49"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyValueCr": 103.64,
-          "sellValueCr": 0.0,
-          "netShares": 4200000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "SWIGGY",
-          "company": "Swiggy Limited",
-          "buyValueCr": 26.96,
-          "sellValueCr": 0.0,
-          "netShares": 1492270,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:9e37f0f8a07396f1",
       "name": "CATAMARAN VENTURES LLP",
       "type": "Named investor / company",
@@ -3868,6 +4879,56 @@
           "buyValueCr": 119.0,
           "sellValueCr": 0.0,
           "netShares": 2134318,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:9ecb2628f2b9d1d1",
+      "name": "UTI MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 1,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 118.76,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 118.76,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "UTI MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 340000,
+          "sellQty": 0,
+          "buyValueINR": 1187620000.0,
+          "sellValueINR": 0,
+          "netShares": 340000,
+          "netValueINR": 1187620000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "310f539862dd4c24bc"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 118.76,
+          "sellValueCr": 0.0,
+          "netShares": 340000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3981,56 +5042,6 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:10eedcca293b4258",
-      "name": "BAJAJ LIFE INSURANCE LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 102.15,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 102.15,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "BAJAJ LIFE INSURANCE LIMITED",
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyQty": 900000,
-          "sellQty": 0,
-          "buyValueINR": 1021464000.0,
-          "sellValueINR": 0,
-          "netShares": 900000,
-          "netValueINR": 1021464000.0,
-          "avgBuyPrice": 1134.96,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "157976c702521ecd6f"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyValueCr": 102.15,
-          "sellValueCr": 0.0,
-          "netShares": 900000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:d8250bc4a4cb3200",
       "name": "LARSEN & TOUBRO LIMITED",
       "type": "Named investor / company",
@@ -4097,6 +5108,156 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:93001d798c2327c5",
+      "name": "SBI LIFE INSURANCE COMPANY LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 98.93,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 98.93,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SBI LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 85000,
+          "sellQty": 0,
+          "buyValueINR": 296905000.0,
+          "sellValueINR": 0,
+          "netShares": 85000,
+          "netValueINR": 296905000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "9dd959e0560a3d7cf6"
+        },
+        {
+          "date": "2026-10-30",
+          "name": "SBI LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "STAR",
+          "company": "Strides Pharma ScienceLtd",
+          "buyQty": 662369,
+          "sellQty": 0,
+          "buyValueINR": 692361068.32,
+          "sellValueINR": 0,
+          "netShares": 662369,
+          "netValueINR": 692361068.32,
+          "avgBuyPrice": 1045.28,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "2f2111ecce6a98f299"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "STAR",
+          "company": "Strides Pharma ScienceLtd",
+          "buyValueCr": 69.24,
+          "sellValueCr": 0.0,
+          "netShares": 662369,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 29.69,
+          "sellValueCr": 0.0,
+          "netShares": 85000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:7c7136aafe57596d",
+      "name": "TATA MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 95.05,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 95.05,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "TATA MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 200000,
+          "sellQty": 0,
+          "buyValueINR": 698600000.0,
+          "sellValueINR": 0,
+          "netShares": 200000,
+          "netValueINR": 698600000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "8ec11db39f12b5671e"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "TATA MUTUAL FUND",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 1150000,
+          "sellQty": 0,
+          "buyValueINR": 251850000.0,
+          "sellValueINR": 0,
+          "netShares": 1150000,
+          "netValueINR": 251850000.0,
+          "avgBuyPrice": 219.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "8759f84e6f2a260e97"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 69.86,
+          "sellValueCr": 0.0,
+          "netShares": 200000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 25.18,
+          "sellValueCr": 0.0,
+          "netShares": 1150000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:17bf4c25c010a096",
       "name": "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
       "type": "Named investor / company",
@@ -4134,6 +5295,81 @@
           "buyValueCr": 94.94,
           "sellValueCr": 0.0,
           "netShares": 3847600,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
+      "id": "investor:69b8ea360e1249c7",
+      "name": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 94.91,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 94.91,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 200000,
+          "sellQty": 0,
+          "buyValueINR": 698600000.0,
+          "sellValueINR": 0,
+          "netShares": 200000,
+          "netValueINR": 698600000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "f8a0b990e47544dc3f"
+        },
+        {
+          "date": "2026-11-13",
+          "name": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyQty": 1015000,
+          "sellQty": 0,
+          "buyValueINR": 250451250.0,
+          "sellValueINR": 0,
+          "netShares": 1015000,
+          "netValueINR": 250451250.0,
+          "avgBuyPrice": 246.75,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "10f5989fb88060cce7"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 69.86,
+          "sellValueCr": 0.0,
+          "netShares": 200000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEESHO",
+          "company": "Meesho Limited",
+          "buyValueCr": 25.05,
+          "sellValueCr": 0.0,
+          "netShares": 1015000,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -4215,194 +5451,76 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:6692c509cb979f45",
-      "name": "SETU SECURITIES PVT LTD",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 7,
-      "observedBuyDays": 6,
-      "observedSellDays": 6,
-      "buyValueCr": 93.97,
-      "sellValueCr": 11.15,
-      "netDisclosedValueCr": 82.82,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 6,
-      "repeatBuyCompanies": [
-        "VNL"
-      ],
+      "id": "investor:dd4d117e1ef023b6",
+      "name": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 2,
+      "observedSellDays": 0,
+      "buyValueCr": 83.18,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 83.18,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 2,
+      "repeatBuyCompanies": [],
       "tradeRecords": [
         {
-          "date": "2026-11-17",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "MERCURYEV",
-          "company": "Mercury Ev-Tech Limited",
-          "buyQty": 0,
-          "sellQty": 2000000,
-          "buyValueINR": 0,
-          "sellValueINR": 68220000.0,
-          "netShares": -2000000,
-          "netValueINR": -68220000.0,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "e3c13835f54792a203"
-        },
-        {
-          "date": "2026-10-28",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "VNL",
-          "company": "Vishal Nirmiti Limited",
-          "buyQty": 106836,
-          "sellQty": 175836,
-          "buyValueINR": 9536181.36,
-          "sellValueINR": 16831021.92,
-          "netShares": -69000,
-          "netValueINR": -7294840.56,
-          "avgBuyPrice": 0,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "2f48034b6029eda581"
-        },
-        {
-          "date": "2026-10-27",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "VNL",
-          "company": "Vishal Nirmiti Limited",
-          "buyQty": 200020,
-          "sellQty": 82482,
-          "buyValueINR": 18777877.6,
-          "sellValueINR": 7743410.16,
-          "netShares": 117538,
-          "netValueINR": 11034467.44,
-          "avgBuyPrice": 93.88,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "1e56e2f8924b7375ce"
-        },
-        {
-          "date": "2026-10-26",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "INDOTECH",
-          "company": "Indo Tech Transformers Li",
-          "buyQty": 61817,
-          "sellQty": 2817,
-          "buyValueINR": 159660947.6,
-          "sellValueINR": 7294565.16,
-          "netShares": 59000,
-          "netValueINR": 152366382.44,
-          "avgBuyPrice": 2582.8,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "6a1edf804b8484e210"
-        },
-        {
-          "date": "2026-10-26",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "BELDING",
-          "company": "Belding India Limited",
-          "buyQty": 385019,
-          "sellQty": 2019,
-          "buyValueINR": 335775069.9,
-          "sellValueINR": 1743204.6,
-          "netShares": 383000,
-          "netValueINR": 334031865.3,
-          "avgBuyPrice": 872.1,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "d0bc6ad9950864489f"
-        },
-        {
-          "date": "2026-10-14",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "EFCIL",
-          "company": "EFC (I) Limited",
-          "buyQty": 2000000,
+          "date": "2026-11-26",
+          "name": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 72000,
           "sellQty": 0,
-          "buyValueINR": 352800000.0,
+          "buyValueINR": 251496000.0,
           "sellValueINR": 0,
-          "netShares": 2000000,
-          "netValueINR": 352800000.0,
-          "avgBuyPrice": 176.4,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "42546fbfab2bd1af"
+          "netShares": 72000,
+          "netValueINR": 251496000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "81ed54dc21034e5d10"
         },
         {
-          "date": "2026-10-12",
-          "name": "SETU SECURITIES PVT LTD",
-          "symbol": "ADROITIND",
-          "company": "Adroit Industries (I) Ltd",
-          "buyQty": 327457,
-          "sellQty": 50131,
-          "buyValueINR": 63123885.89,
-          "sellValueINR": 9664755.49,
-          "netShares": 277326,
-          "netValueINR": 53459130.4,
-          "avgBuyPrice": 192.77,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "aceb6330fff276d6"
+          "date": "2026-11-17",
+          "name": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyQty": 2650000,
+          "sellQty": 0,
+          "buyValueINR": 580350000.0,
+          "sellValueINR": 0,
+          "netShares": 2650000,
+          "netValueINR": 580350000.0,
+          "avgBuyPrice": 219.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "598dbe73111e119df9"
         }
       ],
       "companies": [
         {
-          "symbol": "EFCIL",
-          "company": "EFC (I) Limited",
-          "buyValueCr": 35.28,
+          "symbol": "GROWW",
+          "company": "Billionbrains Garage Vn L",
+          "buyValueCr": 58.03,
           "sellValueCr": 0.0,
-          "netShares": 2000000,
+          "netShares": 2650000,
           "buyDays": 1,
           "sellDays": 0
         },
         {
-          "symbol": "BELDING",
-          "company": "Belding India Limited",
-          "buyValueCr": 33.58,
-          "sellValueCr": 0.17,
-          "netShares": 383000,
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 25.15,
+          "sellValueCr": 0.0,
+          "netShares": 72000,
           "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "INDOTECH",
-          "company": "Indo Tech Transformers Li",
-          "buyValueCr": 15.97,
-          "sellValueCr": 0.73,
-          "netShares": 59000,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "ADROITIND",
-          "company": "Adroit Industries (I) Ltd",
-          "buyValueCr": 6.31,
-          "sellValueCr": 0.97,
-          "netShares": 277326,
-          "buyDays": 1,
-          "sellDays": 1
-        },
-        {
-          "symbol": "VNL",
-          "company": "Vishal Nirmiti Limited",
-          "buyValueCr": 2.83,
-          "sellValueCr": 2.46,
-          "netShares": 48538,
-          "buyDays": 2,
-          "sellDays": 2
-        },
-        {
-          "symbol": "MERCURYEV",
-          "company": "Mercury Ev-Tech Limited",
-          "buyValueCr": 0.0,
-          "sellValueCr": 6.82,
-          "netShares": -2000000,
-          "buyDays": 0,
-          "sellDays": 1
+          "sellDays": 0
         }
       ],
       "observations": {
-        "repeatPurchases": true,
-        "buyAndSellObserved": true,
-        "multipleCompanies": true,
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
         "noObservedBuys": false
       },
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
@@ -4445,56 +5563,6 @@
           "buyValueCr": 81.75,
           "sellValueCr": 0.0,
           "netShares": 3732900,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:e541c68134e365b9",
-      "name": "DSP MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 80.93,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 80.93,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "DSP MUTUAL FUND",
-          "symbol": "ALKEM",
-          "company": "Alkem Laboratories Ltd.",
-          "buyQty": 160265,
-          "sellQty": 0,
-          "buyValueINR": 809338250.0,
-          "sellValueINR": 0,
-          "netShares": 160265,
-          "netValueINR": 809338250.0,
-          "avgBuyPrice": 5050.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "d98b6ba8ebe9a0b889"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "ALKEM",
-          "company": "Alkem Laboratories Ltd.",
-          "buyValueCr": 80.93,
-          "sellValueCr": 0.0,
-          "netShares": 160265,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -4742,6 +5810,224 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:6692c509cb979f45",
+      "name": "SETU SECURITIES PVT LTD",
+      "type": "Financial institution (may intermediate trades)",
+      "observedTransactions": 8,
+      "observedBuyDays": 6,
+      "observedSellDays": 7,
+      "buyValueCr": 93.97,
+      "sellValueCr": 19.0,
+      "netDisclosedValueCr": 74.97,
+      "latestDisclosure": "2026-11-26",
+      "uniqueCompanies": 7,
+      "repeatBuyCompanies": [
+        "VNL"
+      ],
+      "tradeRecords": [
+        {
+          "date": "2026-11-26",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "RITCO",
+          "company": "Ritco Logistics Limited",
+          "buyQty": 0,
+          "sellQty": 300000,
+          "buyValueINR": 0,
+          "sellValueINR": 78531000.0,
+          "netShares": -300000,
+          "netValueINR": -78531000.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "9349a436a90ab84d67"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "MERCURYEV",
+          "company": "Mercury Ev-Tech Limited",
+          "buyQty": 0,
+          "sellQty": 2000000,
+          "buyValueINR": 0,
+          "sellValueINR": 68220000.0,
+          "netShares": -2000000,
+          "netValueINR": -68220000.0,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "e3c13835f54792a203"
+        },
+        {
+          "date": "2026-10-28",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "VNL",
+          "company": "Vishal Nirmiti Limited",
+          "buyQty": 106836,
+          "sellQty": 175836,
+          "buyValueINR": 9536181.36,
+          "sellValueINR": 16831021.92,
+          "netShares": -69000,
+          "netValueINR": -7294840.56,
+          "avgBuyPrice": 0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "2f48034b6029eda581"
+        },
+        {
+          "date": "2026-10-27",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "VNL",
+          "company": "Vishal Nirmiti Limited",
+          "buyQty": 200020,
+          "sellQty": 82482,
+          "buyValueINR": 18777877.6,
+          "sellValueINR": 7743410.16,
+          "netShares": 117538,
+          "netValueINR": 11034467.44,
+          "avgBuyPrice": 93.88,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "1e56e2f8924b7375ce"
+        },
+        {
+          "date": "2026-10-26",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "INDOTECH",
+          "company": "Indo Tech Transformers Li",
+          "buyQty": 61817,
+          "sellQty": 2817,
+          "buyValueINR": 159660947.6,
+          "sellValueINR": 7294565.16,
+          "netShares": 59000,
+          "netValueINR": 152366382.44,
+          "avgBuyPrice": 2582.8,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "6a1edf804b8484e210"
+        },
+        {
+          "date": "2026-10-26",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "BELDING",
+          "company": "Belding India Limited",
+          "buyQty": 385019,
+          "sellQty": 2019,
+          "buyValueINR": 335775069.9,
+          "sellValueINR": 1743204.6,
+          "netShares": 383000,
+          "netValueINR": 334031865.3,
+          "avgBuyPrice": 872.1,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "d0bc6ad9950864489f"
+        },
+        {
+          "date": "2026-10-14",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "EFCIL",
+          "company": "EFC (I) Limited",
+          "buyQty": 2000000,
+          "sellQty": 0,
+          "buyValueINR": 352800000.0,
+          "sellValueINR": 0,
+          "netShares": 2000000,
+          "netValueINR": 352800000.0,
+          "avgBuyPrice": 176.4,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "42546fbfab2bd1af"
+        },
+        {
+          "date": "2026-10-12",
+          "name": "SETU SECURITIES PVT LTD",
+          "symbol": "ADROITIND",
+          "company": "Adroit Industries (I) Ltd",
+          "buyQty": 327457,
+          "sellQty": 50131,
+          "buyValueINR": 63123885.89,
+          "sellValueINR": 9664755.49,
+          "netShares": 277326,
+          "netValueINR": 53459130.4,
+          "avgBuyPrice": 192.77,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "aceb6330fff276d6"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "EFCIL",
+          "company": "EFC (I) Limited",
+          "buyValueCr": 35.28,
+          "sellValueCr": 0.0,
+          "netShares": 2000000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "BELDING",
+          "company": "Belding India Limited",
+          "buyValueCr": 33.58,
+          "sellValueCr": 0.17,
+          "netShares": 383000,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "INDOTECH",
+          "company": "Indo Tech Transformers Li",
+          "buyValueCr": 15.97,
+          "sellValueCr": 0.73,
+          "netShares": 59000,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "ADROITIND",
+          "company": "Adroit Industries (I) Ltd",
+          "buyValueCr": 6.31,
+          "sellValueCr": 0.97,
+          "netShares": 277326,
+          "buyDays": 1,
+          "sellDays": 1
+        },
+        {
+          "symbol": "VNL",
+          "company": "Vishal Nirmiti Limited",
+          "buyValueCr": 2.83,
+          "sellValueCr": 2.46,
+          "netShares": 48538,
+          "buyDays": 2,
+          "sellDays": 2
+        },
+        {
+          "symbol": "RITCO",
+          "company": "Ritco Logistics Limited",
+          "buyValueCr": 0.0,
+          "sellValueCr": 7.85,
+          "netShares": -300000,
+          "buyDays": 0,
+          "sellDays": 1
+        },
+        {
+          "symbol": "MERCURYEV",
+          "company": "Mercury Ev-Tech Limited",
+          "buyValueCr": 0.0,
+          "sellValueCr": 6.82,
+          "netShares": -2000000,
+          "buyDays": 0,
+          "sellDays": 1
+        }
+      ],
+      "observations": {
+        "repeatPurchases": true,
+        "buyAndSellObserved": true,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:703146f852eaab95",
       "name": "FAIRBRIDGE CAPITAL (MAURITIUS) LIMITED",
       "type": "Institution / fund / investment entity (name-based)",
@@ -4858,56 +6144,6 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:93001d798c2327c5",
-      "name": "SBI LIFE INSURANCE COMPANY LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 69.24,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 69.24,
-      "latestDisclosure": "2026-10-30",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-30",
-          "name": "SBI LIFE INSURANCE COMPANY LIMITED",
-          "symbol": "STAR",
-          "company": "Strides Pharma ScienceLtd",
-          "buyQty": 662369,
-          "sellQty": 0,
-          "buyValueINR": 692361068.32,
-          "sellValueINR": 0,
-          "netShares": 662369,
-          "netValueINR": 692361068.32,
-          "avgBuyPrice": 1045.28,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "2f2111ecce6a98f299"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "STAR",
-          "company": "Strides Pharma ScienceLtd",
-          "buyValueCr": 69.24,
-          "sellValueCr": 0.0,
-          "netShares": 662369,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:5e22109a02e58bd5",
       "name": "RWC EMERGING MARKETS EQUITY MASTER FUND LIMITED",
       "type": "Institution / fund / investment entity (name-based)",
@@ -4945,707 +6181,6 @@
           "buyValueCr": 66.89,
           "sellValueCr": 0.0,
           "netShares": 3054364,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:86ad0d28c6706e29",
-      "name": "RIAMBEL CAPITAL PCC - RCC1",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 63.13,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 63.13,
-      "latestDisclosure": "2026-10-26",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-26",
-          "name": "RIAMBEL CAPITAL PCC - RCC1",
-          "symbol": "SGMART",
-          "company": "SG Mart Limited",
-          "buyQty": 789702,
-          "sellQty": 0,
-          "buyValueINR": 631335160.92,
-          "sellValueINR": 0,
-          "netShares": 789702,
-          "netValueINR": 631335160.92,
-          "avgBuyPrice": 799.46,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "3d8c9c5bb4612f4d77"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SGMART",
-          "company": "SG Mart Limited",
-          "buyValueCr": 63.13,
-          "sellValueCr": 0.0,
-          "netShares": 789702,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:6ae56e0d3a75e785",
-      "name": "LARSEN AND TOUBRO LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 62.55,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 62.55,
-      "latestDisclosure": "2026-11-02",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-02",
-          "name": "LARSEN AND TOUBRO LIMITED",
-          "symbol": "EDELALTS",
-          "company": "EAAA India Alternatives L",
-          "buyQty": 371811,
-          "sellQty": 0,
-          "buyValueINR": 625505081.52,
-          "sellValueINR": 0,
-          "netShares": 371811,
-          "netValueINR": 625505081.52,
-          "avgBuyPrice": 1682.32,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "54078ac3d82d653cd5"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "EDELALTS",
-          "company": "EAAA India Alternatives L",
-          "buyValueCr": 62.55,
-          "sellValueCr": 0.0,
-          "netShares": 371811,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:fe9029203dd1ff67",
-      "name": "BUOYANT CAPITAL PRIVATE LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 62.35,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 62.35,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "BUOYANT CAPITAL PRIVATE LIMITED",
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyQty": 554480,
-          "sellQty": 0,
-          "buyValueINR": 623473946.4,
-          "sellValueINR": 0,
-          "netShares": 554480,
-          "netValueINR": 623473946.4,
-          "avgBuyPrice": 1124.43,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "e3f9aa6fc4647da566"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "TONBO",
-          "company": "Tonbo Imaging India Ltd",
-          "buyValueCr": 62.35,
-          "sellValueCr": 0.0,
-          "netShares": 554480,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:e24826a7b42409ba",
-      "name": "NEOMILE CORPORATE ADVISORY LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 2,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 62.24,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 62.24,
-      "latestDisclosure": "2026-10-15",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-15",
-          "name": "NEOMILE CORPORATE ADVISORY LIMITED",
-          "symbol": "LCCPROJECT",
-          "company": "LCC Projects Limited",
-          "buyQty": 2305000,
-          "sellQty": 0,
-          "buyValueINR": 311198050.0,
-          "sellValueINR": 0,
-          "netShares": 2305000,
-          "netValueINR": 311198050.0,
-          "avgBuyPrice": 135.01,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5d317d6c47ee21cd"
-        },
-        {
-          "date": "2026-10-15",
-          "name": "NEOMILE CORPORATE ADVISORY LIMITED",
-          "symbol": "LCCPROJECT",
-          "company": "LCC Projects Limited",
-          "buyQty": 2305000,
-          "sellQty": 0,
-          "buyValueINR": 311198050.0,
-          "sellValueINR": 0,
-          "netShares": 2305000,
-          "netValueINR": 311198050.0,
-          "avgBuyPrice": 135.01,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "7e4475f2163f7a053d"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "LCCPROJECT",
-          "company": "LCC Projects Limited",
-          "buyValueCr": 62.24,
-          "sellValueCr": 0.0,
-          "netShares": 4610000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:cc5b2e70b7b80c6c",
-      "name": "SETU SECURITIES PRIVATE LIMITED",
-      "type": "Financial institution (may intermediate trades)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 0,
-      "buyValueCr": 60.8,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 60.8,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-13",
-          "name": "SETU SECURITIES PRIVATE LIMITED",
-          "symbol": "DCI",
-          "company": "DC Infotech and Comun Ltd",
-          "buyQty": 138910,
-          "sellQty": 0,
-          "buyValueINR": 46316761.3,
-          "sellValueINR": 0,
-          "netShares": 138910,
-          "netValueINR": 46316761.3,
-          "avgBuyPrice": 333.43,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "1d18eada141c60dc4b"
-        },
-        {
-          "date": "2026-11-06",
-          "name": "SETU SECURITIES PRIVATE LIMITED",
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyQty": 410000,
-          "sellQty": 0,
-          "buyValueINR": 561700000.0,
-          "sellValueINR": 0,
-          "netShares": 410000,
-          "netValueINR": 561700000.0,
-          "avgBuyPrice": 1370.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "e1082e769c5c5d273f"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "ALIVUS",
-          "company": "Alivus Life Sciences Ltd",
-          "buyValueCr": 56.17,
-          "sellValueCr": 0.0,
-          "netShares": 410000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "DCI",
-          "company": "DC Infotech and Comun Ltd",
-          "buyValueCr": 4.63,
-          "sellValueCr": 0.0,
-          "netShares": 138910,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:0d4a74e17dd94ed4",
-      "name": "EQUISM CAPITAL PRIVATE LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 0,
-      "buyValueCr": 59.48,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 59.48,
-      "latestDisclosure": "2026-10-23",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-23",
-          "name": "EQUISM CAPITAL PRIVATE LIMITED",
-          "symbol": "BONFIG",
-          "company": "Bonfiglioli Trans Limited",
-          "buyQty": 955000,
-          "sellQty": 0,
-          "buyValueINR": 558741850.0,
-          "sellValueINR": 0,
-          "netShares": 955000,
-          "netValueINR": 558741850.0,
-          "avgBuyPrice": 585.07,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "916dc179bbb9f9e704"
-        },
-        {
-          "date": "2026-10-13",
-          "name": "EQUISM CAPITAL PRIVATE LIMITED",
-          "symbol": "MANIKA",
-          "company": "Manika Plastech Limited",
-          "buyQty": 700000,
-          "sellQty": 0,
-          "buyValueINR": 36015000.0,
-          "sellValueINR": 0,
-          "netShares": 700000,
-          "netValueINR": 36015000.0,
-          "avgBuyPrice": 51.45,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "e38b3f381808fc55"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "BONFIG",
-          "company": "Bonfiglioli Trans Limited",
-          "buyValueCr": 55.87,
-          "sellValueCr": 0.0,
-          "netShares": 955000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "MANIKA",
-          "company": "Manika Plastech Limited",
-          "buyValueCr": 3.6,
-          "sellValueCr": 0.0,
-          "netShares": 700000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:dd4d117e1ef023b6",
-      "name": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 58.03,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 58.03,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "VIRIDIAN ASIA OPPORTUNITIES MASTER FUND",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 2650000,
-          "sellQty": 0,
-          "buyValueINR": 580350000.0,
-          "sellValueINR": 0,
-          "netShares": 2650000,
-          "netValueINR": 580350000.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "598dbe73111e119df9"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 58.03,
-          "sellValueCr": 0.0,
-          "netShares": 2650000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:c2fbe531b0fb2c2a",
-      "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-      "type": "Named investor / company",
-      "observedTransactions": 5,
-      "observedBuyDays": 5,
-      "observedSellDays": 0,
-      "buyValueCr": 57.2,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 57.2,
-      "latestDisclosure": "2026-10-29",
-      "uniqueCompanies": 3,
-      "repeatBuyCompanies": [
-        "ASIANTILES",
-        "SKYWAYS"
-      ],
-      "tradeRecords": [
-        {
-          "date": "2026-10-29",
-          "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-          "symbol": "ASIANTILES",
-          "company": "Asian Granito India Limit",
-          "buyQty": 1891482,
-          "sellQty": 0,
-          "buyValueINR": 88370039.04,
-          "sellValueINR": 0,
-          "netShares": 1891482,
-          "netValueINR": 88370039.04,
-          "avgBuyPrice": 46.72,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "bf3eca90e9464253d5"
-        },
-        {
-          "date": "2026-10-28",
-          "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-          "symbol": "ASIANTILES",
-          "company": "Asian Granito India Limit",
-          "buyQty": 1708518,
-          "sellQty": 0,
-          "buyValueINR": 78540572.46,
-          "sellValueINR": 0,
-          "netShares": 1708518,
-          "netValueINR": 78540572.46,
-          "avgBuyPrice": 45.97,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "cd21579bd4cb2865c4"
-        },
-        {
-          "date": "2026-10-26",
-          "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-          "symbol": "MACOBSTECH",
-          "company": "Macobs Technologies Ltd",
-          "buyQty": 182400,
-          "sellQty": 0,
-          "buyValueINR": 35354592.0,
-          "sellValueINR": 0,
-          "netShares": 182400,
-          "netValueINR": 35354592.0,
-          "avgBuyPrice": 193.83,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "5326807f035e9d1890"
-        },
-        {
-          "date": "2026-10-23",
-          "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-          "symbol": "SKYWAYS",
-          "company": "Skyways Air Services Ltd",
-          "buyQty": 2574000,
-          "sellQty": 0,
-          "buyValueINR": 245122020.0,
-          "sellValueINR": 0,
-          "netShares": 2574000,
-          "netValueINR": 245122020.0,
-          "avgBuyPrice": 95.23,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "ecf96a75ba199903ce"
-        },
-        {
-          "date": "2026-10-21",
-          "name": "GOLDENDUNES BUILDHOME PRIVATE LIMITED",
-          "symbol": "SKYWAYS",
-          "company": "Skyways Air Services Ltd",
-          "buyQty": 1192840,
-          "sellQty": 0,
-          "buyValueINR": 124651780.0,
-          "sellValueINR": 0,
-          "netShares": 1192840,
-          "netValueINR": 124651780.0,
-          "avgBuyPrice": 104.5,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "c9908dacf879a25b00"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SKYWAYS",
-          "company": "Skyways Air Services Ltd",
-          "buyValueCr": 36.98,
-          "sellValueCr": 0.0,
-          "netShares": 3766840,
-          "buyDays": 2,
-          "sellDays": 0
-        },
-        {
-          "symbol": "ASIANTILES",
-          "company": "Asian Granito India Limit",
-          "buyValueCr": 16.69,
-          "sellValueCr": 0.0,
-          "netShares": 3600000,
-          "buyDays": 2,
-          "sellDays": 0
-        },
-        {
-          "symbol": "MACOBSTECH",
-          "company": "Macobs Technologies Ltd",
-          "buyValueCr": 3.54,
-          "sellValueCr": 0.0,
-          "netShares": 182400,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": true,
-        "buyAndSellObserved": false,
-        "multipleCompanies": true,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:b6984a718691fe77",
-      "name": "HDFC STANDARD LIFE INSURANCE CO LTD",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 56.94,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 56.94,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "HDFC STANDARD LIFE INSURANCE CO LTD",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 2600000,
-          "sellQty": 0,
-          "buyValueINR": 569400000.0,
-          "sellValueINR": 0,
-          "netShares": 2600000,
-          "netValueINR": 569400000.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "29be94191a79acd90e"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 56.94,
-          "sellValueCr": 0.0,
-          "netShares": 2600000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:32e8243900848366",
-      "name": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 56.67,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 56.67,
-      "latestDisclosure": "2026-11-13",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-13",
-          "name": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyQty": 2296700,
-          "sellQty": 0,
-          "buyValueINR": 566710725.0,
-          "sellValueINR": 0,
-          "netShares": 2296700,
-          "netValueINR": 566710725.0,
-          "avgBuyPrice": 246.75,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "7002d238cb8589edcc"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "MEESHO",
-          "company": "Meesho Limited",
-          "buyValueCr": 56.67,
-          "sellValueCr": 0.0,
-          "netShares": 2296700,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:557588d6d604af25",
-      "name": "ALLIANZ GLOBAL INVESTORS GMBH ACTING ON BEHALF OF ALLIANZ SOA FONDS",
-      "type": "Named investor / company",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 55.73,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 55.73,
-      "latestDisclosure": "2026-10-21",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-10-21",
-          "name": "ALLIANZ GLOBAL INVESTORS GMBH ACTING ON BEHALF OF ALLIANZ SOA FONDS",
-          "symbol": "HDFIRE",
-          "company": "HD Fire Protect Limited",
-          "buyQty": 1755399,
-          "sellQty": 0,
-          "buyValueINR": 557304074.52,
-          "sellValueINR": 0,
-          "netShares": 1755399,
-          "netValueINR": 557304074.52,
-          "avgBuyPrice": 317.48,
-          "source": "NSE Bulk Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
-          "dealId": "833e809137887fdfad"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "HDFIRE",
-          "company": "HD Fire Protect Limited",
-          "buyValueCr": 55.73,
-          "sellValueCr": 0.0,
-          "netShares": 1755399,
           "buyDays": 1,
           "sellDays": 0
         }
