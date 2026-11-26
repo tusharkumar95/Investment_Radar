@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-25T23:15:09.171150+00:00",
+  "testedAt": "2026-11-26T03:41:40.669885+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -48,7 +48,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 8,
+      "count": 7,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -57,27 +57,27 @@
           "source": "Investing News Network"
         },
         {
+          "title": "AVENIR ANNOUNCES ADDITIONAL INVESTMENT IN GRID METALS CORP. - PR Newswire Canada",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYmNpRFhxSmpBNWpUUGdQazg3Z3J0SnBGVjhUZlBTZ2M2SV8yS25zd2VlRXNmcUxneW1CN2N1Yld0OXRwRjc2cUVIVFhzLTVYVUhlMGczNzA3bHZ3cFZiaVhSUmdhT2hhTWFCak5neDFLVDJJdjFzNHlma0lSRngxb014S1FZOGJWSUpKV0s4NjFRZzVHZ0FXdXJaMkdxUnA2c1hTUHU3WHdEQ0xQdHhPdjJn?oc=5",
+          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
+          "source": "PR Newswire Canada"
+        },
+        {
           "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
           "published": "Mon, 23 Nov 2026 12:30:00 GMT",
           "source": "TradingView"
         },
         {
-          "title": "avenir announces additional investment in grid metals corp. - Fidelity Investments",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWJlT0hsR3R3ejRVd2F3RWI3ejkxQjM3cDQyWDhmaGgxSUtNVnFWRWk2WlUtcjFWUllBcXRMU1NHZGt6QmdzRm1KbnRKLVpLMVFlZ2ppenZtclY0UExyeDNGX0pCN1pfRE1VZFI3LW92VnpsSkgtZGJtMGNDOGZGdHRfckZIMkExYkdLRnZSd3NuNk1zaFZhTnI3bnQyYzNT?oc=5",
-          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
-          "source": "Fidelity Investments"
+          "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
+          "published": "Wed, 25 Nov 2026 01:30:20 GMT",
+          "source": "Investing News Network"
         },
         {
           "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZV9mN0hZN1QtYk1fakw2ZU1aUnJKZ2FvREU4QUI4QkxNV3JwV1hRUVNoWERJY3JwNG40R2JvTjZhb3pNZERPb042SGZKVDRfXzVBRnR1Y1pxRFlMNHpZaUU3a002ZWZfUC1mWWd2OWZrcmQ3WUNlZERNcVY3QzBWcXItaGxpcl92U0RzckdBdUhCQ2x4cFg2MXNzZ2JWZFhkU2tjOW9CTEszNkNNOHh5UDJVT0pyOTZT?oc=5",
           "published": "Mon, 23 Nov 2026 18:22:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Greenheart Gold Announces Grant of Stock Options - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQakwtejFZaDFxTGRBd01Tam9QbFNNakJyWW1HcGc3aW9FMEdPMjZsaGVfUjZWMDBKSjgtb1FrRDZoT09XaFV4MlhOY3RiV1JGaWI3Zk14MGE3R091eVExU3ctZGtibEliblF5d2hEeXd0MVJtLUtpYXVQY2Vha0lhcmxNOHhRSlRLWnMxTFBSLU4zenRQQlVWT2JfaDREMllHZ0VOcGstdTlNVS0wNzR0dQ?oc=5",
-          "published": "Thu, 19 Nov 2026 21:37:00 GMT",
           "source": "TradingView"
         },
         {
@@ -90,12 +90,6 @@
           "title": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
           "published": "Mon, 23 Nov 2026 14:29:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Sailfish Reports Record Q3 2026 Results - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMzBwZzRPR1o4N0pqTkZUUHhxcmZvZUhRdWVVbUlIVUoyVHA3NlNZVHRmMnFMd2UtWEE4dzc1UTkxR1NUcTFORnJJU20yVF90ZEpkUWJXVHdJdGZuZlRVOVlqc2R0LWRCbjd2MXpvVEdaWDZ0a2lJWkdaNW5RdXVOWDdEdEFFeXpJTURObEdaeUJXdlNRODZDdklFSDgxNG5aelQ5aw?oc=5",
-          "published": "Mon, 23 Nov 2026 12:00:00 GMT",
           "source": "TradingView"
         }
       ]
