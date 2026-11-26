@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-25T22:10:01.019545+00:00",
+  "updated": "2026-11-26T00:54:27.527113+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -805,50 +805,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation    Investing News Network "
-    },
-    {
-      "id": "lead:f012f8bfd3d810de97",
-      "title": "Oct 21, 2026, 21:25 ET \n                          ZYUS Life Sciences Announces Closing of First Tranche of Non-Brokered Unit Offering Private Placement\n                         \n                         ZYUS Life Sciences Corporation (\"ZYUS\" or the \"Company\") ",
-      "date": "2026-10-21",
-      "url": "https://www.newswire.ca/news-releases/zyus-life-sciences-announces-closing-of-first-tranche-of-non-brokered-unit-offering-private-placement-829760508.html",
-      "discoveredVia": "Canada NewsWire / Private placements",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:a7cbc28272299eb20f",
-      "title": "Labrador Gold Announces Extension of Non-Brokered Private Placement - The Manila Times",
-      "date": "2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQY2FsV1VvYl9LY3cycGJibXkzdTZnZDdvZ3ZyUGpjaWJ1b0R4MWFMa3o1UFhTeU1uaVdybDN2cDU3ZlZaZENQdk9iYWdBbjdBQWdSVWZiUm5RVU1sSU50MGtwdHE3Z0hRRFV1c3hmUHlvQVFkT3VkbjJuN1VyV3hXbmxpRjJVV3ZUSnhmZUNreHQ5eWhBcnlRWUpSSTNsdkFuVTFzZ1BSdU1sbUtwcVJ3ZjQwbFlDTWN2dzNmZmtNYl83ZkpTNmpGUHFzS0FHS3JYRnd6RUR2amXSAd4BQVVfeXFMTUVxMkY0VkFoSzFyQU5feFIwazhSZDdjYnpDdUw5Mk5BRHI5UFdtaTBwdlBLWm5hTjg0UmNVZnJXNnhDODk3bDB4aTkwZGlBMkM0RHg5cFh1TDdWcmlEbExkM2R4ZHhjaFoxX3gtdHFsYV9yOUJfZ3ZGblhRZlU1Wms2RGRHSWphWEZlcVAzSXJiMWJ3NkN5aGYtZi1raXZ2OUpEUnJaRjc3d0JkbGdra2UzRVNJaW1jbFR1SFZWbURCdDVwZ2ZicEFVbEFtRHBtQ3hZdlhfMW5sYkUxZVNR",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    The Manila Times "
-    },
-    {
-      "id": "lead:2384e281518235229e",
-      "title": "Matachewan and McChip take near-20% stake in Labrador Gold through private placement - The Globe and Mail",
-      "date": "2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMUtrOWMycjdkV1AwYUtqNFc0dlhrREg1X1dwY3pGMjZ3TVpHajZxdTM1UU1xVy1Dbk9jVW1xSjB5WUVDZGIwSFFjZXotT0ltZWNpNVo5VG1kMDZrMmdaT1VHUDM4dm1hWXpRQnp6QkFHQk0taDQ3bG1Bcml2Qm1rTWgwTTJKWHpMN0xVT2YtLVZodzN1NW8wTFlyZGdCNGdQUnVQS2V1QVBaVjhGcmZGZ1lrLXI4VlJ5M3hCWGdKQ3JuNi1VZWs1SXBydGoxS3ctU3pjbXM1WEhBemxKWnhJcVhPZ3ItampUY3NUam1nRlFrdWwxc3g0",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Matachewan and McChip take near-20% stake in Labrador Gold through private placement    The Globe and Mail "
-    },
-    {
-      "id": "lead:2091c46bfc42172f1b",
-      "title": "Labrador Gold Announces Extension of Non-Brokered Private Placement - GlobeNewswire",
-      "date": "2026-10-21",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTkhKQUJFNWxiLTRITkVVT3ROLXFJWDlvaEQweGFDV0c0aDEtV0lGNXo3NHZfQlhTZlE0TkQ1a1BhSGY3Z2I4SlZ5MFJEUVBLc2VwQ3V6d3VNTUt1TVNtVnF2Q2lSQjFfS1FLNGlGUmNuYXd2QXl2QTNFd2hUNjZPXzdzaHBLd0M4cld4cW0yUllmMGVoODQyNVQtVXhlLXAwVVRDR0ZRbEhCdURlTHRxNWxSck8zTzRqeWt1ZU9uejFzUEYzOF9WQ1dHaGZZSUdoc1RLV3hB",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Potential / incomplete — verify status",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Announces Extension of Non-Brokered Private Placement    GlobeNewswire "
     }
   ],
   "usFilings": [],
@@ -957,9 +913,9 @@
   "status": {
     "sources": 18,
     "available": 10,
-    "leadCount": 77,
+    "leadCount": 73,
     "usFilingCount": 0,
-    "needsReview": 77
+    "needsReview": 73
   },
   "officialSources": [
     {
