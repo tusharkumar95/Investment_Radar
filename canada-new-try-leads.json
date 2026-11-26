@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-26T00:54:27.527113+00:00",
+  "updated": "2026-11-26T04:38:01.955015+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -827,8 +827,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 4
+      "items": 5,
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -844,9 +844,8 @@
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
@@ -912,7 +911,7 @@
   ],
   "status": {
     "sources": 18,
-    "available": 10,
+    "available": 9,
     "leadCount": 73,
     "usFilingCount": 0,
     "needsReview": 73

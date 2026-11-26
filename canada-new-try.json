@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-26T00:54:34.537730+00:00",
+  "updated": "2026-11-26T04:38:10.027273+00:00",
   "day": "2026-11-25",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -1866,8 +1866,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 4
+      "items": 5,
+      "relevant": 3
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1883,9 +1883,8 @@
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
-      "ok": true,
-      "items": 0,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
@@ -1975,7 +1974,7 @@
     "quoteErrors": [],
     "disclosureLeads": 73,
     "usFilingNotices": 0,
-    "sourcesOnline": 10,
+    "sourcesOnline": 9,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
