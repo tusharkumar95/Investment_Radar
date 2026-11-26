@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-26T11:14:31.223311+00:00",
+  "testedAt": "2026-11-26T21:46:09.231826+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -14,15 +14,9 @@
           "source": "Investing News Network"
         },
         {
-          "title": "G2S2 CAPITAL INC. ANNOUNCES INCREASED INVESTMENT IN CLARKE INC. - Yahoo! Finance Canada",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNekc1NXNZMzdzTVgtWFdqcnUyWmdONURsWk5QMWEzYWg5S1NaQjRjRWoyS25GY3NUcktDc2UxM2t3YVZFS0c3ZmhvSXZQcXphdzZ2VkRzWHlubVRTYXdZME9mM3pjRHROTlVOV2JaekZsSUtSN0RRclMtRlpsZnpXUGc5OXE2NnJUcUtEa25R?oc=5",
-          "published": "Fri, 20 Nov 2026 00:59:32 GMT",
-          "source": "Yahoo! Finance Canada"
-        },
-        {
-          "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZ1lIZU9FYS1SdTlEa0J6NEc1U0M4WXgtakxIYlRsZGFhazZnNHhaa1ZjRU83bG55MW9mYjFBWnBWVV9qYmE4cVFoWDJEOHo1bGYxbFJGeFdhaFF0QnIyZ2RrSUhkdUFrLVZmMVc2azNsaVJPRGhzTlNocGFhbjlKX3IycEUzYkN2eTVpXzNkMHRYcVB3S0J0clN0SmpjQklZRy11b2tQanJTRklJUkktN3N5RWpvN2VYbDRtT2U0Vnh3dDQ4YUpfRmZkbWU4bzZzY0t4UEhoU19KLU9pZWlZRGJfMWZmNnZlT0FidTdOS3NldlRsRzctQTV0NGwxc3BJLWVGZzExdHB0R2tLOTVR?oc=5",
-          "published": "Tue, 24 Nov 2026 21:45:00 GMT",
+          "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
+          "published": "Thu, 26 Nov 2026 18:56:00 GMT",
           "source": "TradingView"
         },
         {
@@ -38,10 +32,16 @@
           "source": "Investing News Network"
         },
         {
-          "title": "Chicago Atlantic Amends Early Warning Report on Vireo Holdings - TipRanks",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0h1QTVrUWxiWFVGNFB3LTJUZGJqWVdfVmZlUFg1RV9yZF91NGZmUEdjR1Y4YU05MkhyV1p6VXBYRXdrX0wzbGZWeHdfOC1rMVF0UjJuNF9WLUYtNEZFS0dHSTZ4dG9sLTFMakFkMjN4MWt1QVZXeUQxMnZtR3pOSUlfZktuV3VaWFpGbHNBdkUzaXMtMFRsOHJ0cmNNOUxveHVwakV0SEF6TjBDYWVxalB2OGk?oc=5",
-          "published": "Mon, 23 Nov 2026 16:38:21 GMT",
-          "source": "TipRanks"
+          "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZndTVmNVaUdjRGxnelBYN09IaUUwMU04SlRPOXdOM0VkM2tyNEt0c1h5TERES3hPdEZuLXkwcXd2WVgxQVprdW5OSnEzU1QzX0V5WElCbjA5dXBrMy1HYkttVllmNmpwMFpka3ZJRWQxTzQtZXRPb3M5My12ejdKd3NCNlRBelZ4aFRsNkZwMzdCNTlWVnRrTjd4VnlyVzBPTFhDTHM5Z3ZRcFJLc2c3Nnpuc2h5WkZrNGFLSlNHQWxXNzVreDhTY25tRk5uSmUxWlpJTUIyUTVmRkZPbXU4eDFkc2o2dTR2dnl0S3MyTW0taWlNemZla0ZqNmgyZGU1RGNOMHlPUm9fRXpWbjNz?oc=5",
+          "published": "Tue, 24 Nov 2026 21:45:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Jeremy Gillis Announces Acquisition Of Securities Of Sendero Resources Corp. - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOTWFmSkZDMlRUNEp2ZlAydkVHUm9xcHpXQ3RwR3Mzb1h4SHdwbzZBM09tZTJjMEVLcEN1MEZvSlpCV0pucTFjeHlxYVN3eWRYZDE1RW1pdVNkckZ2VnRUTXA5Z0pDckZ6V2ExdllfNXJEd200Z3hmRURkNnJXampUcTA3aUhJX1RFVnBGOEh0dmgwTUNBV2RYRklZYjZzRFhPa1p4czV6YXR3RVVUZlRwMDhqam1UQVdrQkFCOEFpRXVjRlB2dXZQRUpHZWdVb1JFR3dLUlRBcm5PRXNOSldSS1NfSXVqZw?oc=5",
+          "published": "Thu, 26 Nov 2026 20:15:06 GMT",
+          "source": "TradingView"
         }
       ]
     },
@@ -54,7 +54,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -63,22 +63,28 @@
           "source": "Investing News Network"
         },
         {
-          "title": "AVENIR ANNOUNCES ADDITIONAL INVESTMENT IN GRID METALS CORP. - PR Newswire Canada",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYmNpRFhxSmpBNWpUUGdQazg3Z3J0SnBGVjhUZlBTZ2M2SV8yS25zd2VlRXNmcUxneW1CN2N1Yld0OXRwRjc2cUVIVFhzLTVYVUhlMGczNzA3bHZ3cFZiaVhSUmdhT2hhTWFCak5neDFLVDJJdjFzNHlma0lSRngxb014S1FZOGJWSUpKV0s4NjFRZzVHZ0FXdXJaMkdxUnA2c1hTUHU3WHdEQ0xQdHhPdjJn?oc=5",
-          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
-          "source": "PR Newswire Canada"
+          "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
+          "published": "Thu, 26 Nov 2026 18:56:00 GMT",
+          "source": "TradingView"
         },
         {
-          "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
-          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
-          "source": "TradingView"
+          "title": "avenir announces additional investment in grid metals corp. - Fidelity Investments",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWJlT0hsR3R3ejRVd2F3RWI3ejkxQjM3cDQyWDhmaGgxSUtNVnFWRWk2WlUtcjFWUllBcXRMU1NHZGt6QmdzRm1KbnRKLVpLMVFlZ2ppenZtclY0UExyeDNGX0pCN1pfRE1VZFI3LW92VnpsSkgtZGJtMGNDOGZGdHRfckZIMkExYkdLRnZSd3NuNk1zaFZhTnI3bnQyYzNT?oc=5",
+          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
+          "source": "Fidelity Investments"
         },
         {
           "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
           "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
           "published": "Wed, 25 Nov 2026 01:30:20 GMT",
           "source": "Investing News Network"
+        },
+        {
+          "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
+          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
+          "source": "TradingView"
         },
         {
           "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",

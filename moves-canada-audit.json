@@ -1,9 +1,18 @@
 {
-  "updated": "2026-11-26T11:14:31.248350+00:00",
-  "candidateCount": 19,
-  "needsReview": 18,
+  "updated": "2026-11-26T21:46:09.266503+00:00",
+  "candidateCount": 20,
+  "needsReview": 19,
   "possibleDuplicates": 1,
   "records": [
+    {
+      "headline": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
+      "published": "Thu, 26 Nov 2026 18:56:00 GMT",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
+      "reviewStatus": "needs_original_source_review",
+      "possibleMatches": [],
+      "verified": false,
+      "note": "Headline matching is only a review hint, not transaction verification."
+    },
     {
       "headline": "Chicago Atlantic Amends Early Warning Report on Vireo Holdings - TipRanks",
       "published": "Mon, 23 Nov 2026 16:38:21 GMT",
