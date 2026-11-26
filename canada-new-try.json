@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated": "2026-11-26T04:38:10.027273+00:00",
-  "day": "2026-11-25",
+  "updated": "2026-11-26T22:09:01.564462+00:00",
+  "day": "2026-11-26",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
   "purchases": [
@@ -445,9 +445,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.54,
-      "lastPriceDate": "2026-11-25",
-      "priceChangePct": -34.32,
+      "lastPrice": 3.66,
+      "lastPriceDate": "2026-11-26",
+      "priceChangePct": -32.1,
       "quoteStatus": "Available"
     },
     {
@@ -489,9 +489,9 @@
           "price": null
         }
       ],
-      "lastPrice": 3.04,
-      "lastPriceDate": "2026-11-25",
-      "priceChangePct": -24.19,
+      "lastPrice": 3.06,
+      "lastPriceDate": "2026-11-26",
+      "priceChangePct": -23.69,
       "quoteStatus": "Available"
     },
     {
@@ -533,9 +533,9 @@
           "price": null
         }
       ],
-      "lastPrice": 4.15,
-      "lastPriceDate": "2026-11-25",
-      "priceChangePct": -7.98,
+      "lastPrice": 4.23,
+      "lastPriceDate": "2026-11-26",
+      "priceChangePct": -6.21,
       "quoteStatus": "Available"
     },
     {
@@ -622,7 +622,7 @@
         }
       ],
       "lastPrice": 0.005,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -94.44,
       "quoteStatus": "Available"
     },
@@ -666,7 +666,7 @@
         }
       ],
       "lastPrice": 0.04,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
@@ -710,7 +710,7 @@
         }
       ],
       "lastPrice": 0.04,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
@@ -754,7 +754,7 @@
         }
       ],
       "lastPrice": 0.65,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -41.96,
       "quoteStatus": "Available"
     },
@@ -798,7 +798,7 @@
         }
       ],
       "lastPrice": 0.04,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
@@ -842,7 +842,7 @@
         }
       ],
       "lastPrice": 0.04,
-      "lastPriceDate": "2026-11-25",
+      "lastPriceDate": "2026-11-26",
       "priceChangePct": -20.0,
       "quoteStatus": "Available"
     },
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 36,
+      "candidateArticles": 37,
       "status": "Verified transactions found"
     },
     {
@@ -1043,6 +1043,94 @@
   ],
   "leads": [
     {
+      "id": "lead:b25a667e9529a61849",
+      "title": "Major Shareholder Announcement",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410667/0/en/major-shareholder-announcement.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Bang & Olufsen A/S has, pursuant to the Danish Capital Markets Act, received a major shareholder notification from UBS Group AG.   "
+    },
+    {
+      "id": "lead:b0c015e6ce8e5490fa",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410733/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:ac78767de5c0412657",
+      "title": "AKVA group ASA: Disclosure of large shareholdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410729/0/en/akva-group-asa-disclosure-of-large-shareholdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the recommended voluntary cash offer to acquire all issued and outstanding shares in AKVA group ASA (the \"Company\" or \"AKVA\") by Pontos Bidco AS (the \"Offeror\"), a Norwegian private limited liability company indirectly owned by Yanmar Holdings Co., Ltd. (\"Yanmar\"), at NOK 161 p"
+    },
+    {
+      "id": "lead:950276dd09ba63bea6",
+      "title": "ISS and Glass Lewis Endorse Umios’ C$27.00 Per Share Acquisition Offer for High Liner Foods - Kalkine Media",
+      "date": "2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUHM5M195d1NwVGd4T0VVZUd6cUowaTRSYTZoOG5ZMnV3Ti0xcjFnbmoxaDJtT0FrMC1VQ25COHFFdkNjeVU2bk1iZ3BPQjRDRVNfRXFHaG9qVVpKa01WWEJiZTlRdjVXbFFONXdWUDF1VmFLZlR0aWIyVHdRbGlfaXFPUS1mMDM4dmhuSUxaNDZxWUJEMkJtUmRfaVVmemVTcHoxY3daRGxMRWpBRjRVWG4zZE9WaldrWDE3TDZzS1VnNTBHWkxjMVVLMjB6djRt",
+      "discoveredVia": "Google News discovery — \"Brookfield\" \"share acquisition\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " ISS and Glass Lewis Endorse Umios’ C$27.00 Per Share Acquisition Offer for High Liner Foods    Kalkine Media "
+    },
+    {
+      "id": "lead:7d91a90739dcb734bf",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410731/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:7cad4e7858d1530f2c",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410732/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:fbb03fc283f9ff1730",
+      "title": "Mowi (OSE:MOWI): Share purchase programme for employees in Mowi",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410499/0/en/mowi-ose-mowi-share-purchase-programme-for-employees-in-mowi.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " The Board of Directors of Mowi ASA has resolved to offer eligible employees in Norway, Scotland, Canada West, Poland, Germany and Italy the opportunity to purchase Mowi shares at a discounted price. "
+    },
+    {
+      "id": "lead:b330be5a70c58efeb8",
+      "title": "Davion Healthcare Plc Invites Shareholders to Report Difficulties in Completing Direct Registration Share (DRS) Transfers",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410132/0/en/davion-healthcare-plc-invites-shareholders-to-report-difficulties-in-completing-direct-registration-share-drs-transfers.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " DUBLIN, Nov.  25, 2026  (GLOBE NEWSWIRE) -- Davion Healthcare Plc (Nasdaq: DAVI) (“Davion” or the “Company”), further to its announcement of 17 November 2026 concerning the Direct Registration System (“DRS”), invites shareholders who have acquired ordinary shares in the Company and who have experie"
+    },
+    {
       "id": "lead:4d140d55670b064f5c",
       "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
       "date": "2026-11-25",
@@ -1054,6 +1142,17 @@
       "summary": " Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement    Investing News Network "
     },
     {
+      "id": "lead:1ca6ec82fe646efbad",
+      "title": "Prenetics’ IM8 Leadership Purchases $1.26 Million of Shares Following Third Quarter Results",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410187/0/en/prenetics-im8-leadership-purchases-1-26-million-of-shares-following-third-quarter-results.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "  Cumulative Personal Investment by Leadership Since Nov 2025 Reaches Approximately $5.0 Million  "
+    },
+    {
       "id": "lead:d1a7f7d3e6870be0d4",
       "title": "Nov 24, 2026, 21:25 ET \n                          ZYUS Life Sciences Announces Closing of Third Tranche of Non-Brokered Unit Offering Private Placement, Grant of Stock Options and Amendment to Certain Secured Debt\n                         \n                    ",
       "date": "2026-11-24",
@@ -1063,6 +1162,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:9cdb6982c59f0100c8",
+      "title": "Remix Therapeutics Completes Closing of Merger with Passage Bio and Previously Announced $100 Million Private Placement",
+      "date": "2026-11-24",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "  Lead program REM-422, an orally available mRNA degrader targeting MYB, on track for multiple clinical readouts in 2027 ahead of potential NDA submission as early as the second half 2027    Updated REM-422 data presented at ENA 2026 showed 57% overall response rate and durable responses at recommen"
     },
     {
       "id": "lead:75b8d731b289109207",
@@ -1096,6 +1206,39 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN    PR Newswire Canada "
+    },
+    {
+      "id": "lead:1bdd1cfebc8e80d1b0",
+      "title": "FS Bancorp, Inc. Authorizes Share Repurchase Program",
+      "date": "2026-11-24",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409842/24095/en/fs-bancorp-inc-authorizes-share-repurchase-program.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MOUNTLAKE TERRACE, Wash., Nov.  24, 2026  (GLOBE NEWSWIRE) -- FS Bancorp, Inc. (NASDAQ: FSBW) (“Company”), the holding company for 1st Security Bank of Washington (“Bank”) announced that its Board of Directors has authorized a share repurchase program of up to $15.0 million in shares of the Company"
+    },
+    {
+      "id": "lead:a787af73fd4bad66da",
+      "title": "MANAGERS' AND CLOSELY RELATED PARTIES' TRANSACTIONS WITH DFDS SHARES",
+      "date": "2026-11-23",
+      "url": "https://www.globenewswire.com/news-release/2026/11/23/3408507/0/en/managers-and-closely-related-parties-transactions-with-dfds-shares.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " On 20 November 2026, Michael Hansen, CEO of DFDS, purchased 6,500 DFDS shares. "
+    },
+    {
+      "id": "lead:c9d8d6a161c0255dbb",
+      "title": "Sagtec Global Limited Announces Additional Share Acquisition by CEO, Reinforcing Confidence in Long-Term Growth Strategy",
+      "date": "2026-11-20",
+      "url": "https://www.globenewswire.com/news-release/2026/11/20/3407455/0/en/sagtec-global-limited-announces-additional-share-acquisition-by-ceo-reinforcing-confidence-in-long-term-growth-strategy.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "CEO Ng Chen Lok increases his Class A shareholding to over 9 million shares following an additional US$267,800 investment  CEO Ng Chen Lok increases his Class A shareholding to over 9 million shares following an additional US$267,800 investment "
     },
     {
       "id": "lead:b896c35d68430a5a35",
@@ -1850,24 +1993,27 @@
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 9
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 3
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 3
+      "items": 7,
+      "relevant": 2
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1883,8 +2029,9 @@
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
@@ -1913,8 +2060,8 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 0,
-      "relevant": 0
+      "items": 1,
+      "relevant": 1
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
@@ -1972,9 +2119,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 73,
+    "disclosureLeads": 86,
     "usFilingNotices": 0,
-    "sourcesOnline": 9,
+    "sourcesOnline": 13,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },

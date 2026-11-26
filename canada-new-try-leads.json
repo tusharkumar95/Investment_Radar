@@ -1,8 +1,96 @@
 {
   "schema": 1,
-  "updated": "2026-11-26T04:38:01.955015+00:00",
+  "updated": "2026-11-26T22:08:54.517874+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
+    {
+      "id": "lead:b25a667e9529a61849",
+      "title": "Major Shareholder Announcement",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410667/0/en/major-shareholder-announcement.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Bang & Olufsen A/S has, pursuant to the Danish Capital Markets Act, received a major shareholder notification from UBS Group AG.   "
+    },
+    {
+      "id": "lead:b0c015e6ce8e5490fa",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410733/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:ac78767de5c0412657",
+      "title": "AKVA group ASA: Disclosure of large shareholdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410729/0/en/akva-group-asa-disclosure-of-large-shareholdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the recommended voluntary cash offer to acquire all issued and outstanding shares in AKVA group ASA (the \"Company\" or \"AKVA\") by Pontos Bidco AS (the \"Offeror\"), a Norwegian private limited liability company indirectly owned by Yanmar Holdings Co., Ltd. (\"Yanmar\"), at NOK 161 p"
+    },
+    {
+      "id": "lead:950276dd09ba63bea6",
+      "title": "ISS and Glass Lewis Endorse Umios’ C$27.00 Per Share Acquisition Offer for High Liner Foods - Kalkine Media",
+      "date": "2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUHM5M195d1NwVGd4T0VVZUd6cUowaTRSYTZoOG5ZMnV3Ti0xcjFnbmoxaDJtT0FrMC1VQ25COHFFdkNjeVU2bk1iZ3BPQjRDRVNfRXFHaG9qVVpKa01WWEJiZTlRdjVXbFFONXdWUDF1VmFLZlR0aWIyVHdRbGlfaXFPUS1mMDM4dmhuSUxaNDZxWUJEMkJtUmRfaVVmemVTcHoxY3daRGxMRWpBRjRVWG4zZE9WaldrWDE3TDZzS1VnNTBHWkxjMVVLMjB6djRt",
+      "discoveredVia": "Google News discovery — \"Brookfield\" \"share acquisition\" when:30d",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " ISS and Glass Lewis Endorse Umios’ C$27.00 Per Share Acquisition Offer for High Liner Foods    Kalkine Media "
+    },
+    {
+      "id": "lead:7d91a90739dcb734bf",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410731/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:7cad4e7858d1530f2c",
+      "title": "AKVA group ASA: Notification of major holdings",
+      "date": "2026-11-26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/26/3410732/0/en/akva-group-asa-notification-of-major-holdings.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " Reference is made to the announcement by Pontos Bidco AS on ­26 November 2026 regarding the satisfaction of the 'Regulatory Approvals' closing condition of the recommended voluntary offer (the \"Offer\") to acquire all issued and outstanding shares in AKVA group ASA (\"AKVA\" or the \"Company\"). "
+    },
+    {
+      "id": "lead:fbb03fc283f9ff1730",
+      "title": "Mowi (OSE:MOWI): Share purchase programme for employees in Mowi",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410499/0/en/mowi-ose-mowi-share-purchase-programme-for-employees-in-mowi.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " The Board of Directors of Mowi ASA has resolved to offer eligible employees in Norway, Scotland, Canada West, Poland, Germany and Italy the opportunity to purchase Mowi shares at a discounted price. "
+    },
+    {
+      "id": "lead:b330be5a70c58efeb8",
+      "title": "Davion Healthcare Plc Invites Shareholders to Report Difficulties in Completing Direct Registration Share (DRS) Transfers",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410132/0/en/davion-healthcare-plc-invites-shareholders-to-report-difficulties-in-completing-direct-registration-share-drs-transfers.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " DUBLIN, Nov.  25, 2026  (GLOBE NEWSWIRE) -- Davion Healthcare Plc (Nasdaq: DAVI) (“Davion” or the “Company”), further to its announcement of 17 November 2026 concerning the Direct Registration System (“DRS”), invites shareholders who have acquired ordinary shares in the Company and who have experie"
+    },
     {
       "id": "lead:4d140d55670b064f5c",
       "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
@@ -15,6 +103,17 @@
       "summary": " Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement    Investing News Network "
     },
     {
+      "id": "lead:1ca6ec82fe646efbad",
+      "title": "Prenetics’ IM8 Leadership Purchases $1.26 Million of Shares Following Third Quarter Results",
+      "date": "2026-11-25",
+      "url": "https://www.globenewswire.com/news-release/2026/11/25/3410187/0/en/prenetics-im8-leadership-purchases-1-26-million-of-shares-following-third-quarter-results.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "  Cumulative Personal Investment by Leadership Since Nov 2025 Reaches Approximately $5.0 Million  "
+    },
+    {
       "id": "lead:d1a7f7d3e6870be0d4",
       "title": "Nov 24, 2026, 21:25 ET \n                          ZYUS Life Sciences Announces Closing of Third Tranche of Non-Brokered Unit Offering Private Placement, Grant of Stock Options and Amendment to Certain Secured Debt\n                         \n                    ",
       "date": "2026-11-24",
@@ -24,6 +123,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": ""
+    },
+    {
+      "id": "lead:9cdb6982c59f0100c8",
+      "title": "Remix Therapeutics Completes Closing of Merger with Passage Bio and Previously Announced $100 Million Private Placement",
+      "date": "2026-11-24",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409891/0/en/remix-therapeutics-completes-closing-of-merger-with-passage-bio-and-previously-announced-100-million-private-placement.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "  Lead program REM-422, an orally available mRNA degrader targeting MYB, on track for multiple clinical readouts in 2027 ahead of potential NDA submission as early as the second half 2027    Updated REM-422 data presented at ENA 2026 showed 57% overall response rate and durable responses at recommen"
     },
     {
       "id": "lead:75b8d731b289109207",
@@ -57,6 +167,39 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " EARLY WARNING NEWS RELEASE OF OHAD EPSCHTEIN    PR Newswire Canada "
+    },
+    {
+      "id": "lead:1bdd1cfebc8e80d1b0",
+      "title": "FS Bancorp, Inc. Authorizes Share Repurchase Program",
+      "date": "2026-11-24",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409842/24095/en/fs-bancorp-inc-authorizes-share-repurchase-program.html",
+      "discoveredVia": "GlobeNewswire / Major Shareholders",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " MOUNTLAKE TERRACE, Wash., Nov.  24, 2026  (GLOBE NEWSWIRE) -- FS Bancorp, Inc. (NASDAQ: FSBW) (“Company”), the holding company for 1st Security Bank of Washington (“Bank”) announced that its Board of Directors has authorized a share repurchase program of up to $15.0 million in shares of the Company"
+    },
+    {
+      "id": "lead:a787af73fd4bad66da",
+      "title": "MANAGERS' AND CLOSELY RELATED PARTIES' TRANSACTIONS WITH DFDS SHARES",
+      "date": "2026-11-23",
+      "url": "https://www.globenewswire.com/news-release/2026/11/23/3408507/0/en/managers-and-closely-related-parties-transactions-with-dfds-shares.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Possible capital investment — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " On 20 November 2026, Michael Hansen, CEO of DFDS, purchased 6,500 DFDS shares. "
+    },
+    {
+      "id": "lead:c9d8d6a161c0255dbb",
+      "title": "Sagtec Global Limited Announces Additional Share Acquisition by CEO, Reinforcing Confidence in Long-Term Growth Strategy",
+      "date": "2026-11-20",
+      "url": "https://www.globenewswire.com/news-release/2026/11/20/3407455/0/en/sagtec-global-limited-announces-additional-share-acquisition-by-ceo-reinforcing-confidence-in-long-term-growth-strategy.html",
+      "discoveredVia": "GlobeNewswire / Insider Buy-Sell",
+      "type": "Potential / incomplete — verify status",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": "CEO Ng Chen Lok increases his Class A shareholding to over 9 million shares following an additional US$267,800 investment  CEO Ng Chen Lok increases his Class A shareholding to over 9 million shares following an additional US$267,800 investment "
     },
     {
       "id": "lead:b896c35d68430a5a35",
@@ -811,24 +954,27 @@
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 9
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 3
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "items": 20,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 5,
-      "relevant": 3
+      "items": 7,
+      "relevant": 2
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -844,8 +990,9 @@
     },
     {
       "name": "News search: \"institutional investor\" \"shares\" \"private placement\" \"",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "ok": true,
+      "items": 0,
+      "relevant": 0
     },
     {
       "name": "News search: \"early warning report\" \"completed\" site:newswire.ca whe",
@@ -874,8 +1021,8 @@
     {
       "name": "News search: \"Brookfield\" \"share acquisition\" when:30d",
       "ok": true,
-      "items": 0,
-      "relevant": 0
+      "items": 1,
+      "relevant": 1
     },
     {
       "name": "News search: \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
@@ -911,10 +1058,10 @@
   ],
   "status": {
     "sources": 18,
-    "available": 9,
-    "leadCount": 73,
+    "available": 13,
+    "leadCount": 86,
     "usFilingCount": 0,
-    "needsReview": 73
+    "needsReview": 86
   },
   "officialSources": [
     {
