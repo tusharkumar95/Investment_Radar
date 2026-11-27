@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-26T22:09:01.564462+00:00",
+  "updated": "2026-11-27T00:58:54.312638+00:00",
   "day": "2026-11-26",
   "name": "Canada New Try — named institutional & corporate purchases",
   "policy": "Verified buys: manually reviewed buyer-specific original disclosures and SEDI confirmations only. Separate headline leads and SEC filings are NOT buy signals. Joint actors count as one independent group. No volume screening; U.S. CAD-hedged CDRs excluded without evidence of purchases of the CDR itself.",
@@ -955,7 +955,7 @@
         "Blue Moon Metals Inc."
       ],
       "latestDisclosure": "2026-10-19",
-      "candidateArticles": 37,
+      "candidateArticles": 36,
       "status": "Verified transactions found"
     },
     {
@@ -1954,66 +1954,30 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Labrador Gold Extends Private Placement to Boost Exploration Funding    The Globe and Mail "
-    },
-    {
-      "id": "lead:c306f78a418accaf9d",
-      "title": "Oct 22, 2026, 06:00 ET \n                          H.I.G. Capital Acquires a Majority Stake in L4A to Support Continued Growth and Expansion\n                         \n                         H.I.G. Capital (\"H.I.G.\"), a leading global alternative investment fi",
-      "date": "2026-10-22",
-      "url": "https://www.newswire.ca/news-releases/h-i-g-capital-acquires-a-majority-stake-in-l4a-to-support-continued-growth-and-expansion-872591884.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:5e84a272a92776ed2c",
-      "title": "Oct 22, 2026, 17:10 ET \n                        Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation\n                       \n                       Urion Investments Holdings Sárl (the \"Acquiror\") acting on behalf o",
-      "date": "2026-10-22",
-      "url": "https://www.newswire.ca/news-releases/urion-investments-holdings-sarl-files-early-warning-report-in-respect-of-atico-mining-corporation-825226935.html",
-      "discoveredVia": "Canada NewsWire / Acquisitions",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": ""
-    },
-    {
-      "id": "lead:1b83555e8325e58703",
-      "title": "Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation - Investing News Network",
-      "date": "2026-10-22",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYzBxNEpNbzc3ZEhNMmJ3SlFER1RPYTAwa1lWUFhmUUNDNkcta0dmOVhpV3ZoclpaRDdXcTZOMEtQSDNLeFZpNVllbVVJZ0k0WkdUYXBOV1oxZG1BR3c2MWpKMEZ5RUZ2Y1lPWHd5dWxjXzJoMWRHX0VmN3B2STFqRFhRZHRmOGtiNTRqdGRfQU93YXpXZE01ZU9BRTMzY1pxYXAxY2JXQUx1MUxjRjh2TVVrNUxPT3pOTHJNNTZsY0t5dw",
-      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Urion Investments Holdings Sárl Files Early Warning Report in respect of Atico Mining Corporation    Investing News Network "
     }
   ],
   "usFilings": [],
   "sourceHealth": [
     {
       "name": "GlobeNewswire / Major Shareholders",
-      "ok": true,
-      "items": 20,
-      "relevant": 9
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Insider Buy-Sell",
-      "ok": true,
-      "items": 20,
-      "relevant": 3
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "GlobeNewswire / Public Companies",
-      "ok": true,
-      "items": 20,
-      "relevant": 0
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 7,
-      "relevant": 2
+      "items": 4,
+      "relevant": 1
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -2119,9 +2083,9 @@
     "multipleBuyerSignals": 0,
     "tracked": 11,
     "quoteErrors": [],
-    "disclosureLeads": 86,
+    "disclosureLeads": 83,
     "usFilingNotices": 0,
-    "sourcesOnline": 13,
+    "sourcesOnline": 10,
     "sourcesChecked": 18,
     "quotePurpose": "Price tracking for verified purchases only"
   },
