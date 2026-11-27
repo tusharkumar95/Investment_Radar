@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-27T03:42:21.732303+00:00",
+  "testedAt": "2026-11-27T11:07:57.837616+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -24,12 +24,6 @@
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWmsta0EzVktydUVjY1RzemJkWkNJYXhfcWFmam5EdWl6SFI2U2lZM3JGd1ptSF9JaS1IMXZyb0xXRVNsLTRpT1ZmV01qR0d2NTJaai1IWUhtejI0MTRxa0hGTmxpSmtnQV9mVk1RcFRMN3BmVFZnNzRINEUyODA2YzUybGdJZFh0UDVfQTNLc0xIMGgxd0dCczVWWGFfQUh2VGZTeW1mUUM5ZS1Ka3VrbVkxcHhvWTNobE90SmZ3ZkMyMHlkU3NRRURMV0hxVUI4TC16RnNvajNQdUlSY2Y4?oc=5",
           "published": "Thu, 26 Nov 2026 04:51:37 GMT",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
-          "published": "Wed, 25 Nov 2026 01:30:20 GMT",
-          "source": "Investing News Network"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
@@ -54,7 +48,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 8,
+      "count": 5,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -72,24 +66,6 @@
           "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
           "published": "Thu, 26 Nov 2026 18:56:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
-          "published": "Wed, 25 Nov 2026 01:30:20 GMT",
-          "source": "Investing News Network"
-        },
-        {
-          "title": "NordX Metals Announces Amended Terms of Private Placement - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQanlRb3VLRU5KcGdVSTJJRGFKNy1sU0VkbHE3OHpFMnc3VVdTQjZ1bWoteGhNWTdCS1VjRmZKOXFJRmhLQjJzN241VHRHdXZLZTNGZVhYX1BsS05mbWJqRnVJNlNyMWgtTndZOFduZlBmWHdxYzZPek54WnlEbzM0d2k4SXhZV0NxX3hWYU1KS3NSZ0F6NWluWS1Zbm1nT3BpQmdZS2ZKT1B1Q2dlWTdrcTRRbzY4cEhUUjlvUg?oc=5",
-          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
-          "source": "TradingView"
-        },
-        {
-          "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZV9mN0hZN1QtYk1fakw2ZU1aUnJKZ2FvREU4QUI4QkxNV3JwV1hRUVNoWERJY3JwNG40R2JvTjZhb3pNZERPb042SGZKVDRfXzVBRnR1Y1pxRFlMNHpZaUU3a002ZWZfUC1mWWd2OWZrcmQ3WUNlZERNcVY3QzBWcXItaGxpcl92U0RzckdBdUhCQ2x4cFg2MXNzZ2JWZFhkU2tjOW9CTEszNkNNOHh5UDJVT0pyOTZT?oc=5",
-          "published": "Mon, 23 Nov 2026 18:22:00 GMT",
           "source": "TradingView"
         },
         {

@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-27T03:42:21.758077+00:00",
-  "candidateCount": 20,
+  "updated": "2026-11-27T11:07:57.867341+00:00",
+  "candidateCount": 19,
   "needsReview": 19,
-  "possibleDuplicates": 1,
+  "possibleDuplicates": 0,
   "records": [
     {
       "headline": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
@@ -172,20 +172,6 @@
       "discoveryUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPX1Z0MjAxX1NNeUxjU3NYS2JWejdnVVBjdmFsZndwUVU5TkhFc0dBMkdwZzd5d21hX2dvemtzZFA4Ty1UcFNEQy1IUkl3MjZaLWFTamlOX1dmeE5kLU1kWkVpbXh5QzU3Q3dvd3kteHE2QVBaOXo3cHlnR3I0V3JidERFMWlMSTNmYTJqbldOak5XaDJQOEtBay1xYUJONzRITFE?oc=5",
       "reviewStatus": "needs_original_source_review",
       "possibleMatches": [],
-      "verified": false,
-      "note": "Headline matching is only a review hint, not transaction verification."
-    },
-    {
-      "headline": "HARTREE PARTNERS, LP PROVIDES EARLY WARNING DISCLOSURE WITH RESPECT TO SECURITIES OF LOTUS CREEK EXPLORATION INC. - Yahoo! Finance Canada",
-      "published": "Wed, 28 Oct 2026 11:00:00 GMT",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUTJTM0NDQ1NGREh0akxVTlFaazBCb1U1anJCRThkVG1SYmE2ZmdZTGZoLUxBS2o2Rk13TDlNVE5yeFBBa0h0R3RtMWtBRkNlSkhzUXZ6enlQUjVqb1Q1d1RETGxkR2gwX2NkRXZTcDk1aEx5WGw2OEc3SjlrdDZNbFlrejV0ZldEeW40?oc=5",
-      "reviewStatus": "possible_already_published",
-      "possibleMatches": [
-        {
-          "investor": "Hartree Partners, LP",
-          "company": "Lotus Creek Exploration Inc."
-        }
-      ],
       "verified": false,
       "note": "Headline matching is only a review hint, not transaction verification."
     }
