@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-27T04:40:13.752882+00:00",
+  "updated": "2026-11-27T21:49:26.023415+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -257,17 +257,6 @@
       "summary": " SNAPS Holding Company Files Early Warning Report in Respect of Novra Technologies Inc.    TradingView "
     },
     {
-      "id": "lead:dd31e62a97fbf3b146",
-      "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
-      "date": "2026-11-17",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc",
-      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
-      "type": "Ownership disclosure — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Investing News Network "
-    },
-    {
       "id": "lead:b4a54c8700a054ac79",
       "title": "Nov 17, 2026, 08:02 ET \n                          Agrion Announces $800,000 Non-Brokered Private Placement and Debt Settlement\n                         \n                         Agrion International Limited (\"Agrion\" or the \"Company\") (CSE: AGRI) (OTC: EWGFF) ",
       "date": "2026-11-17",
@@ -310,6 +299,17 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Yahoo! Finance Canada "
+    },
+    {
+      "id": "lead:dd31e62a97fbf3b146",
+      "title": "PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP. - Investing News Network",
+      "date": "2026-11-16",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX2xTUEZ6N1ZsNzJRN3dtS0lWY1hSYW90WkFiZjJEWHJibnlIVzdSdWFTNGRHNmdtQzNHbHZObU5aaXZFb0FJcEoxcjBiUncyaXZ0b1RGUldwOTlGV0pGN2lBVWs4Mk1VU294aUdIRDV5a0l2c25CbUdneHpYRE5WOEVLRDB2SHlWLTFBM25VZm5QX3lDeGc",
+      "discoveredVia": "Google News discovery — \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:14d",
+      "type": "Ownership disclosure — review source",
+      "reviewStatus": "Needs source verification",
+      "verifiedPurchase": false,
+      "summary": " PRESS RELEASE FOR EARLY WARNING REPORT REGARDING PPX MINING CORP.    Investing News Network "
     },
     {
       "id": "lead:c46145e6f5f8823b2e",
