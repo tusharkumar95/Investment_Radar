@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-27T12:01:49.826358+00:00",
+  "updated": "2026-11-27T21:06:04.113338+00:00",
   "market": "India",
   "thresholdCr": 100,
   "policy": "Only documented awards qualify as verified. Exchange RSS order metadata may carry a reported value but must be checked against the attachment. Media headlines and non-final bids/LOIs never trigger alerts. Refresh delay and feed availability apply.",
@@ -29,7 +29,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:d9341eeb1a8ee2dacbecd3",
@@ -55,7 +56,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:69696db56254e221d79fe7",
@@ -81,7 +83,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:0eadbdaf9b73923cea6072",
+      "company": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer",
+      "symbol": null,
+      "title": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer - Kalkine India",
+      "summary": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer Kalkine India",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-26T08:00:00+00:00",
+      "announcementDate": "2026-11-26",
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOZnkwUEJWTXA0MXdPMUNON3VNT1phU01RdVRFZUtNNVVteExidThnazhobjE1WjNSckhRd1dNckFxV0R4RzlwQUk5ZjB3TTB4YzgtMFlNMkFYTkhVUmFmRHY0a1FBZUlUYzN2aVhnemZGX2dvYjBfVjRVUE5qUlQ2QllRWnNlRXVXZ3NUQ1JkZjAwQzlPbVZkQXk4MDJjU2VLeVlVbUJFVXZ6UWN2eTREU082cGJzWW1xNDNFUERLcU1qVENPdGgyRU10NmRTcFBxTXNPVGM4NlBFOGN3NWtGWXJzVUZpUk1nWGJlMVJ0SXJBdjVKM1I4UDNlekNxSTNMZDZBMlJn",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-27T21:06:04.113338+00:00"
     },
     {
       "id": "order:89e1ea6a2d3493415b27cc",
@@ -243,7 +272,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-24T00:09:09.780689+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b09997ae0cdf611c07e303",
@@ -270,7 +299,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-24T00:09:09.780689+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ffab5fdce79d7d4ed95c82",
@@ -1241,7 +1270,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:fa06438e399f219ed588a6",
@@ -1753,7 +1783,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:edaf3de15f8d42b7a2c229",
@@ -1914,7 +1945,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e9f91277bad258b5745614",
@@ -2966,7 +2998,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d657d0916032bd305943f8",
@@ -3802,7 +3835,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:bdf85f412386fdb49f4360",
@@ -4476,7 +4510,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b03401f00c776c09fc42d2",
@@ -4799,7 +4834,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:aa70d06e2fdabb92a76420",
@@ -5906,33 +5942,6 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
-      "notSeenInLatestScan": true
-    },
-    {
-      "id": "order:95ae28665938504e73d817",
-      "company": "Newgen Software Technologies Limited",
-      "symbol": null,
-      "title": "Newgen Software Technologies Limited",
-      "summary": "Newgen Software Technologies Limited has informed the Exchange about the Company has received and accepted a Letter of Award received from a customer located at Ghana, West Africa, for implementation of the automation credit management solutions on the Newgen Platform and related support services |SUBJECT: Bagging/Receiving of orders/contracts",
-      "customer": null,
-      "contractType": "Not independently classified",
-      "announcedAt": null,
-      "announcementDate": null,
-      "valueCr": null,
-      "valueMinCr": null,
-      "valueMaxCr": null,
-      "currency": null,
-      "valueStatus": "Not disclosed in feed",
-      "source": "NSE corporate announcements RSS",
-      "sourceUrl": "https://nsearchives.nseindia.com/corporate/NEWGEN2_17112026125241_Stock_Exchange_Material_disclosure__17112026.pdf",
-      "sourceClass": "official-exchange",
-      "verified": false,
-      "status": "Exchange order announcement — attachment needs review",
-      "isFinal": true,
-      "significance": "Not independently assessed",
-      "alertEligible": false,
-      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-17T11:41:50.458247+00:00",
       "notSeenInLatestScan": true
     }
   ],
@@ -6424,7 +6433,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:fa06438e399f219ed588a6",
@@ -6936,7 +6946,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:edaf3de15f8d42b7a2c229",
@@ -7097,7 +7108,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:e9f91277bad258b5745614",
@@ -8149,7 +8161,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:d657d0916032bd305943f8",
@@ -8985,7 +8998,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:bdf85f412386fdb49f4360",
@@ -9659,7 +9673,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b03401f00c776c09fc42d2",
@@ -9982,7 +9997,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:aa70d06e2fdabb92a76420",
@@ -11090,33 +11106,6 @@
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-14T10:10:42.450198+00:00",
       "notSeenInLatestScan": true
-    },
-    {
-      "id": "order:95ae28665938504e73d817",
-      "company": "Newgen Software Technologies Limited",
-      "symbol": null,
-      "title": "Newgen Software Technologies Limited",
-      "summary": "Newgen Software Technologies Limited has informed the Exchange about the Company has received and accepted a Letter of Award received from a customer located at Ghana, West Africa, for implementation of the automation credit management solutions on the Newgen Platform and related support services |SUBJECT: Bagging/Receiving of orders/contracts",
-      "customer": null,
-      "contractType": "Not independently classified",
-      "announcedAt": null,
-      "announcementDate": null,
-      "valueCr": null,
-      "valueMinCr": null,
-      "valueMaxCr": null,
-      "currency": null,
-      "valueStatus": "Not disclosed in feed",
-      "source": "NSE corporate announcements RSS",
-      "sourceUrl": "https://nsearchives.nseindia.com/corporate/NEWGEN2_17112026125241_Stock_Exchange_Material_disclosure__17112026.pdf",
-      "sourceClass": "official-exchange",
-      "verified": false,
-      "status": "Exchange order announcement — attachment needs review",
-      "isFinal": true,
-      "significance": "Not independently assessed",
-      "alertEligible": false,
-      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-17T11:41:50.458247+00:00",
-      "notSeenInLatestScan": true
     }
   ],
   "researchLeads": [
@@ -11144,7 +11133,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:d9341eeb1a8ee2dacbecd3",
@@ -11170,7 +11160,8 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": false
     },
     {
       "id": "order:69696db56254e221d79fe7",
@@ -11196,7 +11187,34 @@
       "significance": "Not independently assessed",
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
-      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00"
+      "firstSeenAt": "2026-11-27T12:01:49.826358+00:00",
+      "notSeenInLatestScan": true
+    },
+    {
+      "id": "order:0eadbdaf9b73923cea6072",
+      "company": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer",
+      "symbol": null,
+      "title": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer - Kalkine India",
+      "summary": "Kiaasa Retail (BSE:544711) Secures USD 4,951,158.554 Export Order From International Buyer Kalkine India",
+      "customer": null,
+      "contractType": "Not independently classified",
+      "announcedAt": "2026-11-26T08:00:00+00:00",
+      "announcementDate": "2026-11-26",
+      "valueCr": null,
+      "valueMinCr": null,
+      "valueMaxCr": null,
+      "currency": null,
+      "valueStatus": "Not disclosed in feed",
+      "source": "Google News — contract awards",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOZnkwUEJWTXA0MXdPMUNON3VNT1phU01RdVRFZUtNNVVteExidThnazhobjE1WjNSckhRd1dNckFxV0R4RzlwQUk5ZjB3TTB4YzgtMFlNMkFYTkhVUmFmRHY0a1FBZUlUYzN2aVhnemZGX2dvYjBfVjRVUE5qUlQ2QllRWnNlRXVXZ3NUQ1JkZjAwQzlPbVZkQXk4MDJjU2VLeVlVbUJFVXZ6UWN2eTREU082cGJzWW1xNDNFUERLcU1qVENPdGgyRU10NmRTcFBxTXNPVGM4NlBFOGN3NWtGWXJzVUZpUk1nWGJlMVJ0SXJBdjVKM1I4UDNlekNxSTNMZDZBMlJn",
+      "sourceClass": "media-discovery",
+      "verified": false,
+      "status": "Media lead — verify with exchange filing",
+      "isFinal": true,
+      "significance": "Not independently assessed",
+      "alertEligible": false,
+      "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
+      "firstSeenAt": "2026-11-27T21:06:04.113338+00:00"
     },
     {
       "id": "order:89e1ea6a2d3493415b27cc",
@@ -11358,7 +11376,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-24T00:09:09.780689+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:b09997ae0cdf611c07e303",
@@ -11385,7 +11403,7 @@
       "alertEligible": false,
       "notes": "Source text must be checked against original PDF before treating value as confirmed; this record is NOT a manually verified award.",
       "firstSeenAt": "2026-11-24T00:09:09.780689+00:00",
-      "notSeenInLatestScan": false
+      "notSeenInLatestScan": true
     },
     {
       "id": "order:ffab5fdce79d7d4ed95c82",
@@ -12122,22 +12140,22 @@
       "name": "NSE corporate announcements RSS",
       "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 887,
-      "orderMentions": 10
+      "items": 4,
+      "orderMentions": 0
     },
     {
       "name": "NSE announcements alternate",
       "url": "https://archives.nseindia.com/content/RSS/Online_announcements.xml",
       "ok": true,
-      "items": 893,
-      "orderMentions": 10
+      "items": 22,
+      "orderMentions": 0
     },
     {
       "name": "BSE corporate announcements RSS",
       "url": "https://www.bseindia.com/data/xml/announcements.xml",
       "ok": true,
-      "items": 6736,
-      "orderMentions": 3
+      "items": 49,
+      "orderMentions": 0
     },
     {
       "name": "News search: order awards",
@@ -12150,22 +12168,22 @@
       "name": "News search: contract awards",
       "url": "https://news.google.com/rss/search?q=%28%22contract+awarded%22+OR+%22letter+of+award%22+OR+%22order+worth%22%29+BSE+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 37,
-      "orderMentions": 9
+      "items": 35,
+      "orderMentions": 7
     },
     {
       "name": "News search: company filings",
       "url": "https://news.google.com/rss/search?q=%22Bagging%2FReceiving+of+orders%2Fcontracts%22+when%3A4d&hl=en-IN&gl=IN&ceid=IN%3Aen",
       "ok": true,
-      "items": 0,
+      "items": 1,
       "orderMentions": 0
     }
   ],
   "status": {
     "orders": 220,
     "verified": 2,
-    "exchangeNotices": 181,
-    "researchLeads": 37,
+    "exchangeNotices": 180,
+    "researchLeads": 38,
     "significantAlerts": 9,
     "sourcesAvailable": 6,
     "sourcesChecked": 6,
