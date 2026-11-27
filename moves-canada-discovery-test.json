@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-11-27T21:29:41.253463+00:00",
+  "testedAt": "2026-11-27T22:52:26.463959+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
@@ -20,10 +20,10 @@
           "source": "TradingView"
         },
         {
-          "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQT0ZORTROWHotOVNqNU9HRU1XRHoyZ0Yxc080Y3JQZ3FJRnpYTzI0OG1TNXZYSElrYXlDTnZNem50c3o5YjkyZ0otSFlPS2pnTDlvYXhwcnJEWWxNQ1VIaE5rM1E0cG0xY1ZsaEpTa19nTkZ5aDU5bWdKMVl6N1lZVVg0U1AwYzd3MDBXemJIOU9xQW03cXVTbDBFSWtHSFd2N0NtbzZNelhVUWxVdzBIN0hWSm1SSFBZbDEtTFRFQnRvRkZkTlhiQkYxZnVxOTB3VVdBaXdrZkRxSngxc0UzSHpVcw?oc=5",
-          "published": "Fri, 27 Nov 2026 14:27:00 GMT",
-          "source": "TradingView"
+          "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEZYR3dRTkJsZmJQLWp0OU4yNE9NZDA5VjRMaGIwWl96SGEydm1NVjlTbEJzZHVSVFBBYm42U1g5LXdUVHpGTG9zbjQ1OFRNTGp1U203S0VfVzNjUnlBUUx0akRUbEFUbjlkQnR3MEJ0Q0NleXRvLTNkZ25wUVh4eVVmRlRQSTRMNl9BbzZhbkNoS3N0cm5Pc2U5cnlDU0hMVy0tc1A3U1RSZTV2Q3MzTHNKLU41UQ?oc=5",
+          "published": "Fri, 27 Nov 2026 17:38:51 GMT",
+          "source": "Investing News Network"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
@@ -42,19 +42,13 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
           "published": "Sat, 21 Nov 2026 01:38:59 GMT",
           "source": "Investing News Network"
-        },
-        {
-          "title": "AVENIR ANNOUNCES ADDITIONAL INVESTMENT IN GRID METALS CORP. - PR Newswire Canada",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYmNpRFhxSmpBNWpUUGdQazg3Z3J0SnBGVjhUZlBTZ2M2SV8yS25zd2VlRXNmcUxneW1CN2N1Yld0OXRwRjc2cUVIVFhzLTVYVUhlMGczNzA3bHZ3cFZiaVhSUmdhT2hhTWFCak5neDFLVDJJdjFzNHlma0lSRngxb014S1FZOGJWSUpKV0s4NjFRZzVHZ0FXdXJaMkdxUnA2c1hTUHU3WHdEQ0xQdHhPdjJn?oc=5",
-          "published": "Fri, 20 Nov 2026 22:00:00 GMT",
-          "source": "PR Newswire Canada"
         },
         {
           "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
