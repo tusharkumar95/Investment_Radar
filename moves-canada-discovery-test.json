@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-27T11:07:57.837616+00:00",
+  "testedAt": "2026-11-27T21:29:41.253463+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -20,22 +20,16 @@
           "source": "TradingView"
         },
         {
-          "title": "B.C. Mining Junior Soars 54% as Mining Investor Takes 10% Stake - The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWmsta0EzVktydUVjY1RzemJkWkNJYXhfcWFmam5EdWl6SFI2U2lZM3JGd1ptSF9JaS1IMXZyb0xXRVNsLTRpT1ZmV01qR0d2NTJaai1IWUhtejI0MTRxa0hGTmxpSmtnQV9mVk1RcFRMN3BmVFZnNzRINEUyODA2YzUybGdJZFh0UDVfQTNLc0xIMGgxd0dCczVWWGFfQUh2VGZTeW1mUUM5ZS1Ka3VrbVkxcHhvWTNobE90SmZ3ZkMyMHlkU3NRRURMV0hxVUI4TC16RnNvajNQdUlSY2Y4?oc=5",
-          "published": "Thu, 26 Nov 2026 04:51:37 GMT",
-          "source": "The Globe and Mail"
+          "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQT0ZORTROWHotOVNqNU9HRU1XRHoyZ0Yxc080Y3JQZ3FJRnpYTzI0OG1TNXZYSElrYXlDTnZNem50c3o5YjkyZ0otSFlPS2pnTDlvYXhwcnJEWWxNQ1VIaE5rM1E0cG0xY1ZsaEpTa19nTkZ5aDU5bWdKMVl6N1lZVVg0U1AwYzd3MDBXemJIOU9xQW03cXVTbDBFSWtHSFd2N0NtbzZNelhVUWxVdzBIN0hWSm1SSFBZbDEtTFRFQnRvRkZkTlhiQkYxZnVxOTB3VVdBaXdrZkRxSngxc0UzSHpVcw?oc=5",
+          "published": "Fri, 27 Nov 2026 14:27:00 GMT",
+          "source": "TradingView"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZndTVmNVaUdjRGxnelBYN09IaUUwMU04SlRPOXdOM0VkM2tyNEt0c1h5TERES3hPdEZuLXkwcXd2WVgxQVprdW5OSnEzU1QzX0V5WElCbjA5dXBrMy1HYkttVllmNmpwMFpka3ZJRWQxTzQtZXRPb3M5My12ejdKd3NCNlRBelZ4aFRsNkZwMzdCNTlWVnRrTjd4VnlyVzBPTFhDTHM5Z3ZRcFJLc2c3Nnpuc2h5WkZrNGFLSlNHQWxXNzVreDhTY25tRk5uSmUxWlpJTUIyUTVmRkZPbXU4eDFkc2o2dTR2dnl0S3MyTW0taWlNemZla0ZqNmgyZGU1RGNOMHlPUm9fRXpWbjNz?oc=5",
           "published": "Tue, 24 Nov 2026 21:45:00 GMT",
           "source": "TradingView"
-        },
-        {
-          "title": "Chicago Atlantic Amends Early Warning Report on Vireo Holdings - TipRanks",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0h1QTVrUWxiWFVGNFB3LTJUZGJqWVdfVmZlUFg1RV9yZF91NGZmUEdjR1Y4YU05MkhyV1p6VXBYRXdrX0wzbGZWeHdfOC1rMVF0UjJuNF9WLUYtNEZFS0dHSTZ4dG9sLTFMakFkMjN4MWt1QVZXeUQxMnZtR3pOSUlfZktuV3VaWFpGbHNBdkUzaXMtMFRsOHJ0cmNNOUxveHVwakV0SEF6TjBDYWVxalB2OGk?oc=5",
-          "published": "Mon, 23 Nov 2026 16:38:21 GMT",
-          "source": "TipRanks"
         }
       ]
     },
@@ -48,7 +42,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 5,
+      "count": 7,
       "items": [
         {
           "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
@@ -69,15 +63,27 @@
           "source": "TradingView"
         },
         {
-          "title": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
-          "published": "Mon, 23 Nov 2026 14:29:00 GMT",
+          "title": "Pacific Imperial Closes Fully-Subscribed Private Placement and Receives Final Approval from the TSX Venture Exchange in Connection with the Fenton Option Agreement - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
+          "published": "Wed, 25 Nov 2026 01:30:20 GMT",
+          "source": "Investing News Network"
+        },
+        {
+          "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZV9mN0hZN1QtYk1fakw2ZU1aUnJKZ2FvREU4QUI4QkxNV3JwV1hRUVNoWERJY3JwNG40R2JvTjZhb3pNZERPb042SGZKVDRfXzVBRnR1Y1pxRFlMNHpZaUU3a002ZWZfUC1mWWd2OWZrcmQ3WUNlZERNcVY3QzBWcXItaGxpcl92U0RzckdBdUhCQ2x4cFg2MXNzZ2JWZFhkU2tjOW9CTEszNkNNOHh5UDJVT0pyOTZT?oc=5",
+          "published": "Mon, 23 Nov 2026 18:22:00 GMT",
           "source": "TradingView"
         },
         {
           "title": "Northstar Gold Corp. Closes First Tranche of Flow-Through Financings - TradingView",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOT3VzaExURU5ObjNLRG5fSFQ5U0lsYlZrT1FvRWJHdVRVWWpvVWRzX1BqZ1JLQVhNZjNMbUhLcmRxaGE3dDZnVy15VkUyTkZ3S0h4dW9nQjlIWERuMHo4STNzQW1JU0pSQ3M5UW9nLXBSc2I3UGRydmlGaHotNTFsSnM1MkIyTjlydjBlUm9TOGZzUDdSRDNvbGY4a3JfeDBRWGhuazVaenBSU0xzX3htN2tIU3Nwd0JILUR0REJtcC1YTm1MXzlzUXNn?oc=5",
           "published": "Mon, 23 Nov 2026 12:30:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
+          "published": "Mon, 23 Nov 2026 14:29:00 GMT",
           "source": "TradingView"
         }
       ]

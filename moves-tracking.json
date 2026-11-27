@@ -2,6 +2,73 @@
   "schema": 1,
   "tracks": [
     {
+      "id": "2026-11-27:India:WATRANA",
+      "day": "2026-11-27",
+      "market": "India",
+      "symbol": "WATRANA",
+      "company": "Watrana Rentals Limited",
+      "buyers": 2,
+      "investors": [
+        "ASSATRA CAPITAL VENTURES PRIVATE LIMITED",
+        "SHRIPAL V VORA (HUF)"
+      ],
+      "value": 62922594.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 241.255,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-27T21:29:42.997153+00:00",
+      "firstBuyerCount": 2,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-27:India:ITALIANE",
+      "day": "2026-11-27",
+      "market": "India",
+      "symbol": "ITALIANE",
+      "company": "Italian Edibles Limited",
+      "buyers": 4,
+      "investors": [
+        "7SEA INVESTMENTS",
+        "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+        "PRAJAL BHANDARI",
+        "SACHIN GOVINDLAL MODI"
+      ],
+      "value": 7476000.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 21.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-27T21:29:42.997153+00:00",
+      "firstBuyerCount": 4,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
+      "id": "2026-11-27:India:IGIL",
+      "day": "2026-11-27",
+      "market": "India",
+      "symbol": "IGIL",
+      "company": "Intl Gemological Inst Ltd",
+      "buyers": 7,
+      "investors": [
+        "ASHOKA INDIA EQUITY INVESTMENT TRUST PLC",
+        "CITIGROUP GLOBAL MARKETS SINGAPORE PTE LIMITED",
+        "MORGAN STANLEY ASIA SINGAPORE PTE",
+        "OLD BRIDGE MUTUAL FUND",
+        "STALLION ASSET PRIVATE LIMITED",
+        "SUSQUEHANNA PACIFIC PTY LTD",
+        "WHITEOAK CAPITAL MUTUAL FUND"
+      ],
+      "value": 2800584927.0,
+      "currency": "INR",
+      "disclosedAvgPrice": 417.0,
+      "source": "Verified exchange/public disclosures",
+      "status": "Multiple buyers disclosed; not an investment recommendation",
+      "firstDetectedAt": "2026-11-27T21:29:42.997153+00:00",
+      "firstBuyerCount": 7,
+      "trackingSource": "Daily market closing prices (unadjusted)"
+    },
+    {
       "id": "2026-11-26:India:SCHAEFFLER",
       "day": "2026-11-26",
       "market": "India",
@@ -1682,9 +1749,12 @@
     "India:SCHAEFFLER": {
       "2026-11-26": 3701.7,
       "2026-11-27": 3658.8999
+    },
+    "India:IGIL": {
+      "2026-11-27": 429.65
     }
   },
-  "updatedAt": "2026-11-27T11:07:59.240266+00:00",
+  "updatedAt": "2026-11-27T21:29:42.997153+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -1719,20 +1789,23 @@
     "India:LENSKART": "LENSKART.NS",
     "India:MEDANTA": "MEDANTA.NS",
     "India:AMAGI": "AMAGI.NS",
-    "India:SCHAEFFLER": "SCHAEFFLER.NS"
+    "India:SCHAEFFLER": "SCHAEFFLER.NS",
+    "India:IGIL": "IGIL.NS"
   },
-  "quotesUpdatedAt": "2026-11-27T11:08:15.455052+00:00",
+  "quotesUpdatedAt": "2026-11-27T21:29:49.642279+00:00",
   "quoteFailures": [
     "India:ENCOMPAS",
     "India:EVENTIONS",
     "India:GREENASIA",
     "India:HGSINDIALT",
     "India:IEML-RE1",
+    "India:ITALIANE",
     "India:LAMOSAIC",
     "India:MAXENGS",
     "India:RKFAL",
     "India:VALUE360",
-    "India:VPFL"
+    "India:VPFL",
+    "India:WATRANA"
   ],
   "quoteSource": "Yahoo Finance via yfinance; unadjusted daily closes, possibly delayed"
 }
