@@ -1,16 +1,16 @@
 {
-  "testedAt": "2026-11-27T22:52:26.463959+00:00",
+  "testedAt": "2026-11-28T03:24:56.020516+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 4,
+      "count": 3,
       "items": [
         {
-          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
-          "published": "Sat, 21 Nov 2026 01:38:59 GMT",
+          "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEZYR3dRTkJsZmJQLWp0OU4yNE9NZDA5VjRMaGIwWl96SGEydm1NVjlTbEJzZHVSVFBBYm42U1g5LXdUVHpGTG9zbjQ1OFRNTGp1U203S0VfVzNjUnlBUUx0akRUbEFUbjlkQnR3MEJ0Q0NleXRvLTNkZ25wUVh4eVVmRlRQSTRMNl9BbzZhbkNoS3N0cm5Pc2U5cnlDU0hMVy0tc1A3U1RSZTV2Q3MzTHNKLU41UQ?oc=5",
+          "published": "Fri, 27 Nov 2026 17:38:51 GMT",
           "source": "Investing News Network"
         },
         {
@@ -18,12 +18,6 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
           "published": "Thu, 26 Nov 2026 18:56:00 GMT",
           "source": "TradingView"
-        },
-        {
-          "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEZYR3dRTkJsZmJQLWp0OU4yNE9NZDA5VjRMaGIwWl96SGEydm1NVjlTbEJzZHVSVFBBYm42U1g5LXdUVHpGTG9zbjQ1OFRNTGp1U203S0VfVzNjUnlBUUx0akRUbEFUbjlkQnR3MEJ0Q0NleXRvLTNkZ25wUVh4eVVmRlRQSTRMNl9BbzZhbkNoS3N0cm5Pc2U5cnlDU0hMVy0tc1A3U1RSZTV2Q3MzTHNKLU41UQ?oc=5",
-          "published": "Fri, 27 Nov 2026 17:38:51 GMT",
-          "source": "Investing News Network"
         },
         {
           "title": "Quantum eMotion Closes Plurilock Acquisition, Adding Commercial Scale and a Customer Base Across Canada, the U.S. and NATO - TradingView",
@@ -42,14 +36,8 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "items": [
-        {
-          "title": "Michael Gentile Announces Filing of Early Warning Report Related to Acquisition of Common Shares of Cascadia Minerals Ltd. - Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOGdHSmJ2MktWVFJHQ29wSmJOV1o2LVVON2hycklCRjBTRzhNS2dCSDZoRkR1Sm5pVjBmNGpXcDlNLTgwR2hXVUdOWmFaclVkNl9LMDh6SFFKWmdYQjF1ejZ2RlkwWlFBel95Y3o5T05TSFJseUVtV25jak1vOWVfRGhlZ1FUZHd5TEdXcGwyRF9SeWxxU3BOQTU3TTZDTVpFSzFkNU5tZUtMM0gtSDhlbWJhaWJvaklfVFBZdDdSaWwtM21XOHFtSFNERXZCTHlfOFU3YzVzNWdlVU1VRk9EZVl3?oc=5",
-          "published": "Sat, 21 Nov 2026 01:38:59 GMT",
-          "source": "Investing News Network"
-        },
         {
           "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQlAyaWRLZDJlNDV5eHJZeGk0QmVMRk0yY0pXcVJMYXhyOHJCcWloUWMweDJra2NHRG02aXRyTExKbXdMa2hkN20wOUVubkptT1BXblJ1WmRET0dBYXQxMUh1MzhUZksyMGVEZFhvSU5ac1gxYkl4Z3Y3U3JKQ0FsNWxDM0FNLVh4bW1JamE5MzVYUjBnRzZON292WFlMRUxkbVNYTGtCZUxPXzA3SVpWMGd3?oc=5",
@@ -61,6 +49,18 @@
           "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPME9McFdXcFdDV0ZaTTF1djE1aXFJUFdTTDVvMDRCSmdKRXdBUTM3OUVsYk1BX2steVFhdFlrc1dOUGp2bjk4OGpXMU0tWHdZTE5YalAzQjctOThHRV9oS3pBU0hwMHkwRlV0dUVlWjItV1FWbHhkMERRaTJUc0FsNlZJRE5YN1lqSG9WVjJNbXVncFg4dzN3OXlUMElhLU1fNEtkRm9jWE1pNHdpcTRYRXE0VGRhR09NMjZnT21VSkhQRWxVWTV5a3U4czRpU1Q2S2llZmNJZ3k0dFJmOEpuUFZPSDNISldfNlhUNEd5NngyWVpNWjczRHRiQzBEUkVUNWhDR01WNlpka3lrY055RGkwR05oX1pDQUE?oc=5",
           "published": "Wed, 25 Nov 2026 01:30:20 GMT",
           "source": "Investing News Network"
+        },
+        {
+          "title": "NUE Power Corp. Upgrades to the OTCQB Venture Market - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQXJEQW9HWExpblZVUmV1WW5QM3B6ZzNQZnktMDZ2TnY1MjNQa1dFQVNWM3RvaUtCN0hoSzZiOFR3TlpzbTRkMVJFYmFiTHV4dXd3bnlpNUtjZ2RIaWZnWk52UlI3QVhnSExMRDhuUWZTamNrN1diYk9uSk1EQjJiX05sNVdzMEFfZlFNcUJuQ0lpUFdYNzdDU0pHTDI1WVFMRHNFNnl6WmZnSUZVUzBmNVVNenE?oc=5",
+          "published": "Wed, 25 Nov 2026 12:30:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "3.9 million Vireo shares went to Chicago Atlantic in exchange for FLUENT shares; no cash was paid. - Stock Titan",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYjZfcHktMy1yREN2aklSYXgtWEF2SEpsWDBQSUdTUG9RZlN4ai02a2FwTE1tbmlzcmUwQVQtZDMzUHRHMFhIV2tPdHNyUlowQUJqcTZIX0NnT0ZQOU1XR042MENoeGtsS3NlNUZpRDNnVWxBRnJpRC10Q0txWTRrQi1iODdJV3NqdVlLNmQxMGpDb1lNWHZWVGNDaWY2QVlXaTAwckZWbWthUG55Z2pLNy1seDlCRUJaekVuXy13?oc=5",
+          "published": "Mon, 23 Nov 2026 15:22:00 GMT",
+          "source": "Stock Titan"
         },
         {
           "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",
