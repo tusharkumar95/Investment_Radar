@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-11-27T21:06:04.038755+00:00",
+  "updated": "2026-11-28T11:37:29.821242+00:00",
   "source": "NSE official bulk and block trade disclosure records already archived in Investment Radar",
   "sourceLink": "https://www.nseindia.com/report-detail/display-bulk-and-block-deals",
   "scope": "NSE reported bulk/block participant names only; not all trades, not quarterly holdings",
   "coverage": {
     "earliest": "2026-10-06",
-    "latest": "2026-11-26",
-    "trades": 1124,
-    "investors": 647
+    "latest": "2026-11-27",
+    "trades": 1164,
+    "investors": 659
   },
   "featured": [
     {
@@ -1205,16 +1205,32 @@
       "id": "investor:3bd3ea7127987d39",
       "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
       "type": "Named investor / company",
-      "observedTransactions": 4,
-      "observedBuyDays": 4,
+      "observedTransactions": 5,
+      "observedBuyDays": 5,
       "observedSellDays": 0,
-      "buyValueCr": 576.8,
+      "buyValueCr": 601.8,
       "sellValueCr": 0.0,
-      "netDisclosedValueCr": 576.8,
-      "latestDisclosure": "2026-11-26",
-      "uniqueCompanies": 4,
+      "netDisclosedValueCr": 601.8,
+      "latestDisclosure": "2026-11-27",
+      "uniqueCompanies": 5,
       "repeatBuyCompanies": [],
       "tradeRecords": [
+        {
+          "date": "2026-11-27",
+          "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyQty": 599521,
+          "sellQty": 0,
+          "buyValueINR": 250000257.0,
+          "sellValueINR": 0,
+          "netShares": 599521,
+          "netValueINR": 250000257.0,
+          "avgBuyPrice": 417.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "7dbb5203f5af86f95d"
+        },
         {
           "date": "2026-11-26",
           "name": "MORGAN STANLEY ASIA SINGAPORE PTE",
@@ -1314,6 +1330,15 @@
           "buyValueCr": 27.94,
           "sellValueCr": 0.0,
           "netShares": 80000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyValueCr": 25.0,
+          "sellValueCr": 0.0,
+          "netShares": 599521,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -3608,6 +3633,106 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:d78b11caf1a9780d",
+      "name": "WHITEOAK CAPITAL MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 3,
+      "observedBuyDays": 3,
+      "observedSellDays": 0,
+      "buyValueCr": 223.45,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 223.45,
+      "latestDisclosure": "2026-11-27",
+      "uniqueCompanies": 3,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-27",
+          "name": "WHITEOAK CAPITAL MUTUAL FUND",
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyQty": 599521,
+          "sellQty": 0,
+          "buyValueINR": 250000257.0,
+          "sellValueINR": 0,
+          "netShares": 599521,
+          "netValueINR": 250000257.0,
+          "avgBuyPrice": 417.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "bca87c3bdd5e26dc0c"
+        },
+        {
+          "date": "2026-11-26",
+          "name": "WHITEOAK CAPITAL MUTUAL FUND",
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyQty": 425000,
+          "sellQty": 0,
+          "buyValueINR": 1484525000.0,
+          "sellValueINR": 0,
+          "netShares": 425000,
+          "netValueINR": 1484525000.0,
+          "avgBuyPrice": 3493.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "39f105936c6b4bdcb7"
+        },
+        {
+          "date": "2026-11-25",
+          "name": "WHITEOAK CAPITAL MUTUAL FUND",
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyQty": 342473,
+          "sellQty": 0,
+          "buyValueINR": 500010580.0,
+          "sellValueINR": 0,
+          "netShares": 342473,
+          "netValueINR": 500010580.0,
+          "avgBuyPrice": 1460.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "2d56e8156258184e91"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "SCHAEFFLER",
+          "company": "Schaeffler India Ltd",
+          "buyValueCr": 148.45,
+          "sellValueCr": 0.0,
+          "netShares": 425000,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "MEDANTA",
+          "company": "Global Health Limited",
+          "buyValueCr": 50.0,
+          "sellValueCr": 0.0,
+          "netShares": 342473,
+          "buyDays": 1,
+          "sellDays": 0
+        },
+        {
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyValueCr": 25.0,
+          "sellValueCr": 0.0,
+          "netShares": 599521,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": true,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:6810bed09e91715f",
       "name": "BOFA SECURITIES EUROPE SA",
       "type": "Financial institution (may intermediate trades)",
@@ -3733,6 +3858,72 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:a0652705de05baa8",
+      "name": "OLD BRIDGE MUTUAL FUND",
+      "type": "Institution / fund / investment entity (name-based)",
+      "observedTransactions": 2,
+      "observedBuyDays": 1,
+      "observedSellDays": 0,
+      "buyValueCr": 200.16,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 200.16,
+      "latestDisclosure": "2026-11-27",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [],
+      "tradeRecords": [
+        {
+          "date": "2026-11-27",
+          "name": "OLD BRIDGE MUTUAL FUND",
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyQty": 2400000,
+          "sellQty": 0,
+          "buyValueINR": 1000800000.0,
+          "sellValueINR": 0,
+          "netShares": 2400000,
+          "netValueINR": 1000800000.0,
+          "avgBuyPrice": 417.0,
+          "source": "NSE Bulk Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/bulk.csv",
+          "dealId": "d984febc98e80d70f4"
+        },
+        {
+          "date": "2026-11-27",
+          "name": "OLD BRIDGE MUTUAL FUND",
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyQty": 2400000,
+          "sellQty": 0,
+          "buyValueINR": 1000800000.0,
+          "sellValueINR": 0,
+          "netShares": 2400000,
+          "netValueINR": 1000800000.0,
+          "avgBuyPrice": 417.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "49df03fb936b9c921d"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "IGIL",
+          "company": "Intl Gemological Inst Ltd",
+          "buyValueCr": 200.16,
+          "sellValueCr": 0.0,
+          "netShares": 4800000,
+          "buyDays": 1,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": false,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:c444ec0dc8bfd9dd",
       "name": "PARAM CAPITAL",
       "type": "Institution / fund / investment entity (name-based)",
@@ -3786,81 +3977,6 @@
           "buyValueCr": 199.95,
           "sellValueCr": 0.0,
           "netShares": 1459458,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:d78b11caf1a9780d",
-      "name": "WHITEOAK CAPITAL MUTUAL FUND",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 2,
-      "observedBuyDays": 2,
-      "observedSellDays": 0,
-      "buyValueCr": 198.45,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 198.45,
-      "latestDisclosure": "2026-11-26",
-      "uniqueCompanies": 2,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-26",
-          "name": "WHITEOAK CAPITAL MUTUAL FUND",
-          "symbol": "SCHAEFFLER",
-          "company": "Schaeffler India Ltd",
-          "buyQty": 425000,
-          "sellQty": 0,
-          "buyValueINR": 1484525000.0,
-          "sellValueINR": 0,
-          "netShares": 425000,
-          "netValueINR": 1484525000.0,
-          "avgBuyPrice": 3493.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "39f105936c6b4bdcb7"
-        },
-        {
-          "date": "2026-11-25",
-          "name": "WHITEOAK CAPITAL MUTUAL FUND",
-          "symbol": "MEDANTA",
-          "company": "Global Health Limited",
-          "buyQty": 342473,
-          "sellQty": 0,
-          "buyValueINR": 500010580.0,
-          "sellValueINR": 0,
-          "netShares": 342473,
-          "netValueINR": 500010580.0,
-          "avgBuyPrice": 1460.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "2d56e8156258184e91"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "SCHAEFFLER",
-          "company": "Schaeffler India Ltd",
-          "buyValueCr": 148.45,
-          "sellValueCr": 0.0,
-          "netShares": 425000,
-          "buyDays": 1,
-          "sellDays": 0
-        },
-        {
-          "symbol": "MEDANTA",
-          "company": "Global Health Limited",
-          "buyValueCr": 50.0,
-          "sellValueCr": 0.0,
-          "netShares": 342473,
           "buyDays": 1,
           "sellDays": 0
         }
@@ -5108,6 +5224,106 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
+      "id": "investor:c4303474562931c9",
+      "name": "RAJESH BHASKARAN NAIR",
+      "type": "Named investor / company",
+      "observedTransactions": 4,
+      "observedBuyDays": 4,
+      "observedSellDays": 0,
+      "buyValueCr": 100.04,
+      "sellValueCr": 0.0,
+      "netDisclosedValueCr": 100.04,
+      "latestDisclosure": "2026-11-27",
+      "uniqueCompanies": 1,
+      "repeatBuyCompanies": [
+        "INDGN"
+      ],
+      "tradeRecords": [
+        {
+          "date": "2026-11-27",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 373150,
+          "sellQty": 0,
+          "buyValueINR": 250010500.0,
+          "sellValueINR": 0,
+          "netShares": 373150,
+          "netValueINR": 250010500.0,
+          "avgBuyPrice": 670.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "111f17fb13f919706c"
+        },
+        {
+          "date": "2026-11-25",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 381700,
+          "sellQty": 0,
+          "buyValueINR": 250013500.0,
+          "sellValueINR": 0,
+          "netShares": 381700,
+          "netValueINR": 250013500.0,
+          "avgBuyPrice": 655.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "0177328ad9adb692eb"
+        },
+        {
+          "date": "2026-11-20",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 380750,
+          "sellQty": 0,
+          "buyValueINR": 250152750.0,
+          "sellValueINR": 0,
+          "netShares": 380750,
+          "netValueINR": 250152750.0,
+          "avgBuyPrice": 657.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "ec9e85576dbfb7577c"
+        },
+        {
+          "date": "2026-11-17",
+          "name": "RAJESH BHASKARAN NAIR",
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyQty": 382000,
+          "sellQty": 0,
+          "buyValueINR": 250210000.0,
+          "sellValueINR": 0,
+          "netShares": 382000,
+          "netValueINR": 250210000.0,
+          "avgBuyPrice": 655.0,
+          "source": "NSE Block Deals",
+          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
+          "dealId": "5cd7dd44eaaad2d52a"
+        }
+      ],
+      "companies": [
+        {
+          "symbol": "INDGN",
+          "company": "Indegene Limited",
+          "buyValueCr": 100.04,
+          "sellValueCr": 0.0,
+          "netShares": 1517600,
+          "buyDays": 4,
+          "sellDays": 0
+        }
+      ],
+      "observations": {
+        "repeatPurchases": true,
+        "buyAndSellObserved": false,
+        "multipleCompanies": false,
+        "noObservedBuys": false
+      },
+      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
+    },
+    {
       "id": "investor:93001d798c2327c5",
       "name": "SBI LIFE INSURANCE COMPANY LIMITED",
       "type": "Institution / fund / investment entity (name-based)",
@@ -5726,90 +5942,6 @@
       "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
     },
     {
-      "id": "investor:c4303474562931c9",
-      "name": "RAJESH BHASKARAN NAIR",
-      "type": "Named investor / company",
-      "observedTransactions": 3,
-      "observedBuyDays": 3,
-      "observedSellDays": 0,
-      "buyValueCr": 75.04,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 75.04,
-      "latestDisclosure": "2026-11-25",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [
-        "INDGN"
-      ],
-      "tradeRecords": [
-        {
-          "date": "2026-11-25",
-          "name": "RAJESH BHASKARAN NAIR",
-          "symbol": "INDGN",
-          "company": "Indegene Limited",
-          "buyQty": 381700,
-          "sellQty": 0,
-          "buyValueINR": 250013500.0,
-          "sellValueINR": 0,
-          "netShares": 381700,
-          "netValueINR": 250013500.0,
-          "avgBuyPrice": 655.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "0177328ad9adb692eb"
-        },
-        {
-          "date": "2026-11-20",
-          "name": "RAJESH BHASKARAN NAIR",
-          "symbol": "INDGN",
-          "company": "Indegene Limited",
-          "buyQty": 380750,
-          "sellQty": 0,
-          "buyValueINR": 250152750.0,
-          "sellValueINR": 0,
-          "netShares": 380750,
-          "netValueINR": 250152750.0,
-          "avgBuyPrice": 657.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "ec9e85576dbfb7577c"
-        },
-        {
-          "date": "2026-11-17",
-          "name": "RAJESH BHASKARAN NAIR",
-          "symbol": "INDGN",
-          "company": "Indegene Limited",
-          "buyQty": 382000,
-          "sellQty": 0,
-          "buyValueINR": 250210000.0,
-          "sellValueINR": 0,
-          "netShares": 382000,
-          "netValueINR": 250210000.0,
-          "avgBuyPrice": 655.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "5cd7dd44eaaad2d52a"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "INDGN",
-          "company": "Indegene Limited",
-          "buyValueCr": 75.04,
-          "sellValueCr": 0.0,
-          "netShares": 1144450,
-          "buyDays": 3,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": true,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
       "id": "investor:6692c509cb979f45",
       "name": "SETU SECURITIES PVT LTD",
       "type": "Financial institution (may intermediate trades)",
@@ -6131,56 +6263,6 @@
           "buyValueCr": 70.5,
           "sellValueCr": 0.0,
           "netShares": 5000000,
-          "buyDays": 1,
-          "sellDays": 0
-        }
-      ],
-      "observations": {
-        "repeatPurchases": false,
-        "buyAndSellObserved": false,
-        "multipleCompanies": false,
-        "noObservedBuys": false
-      },
-      "interpretation": "Observed NSE bulk/block disclosures only. This is NOT a full holdings statement or a verified long-term investment strategy."
-    },
-    {
-      "id": "investor:5e22109a02e58bd5",
-      "name": "RWC EMERGING MARKETS EQUITY MASTER FUND LIMITED",
-      "type": "Institution / fund / investment entity (name-based)",
-      "observedTransactions": 1,
-      "observedBuyDays": 1,
-      "observedSellDays": 0,
-      "buyValueCr": 66.89,
-      "sellValueCr": 0.0,
-      "netDisclosedValueCr": 66.89,
-      "latestDisclosure": "2026-11-17",
-      "uniqueCompanies": 1,
-      "repeatBuyCompanies": [],
-      "tradeRecords": [
-        {
-          "date": "2026-11-17",
-          "name": "RWC EMERGING MARKETS EQUITY MASTER FUND LIMITED",
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyQty": 3054364,
-          "sellQty": 0,
-          "buyValueINR": 668905716.0,
-          "sellValueINR": 0,
-          "netShares": 3054364,
-          "netValueINR": 668905716.0,
-          "avgBuyPrice": 219.0,
-          "source": "NSE Block Deals",
-          "sourceUrl": "https://nsearchives.nseindia.com/content/equities/block.csv",
-          "dealId": "07268d4aa123667b59"
-        }
-      ],
-      "companies": [
-        {
-          "symbol": "GROWW",
-          "company": "Billionbrains Garage Vn L",
-          "buyValueCr": 66.89,
-          "sellValueCr": 0.0,
-          "netShares": 3054364,
           "buyDays": 1,
           "sellDays": 0
         }
