@@ -1469,7 +1469,8 @@
       "2026-11-20": 21.9,
       "2026-11-23": 20.85,
       "2026-11-25": 19.95,
-      "2026-11-26": 19.95
+      "2026-11-26": 19.95,
+      "2026-11-27": 20.9
     },
     "India:BLSPOLY": {
       "2026-11-03": 268.8,
@@ -1752,9 +1753,12 @@
     },
     "India:IGIL": {
       "2026-11-27": 429.65
+    },
+    "India:ITALIANE": {
+      "2026-11-27": 21.0
     }
   },
-  "updatedAt": "2026-11-28T03:24:57.532232+00:00",
+  "updatedAt": "2026-11-28T10:42:13.857742+00:00",
   "quoteSymbols": {
     "India:BONFIG": "BONFIG.NS",
     "India:INDOTECH": "INDOTECH.NS",
@@ -1790,16 +1794,16 @@
     "India:MEDANTA": "MEDANTA.NS",
     "India:AMAGI": "AMAGI.NS",
     "India:SCHAEFFLER": "SCHAEFFLER.NS",
-    "India:IGIL": "IGIL.NS"
+    "India:IGIL": "IGIL.NS",
+    "India:ITALIANE": "ITALIANE.NS"
   },
-  "quotesUpdatedAt": "2026-11-28T03:25:08.213522+00:00",
+  "quotesUpdatedAt": "2026-11-28T10:42:31.089331+00:00",
   "quoteFailures": [
     "India:ENCOMPAS",
     "India:EVENTIONS",
     "India:GREENASIA",
     "India:HGSINDIALT",
     "India:IEML-RE1",
-    "India:ITALIANE",
     "India:LAMOSAIC",
     "India:MAXENGS",
     "India:RKFAL",

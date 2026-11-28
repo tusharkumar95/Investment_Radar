@@ -1,11 +1,11 @@
 {
-  "testedAt": "2026-11-28T03:24:56.020516+00:00",
+  "testedAt": "2026-11-28T10:42:12.487595+00:00",
   "note": "Discovery candidates only; not verified investor purchases",
   "queries": [
     {
       "query": "\"early warning report\" \"acquired\" \"shares\" Canada when:7d",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "title": "Jamieson Wellness Inc. Announces Closing of Acquisition by Kirin Holdings Company, Limited - Investing News Network",
@@ -24,6 +24,12 @@
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZndTVmNVaUdjRGxnelBYN09IaUUwMU04SlRPOXdOM0VkM2tyNEt0c1h5TERES3hPdEZuLXkwcXd2WVgxQVprdW5OSnEzU1QzX0V5WElCbjA5dXBrMy1HYkttVllmNmpwMFpka3ZJRWQxTzQtZXRPb3M5My12ejdKd3NCNlRBelZ4aFRsNkZwMzdCNTlWVnRrTjd4VnlyVzBPTFhDTHM5Z3ZRcFJLc2c3Nnpuc2h5WkZrNGFLSlNHQWxXNzVreDhTY25tRk5uSmUxWlpJTUIyUTVmRkZPbXU4eDFkc2o2dTR2dnl0S3MyTW0taWlNemZla0ZqNmgyZGU1RGNOMHlPUm9fRXpWbjNz?oc=5",
           "published": "Tue, 24 Nov 2026 21:45:00 GMT",
           "source": "TradingView"
+        },
+        {
+          "title": "With 99.58% of votes cast in favor, Quantum eMotion (QNC) closes its cash-and-stock deal for Plurilock. - Stock Titan",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNUxSRDMtQXc2U1U4RDRQYXUtVmFHUlhvOFAxVW1wakhVNnRKZE13N2k1QnZQTFBXSFlPaUR5algwX29pQUlLcTFkQXZIcWxyVmpDNG9yTWhMLWlJc2VVbVU5MEo1MGR1TFdYb3lWajNOY0VtVUV0NHhxRmtjZ2NHZEJfRG1MeUJ2ZmsyU3p5bkJyOHJNbXZyaGg2N00wTGprR2ViRlpDMl8wLUZtVGdsMkdVdGtMb2s?oc=5",
+          "published": "Fri, 27 Nov 2026 11:03:53 GMT",
+          "source": "Stock Titan"
         }
       ]
     },
@@ -36,7 +42,7 @@
     {
       "query": "\"early warning report\" \"purchase\" \"shares\" CSE when:7d",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "items": [
         {
           "title": "Pioneer AI Foundry Announces Early Warning Report - TradingView",
@@ -63,21 +69,27 @@
           "source": "Stock Titan"
         },
         {
+          "title": "Quantum Vault Holding Corp. Announces Closing of Reverse Takeover and Confirms Listing Date on the CSE - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNa1NKcnRaQ3NaT0pvZWRaNlNaRlNDQUpzMWlibDZIYkkzbXdMeHRNbWtOdDk1UWNQbjJhbU9tYWxVaVFrVnBxLXNQN2lFckhyUVFMeml3ZUgza25wdW42bTgxYWtmRDl2elF0cTVURXUtbTRWbk1RU0hQY3hQMENDR2otcE5JQkFoR0g1bVNodHVFSWctUFQ4QXJJOUlDQTB1ZmltSkQ4bUNzcmhVQ213b1lIVlVGYVFCd2p3bUxyWGlSRXBCRFRfbmRsUnlzRTdyV2t4dFZxZ1QtbjdSaktYNV9TWTBoc3VWTURPSFlOYWJIZFlqVmJj?oc=5",
+          "published": "Thu, 26 Nov 2026 02:40:00 GMT",
+          "source": "TradingView"
+        },
+        {
           "title": "Brompton Funds Declares Split Share Fund Distributions - TradingView",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZV9mN0hZN1QtYk1fakw2ZU1aUnJKZ2FvREU4QUI4QkxNV3JwV1hRUVNoWERJY3JwNG40R2JvTjZhb3pNZERPb042SGZKVDRfXzVBRnR1Y1pxRFlMNHpZaUU3a002ZWZfUC1mWWd2OWZrcmQ3WUNlZERNcVY3QzBWcXItaGxpcl92U0RzckdBdUhCQ2x4cFg2MXNzZ2JWZFhkU2tjOW9CTEszNkNNOHh5UDJVT0pyOTZT?oc=5",
           "published": "Mon, 23 Nov 2026 18:22:00 GMT",
           "source": "TradingView"
         },
         {
-          "title": "Northstar Gold Corp. Closes First Tranche of Flow-Through Financings - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOT3VzaExURU5ObjNLRG5fSFQ5U0lsYlZrT1FvRWJHdVRVWWpvVWRzX1BqZ1JLQVhNZjNMbUhLcmRxaGE3dDZnVy15VkUyTkZ3S0h4dW9nQjlIWERuMHo4STNzQW1JU0pSQ3M5UW9nLXBSc2I3UGRydmlGaHotNTFsSnM1MkIyTjlydjBlUm9TOGZzUDdSRDNvbGY4a3JfeDBRWGhuazVaenBSU0xzX3htN2tIU3Nwd0JILUR0REJtcC1YTm1MXzlzUXNn?oc=5",
-          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
-          "source": "TradingView"
-        },
-        {
           "title": "Sitka Gold Announces Strategic Investment of $72.7 Million from AngloGold Ashanti - TradingView",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRFZBOHVYV2FpcGk3LW1qT2xoMVptOWdBdjRBU3dzdUk2ejM3c3AyUzJPYXlHNmxGMXJRZnlsZ0MycGhVTGtkT3dPWExHYTVtSFBtTXZpV2NMZGdzRFRSdGRTU1pvRU5YSFAyQ0JRci1NZ2x6VDRWUmxOVVJwbU9FYXRqUXEwcWxzV3FwUHZTZjNqREtObnRzT1prZUlHcF9Fd1NwYmdpLUMwR1pHOUNRb0lXRzN0Uy1nZThJQ2N0ckRlVUhVOXVPbURodFhEY2tuSFB5OG94cS13YzQ?oc=5",
           "published": "Mon, 23 Nov 2026 14:29:00 GMT",
+          "source": "TradingView"
+        },
+        {
+          "title": "Northstar Gold Corp. Closes First Tranche of Flow-Through Financings - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOT3VzaExURU5ObjNLRG5fSFQ5U0lsYlZrT1FvRWJHdVRVWWpvVWRzX1BqZ1JLQVhNZjNMbUhLcmRxaGE3dDZnVy15VkUyTkZ3S0h4dW9nQjlIWERuMHo4STNzQW1JU0pSQ3M5UW9nLXBSc2I3UGRydmlGaHotNTFsSnM1MkIyTjlydjBlUm9TOGZzUDdSRDNvbGY4a3JfeDBRWGhuazVaenBSU0xzX3htN2tIU3Nwd0JILUR0REJtcC1YTm1MXzlzUXNn?oc=5",
+          "published": "Mon, 23 Nov 2026 12:30:00 GMT",
           "source": "TradingView"
         }
       ]
