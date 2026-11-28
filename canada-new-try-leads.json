@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-27T21:49:26.023415+00:00",
+  "updated": "2026-11-28T00:25:46.535096+00:00",
   "policy": "All leads are unverified. No headline, RSS item or SEC filing becomes a BUY without original transaction verification. SEDAR+ is not scraped.",
   "leads": [
     {
@@ -904,17 +904,6 @@
       "reviewStatus": "Needs source verification",
       "verifiedPurchase": false,
       "summary": " Early Warning Disclosure by Matachewan Consolidated Mines, Limited and McChip Resources Inc.    Yahoo! Finance Canada "
-    },
-    {
-      "id": "lead:5e1d6c6e4b9d12a3cc",
-      "title": "Labrador Gold Extends Private Placement to Boost Exploration Funding - The Globe and Mail",
-      "date": "2026-10-23",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQR2pvOThiOXhjYVhGbm9idTNOU0RZOHhOSDh4TXIzQk90dmpHNXEzRGt2dXI3aVd1V2RBY0ZGY08zTHRQOGZ0QUJ2ZFo0UDZTSWdsbmpOVkl1N0d1WTlUVHVnbEpHR1RQS0NqWkJsTHowV0Ztb2RkTVFiN19XQkUwYjJiaVk5dnB5ZTVJLWVlcWYwODNiWC1SVGluenFtX0JJUTBVaThyVEQ5ZFV5SkQtQ1VOWV9ZVjFMRE5JZ0hsUEgwMnZOeTlDVmRDa3g3RzZ6TVhwWmE1V3UxdjZnbG5YRS12TFg3NmVjenc",
-      "discoveredVia": "Google News discovery — \"Matachewan\" \"McChip\" \"Labrador Gold\" when:30d",
-      "type": "Possible capital investment — review source",
-      "reviewStatus": "Needs source verification",
-      "verifiedPurchase": false,
-      "summary": " Labrador Gold Extends Private Placement to Boost Exploration Funding    The Globe and Mail "
     }
   ],
   "usFilings": [],
@@ -937,8 +926,8 @@
     {
       "name": "News search: \"early warning\" \"acquired\" \"shares\" (TSX OR TSXV) when:",
       "ok": true,
-      "items": 6,
-      "relevant": 2
+      "items": 5,
+      "relevant": 1
     },
     {
       "name": "News search: \"early warning\" \"acquires shares\" site:globenewswire.co",
@@ -1023,9 +1012,9 @@
   "status": {
     "sources": 18,
     "available": 10,
-    "leadCount": 83,
+    "leadCount": 82,
     "usFilingCount": 0,
-    "needsReview": 83
+    "needsReview": 82
   },
   "officialSources": [
     {
